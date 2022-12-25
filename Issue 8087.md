@@ -127,6 +127,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8087
 
 ---
 
+archive/issue_events_019356.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-01-27T03:50:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8087",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8087#event-19356"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070750.json:
 ```json
 {
@@ -308,6 +325,40 @@ Should we now close this ticket?
 
 ---
 
+archive/issue_events_019357.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-03-05T00:50:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8087",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8087#event-19357"
+}
+```
+
+
+
+---
+
+archive/issue_events_019358.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-03-05T00:50:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8087",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8087#event-19358"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070756.json:
 ```json
 {
@@ -326,7 +377,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008293.json:
+archive/issue_events_019359.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -334,7 +385,7 @@ archive/issue_events_008293.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8087",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8087#event-8293"
+    "url": "https://github.com/sagemath/sagetest/issues/8087#event-19359"
 }
 ```
 

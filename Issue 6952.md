@@ -160,7 +160,7 @@ With other dependencies and this patch, all doctests in the tutorial pass.
 
 ---
 
-archive/issue_events_007176.json:
+archive/issue_events_016350.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -168,6 +168,6 @@ archive/issue_events_007176.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6952",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6952#event-7176"
+    "url": "https://github.com/sagemath/sagetest/issues/6952#event-16350"
 }
 ```

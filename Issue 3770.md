@@ -29,7 +29,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3770
 
 ---
 
-archive/issue_events_003992.json:
+archive/issue_events_008645.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -37,7 +37,7 @@ archive/issue_events_003992.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3770",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3770#event-3992"
+    "url": "https://github.com/sagemath/sagetest/issues/3770#event-8645"
 }
 ```
 
@@ -58,6 +58,23 @@ archive/issue_comments_026768.json:
 ```
 
 As of Sage 4.3.1, ticket #7975 removed dsage from the standard spkg repository. I'm closing this ticket as invalid.
+
+
+
+---
+
+archive/issue_events_008646.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-02T06:41:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3770",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3770#event-8646"
+}
+```
 
 
 

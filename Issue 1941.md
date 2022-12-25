@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1941
 
 ---
 
+archive/issue_events_004663.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-27T05:59:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4663"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012285.json:
 ```json
 {
@@ -174,6 +191,142 @@ Also #8425.
 
 ---
 
+archive/issue_events_004664.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4664"
+}
+```
+
+
+
+---
+
+archive/issue_events_004665.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4665"
+}
+```
+
+
+
+---
+
+archive/issue_events_004666.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4666"
+}
+```
+
+
+
+---
+
+archive/issue_events_004667.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4667"
+}
+```
+
+
+
+---
+
+archive/issue_events_004668.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4668"
+}
+```
+
+
+
+---
+
+archive/issue_events_004669.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4669"
+}
+```
+
+
+
+---
+
+archive/issue_events_004670.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4670"
+}
+```
+
+
+
+---
+
+archive/issue_events_004671.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4671"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012292.json:
 ```json
 {
@@ -205,6 +358,40 @@ archive/issue_comments_012293.json:
 ```
 
 Gathering tickets related to `BipartiteGraph`, open and fixed issues.
+
+
+
+---
+
+archive/issue_events_004672.json:
+```json
+{
+    "actor": "https://github.com/dcoudert",
+    "created_at": "2022-01-31T10:31:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4672"
+}
+```
+
+
+
+---
+
+archive/issue_events_004673.json:
+```json
+{
+    "actor": "https://github.com/dcoudert",
+    "created_at": "2022-01-31T10:31:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-9.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4673"
+}
+```
 
 
 
@@ -299,3 +486,71 @@ archive/issue_comments_012297.json:
 ```
 
 Then it should not be a subclass IMO because of a fundamental incompatibility with some common ABC between `BipartiteGraph` and `Graph` to explicitly prohibit said methods.
+
+
+
+---
+
+archive/issue_events_004674.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-04-02T20:45:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-9.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4674"
+}
+```
+
+
+
+---
+
+archive/issue_events_004675.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-04-02T20:45:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-9.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4675"
+}
+```
+
+
+
+---
+
+archive/issue_events_004676.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-08-31T16:33:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-9.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4676"
+}
+```
+
+
+
+---
+
+archive/issue_events_004677.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-08-31T16:33:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1941",
+    "milestone": "sage-9.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1941#event-4677"
+}
+```

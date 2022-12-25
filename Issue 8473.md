@@ -1016,6 +1016,23 @@ Leaving as "needs work" and moving milestone to 5.2 since it depends on #11080 i
 
 ---
 
+archive/issue_events_020352.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-14T19:12:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#event-20352"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076226.json:
 ```json
 {
@@ -1067,6 +1084,40 @@ archive/issue_comments_076228.json:
 ```
 
 I've merged the pull request :)
+
+
+
+---
+
+archive/issue_events_020353.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-15T21:07:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#event-20353"
+}
+```
+
+
+
+---
+
+archive/issue_events_020354.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-15T21:07:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#event-20354"
+}
+```
 
 
 
@@ -1234,7 +1285,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008657.json:
+archive/issue_events_020355.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1242,6 +1293,6 @@ archive/issue_events_008657.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8473#event-8657"
+    "url": "https://github.com/sagemath/sagetest/issues/8473#event-20355"
 }
 ```

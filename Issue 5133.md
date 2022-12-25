@@ -451,7 +451,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005380.json:
+archive/issue_events_011898.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -459,7 +459,7 @@ archive/issue_events_005380.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5133#event-5380"
+    "url": "https://github.com/sagemath/sagetest/issues/5133#event-11898"
 }
 ```
 
@@ -485,7 +485,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_005381.json:
+archive/issue_events_011899.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -493,7 +493,7 @@ archive/issue_events_005381.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5133#event-5381"
+    "url": "https://github.com/sagemath/sagetest/issues/5133#event-11899"
 }
 ```
 
@@ -537,7 +537,7 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_events_005382.json:
+archive/issue_events_011900.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -545,7 +545,7 @@ archive/issue_events_005382.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5133#event-5382"
+    "url": "https://github.com/sagemath/sagetest/issues/5133#event-11900"
 }
 ```
 

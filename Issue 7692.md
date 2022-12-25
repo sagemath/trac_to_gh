@@ -493,7 +493,7 @@ Ticket #7749 is now open, and I expect to have a patch submitted in the next day
 
 ---
 
-archive/issue_events_007909.json:
+archive/issue_events_018380.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -501,7 +501,7 @@ archive/issue_events_007909.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#event-7909"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#event-18380"
 }
 ```
 

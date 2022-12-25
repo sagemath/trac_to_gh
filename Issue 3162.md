@@ -171,3 +171,122 @@ archive/issue_comments_021890.json:
 ```
 
 Changing type from defect to enhancement.
+
+
+
+---
+
+archive/issue_events_007140.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3162",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3162#event-7140"
+}
+```
+
+
+
+---
+
+archive/issue_events_007141.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3162",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3162#event-7141"
+}
+```
+
+
+
+---
+
+archive/issue_events_007142.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3162",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3162#event-7142"
+}
+```
+
+
+
+---
+
+archive/issue_events_007143.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3162",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3162#event-7143"
+}
+```
+
+
+
+---
+
+archive/issue_events_007144.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3162",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3162#event-7144"
+}
+```
+
+
+
+---
+
+archive/issue_events_007145.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3162",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3162#event-7145"
+}
+```
+
+
+
+---
+
+archive/issue_events_007146.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3162",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3162#event-7146"
+}
+```

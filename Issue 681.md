@@ -89,7 +89,7 @@ Attachment [mq-change_ring-bugfix.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_events_000749.json:
+archive/issue_events_001815.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -97,7 +97,7 @@ archive/issue_events_000749.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/681",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/681#event-749"
+    "url": "https://github.com/sagemath/sagetest/issues/681#event-1815"
 }
 ```
 

@@ -78,6 +78,23 @@ make sage-clone use hard links
 
 ---
 
+archive/issue_events_012477.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-23T19:00:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5350",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5350#event-12477"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041134.json:
 ```json
 {
@@ -196,6 +213,40 @@ Everything works fine, and the speedup is impressive, but I agree that a two-dig
 
 ---
 
+archive/issue_events_012478.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-06-21T22:35:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5350",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5350#event-12478"
+}
+```
+
+
+
+---
+
+archive/issue_events_012479.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-06-21T22:35:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5350",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5350#event-12479"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041140.json:
 ```json
 {
@@ -214,7 +265,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005606.json:
+archive/issue_events_012480.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -222,6 +273,40 @@ archive/issue_events_005606.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5350",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5350#event-5606"
+    "url": "https://github.com/sagemath/sagetest/issues/5350#event-12480"
+}
+```
+
+
+
+---
+
+archive/issue_events_012481.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-26T20:06:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5350",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5350#event-12481"
+}
+```
+
+
+
+---
+
+archive/issue_events_012482.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-26T20:06:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5350",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5350#event-12482"
 }
 ```

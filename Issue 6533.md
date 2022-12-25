@@ -29,7 +29,24 @@ Issue created by migration from https://trac.sagemath.org/ticket/6533
 
 ---
 
-archive/issue_events_006769.json:
+archive/issue_events_015407.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-02T17:44:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6533",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6533#event-15407"
+}
+```
+
+
+
+---
+
+archive/issue_events_015408.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -37,7 +54,7 @@ archive/issue_events_006769.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6533",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6533#event-6769"
+    "url": "https://github.com/sagemath/sagetest/issues/6533#event-15408"
 }
 ```
 
@@ -76,3 +93,37 @@ archive/issue_comments_053170.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_015409.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-05T20:45:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6533",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6533#event-15409"
+}
+```
+
+
+
+---
+
+archive/issue_events_015410.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-05T20:45:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6533",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6533#event-15410"
+}
+```

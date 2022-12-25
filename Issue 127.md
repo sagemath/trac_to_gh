@@ -81,6 +81,23 @@ I just tried the notebook in opera, and it's even worse now...
 
 ---
 
+archive/issue_events_000244.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-25T19:47:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/127",
+    "milestone": "sage-1.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/127#event-244"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000572.json:
 ```json
 {
@@ -99,7 +116,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000133.json:
+archive/issue_events_000245.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -107,7 +124,7 @@ archive/issue_events_000133.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/127",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/127#event-133"
+    "url": "https://github.com/sagemath/sagetest/issues/127#event-245"
 }
 ```
 

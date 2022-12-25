@@ -119,7 +119,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2476
 
 ---
 
-archive/issue_events_002655.json:
+archive/issue_events_005849.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -127,7 +127,7 @@ archive/issue_events_002655.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2476",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2476#event-2655"
+    "url": "https://github.com/sagemath/sagetest/issues/2476#event-5849"
 }
 ```
 
@@ -171,6 +171,23 @@ NotImplementedError                       Traceback (most recent call last)
 NotImplementedError: 3D plotting of multiple edges or loops not implemented.
 ```
 
+
+
+
+---
+
+archive/issue_events_005850.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-04T21:26:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2476",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2476#event-5850"
+}
+```
 
 
 

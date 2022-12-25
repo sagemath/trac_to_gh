@@ -68,6 +68,23 @@ Of course, the above shouldn't say "its dependencies" but rather "the files depe
 
 ---
 
+archive/issue_events_024136.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-04-22T10:43:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9673",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9673#event-24136"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093840.json:
 ```json
 {
@@ -122,7 +139,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009806.json:
+archive/issue_events_024137.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -130,7 +147,7 @@ archive/issue_events_009806.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9673",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9673#event-9806"
+    "url": "https://github.com/sagemath/sagetest/issues/9673#event-24137"
 }
 ```
 

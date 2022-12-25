@@ -124,6 +124,23 @@ I will review this in the next few days.
 
 ---
 
+archive/issue_events_010120.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-11T12:35:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4477",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4477#event-10120"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033001.json:
 ```json
 {
@@ -343,7 +360,7 @@ I've created #4748. Other than that it works great (and the issue above didn't w
 
 ---
 
-archive/issue_events_004726.json:
+archive/issue_events_010121.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -351,7 +368,7 @@ archive/issue_events_004726.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4477",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4477#event-4726"
+    "url": "https://github.com/sagemath/sagetest/issues/4477#event-10121"
 }
 ```
 

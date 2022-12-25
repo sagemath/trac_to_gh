@@ -415,6 +415,23 @@ apply on top of  keepfloat.patch
 
 ---
 
+archive/issue_events_005660.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:18:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2400",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2400#event-5660"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016176.json:
 ```json
 {
@@ -433,7 +450,7 @@ These two patches apply against 2.10.4.alpha0, fix the problems, and pass tests 
 
 ---
 
-archive/issue_events_002576.json:
+archive/issue_events_005661.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -441,7 +458,7 @@ archive/issue_events_002576.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#event-2576"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#event-5661"
 }
 ```
 

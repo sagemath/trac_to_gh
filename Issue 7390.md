@@ -215,6 +215,23 @@ Version 2 (of part B):
 
 ---
 
+archive/issue_events_017471.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-11-12T01:46:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7390",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7390#event-17471"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062042.json:
 ```json
 {
@@ -390,7 +407,7 @@ Looks good to me.  I'll change this status to "positive review."
 
 ---
 
-archive/issue_events_007615.json:
+archive/issue_events_017472.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -398,7 +415,7 @@ archive/issue_events_007615.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7390#event-7615"
+    "url": "https://github.com/sagemath/sagetest/issues/7390#event-17472"
 }
 ```
 

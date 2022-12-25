@@ -224,7 +224,24 @@ Closing this as wontfix since #6503 removes pyprocessing from the standard spkg 
 
 ---
 
-archive/issue_events_008559.json:
+archive/issue_events_020051.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-03T02:03:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8371",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8371#event-20051"
+}
+```
+
+
+
+---
+
+archive/issue_events_020052.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -232,6 +249,6 @@ archive/issue_events_008559.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8371",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8371#event-8559"
+    "url": "https://github.com/sagemath/sagetest/issues/8371#event-20052"
 }
 ```

@@ -104,6 +104,23 @@ Changing keywords from "" to "trees".
 
 ---
 
+archive/issue_events_021130.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2011-05-31T14:58:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8703",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8703#event-21130"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079199.json:
 ```json
 {
@@ -1627,6 +1644,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_021131.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-04-09T20:54:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8703",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8703#event-21131"
+}
+```
+
+
+
+---
+
+archive/issue_events_021132.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-04-09T20:54:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8703",
+    "milestone": "sage-5.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8703#event-21132"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079257.json:
 ```json
 {
@@ -1786,7 +1837,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008873.json:
+archive/issue_events_021133.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1794,6 +1845,6 @@ archive/issue_events_008873.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#event-8873"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#event-21133"
 }
 ```

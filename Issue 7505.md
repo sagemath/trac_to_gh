@@ -2087,7 +2087,7 @@ This ticket might have got a bit confusing. Just to recap, these things need goi
 
 ---
 
-archive/issue_events_007733.json:
+archive/issue_events_017792.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -2095,7 +2095,7 @@ archive/issue_events_007733.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7505#event-7733"
+    "url": "https://github.com/sagemath/sagetest/issues/7505#event-17792"
 }
 ```
 

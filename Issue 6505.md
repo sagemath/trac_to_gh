@@ -281,7 +281,7 @@ Positive review. This took me a while, since I didn't really know how to use -sd
 
 ---
 
-archive/issue_events_006743.json:
+archive/issue_events_015358.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -289,7 +289,7 @@ archive/issue_events_006743.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6505#event-6743"
+    "url": "https://github.com/sagemath/sagetest/issues/6505#event-15358"
 }
 ```
 

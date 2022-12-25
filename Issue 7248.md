@@ -80,7 +80,7 @@ For this ticket, I was thinking of just getting jinja2 in. We can do another tic
 
 ---
 
-archive/issue_events_007467.json:
+archive/issue_events_017158.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -88,7 +88,7 @@ archive/issue_events_007467.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7248#event-7467"
+    "url": "https://github.com/sagemath/sagetest/issues/7248#event-17158"
 }
 ```
 
@@ -150,7 +150,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007468.json:
+archive/issue_events_017159.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -158,7 +158,7 @@ archive/issue_events_007468.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7248#event-7468"
+    "url": "https://github.com/sagemath/sagetest/issues/7248#event-17159"
 }
 ```
 
@@ -243,7 +243,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007469.json:
+archive/issue_events_017160.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -251,6 +251,6 @@ archive/issue_events_007469.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7248#event-7469"
+    "url": "https://github.com/sagemath/sagetest/issues/7248#event-17160"
 }
 ```

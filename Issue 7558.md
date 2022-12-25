@@ -65,7 +65,7 @@ Copy of #7559 :-)
 
 ---
 
-archive/issue_events_007788.json:
+archive/issue_events_017920.json:
 ```json
 {
     "actor": "https://github.com/nathanncohen",
@@ -73,6 +73,23 @@ archive/issue_events_007788.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7558",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7558#event-7788"
+    "url": "https://github.com/sagemath/sagetest/issues/7558#event-17920"
+}
+```
+
+
+
+---
+
+archive/issue_events_017921.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-11-30T20:00:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7558",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7558#event-17921"
 }
 ```

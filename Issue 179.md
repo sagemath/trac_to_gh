@@ -34,6 +34,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/179
 
 ---
 
+archive/issue_events_000336.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:41:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/179",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/179#event-336"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000819.json:
 ```json
 {
@@ -74,7 +91,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000187.json:
+archive/issue_events_000337.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -82,7 +99,7 @@ archive/issue_events_000187.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/179",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/179#event-187"
+    "url": "https://github.com/sagemath/sagetest/issues/179#event-337"
 }
 ```
 
@@ -103,3 +120,37 @@ archive/issue_comments_000821.json:
 ```
 
 This has been done for months... worksheets are dislayed last-edited first.
+
+
+
+---
+
+archive/issue_events_000338.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T04:25:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/179",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/179#event-338"
+}
+```
+
+
+
+---
+
+archive/issue_events_000339.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T04:25:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/179",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/179#event-339"
+}
+```

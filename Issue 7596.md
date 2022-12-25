@@ -42,6 +42,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/7596
 
 ---
 
+archive/issue_events_018029.json:
+```json
+{
+    "actor": "https://github.com/koffie",
+    "created_at": "2011-02-10T14:08:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18029"
+}
+```
+
+
+
+---
+
+archive/issue_events_018030.json:
+```json
+{
+    "actor": "https://github.com/koffie",
+    "created_at": "2011-02-10T14:09:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18030"
+}
+```
+
+
+
+---
+
+archive/issue_events_018031.json:
+```json
+{
+    "actor": "https://github.com/koffie",
+    "created_at": "2011-02-10T14:09:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18031"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064673.json:
 ```json
 {
@@ -124,6 +175,142 @@ Attachment [trac_7596_number_fields_are_quotient_fields.patch](tarball://root/at
 
 ---
 
+archive/issue_events_018032.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18032"
+}
+```
+
+
+
+---
+
+archive/issue_events_018033.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18033"
+}
+```
+
+
+
+---
+
+archive/issue_events_018034.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18034"
+}
+```
+
+
+
+---
+
+archive/issue_events_018035.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18035"
+}
+```
+
+
+
+---
+
+archive/issue_events_018036.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18036"
+}
+```
+
+
+
+---
+
+archive/issue_events_018037.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18037"
+}
+```
+
+
+
+---
+
+archive/issue_events_018038.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18038"
+}
+```
+
+
+
+---
+
+archive/issue_events_018039.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18039"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064677.json:
 ```json
 {
@@ -139,6 +326,40 @@ archive/issue_comments_064677.json:
 As of 9.3.beta3, certainly QQ.places() does work.  What I usually do is, when I find a method which QQ does not have but a general number field does have, in the course of implementing something, I just add an aimplementation for QQ.  I think this is more efficient than trying to make QQ work like a number field.  There will be a large number of users who get to see QQ who never use more general number fields.  For such people it does not matter at all to have methods like QQ.places() whose use they may not know.  There were many arguments about what QQ.ideal(5) should return, since the pedantic aswer (as for any field, with a nonzero generator) is that it has to be "Principal ideal (1) of ...".  Number theorists are quite happy to have K.ideal(...) meaning K.fractional_ideal(...).
 
 Is there any reason not to mark this as invalid/won't fix?
+
+
+
+---
+
+archive/issue_events_018040.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2021-02-09T11:03:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18040"
+}
+```
+
+
+
+---
+
+archive/issue_events_018041.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2021-02-09T11:03:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18041"
+}
+```
 
 
 
@@ -243,6 +464,40 @@ Reassigning this ticket to a milestone, because having documentation directly co
 
 ---
 
+archive/issue_events_018042.json:
+```json
+{
+    "actor": "https://github.com/nbruin",
+    "created_at": "2021-08-02T16:54:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18042"
+}
+```
+
+
+
+---
+
+archive/issue_events_018043.json:
+```json
+{
+    "actor": "https://github.com/nbruin",
+    "created_at": "2021-08-02T16:54:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-9.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18043"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064682.json:
 ```json
 {
@@ -259,6 +514,40 @@ Replying to [comment:15 nbruin]:
 > In this case, it probably means equipping number field elements with a fresh implementation of `is_prime` with appropriate doc.
 
 I had a shot at this over at #32340.
+
+
+
+---
+
+archive/issue_events_018044.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-12-18T19:53:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-9.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18044"
+}
+```
+
+
+
+---
+
+archive/issue_events_018045.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-12-18T19:53:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-9.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18045"
+}
+```
 
 
 
@@ -295,3 +584,71 @@ archive/issue_comments_064684.json:
 ```
 
 Changing status from needs_review to needs_work.
+
+
+
+---
+
+archive/issue_events_018046.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-04-11T17:19:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-9.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18046"
+}
+```
+
+
+
+---
+
+archive/issue_events_018047.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-04-11T17:19:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-9.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18047"
+}
+```
+
+
+
+---
+
+archive/issue_events_018048.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-08-31T02:51:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-9.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18048"
+}
+```
+
+
+
+---
+
+archive/issue_events_018049.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-08-31T02:51:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7596",
+    "milestone": "sage-9.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7596#event-18049"
+}
+```

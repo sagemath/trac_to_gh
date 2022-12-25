@@ -299,6 +299,23 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_024335.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/phil",
+    "created_at": "2010-10-04T00:19:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9725",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9725#event-24335"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094860.json:
 ```json
 {
@@ -354,6 +371,40 @@ I found an article in the german computer magazine c't today about sage (c't 5/2
 (The free package Sage brings the most important open-source math-programs batteries included, as it says in the detailed, but completely english written documentation.)
 
 Maybe we should use that as a reminder that we already have a german version of the tut here.
+
+
+
+---
+
+archive/issue_events_024336.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2011-05-11T13:58:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9725",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9725#event-24336"
+}
+```
+
+
+
+---
+
+archive/issue_events_024337.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2011-05-11T13:58:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9725",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9725#event-24337"
+}
+```
 
 
 
@@ -456,7 +507,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009858.json:
+archive/issue_events_024338.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -464,7 +515,7 @@ archive/issue_events_009858.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9725#event-9858"
+    "url": "https://github.com/sagemath/sagetest/issues/9725#event-24338"
 }
 ```
 
@@ -571,7 +622,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009859.json:
+archive/issue_events_024339.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -579,7 +630,7 @@ archive/issue_events_009859.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9725#event-9859"
+    "url": "https://github.com/sagemath/sagetest/issues/9725#event-24339"
 }
 ```
 
@@ -1211,7 +1262,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009860.json:
+archive/issue_events_024340.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1219,7 +1270,7 @@ archive/issue_events_009860.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9725#event-9860"
+    "url": "https://github.com/sagemath/sagetest/issues/9725#event-24340"
 }
 ```
 

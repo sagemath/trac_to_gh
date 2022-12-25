@@ -64,6 +64,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2430
 
 ---
 
+archive/issue_events_005737.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-09T00:09:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#event-5737"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016405.json:
 ```json
 {
@@ -172,6 +189,23 @@ I think that the current behavior is in line with the issues dealt with by #4192
 
 ---
 
+archive/issue_events_005738.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-26T18:48:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#event-5738"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016411.json:
 ```json
 {
@@ -214,7 +248,7 @@ Michael
 
 ---
 
-archive/issue_events_002607.json:
+archive/issue_events_005739.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -222,6 +256,6 @@ archive/issue_events_002607.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2430",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2430#event-2607"
+    "url": "https://github.com/sagemath/sagetest/issues/2430#event-5739"
 }
 ```

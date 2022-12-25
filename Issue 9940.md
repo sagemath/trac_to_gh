@@ -294,6 +294,23 @@ Fine now with these two patches.  Positive review.
 
 ---
 
+archive/issue_events_025073.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:05:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9940",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9940#event-25073"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098818.json:
 ```json
 {
@@ -424,7 +441,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_010067.json:
+archive/issue_events_025074.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -432,7 +449,7 @@ archive/issue_events_010067.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9940",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9940#event-10067"
+    "url": "https://github.com/sagemath/sagetest/issues/9940#event-25074"
 }
 ```
 

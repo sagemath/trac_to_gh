@@ -73,6 +73,23 @@ Fix for the first of the two reported problms.
 
 ---
 
+archive/issue_events_006247.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-26T18:03:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#event-6247"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018362.json:
 ```json
 {
@@ -240,7 +257,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002866.json:
+archive/issue_events_006248.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -248,7 +265,7 @@ archive/issue_events_002866.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2674",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2674#event-2866"
+    "url": "https://github.com/sagemath/sagetest/issues/2674#event-6248"
 }
 ```
 

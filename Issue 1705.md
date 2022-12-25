@@ -166,6 +166,23 @@ Merged trac_1705.patch. We are closing this ticket and will open a new one once 
 
 ---
 
+archive/issue_events_004161.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-18T01:48:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1705",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1705#event-4161"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010775.json:
 ```json
 {
@@ -184,7 +201,7 @@ Merged in Sage 2.10.alpha4.
 
 ---
 
-archive/issue_events_001864.json:
+archive/issue_events_004162.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -192,7 +209,7 @@ archive/issue_events_001864.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1705",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1705#event-1864"
+    "url": "https://github.com/sagemath/sagetest/issues/1705#event-4162"
 }
 ```
 

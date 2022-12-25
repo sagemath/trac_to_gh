@@ -282,7 +282,7 @@ based on Sage 4.1.2.alpha4
 
 ---
 
-archive/issue_events_004629.json:
+archive/issue_events_009906.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -290,7 +290,7 @@ archive/issue_events_004629.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4384#event-4629"
+    "url": "https://github.com/sagemath/sagetest/issues/4384#event-9906"
 }
 ```
 

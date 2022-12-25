@@ -252,7 +252,24 @@ The changes look good to me.  I say apply.
 
 ---
 
-archive/issue_events_002382.json:
+archive/issue_events_005278.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:44:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2212",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2212#event-5278"
+}
+```
+
+
+
+---
+
+archive/issue_events_005279.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -260,7 +277,7 @@ archive/issue_events_002382.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2212#event-2382"
+    "url": "https://github.com/sagemath/sagetest/issues/2212#event-5279"
 }
 ```
 

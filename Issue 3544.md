@@ -116,6 +116,23 @@ Michael
 
 ---
 
+archive/issue_events_008110.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-06T17:52:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#event-8110"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025022.json:
 ```json
 {
@@ -225,7 +242,7 @@ Looks good to me!
 
 ---
 
-archive/issue_events_003764.json:
+archive/issue_events_008111.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -233,7 +250,7 @@ archive/issue_events_003764.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3544#event-3764"
+    "url": "https://github.com/sagemath/sagetest/issues/3544#event-8111"
 }
 ```
 
@@ -254,6 +271,40 @@ archive/issue_comments_025027.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008112.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T07:27:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#event-8112"
+}
+```
+
+
+
+---
+
+archive/issue_events_008113.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T07:27:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#event-8113"
+}
+```
 
 
 

@@ -54,6 +54,23 @@ Michael
 
 ---
 
+archive/issue_events_009725.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-18T12:09:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4308",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4308#event-9725"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031471.json:
 ```json
 {
@@ -233,7 +250,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004551.json:
+archive/issue_events_009726.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -241,7 +258,7 @@ archive/issue_events_004551.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4308",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4308#event-4551"
+    "url": "https://github.com/sagemath/sagetest/issues/4308#event-9726"
 }
 ```
 
@@ -266,3 +283,37 @@ Uploaded to the optional spkg repo.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_009727.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-30T05:35:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4308",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4308#event-9727"
+}
+```
+
+
+
+---
+
+archive/issue_events_009728.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-30T05:35:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4308",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4308#event-9728"
+}
+```

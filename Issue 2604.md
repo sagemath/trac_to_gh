@@ -141,7 +141,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2604
 
 ---
 
-archive/issue_events_002794.json:
+archive/issue_events_006064.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -149,7 +149,7 @@ archive/issue_events_002794.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2604",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2604#event-2794"
+    "url": "https://github.com/sagemath/sagetest/issues/2604#event-6064"
 }
 ```
 

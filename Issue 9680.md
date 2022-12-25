@@ -63,6 +63,23 @@ in the function sage_getdoc.  There is an identical line in sage/misc/sageinspec
 
 ---
 
+archive/issue_events_024165.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2015-04-13T13:11:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9680",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9680#event-24165"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093952.json:
 ```json
 {
@@ -146,7 +163,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_009812.json:
+archive/issue_events_024166.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -154,6 +171,6 @@ archive/issue_events_009812.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9680",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9680#event-9812"
+    "url": "https://github.com/sagemath/sagetest/issues/9680#event-24166"
 }
 ```

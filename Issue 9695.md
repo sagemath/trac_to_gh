@@ -130,7 +130,7 @@ As part of working on other documentation items, I have addressed this at #9783.
 
 ---
 
-archive/issue_events_009826.json:
+archive/issue_events_024223.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -138,7 +138,7 @@ archive/issue_events_009826.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#event-9826"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#event-24223"
 }
 ```
 
@@ -159,6 +159,23 @@ archive/issue_comments_094067.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_024224.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-23T09:42:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9695",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9695#event-24224"
+}
+```
 
 
 
@@ -200,7 +217,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009827.json:
+archive/issue_events_024225.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -208,7 +225,7 @@ archive/issue_events_009827.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#event-9827"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#event-24225"
 }
 ```
 
@@ -329,7 +346,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009828.json:
+archive/issue_events_024226.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -337,6 +354,6 @@ archive/issue_events_009828.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#event-9828"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#event-24226"
 }
 ```

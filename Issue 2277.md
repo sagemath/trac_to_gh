@@ -66,6 +66,23 @@ Let's consider this ticket dead.
 
 ---
 
+archive/issue_events_005387.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-07T19:30:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2277",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2277#event-5387"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015077.json:
 ```json
 {
@@ -84,7 +101,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002448.json:
+archive/issue_events_005388.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -92,7 +109,7 @@ archive/issue_events_002448.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2277",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2277#event-2448"
+    "url": "https://github.com/sagemath/sagetest/issues/2277#event-5388"
 }
 ```
 

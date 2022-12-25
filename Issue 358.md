@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/358
 
 ---
 
+archive/issue_events_000841.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-05T04:22:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/358",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/358#event-841"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001720.json:
 ```json
 {
@@ -106,7 +123,7 @@ I agree. Passes tests for me, so let's merge it.
 
 ---
 
-archive/issue_events_000380.json:
+archive/issue_events_000842.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -114,7 +131,7 @@ archive/issue_events_000380.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/358",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/358#event-380"
+    "url": "https://github.com/sagemath/sagetest/issues/358#event-842"
 }
 ```
 

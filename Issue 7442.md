@@ -199,7 +199,7 @@ Somehow we are at scipy 0.9 now, so this ticket should be closed as invalid now.
 
 ---
 
-archive/issue_events_007669.json:
+archive/issue_events_017653.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -207,6 +207,6 @@ archive/issue_events_007669.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7442",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7442#event-7669"
+    "url": "https://github.com/sagemath/sagetest/issues/7442#event-17653"
 }
 ```

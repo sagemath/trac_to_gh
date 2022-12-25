@@ -33,6 +33,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3261
 
 ---
 
+archive/issue_events_007340.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-20T10:13:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3261",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3261#event-7340"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022513.json:
 ```json
 {
@@ -69,7 +86,7 @@ I've tried this in a few installations with #5020 applied and cannot duplicate t
 
 ---
 
-archive/issue_events_003478.json:
+archive/issue_events_007341.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -77,6 +94,6 @@ archive/issue_events_003478.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3261",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3261#event-3478"
+    "url": "https://github.com/sagemath/sagetest/issues/3261#event-7341"
 }
 ```

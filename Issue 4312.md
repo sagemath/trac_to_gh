@@ -139,6 +139,57 @@ Michael
 
 ---
 
+archive/issue_events_009744.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T05:55:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4312",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4312#event-9744"
+}
+```
+
+
+
+---
+
+archive/issue_events_009745.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T10:29:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4312",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4312#event-9745"
+}
+```
+
+
+
+---
+
+archive/issue_events_009746.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T10:29:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4312",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4312#event-9746"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031510.json:
 ```json
 {
@@ -213,7 +264,7 @@ I made a new ticket to have someone find an **actual** fix, which is #4545. I al
 
 ---
 
-archive/issue_events_004555.json:
+archive/issue_events_009747.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -221,7 +272,7 @@ archive/issue_events_004555.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4312",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4312#event-4555"
+    "url": "https://github.com/sagemath/sagetest/issues/4312#event-9747"
 }
 ```
 

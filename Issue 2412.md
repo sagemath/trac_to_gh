@@ -123,7 +123,7 @@ As per request on IRC:
 
 ---
 
-archive/issue_events_002588.json:
+archive/issue_events_005687.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -131,6 +131,23 @@ archive/issue_events_002588.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2412",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2412#event-2588"
+    "url": "https://github.com/sagemath/sagetest/issues/2412#event-5687"
+}
+```
+
+
+
+---
+
+archive/issue_events_005688.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T05:22:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2412",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2412#event-5688"
 }
 ```

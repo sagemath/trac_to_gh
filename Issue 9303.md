@@ -107,7 +107,7 @@ Ondrej
 
 ---
 
-archive/issue_events_009461.json:
+archive/issue_events_022934.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -115,6 +115,6 @@ archive/issue_events_009461.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9303",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9303#event-9461"
+    "url": "https://github.com/sagemath/sagetest/issues/9303#event-22934"
 }
 ```

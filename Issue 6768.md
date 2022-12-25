@@ -101,7 +101,24 @@ Sorry... look at hecke.patch, not 12538.patch. The first one I posted accidental
 
 ---
 
-archive/issue_events_007000.json:
+archive/issue_events_015947.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-26T22:14:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6768",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6768#event-15947"
+}
+```
+
+
+
+---
+
+archive/issue_events_015948.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -109,7 +126,7 @@ archive/issue_events_007000.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6768",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6768#event-7000"
+    "url": "https://github.com/sagemath/sagetest/issues/6768#event-15948"
 }
 ```
 

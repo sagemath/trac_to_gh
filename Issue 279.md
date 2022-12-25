@@ -84,7 +84,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000296.json:
+archive/issue_events_000626.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -92,7 +92,7 @@ archive/issue_events_000296.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/279",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/279#event-296"
+    "url": "https://github.com/sagemath/sagetest/issues/279#event-626"
 }
 ```
 
@@ -113,3 +113,20 @@ archive/issue_comments_001326.json:
 ```
 
 Attachment [ncalexan-scripts-tnew.hg](tarball://root/attachments/some-uuid/ticket279/ncalexan-scripts-tnew.hg) by @williamstein created at 2007-02-25 16:08:02
+
+
+
+---
+
+archive/issue_events_000627.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-02-25T16:08:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/279",
+    "milestone": "sage-2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/279#event-627"
+}
+```

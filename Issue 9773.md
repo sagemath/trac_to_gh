@@ -1194,6 +1194,23 @@ Apply only this patch
 
 ---
 
+archive/issue_events_024502.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2012-01-12T23:18:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9773",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9773#event-24502"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095680.json:
 ```json
 {
@@ -1810,6 +1827,40 @@ Since #11080 is for Sage 5.2, this should be too.
 
 ---
 
+archive/issue_events_024503.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-12T20:28:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9773",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9773#event-24503"
+}
+```
+
+
+
+---
+
+archive/issue_events_024504.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-12T20:28:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9773",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9773#event-24504"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095708.json:
 ```json
 {
@@ -2323,6 +2374,40 @@ I'm setting this ticket to positive review because there is nothing left to be d
 
 ---
 
+archive/issue_events_024505.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-18T22:12:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9773",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9773#event-24505"
+}
+```
+
+
+
+---
+
+archive/issue_events_024506.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-18T22:12:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9773",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9773#event-24506"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095733.json:
 ```json
 {
@@ -2757,6 +2842,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_024507.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-02T21:43:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9773",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9773#event-24507"
+}
+```
+
+
+
+---
+
+archive/issue_events_024508.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-02T21:43:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9773",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9773#event-24508"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095755.json:
 ```json
 {
@@ -2775,7 +2894,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009904.json:
+archive/issue_events_024509.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2783,7 +2902,7 @@ archive/issue_events_009904.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9773#event-9904"
+    "url": "https://github.com/sagemath/sagetest/issues/9773#event-24509"
 }
 ```
 

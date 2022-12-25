@@ -85,7 +85,7 @@ Also, based on the presentation I saw from these two people, it is questionable 
 
 ---
 
-archive/issue_events_004156.json:
+archive/issue_events_009014.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -93,7 +93,7 @@ archive/issue_events_004156.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3929",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3929#event-4156"
+    "url": "https://github.com/sagemath/sagetest/issues/3929#event-9014"
 }
 ```
 
@@ -119,6 +119,23 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_009015.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-08-26T14:39:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3929",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3929#event-9015"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028072.json:
 ```json
 {
@@ -138,6 +155,23 @@ However, I think in this case a post to sage-devel asking about the projects fro
 Third, I do intend to post patches eventually, if someone else doesn't beat me to it.  As I have time, I go through all the tickets I've entered and work on patches.  The reason to put them up on trac is to make sure that the idea doesn't get lost.  I do agree that I opened up a lot of wishlist tickets (probably too many) when I first started with Sage in my eagerness, but I tried to assign them to the wishlist milestone, which has the purpose: "We have many tickets for enhancements in trac that depend on somebody with time to make them happen. In order not to lose them we collect them under this milestone. If you are interested in working on one of the tickets in this category please let us know or retag that ticket to an appropriate milestone."  (maybe I ought to put more tickets under this wishlist, though...)
 
 Given your comments, I'm going to close this as a duplicate, though, and note the link on #1317.  Thanks.
+
+
+
+---
+
+archive/issue_events_009016.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-26T16:54:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3929",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3929#event-9016"
+}
+```
 
 
 

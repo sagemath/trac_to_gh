@@ -265,7 +265,7 @@ Fixed by adding Python to the deps for Fortran, change to deps file is on ticket
 
 ---
 
-archive/issue_events_009592.json:
+archive/issue_events_023326.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -273,6 +273,6 @@ archive/issue_events_009592.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9435",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9435#event-9592"
+    "url": "https://github.com/sagemath/sagetest/issues/9435#event-23326"
 }
 ```

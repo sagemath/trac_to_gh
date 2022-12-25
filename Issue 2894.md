@@ -148,7 +148,7 @@ Attachment [2894-notebookperformance.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_events_003092.json:
+archive/issue_events_006624.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -156,7 +156,7 @@ archive/issue_events_003092.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2894",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2894#event-3092"
+    "url": "https://github.com/sagemath/sagetest/issues/2894#event-6624"
 }
 ```
 
@@ -203,6 +203,23 @@ archive/issue_comments_019869.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006625.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-12T12:44:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#event-6625"
+}
+```
 
 
 

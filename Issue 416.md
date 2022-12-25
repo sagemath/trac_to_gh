@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/416
 
 ---
 
+archive/issue_events_001004.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:42:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/416",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/416#event-1004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002042.json:
 ```json
 {
@@ -77,6 +94,40 @@ archive/issue_comments_002044.json:
 ```
 
 Attachment [gf2e.patch](tarball://root/attachments/some-uuid/ticket416/gf2e.patch) by @malb created at 2007-10-25 12:56:02
+
+
+
+---
+
+archive/issue_events_001005.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-25T13:03:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/416",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/416#event-1005"
+}
+```
+
+
+
+---
+
+archive/issue_events_001006.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-25T13:03:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/416",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/416#event-1006"
+}
+```
 
 
 
@@ -153,7 +204,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000444.json:
+archive/issue_events_001007.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -161,6 +212,6 @@ archive/issue_events_000444.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/416",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/416#event-444"
+    "url": "https://github.com/sagemath/sagetest/issues/416#event-1007"
 }
 ```

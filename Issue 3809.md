@@ -86,6 +86,23 @@ Attachment [3809-ncalexan-number-field-checking.patch](tarball://root/attachment
 
 ---
 
+archive/issue_events_008741.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-12T05:35:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3809",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3809#event-8741"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027006.json:
 ```json
 {
@@ -144,7 +161,7 @@ Merged both patches in Sage 3.1.alpha2
 
 ---
 
-archive/issue_events_004031.json:
+archive/issue_events_008742.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -152,7 +169,7 @@ archive/issue_events_004031.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3809",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3809#event-4031"
+    "url": "https://github.com/sagemath/sagetest/issues/3809#event-8742"
 }
 ```
 

@@ -62,7 +62,7 @@ Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/att
 
 ---
 
-archive/issue_events_007454.json:
+archive/issue_events_017131.json:
 ```json
 {
     "actor": "https://github.com/hivert",
@@ -70,7 +70,7 @@ archive/issue_events_007454.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7233",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7233#event-7454"
+    "url": "https://github.com/sagemath/sagetest/issues/7233#event-17131"
 }
 ```
 
@@ -111,3 +111,20 @@ archive/issue_comments_059891.json:
 Oops !!! This is a duplicate of 6138... I should have gessed it from the name of the patch. Sorry for the mess,
 
 Florent
+
+
+
+---
+
+archive/issue_events_017132.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-19T06:08:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7233",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7233#event-17132"
+}
+```

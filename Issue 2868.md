@@ -95,6 +95,23 @@ Changing assignee from @mwhansen to @dwbump.
 
 ---
 
+archive/issue_events_006560.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2008-04-09T23:53:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2868",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2868#event-6560"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019642.json:
 ```json
 {
@@ -203,7 +220,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003064.json:
+archive/issue_events_006561.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -211,7 +228,7 @@ archive/issue_events_003064.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2868",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2868#event-3064"
+    "url": "https://github.com/sagemath/sagetest/issues/2868#event-6561"
 }
 ```
 

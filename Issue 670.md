@@ -113,6 +113,23 @@ Attachment [Sage-2.9-fix-numerical-doctests-in-piecewise.py-Solaris10.patch](tar
 
 ---
 
+archive/issue_events_001787.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-21T12:50:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/670",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/670#event-1787"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003461.json:
 ```json
 {
@@ -149,7 +166,7 @@ merged in 2.9.1 alpha3
 
 ---
 
-archive/issue_events_000738.json:
+archive/issue_events_001788.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -157,6 +174,6 @@ archive/issue_events_000738.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/670",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/670#event-738"
+    "url": "https://github.com/sagemath/sagetest/issues/670#event-1788"
 }
 ```

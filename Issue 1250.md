@@ -46,6 +46,23 @@ Attachment [trac1250.patch](tarball://root/attachments/some-uuid/ticket1250/trac
 
 ---
 
+archive/issue_events_003301.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-24T00:39:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1250",
+    "milestone": "sage-2.8.14",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1250#event-3301"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007806.json:
 ```json
 {
@@ -64,7 +81,7 @@ Merged in 2.8.14.rc0.
 
 ---
 
-archive/issue_events_001392.json:
+archive/issue_events_003302.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +89,7 @@ archive/issue_events_001392.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1250",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1250#event-1392"
+    "url": "https://github.com/sagemath/sagetest/issues/1250#event-3302"
 }
 ```
 

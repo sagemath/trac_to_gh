@@ -60,7 +60,7 @@ I think with the transition to Sphinx-based documentation (3.4) this has been fi
 
 ---
 
-archive/issue_events_003893.json:
+archive/issue_events_008409.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -68,7 +68,7 @@ archive/issue_events_003893.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3672",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3672#event-3893"
+    "url": "https://github.com/sagemath/sagetest/issues/3672#event-8409"
 }
 ```
 
@@ -107,3 +107,20 @@ archive/issue_comments_025909.json:
 ```
 
 In fact, I checked in the current Developer's Guide, and it's *definitely* fixed.
+
+
+
+---
+
+archive/issue_events_008410.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T07:51:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3672",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3672#event-8410"
+}
+```

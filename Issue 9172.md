@@ -282,6 +282,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_022561.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jpflori",
+    "created_at": "2013-02-08T12:44:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9172",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9172#event-22561"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085657.json:
 ```json
 {
@@ -319,7 +336,7 @@ I really doubt Cygwin on XP would have a different behavior for this one, so let
 
 ---
 
-archive/issue_events_009329.json:
+archive/issue_events_022562.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -327,7 +344,7 @@ archive/issue_events_009329.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9172#event-9329"
+    "url": "https://github.com/sagemath/sagetest/issues/9172#event-22562"
 }
 ```
 

@@ -355,6 +355,23 @@ Additional patch does this, and fixes the problem -- minor review only required,
 
 ---
 
+archive/issue_events_009657.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-15T15:42:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4274",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4274#event-9657"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031149.json:
 ```json
 {
@@ -421,7 +438,7 @@ Michael
 
 ---
 
-archive/issue_events_004519.json:
+archive/issue_events_009658.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -429,7 +446,7 @@ archive/issue_events_004519.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4274",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4274#event-4519"
+    "url": "https://github.com/sagemath/sagetest/issues/4274#event-9658"
 }
 ```
 

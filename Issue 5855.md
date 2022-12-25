@@ -230,7 +230,7 @@ See #5921 for improved handling of the content in integer poly factorization.  I
 
 ---
 
-archive/issue_events_006111.json:
+archive/issue_events_013779.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -238,7 +238,7 @@ archive/issue_events_006111.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5855#event-6111"
+    "url": "https://github.com/sagemath/sagetest/issues/5855#event-13779"
 }
 ```
 
@@ -281,3 +281,20 @@ archive/issue_comments_046177.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_013780.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T05:51:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5855",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5855#event-13780"
+}
+```

@@ -127,6 +127,23 @@ Attachment [gen.patch](tarball://root/attachments/some-uuid/ticket1595/gen.patch
 
 ---
 
+archive/issue_events_003969.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-04-08T00:57:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1595",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1595#event-3969"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010125.json:
 ```json
 {
@@ -217,7 +234,7 @@ Michael
 
 ---
 
-archive/issue_events_001753.json:
+archive/issue_events_003970.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -225,7 +242,7 @@ archive/issue_events_001753.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1595#event-1753"
+    "url": "https://github.com/sagemath/sagetest/issues/1595#event-3970"
 }
 ```
 

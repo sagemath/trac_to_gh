@@ -40,6 +40,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2952
 
 ---
 
+archive/issue_events_006743.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-21T02:34:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#event-6743"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020310.json:
 ```json
 {
@@ -158,6 +175,74 @@ Michael
 
 ---
 
+archive/issue_events_006744.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#event-6744"
+}
+```
+
+
+
+---
+
+archive/issue_events_006745.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#event-6745"
+}
+```
+
+
+
+---
+
+archive/issue_events_006746.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#event-6746"
+}
+```
+
+
+
+---
+
+archive/issue_events_006747.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#event-6747"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020313.json:
 ```json
 {
@@ -262,6 +347,40 @@ The attached branch implements `LaurentPolynomial_mpair.__invert__()` from scrat
 
 ---
 
+archive/issue_events_006748.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#event-6748"
+}
+```
+
+
+
+---
+
+archive/issue_events_006749.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#event-6749"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020318.json:
 ```json
 {
@@ -318,7 +437,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003158.json:
+archive/issue_events_006750.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -326,6 +445,6 @@ archive/issue_events_003158.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2952#event-3158"
+    "url": "https://github.com/sagemath/sagetest/issues/2952#event-6750"
 }
 ```

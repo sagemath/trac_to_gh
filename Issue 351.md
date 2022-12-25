@@ -233,6 +233,23 @@ Magma if available, or give a "not implemented" error or something.
 
 ---
 
+archive/issue_events_000828.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:22:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/351",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/351#event-828"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001697.json:
 ```json
 {
@@ -307,6 +324,40 @@ That said, a better error message would be good.
 
 ---
 
+archive/issue_events_000829.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T01:54:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/351",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/351#event-829"
+}
+```
+
+
+
+---
+
+archive/issue_events_000830.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T01:54:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/351",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/351#event-830"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001700.json:
 ```json
 {
@@ -344,7 +395,7 @@ sage: E.abelian_group()
 
 ---
 
-archive/issue_events_000374.json:
+archive/issue_events_000831.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -352,7 +403,7 @@ archive/issue_events_000374.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/351#event-374"
+    "url": "https://github.com/sagemath/sagetest/issues/351#event-831"
 }
 ```
 

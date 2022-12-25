@@ -34,6 +34,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1169
 
 ---
 
+archive/issue_events_003136.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-15T02:23:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1169",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1169#event-3136"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007142.json:
 ```json
 {
@@ -76,6 +93,40 @@ Yes it does, but it doesn't have tuning code and I don't have time to work on it
 
 ---
 
+archive/issue_events_003137.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1169",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1169#event-3137"
+}
+```
+
+
+
+---
+
+archive/issue_events_003138.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1169",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1169#event-3138"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007144.json:
 ```json
 {
@@ -89,6 +140,40 @@ archive/issue_comments_007144.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_003139.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jpflori",
+    "created_at": "2013-10-09T09:15:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1169",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1169#event-3139"
+}
+```
+
+
+
+---
+
+archive/issue_events_003140.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jpflori",
+    "created_at": "2013-10-09T09:15:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1169",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1169#event-3140"
+}
+```
 
 
 
@@ -149,7 +234,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_001301.json:
+archive/issue_events_003141.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -157,7 +242,7 @@ archive/issue_events_001301.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1169#event-1301"
+    "url": "https://github.com/sagemath/sagetest/issues/1169#event-3141"
 }
 ```
 

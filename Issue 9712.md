@@ -230,7 +230,7 @@ P.S.: The suggestion to change the "Reported by:" field was just a joke.
 
 ---
 
-archive/issue_events_009844.json:
+archive/issue_events_024291.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -238,7 +238,7 @@ archive/issue_events_009844.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9712#event-9844"
+    "url": "https://github.com/sagemath/sagetest/issues/9712#event-24291"
 }
 ```
 

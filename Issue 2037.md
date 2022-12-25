@@ -90,6 +90,23 @@ Michael
 
 ---
 
+archive/issue_events_004891.json:
+```json
+{
+    "actor": "https://github.com/wdjoyner",
+    "created_at": "2008-02-23T00:01:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2037",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2037#event-4891"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013150.json:
 ```json
 {
@@ -103,6 +120,40 @@ archive/issue_comments_013150.json:
 ```
 
 I compiled 2.10.2.rc0 from source (4h5m) and had exactly the same problem. The bundle is attached. The export command would not work to create a patch (sorry, Micheal).
+
+
+
+---
+
+archive/issue_events_004892.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-23T00:07:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2037",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2037#event-4892"
+}
+```
+
+
+
+---
+
+archive/issue_events_004893.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-23T00:07:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2037",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2037#event-4893"
+}
+```
 
 
 
@@ -226,7 +277,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002193.json:
+archive/issue_events_004894.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -234,6 +285,6 @@ archive/issue_events_002193.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2037#event-2193"
+    "url": "https://github.com/sagemath/sagetest/issues/2037#event-4894"
 }
 ```

@@ -57,7 +57,7 @@ Duplicate of 7716: please delete.
 
 ---
 
-archive/issue_events_007933.json:
+archive/issue_events_018448.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -65,7 +65,7 @@ archive/issue_events_007933.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7717",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7717#event-7933"
+    "url": "https://github.com/sagemath/sagetest/issues/7717#event-18448"
 }
 ```
 
@@ -104,3 +104,20 @@ archive/issue_comments_066169.json:
 ```
 
 Closing this as a duplicate of #7716.
+
+
+
+---
+
+archive/issue_events_018449.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-17T01:47:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7717",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7717#event-18449"
+}
+```

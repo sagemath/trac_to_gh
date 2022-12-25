@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2280
 
 ---
 
+archive/issue_events_005394.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
+    "created_at": "2008-02-23T20:45:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2280",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-5394"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015095.json:
 ```json
 {
@@ -47,7 +64,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002453.json:
+archive/issue_events_005395.json:
 ```json
 {
     "actor": "https://github.com/yqiang",
@@ -55,7 +72,7 @@ archive/issue_events_002453.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2280",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2280#event-2453"
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-5395"
 }
 ```
 
@@ -141,7 +158,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002454.json:
+archive/issue_events_005396.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -149,7 +166,41 @@ archive/issue_events_002454.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2280",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2280#event-2454"
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-5396"
+}
+```
+
+
+
+---
+
+archive/issue_events_005397.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:09:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2280",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-5397"
+}
+```
+
+
+
+---
+
+archive/issue_events_005398.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:09:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2280",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-5398"
 }
 ```
 
@@ -175,7 +226,7 @@ Merged via the patch from #2322 in Sage 2.10.4.alpha0
 
 ---
 
-archive/issue_events_002455.json:
+archive/issue_events_005399.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -183,7 +234,7 @@ archive/issue_events_002455.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2280",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2280#event-2455"
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-5399"
 }
 ```
 

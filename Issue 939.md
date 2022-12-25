@@ -268,7 +268,7 @@ Fix.
 
 ---
 
-archive/issue_events_001059.json:
+archive/issue_events_002586.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -276,7 +276,7 @@ archive/issue_events_001059.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/939",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/939#event-1059"
+    "url": "https://github.com/sagemath/sagetest/issues/939#event-2586"
 }
 ```
 
@@ -297,6 +297,23 @@ archive/issue_comments_005729.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002587.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-21T02:40:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/939",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/939#event-2587"
+}
+```
 
 
 

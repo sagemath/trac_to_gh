@@ -81,7 +81,7 @@ Doesn't seem it can do any harm. Applies and passes on *Linux*. Release manager 
 
 ---
 
-archive/issue_events_007315.json:
+archive/issue_events_016773.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -89,7 +89,7 @@ archive/issue_events_007315.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7093",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7093#event-7315"
+    "url": "https://github.com/sagemath/sagetest/issues/7093#event-16773"
 }
 ```
 

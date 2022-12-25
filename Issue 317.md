@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/317
 
 ---
 
-archive/issue_events_000337.json:
+archive/issue_events_000742.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -44,7 +44,7 @@ archive/issue_events_000337.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/317",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/317#event-337"
+    "url": "https://github.com/sagemath/sagetest/issues/317#event-742"
 }
 ```
 

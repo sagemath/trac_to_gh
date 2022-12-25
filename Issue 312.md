@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/312
 
 ---
 
+archive/issue_events_000730.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:23:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/312",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/312#event-730"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001487.json:
 ```json
 {
@@ -66,7 +83,7 @@ This bug report actually doesn't make any sense, or is the result of confusion a
 
 ---
 
-archive/issue_events_000331.json:
+archive/issue_events_000731.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -74,6 +91,6 @@ archive/issue_events_000331.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/312",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/312#event-331"
+    "url": "https://github.com/sagemath/sagetest/issues/312#event-731"
 }
 ```

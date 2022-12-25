@@ -28,7 +28,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/720
 
 ---
 
-archive/issue_events_000801.json:
+archive/issue_events_001941.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -36,7 +36,7 @@ archive/issue_events_000801.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/720",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/720#event-801"
+    "url": "https://github.com/sagemath/sagetest/issues/720#event-1941"
 }
 ```
 
@@ -75,3 +75,54 @@ archive/issue_comments_004179.json:
 ```
 
 This was fixed a while ago (sometime in January?)
+
+
+
+---
+
+archive/issue_events_001942.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-17T18:14:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/720",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/720#event-1942"
+}
+```
+
+
+
+---
+
+archive/issue_events_001943.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T20:28:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/720",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/720#event-1943"
+}
+```
+
+
+
+---
+
+archive/issue_events_001944.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T20:28:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/720",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/720#event-1944"
+}
+```

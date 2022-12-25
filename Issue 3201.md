@@ -218,7 +218,7 @@ Michael
 
 ---
 
-archive/issue_events_003419.json:
+archive/issue_events_007204.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -226,7 +226,7 @@ archive/issue_events_003419.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3201#event-3419"
+    "url": "https://github.com/sagemath/sagetest/issues/3201#event-7204"
 }
 ```
 
@@ -269,3 +269,20 @@ Merged in Sage 3.3.alpha3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007205.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-28T15:18:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3201",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3201#event-7205"
+}
+```

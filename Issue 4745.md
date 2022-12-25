@@ -170,7 +170,7 @@ Merged trac_4745-combined.patch in Sage 3.2.2.alpha2
 
 ---
 
-archive/issue_events_004987.json:
+archive/issue_events_010842.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -178,7 +178,7 @@ archive/issue_events_004987.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4745#event-4987"
+    "url": "https://github.com/sagemath/sagetest/issues/4745#event-10842"
 }
 ```
 

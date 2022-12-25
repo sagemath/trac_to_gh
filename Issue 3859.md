@@ -73,6 +73,125 @@ See also the related: #3861
 
 ---
 
+archive/issue_events_008822.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8822"
+}
+```
+
+
+
+---
+
+archive/issue_events_008823.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8823"
+}
+```
+
+
+
+---
+
+archive/issue_events_008824.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8824"
+}
+```
+
+
+
+---
+
+archive/issue_events_008825.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8825"
+}
+```
+
+
+
+---
+
+archive/issue_events_008826.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8826"
+}
+```
+
+
+
+---
+
+archive/issue_events_008827.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8827"
+}
+```
+
+
+
+---
+
+archive/issue_events_008828.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8828"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027429.json:
 ```json
 {
@@ -124,6 +243,74 @@ archive/issue_comments_027431.json:
 ```
 
 See also http://ask.sagemath.org/question/25609/how-to-find-the-full-argument-list-of-a-built-in-function/ - amazingly, I have never heard of this!
+
+
+
+---
+
+archive/issue_events_008829.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-02-13T21:05:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8829"
+}
+```
+
+
+
+---
+
+archive/issue_events_008830.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-02-13T21:05:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8830"
+}
+```
+
+
+
+---
+
+archive/issue_events_008831.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-02-23T19:25:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8831"
+}
+```
+
+
+
+---
+
+archive/issue_events_008832.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-02-23T19:25:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8832"
+}
+```
 
 
 
@@ -189,6 +376,40 @@ I guess there is still a problem.
 
 ---
 
+archive/issue_events_008833.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-04-29T12:48:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8833"
+}
+```
+
+
+
+---
+
+archive/issue_events_008834.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-04-29T12:48:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8834"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027435.json:
 ```json
 {
@@ -202,6 +423,40 @@ archive/issue_comments_027435.json:
 ```
 
 Changing status from needs_review to needs_work.
+
+
+
+---
+
+archive/issue_events_008835.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-07-17T12:05:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8835"
+}
+```
+
+
+
+---
+
+archive/issue_events_008836.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-07-17T12:05:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8836"
+}
+```
 
 
 
@@ -263,6 +518,40 @@ This should be better now:
 
 and smoothing is performed in general if the angle is close enough to pi, meaning
 that successive segments are close to being aligned.
+
+
+
+---
+
+archive/issue_events_008837.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-10-19T19:37:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8837"
+}
+```
+
+
+
+---
+
+archive/issue_events_008838.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-10-19T19:37:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8838"
+}
+```
 
 
 
@@ -401,6 +690,40 @@ Maybe this is good enough, for a 7 years old ticket ?
 
 ---
 
+archive/issue_events_008839.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-12-30T09:10:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-6.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8839"
+}
+```
+
+
+
+---
+
+archive/issue_events_008840.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-12-30T09:10:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-7.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8840"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027444.json:
 ```json
 {
@@ -414,6 +737,40 @@ archive/issue_comments_027444.json:
 ```
 
 ***ping*** ?
+
+
+
+---
+
+archive/issue_events_008841.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-01-21T20:21:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-7.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8841"
+}
+```
+
+
+
+---
+
+archive/issue_events_008842.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-01-21T20:21:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3859",
+    "milestone": "sage-7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8842"
+}
+```
 
 
 
@@ -509,7 +866,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004082.json:
+archive/issue_events_008843.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -517,6 +874,6 @@ archive/issue_events_004082.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3859#event-4082"
+    "url": "https://github.com/sagemath/sagetest/issues/3859#event-8843"
 }
 ```

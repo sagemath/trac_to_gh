@@ -83,7 +83,7 @@ I've checked it on a Mac with Safari and Firefox, and also on a linux box with F
 
 ---
 
-archive/issue_events_003281.json:
+archive/issue_events_006940.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -91,7 +91,7 @@ archive/issue_events_003281.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3069#event-3281"
+    "url": "https://github.com/sagemath/sagetest/issues/3069#event-6940"
 }
 ```
 
@@ -161,7 +161,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003282.json:
+archive/issue_events_006941.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -169,7 +169,7 @@ archive/issue_events_003282.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3069#event-3282"
+    "url": "https://github.com/sagemath/sagetest/issues/3069#event-6941"
 }
 ```
 
@@ -253,7 +253,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003283.json:
+archive/issue_events_006942.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -261,7 +261,7 @@ archive/issue_events_003283.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3069#event-3283"
+    "url": "https://github.com/sagemath/sagetest/issues/3069#event-6942"
 }
 ```
 

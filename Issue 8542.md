@@ -158,6 +158,23 @@ I'll post the spkg shortly.
 
 ---
 
+archive/issue_events_020584.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-05-03T13:33:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8542",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8542#event-20584"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077102.json:
 ```json
 {
@@ -397,7 +414,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008723.json:
+archive/issue_events_020585.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -405,7 +422,7 @@ archive/issue_events_008723.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8542#event-8723"
+    "url": "https://github.com/sagemath/sagetest/issues/8542#event-20585"
 }
 ```
 

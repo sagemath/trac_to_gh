@@ -63,6 +63,23 @@ Attachment [sage-3455.patch](tarball://root/attachments/some-uuid/ticket3455/sag
 
 ---
 
+archive/issue_events_007831.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-06-24T07:11:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3455",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3455#event-7831"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024312.json:
 ```json
 {
@@ -99,7 +116,41 @@ Merged in Sage 3.0.4.alpha1
 
 ---
 
-archive/issue_events_003674.json:
+archive/issue_events_007832.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T06:24:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3455",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3455#event-7832"
+}
+```
+
+
+
+---
+
+archive/issue_events_007833.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T06:24:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3455",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3455#event-7833"
+}
+```
+
+
+
+---
+
+archive/issue_events_007834.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -107,7 +158,7 @@ archive/issue_events_003674.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3455",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3455#event-3674"
+    "url": "https://github.com/sagemath/sagetest/issues/3455#event-7834"
 }
 ```
 

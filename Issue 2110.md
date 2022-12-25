@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2110
 
 ---
 
-archive/issue_events_002270.json:
+archive/issue_events_005058.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -44,7 +44,7 @@ archive/issue_events_002270.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2110",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2110#event-2270"
+    "url": "https://github.com/sagemath/sagetest/issues/2110#event-5058"
 }
 ```
 
@@ -111,3 +111,20 @@ sage -cython -a -sage /path/to/non/library/file.pyx
 To do this.  
 
 Also, as of Cython 0.15 , existing .html files will automatically get updated even if the -a flag is not used to ensure they stay in sync.
+
+
+
+---
+
+archive/issue_events_005059.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-04T10:13:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2110",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2110#event-5059"
+}
+```

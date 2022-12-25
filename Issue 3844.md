@@ -264,7 +264,7 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
 ---
 
-archive/issue_events_004067.json:
+archive/issue_events_008797.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -272,7 +272,7 @@ archive/issue_events_004067.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#event-4067"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#event-8797"
 }
 ```
 

@@ -74,6 +74,23 @@ The attached file (based on 3.2.2) adds three functions, the ones mentioned in t
 
 ---
 
+archive/issue_events_011086.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-20T14:07:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#event-11086"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036547.json:
 ```json
 {
@@ -198,7 +215,7 @@ Michael
 
 ---
 
-archive/issue_events_005077.json:
+archive/issue_events_011087.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -206,7 +223,41 @@ archive/issue_events_005077.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4831#event-5077"
+    "url": "https://github.com/sagemath/sagetest/issues/4831#event-11087"
+}
+```
+
+
+
+---
+
+archive/issue_events_011088.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T01:34:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#event-11088"
+}
+```
+
+
+
+---
+
+archive/issue_events_011089.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T01:34:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#event-11089"
 }
 ```
 

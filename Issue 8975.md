@@ -141,7 +141,24 @@ When you want the release manager to close a ticket, you should set it to positi
 
 ---
 
-archive/issue_events_009129.json:
+archive/issue_events_021943.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-05-21T07:51:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8975",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8975#event-21943"
+}
+```
+
+
+
+---
+
+archive/issue_events_021944.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -149,7 +166,7 @@ archive/issue_events_009129.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8975",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8975#event-9129"
+    "url": "https://github.com/sagemath/sagetest/issues/8975#event-21944"
 }
 ```
 

@@ -128,7 +128,7 @@ Good job (especially the extra notes).  Applies fine to 4.5.3.alpha1, builds wit
 
 ---
 
-archive/issue_events_009912.json:
+archive/issue_events_024524.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -136,7 +136,7 @@ archive/issue_events_009912.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9782",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9782#event-9912"
+    "url": "https://github.com/sagemath/sagetest/issues/9782#event-24524"
 }
 ```
 

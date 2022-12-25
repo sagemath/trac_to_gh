@@ -82,6 +82,23 @@ This works perfectly.  Great job!
 
 ---
 
+archive/issue_events_008193.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-07T00:40:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3578",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3578#event-8193"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025218.json:
 ```json
 {
@@ -118,7 +135,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003795.json:
+archive/issue_events_008194.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -126,6 +143,6 @@ archive/issue_events_003795.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3578",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3578#event-3795"
+    "url": "https://github.com/sagemath/sagetest/issues/3578#event-8194"
 }
 ```

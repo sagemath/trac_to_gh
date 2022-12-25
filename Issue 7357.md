@@ -252,6 +252,23 @@ The function added in #11143 is really a class called ``Function_exp_integral_li
 
 ---
 
+archive/issue_events_017410.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-10-10T02:17:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7357",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7357#event-17410"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061547.json:
 ```json
 {
@@ -306,7 +323,7 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_007580.json:
+archive/issue_events_017411.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -314,7 +331,7 @@ archive/issue_events_007580.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7357#event-7580"
+    "url": "https://github.com/sagemath/sagetest/issues/7357#event-17411"
 }
 ```
 

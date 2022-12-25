@@ -255,7 +255,7 @@ Looks good to me.  The TESTS block now looks right, and doctests pass.
 
 ---
 
-archive/issue_events_008691.json:
+archive/issue_events_020436.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -263,7 +263,7 @@ archive/issue_events_008691.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8511#event-8691"
+    "url": "https://github.com/sagemath/sagetest/issues/8511#event-20436"
 }
 ```
 

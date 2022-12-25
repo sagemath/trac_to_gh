@@ -136,6 +136,23 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_017532.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:12:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7410",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7410#event-17532"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062247.json:
 ```json
 {
@@ -154,7 +171,7 @@ Works with sagenb-0.6.
 
 ---
 
-archive/issue_events_007635.json:
+archive/issue_events_017533.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -162,6 +179,6 @@ archive/issue_events_007635.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7410",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7410#event-7635"
+    "url": "https://github.com/sagemath/sagetest/issues/7410#event-17533"
 }
 ```

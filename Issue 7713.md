@@ -28,7 +28,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7713
 
 ---
 
-archive/issue_events_007930.json:
+archive/issue_events_018434.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -36,7 +36,7 @@ archive/issue_events_007930.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7713",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7713#event-7930"
+    "url": "https://github.com/sagemath/sagetest/issues/7713#event-18434"
 }
 ```
 
@@ -75,3 +75,20 @@ archive/issue_comments_066130.json:
 ```
 
 #7249 resolves this.
+
+
+
+---
+
+archive/issue_events_018435.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T16:33:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7713",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7713#event-18435"
+}
+```

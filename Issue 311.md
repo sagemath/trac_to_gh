@@ -180,7 +180,7 @@ I have moved the Python API request to #2630.  #679 provides statistics and bett
 
 ---
 
-archive/issue_events_000330.json:
+archive/issue_events_000729.json:
 ```json
 {
     "actor": "https://github.com/garyfurnish",
@@ -188,7 +188,7 @@ archive/issue_events_000330.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/311#event-330"
+    "url": "https://github.com/sagemath/sagetest/issues/311#event-729"
 }
 ```
 

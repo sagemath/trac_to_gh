@@ -70,6 +70,23 @@ Oops, 2.3.21 is the version that is currently in the repo.
 
 ---
 
+archive/issue_events_004534.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-21T23:26:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1882",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1882#event-4534"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011876.json:
 ```json
 {
@@ -83,6 +100,40 @@ archive/issue_comments_011876.json:
 ```
 
 Unfortunately it looks like the Mac Intel version is broken, so this should not be included.  I am corresponding with Jan Verschelde (the creator of phcpack) to figure out what is going on.
+
+
+
+---
+
+archive/issue_events_004535.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2008-01-22T01:53:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1882",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1882#event-4535"
+}
+```
+
+
+
+---
+
+archive/issue_events_004536.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2008-01-22T01:53:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1882",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1882#event-4536"
+}
+```
 
 
 
@@ -286,6 +337,40 @@ It looks like you may need to sort the results.  Also, printing dictionaries oft
 
 ---
 
+archive/issue_events_004537.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-14T14:22:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1882",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1882#event-4537"
+}
+```
+
+
+
+---
+
+archive/issue_events_004538.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-14T14:22:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1882",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1882#event-4538"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011885.json:
 ```json
 {
@@ -472,7 +557,7 @@ Merged in Sage 2.11.rc0
 
 ---
 
-archive/issue_events_002040.json:
+archive/issue_events_004539.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -480,6 +565,6 @@ archive/issue_events_002040.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1882",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1882#event-2040"
+    "url": "https://github.com/sagemath/sagetest/issues/1882#event-4539"
 }
 ```

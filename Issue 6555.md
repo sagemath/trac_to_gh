@@ -65,7 +65,7 @@ It also appears that there is other work for them to be compatible with Python 2
 
 ---
 
-archive/issue_events_006792.json:
+archive/issue_events_015465.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -73,7 +73,7 @@ archive/issue_events_006792.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6555",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6555#event-6792"
+    "url": "https://github.com/sagemath/sagetest/issues/6555#event-15465"
 }
 ```
 
@@ -94,6 +94,23 @@ archive/issue_comments_053358.json:
 ```
 
 This was fixed by #6676.
+
+
+
+---
+
+archive/issue_events_015466.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-14T08:50:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6555",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6555#event-15466"
+}
+```
 
 
 

@@ -226,6 +226,23 @@ No, I just didn't notice that there was no milestone set. Thanks!
 
 ---
 
+archive/issue_events_024949.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2015-04-23T06:53:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9902",
+    "milestone": "sage-6.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9902#event-24949"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098287.json:
 ```json
 {
@@ -488,7 +505,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_010030.json:
+archive/issue_events_024950.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -496,7 +513,7 @@ archive/issue_events_010030.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9902",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9902#event-10030"
+    "url": "https://github.com/sagemath/sagetest/issues/9902#event-24950"
 }
 ```
 

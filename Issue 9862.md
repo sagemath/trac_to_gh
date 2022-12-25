@@ -463,6 +463,23 @@ In view of #9897, I'm deferring [merging] this to after 4.6.
 
 ---
 
+archive/issue_events_024825.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-09T05:14:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9862",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9862#event-24825"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097228.json:
 ```json
 {
@@ -665,7 +682,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009992.json:
+archive/issue_events_024826.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -673,6 +690,6 @@ archive/issue_events_009992.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9862#event-9992"
+    "url": "https://github.com/sagemath/sagetest/issues/9862#event-24826"
 }
 ```

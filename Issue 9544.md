@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9544
 
 ---
 
+archive/issue_events_023738.json:
+```json
+{
+    "actor": "https://github.com/peterjeremy",
+    "created_at": "2010-07-18T20:47:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#event-23738"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091842.json:
 ```json
 {
@@ -130,6 +147,40 @@ archive/issue_comments_091846.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_023739.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-21T10:25:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#event-23739"
+}
+```
+
+
+
+---
+
+archive/issue_events_023740.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-21T10:25:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#event-23740"
+}
+```
 
 
 
@@ -324,6 +375,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_023741.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-21T19:17:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#event-23741"
+}
+```
+
+
+
+---
+
+archive/issue_events_023742.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-21T19:17:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#event-23742"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091856.json:
 ```json
 {
@@ -368,7 +453,7 @@ Replying to [comment:15 kcrisman]:
 
 ---
 
-archive/issue_events_009693.json:
+archive/issue_events_023743.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -376,7 +461,7 @@ archive/issue_events_009693.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9544#event-9693"
+    "url": "https://github.com/sagemath/sagetest/issues/9544#event-23743"
 }
 ```
 

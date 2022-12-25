@@ -120,7 +120,7 @@ Merged both patches in Sage 2.11.alpha0
 
 ---
 
-archive/issue_events_002766.json:
+archive/issue_events_006033.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,7 +128,7 @@ archive/issue_events_002766.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2581#event-2766"
+    "url": "https://github.com/sagemath/sagetest/issues/2581#event-6033"
 }
 ```
 
@@ -192,7 +192,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002767.json:
+archive/issue_events_006034.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -200,7 +200,7 @@ archive/issue_events_002767.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2581#event-2767"
+    "url": "https://github.com/sagemath/sagetest/issues/2581#event-6034"
 }
 ```
 
@@ -333,7 +333,7 @@ I think this looks good and should be applied.  I think that means part3 should 
 
 ---
 
-archive/issue_events_002768.json:
+archive/issue_events_006035.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -341,7 +341,7 @@ archive/issue_events_002768.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2581#event-2768"
+    "url": "https://github.com/sagemath/sagetest/issues/2581#event-6035"
 }
 ```
 

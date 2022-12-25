@@ -1483,7 +1483,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009377.json:
+archive/issue_events_022706.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1491,7 +1491,7 @@ archive/issue_events_009377.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9221#event-9377"
+    "url": "https://github.com/sagemath/sagetest/issues/9221#event-22706"
 }
 ```
 
@@ -1614,7 +1614,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_009378.json:
+archive/issue_events_022707.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1622,7 +1622,7 @@ archive/issue_events_009378.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9221#event-9378"
+    "url": "https://github.com/sagemath/sagetest/issues/9221#event-22707"
 }
 ```
 
@@ -2184,7 +2184,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009379.json:
+archive/issue_events_022708.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -2192,7 +2192,7 @@ archive/issue_events_009379.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9221#event-9379"
+    "url": "https://github.com/sagemath/sagetest/issues/9221#event-22708"
 }
 ```
 

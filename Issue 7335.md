@@ -130,7 +130,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007557.json:
+archive/issue_events_017357.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -138,7 +138,7 @@ archive/issue_events_007557.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7335",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7335#event-7557"
+    "url": "https://github.com/sagemath/sagetest/issues/7335#event-17357"
 }
 ```
 
@@ -163,3 +163,20 @@ archive/issue_comments_061269.json:
 I couldn't extract this properly (it tried, and looked right, but then had 'x's next to everything and was not a folder).
 
 Anyway, the fix is the same.
+
+
+
+---
+
+archive/issue_events_017358.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-05-06T17:36:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7335",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7335#event-17358"
+}
+```

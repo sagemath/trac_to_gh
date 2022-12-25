@@ -307,7 +307,7 @@ Merged sage-3145-new.patch and sage-3145-new-part2of2.patch in Sage 3.0.4.alpha0
 
 ---
 
-archive/issue_events_003361.json:
+archive/issue_events_007106.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -315,6 +315,23 @@ archive/issue_events_003361.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3145#event-3361"
+    "url": "https://github.com/sagemath/sagetest/issues/3145#event-7106"
+}
+```
+
+
+
+---
+
+archive/issue_events_007107.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T11:09:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3145",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3145#event-7107"
 }
 ```

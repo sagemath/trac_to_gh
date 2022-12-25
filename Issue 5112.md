@@ -173,6 +173,23 @@ yes, it's indeed strictly a rebase. I just wanted to be sure the patch applies c
 
 ---
 
+archive/issue_events_011824.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T03:00:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5112",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5112#event-11824"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038999.json:
 ```json
 {
@@ -253,6 +270,40 @@ def pollard_lambda(base, a, bounds, ord=None, operation='*', hash_function=hash,
 ```
 
 At a bare minimum, there must be doctests that test use of all the inputs to the function.
+
+
+
+---
+
+archive/issue_events_011825.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T05:00:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5112",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5112#event-11825"
+}
+```
+
+
+
+---
+
+archive/issue_events_011826.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T05:00:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5112",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5112#event-11826"
+}
+```
 
 
 
@@ -410,7 +461,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005359.json:
+archive/issue_events_011827.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -418,6 +469,40 @@ archive/issue_events_005359.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5112",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5112#event-5359"
+    "url": "https://github.com/sagemath/sagetest/issues/5112#event-11827"
+}
+```
+
+
+
+---
+
+archive/issue_events_011828.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-15T17:16:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5112",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5112#event-11828"
+}
+```
+
+
+
+---
+
+archive/issue_events_011829.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-15T17:16:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5112",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5112#event-11829"
 }
 ```

@@ -157,6 +157,23 @@ Updated headers
 
 ---
 
+archive/issue_events_023264.json:
+```json
+{
+    "actor": "https://github.com/lftabera",
+    "created_at": "2010-12-29T14:28:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9423",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9423#event-23264"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089735.json:
 ```json
 {
@@ -199,7 +216,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009578.json:
+archive/issue_events_023265.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -207,7 +224,7 @@ archive/issue_events_009578.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9423",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9423#event-9578"
+    "url": "https://github.com/sagemath/sagetest/issues/9423#event-23265"
 }
 ```
 

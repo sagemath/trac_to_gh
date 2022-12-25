@@ -204,7 +204,7 @@ Merged all three patches in Sage 3.0.1.alpha1
 
 ---
 
-archive/issue_events_003269.json:
+archive/issue_events_006928.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -212,7 +212,7 @@ archive/issue_events_003269.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3059#event-3269"
+    "url": "https://github.com/sagemath/sagetest/issues/3059#event-6928"
 }
 ```
 

@@ -867,7 +867,7 @@ Successfully compiles on Solaris/t2. All 148 tests passed. (It even builds OK on
 
 ---
 
-archive/issue_events_006693.json:
+archive/issue_events_015240.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -875,7 +875,7 @@ archive/issue_events_006693.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6453",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6453#event-6693"
+    "url": "https://github.com/sagemath/sagetest/issues/6453#event-15240"
 }
 ```
 

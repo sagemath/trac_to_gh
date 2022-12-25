@@ -52,6 +52,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1148
 
 ---
 
+archive/issue_events_003089.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-15T02:23:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1148",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1148#event-3089"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006985.json:
 ```json
 {
@@ -146,7 +163,7 @@ In other words, looks good to me.
 
 ---
 
-archive/issue_events_001276.json:
+archive/issue_events_003090.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -154,7 +171,7 @@ archive/issue_events_001276.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1148",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1148#event-1276"
+    "url": "https://github.com/sagemath/sagetest/issues/1148#event-3090"
 }
 ```
 

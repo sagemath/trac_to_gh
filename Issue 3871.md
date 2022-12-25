@@ -80,6 +80,23 @@ The attached patches just fix all the cases of saving images to a file that I co
 
 ---
 
+archive/issue_events_008884.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-24T08:33:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3871",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3871#event-8884"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027534.json:
 ```json
 {
@@ -142,7 +159,7 @@ Michael
 
 ---
 
-archive/issue_events_004092.json:
+archive/issue_events_008885.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -150,7 +167,7 @@ archive/issue_events_004092.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3871",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3871#event-4092"
+    "url": "https://github.com/sagemath/sagetest/issues/3871#event-8885"
 }
 ```
 

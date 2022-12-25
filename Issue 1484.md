@@ -114,7 +114,7 @@ I'm closing this as a duplicate of !#378.
 
 ---
 
-archive/issue_events_001636.json:
+archive/issue_events_003787.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -122,6 +122,23 @@ archive/issue_events_001636.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1484",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1484#event-1636"
+    "url": "https://github.com/sagemath/sagetest/issues/1484#event-3787"
+}
+```
+
+
+
+---
+
+archive/issue_events_003788.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-16T04:34:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1484",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1484#event-3788"
 }
 ```

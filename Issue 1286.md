@@ -93,6 +93,23 @@ for all SAGE objects that are converted to floating-point.
 
 ---
 
+archive/issue_events_003381.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-02T02:38:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1286",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1286#event-3381"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008056.json:
 ```json
 {
@@ -111,7 +128,7 @@ This works for me in sage-2.8.15alpha1.
 
 ---
 
-archive/issue_events_001429.json:
+archive/issue_events_003382.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -119,7 +136,7 @@ archive/issue_events_001429.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1286",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1286#event-1429"
+    "url": "https://github.com/sagemath/sagetest/issues/1286#event-3382"
 }
 ```
 

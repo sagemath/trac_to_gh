@@ -107,7 +107,7 @@ Thanks.  Please see also #10001.
 
 ---
 
-archive/issue_events_010100.json:
+archive/issue_events_025191.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -115,7 +115,7 @@ archive/issue_events_010100.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9972#event-10100"
+    "url": "https://github.com/sagemath/sagetest/issues/9972#event-25191"
 }
 ```
 

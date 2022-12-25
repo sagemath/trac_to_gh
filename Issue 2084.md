@@ -48,6 +48,23 @@ Changing component from algebraic geometry to number theory.
 
 ---
 
+archive/issue_events_004993.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-07T18:11:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2084",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2084#event-4993"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013457.json:
 ```json
 {
@@ -212,7 +229,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002245.json:
+archive/issue_events_004994.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -220,7 +237,7 @@ archive/issue_events_002245.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2084#event-2245"
+    "url": "https://github.com/sagemath/sagetest/issues/2084#event-4994"
 }
 ```
 

@@ -82,7 +82,7 @@ Successfully implemented by #3786, which goes further (arbitrary length, not jus
 
 ---
 
-archive/issue_events_003660.json:
+archive/issue_events_007793.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -90,6 +90,6 @@ archive/issue_events_003660.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3441",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3441#event-3660"
+    "url": "https://github.com/sagemath/sagetest/issues/3441#event-7793"
 }
 ```

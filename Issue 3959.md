@@ -171,6 +171,23 @@ About the terminology (group algebra vs group ring), I have no serious objection
 
 ---
 
+archive/issue_events_009087.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-09-01T01:48:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3959",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3959#event-9087"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028381.json:
 ```json
 {
@@ -235,7 +252,7 @@ Michael
 
 ---
 
-archive/issue_events_004187.json:
+archive/issue_events_009088.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -243,6 +260,6 @@ archive/issue_events_004187.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3959",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3959#event-4187"
+    "url": "https://github.com/sagemath/sagetest/issues/3959#event-9088"
 }
 ```

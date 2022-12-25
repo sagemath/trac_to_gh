@@ -34,6 +34,159 @@ Issue created by migration from https://trac.sagemath.org/ticket/1526
 
 ---
 
+archive/issue_events_003848.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3848"
+}
+```
+
+
+
+---
+
+archive/issue_events_003849.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3849"
+}
+```
+
+
+
+---
+
+archive/issue_events_003850.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3850"
+}
+```
+
+
+
+---
+
+archive/issue_events_003851.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3851"
+}
+```
+
+
+
+---
+
+archive/issue_events_003852.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3852"
+}
+```
+
+
+
+---
+
+archive/issue_events_003853.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3853"
+}
+```
+
+
+
+---
+
+archive/issue_events_003854.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3854"
+}
+```
+
+
+
+---
+
+archive/issue_events_003855.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-01-15T18:01:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3855"
+}
+```
+
+
+
+---
+
+archive/issue_events_003856.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-01-15T18:01:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3856"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009738.json:
 ```json
 {
@@ -73,6 +226,40 @@ I think that about speaks for itself.  Repeated experiments showed similar resul
 
 ---
 
+archive/issue_events_003857.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-03-25T10:56:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3857"
+}
+```
+
+
+
+---
+
+archive/issue_events_003858.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-03-25T10:56:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3858"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009739.json:
 ```json
 {
@@ -104,3 +291,20 @@ archive/issue_comments_009740.json:
 ```
 
 As the Sage-8.8 release milestone is pending, we should delete the sage-8.8 milestone for tickets that are not actively being worked on or that still require significant work to move forward.  If you feel that this ticket should be included in the next Sage release at the soonest please set its milestone to the next release milestone (sage-8.9).
+
+
+
+---
+
+archive/issue_events_003859.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-06-14T14:54:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1526",
+    "milestone": "sage-8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1526#event-3859"
+}
+```

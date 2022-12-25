@@ -68,7 +68,7 @@ This is a dupe of #1628.
 
 ---
 
-archive/issue_events_001216.json:
+archive/issue_events_002940.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -76,7 +76,7 @@ archive/issue_events_001216.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1090",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1090#event-1216"
+    "url": "https://github.com/sagemath/sagetest/issues/1090#event-2940"
 }
 ```
 

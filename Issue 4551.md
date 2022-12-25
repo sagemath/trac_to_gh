@@ -242,7 +242,7 @@ Remarks:
 
 ---
 
-archive/issue_events_004796.json:
+archive/issue_events_010367.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -250,7 +250,7 @@ archive/issue_events_004796.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4551",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4551#event-4796"
+    "url": "https://github.com/sagemath/sagetest/issues/4551#event-10367"
 }
 ```
 

@@ -145,7 +145,7 @@ I re-uploaded the patch with the typo fixed.
 
 ---
 
-archive/issue_events_003919.json:
+archive/issue_events_008471.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -153,7 +153,7 @@ archive/issue_events_003919.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3697",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3697#event-3919"
+    "url": "https://github.com/sagemath/sagetest/issues/3697#event-8471"
 }
 ```
 
@@ -192,3 +192,20 @@ archive/issue_comments_026182.json:
 ```
 
 Merged is_primitive.2.patch in Sage 3.1.alpha0
+
+
+
+---
+
+archive/issue_events_008472.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-31T17:56:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3697",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3697#event-8472"
+}
+```

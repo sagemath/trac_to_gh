@@ -259,6 +259,23 @@ There was one left, in `schemes/plane_curves/constructor.py`.  The fix is trivia
 
 ---
 
+archive/issue_events_013516.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-04-23T13:10:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5765",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5765#event-13516"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044985.json:
 ```json
 {
@@ -615,7 +632,7 @@ The patches (here and at #5919) can be merged in either order.
 
 ---
 
-archive/issue_events_006012.json:
+archive/issue_events_013517.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -623,7 +640,7 @@ archive/issue_events_006012.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5765#event-6012"
+    "url": "https://github.com/sagemath/sagetest/issues/5765#event-13517"
 }
 ```
 

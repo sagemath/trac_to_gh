@@ -86,6 +86,23 @@ Sorry, my previous comment is wrong. The sizeinbase() function only returns an e
 
 ---
 
+archive/issue_events_002782.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-01-27T07:48:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1014",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1014#event-2782"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006203.json:
 ```json
 {
@@ -329,7 +346,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001138.json:
+archive/issue_events_002783.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -337,7 +354,7 @@ archive/issue_events_001138.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1014#event-1138"
+    "url": "https://github.com/sagemath/sagetest/issues/1014#event-2783"
 }
 ```
 

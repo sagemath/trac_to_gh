@@ -97,6 +97,23 @@ Attachment [trac_6297.patch](tarball://root/attachments/some-uuid/ticket6297/tra
 
 ---
 
+archive/issue_events_014725.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-15T11:42:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6297",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6297#event-14725"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050152.json:
 ```json
 {
@@ -115,7 +132,7 @@ Fine by me.
 
 ---
 
-archive/issue_events_006539.json:
+archive/issue_events_014726.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -123,7 +140,41 @@ archive/issue_events_006539.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6297",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6297#event-6539"
+    "url": "https://github.com/sagemath/sagetest/issues/6297#event-14726"
+}
+```
+
+
+
+---
+
+archive/issue_events_014727.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2009-06-18T00:07:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6297",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6297#event-14727"
+}
+```
+
+
+
+---
+
+archive/issue_events_014728.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2009-06-18T00:07:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6297",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6297#event-14728"
 }
 ```
 

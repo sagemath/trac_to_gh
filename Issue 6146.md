@@ -167,7 +167,7 @@ This isn't a patch etc. so it cannot be reviewed yet. I'll change the status to 
 
 ---
 
-archive/issue_events_006395.json:
+archive/issue_events_014463.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -175,7 +175,7 @@ archive/issue_events_006395.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6146",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6146#event-6395"
+    "url": "https://github.com/sagemath/sagetest/issues/6146#event-14463"
 }
 ```
 
@@ -196,6 +196,23 @@ archive/issue_comments_048970.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_014464.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-08-18T21:37:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6146",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6146#event-14464"
+}
+```
 
 
 

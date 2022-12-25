@@ -222,6 +222,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_024026.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-01T10:22:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9635",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9635#event-24026"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093246.json:
 ```json
 {
@@ -289,6 +306,40 @@ archive/issue_comments_093249.json:
 ```
 
 New commits:
+
+
+
+---
+
+archive/issue_events_024027.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-02T08:46:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9635",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9635#event-24027"
+}
+```
+
+
+
+---
+
+archive/issue_events_024028.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-02T08:46:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9635",
+    "milestone": "sage-6.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9635#event-24028"
+}
+```
 
 
 
@@ -388,7 +439,7 @@ That isn't possible with the current Maxima setup (at least not in a useful way,
 
 ---
 
-archive/issue_events_009774.json:
+archive/issue_events_024029.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -396,7 +447,7 @@ archive/issue_events_009774.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9635",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9635#event-9774"
+    "url": "https://github.com/sagemath/sagetest/issues/9635#event-24029"
 }
 ```
 

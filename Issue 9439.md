@@ -126,6 +126,23 @@ Near the real line, the hyperbolic distance becomes become HUGE compared to the 
 
 ---
 
+archive/issue_events_023331.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/johanbosman",
+    "created_at": "2011-12-10T13:34:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23331"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090221.json:
 ```json
 {
@@ -961,6 +978,40 @@ Hi, just to give an update, I've completely revamped the class and module struct
 
 ---
 
+archive/issue_events_023332.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23332"
+}
+```
+
+
+
+---
+
+archive/issue_events_023333.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23333"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090253.json:
 ```json
 {
@@ -1198,6 +1249,40 @@ New commits:
 
 ---
 
+archive/issue_events_023334.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23334"
+}
+```
+
+
+
+---
+
+archive/issue_events_023335.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23335"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090265.json:
 ```json
 {
@@ -1247,6 +1332,40 @@ archive/issue_comments_090267.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_023336.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23336"
+}
+```
+
+
+
+---
+
+archive/issue_events_023337.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23337"
+}
+```
 
 
 
@@ -1456,6 +1575,40 @@ archive/issue_comments_090275.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_023338.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23338"
+}
+```
+
+
+
+---
+
+archive/issue_events_023339.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23339"
+}
+```
 
 
 
@@ -1940,7 +2093,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009596.json:
+archive/issue_events_023340.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1948,7 +2101,7 @@ archive/issue_events_009596.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9439#event-9596"
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-23340"
 }
 ```
 

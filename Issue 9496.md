@@ -270,6 +270,23 @@ Looks so much better, thanks!
 
 ---
 
+archive/issue_events_023576.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/rlindner",
+    "created_at": "2010-07-16T10:44:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9496",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9496#event-23576"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091032.json:
 ```json
 {
@@ -306,7 +323,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009644.json:
+archive/issue_events_023577.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -314,7 +331,7 @@ archive/issue_events_009644.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9496#event-9644"
+    "url": "https://github.com/sagemath/sagetest/issues/9496#event-23577"
 }
 ```
 

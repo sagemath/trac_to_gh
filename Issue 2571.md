@@ -176,6 +176,23 @@ As suggested, a few doctests have been added, in the second patch.
 
 ---
 
+archive/issue_events_006014.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T20:19:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2571",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2571#event-6014"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017535.json:
 ```json
 {
@@ -196,7 +213,7 @@ This is a positive review to both patches!
 
 ---
 
-archive/issue_events_002754.json:
+archive/issue_events_006015.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -204,7 +221,7 @@ archive/issue_events_002754.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#event-2754"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#event-6015"
 }
 ```
 

@@ -81,6 +81,23 @@ Attachment [ntl_renaming.patch](tarball://root/attachments/some-uuid/ticket412/n
 
 ---
 
+archive/issue_events_000995.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-29T20:24:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/412",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/412#event-995"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002026.json:
 ```json
 {
@@ -144,7 +161,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000438.json:
+archive/issue_events_000996.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -152,6 +169,6 @@ archive/issue_events_000438.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/412",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/412#event-438"
+    "url": "https://github.com/sagemath/sagetest/issues/412#event-996"
 }
 ```

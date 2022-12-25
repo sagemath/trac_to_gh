@@ -91,7 +91,7 @@ Chris.
 
 ---
 
-archive/issue_events_007001.json:
+archive/issue_events_015956.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -99,7 +99,7 @@ archive/issue_events_007001.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6770",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6770#event-7001"
+    "url": "https://github.com/sagemath/sagetest/issues/6770#event-15956"
 }
 ```
 

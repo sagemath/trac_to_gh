@@ -91,6 +91,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/9127
 
 ---
 
+archive/issue_events_022418.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T15:26:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9127",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9127#event-22418"
+}
+```
+
+
+
+---
+
+archive/issue_events_022419.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T16:03:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9127",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9127#event-22419"
+}
+```
+
+
+
+---
+
+archive/issue_events_022420.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T16:03:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9127",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9127#event-22420"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084776.json:
 ```json
 {
@@ -381,7 +432,7 @@ I am happy.  (I thought I had reviewed the new patch, but maybe I was dreaming!)
 
 ---
 
-archive/issue_events_009285.json:
+archive/issue_events_022421.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -389,7 +440,7 @@ archive/issue_events_009285.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9127#event-9285"
+    "url": "https://github.com/sagemath/sagetest/issues/9127#event-22421"
 }
 ```
 

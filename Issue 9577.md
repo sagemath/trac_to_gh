@@ -86,6 +86,91 @@ Changing status from new to needs_work.
 
 ---
 
+archive/issue_events_023836.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23836"
+}
+```
+
+
+
+---
+
+archive/issue_events_023837.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23837"
+}
+```
+
+
+
+---
+
+archive/issue_events_023838.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23838"
+}
+```
+
+
+
+---
+
+archive/issue_events_023839.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23839"
+}
+```
+
+
+
+---
+
+archive/issue_events_023840.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23840"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092333.json:
 ```json
 {
@@ -171,6 +256,40 @@ archive/issue_comments_092337.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_023841.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23841"
+}
+```
+
+
+
+---
+
+archive/issue_events_023842.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23842"
+}
+```
 
 
 
@@ -568,6 +687,74 @@ appeared correctly, but from a little browsing I think most of those declaration
 
 ---
 
+archive/issue_events_023843.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-07-12T06:35:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23843"
+}
+```
+
+
+
+---
+
+archive/issue_events_023844.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-07-12T06:35:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23844"
+}
+```
+
+
+
+---
+
+archive/issue_events_023845.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-11-06T13:04:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23845"
+}
+```
+
+
+
+---
+
+archive/issue_events_023846.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-11-06T13:04:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23846"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092357.json:
 ```json
 {
@@ -586,6 +773,40 @@ Maybe we can use use here what has worked for japanese in #19188 ?
 
 ---
 
+archive/issue_events_023847.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-12-30T18:14:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-6.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23847"
+}
+```
+
+
+
+---
+
+archive/issue_events_023848.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-12-30T18:14:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-7.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23848"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092358.json:
 ```json
 {
@@ -599,6 +820,40 @@ archive/issue_comments_092358.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_023849.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-06-08T19:58:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-7.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23849"
+}
+```
+
+
+
+---
+
+archive/issue_events_023850.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-06-08T19:58:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9577",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9577#event-23850"
+}
+```
 
 
 

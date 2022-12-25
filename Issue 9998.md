@@ -191,6 +191,23 @@ should be closed as outdated
 
 ---
 
+archive/issue_events_025361.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-04-01T14:08:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9998",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9998#event-25361"
+}
+```
+
+
+
+---
+
 archive/issue_comments_100290.json:
 ```json
 {
@@ -227,7 +244,7 @@ agreed
 
 ---
 
-archive/issue_events_010122.json:
+archive/issue_events_025362.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -235,6 +252,6 @@ archive/issue_events_010122.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9998",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9998#event-10122"
+    "url": "https://github.com/sagemath/sagetest/issues/9998#event-25362"
 }
 ```

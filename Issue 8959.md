@@ -283,7 +283,7 @@ It would be nice if there was an easy way to pack things in various ways.  It al
 
 ---
 
-archive/issue_events_009111.json:
+archive/issue_events_021877.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -291,7 +291,7 @@ archive/issue_events_009111.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8959#event-9111"
+    "url": "https://github.com/sagemath/sagetest/issues/8959#event-21877"
 }
 ```
 

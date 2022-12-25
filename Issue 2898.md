@@ -591,6 +591,23 @@ I've placed a proposed patch for the above doctest failure at #5199.  So I'm now
 
 ---
 
+archive/issue_events_006630.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-08T02:28:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2898",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2898#event-6630"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019924.json:
 ```json
 {
@@ -651,7 +668,7 @@ Michael
 
 ---
 
-archive/issue_events_003096.json:
+archive/issue_events_006631.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -659,7 +676,7 @@ archive/issue_events_003096.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2898#event-3096"
+    "url": "https://github.com/sagemath/sagetest/issues/2898#event-6631"
 }
 ```
 

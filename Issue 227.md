@@ -88,6 +88,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/227
 
 ---
 
+archive/issue_events_000466.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:24:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/227",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/227#event-466"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001006.json:
 ```json
 {
@@ -119,6 +136,74 @@ archive/issue_comments_001007.json:
 ```
 
 Changing component from algebraic geometry to packages.
+
+
+
+---
+
+archive/issue_events_000467.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T02:02:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/227",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/227#event-467"
+}
+```
+
+
+
+---
+
+archive/issue_events_000468.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T02:02:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/227",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/227#event-468"
+}
+```
+
+
+
+---
+
+archive/issue_events_000469.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T02:03:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/227",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/227#event-469"
+}
+```
+
+
+
+---
+
+archive/issue_events_000470.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T02:03:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/227",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/227#event-470"
+}
+```
 
 
 
@@ -191,7 +276,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000240.json:
+archive/issue_events_000471.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -199,6 +284,6 @@ archive/issue_events_000240.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/227",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/227#event-240"
+    "url": "https://github.com/sagemath/sagetest/issues/227#event-471"
 }
 ```

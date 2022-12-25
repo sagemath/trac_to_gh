@@ -67,7 +67,7 @@ done for sage-2.8.3.
 
 ---
 
-archive/issue_events_000549.json:
+archive/issue_events_001308.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -75,7 +75,7 @@ archive/issue_events_000549.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/512#event-549"
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1308"
 }
 ```
 
@@ -101,7 +101,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000550.json:
+archive/issue_events_001309.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -109,7 +109,7 @@ archive/issue_events_000550.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/512#event-550"
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1309"
 }
 ```
 
@@ -175,6 +175,91 @@ I've put my version of gap-4.4.9.p1.spkg here:
 
 ---
 
+archive/issue_events_001310.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T18:39:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1310"
+}
+```
+
+
+
+---
+
+archive/issue_events_001311.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T23:31:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1311"
+}
+```
+
+
+
+---
+
+archive/issue_events_001312.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T23:31:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1312"
+}
+```
+
+
+
+---
+
+archive/issue_events_001313.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:31:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1313"
+}
+```
+
+
+
+---
+
+archive/issue_events_001314.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:31:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1314"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002583.json:
 ```json
 {
@@ -188,6 +273,40 @@ archive/issue_comments_002583.json:
 ```
 
 Changing component from coding theory to packages.
+
+
+
+---
+
+archive/issue_events_001315.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T03:29:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1315"
+}
+```
+
+
+
+---
+
+archive/issue_events_001316.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T03:29:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1316"
+}
+```
 
 
 
@@ -246,6 +365,74 @@ might change, in case I misssed something) but couldn't.
 
 ---
 
+archive/issue_events_001317.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T04:25:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1317"
+}
+```
+
+
+
+---
+
+archive/issue_events_001318.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T04:25:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1318"
+}
+```
+
+
+
+---
+
+archive/issue_events_001319.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:17:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1319"
+}
+```
+
+
+
+---
+
+archive/issue_events_001320.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:17:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1320"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002585.json:
 ```json
 {
@@ -282,7 +469,7 @@ I've upgraded everything to gap-4.4.10, and fixed the insanely bloated 4.4.10 sp
 
 ---
 
-archive/issue_events_000551.json:
+archive/issue_events_001321.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -290,6 +477,6 @@ archive/issue_events_000551.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/512#event-551"
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-1321"
 }
 ```

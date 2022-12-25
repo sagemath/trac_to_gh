@@ -120,7 +120,7 @@ Fixed by #1492.
 
 ---
 
-archive/issue_events_001338.json:
+archive/issue_events_003203.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,6 +128,6 @@ archive/issue_events_001338.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1202",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1202#event-1338"
+    "url": "https://github.com/sagemath/sagetest/issues/1202#event-3203"
 }
 ```

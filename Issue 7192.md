@@ -341,6 +341,91 @@ What is the status of this ticket? Is it ready for review?
 
 ---
 
+archive/issue_events_017030.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17030"
+}
+```
+
+
+
+---
+
+archive/issue_events_017031.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17031"
+}
+```
+
+
+
+---
+
+archive/issue_events_017032.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17032"
+}
+```
+
+
+
+---
+
+archive/issue_events_017033.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17033"
+}
+```
+
+
+
+---
+
+archive/issue_events_017034.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17034"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059481.json:
 ```json
 {
@@ -570,6 +655,40 @@ And note that we already have en, de and fr versions of the same files.
 
 ---
 
+archive/issue_events_017035.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17035"
+}
+```
+
+
+
+---
+
+archive/issue_events_017036.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17036"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059493.json:
 ```json
 {
@@ -686,6 +805,40 @@ how to proceed? may i change needs_info -> needs_work and commit the changes? th
 
 ---
 
+archive/issue_events_017037.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2017-04-01T13:56:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17037"
+}
+```
+
+
+
+---
+
+archive/issue_events_017038.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2017-04-01T13:56:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17038"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059499.json:
 ```json
 {
@@ -739,6 +892,40 @@ archive/issue_comments_059501.json:
 Some Spanish reader should correct any remaining typos.
 ----
 New commits:
+
+
+
+---
+
+archive/issue_events_017039.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-08-26T14:22:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17039"
+}
+```
+
+
+
+---
+
+archive/issue_events_017040.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-08-26T14:22:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7192",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17040"
+}
+```
 
 
 
@@ -1054,7 +1241,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007411.json:
+archive/issue_events_017041.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1062,6 +1249,6 @@ archive/issue_events_007411.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7192#event-7411"
+    "url": "https://github.com/sagemath/sagetest/issues/7192#event-17041"
 }
 ```

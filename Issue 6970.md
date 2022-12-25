@@ -96,7 +96,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007193.json:
+archive/issue_events_016377.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -104,6 +104,23 @@ archive/issue_events_007193.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6970",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6970#event-7193"
+    "url": "https://github.com/sagemath/sagetest/issues/6970#event-16377"
+}
+```
+
+
+
+---
+
+archive/issue_events_016378.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-22T16:58:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6970",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6970#event-16378"
 }
 ```

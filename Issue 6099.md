@@ -393,7 +393,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006350.json:
+archive/issue_events_014331.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -401,7 +401,7 @@ archive/issue_events_006350.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6099#event-6350"
+    "url": "https://github.com/sagemath/sagetest/issues/6099#event-14331"
 }
 ```
 
@@ -463,7 +463,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_006351.json:
+archive/issue_events_014332.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -471,7 +471,7 @@ archive/issue_events_006351.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6099#event-6351"
+    "url": "https://github.com/sagemath/sagetest/issues/6099#event-14332"
 }
 ```
 
@@ -715,7 +715,7 @@ rebased version of patch. apply only this file.
 
 ---
 
-archive/issue_events_006352.json:
+archive/issue_events_014333.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -723,7 +723,7 @@ archive/issue_events_006352.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6099#event-6352"
+    "url": "https://github.com/sagemath/sagetest/issues/6099#event-14333"
 }
 ```
 

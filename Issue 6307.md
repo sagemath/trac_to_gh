@@ -122,6 +122,57 @@ doctest failure in psage.py
 
 ---
 
+archive/issue_events_014744.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-09T18:36:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6307",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6307#event-14744"
+}
+```
+
+
+
+---
+
+archive/issue_events_014745.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-09T18:53:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6307",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6307#event-14745"
+}
+```
+
+
+
+---
+
+archive/issue_events_014746.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-09T18:53:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6307",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6307#event-14746"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050239.json:
 ```json
 {
@@ -194,7 +245,7 @@ Once this ticket is closed, ticket #5564 should also be closed as a consequence 
 
 ---
 
-archive/issue_events_006553.json:
+archive/issue_events_014747.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -202,7 +253,7 @@ archive/issue_events_006553.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6307#event-6553"
+    "url": "https://github.com/sagemath/sagetest/issues/6307#event-14747"
 }
 ```
 
@@ -273,7 +324,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006554.json:
+archive/issue_events_014748.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -281,7 +332,7 @@ archive/issue_events_006554.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6307#event-6554"
+    "url": "https://github.com/sagemath/sagetest/issues/6307#event-14748"
 }
 ```
 
@@ -430,7 +481,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006555.json:
+archive/issue_events_014749.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -438,6 +489,6 @@ archive/issue_events_006555.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6307#event-6555"
+    "url": "https://github.com/sagemath/sagetest/issues/6307#event-14749"
 }
 ```

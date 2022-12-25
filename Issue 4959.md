@@ -232,7 +232,7 @@ With the Fortran issues in #7485 cleared up, #6532 seems to now work to fix this
 
 ---
 
-archive/issue_events_005200.json:
+archive/issue_events_011465.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -240,7 +240,7 @@ archive/issue_events_005200.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4959#event-5200"
+    "url": "https://github.com/sagemath/sagetest/issues/4959#event-11465"
 }
 ```
 

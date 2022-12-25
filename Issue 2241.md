@@ -72,7 +72,7 @@ JV
 
 ---
 
-archive/issue_events_002411.json:
+archive/issue_events_005326.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -80,7 +80,24 @@ archive/issue_events_002411.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2241",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2241#event-2411"
+    "url": "https://github.com/sagemath/sagetest/issues/2241#event-5326"
+}
+```
+
+
+
+---
+
+archive/issue_events_005327.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-15T04:43:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2241",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2241#event-5327"
 }
 ```
 

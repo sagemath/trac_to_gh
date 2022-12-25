@@ -112,7 +112,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003110.json:
+archive/issue_events_006659.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -120,7 +120,7 @@ archive/issue_events_003110.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2908",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2908#event-3110"
+    "url": "https://github.com/sagemath/sagetest/issues/2908#event-6659"
 }
 ```
 

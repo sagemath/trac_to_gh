@@ -130,6 +130,23 @@ Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9
 
 ---
 
+archive/issue_events_024468.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-05-10T12:20:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9762",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9762#event-24468"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095489.json:
 ```json
 {

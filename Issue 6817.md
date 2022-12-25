@@ -92,7 +92,7 @@ I tested this as before (with #6502). It applies fine to 4.1.1.rc2 in an intel m
 
 ---
 
-archive/issue_events_007051.json:
+archive/issue_events_016063.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -100,7 +100,7 @@ archive/issue_events_007051.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6817",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6817#event-7051"
+    "url": "https://github.com/sagemath/sagetest/issues/6817#event-16063"
 }
 ```
 

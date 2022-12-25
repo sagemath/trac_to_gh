@@ -344,6 +344,23 @@ ATLAS supports CC since atlas-3.8.3.p18.
 
 ---
 
+archive/issue_events_006824.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2012-02-27T14:07:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#event-6824"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020588.json:
 ```json
 {
@@ -454,7 +471,7 @@ That was #6437 as mentioned above.
 
 ---
 
-archive/issue_events_003204.json:
+archive/issue_events_006825.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -462,7 +479,7 @@ archive/issue_events_003204.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2999",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2999#event-3204"
+    "url": "https://github.com/sagemath/sagetest/issues/2999#event-6825"
 }
 ```
 

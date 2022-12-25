@@ -291,7 +291,7 @@ Fixes the error, and makes the same change throughout.  Positive review.
 
 ---
 
-archive/issue_events_008173.json:
+archive/issue_events_019044.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -299,7 +299,7 @@ archive/issue_events_008173.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7957",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7957#event-8173"
+    "url": "https://github.com/sagemath/sagetest/issues/7957#event-19044"
 }
 ```
 

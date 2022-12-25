@@ -172,7 +172,7 @@ rebased version.
 
 ---
 
-archive/issue_events_004840.json:
+archive/issue_events_010442.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -180,7 +180,7 @@ archive/issue_events_004840.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4591#event-4840"
+    "url": "https://github.com/sagemath/sagetest/issues/4591#event-10442"
 }
 ```
 

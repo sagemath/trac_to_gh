@@ -66,6 +66,23 @@ I believe this patch is ready for review ...
 
 ---
 
+archive/issue_events_022354.json:
+```json
+{
+    "actor": "https://github.com/categorie",
+    "created_at": "2010-06-15T11:18:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9110",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9110#event-22354"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084606.json:
 ```json
 {
@@ -138,7 +155,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009269.json:
+archive/issue_events_022355.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -146,6 +163,6 @@ archive/issue_events_009269.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9110",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9110#event-9269"
+    "url": "https://github.com/sagemath/sagetest/issues/9110#event-22355"
 }
 ```

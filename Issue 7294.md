@@ -118,7 +118,7 @@ Attachment [trac_7294-fix.patch](tarball://root/attachments/some-uuid/ticket7294
 
 ---
 
-archive/issue_events_007516.json:
+archive/issue_events_017255.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -126,7 +126,7 @@ archive/issue_events_007516.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7294#event-7516"
+    "url": "https://github.com/sagemath/sagetest/issues/7294#event-17255"
 }
 ```
 
@@ -147,6 +147,23 @@ archive/issue_comments_060619.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_017256.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-15T17:52:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7294",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7294#event-17256"
+}
+```
 
 
 

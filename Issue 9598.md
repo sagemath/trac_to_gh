@@ -58,6 +58,23 @@ Changing assignee from tbd to @NathanDunfield.
 
 ---
 
+archive/issue_events_023900.json:
+```json
+{
+    "actor": "https://github.com/NathanDunfield",
+    "created_at": "2010-07-26T00:26:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#event-23900"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092705.json:
 ```json
 {
@@ -614,7 +631,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009742.json:
+archive/issue_events_023901.json:
 ```json
 {
     "actor": "https://github.com/NathanDunfield",
@@ -622,6 +639,6 @@ archive/issue_events_009742.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9598#event-9742"
+    "url": "https://github.com/sagemath/sagetest/issues/9598#event-23901"
 }
 ```

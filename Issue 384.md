@@ -40,6 +40,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/384
 
 ---
 
+archive/issue_events_000893.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-07T13:19:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/384",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/384#event-893"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001867.json:
 ```json
 {
@@ -155,7 +172,7 @@ Added a patch to be applied after Alex's.
 
 ---
 
-archive/issue_events_000406.json:
+archive/issue_events_000894.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -163,7 +180,7 @@ archive/issue_events_000406.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/384#event-406"
+    "url": "https://github.com/sagemath/sagetest/issues/384#event-894"
 }
 ```
 

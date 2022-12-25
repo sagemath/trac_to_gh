@@ -196,6 +196,23 @@ I'm working on integrating this into sage-2.8.6 (and a proper patch).
 
 ---
 
+archive/issue_events_002103.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T04:02:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2103"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004534.json:
 ```json
 {
@@ -234,7 +251,7 @@ Added a proper patch;  this will be in sage-2.8.6.
 
 ---
 
-archive/issue_events_000865.json:
+archive/issue_events_002104.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -242,7 +259,7 @@ archive/issue_events_000865.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/768#event-865"
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2104"
 }
 ```
 
@@ -342,7 +359,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000866.json:
+archive/issue_events_002105.json:
 ```json
 {
     "actor": "https://github.com/nbruin",
@@ -350,7 +367,75 @@ archive/issue_events_000866.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/768#event-866"
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2105"
+}
+```
+
+
+
+---
+
+archive/issue_events_002106.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-06T06:09:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2106"
+}
+```
+
+
+
+---
+
+archive/issue_events_002107.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-06T06:09:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2107"
+}
+```
+
+
+
+---
+
+archive/issue_events_002108.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T14:10:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2108"
+}
+```
+
+
+
+---
+
+archive/issue_events_002109.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T14:10:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2109"
 }
 ```
 
@@ -393,6 +478,40 @@ archive/issue_comments_004541.json:
 ```
 
 I'm confused about what I'm supposed to do with this.  Some clarification would be nice.
+
+
+
+---
+
+archive/issue_events_002110.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:17:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2110"
+}
+```
+
+
+
+---
+
+archive/issue_events_002111.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:17:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2111"
+}
+```
 
 
 
@@ -507,7 +626,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000867.json:
+archive/issue_events_002112.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -515,7 +634,7 @@ archive/issue_events_000867.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/768#event-867"
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2112"
 }
 ```
 
@@ -579,7 +698,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000868.json:
+archive/issue_events_002113.json:
 ```json
 {
     "actor": "https://github.com/nbruin",
@@ -587,7 +706,7 @@ archive/issue_events_000868.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/768#event-868"
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2113"
 }
 ```
 
@@ -613,7 +732,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000869.json:
+archive/issue_events_002114.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -621,7 +740,7 @@ archive/issue_events_000869.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/768#event-869"
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-2114"
 }
 ```
 

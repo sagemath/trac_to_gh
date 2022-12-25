@@ -297,7 +297,7 @@ Applies okay to 4.0.2.rc3 and passes sage -testall on an intel macbook running 1
 
 ---
 
-archive/issue_events_002029.json:
+archive/issue_events_004521.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -305,7 +305,7 @@ archive/issue_events_002029.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1871#event-2029"
+    "url": "https://github.com/sagemath/sagetest/issues/1871#event-4521"
 }
 ```
 

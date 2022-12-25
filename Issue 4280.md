@@ -127,7 +127,7 @@ This patch fixes the issue and looks correct.    Positive review.
 
 ---
 
-archive/issue_events_004525.json:
+archive/issue_events_009667.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -135,7 +135,7 @@ archive/issue_events_004525.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4280",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4280#event-4525"
+    "url": "https://github.com/sagemath/sagetest/issues/4280#event-9667"
 }
 ```
 
@@ -178,3 +178,20 @@ archive/issue_comments_031251.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009668.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-07T01:37:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4280",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4280#event-9668"
+}
+```

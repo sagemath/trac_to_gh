@@ -218,7 +218,7 @@ See palmieri's and my reports at #6849.
 
 ---
 
-archive/issue_events_007146.json:
+archive/issue_events_016251.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -226,7 +226,7 @@ archive/issue_events_007146.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6919",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6919#event-7146"
+    "url": "https://github.com/sagemath/sagetest/issues/6919#event-16251"
 }
 ```
 

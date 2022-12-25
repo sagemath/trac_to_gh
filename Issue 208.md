@@ -213,6 +213,23 @@ diff -r b99914e8d818 -r decd1e49efc3 sage/interfaces/magma.py
 
 ---
 
+archive/issue_events_000416.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-23T20:05:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/208",
+    "milestone": "sage-1.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/208#event-416"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000934.json:
 ```json
 {
@@ -231,7 +248,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000219.json:
+archive/issue_events_000417.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -239,6 +256,6 @@ archive/issue_events_000219.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/208",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/208#event-219"
+    "url": "https://github.com/sagemath/sagetest/issues/208#event-417"
 }
 ```

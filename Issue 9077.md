@@ -121,7 +121,7 @@ This is probably not going to work...
 
 ---
 
-archive/issue_events_009230.json:
+archive/issue_events_022239.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -129,7 +129,7 @@ archive/issue_events_009230.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9077",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9077#event-9230"
+    "url": "https://github.com/sagemath/sagetest/issues/9077#event-22239"
 }
 ```
 
@@ -150,3 +150,20 @@ archive/issue_comments_084134.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_022240.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-29T08:02:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9077",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9077#event-22240"
+}
+```

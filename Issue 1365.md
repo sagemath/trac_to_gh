@@ -65,6 +65,23 @@ Changing assignee from @williamstein to cwitty.
 
 ---
 
+archive/issue_events_003524.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-12-02T18:24:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1365",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1365#event-3524"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008714.json:
 ```json
 {
@@ -241,7 +258,7 @@ I'm thinking this ticket could just be closed--the current way of doing things w
 
 ---
 
-archive/issue_events_001506.json:
+archive/issue_events_003525.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -249,7 +266,7 @@ archive/issue_events_001506.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1365",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1365#event-1506"
+    "url": "https://github.com/sagemath/sagetest/issues/1365#event-3525"
 }
 ```
 
@@ -288,3 +305,37 @@ archive/issue_comments_008723.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_003526.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2011-12-17T20:07:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1365",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1365#event-3526"
+}
+```
+
+
+
+---
+
+archive/issue_events_003527.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2011-12-17T20:07:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1365",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1365#event-3527"
+}
+```

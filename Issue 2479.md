@@ -132,6 +132,23 @@ same patch as above, but applies clean against 2.10.3
 
 ---
 
+archive/issue_events_005855.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:31:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2479",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2479#event-5855"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016768.json:
 ```json
 {
@@ -150,7 +167,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002658.json:
+archive/issue_events_005856.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -158,7 +175,7 @@ archive/issue_events_002658.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2479",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2479#event-2658"
+    "url": "https://github.com/sagemath/sagetest/issues/2479#event-5856"
 }
 ```
 

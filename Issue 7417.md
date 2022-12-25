@@ -334,6 +334,23 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_017553.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T23:17:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7417",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7417#event-17553"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062295.json:
 ```json
 {
@@ -424,7 +441,7 @@ I'll close this.  It is in the spkg at #7430.
 
 ---
 
-archive/issue_events_007641.json:
+archive/issue_events_017554.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -432,6 +449,6 @@ archive/issue_events_007641.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7417#event-7641"
+    "url": "https://github.com/sagemath/sagetest/issues/7417#event-17554"
 }
 ```

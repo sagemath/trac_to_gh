@@ -65,6 +65,57 @@ Note: this is closely related to #2355, since speeding up  `matrix_from_rows_and
 
 ---
 
+archive/issue_events_005605.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-03T15:23:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#event-5605"
+}
+```
+
+
+
+---
+
+archive/issue_events_005606.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-12T05:05:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#event-5606"
+}
+```
+
+
+
+---
+
+archive/issue_events_005607.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-12T05:05:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#event-5607"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015971.json:
 ```json
 {
@@ -286,7 +337,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002549.json:
+archive/issue_events_005608.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -294,7 +345,7 @@ archive/issue_events_002549.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2372#event-2549"
+    "url": "https://github.com/sagemath/sagetest/issues/2372#event-5608"
 }
 ```
 

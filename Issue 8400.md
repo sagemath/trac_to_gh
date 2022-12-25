@@ -120,7 +120,7 @@ Fixed by #8408
 
 ---
 
-archive/issue_events_008585.json:
+archive/issue_events_020139.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -128,6 +128,6 @@ archive/issue_events_008585.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8400",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8400#event-8585"
+    "url": "https://github.com/sagemath/sagetest/issues/8400#event-20139"
 }
 ```

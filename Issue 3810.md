@@ -150,6 +150,23 @@ Attachment [3810-ncalexan-class-group-list.patch](tarball://root/attachments/som
 
 ---
 
+archive/issue_events_008743.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-12T05:36:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3810",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3810#event-8743"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027011.json:
 ```json
 {
@@ -637,7 +654,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004032.json:
+archive/issue_events_008744.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -645,7 +662,7 @@ archive/issue_events_004032.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3810#event-4032"
+    "url": "https://github.com/sagemath/sagetest/issues/3810#event-8744"
 }
 ```
 

@@ -46,7 +46,7 @@ Attachment [flintqs-20070817.p5.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_events_009694.json:
+archive/issue_events_023744.json:
 ```json
 {
     "actor": "https://github.com/peterjeremy",
@@ -54,7 +54,7 @@ archive/issue_events_009694.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9545",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9545#event-9694"
+    "url": "https://github.com/sagemath/sagetest/issues/9545#event-23744"
 }
 ```
 
@@ -111,3 +111,20 @@ archive/issue_comments_091862.json:
 ```
 
 Close as duplicate of #9544.
+
+
+
+---
+
+archive/issue_events_023745.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-19T03:42:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9545",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9545#event-23745"
+}
+```

@@ -220,6 +220,57 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_018287.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-12-14T03:04:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7673",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7673#event-18287"
+}
+```
+
+
+
+---
+
+archive/issue_events_018288.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-12-14T03:05:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7673",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7673#event-18288"
+}
+```
+
+
+
+---
+
+archive/issue_events_018289.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-12-14T03:05:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7673",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7673#event-18289"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065653.json:
 ```json
 {
@@ -463,7 +514,7 @@ The new patch looks good.
 
 ---
 
-archive/issue_events_007892.json:
+archive/issue_events_018290.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -471,7 +522,7 @@ archive/issue_events_007892.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7673#event-7892"
+    "url": "https://github.com/sagemath/sagetest/issues/7673#event-18290"
 }
 ```
 
@@ -492,3 +543,37 @@ archive/issue_comments_065663.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018291.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-12-15T16:06:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7673",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7673#event-18291"
+}
+```
+
+
+
+---
+
+archive/issue_events_018292.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-12-15T16:06:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7673",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7673#event-18292"
+}
+```

@@ -246,6 +246,23 @@ The changes look good to me, the patches apply cleanly against 2.10.3.rc5, and d
 
 ---
 
+archive/issue_events_004581.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:58:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1901",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1901#event-4581"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012010.json:
 ```json
 {
@@ -264,7 +281,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002058.json:
+archive/issue_events_004582.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -272,7 +289,7 @@ archive/issue_events_002058.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1901",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1901#event-2058"
+    "url": "https://github.com/sagemath/sagetest/issues/1901#event-4582"
 }
 ```
 

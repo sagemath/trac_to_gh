@@ -1115,6 +1115,23 @@ Michael
 
 ---
 
+archive/issue_events_013653.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-19T00:08:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5816",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5816#event-13653"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045617.json:
 ```json
 {
@@ -1183,6 +1200,40 @@ archive/issue_comments_045619.json:
 Attachment [trac_scripts-5816-part2.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816-part2.patch) by @williamstein created at 2009-04-19 00:17:01
 
 this fixes a bug (before it always ran in random order), changes to -randorder, and makes it so not giving the option uses the "traditional" order.
+
+
+
+---
+
+archive/issue_events_013654.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-04-19T00:19:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5816",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5816#event-13654"
+}
+```
+
+
+
+---
+
+archive/issue_events_013655.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-04-19T00:19:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5816",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5816#event-13655"
+}
+```
 
 
 
@@ -1281,7 +1332,7 @@ Michael
 
 ---
 
-archive/issue_events_006067.json:
+archive/issue_events_013656.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1289,7 +1340,7 @@ archive/issue_events_006067.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5816#event-6067"
+    "url": "https://github.com/sagemath/sagetest/issues/5816#event-13656"
 }
 ```
 

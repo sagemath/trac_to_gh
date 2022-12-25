@@ -183,7 +183,7 @@ I went ahead and removed the src/.hg/ repo from the Cython spkg and checked in t
 
 ---
 
-archive/issue_events_007493.json:
+archive/issue_events_017197.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -191,7 +191,7 @@ archive/issue_events_007493.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7272#event-7493"
+    "url": "https://github.com/sagemath/sagetest/issues/7272#event-17197"
 }
 ```
 
@@ -235,7 +235,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007494.json:
+archive/issue_events_017198.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -243,7 +243,7 @@ archive/issue_events_007494.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7272#event-7494"
+    "url": "https://github.com/sagemath/sagetest/issues/7272#event-17198"
 }
 ```
 
@@ -407,7 +407,7 @@ I'm changing this to positive review, as the changes between when this was merge
 
 ---
 
-archive/issue_events_007495.json:
+archive/issue_events_017199.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -415,7 +415,7 @@ archive/issue_events_007495.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7272#event-7495"
+    "url": "https://github.com/sagemath/sagetest/issues/7272#event-17199"
 }
 ```
 

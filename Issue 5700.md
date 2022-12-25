@@ -146,7 +146,7 @@ As mentioned above, this ticket will be superseded by #5555, so this ticket shou
 
 ---
 
-archive/issue_events_005942.json:
+archive/issue_events_013392.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -154,6 +154,6 @@ archive/issue_events_005942.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5700",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5700#event-5942"
+    "url": "https://github.com/sagemath/sagetest/issues/5700#event-13392"
 }
 ```

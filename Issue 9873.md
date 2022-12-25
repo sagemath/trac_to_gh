@@ -65,6 +65,125 @@ Changing keywords from "" to "sd35.5".
 
 ---
 
+archive/issue_events_024871.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24871"
+}
+```
+
+
+
+---
+
+archive/issue_events_024872.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24872"
+}
+```
+
+
+
+---
+
+archive/issue_events_024873.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24873"
+}
+```
+
+
+
+---
+
+archive/issue_events_024874.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24874"
+}
+```
+
+
+
+---
+
+archive/issue_events_024875.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24875"
+}
+```
+
+
+
+---
+
+archive/issue_events_024876.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24876"
+}
+```
+
+
+
+---
+
+archive/issue_events_024877.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24877"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097534.json:
 ```json
 {
@@ -91,6 +210,40 @@ Exception RuntimeError: 'maximum recursion depth exceeded while calling a Python
 
 ----
 New commits:
+
+
+
+---
+
+archive/issue_events_024878.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-05-26T06:11:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24878"
+}
+```
+
+
+
+---
+
+archive/issue_events_024879.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-05-26T06:11:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9873",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9873#event-24879"
+}
+```
 
 
 

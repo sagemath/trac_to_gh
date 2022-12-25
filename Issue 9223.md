@@ -239,7 +239,7 @@ In the meantime, it's better to get the things on this ticket going.
 
 ---
 
-archive/issue_events_009381.json:
+archive/issue_events_022710.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -247,7 +247,7 @@ archive/issue_events_009381.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9223#event-9381"
+    "url": "https://github.com/sagemath/sagetest/issues/9223#event-22710"
 }
 ```
 

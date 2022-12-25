@@ -239,6 +239,23 @@ Changing status from needs_info to needs_review.
 
 ---
 
+archive/issue_events_019190.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/flawrence",
+    "created_at": "2010-02-19T11:21:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#event-19190"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069896.json:
 ```json
 {
@@ -476,7 +493,41 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008225.json:
+archive/issue_events_019191.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-11-03T06:30:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#event-19191"
+}
+```
+
+
+
+---
+
+archive/issue_events_019192.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-11-03T06:30:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#event-19192"
+}
+```
+
+
+
+---
+
+archive/issue_events_019193.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -484,7 +535,7 @@ archive/issue_events_008225.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#event-8225"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#event-19193"
 }
 ```
 

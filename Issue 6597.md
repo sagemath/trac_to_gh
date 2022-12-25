@@ -132,7 +132,7 @@ I am glad this will be soon in so that we don't have this patch anymore in Sage-
 
 ---
 
-archive/issue_events_006836.json:
+archive/issue_events_015554.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -140,7 +140,7 @@ archive/issue_events_006836.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6597#event-6836"
+    "url": "https://github.com/sagemath/sagetest/issues/6597#event-15554"
 }
 ```
 

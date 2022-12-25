@@ -46,7 +46,7 @@ Attachment [sage-3575.patch](tarball://root/attachments/some-uuid/ticket3575/sag
 
 ---
 
-archive/issue_events_003792.json:
+archive/issue_events_008190.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -54,7 +54,7 @@ archive/issue_events_003792.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3575",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3575#event-3792"
+    "url": "https://github.com/sagemath/sagetest/issues/3575#event-8190"
 }
 ```
 

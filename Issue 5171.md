@@ -131,6 +131,23 @@ This patch implements fixes for `Graph.__init__` but not `DiGraph.__init__`. It 
 
 ---
 
+archive/issue_events_011967.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-02-17T18:40:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5171",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5171#event-11967"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039536.json:
 ```json
 {
@@ -386,7 +403,7 @@ Michael
 
 ---
 
-archive/issue_events_005421.json:
+archive/issue_events_011968.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -394,7 +411,7 @@ archive/issue_events_005421.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5171#event-5421"
+    "url": "https://github.com/sagemath/sagetest/issues/5171#event-11968"
 }
 ```
 

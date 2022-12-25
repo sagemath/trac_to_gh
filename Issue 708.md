@@ -89,6 +89,23 @@ Michael
 
 ---
 
+archive/issue_events_001892.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-08-29T22:38:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/708",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/708#event-1892"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003706.json:
 ```json
 {
@@ -150,7 +167,7 @@ The new code seems to compare favorably to Magma. IIRC Bill Hart suggested to do
 
 ---
 
-archive/issue_events_000779.json:
+archive/issue_events_001893.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -158,7 +175,7 @@ archive/issue_events_000779.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/708#event-779"
+    "url": "https://github.com/sagemath/sagetest/issues/708#event-1893"
 }
 ```
 

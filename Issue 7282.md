@@ -123,6 +123,23 @@ Also, once jinja2 is installed as above, Sphinx installs without a problem.
 
 ---
 
+archive/issue_events_017226.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-02-17T11:28:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7282",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7282#event-17226"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060497.json:
 ```json
 {
@@ -159,7 +176,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007505.json:
+archive/issue_events_017227.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -167,6 +184,6 @@ archive/issue_events_007505.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7282#event-7505"
+    "url": "https://github.com/sagemath/sagetest/issues/7282#event-17227"
 }
 ```

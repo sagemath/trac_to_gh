@@ -274,7 +274,7 @@ Merged trac4632-enormous-coeffs-roots-v2.patch in Sage 3.2.1.rc0
 
 ---
 
-archive/issue_events_004879.json:
+archive/issue_events_010559.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -282,7 +282,7 @@ archive/issue_events_004879.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4632",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4632#event-4879"
+    "url": "https://github.com/sagemath/sagetest/issues/4632#event-10559"
 }
 ```
 
@@ -303,3 +303,20 @@ archive/issue_comments_034757.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_010560.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-28T21:49:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4632",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4632#event-10560"
+}
+```

@@ -252,7 +252,7 @@ Thanks!
 
 ---
 
-archive/issue_events_009380.json:
+archive/issue_events_022709.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -260,6 +260,6 @@ archive/issue_events_009380.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9222#event-9380"
+    "url": "https://github.com/sagemath/sagetest/issues/9222#event-22709"
 }
 ```

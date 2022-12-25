@@ -63,6 +63,23 @@ Changing assignee from mabshoff to @williamstein.
 
 ---
 
+archive/issue_events_006243.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-27T09:42:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2671",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2671#event-6243"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018347.json:
 ```json
 {
@@ -101,7 +118,7 @@ Thanks for fixing the other ticket by writing the function.
 
 ---
 
-archive/issue_events_002863.json:
+archive/issue_events_006244.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -109,7 +126,7 @@ archive/issue_events_002863.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2671",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2671#event-2863"
+    "url": "https://github.com/sagemath/sagetest/issues/2671#event-6244"
 }
 ```
 

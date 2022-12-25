@@ -869,6 +869,91 @@ Therefore, I see absolutely no problem.
 
 ---
 
+archive/issue_events_025000.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9913",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9913#event-25000"
+}
+```
+
+
+
+---
+
+archive/issue_events_025001.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9913",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9913#event-25001"
+}
+```
+
+
+
+---
+
+archive/issue_events_025002.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9913",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9913#event-25002"
+}
+```
+
+
+
+---
+
+archive/issue_events_025003.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-04T08:10:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9913",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9913#event-25003"
+}
+```
+
+
+
+---
+
+archive/issue_events_025004.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-04T08:10:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9913",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9913#event-25004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098480.json:
 ```json
 {
@@ -923,7 +1008,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_010040.json:
+archive/issue_events_025005.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -931,6 +1016,6 @@ archive/issue_events_010040.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9913#event-10040"
+    "url": "https://github.com/sagemath/sagetest/issues/9913#event-25005"
 }
 ```

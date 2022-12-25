@@ -186,7 +186,7 @@ Merged 4708_bin-2.patch in Sage 3.2.2.alpha0
 
 ---
 
-archive/issue_events_004953.json:
+archive/issue_events_010765.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -194,7 +194,7 @@ archive/issue_events_004953.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4708",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4708#event-4953"
+    "url": "https://github.com/sagemath/sagetest/issues/4708#event-10765"
 }
 ```
 

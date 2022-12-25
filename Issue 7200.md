@@ -343,7 +343,7 @@ I uploaded a patch which makes a small change to the documentation markup.  I've
 
 ---
 
-archive/issue_events_007421.json:
+archive/issue_events_017055.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -351,7 +351,7 @@ archive/issue_events_007421.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7200#event-7421"
+    "url": "https://github.com/sagemath/sagetest/issues/7200#event-17055"
 }
 ```
 

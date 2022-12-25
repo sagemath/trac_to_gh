@@ -52,7 +52,7 @@ see also #1729
 
 ---
 
-archive/issue_events_001493.json:
+archive/issue_events_003498.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -60,7 +60,7 @@ archive/issue_events_001493.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1351",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1351#event-1493"
+    "url": "https://github.com/sagemath/sagetest/issues/1351#event-3498"
 }
 ```
 

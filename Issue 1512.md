@@ -155,7 +155,7 @@ The next major release of OpenOffice will have LaTeX capabilities so a LaTeX to 
 
 ---
 
-archive/issue_events_001666.json:
+archive/issue_events_003826.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/tkosan",
@@ -163,6 +163,23 @@ archive/issue_events_001666.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1512",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1512#event-1666"
+    "url": "https://github.com/sagemath/sagetest/issues/1512#event-3826"
+}
+```
+
+
+
+---
+
+archive/issue_events_003827.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-24T17:13:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1512",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1512#event-3827"
 }
 ```

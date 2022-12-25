@@ -543,7 +543,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007475.json:
+archive/issue_events_017168.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -551,6 +551,91 @@ archive/issue_events_007475.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7254",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7254#event-7475"
+    "url": "https://github.com/sagemath/sagetest/issues/7254#event-17168"
+}
+```
+
+
+
+---
+
+archive/issue_events_017169.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:47:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7254",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7254#event-17169"
+}
+```
+
+
+
+---
+
+archive/issue_events_017170.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:47:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7254",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7254#event-17170"
+}
+```
+
+
+
+---
+
+archive/issue_events_017171.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:47:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7254",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7254#event-17171"
+}
+```
+
+
+
+---
+
+archive/issue_events_017172.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:48:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7254",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7254#event-17172"
+}
+```
+
+
+
+---
+
+archive/issue_events_017173.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:48:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7254",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7254#event-17173"
 }
 ```

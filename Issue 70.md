@@ -98,7 +98,7 @@ else:
 
 ---
 
-archive/issue_events_000071.json:
+archive/issue_events_000154.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -106,7 +106,7 @@ archive/issue_events_000071.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/70",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/70#event-71"
+    "url": "https://github.com/sagemath/sagetest/issues/70#event-154"
 }
 ```
 

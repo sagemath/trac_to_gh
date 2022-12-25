@@ -60,6 +60,23 @@ SAGE_ROOT/local/bin/python2.5-config --cflags
 
 ---
 
+archive/issue_events_001039.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:29:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/425",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/425#event-1039"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002123.json:
 ```json
 {
@@ -102,7 +119,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000452.json:
+archive/issue_events_001040.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -110,7 +127,24 @@ archive/issue_events_000452.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/425",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/425#event-452"
+    "url": "https://github.com/sagemath/sagetest/issues/425#event-1040"
+}
+```
+
+
+
+---
+
+archive/issue_events_001041.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2008-08-23T23:19:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/425",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/425#event-1041"
 }
 ```
 

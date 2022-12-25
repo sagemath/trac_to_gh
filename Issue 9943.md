@@ -1132,6 +1132,23 @@ Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review
 
 ---
 
+archive/issue_events_025087.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-13T15:35:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9943",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9943#event-25087"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098882.json:
 ```json
 {
@@ -1150,7 +1167,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010070.json:
+archive/issue_events_025088.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1158,7 +1175,7 @@ archive/issue_events_010070.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#event-10070"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#event-25088"
 }
 ```
 
@@ -1217,7 +1234,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_010071.json:
+archive/issue_events_025089.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1225,7 +1242,7 @@ archive/issue_events_010071.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#event-10071"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#event-25089"
 }
 ```
 
@@ -3540,7 +3557,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010072.json:
+archive/issue_events_025090.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -3548,6 +3565,6 @@ archive/issue_events_010072.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#event-10072"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#event-25090"
 }
 ```

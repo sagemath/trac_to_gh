@@ -565,6 +565,125 @@ This would be really useful for making data interchangeable with other computing
 
 ---
 
+archive/issue_events_019840.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19840"
+}
+```
+
+
+
+---
+
+archive/issue_events_019841.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19841"
+}
+```
+
+
+
+---
+
+archive/issue_events_019842.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19842"
+}
+```
+
+
+
+---
+
+archive/issue_events_019843.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19843"
+}
+```
+
+
+
+---
+
+archive/issue_events_019844.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19844"
+}
+```
+
+
+
+---
+
+archive/issue_events_019845.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19845"
+}
+```
+
+
+
+---
+
+archive/issue_events_019846.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19846"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073334.json:
 ```json
 {
@@ -578,6 +697,40 @@ archive/issue_comments_073334.json:
 ```
 
 Changing component from packages: standard to packages: optional.
+
+
+
+---
+
+archive/issue_events_019847.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-19T18:16:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19847"
+}
+```
+
+
+
+---
+
+archive/issue_events_019848.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-19T18:16:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8290",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8290#event-19848"
+}
+```
 
 
 

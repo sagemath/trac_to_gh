@@ -278,6 +278,23 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_019983.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2011-08-03T19:41:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8342",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8342#event-19983"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074344.json:
 ```json
 {
@@ -291,6 +308,40 @@ archive/issue_comments_074344.json:
 ```
 
 Changing status from needs_work to needs_review.
+
+
+
+---
+
+archive/issue_events_019984.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-15T18:57:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8342",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8342#event-19984"
+}
+```
+
+
+
+---
+
+archive/issue_events_019985.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-15T18:57:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8342",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8342#event-19985"
+}
+```
 
 
 
@@ -314,7 +365,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008532.json:
+archive/issue_events_019986.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -322,7 +373,7 @@ archive/issue_events_008532.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8342#event-8532"
+    "url": "https://github.com/sagemath/sagetest/issues/8342#event-19986"
 }
 ```
 

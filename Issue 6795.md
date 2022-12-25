@@ -119,7 +119,24 @@ I am closing this as `worksforme`. We've gone several releases with maxima-5.19.
 
 ---
 
-archive/issue_events_007030.json:
+archive/issue_events_016004.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-12-17T20:14:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6795",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6795#event-16004"
+}
+```
+
+
+
+---
+
+archive/issue_events_016005.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -127,6 +144,6 @@ archive/issue_events_007030.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6795",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6795#event-7030"
+    "url": "https://github.com/sagemath/sagetest/issues/6795#event-16005"
 }
 ```

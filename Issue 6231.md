@@ -51,3 +51,20 @@ What format should the multiplicities be provided in?
 Issue created by migration from https://trac.sagemath.org/ticket/6231
 
 
+
+
+
+---
+
+archive/issue_events_014607.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2009-06-06T16:33:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6231",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6231#event-14607"
+}
+```

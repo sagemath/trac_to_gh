@@ -208,7 +208,7 @@ Attachment [change_arc_to_edge.hg](tarball://root/attachments/some-uuid/ticket71
 
 ---
 
-archive/issue_events_000793.json:
+archive/issue_events_001926.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -216,7 +216,7 @@ archive/issue_events_000793.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/716#event-793"
+    "url": "https://github.com/sagemath/sagetest/issues/716#event-1926"
 }
 ```
 
@@ -298,6 +298,23 @@ Michael
 
 ---
 
+archive/issue_events_001927.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-24T17:29:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/716",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/716#event-1927"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004155.json:
 ```json
 {
@@ -334,7 +351,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000794.json:
+archive/issue_events_001928.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -342,7 +359,7 @@ archive/issue_events_000794.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/716#event-794"
+    "url": "https://github.com/sagemath/sagetest/issues/716#event-1928"
 }
 ```
 
@@ -368,7 +385,41 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000795.json:
+archive/issue_events_001929.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-24T19:04:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/716",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/716#event-1929"
+}
+```
+
+
+
+---
+
+archive/issue_events_001930.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-24T19:04:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/716",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/716#event-1930"
+}
+```
+
+
+
+---
+
+archive/issue_events_001931.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -376,7 +427,7 @@ archive/issue_events_000795.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/716#event-795"
+    "url": "https://github.com/sagemath/sagetest/issues/716#event-1931"
 }
 ```
 

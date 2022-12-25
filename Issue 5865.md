@@ -113,7 +113,7 @@ SAGE_SIMD_MODE is deprecated.
 
 ---
 
-archive/issue_events_006121.json:
+archive/issue_events_013792.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -121,6 +121,23 @@ archive/issue_events_006121.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5865",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5865#event-6121"
+    "url": "https://github.com/sagemath/sagetest/issues/5865#event-13792"
+}
+```
+
+
+
+---
+
+archive/issue_events_013793.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-06T21:58:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5865",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5865#event-13793"
 }
 ```

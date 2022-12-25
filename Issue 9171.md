@@ -234,6 +234,23 @@ Ok, so I'm putting this as positive_review/wontfix
 
 ---
 
+archive/issue_events_022559.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jpflori",
+    "created_at": "2013-01-30T13:10:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9171",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9171#event-22559"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085641.json:
 ```json
 {
@@ -288,7 +305,7 @@ It passed on my 5.5.rc0 and 5.6.rc0 'make ptest' and just did so on my 5.7.beta1
 
 ---
 
-archive/issue_events_009328.json:
+archive/issue_events_022560.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -296,7 +313,7 @@ archive/issue_events_009328.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9171#event-9328"
+    "url": "https://github.com/sagemath/sagetest/issues/9171#event-22560"
 }
 ```
 

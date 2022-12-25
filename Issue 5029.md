@@ -157,7 +157,7 @@ I installed this on the Trac server, but it doesn't seem to work.
 
 ---
 
-archive/issue_events_005273.json:
+archive/issue_events_011606.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -165,7 +165,7 @@ archive/issue_events_005273.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5029#event-5273"
+    "url": "https://github.com/sagemath/sagetest/issues/5029#event-11606"
 }
 ```
 

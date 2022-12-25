@@ -76,7 +76,7 @@ the computation just to record the comment.
 
 ---
 
-archive/issue_events_000439.json:
+archive/issue_events_000997.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -84,7 +84,7 @@ archive/issue_events_000439.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/413",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/413#event-439"
+    "url": "https://github.com/sagemath/sagetest/issues/413#event-997"
 }
 ```
 

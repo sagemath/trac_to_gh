@@ -68,7 +68,7 @@ Merged in 2.9.alpha6.
 
 ---
 
-archive/issue_events_001631.json:
+archive/issue_events_003761.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -76,6 +76,6 @@ archive/issue_events_001631.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1479",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1479#event-1631"
+    "url": "https://github.com/sagemath/sagetest/issues/1479#event-3761"
 }
 ```

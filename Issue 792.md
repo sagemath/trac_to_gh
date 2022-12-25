@@ -70,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/792
 
 ---
 
-archive/issue_events_000901.json:
+archive/issue_events_002198.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/justin",
@@ -78,7 +78,7 @@ archive/issue_events_000901.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/792",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/792#event-901"
+    "url": "https://github.com/sagemath/sagetest/issues/792#event-2198"
 }
 ```
 

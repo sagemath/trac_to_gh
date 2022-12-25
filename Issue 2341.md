@@ -246,7 +246,7 @@ doctests pass on the free_module_element.pyx file.
 
 ---
 
-archive/issue_events_002518.json:
+archive/issue_events_005525.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -254,7 +254,7 @@ archive/issue_events_002518.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2341",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2341#event-2518"
+    "url": "https://github.com/sagemath/sagetest/issues/2341#event-5525"
 }
 ```
 

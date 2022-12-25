@@ -114,6 +114,23 @@ legacy sagenb is deprecated, so this can be closed
 
 ---
 
+archive/issue_events_019967.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2019-06-15T07:27:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8339",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8339#event-19967"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074328.json:
 ```json
 {
@@ -168,7 +185,7 @@ close 3 old invalid tickets
 
 ---
 
-archive/issue_events_008531.json:
+archive/issue_events_019968.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -176,6 +193,6 @@ archive/issue_events_008531.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8339",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8339#event-8531"
+    "url": "https://github.com/sagemath/sagetest/issues/8339#event-19968"
 }
 ```

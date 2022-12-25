@@ -86,7 +86,7 @@ Please close this ticket as a duplicate. #7316 fixes the doctests, which I have 
 
 ---
 
-archive/issue_events_007572.json:
+archive/issue_events_017391.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -94,7 +94,7 @@ archive/issue_events_007572.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7349",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7349#event-7572"
+    "url": "https://github.com/sagemath/sagetest/issues/7349#event-17391"
 }
 ```
 
@@ -133,3 +133,20 @@ archive/issue_comments_061466.json:
 ```
 
 This is a dup of #7316.
+
+
+
+---
+
+archive/issue_events_017392.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:51:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7349",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7349#event-17392"
+}
+```

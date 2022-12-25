@@ -496,7 +496,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005535.json:
+archive/issue_events_012268.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -504,6 +504,23 @@ archive/issue_events_005535.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5280#event-5535"
+    "url": "https://github.com/sagemath/sagetest/issues/5280#event-12268"
+}
+```
+
+
+
+---
+
+archive/issue_events_012269.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-08T20:28:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#event-12269"
 }
 ```

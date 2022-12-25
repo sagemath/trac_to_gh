@@ -356,6 +356,23 @@ This ticket is outdated and should be closed.
 
 ---
 
+archive/issue_events_020237.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-28T19:22:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8439",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8439#event-20237"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075648.json:
 ```json
 {
@@ -374,7 +391,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008624.json:
+archive/issue_events_020238.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -382,6 +399,6 @@ archive/issue_events_008624.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8439#event-8624"
+    "url": "https://github.com/sagemath/sagetest/issues/8439#event-20238"
 }
 ```

@@ -47,6 +47,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/348
 
 ---
 
+archive/issue_events_000817.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T12:36:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/348#event-817"
+}
+```
+
+
+
+---
+
+archive/issue_events_000818.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:23:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/348#event-818"
+}
+```
+
+
+
+---
+
+archive/issue_events_000819.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:23:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/348#event-819"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001686.json:
 ```json
 {
@@ -64,6 +115,57 @@ There now are an optional R.spkg and rpy.spkg that are supposed to become standa
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000820.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-06T21:36:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/348#event-820"
+}
+```
+
+
+
+---
+
+archive/issue_events_000821.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-06T21:36:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/348#event-821"
+}
+```
+
+
+
+---
+
+archive/issue_events_000822.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-07T10:08:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/348#event-822"
+}
+```
 
 
 
@@ -87,7 +189,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_000371.json:
+archive/issue_events_000823.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -95,7 +197,7 @@ archive/issue_events_000371.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/348",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/348#event-371"
+    "url": "https://github.com/sagemath/sagetest/issues/348#event-823"
 }
 ```
 

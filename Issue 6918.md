@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6918
 
 ---
 
-archive/issue_events_007145.json:
+archive/issue_events_016250.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -70,7 +70,7 @@ archive/issue_events_007145.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6918",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6918#event-7145"
+    "url": "https://github.com/sagemath/sagetest/issues/6918#event-16250"
 }
 ```
 

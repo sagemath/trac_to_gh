@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/782
 
 ---
 
+archive/issue_events_002155.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T18:27:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/782",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/782#event-2155"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004664.json:
 ```json
 {
@@ -65,7 +82,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000887.json:
+archive/issue_events_002156.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,6 +90,40 @@ archive/issue_events_000887.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/782",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/782#event-887"
+    "url": "https://github.com/sagemath/sagetest/issues/782#event-2156"
+}
+```
+
+
+
+---
+
+archive/issue_events_002157.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T03:05:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/782",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/782#event-2157"
+}
+```
+
+
+
+---
+
+archive/issue_events_002158.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T03:05:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/782",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/782#event-2158"
 }
 ```

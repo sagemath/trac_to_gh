@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1171
 
 ---
 
+archive/issue_events_003143.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-15T02:23:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1171",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1171#event-3143"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007154.json:
 ```json
 {
@@ -161,7 +178,7 @@ Merged in Sage 2.10.2.alpha1. Patch applies with minimal offset, running doctest
 
 ---
 
-archive/issue_events_001303.json:
+archive/issue_events_003144.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -169,7 +186,7 @@ archive/issue_events_001303.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#event-1303"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#event-3144"
 }
 ```
 

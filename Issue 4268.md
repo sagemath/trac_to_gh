@@ -45,6 +45,125 @@ Another project (graph plotting) came up at Sage Days 10 so I will get to this a
 
 ---
 
+archive/issue_events_009641.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9641"
+}
+```
+
+
+
+---
+
+archive/issue_events_009642.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9642"
+}
+```
+
+
+
+---
+
+archive/issue_events_009643.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9643"
+}
+```
+
+
+
+---
+
+archive/issue_events_009644.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9644"
+}
+```
+
+
+
+---
+
+archive/issue_events_009645.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9645"
+}
+```
+
+
+
+---
+
+archive/issue_events_009646.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9646"
+}
+```
+
+
+
+---
+
+archive/issue_events_009647.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9647"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031099.json:
 ```json
 {
@@ -58,6 +177,40 @@ archive/issue_comments_031099.json:
 ```
 
 See also #8757.  Currently the discussion is whether to just remove sqlalchemy from Sage, e.g. #15593.
+
+
+
+---
+
+archive/issue_events_009648.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2015-01-15T07:09:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9648"
+}
+```
+
+
+
+---
+
+archive/issue_events_009649.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2015-01-15T07:09:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4268",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9649"
+}
+```
 
 
 
@@ -137,7 +290,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_004513.json:
+archive/issue_events_009650.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -145,6 +298,6 @@ archive/issue_events_004513.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4268",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4268#event-4513"
+    "url": "https://github.com/sagemath/sagetest/issues/4268#event-9650"
 }
 ```

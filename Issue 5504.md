@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5504
 
 ---
 
+archive/issue_events_012882.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-13T04:46:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5504",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5504#event-12882"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042669.json:
 ```json
 {
@@ -72,7 +89,41 @@ Am I allowed to close this?
 
 ---
 
-archive/issue_events_005757.json:
+archive/issue_events_012883.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-27T20:37:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5504",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5504#event-12883"
+}
+```
+
+
+
+---
+
+archive/issue_events_012884.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-27T20:37:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5504",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5504#event-12884"
+}
+```
+
+
+
+---
+
+archive/issue_events_012885.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -80,7 +131,7 @@ archive/issue_events_005757.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5504",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5504#event-5757"
+    "url": "https://github.com/sagemath/sagetest/issues/5504#event-12885"
 }
 ```
 

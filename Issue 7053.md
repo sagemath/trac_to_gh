@@ -52,7 +52,7 @@ Fixes bug in template arguments.
 
 ---
 
-archive/issue_events_007273.json:
+archive/issue_events_016628.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -60,7 +60,7 @@ archive/issue_events_007273.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7053",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7053#event-7273"
+    "url": "https://github.com/sagemath/sagetest/issues/7053#event-16628"
 }
 ```
 

@@ -100,7 +100,7 @@ Applies to 3.2 and passes tests.
 
 ---
 
-archive/issue_events_004806.json:
+archive/issue_events_010396.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -108,7 +108,7 @@ archive/issue_events_004806.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4561",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4561#event-4806"
+    "url": "https://github.com/sagemath/sagetest/issues/4561#event-10396"
 }
 ```
 

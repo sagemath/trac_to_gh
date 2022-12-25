@@ -551,7 +551,7 @@ See #6916 for a follow-up to this ticket.
 
 ---
 
-archive/issue_events_006981.json:
+archive/issue_events_015915.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -559,6 +559,6 @@ archive/issue_events_006981.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6749#event-6981"
+    "url": "https://github.com/sagemath/sagetest/issues/6749#event-15915"
 }
 ```

@@ -101,7 +101,7 @@ Fixed by #1296, which was merged in 2.9.alpha5.
 
 ---
 
-archive/issue_events_001598.json:
+archive/issue_events_003706.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -109,7 +109,7 @@ archive/issue_events_001598.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1451",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1451#event-1598"
+    "url": "https://github.com/sagemath/sagetest/issues/1451#event-3706"
 }
 ```
 

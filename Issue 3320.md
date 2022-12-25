@@ -91,6 +91,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_007452.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2013-02-22T23:30:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3320",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3320#event-7452"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022972.json:
 ```json
 {
@@ -187,7 +204,7 @@ From my understanding, we need to do both since we have to verify that it is a d
 
 ---
 
-archive/issue_events_003538.json:
+archive/issue_events_007453.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -195,7 +212,7 @@ archive/issue_events_003538.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3320#event-3538"
+    "url": "https://github.com/sagemath/sagetest/issues/3320#event-7453"
 }
 ```
 

@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8548
 
 ---
 
-archive/issue_events_008729.json:
+archive/issue_events_020594.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/giraudo",
@@ -55,7 +55,7 @@ archive/issue_events_008729.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#event-8729"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#event-20594"
 }
 ```
 
@@ -117,7 +117,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_008730.json:
+archive/issue_events_020595.json:
 ```json
 {
     "actor": "https://github.com/jbandlow",
@@ -125,7 +125,7 @@ archive/issue_events_008730.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#event-8730"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#event-20595"
 }
 ```
 
@@ -193,7 +193,7 @@ For the release manager: please close this as a duplicate.
 
 ---
 
-archive/issue_events_008731.json:
+archive/issue_events_020596.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -201,7 +201,7 @@ archive/issue_events_008731.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#event-8731"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#event-20596"
 }
 ```
 

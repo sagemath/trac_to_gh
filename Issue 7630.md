@@ -419,6 +419,23 @@ Please fill in your real name as Author.
 
 ---
 
+archive/issue_events_018142.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-05T19:33:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7630",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7630#event-18142"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065092.json:
 ```json
 {
@@ -455,7 +472,7 @@ I think this should be closed since the notebook is now a separate project and i
 
 ---
 
-archive/issue_events_007857.json:
+archive/issue_events_018143.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -463,7 +480,7 @@ archive/issue_events_007857.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#event-7857"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#event-18143"
 }
 ```
 

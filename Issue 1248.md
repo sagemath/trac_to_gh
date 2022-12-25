@@ -168,7 +168,7 @@ This works for me in Sage 3.1.1 on 32-bit and 64-bit x86; maybe the "mwrank wrap
 
 ---
 
-archive/issue_events_001390.json:
+archive/issue_events_003299.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -176,6 +176,6 @@ archive/issue_events_001390.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1248",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1248#event-1390"
+    "url": "https://github.com/sagemath/sagetest/issues/1248#event-3299"
 }
 ```

@@ -108,7 +108,7 @@ This was a simple fix.
 
 ---
 
-archive/issue_events_006862.json:
+archive/issue_events_015634.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -116,7 +116,7 @@ archive/issue_events_006862.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6622",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6622#event-6862"
+    "url": "https://github.com/sagemath/sagetest/issues/6622#event-15634"
 }
 ```
 

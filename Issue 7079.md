@@ -100,6 +100,23 @@ I think the attached patch might solve the problem.  [I'm off to work now, so I'
 
 ---
 
+archive/issue_events_016740.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-30T08:41:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7079",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7079#event-16740"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058422.json:
 ```json
 {
@@ -328,7 +345,41 @@ That's what I think.  So I've switched to to that, applied it, and opened a new 
 
 ---
 
-archive/issue_events_007301.json:
+archive/issue_events_016741.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-03T23:58:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7079",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7079#event-16741"
+}
+```
+
+
+
+---
+
+archive/issue_events_016742.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-03T23:58:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7079",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7079#event-16742"
+}
+```
+
+
+
+---
+
+archive/issue_events_016743.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -336,7 +387,7 @@ archive/issue_events_007301.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#event-7301"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#event-16743"
 }
 ```
 

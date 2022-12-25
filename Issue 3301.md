@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3301
 
 ---
 
-archive/issue_events_003519.json:
+archive/issue_events_007419.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -49,7 +49,7 @@ archive/issue_events_003519.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3301",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3301#event-3519"
+    "url": "https://github.com/sagemath/sagetest/issues/3301#event-7419"
 }
 ```
 
@@ -74,6 +74,23 @@ The issue has been resolved in Sage 3.0.6.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007420.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-31T01:13:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3301",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3301#event-7420"
+}
+```
 
 
 

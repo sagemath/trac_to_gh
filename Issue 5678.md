@@ -77,7 +77,7 @@ Looks good to me: a trivial fix.
 
 ---
 
-archive/issue_events_005921.json:
+archive/issue_events_013352.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -85,7 +85,7 @@ archive/issue_events_005921.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5678",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5678#event-5921"
+    "url": "https://github.com/sagemath/sagetest/issues/5678#event-13352"
 }
 ```
 
@@ -128,3 +128,20 @@ Merged in Sage 3.4.1.rc2.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013353.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-09T09:42:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5678",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5678#event-13353"
+}
+```

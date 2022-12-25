@@ -84,6 +84,23 @@ The new plot has vertices with holes in them. I have no idea what is causing thi
 
 ---
 
+archive/issue_events_005851.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-29T19:48:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2477",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2477#event-5851"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016739.json:
 ```json
 {
@@ -410,7 +427,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002656.json:
+archive/issue_events_005852.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -418,6 +435,6 @@ archive/issue_events_002656.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2477#event-2656"
+    "url": "https://github.com/sagemath/sagetest/issues/2477#event-5852"
 }
 ```

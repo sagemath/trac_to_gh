@@ -210,6 +210,23 @@ Attachment [trac3676-cleanup2.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_008417.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-08-06T19:08:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3676",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3676#event-8417"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025974.json:
 ```json
 {
@@ -403,7 +420,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003897.json:
+archive/issue_events_008418.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -411,6 +428,6 @@ archive/issue_events_003897.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3676#event-3897"
+    "url": "https://github.com/sagemath/sagetest/issues/3676#event-8418"
 }
 ```

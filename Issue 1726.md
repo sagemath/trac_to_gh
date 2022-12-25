@@ -102,7 +102,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1726
 
 ---
 
-archive/issue_events_001884.json:
+archive/issue_events_004200.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,7 +110,7 @@ archive/issue_events_001884.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1726",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1726#event-1884"
+    "url": "https://github.com/sagemath/sagetest/issues/1726#event-4200"
 }
 ```
 

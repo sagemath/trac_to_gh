@@ -52,6 +52,57 @@ Michael
 
 ---
 
+archive/issue_events_002610.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T05:48:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-2610"
+}
+```
+
+
+
+---
+
+archive/issue_events_002611.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:08:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-2611"
+}
+```
+
+
+
+---
+
+archive/issue_events_002612.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:08:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-2612"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005764.json:
 ```json
 {
@@ -65,6 +116,40 @@ archive/issue_comments_005764.json:
 ```
 
 Attachment [trac946.patch](tarball://root/attachments/some-uuid/ticket946/trac946.patch) by @williamstein created at 2007-11-08 20:09:23
+
+
+
+---
+
+archive/issue_events_002613.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:55:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-2613"
+}
+```
+
+
+
+---
+
+archive/issue_events_002614.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:55:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-2614"
+}
+```
 
 
 
@@ -88,7 +173,7 @@ GOOD -- if when applied the tests still work then by definition this patch is go
 
 ---
 
-archive/issue_events_001066.json:
+archive/issue_events_002615.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -96,7 +181,41 @@ archive/issue_events_001066.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/946",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/946#event-1066"
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-2615"
+}
+```
+
+
+
+---
+
+archive/issue_events_002616.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-27T06:25:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-2616"
+}
+```
+
+
+
+---
+
+archive/issue_events_002617.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-27T06:25:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-2617"
 }
 ```
 

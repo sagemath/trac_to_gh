@@ -57,7 +57,7 @@ Attachment [integer_gamma_poles.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_events_004606.json:
+archive/issue_events_009864.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -65,7 +65,24 @@ archive/issue_events_004606.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4361",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4361#event-4606"
+    "url": "https://github.com/sagemath/sagetest/issues/4361#event-9864"
+}
+```
+
+
+
+---
+
+archive/issue_events_009865.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-31T01:33:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4361",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4361#event-9865"
 }
 ```
 

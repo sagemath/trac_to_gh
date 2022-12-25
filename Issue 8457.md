@@ -76,6 +76,23 @@ Note: It clashes with the first at #8452.
 
 ---
 
+archive/issue_events_020303.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-03-06T14:44:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8457",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8457#event-20303"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075998.json:
 ```json
 {
@@ -186,7 +203,7 @@ Merged [trac_8457-doc_skip_builtins.2.patch](http://trac.sagemath.org/sage_trac/
 
 ---
 
-archive/issue_events_008641.json:
+archive/issue_events_020304.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -194,6 +211,6 @@ archive/issue_events_008641.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8457#event-8641"
+    "url": "https://github.com/sagemath/sagetest/issues/8457#event-20304"
 }
 ```

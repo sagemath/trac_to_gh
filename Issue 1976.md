@@ -46,6 +46,23 @@ Attachment [trac-1976.patch](tarball://root/attachments/some-uuid/ticket1976/tra
 
 ---
 
+archive/issue_events_004777.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:15:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1976",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1976#event-4777"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012782.json:
 ```json
 {
@@ -100,7 +117,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002132.json:
+archive/issue_events_004778.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -108,6 +125,6 @@ archive/issue_events_002132.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1976",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1976#event-2132"
+    "url": "https://github.com/sagemath/sagetest/issues/1976#event-4778"
 }
 ```

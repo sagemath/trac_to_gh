@@ -90,6 +90,23 @@ Clearly duplicate of #13311.
 
 ---
 
+archive/issue_events_008518.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-15T13:37:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3723",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3723#event-8518"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026353.json:
 ```json
 {
@@ -126,7 +143,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_003943.json:
+archive/issue_events_008519.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -134,6 +151,6 @@ archive/issue_events_003943.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3723",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3723#event-3943"
+    "url": "https://github.com/sagemath/sagetest/issues/3723#event-8519"
 }
 ```

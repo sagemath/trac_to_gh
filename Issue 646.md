@@ -131,7 +131,24 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
-archive/issue_events_000710.json:
+archive/issue_events_001721.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-13T06:20:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/646",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-1721"
+}
+```
+
+
+
+---
+
+archive/issue_events_001722.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -139,7 +156,7 @@ archive/issue_events_000710.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/646#event-710"
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-1722"
 }
 ```
 
@@ -244,7 +261,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000711.json:
+archive/issue_events_001723.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -252,7 +269,24 @@ archive/issue_events_000711.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/646#event-711"
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-1723"
+}
+```
+
+
+
+---
+
+archive/issue_events_001724.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-13T15:52:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/646",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-1724"
 }
 ```
 
@@ -280,6 +314,23 @@ Hopefully this is not fixed (it's in 2.8.4.2)
 
 ---
 
+archive/issue_events_001725.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-13T18:20:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/646",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-1725"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003348.json:
 ```json
 {
@@ -298,7 +349,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000712.json:
+archive/issue_events_001726.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -306,6 +357,6 @@ archive/issue_events_000712.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/646#event-712"
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-1726"
 }
 ```

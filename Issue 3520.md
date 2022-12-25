@@ -235,6 +235,125 @@ What is really going on here is that `simplify_radical` uses `radcan` under the 
 
 ---
 
+archive/issue_events_008025.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8025"
+}
+```
+
+
+
+---
+
+archive/issue_events_008026.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8026"
+}
+```
+
+
+
+---
+
+archive/issue_events_008027.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8027"
+}
+```
+
+
+
+---
+
+archive/issue_events_008028.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8028"
+}
+```
+
+
+
+---
+
+archive/issue_events_008029.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8029"
+}
+```
+
+
+
+---
+
+archive/issue_events_008030.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8030"
+}
+```
+
+
+
+---
+
+archive/issue_events_008031.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8031"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024756.json:
 ```json
 {
@@ -291,6 +410,40 @@ archive/issue_comments_024758.json:
 > Indeed, #11912 "fixes" it by renaming `simplify_radical` and updating its documentation so that it's very clear that this might happen.
 
 In which case perhaps this integration example could be added there.
+
+
+
+---
+
+archive/issue_events_008032.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-11-17T18:19:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8032"
+}
+```
+
+
+
+---
+
+archive/issue_events_008033.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-11-17T18:19:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3520",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8033"
+}
+```
 
 
 
@@ -435,7 +588,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_003737.json:
+archive/issue_events_008034.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -443,6 +596,6 @@ archive/issue_events_003737.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3520",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3520#event-3737"
+    "url": "https://github.com/sagemath/sagetest/issues/3520#event-8034"
 }
 ```

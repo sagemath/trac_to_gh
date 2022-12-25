@@ -242,7 +242,7 @@ Number Field in b with defining polynomial x^2 - 69*x + 38 over its base field
 
 ---
 
-archive/issue_events_005024.json:
+archive/issue_events_010931.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -250,7 +250,7 @@ archive/issue_events_005024.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4782#event-5024"
+    "url": "https://github.com/sagemath/sagetest/issues/4782#event-10931"
 }
 ```
 
@@ -372,7 +372,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_005025.json:
+archive/issue_events_010932.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -380,7 +380,7 @@ archive/issue_events_005025.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4782#event-5025"
+    "url": "https://github.com/sagemath/sagetest/issues/4782#event-10932"
 }
 ```
 
@@ -536,6 +536,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_010933.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-10T21:26:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#event-10933"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036193.json:
 ```json
 {
@@ -556,7 +573,7 @@ Does anyone still experience issues?
 
 ---
 
-archive/issue_events_005026.json:
+archive/issue_events_010934.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -564,7 +581,7 @@ archive/issue_events_005026.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4782#event-5026"
+    "url": "https://github.com/sagemath/sagetest/issues/4782#event-10934"
 }
 ```
 

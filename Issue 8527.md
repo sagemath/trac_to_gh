@@ -82,6 +82,125 @@ Issue created by migration from https://trac.sagemath.org/ticket/8527
 
 ---
 
+archive/issue_events_020510.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20510"
+}
+```
+
+
+
+---
+
+archive/issue_events_020511.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20511"
+}
+```
+
+
+
+---
+
+archive/issue_events_020512.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20512"
+}
+```
+
+
+
+---
+
+archive/issue_events_020513.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20513"
+}
+```
+
+
+
+---
+
+archive/issue_events_020514.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20514"
+}
+```
+
+
+
+---
+
+archive/issue_events_020515.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20515"
+}
+```
+
+
+
+---
+
+archive/issue_events_020516.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20516"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076934.json:
 ```json
 {
@@ -116,6 +235,40 @@ Propose to close this ticket as obsolete.
 - The experimental libcocoa package seems to have been removed long ago, see #14962.
 - There is a new cocoalib package, see #25707.
 Please review.
+
+
+
+---
+
+archive/issue_events_020517.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2019-04-13T13:35:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20517"
+}
+```
+
+
+
+---
+
+archive/issue_events_020518.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2019-04-13T13:35:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20518"
+}
+```
 
 
 
@@ -157,7 +310,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_008707.json:
+archive/issue_events_020519.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -165,6 +318,6 @@ archive/issue_events_008707.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8527",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8527#event-8707"
+    "url": "https://github.com/sagemath/sagetest/issues/8527#event-20519"
 }
 ```

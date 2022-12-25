@@ -235,7 +235,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009343.json:
+archive/issue_events_022591.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -243,7 +243,24 @@ archive/issue_events_009343.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9187#event-9343"
+    "url": "https://github.com/sagemath/sagetest/issues/9187#event-22591"
+}
+```
+
+
+
+---
+
+archive/issue_events_022592.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-06-25T15:58:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#event-22592"
 }
 ```
 
@@ -264,6 +281,40 @@ archive/issue_comments_085805.json:
 ```
 
 Resolution changed from duplicate to 
+
+
+
+---
+
+archive/issue_events_022593.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-12T01:29:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#event-22593"
+}
+```
+
+
+
+---
+
+archive/issue_events_022594.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-12T01:29:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#event-22594"
+}
+```
 
 
 
@@ -305,7 +356,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009344.json:
+archive/issue_events_022595.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -313,7 +364,7 @@ archive/issue_events_009344.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9187#event-9344"
+    "url": "https://github.com/sagemath/sagetest/issues/9187#event-22595"
 }
 ```
 
@@ -866,7 +917,41 @@ http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg
 
 ---
 
-archive/issue_events_009345.json:
+archive/issue_events_022596.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-13T18:38:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#event-22596"
+}
+```
+
+
+
+---
+
+archive/issue_events_022597.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-13T18:38:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#event-22597"
+}
+```
+
+
+
+---
+
+archive/issue_events_022598.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -874,7 +959,7 @@ archive/issue_events_009345.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9187#event-9345"
+    "url": "https://github.com/sagemath/sagetest/issues/9187#event-22598"
 }
 ```
 

@@ -329,7 +329,7 @@ Got:
 
 ---
 
-archive/issue_events_004477.json:
+archive/issue_events_009587.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -337,7 +337,7 @@ archive/issue_events_004477.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#event-4477"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#event-9587"
 }
 ```
 

@@ -74,6 +74,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_009858.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4358",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4358#event-9858"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031954.json:
 ```json
 {
@@ -87,6 +104,40 @@ archive/issue_comments_031954.json:
 ```
 
 Why is this a bug? `gp` starts up very quickly, so it doesn't need to be "fixed".
+
+
+
+---
+
+archive/issue_events_009859.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T16:00:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4358",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4358#event-9859"
+}
+```
+
+
+
+---
+
+archive/issue_events_009860.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T16:00:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4358",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4358#event-9860"
+}
+```
 
 
 
@@ -163,7 +214,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_004603.json:
+archive/issue_events_009861.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -171,7 +222,7 @@ archive/issue_events_004603.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4358",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4358#event-4603"
+    "url": "https://github.com/sagemath/sagetest/issues/4358#event-9861"
 }
 ```
 

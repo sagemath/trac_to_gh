@@ -48,7 +48,24 @@ Useless.
 
 ---
 
-archive/issue_events_007604.json:
+archive/issue_events_017447.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2010-02-28T18:03:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7380",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7380#event-17447"
+}
+```
+
+
+
+---
+
+archive/issue_events_017448.json:
 ```json
 {
     "actor": "https://github.com/nathanncohen",
@@ -56,7 +73,7 @@ archive/issue_events_007604.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7380#event-7604"
+    "url": "https://github.com/sagemath/sagetest/issues/7380#event-17448"
 }
 ```
 
@@ -190,7 +207,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007605.json:
+archive/issue_events_017449.json:
 ```json
 {
     "actor": "https://github.com/nathanncohen",
@@ -198,7 +215,7 @@ archive/issue_events_007605.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7380#event-7605"
+    "url": "https://github.com/sagemath/sagetest/issues/7380#event-17449"
 }
 ```
 
@@ -280,7 +297,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_007606.json:
+archive/issue_events_017450.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -288,6 +305,6 @@ archive/issue_events_007606.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7380#event-7606"
+    "url": "https://github.com/sagemath/sagetest/issues/7380#event-17450"
 }
 ```

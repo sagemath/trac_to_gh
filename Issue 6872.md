@@ -105,7 +105,7 @@ without the patch
 
 ---
 
-archive/issue_events_007104.json:
+archive/issue_events_016170.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -113,7 +113,7 @@ archive/issue_events_007104.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6872",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6872#event-7104"
+    "url": "https://github.com/sagemath/sagetest/issues/6872#event-16170"
 }
 ```
 

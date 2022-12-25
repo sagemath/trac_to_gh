@@ -133,6 +133,23 @@ Attachment [7332.patch](tarball://root/attachments/some-uuid/ticket1196/7332.pat
 
 ---
 
+archive/issue_events_003195.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-18T04:15:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1196",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1196#event-3195"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007401.json:
 ```json
 {
@@ -151,7 +168,7 @@ Merged in 2.8.13.rc1.
 
 ---
 
-archive/issue_events_001332.json:
+archive/issue_events_003196.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -159,7 +176,7 @@ archive/issue_events_001332.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1196",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1196#event-1332"
+    "url": "https://github.com/sagemath/sagetest/issues/1196#event-3196"
 }
 ```
 

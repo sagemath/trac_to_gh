@@ -728,7 +728,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008031.json:
+archive/issue_events_018711.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -736,7 +736,7 @@ archive/issue_events_008031.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#event-8031"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#event-18711"
 }
 ```
 
@@ -780,7 +780,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008032.json:
+archive/issue_events_018712.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -788,7 +788,7 @@ archive/issue_events_008032.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#event-8032"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#event-18712"
 }
 ```
 
@@ -955,6 +955,23 @@ Changing status from needs_work to positive_review.
 
 ---
 
+archive/issue_events_018713.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-05T19:37:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7818",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7818#event-18713"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067555.json:
 ```json
 {
@@ -973,7 +990,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_008033.json:
+archive/issue_events_018714.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -981,6 +998,6 @@ archive/issue_events_008033.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#event-8033"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#event-18714"
 }
 ```

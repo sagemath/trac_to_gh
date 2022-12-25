@@ -295,7 +295,7 @@ Docstring #random-ed, follow up ticket at #6265.
 
 ---
 
-archive/issue_events_006306.json:
+archive/issue_events_014207.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -303,7 +303,7 @@ archive/issue_events_006306.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6051#event-6306"
+    "url": "https://github.com/sagemath/sagetest/issues/6051#event-14207"
 }
 ```
 

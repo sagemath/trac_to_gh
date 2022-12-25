@@ -146,7 +146,7 @@ Nathann, the ticket number is very useful for tracking down changes. You might c
 
 ---
 
-archive/issue_events_008287.json:
+archive/issue_events_019349.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -154,7 +154,7 @@ archive/issue_events_008287.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8081",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8081#event-8287"
+    "url": "https://github.com/sagemath/sagetest/issues/8081#event-19349"
 }
 ```
 

@@ -329,7 +329,7 @@ Thanks for the review!
 
 ---
 
-archive/issue_events_004108.json:
+archive/issue_events_008902.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -337,7 +337,7 @@ archive/issue_events_004108.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3883",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3883#event-4108"
+    "url": "https://github.com/sagemath/sagetest/issues/3883#event-8902"
 }
 ```
 

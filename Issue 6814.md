@@ -83,7 +83,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007048.json:
+archive/issue_events_016055.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/spancratz",
@@ -91,7 +91,7 @@ archive/issue_events_007048.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6814",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6814#event-7048"
+    "url": "https://github.com/sagemath/sagetest/issues/6814#event-16055"
 }
 ```
 
@@ -114,3 +114,20 @@ archive/issue_comments_056095.json:
 The error messages come up because the code does not actually detect numerically instability.  Instead, it notices when it fails, and assumes the only possible reason for this could be numerical instability.  Instead, there's a bug in the actual code.
 
 Thus, this ticket can be closed as being "invalid".
+
+
+
+---
+
+archive/issue_events_016056.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T12:52:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6814",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6814#event-16056"
+}
+```

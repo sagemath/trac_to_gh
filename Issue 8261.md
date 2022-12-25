@@ -225,7 +225,7 @@ http://sage.math.washington.edu/home/mvngu/spkg/standard/mpfr/mpfr-2.4.2.spkg
 
 ---
 
-archive/issue_events_008460.json:
+archive/issue_events_019778.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -233,7 +233,7 @@ archive/issue_events_008460.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8261",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8261#event-8460"
+    "url": "https://github.com/sagemath/sagetest/issues/8261#event-19778"
 }
 ```
 

@@ -331,7 +331,7 @@ directory. Since John already did sage -testall, I give a positive review.
 
 ---
 
-archive/issue_events_003335.json:
+archive/issue_events_007042.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -339,7 +339,7 @@ archive/issue_events_003335.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3118",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3118#event-3335"
+    "url": "https://github.com/sagemath/sagetest/issues/3118#event-7042"
 }
 ```
 

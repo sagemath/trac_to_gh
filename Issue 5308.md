@@ -316,6 +316,23 @@ You get a positive review from me. I won't change the status though, since Nicol
 
 ---
 
+archive/issue_events_012350.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2009-04-04T00:44:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5308",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5308#event-12350"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040765.json:
 ```json
 {
@@ -414,6 +431,40 @@ archive/issue_comments_040768.json:
 If its still possible, I'd rather seen this integrated in 3.4.1, to be sure that new users get good habits. 
 
 Florent
+
+
+
+---
+
+archive/issue_events_012351.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-04-04T08:27:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5308",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5308#event-12351"
+}
+```
+
+
+
+---
+
+archive/issue_events_012352.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-04-04T08:27:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5308",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5308#event-12352"
+}
+```
 
 
 
@@ -626,7 +677,7 @@ Michael
 
 ---
 
-archive/issue_events_005564.json:
+archive/issue_events_012353.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -634,7 +685,7 @@ archive/issue_events_005564.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5308#event-5564"
+    "url": "https://github.com/sagemath/sagetest/issues/5308#event-12353"
 }
 ```
 

@@ -546,6 +546,23 @@ It looks to me like those doctest failures were fixed some time between 4.6 and 
 
 ---
 
+archive/issue_events_023098.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-09T19:03:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9363",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9363#event-23098"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088811.json:
 ```json
 {
@@ -600,7 +617,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009516.json:
+archive/issue_events_023099.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -608,6 +625,6 @@ archive/issue_events_009516.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9363#event-9516"
+    "url": "https://github.com/sagemath/sagetest/issues/9363#event-23099"
 }
 ```

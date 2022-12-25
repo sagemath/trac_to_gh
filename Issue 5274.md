@@ -50,7 +50,24 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_005530.json:
+archive/issue_events_012251.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-19T17:21:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5274",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5274#event-12251"
+}
+```
+
+
+
+---
+
+archive/issue_events_012252.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -58,7 +75,7 @@ archive/issue_events_005530.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5274",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5274#event-5530"
+    "url": "https://github.com/sagemath/sagetest/issues/5274#event-12252"
 }
 ```
 

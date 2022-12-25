@@ -66,7 +66,7 @@ Looks good to me -- all tests pass.
 
 ---
 
-archive/issue_events_004011.json:
+archive/issue_events_008698.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -74,7 +74,7 @@ archive/issue_events_004011.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3789",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3789#event-4011"
+    "url": "https://github.com/sagemath/sagetest/issues/3789#event-8698"
 }
 ```
 

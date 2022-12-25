@@ -151,6 +151,23 @@ sage: [R(XY[0]),R(XY[1])]
 
 ---
 
+archive/issue_events_005892.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-01T15:29:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2508",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2508#event-5892"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016969.json:
 ```json
 {
@@ -211,6 +228,40 @@ archive/issue_comments_016971.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_005893.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-03T07:13:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2508",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2508#event-5893"
+}
+```
+
+
+
+---
+
+archive/issue_events_005894.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-03T07:13:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2508",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2508#event-5894"
+}
+```
 
 
 
@@ -344,7 +395,7 @@ Thanks, Jeroen!
 
 ---
 
-archive/issue_events_002689.json:
+archive/issue_events_005895.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -352,7 +403,7 @@ archive/issue_events_002689.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2508",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2508#event-2689"
+    "url": "https://github.com/sagemath/sagetest/issues/2508#event-5895"
 }
 ```
 

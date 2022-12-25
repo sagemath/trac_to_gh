@@ -126,6 +126,23 @@ It's a Cygwin-specific change. Positive review.
 
 ---
 
+archive/issue_events_022512.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-22T13:16:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9154",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9154#event-22512"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085324.json:
 ```json
 {
@@ -144,7 +161,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009312.json:
+archive/issue_events_022513.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -152,7 +169,7 @@ archive/issue_events_009312.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9154",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9154#event-9312"
+    "url": "https://github.com/sagemath/sagetest/issues/9154#event-22513"
 }
 ```
 
@@ -214,7 +231,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009313.json:
+archive/issue_events_022514.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -222,7 +239,7 @@ archive/issue_events_009313.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9154",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9154#event-9313"
+    "url": "https://github.com/sagemath/sagetest/issues/9154#event-22514"
 }
 ```
 
@@ -384,7 +401,7 @@ Mea culpa. Fixed the URL.
 
 ---
 
-archive/issue_events_009314.json:
+archive/issue_events_022515.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -392,7 +409,7 @@ archive/issue_events_009314.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9154",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9154#event-9314"
+    "url": "https://github.com/sagemath/sagetest/issues/9154#event-22515"
 }
 ```
 

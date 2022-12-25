@@ -35,6 +35,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/526
 
 ---
 
+archive/issue_events_001350.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:42:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/526",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/526#event-1350"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002660.json:
 ```json
 {
@@ -79,6 +96,40 @@ So somebody send us a patch for the manual. We also need to audit all packages a
 Cheers,
 
 Michaek
+
+
+
+---
+
+archive/issue_events_001351.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-20T14:09:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/526",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/526#event-1351"
+}
+```
+
+
+
+---
+
+archive/issue_events_001352.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-20T14:09:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/526",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/526#event-1352"
+}
+```
 
 
 
@@ -196,7 +247,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000565.json:
+archive/issue_events_001353.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -204,6 +255,6 @@ archive/issue_events_000565.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/526#event-565"
+    "url": "https://github.com/sagemath/sagetest/issues/526#event-1353"
 }
 ```

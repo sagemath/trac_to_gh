@@ -133,6 +133,23 @@ To release manager: this one should be closed, as far as all the information sug
 
 ---
 
+archive/issue_events_023665.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-19T22:13:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9525",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9525#event-23665"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091493.json:
 ```json
 {
@@ -151,7 +168,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009674.json:
+archive/issue_events_023666.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -159,6 +176,6 @@ archive/issue_events_009674.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9525",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9525#event-9674"
+    "url": "https://github.com/sagemath/sagetest/issues/9525#event-23666"
 }
 ```

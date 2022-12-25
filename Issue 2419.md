@@ -111,6 +111,23 @@ I hope this is sufficiently reproducible for tracking down the problem.
 
 ---
 
+archive/issue_events_005703.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2008-03-12T08:41:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2419",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-5703"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016285.json:
 ```json
 {
@@ -620,7 +637,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002595.json:
+archive/issue_events_005704.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -628,7 +645,7 @@ archive/issue_events_002595.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2419#event-2595"
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-5704"
 }
 ```
 
@@ -654,7 +671,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002596.json:
+archive/issue_events_005705.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -662,7 +679,7 @@ archive/issue_events_002596.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2419#event-2596"
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-5705"
 }
 ```
 
@@ -930,6 +947,40 @@ Michael
 
 ---
 
+archive/issue_events_005706.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-18T20:32:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2419",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-5706"
+}
+```
+
+
+
+---
+
+archive/issue_events_005707.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-18T20:32:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2419",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-5707"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016316.json:
 ```json
 {
@@ -987,7 +1038,7 @@ Applies and passes tests against 3.0alpha5.  Looks good to me.
 
 ---
 
-archive/issue_events_002597.json:
+archive/issue_events_005708.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -995,7 +1046,7 @@ archive/issue_events_002597.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2419#event-2597"
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-5708"
 }
 ```
 

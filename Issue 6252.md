@@ -161,7 +161,7 @@ where one can search for the names of the above new contributors.
 
 ---
 
-archive/issue_events_006496.json:
+archive/issue_events_014646.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -169,7 +169,7 @@ archive/issue_events_006496.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6252",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6252#event-6496"
+    "url": "https://github.com/sagemath/sagetest/issues/6252#event-14646"
 }
 ```
 

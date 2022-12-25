@@ -903,6 +903,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_020109.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-04T06:28:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8386",
+    "milestone": "sage-5.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8386#event-20109"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074924.json:
 ```json
 {
@@ -1244,7 +1261,41 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008571.json:
+archive/issue_events_020110.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-21T21:45:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8386",
+    "milestone": "sage-5.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8386#event-20110"
+}
+```
+
+
+
+---
+
+archive/issue_events_020111.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-21T21:45:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8386",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8386#event-20111"
+}
+```
+
+
+
+---
+
+archive/issue_events_020112.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1252,7 +1303,7 @@ archive/issue_events_008571.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8386#event-8571"
+    "url": "https://github.com/sagemath/sagetest/issues/8386#event-20112"
 }
 ```
 

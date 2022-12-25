@@ -190,6 +190,23 @@ Your reasoning (that the userbase for this feature is almost entirely numeric us
 
 ---
 
+archive/issue_events_010193.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T11:04:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4501",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4501#event-10193"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033276.json:
 ```json
 {
@@ -226,7 +243,7 @@ See #5079
 
 ---
 
-archive/issue_events_004747.json:
+archive/issue_events_010194.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -234,6 +251,40 @@ archive/issue_events_004747.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4501#event-4747"
+    "url": "https://github.com/sagemath/sagetest/issues/4501#event-10194"
+}
+```
+
+
+
+---
+
+archive/issue_events_010195.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T15:34:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4501",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4501#event-10195"
+}
+```
+
+
+
+---
+
+archive/issue_events_010196.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T15:34:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4501",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4501#event-10196"
 }
 ```

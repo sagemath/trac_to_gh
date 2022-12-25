@@ -64,3 +64,156 @@ Is this possible without introducing a new parameter?
 Issue created by migration from https://trac.sagemath.org/ticket/3474
 
 
+
+
+
+---
+
+archive/issue_events_007896.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T06:38:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7896"
+}
+```
+
+
+
+---
+
+archive/issue_events_007897.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7897"
+}
+```
+
+
+
+---
+
+archive/issue_events_007898.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7898"
+}
+```
+
+
+
+---
+
+archive/issue_events_007899.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7899"
+}
+```
+
+
+
+---
+
+archive/issue_events_007900.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7900"
+}
+```
+
+
+
+---
+
+archive/issue_events_007901.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7901"
+}
+```
+
+
+
+---
+
+archive/issue_events_007902.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7902"
+}
+```
+
+
+
+---
+
+archive/issue_events_007903.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7903"
+}
+```
+
+
+
+---
+
+archive/issue_events_007904.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3474",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3474#event-7904"
+}
+```

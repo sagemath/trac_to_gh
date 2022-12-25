@@ -217,7 +217,7 @@ Real test will sage-4.0.2.alpha1.
 
 ---
 
-archive/issue_events_006479.json:
+archive/issue_events_014610.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -225,7 +225,7 @@ archive/issue_events_006479.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6234#event-6479"
+    "url": "https://github.com/sagemath/sagetest/issues/6234#event-14610"
 }
 ```
 

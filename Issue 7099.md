@@ -80,6 +80,57 @@ So here is the problem, right in the change to Pari from the RealField.
 
 ---
 
+archive/issue_events_016785.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7099",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7099#event-16785"
+}
+```
+
+
+
+---
+
+archive/issue_events_016786.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7099",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7099#event-16786"
+}
+```
+
+
+
+---
+
+archive/issue_events_016787.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7099",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7099#event-16787"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058633.json:
 ```json
 {
@@ -387,6 +438,40 @@ I was pretty sure we were deprecating the `prec` keyword **inside** such functio
 
 ---
 
+archive/issue_events_016788.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7099",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7099#event-16788"
+}
+```
+
+
+
+---
+
+archive/issue_events_016789.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7099",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7099#event-16789"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058648.json:
 ```json
 {
@@ -444,6 +529,40 @@ archive/issue_comments_058650.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_016790.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7099",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7099#event-16790"
+}
+```
+
+
+
+---
+
+archive/issue_events_016791.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7099",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7099#event-16791"
+}
+```
 
 
 
@@ -587,7 +706,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007321.json:
+archive/issue_events_016792.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -595,6 +714,6 @@ archive/issue_events_007321.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7099#event-7321"
+    "url": "https://github.com/sagemath/sagetest/issues/7099#event-16792"
 }
 ```

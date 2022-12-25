@@ -397,6 +397,23 @@ Attachment [Combinatorica-Compare.ods](tarball://root/attachments/some-uuid/tick
 
 ---
 
+archive/issue_events_001857.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-20T07:42:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/698",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/698#event-1857"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003637.json:
 ```json
 {
@@ -625,7 +642,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000764.json:
+archive/issue_events_001858.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -633,6 +650,40 @@ archive/issue_events_000764.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/698",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/698#event-764"
+    "url": "https://github.com/sagemath/sagetest/issues/698#event-1858"
+}
+```
+
+
+
+---
+
+archive/issue_events_001859.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-12-02T09:49:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/698",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/698#event-1859"
+}
+```
+
+
+
+---
+
+archive/issue_events_001860.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-12-02T09:49:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/698",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/698#event-1860"
 }
 ```

@@ -159,6 +159,57 @@ Attachment [6106BinaryQF.patch](tarball://root/attachments/some-uuid/ticket6106/
 
 ---
 
+archive/issue_events_014364.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14364"
+}
+```
+
+
+
+---
+
+archive/issue_events_014365.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14365"
+}
+```
+
+
+
+---
+
+archive/issue_events_014366.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14366"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048687.json:
 ```json
 {
@@ -172,6 +223,74 @@ archive/issue_comments_048687.json:
 ```
 
 This ticket seems to implement the same functionality as (part of) #4120, which has been inactive for a very long time, like this ticket.
+
+
+
+---
+
+archive/issue_events_014367.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14367"
+}
+```
+
+
+
+---
+
+archive/issue_events_014368.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14368"
+}
+```
+
+
+
+---
+
+archive/issue_events_014369.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14369"
+}
+```
+
+
+
+---
+
+archive/issue_events_014370.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14370"
+}
+```
 
 
 
@@ -192,6 +311,40 @@ archive/issue_comments_048688.json:
 Replying to [comment:6 pbruin]:
 > This ticket seems to implement the same functionality as (part of) #4120, which has been inactive for a very long time, like this ticket.
 Now that #4120 has been merged, it would be good to check if this ticket still adds new functionality.  If not, we could also just add the examples from this ticket.
+
+
+
+---
+
+archive/issue_events_014371.json:
+```json
+{
+    "actor": "https://github.com/simonbrandhorst",
+    "created_at": "2018-07-14T17:34:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14371"
+}
+```
+
+
+
+---
+
+archive/issue_events_014372.json:
+```json
+{
+    "actor": "https://github.com/simonbrandhorst",
+    "created_at": "2018-07-14T17:34:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14372"
+}
+```
 
 
 
@@ -291,6 +444,40 @@ Here are some doctests from the patches.  I checked that they are mathematically
 
 ---
 
+archive/issue_events_014373.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2018-07-16T09:49:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14373"
+}
+```
+
+
+
+---
+
+archive/issue_events_014374.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2018-07-16T09:49:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048694.json:
 ```json
 {
@@ -322,6 +509,74 @@ archive/issue_comments_048695.json:
 ```
 
 doc builds.
+
+
+
+---
+
+archive/issue_events_014375.json:
+```json
+{
+    "actor": "https://github.com/simonbrandhorst",
+    "created_at": "2018-07-16T10:26:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14375"
+}
+```
+
+
+
+---
+
+archive/issue_events_014376.json:
+```json
+{
+    "actor": "https://github.com/simonbrandhorst",
+    "created_at": "2018-07-16T10:26:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14376"
+}
+```
+
+
+
+---
+
+archive/issue_events_014377.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2018-08-22T12:29:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14377"
+}
+```
+
+
+
+---
+
+archive/issue_events_014378.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2018-08-22T12:29:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6106",
+    "milestone": "sage-8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14378"
+}
+```
 
 
 
@@ -383,7 +638,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006357.json:
+archive/issue_events_014379.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -391,6 +646,6 @@ archive/issue_events_006357.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6106#event-6357"
+    "url": "https://github.com/sagemath/sagetest/issues/6106#event-14379"
 }
 ```

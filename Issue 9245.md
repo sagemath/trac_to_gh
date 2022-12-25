@@ -586,6 +586,23 @@ I'm fine with your remaining comments.
 
 ---
 
+archive/issue_events_022765.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-07-02T21:20:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9245",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9245#event-22765"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086852.json:
 ```json
 {
@@ -831,7 +848,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009406.json:
+archive/issue_events_022766.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -839,7 +856,7 @@ archive/issue_events_009406.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#event-9406"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#event-22766"
 }
 ```
 

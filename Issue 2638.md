@@ -72,7 +72,7 @@ Works for me, all tests in QQbar pass.
 
 ---
 
-archive/issue_events_002829.json:
+archive/issue_events_006188.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -80,7 +80,7 @@ archive/issue_events_002829.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2638",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2638#event-2829"
+    "url": "https://github.com/sagemath/sagetest/issues/2638#event-6188"
 }
 ```
 
@@ -123,3 +123,20 @@ Merged in Sage 3.3.alpha2
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_006189.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T19:31:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2638",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2638#event-6189"
+}
+```

@@ -123,7 +123,24 @@ I suspect this should be closed in that case.
 
 ---
 
-archive/issue_events_006987.json:
+archive/issue_events_015930.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-28T01:34:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6757",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6757#event-15930"
+}
+```
+
+
+
+---
+
+archive/issue_events_015931.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -131,7 +148,7 @@ archive/issue_events_006987.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6757",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6757#event-6987"
+    "url": "https://github.com/sagemath/sagetest/issues/6757#event-15931"
 }
 ```
 

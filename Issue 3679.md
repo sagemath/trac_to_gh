@@ -65,6 +65,23 @@ Attachment [extcode.patch](tarball://root/attachments/some-uuid/ticket3679/extco
 
 ---
 
+archive/issue_events_008422.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-19T23:12:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3679",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3679#event-8422"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025998.json:
 ```json
 {
@@ -197,6 +214,40 @@ No, I messed up and didn't apply it.  Now everything works perfectly and the imp
 
 ---
 
+archive/issue_events_008423.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-29T23:24:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3679",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3679#event-8423"
+}
+```
+
+
+
+---
+
+archive/issue_events_008424.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-29T23:24:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3679",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3679#event-8424"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026004.json:
 ```json
 {
@@ -255,7 +306,7 @@ Merged all three patches in Sage 3.1.alpha0
 
 ---
 
-archive/issue_events_003900.json:
+archive/issue_events_008425.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -263,7 +314,7 @@ archive/issue_events_003900.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3679#event-3900"
+    "url": "https://github.com/sagemath/sagetest/issues/3679#event-8425"
 }
 ```
 

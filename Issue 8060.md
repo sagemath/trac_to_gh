@@ -106,7 +106,7 @@ I changed the title, to put x64 rather than 64-bit, as there is Open Solaris run
 
 ---
 
-archive/issue_events_008269.json:
+archive/issue_events_019305.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -114,7 +114,7 @@ archive/issue_events_008269.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8060",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8060#event-8269"
+    "url": "https://github.com/sagemath/sagetest/issues/8060#event-19305"
 }
 ```
 

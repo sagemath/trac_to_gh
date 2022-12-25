@@ -290,7 +290,7 @@ Thanks!
 
 ---
 
-archive/issue_events_009986.json:
+archive/issue_events_024817.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -298,7 +298,7 @@ archive/issue_events_009986.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9856#event-9986"
+    "url": "https://github.com/sagemath/sagetest/issues/9856#event-24817"
 }
 ```
 

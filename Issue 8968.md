@@ -115,7 +115,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_009118.json:
+archive/issue_events_021901.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -123,7 +123,7 @@ archive/issue_events_009118.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8968",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8968#event-9118"
+    "url": "https://github.com/sagemath/sagetest/issues/8968#event-21901"
 }
 ```
 
@@ -157,3 +157,54 @@ sage:  magma.Resultant(p0,p1)
 3
 ```
 
+
+
+
+---
+
+archive/issue_events_021902.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-04T05:43:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8968",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8968#event-21902"
+}
+```
+
+
+
+---
+
+archive/issue_events_021903.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-04T08:12:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8968",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8968#event-21903"
+}
+```
+
+
+
+---
+
+archive/issue_events_021904.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-04T08:12:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8968",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8968#event-21904"
+}
+```

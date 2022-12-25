@@ -101,7 +101,7 @@ Patches and reviews my Mike Hansen and Nicolas Thiery.
 
 ---
 
-archive/issue_events_005041.json:
+archive/issue_events_010981.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -109,7 +109,7 @@ archive/issue_events_005041.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4799",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4799#event-5041"
+    "url": "https://github.com/sagemath/sagetest/issues/4799#event-10981"
 }
 ```
 

@@ -60,6 +60,57 @@ Attachment [2403.patch](tarball://root/attachments/some-uuid/ticket2403/2403.pat
 
 ---
 
+archive/issue_events_005666.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-07T04:46:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2403",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2403#event-5666"
+}
+```
+
+
+
+---
+
+archive/issue_events_005667.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:20:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2403",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2403#event-5667"
+}
+```
+
+
+
+---
+
+archive/issue_events_005668.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:20:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2403",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2403#event-5668"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016193.json:
 ```json
 {
@@ -78,7 +129,7 @@ Looks good; testall passes.
 
 ---
 
-archive/issue_events_002579.json:
+archive/issue_events_005669.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -86,7 +137,7 @@ archive/issue_events_002579.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2403",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2403#event-2579"
+    "url": "https://github.com/sagemath/sagetest/issues/2403#event-5669"
 }
 ```
 

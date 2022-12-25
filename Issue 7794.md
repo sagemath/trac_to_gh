@@ -173,6 +173,57 @@ I miss the possibility to change the ticket into the state "worksforme", but tha
 
 ---
 
+archive/issue_events_018659.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2011-05-19T18:10:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#event-18659"
+}
+```
+
+
+
+---
+
+archive/issue_events_018660.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-19T20:00:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#event-18660"
+}
+```
+
+
+
+---
+
+archive/issue_events_018661.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-19T20:00:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#event-18661"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067153.json:
 ```json
 {
@@ -943,7 +994,7 @@ Yes, but it made it impossible for me to create a doctest for your fix!
 
 ---
 
-archive/issue_events_008008.json:
+archive/issue_events_018662.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -951,7 +1002,7 @@ archive/issue_events_008008.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7794#event-8008"
+    "url": "https://github.com/sagemath/sagetest/issues/7794#event-18662"
 }
 ```
 

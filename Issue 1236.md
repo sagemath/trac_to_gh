@@ -321,6 +321,23 @@ shows implementation using elliptic net. This is not in sage now but this is not
 
 ---
 
+archive/issue_events_003269.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-09-19T08:56:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1236",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1236#event-3269"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007707.json:
 ```json
 {
@@ -357,7 +374,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001376.json:
+archive/issue_events_003270.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -365,6 +382,6 @@ archive/issue_events_001376.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1236#event-1376"
+    "url": "https://github.com/sagemath/sagetest/issues/1236#event-3270"
 }
 ```

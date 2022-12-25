@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/78
 
 ---
 
+archive/issue_events_000167.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-24T05:23:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/78",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/78#event-167"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000391.json:
 ```json
 {
@@ -46,7 +63,7 @@ I did this a long time ago!  (Though it could be made more robust.)
 
 ---
 
-archive/issue_events_000078.json:
+archive/issue_events_000168.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -54,7 +71,7 @@ archive/issue_events_000078.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/78",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/78#event-78"
+    "url": "https://github.com/sagemath/sagetest/issues/78#event-168"
 }
 ```
 

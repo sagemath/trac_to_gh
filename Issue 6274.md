@@ -67,6 +67,23 @@ Changing keywords from "" to "docstring, doctest, plot".
 
 ---
 
+archive/issue_events_014682.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-13T15:27:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6274",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6274#event-14682"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050023.json:
 ```json
 {
@@ -121,7 +138,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006518.json:
+archive/issue_events_014683.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -129,6 +146,6 @@ archive/issue_events_006518.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6274",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6274#event-6518"
+    "url": "https://github.com/sagemath/sagetest/issues/6274#event-14683"
 }
 ```

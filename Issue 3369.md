@@ -120,7 +120,7 @@ Ah, OK. Then I guess we should close this.
 
 ---
 
-archive/issue_events_003585.json:
+archive/issue_events_007596.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,7 +128,7 @@ archive/issue_events_003585.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3369",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3369#event-3585"
+    "url": "https://github.com/sagemath/sagetest/issues/3369#event-7596"
 }
 ```
 

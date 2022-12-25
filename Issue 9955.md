@@ -70,6 +70,23 @@ Feel free to mark one/all of the tickets mentioned above as blockers.
 
 ---
 
+archive/issue_events_025115.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-09-21T06:22:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9955",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9955#event-25115"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099142.json:
 ```json
 {
@@ -88,7 +105,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_010084.json:
+archive/issue_events_025116.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -96,6 +113,6 @@ archive/issue_events_010084.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9955",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9955#event-10084"
+    "url": "https://github.com/sagemath/sagetest/issues/9955#event-25116"
 }
 ```

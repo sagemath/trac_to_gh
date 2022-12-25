@@ -629,7 +629,7 @@ tested on Debian x64 and on MacOSX 10.5 PPC. Positive!
 
 ---
 
-archive/issue_events_010053.json:
+archive/issue_events_025028.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -637,7 +637,7 @@ archive/issue_events_010053.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9925#event-10053"
+    "url": "https://github.com/sagemath/sagetest/issues/9925#event-25028"
 }
 ```
 

@@ -46,6 +46,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3737
 
 ---
 
+archive/issue_events_008563.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2008-07-29T20:41:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3737",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3737#event-8563"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026466.json:
 ```json
 {
@@ -100,6 +117,40 @@ This might become moot with the Sphinx versions of the documentation -- I notice
 
 ---
 
+archive/issue_events_008564.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-24T10:00:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3737",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3737#event-8564"
+}
+```
+
+
+
+---
+
+archive/issue_events_008565.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-24T10:00:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3737",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3737#event-8565"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026469.json:
 ```json
 {
@@ -136,7 +187,7 @@ This can be closed.
 
 ---
 
-archive/issue_events_003960.json:
+archive/issue_events_008566.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -144,7 +195,7 @@ archive/issue_events_003960.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3737#event-3960"
+    "url": "https://github.com/sagemath/sagetest/issues/3737#event-8566"
 }
 ```
 

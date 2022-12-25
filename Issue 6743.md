@@ -6509,7 +6509,7 @@ Of course, it does not really builds completely automatically because you have t
 
 ---
 
-archive/issue_events_006975.json:
+archive/issue_events_015907.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -6517,7 +6517,7 @@ archive/issue_events_006975.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6743",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6743#event-6975"
+    "url": "https://github.com/sagemath/sagetest/issues/6743#event-15907"
 }
 ```
 

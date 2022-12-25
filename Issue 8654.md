@@ -451,7 +451,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008826.json:
+archive/issue_events_020944.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -459,7 +459,7 @@ archive/issue_events_008826.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8654#event-8826"
+    "url": "https://github.com/sagemath/sagetest/issues/8654#event-20944"
 }
 ```
 
@@ -480,3 +480,20 @@ archive/issue_comments_078405.json:
 ```
 
 Milestone sage-4.7.3 deleted
+
+
+
+---
+
+archive/issue_events_020945.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-03T20:35:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#event-20945"
+}
+```

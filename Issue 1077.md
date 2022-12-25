@@ -48,6 +48,23 @@ Changing assignee from @williamstein to @yqiang.
 
 ---
 
+archive/issue_events_002914.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-03T23:49:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#event-2914"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006496.json:
 ```json
 {
@@ -102,6 +119,40 @@ Here's an example output.  How can worker 0 be working on two jobs at once?
 2007/11/07 22:28 -0700 [-] [Worker: 0] Restarting...
 2007/11/07 22:28 -0700 [Broker,client] [Worker 0] Starting job kLm2hihd1N
 2007/11/07 22:28 -0700 [Broker,client] [Worker 0] Starting job jUtQDMnlOG
+
+
+
+---
+
+archive/issue_events_002915.json:
+```json
+{
+    "actor": "https://github.com/yqiang",
+    "created_at": "2007-11-12T01:03:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#event-2915"
+}
+```
+
+
+
+---
+
+archive/issue_events_002916.json:
+```json
+{
+    "actor": "https://github.com/yqiang",
+    "created_at": "2007-11-12T01:03:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#event-2916"
+}
+```
 
 
 
@@ -207,7 +258,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001199.json:
+archive/issue_events_002917.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -215,7 +266,7 @@ archive/issue_events_001199.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1077",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1077#event-1199"
+    "url": "https://github.com/sagemath/sagetest/issues/1077#event-2917"
 }
 ```
 

@@ -75,6 +75,23 @@ Note: this patch depends on #4371 and #5255.
 
 ---
 
+archive/issue_events_010359.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-02-13T23:34:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4549",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4549#event-10359"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034013.json:
 ```json
 {
@@ -252,6 +269,40 @@ I would tend to break the pickles indeed, unless someone cries very loud for thi
 
 Cheers,
 				Nicolas
+
+
+
+---
+
+archive/issue_events_010360.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T04:59:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4549",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4549#event-10360"
+}
+```
+
+
+
+---
+
+archive/issue_events_010361.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T04:59:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4549",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4549#event-10361"
+}
+```
 
 
 
@@ -464,6 +515,40 @@ Florent
 
 ---
 
+archive/issue_events_010362.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-04-04T08:29:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4549",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4549#event-10362"
+}
+```
+
+
+
+---
+
+archive/issue_events_010363.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-04-04T08:29:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4549",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4549#event-10363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034029.json:
 ```json
 {
@@ -509,7 +594,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004794.json:
+archive/issue_events_010364.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -517,6 +602,6 @@ archive/issue_events_004794.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4549#event-4794"
+    "url": "https://github.com/sagemath/sagetest/issues/4549#event-10364"
 }
 ```

@@ -241,6 +241,23 @@ Total time for all tests: 3.2 seconds
 
 ---
 
+archive/issue_events_009113.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-10T04:03:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3978",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3978#event-9113"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028518.json:
 ```json
 {
@@ -295,7 +312,7 @@ Merged in Sage 3.1.2.rc2
 
 ---
 
-archive/issue_events_004208.json:
+archive/issue_events_009114.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -303,7 +320,7 @@ archive/issue_events_004208.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3978",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3978#event-4208"
+    "url": "https://github.com/sagemath/sagetest/issues/3978#event-9114"
 }
 ```
 

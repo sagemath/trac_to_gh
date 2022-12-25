@@ -98,6 +98,91 @@ Michael
 
 ---
 
+archive/issue_events_001804.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:15:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/678",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/678#event-1804"
+}
+```
+
+
+
+---
+
+archive/issue_events_001805.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:38:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/678",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/678#event-1805"
+}
+```
+
+
+
+---
+
+archive/issue_events_001806.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:38:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/678",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/678#event-1806"
+}
+```
+
+
+
+---
+
+archive/issue_events_001807.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-29T17:27:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/678",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/678#event-1807"
+}
+```
+
+
+
+---
+
+archive/issue_events_001808.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-29T17:27:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/678",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/678#event-1808"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003503.json:
 ```json
 {
@@ -138,7 +223,7 @@ Michael
 
 ---
 
-archive/issue_events_000746.json:
+archive/issue_events_001809.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -146,6 +231,6 @@ archive/issue_events_000746.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/678",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/678#event-746"
+    "url": "https://github.com/sagemath/sagetest/issues/678#event-1809"
 }
 ```

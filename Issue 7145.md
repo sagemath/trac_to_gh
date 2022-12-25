@@ -1060,7 +1060,7 @@ I just want to add that I tested it on a fresh Sage-4.3.
 
 ---
 
-archive/issue_events_007365.json:
+archive/issue_events_016893.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -1068,7 +1068,7 @@ archive/issue_events_007365.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7145#event-7365"
+    "url": "https://github.com/sagemath/sagetest/issues/7145#event-16893"
 }
 ```
 

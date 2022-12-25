@@ -26,6 +26,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/284
 
 ---
 
+archive/issue_events_000644.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-02-24T02:31:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/284",
+    "milestone": "sage-2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/284#event-644"
+}
+```
+
+
+
+---
+
+archive/issue_events_000645.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-02-24T02:31:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/284",
+    "milestone": "sage-2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/284#event-645"
+}
+```
+
+
+
+---
+
+archive/issue_events_000646.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-02-24T02:31:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/284",
+    "milestone": "sage-2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/284#event-646"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001349.json:
 ```json
 {
@@ -62,7 +113,7 @@ resolved a while ago.
 
 ---
 
-archive/issue_events_000301.json:
+archive/issue_events_000647.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -70,6 +121,6 @@ archive/issue_events_000301.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/284",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/284#event-301"
+    "url": "https://github.com/sagemath/sagetest/issues/284#event-647"
 }
 ```

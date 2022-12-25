@@ -156,7 +156,7 @@ Michael
 
 ---
 
-archive/issue_events_003606.json:
+archive/issue_events_007652.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -164,7 +164,7 @@ archive/issue_events_003606.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3391#event-3606"
+    "url": "https://github.com/sagemath/sagetest/issues/3391#event-7652"
 }
 ```
 
@@ -226,7 +226,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003607.json:
+archive/issue_events_007653.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -234,7 +234,7 @@ archive/issue_events_003607.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3391#event-3607"
+    "url": "https://github.com/sagemath/sagetest/issues/3391#event-7653"
 }
 ```
 
@@ -396,7 +396,7 @@ spkg and patch merged in 4.0.2.alpha0.
 
 ---
 
-archive/issue_events_003608.json:
+archive/issue_events_007654.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -404,7 +404,7 @@ archive/issue_events_003608.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3391#event-3608"
+    "url": "https://github.com/sagemath/sagetest/issues/3391#event-7654"
 }
 ```
 

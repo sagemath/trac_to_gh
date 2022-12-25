@@ -47,6 +47,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_017343.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
+    "created_at": "2009-10-27T19:49:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7324",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7324#event-17343"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061087.json:
 ```json
 {
@@ -235,7 +252,7 @@ Attachment [trac_7324_order_from_multiple-spelling.patch](tarball://root/attachm
 
 ---
 
-archive/issue_events_007546.json:
+archive/issue_events_017344.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -243,7 +260,7 @@ archive/issue_events_007546.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#event-7546"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#event-17344"
 }
 ```
 

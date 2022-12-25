@@ -48,6 +48,23 @@ Attachment [trac_9052.patch](tarball://root/attachments/some-uuid/ticket9052/tra
 
 ---
 
+archive/issue_events_022175.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/voloch",
+    "created_at": "2010-05-26T01:55:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9052",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9052#event-22175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083697.json:
 ```json
 {
@@ -202,7 +219,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009203.json:
+archive/issue_events_022176.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -210,7 +227,7 @@ archive/issue_events_009203.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9052",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9052#event-9203"
+    "url": "https://github.com/sagemath/sagetest/issues/9052#event-22176"
 }
 ```
 

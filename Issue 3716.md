@@ -115,7 +115,7 @@ Merged in the optinal repo in Sage 3.0.6.final
 
 ---
 
-archive/issue_events_003936.json:
+archive/issue_events_008505.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -123,6 +123,6 @@ archive/issue_events_003936.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3716",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3716#event-3936"
+    "url": "https://github.com/sagemath/sagetest/issues/3716#event-8505"
 }
 ```

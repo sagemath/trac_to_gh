@@ -221,6 +221,23 @@ Changing keywords from "conic, curve" to "conic, curve, function field".
 
 ---
 
+archive/issue_events_016180.json:
+```json
+{
+    "actor": "https://github.com/mstreng",
+    "created_at": "2015-12-14T15:25:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6881",
+    "milestone": "sage-6.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6881#event-16180"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056698.json:
 ```json
 {
@@ -877,7 +894,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007112.json:
+archive/issue_events_016181.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -885,6 +902,6 @@ archive/issue_events_007112.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6881#event-7112"
+    "url": "https://github.com/sagemath/sagetest/issues/6881#event-16181"
 }
 ```

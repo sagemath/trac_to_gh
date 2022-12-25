@@ -132,7 +132,7 @@ For Sage 4.3.2.alpha1, originally the number of warnings for building the refere
 
 ---
 
-archive/issue_events_008233.json:
+archive/issue_events_019218.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -140,7 +140,7 @@ archive/issue_events_008233.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8022",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8022#event-8233"
+    "url": "https://github.com/sagemath/sagetest/issues/8022#event-19218"
 }
 ```
 

@@ -52,7 +52,7 @@ For SAGE-1.4.2
 
 ---
 
-archive/issue_events_000156.json:
+archive/issue_events_000280.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -60,7 +60,7 @@ archive/issue_events_000156.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/150",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/150#event-156"
+    "url": "https://github.com/sagemath/sagetest/issues/150#event-280"
 }
 ```
 

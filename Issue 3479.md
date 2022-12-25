@@ -69,6 +69,23 @@ Yi, does your patch apply with #3347 applied?
 
 ---
 
+archive/issue_events_007919.json:
+```json
+{
+    "actor": "https://github.com/yqiang",
+    "created_at": "2008-06-19T22:31:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#event-7919"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024467.json:
 ```json
 {
@@ -187,6 +204,40 @@ I addressed the referee's comment and added this to the Sphinx version of the tu
 
 ---
 
+archive/issue_events_007920.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-24T09:56:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#event-7920"
+}
+```
+
+
+
+---
+
+archive/issue_events_007921.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-24T09:56:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#event-7921"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024473.json:
 ```json
 {
@@ -227,7 +278,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003699.json:
+archive/issue_events_007922.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -235,6 +286,6 @@ archive/issue_events_003699.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3479#event-3699"
+    "url": "https://github.com/sagemath/sagetest/issues/3479#event-7922"
 }
 ```

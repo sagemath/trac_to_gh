@@ -100,7 +100,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9305
 
 ---
 
-archive/issue_events_009463.json:
+archive/issue_events_022937.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -108,7 +108,7 @@ archive/issue_events_009463.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9305",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9305#event-9463"
+    "url": "https://github.com/sagemath/sagetest/issues/9305#event-22937"
 }
 ```
 

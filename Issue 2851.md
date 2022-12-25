@@ -110,7 +110,7 @@ Merged in Sage 3.0.alpha5
 
 ---
 
-archive/issue_events_003041.json:
+archive/issue_events_006531.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -118,7 +118,7 @@ archive/issue_events_003041.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2851#event-3041"
+    "url": "https://github.com/sagemath/sagetest/issues/2851#event-6531"
 }
 ```
 
@@ -223,7 +223,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003042.json:
+archive/issue_events_006532.json:
 ```json
 {
     "actor": "https://github.com/yqiang",
@@ -231,7 +231,7 @@ archive/issue_events_003042.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2851#event-3042"
+    "url": "https://github.com/sagemath/sagetest/issues/2851#event-6532"
 }
 ```
 
@@ -299,7 +299,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003043.json:
+archive/issue_events_006533.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -307,7 +307,7 @@ archive/issue_events_003043.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2851#event-3043"
+    "url": "https://github.com/sagemath/sagetest/issues/2851#event-6533"
 }
 ```
 

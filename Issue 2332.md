@@ -174,6 +174,23 @@ Attachment [2332-evaluate-button.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
+archive/issue_events_005509.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-14T01:19:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2332",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2332#event-5509"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015566.json:
 ```json
 {
@@ -192,7 +209,7 @@ Rock solid (for me and my superfast laptop)!
 
 ---
 
-archive/issue_events_002510.json:
+archive/issue_events_005510.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -200,7 +217,7 @@ archive/issue_events_002510.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2332",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2332#event-2510"
+    "url": "https://github.com/sagemath/sagetest/issues/2332#event-5510"
 }
 ```
 

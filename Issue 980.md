@@ -104,6 +104,23 @@ Your patch seems to prefer variables with lower indexes, i.e. the probability th
 
 ---
 
+archive/issue_events_002714.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-25T00:22:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/980",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-2714"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005959.json:
 ```json
 {
@@ -277,6 +294,40 @@ Attachment [random-malb.txt](tarball://root/attachments/some-uuid/ticket980/rand
 
 ---
 
+archive/issue_events_002715.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:55:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/980",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-2715"
+}
+```
+
+
+
+---
+
+archive/issue_events_002716.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:55:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/980",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-2716"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005968.json:
 ```json
 {
@@ -349,7 +400,7 @@ Uploaded bundle which applies against 2.9.alpha7 and doctests pass.
 
 ---
 
-archive/issue_events_001101.json:
+archive/issue_events_002717.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -357,7 +408,7 @@ archive/issue_events_001101.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/980#event-1101"
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-2717"
 }
 ```
 
@@ -437,7 +488,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001102.json:
+archive/issue_events_002718.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -445,7 +496,7 @@ archive/issue_events_001102.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/980#event-1102"
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-2718"
 }
 ```
 
@@ -699,7 +750,7 @@ Merged random_element.hg  in Sage 2.10.1.rc1
 
 ---
 
-archive/issue_events_001103.json:
+archive/issue_events_002719.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -707,7 +758,7 @@ archive/issue_events_001103.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/980#event-1103"
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-2719"
 }
 ```
 

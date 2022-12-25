@@ -32,6 +32,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/965
 
 ---
 
+archive/issue_events_002669.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T20:34:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2669"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005863.json:
 ```json
 {
@@ -295,6 +312,40 @@ Changing keywords from "" to "drew sutherland smalljac point counting hyperellip
 
 ---
 
+archive/issue_events_002670.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2670"
+}
+```
+
+
+
+---
+
+archive/issue_events_002671.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2671"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005869.json:
 ```json
 {
@@ -308,6 +359,108 @@ archive/issue_comments_005869.json:
 ```
 
 Attachment [smalljac_v3.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac_v3.spkg) by @jdemeyer created at 2013-08-13 15:34:36
+
+
+
+---
+
+archive/issue_events_002672.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2672"
+}
+```
+
+
+
+---
+
+archive/issue_events_002673.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2673"
+}
+```
+
+
+
+---
+
+archive/issue_events_002674.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2674"
+}
+```
+
+
+
+---
+
+archive/issue_events_002675.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2675"
+}
+```
+
+
+
+---
+
+archive/issue_events_002676.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2676"
+}
+```
+
+
+
+---
+
+archive/issue_events_002677.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/965",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/965#event-2677"
+}
+```
 
 
 

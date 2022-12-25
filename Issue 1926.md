@@ -236,7 +236,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002081.json:
+archive/issue_events_004639.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -244,7 +244,7 @@ archive/issue_events_002081.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1926#event-2081"
+    "url": "https://github.com/sagemath/sagetest/issues/1926#event-4639"
 }
 ```
 
@@ -324,7 +324,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002082.json:
+archive/issue_events_004640.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -332,7 +332,7 @@ archive/issue_events_002082.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1926#event-2082"
+    "url": "https://github.com/sagemath/sagetest/issues/1926#event-4640"
 }
 ```
 
@@ -378,7 +378,7 @@ New patch looks good to me.
 
 ---
 
-archive/issue_events_002083.json:
+archive/issue_events_004641.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -386,7 +386,7 @@ archive/issue_events_002083.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1926#event-2083"
+    "url": "https://github.com/sagemath/sagetest/issues/1926#event-4641"
 }
 ```
 

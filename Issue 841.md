@@ -93,6 +93,23 @@ Changing assignee from cwitty to tbd.
 
 ---
 
+archive/issue_events_002371.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-09T01:03:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/841",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/841#event-2371"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005192.json:
 ```json
 {
@@ -111,7 +128,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000954.json:
+archive/issue_events_002372.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -119,6 +136,6 @@ archive/issue_events_000954.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/841",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/841#event-954"
+    "url": "https://github.com/sagemath/sagetest/issues/841#event-2372"
 }
 ```

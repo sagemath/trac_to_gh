@@ -72,6 +72,23 @@ Doctests pass, patch reads good.
 
 ---
 
+archive/issue_events_013732.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-21T22:37:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5839",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5839#event-13732"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045816.json:
 ```json
 {
@@ -112,7 +129,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006089.json:
+archive/issue_events_013733.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -120,7 +137,7 @@ archive/issue_events_006089.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5839#event-6089"
+    "url": "https://github.com/sagemath/sagetest/issues/5839#event-13733"
 }
 ```
 
@@ -186,7 +203,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006090.json:
+archive/issue_events_013734.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -194,7 +211,7 @@ archive/issue_events_006090.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5839#event-6090"
+    "url": "https://github.com/sagemath/sagetest/issues/5839#event-13734"
 }
 ```
 
@@ -304,7 +321,41 @@ Michael
 
 ---
 
-archive/issue_events_006091.json:
+archive/issue_events_013735.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T05:16:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5839",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5839#event-13735"
+}
+```
+
+
+
+---
+
+archive/issue_events_013736.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T05:16:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5839",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5839#event-13736"
+}
+```
+
+
+
+---
+
+archive/issue_events_013737.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -312,6 +363,6 @@ archive/issue_events_006091.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5839#event-6091"
+    "url": "https://github.com/sagemath/sagetest/issues/5839#event-13737"
 }
 ```

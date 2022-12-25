@@ -365,7 +365,7 @@ It certainly does. Thanks for fixing this! It should get merged in 4.5.2.alpha1.
 
 ---
 
-archive/issue_events_009148.json:
+archive/issue_events_022007.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -373,7 +373,7 @@ archive/issue_events_009148.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#event-9148"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#event-22007"
 }
 ```
 

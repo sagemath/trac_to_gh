@@ -104,7 +104,7 @@ This can be closed since #6187 is closed.
 
 ---
 
-archive/issue_events_006724.json:
+archive/issue_events_015321.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -112,7 +112,7 @@ archive/issue_events_006724.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6488",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6488#event-6724"
+    "url": "https://github.com/sagemath/sagetest/issues/6488#event-15321"
 }
 ```
 

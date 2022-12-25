@@ -125,7 +125,7 @@ Changing keywords from "" to "integer_ring, IntegerRing, range()".
 
 ---
 
-archive/issue_events_008983.json:
+archive/issue_events_021505.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -133,7 +133,24 @@ archive/issue_events_008983.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8818",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8818#event-8983"
+    "url": "https://github.com/sagemath/sagetest/issues/8818#event-21505"
+}
+```
+
+
+
+---
+
+archive/issue_events_021506.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-08T21:31:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8818",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8818#event-21506"
 }
 ```
 

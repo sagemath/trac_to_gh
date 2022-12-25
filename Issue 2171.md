@@ -123,6 +123,23 @@ and this is expect.py in rc1:
 
 ---
 
+archive/issue_events_005189.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:54:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2171",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2171#event-5189"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014221.json:
 ```json
 {
@@ -237,6 +254,40 @@ I rebased these patches against 3.2.alpha0 and got rid of the dependence on #212
 
 ---
 
+archive/issue_events_005190.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-27T02:51:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2171",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2171#event-5190"
+}
+```
+
+
+
+---
+
+archive/issue_events_005191.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-27T02:51:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2171",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2171#event-5191"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014227.json:
 ```json
 {
@@ -305,7 +356,7 @@ Michael
 
 ---
 
-archive/issue_events_002338.json:
+archive/issue_events_005192.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -313,7 +364,7 @@ archive/issue_events_002338.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2171",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2171#event-2338"
+    "url": "https://github.com/sagemath/sagetest/issues/2171#event-5192"
 }
 ```
 

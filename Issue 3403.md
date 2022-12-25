@@ -46,7 +46,7 @@ Attachment [sage-3403.patch](tarball://root/attachments/some-uuid/ticket3403/sag
 
 ---
 
-archive/issue_events_003619.json:
+archive/issue_events_007676.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -54,7 +54,7 @@ archive/issue_events_003619.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3403",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3403#event-3619"
+    "url": "https://github.com/sagemath/sagetest/issues/3403#event-7676"
 }
 ```
 
@@ -93,6 +93,23 @@ archive/issue_comments_023828.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007677.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T03:27:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3403",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3403#event-7677"
+}
+```
 
 
 

@@ -303,7 +303,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_001912.json:
+archive/issue_events_004247.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -311,6 +311,6 @@ archive/issue_events_001912.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1754",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1754#event-1912"
+    "url": "https://github.com/sagemath/sagetest/issues/1754#event-4247"
 }
 ```

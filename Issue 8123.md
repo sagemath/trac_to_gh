@@ -182,6 +182,23 @@ maybe we can also close this ancient ticket about the deprecated sagenb ?
 
 ---
 
+archive/issue_events_019456.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-05-14T09:20:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8123",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8123#event-19456"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071294.json:
 ```json
 {
@@ -243,7 +260,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008331.json:
+archive/issue_events_019457.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -251,7 +268,7 @@ archive/issue_events_008331.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8123#event-8331"
+    "url": "https://github.com/sagemath/sagetest/issues/8123#event-19457"
 }
 ```
 

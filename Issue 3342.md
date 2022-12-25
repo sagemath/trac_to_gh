@@ -336,7 +336,7 @@ I've merged the sagenb repository patch into SageNB 0.8.2 at #9572.
 
 ---
 
-archive/issue_events_003560.json:
+archive/issue_events_007489.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -344,7 +344,7 @@ archive/issue_events_003560.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3342#event-3560"
+    "url": "https://github.com/sagemath/sagetest/issues/3342#event-7489"
 }
 ```
 

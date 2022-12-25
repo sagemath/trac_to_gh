@@ -84,7 +84,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000297.json:
+archive/issue_events_000628.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -92,7 +92,7 @@ archive/issue_events_000297.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/280",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/280#event-297"
+    "url": "https://github.com/sagemath/sagetest/issues/280#event-628"
 }
 ```
 
@@ -126,3 +126,20 @@ sage: L.polynomial().parent()
 Univariate Polynomial Ring in x over Number Field in a with defining polynomial x^3 - 5
 ```
 
+
+
+
+---
+
+archive/issue_events_000629.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-02T04:57:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/280",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/280#event-629"
+}
+```

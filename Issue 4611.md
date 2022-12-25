@@ -65,7 +65,24 @@ Patch looks good and doctests pass.
 
 ---
 
-archive/issue_events_004860.json:
+archive/issue_events_010479.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T19:54:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4611",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4611#event-10479"
+}
+```
+
+
+
+---
+
+archive/issue_events_010480.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -73,7 +90,7 @@ archive/issue_events_004860.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4611",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4611#event-4860"
+    "url": "https://github.com/sagemath/sagetest/issues/4611#event-10480"
 }
 ```
 

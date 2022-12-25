@@ -315,7 +315,7 @@ Adam
 
 ---
 
-archive/issue_events_007340.json:
+archive/issue_events_016825.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -323,7 +323,7 @@ archive/issue_events_007340.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7119#event-7340"
+    "url": "https://github.com/sagemath/sagetest/issues/7119#event-16825"
 }
 ```
 

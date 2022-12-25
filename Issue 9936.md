@@ -156,6 +156,23 @@ Changing status from new to needs_work.
 
 ---
 
+archive/issue_events_025064.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-30T21:40:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#event-25064"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098764.json:
 ```json
 {
@@ -192,7 +209,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_010063.json:
+archive/issue_events_025065.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -200,6 +217,40 @@ archive/issue_events_010063.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9936#event-10063"
+    "url": "https://github.com/sagemath/sagetest/issues/9936#event-25065"
+}
+```
+
+
+
+---
+
+archive/issue_events_025066.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-02-21T07:56:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#event-25066"
+}
+```
+
+
+
+---
+
+archive/issue_events_025067.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-02-21T07:56:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#event-25067"
 }
 ```

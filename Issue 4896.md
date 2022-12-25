@@ -44,6 +44,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4896
 
 ---
 
+archive/issue_events_011297.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-02T07:07:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11297"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037048.json:
 ```json
 {
@@ -79,6 +96,142 @@ archive/issue_comments_037049.json:
 ```
 
 Changing type from defect to enhancement.
+
+
+
+---
+
+archive/issue_events_011298.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11298"
+}
+```
+
+
+
+---
+
+archive/issue_events_011299.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11299"
+}
+```
+
+
+
+---
+
+archive/issue_events_011300.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11300"
+}
+```
+
+
+
+---
+
+archive/issue_events_011301.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11301"
+}
+```
+
+
+
+---
+
+archive/issue_events_011302.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11302"
+}
+```
+
+
+
+---
+
+archive/issue_events_011303.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11303"
+}
+```
+
+
+
+---
+
+archive/issue_events_011304.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11304"
+}
+```
+
+
+
+---
+
+archive/issue_events_011305.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11305"
+}
+```
 
 
 
@@ -185,6 +338,40 @@ Changing keywords from "" to "magma".
 
 ---
 
+archive/issue_events_011306.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-06-23T12:20:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11306"
+}
+```
+
+
+
+---
+
+archive/issue_events_011307.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-06-23T12:20:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11307"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037054.json:
 ```json
 {
@@ -270,3 +457,37 @@ archive/issue_comments_037058.json:
 ```
 
 update milestone 8.3 -> 8.4
+
+
+
+---
+
+archive/issue_events_011308.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2018-08-03T19:20:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11308"
+}
+```
+
+
+
+---
+
+archive/issue_events_011309.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2018-08-03T19:20:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4896",
+    "milestone": "sage-8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4896#event-11309"
+}
+```

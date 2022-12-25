@@ -31,6 +31,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/347
 
 ---
 
+archive/issue_events_000816.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:42:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/347",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/347#event-816"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001683.json:
 ```json
 {

@@ -725,6 +725,23 @@ I've updated the patch.
 
 ---
 
+archive/issue_events_020301.json:
+```json
+{
+    "actor": "https://github.com/lftabera",
+    "created_at": "2010-12-16T20:53:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8456",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8456#event-20301"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075986.json:
 ```json
 {
@@ -915,7 +932,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008640.json:
+archive/issue_events_020302.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -923,6 +940,6 @@ archive/issue_events_008640.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8456#event-8640"
+    "url": "https://github.com/sagemath/sagetest/issues/8456#event-20302"
 }
 ```

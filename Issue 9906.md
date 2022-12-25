@@ -574,7 +574,24 @@ Should this be merged in Sage 4.6.1? (if yes, please set the Milestone)
 
 ---
 
-archive/issue_events_010033.json:
+archive/issue_events_024964.json:
+```json
+{
+    "actor": "https://github.com/johanrosenkilde",
+    "created_at": "2010-11-12T13:45:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9906",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9906#event-24964"
+}
+```
+
+
+
+---
+
+archive/issue_events_024965.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -582,7 +599,7 @@ archive/issue_events_010033.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9906#event-10033"
+    "url": "https://github.com/sagemath/sagetest/issues/9906#event-24965"
 }
 ```
 

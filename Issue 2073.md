@@ -165,7 +165,7 @@ Positive review after applying the last patch as well.
 
 ---
 
-archive/issue_events_002234.json:
+archive/issue_events_004979.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -173,7 +173,7 @@ archive/issue_events_002234.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2073",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2073#event-2234"
+    "url": "https://github.com/sagemath/sagetest/issues/2073#event-4979"
 }
 ```
 

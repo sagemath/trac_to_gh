@@ -109,6 +109,23 @@ sage: g._boundary()
 
 ---
 
+archive/issue_events_001982.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-23T10:32:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-1982"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004277.json:
 ```json
 {
@@ -143,7 +160,7 @@ This is as of 2.8.8.1, so I think we can call this fixed.
 
 ---
 
-archive/issue_events_000816.json:
+archive/issue_events_001983.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -151,7 +168,7 @@ archive/issue_events_000816.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/731#event-816"
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-1983"
 }
 ```
 
@@ -195,7 +212,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000817.json:
+archive/issue_events_001984.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -203,7 +220,41 @@ archive/issue_events_000817.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/731#event-817"
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-1984"
+}
+```
+
+
+
+---
+
+archive/issue_events_001985.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-22T07:02:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-1985"
+}
+```
+
+
+
+---
+
+archive/issue_events_001986.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-22T07:02:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-1986"
 }
 ```
 
@@ -287,7 +338,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000818.json:
+archive/issue_events_001987.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -295,6 +346,6 @@ archive/issue_events_000818.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/731#event-818"
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-1987"
 }
 ```

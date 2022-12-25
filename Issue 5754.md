@@ -193,7 +193,7 @@ Here's a patch: apply on top of the other one.
 
 ---
 
-archive/issue_events_006001.json:
+archive/issue_events_013496.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -201,7 +201,7 @@ archive/issue_events_006001.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5754",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5754#event-6001"
+    "url": "https://github.com/sagemath/sagetest/issues/5754#event-13496"
 }
 ```
 
@@ -244,3 +244,20 @@ Merged both patches in Sage 3.4.1.rc3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013497.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-13T06:33:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5754",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5754#event-13497"
+}
+```

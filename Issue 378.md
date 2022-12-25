@@ -962,7 +962,7 @@ Time to give this the positive review it deserves. Looking forward to using atta
 
 ---
 
-archive/issue_events_000400.json:
+archive/issue_events_000874.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -970,7 +970,7 @@ archive/issue_events_000400.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/378#event-400"
+    "url": "https://github.com/sagemath/sagetest/issues/378#event-874"
 }
 ```
 

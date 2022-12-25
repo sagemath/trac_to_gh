@@ -48,6 +48,23 @@ Attachment [trac_4052.patch](tarball://root/attachments/some-uuid/ticket4052/tra
 
 ---
 
+archive/issue_events_009254.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-03T19:16:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#event-9254"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029153.json:
 ```json
 {
@@ -147,7 +164,7 @@ contains the fixes.
 
 ---
 
-archive/issue_events_004284.json:
+archive/issue_events_009255.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -155,7 +172,7 @@ archive/issue_events_004284.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4052",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4052#event-4284"
+    "url": "https://github.com/sagemath/sagetest/issues/4052#event-9255"
 }
 ```
 

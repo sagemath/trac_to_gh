@@ -82,6 +82,23 @@ Changing assignee from somebody to @dfdeshom.
 
 ---
 
+archive/issue_events_005722.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-12T05:05:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2421",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2421#event-5722"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016350.json:
 ```json
 {
@@ -158,7 +175,7 @@ Merged in Sage 2.10.4.alpha0
 
 ---
 
-archive/issue_events_002598.json:
+archive/issue_events_005723.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -166,6 +183,6 @@ archive/issue_events_002598.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2421",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2421#event-2598"
+    "url": "https://github.com/sagemath/sagetest/issues/2421#event-5723"
 }
 ```

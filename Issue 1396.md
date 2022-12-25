@@ -490,7 +490,7 @@ Rebased for 4.5.2.alpha0 queue.  See comment 9.  Replaces all previous patches.
 
 ---
 
-archive/issue_events_001540.json:
+archive/issue_events_003597.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -498,7 +498,7 @@ archive/issue_events_001540.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1396#event-1540"
+    "url": "https://github.com/sagemath/sagetest/issues/1396#event-3597"
 }
 ```
 
@@ -644,6 +644,23 @@ archive/issue_comments_008973.json:
 > Should it not be set back to "needs work" then? That seems the most accurate description of the status - more accurate so than "fixed".
 
 I think we should just change focus to #9599, the new ticket for re-merging this patch.
+
+
+
+---
+
+archive/issue_events_003598.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-23T20:28:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1396",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1396#event-3598"
+}
+```
 
 
 

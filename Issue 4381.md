@@ -229,7 +229,7 @@ Jaap
 
 ---
 
-archive/issue_events_004626.json:
+archive/issue_events_009902.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -237,7 +237,7 @@ archive/issue_events_004626.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4381",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4381#event-4626"
+    "url": "https://github.com/sagemath/sagetest/issues/4381#event-9902"
 }
 ```
 

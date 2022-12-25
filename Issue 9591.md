@@ -91,6 +91,23 @@ gi should be replaced by gen_I().
 
 ---
 
+archive/issue_events_023889.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-07-29T14:46:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#event-23889"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092596.json:
 ```json
 {
@@ -766,7 +783,7 @@ New complete patch including trac_9591-g2red_remove_dist.patch
 
 ---
 
-archive/issue_events_009735.json:
+archive/issue_events_023890.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -774,7 +791,7 @@ archive/issue_events_009735.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9591#event-9735"
+    "url": "https://github.com/sagemath/sagetest/issues/9591#event-23890"
 }
 ```
 

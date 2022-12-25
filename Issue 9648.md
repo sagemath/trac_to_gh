@@ -164,6 +164,23 @@ I did the review with Christian here at FPSAC. Patch ready to go up to a final p
 
 ---
 
+archive/issue_events_024053.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-08-04T18:05:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9648",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9648#event-24053"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093402.json:
 ```json
 {
@@ -260,6 +277,40 @@ archive/issue_comments_093405.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_024054.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-23T12:32:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9648",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9648#event-24054"
+}
+```
+
+
+
+---
+
+archive/issue_events_024055.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-23T12:32:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9648",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9648#event-24055"
+}
+```
 
 
 
@@ -381,7 +432,7 @@ Reviewer patch, apply on top of previous
 
 ---
 
-archive/issue_events_009784.json:
+archive/issue_events_024056.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -389,7 +440,7 @@ archive/issue_events_009784.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9648#event-9784"
+    "url": "https://github.com/sagemath/sagetest/issues/9648#event-24056"
 }
 ```
 

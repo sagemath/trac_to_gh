@@ -237,6 +237,23 @@ Probably adding a new variable inside sage-env called LD_LIBRARY_PATH_64 and mak
 
 ---
 
+archive/issue_events_016492.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-03-28T22:50:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7026",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7026#event-16492"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058073.json:
 ```json
 {
@@ -291,7 +308,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007248.json:
+archive/issue_events_016493.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -299,7 +316,7 @@ archive/issue_events_007248.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#event-7248"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#event-16493"
 }
 ```
 

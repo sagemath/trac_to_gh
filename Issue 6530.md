@@ -72,7 +72,7 @@ maybe it works now better, but i'm not sure.
 
 ---
 
-archive/issue_events_006766.json:
+archive/issue_events_015403.json:
 ```json
 {
     "actor": "https://github.com/haraldschilly",
@@ -80,7 +80,7 @@ archive/issue_events_006766.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6530",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6530#event-6766"
+    "url": "https://github.com/sagemath/sagetest/issues/6530#event-15403"
 }
 ```
 
@@ -119,3 +119,20 @@ archive/issue_comments_053137.json:
 ```
 
 tested again, it finds "gram_schmidt" now. only "gram schmidt" seems to be too vague. ticket can be closed.
+
+
+
+---
+
+archive/issue_events_015404.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-08T23:48:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6530",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6530#event-15404"
+}
+```

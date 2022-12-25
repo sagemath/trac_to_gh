@@ -83,7 +83,7 @@ Found it.  Gap sends garbage collection information that starts with an '`@`', f
 
 ---
 
-archive/issue_events_001204.json:
+archive/issue_events_002923.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -91,7 +91,7 @@ archive/issue_events_001204.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1080",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1080#event-1204"
+    "url": "https://github.com/sagemath/sagetest/issues/1080#event-2923"
 }
 ```
 

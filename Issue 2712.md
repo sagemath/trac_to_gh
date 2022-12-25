@@ -95,6 +95,23 @@ Looks good to me.
 
 ---
 
+archive/issue_events_006333.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-29T00:11:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2712",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2712#event-6333"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018658.json:
 ```json
 {
@@ -153,7 +170,7 @@ Michael
 
 ---
 
-archive/issue_events_002900.json:
+archive/issue_events_006334.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -161,7 +178,7 @@ archive/issue_events_002900.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#event-2900"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#event-6334"
 }
 ```
 

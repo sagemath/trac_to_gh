@@ -186,7 +186,7 @@ I suppose so, I do that all the time.
 
 ---
 
-archive/issue_events_009920.json:
+archive/issue_events_024582.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -194,7 +194,7 @@ archive/issue_events_009920.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#event-9920"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#event-24582"
 }
 ```
 

@@ -59,3 +59,20 @@ archive/issue_comments_001505.json:
 
 I think this is basically just a Python question.  One can write interactive Python programs
 that use SAGE as a library...
+
+
+
+---
+
+archive/issue_events_000739.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:28:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/315",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/315#event-739"
+}
+```

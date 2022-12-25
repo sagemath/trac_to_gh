@@ -86,6 +86,23 @@ def FindGroupOrder(p,s):
 
 ---
 
+archive/issue_events_002987.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-10-30T17:19:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1118",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1118#event-2987"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006738.json:
 ```json
 {
@@ -122,7 +139,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001244.json:
+archive/issue_events_002988.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -130,6 +147,40 @@ archive/issue_events_001244.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1118",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1118#event-1244"
+    "url": "https://github.com/sagemath/sagetest/issues/1118#event-2988"
+}
+```
+
+
+
+---
+
+archive/issue_events_002989.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-25T21:15:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1118",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1118#event-2989"
+}
+```
+
+
+
+---
+
+archive/issue_events_002990.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-25T21:15:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1118",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1118#event-2990"
 }
 ```

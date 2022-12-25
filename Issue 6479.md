@@ -502,7 +502,7 @@ Thanks Robert!!
 
 ---
 
-archive/issue_events_006716.json:
+archive/issue_events_015297.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -510,7 +510,7 @@ archive/issue_events_006716.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6479#event-6716"
+    "url": "https://github.com/sagemath/sagetest/issues/6479#event-15297"
 }
 ```
 

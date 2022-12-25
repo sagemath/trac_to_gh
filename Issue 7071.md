@@ -365,7 +365,7 @@ If you disagree we can discuss this on the sage-devel, but its such a pervasive 
 
 ---
 
-archive/issue_events_007293.json:
+archive/issue_events_016702.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -373,7 +373,7 @@ archive/issue_events_007293.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7071#event-7293"
+    "url": "https://github.com/sagemath/sagetest/issues/7071#event-16702"
 }
 ```
 

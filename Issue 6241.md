@@ -109,6 +109,23 @@ Attachment [trac_6241.patch](tarball://root/attachments/some-uuid/ticket6241/tra
 
 ---
 
+archive/issue_events_014622.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-06-16T00:07:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6241",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6241#event-14622"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049752.json:
 ```json
 {
@@ -127,7 +144,7 @@ Yep, I can give that a positive review.
 
 ---
 
-archive/issue_events_006486.json:
+archive/issue_events_014623.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -135,7 +152,7 @@ archive/issue_events_006486.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6241",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6241#event-6486"
+    "url": "https://github.com/sagemath/sagetest/issues/6241#event-14623"
 }
 ```
 

@@ -67,6 +67,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4836
 
 ---
 
+archive/issue_events_011107.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-20T14:07:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4836",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4836#event-11107"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036576.json:
 ```json
 {
@@ -98,6 +115,40 @@ archive/issue_comments_036577.json:
 ```
 
 Changing component from algebra to interfaces.
+
+
+
+---
+
+archive/issue_events_011108.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-04T07:37:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4836",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4836#event-11108"
+}
+```
+
+
+
+---
+
+archive/issue_events_011109.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-04T07:37:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4836",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4836#event-11109"
+}
+```
 
 
 
@@ -505,7 +556,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005081.json:
+archive/issue_events_011110.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -513,6 +564,6 @@ archive/issue_events_005081.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4836#event-5081"
+    "url": "https://github.com/sagemath/sagetest/issues/4836#event-11110"
 }
 ```

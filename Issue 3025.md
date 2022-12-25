@@ -59,6 +59,23 @@ this fixes the bug!
 
 ---
 
+archive/issue_events_006868.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-25T21:19:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3025",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3025#event-6868"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020759.json:
 ```json
 {
@@ -113,7 +130,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003230.json:
+archive/issue_events_006869.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -121,6 +138,6 @@ archive/issue_events_003230.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3025",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3025#event-3230"
+    "url": "https://github.com/sagemath/sagetest/issues/3025#event-6869"
 }
 ```

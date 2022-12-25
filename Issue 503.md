@@ -46,6 +46,23 @@ NOTE:  For polynomials x<sup>0</sup> should be 1 still.
 
 ---
 
+archive/issue_events_001282.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-29T03:21:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/503",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/503#event-1282"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002506.json:
 ```json
 {
@@ -237,6 +254,40 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001283.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-07T03:18:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/503",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/503#event-1283"
+}
+```
+
+
+
+---
+
+archive/issue_events_001284.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-07T03:18:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/503",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/503#event-1284"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002514.json:
 ```json
 {
@@ -255,7 +306,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000538.json:
+archive/issue_events_001285.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -263,6 +314,6 @@ archive/issue_events_000538.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/503#event-538"
+    "url": "https://github.com/sagemath/sagetest/issues/503#event-1285"
 }
 ```

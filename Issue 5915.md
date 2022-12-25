@@ -29,7 +29,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5915
 
 ---
 
-archive/issue_events_006169.json:
+archive/issue_events_013870.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -37,7 +37,7 @@ archive/issue_events_006169.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5915",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5915#event-6169"
+    "url": "https://github.com/sagemath/sagetest/issues/5915#event-13870"
 }
 ```
 
@@ -62,6 +62,23 @@ Sorry, this is not the place to file those bug reports. The sage project does no
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013871.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-28T00:31:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5915",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5915#event-13871"
+}
+```
 
 
 

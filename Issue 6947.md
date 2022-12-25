@@ -156,7 +156,7 @@ Attachment [trac-6947-review.patch](tarball://root/attachments/some-uuid/ticket6
 
 ---
 
-archive/issue_events_007171.json:
+archive/issue_events_016345.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -164,7 +164,7 @@ archive/issue_events_007171.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6947",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6947#event-7171"
+    "url": "https://github.com/sagemath/sagetest/issues/6947#event-16345"
 }
 ```
 

@@ -86,7 +86,7 @@ There was a copy-and-paste error that ended up reading uninitialized local varia
 
 ---
 
-archive/issue_events_000994.json:
+archive/issue_events_002455.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -94,7 +94,7 @@ archive/issue_events_000994.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/880",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/880#event-994"
+    "url": "https://github.com/sagemath/sagetest/issues/880#event-2455"
 }
 ```
 

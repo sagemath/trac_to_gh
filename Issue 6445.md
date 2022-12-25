@@ -466,7 +466,7 @@ Just to let people know, this has been merged in sage-4.1.1-alpha0. I can't clos
 
 ---
 
-archive/issue_events_006686.json:
+archive/issue_events_015198.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -474,7 +474,7 @@ archive/issue_events_006686.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6445",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6445#event-6686"
+    "url": "https://github.com/sagemath/sagetest/issues/6445#event-15198"
 }
 ```
 

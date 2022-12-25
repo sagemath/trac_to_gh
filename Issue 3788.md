@@ -225,7 +225,7 @@ Apply only 3788.patch
 
 ---
 
-archive/issue_events_004010.json:
+archive/issue_events_008697.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -233,7 +233,7 @@ archive/issue_events_004010.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3788#event-4010"
+    "url": "https://github.com/sagemath/sagetest/issues/3788#event-8697"
 }
 ```
 

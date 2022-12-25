@@ -898,6 +898,23 @@ Yes it is. Thanks Frédéric for the finalization !
 
 ---
 
+archive/issue_events_024883.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-03-06T10:31:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9876",
+    "milestone": "sage-5.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9876#event-24883"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097619.json:
 ```json
 {
@@ -1067,7 +1084,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010005.json:
+archive/issue_events_024884.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1075,6 +1092,6 @@ archive/issue_events_010005.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9876#event-10005"
+    "url": "https://github.com/sagemath/sagetest/issues/9876#event-24884"
 }
 ```

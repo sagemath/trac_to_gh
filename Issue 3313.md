@@ -445,6 +445,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_007441.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2017-10-03T17:16:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3313",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3313#event-7441"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022881.json:
 ```json
 {
@@ -714,6 +731,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_007442.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2017-12-15T14:33:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3313",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3313#event-7442"
+}
+```
+
+
+
+---
+
+archive/issue_events_007443.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2017-12-15T14:33:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3313",
+    "milestone": "sage-8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3313#event-7443"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022893.json:
 ```json
 {
@@ -912,7 +963,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003533.json:
+archive/issue_events_007444.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -920,6 +971,6 @@ archive/issue_events_003533.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3313",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3313#event-3533"
+    "url": "https://github.com/sagemath/sagetest/issues/3313#event-7444"
 }
 ```

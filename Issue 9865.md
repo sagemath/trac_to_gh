@@ -147,6 +147,23 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_024845.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-07T22:29:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9865",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9865#event-24845"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097309.json:
 ```json
 {
@@ -183,7 +200,41 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009995.json:
+archive/issue_events_024846.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-06T08:01:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9865",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9865#event-24846"
+}
+```
+
+
+
+---
+
+archive/issue_events_024847.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-06T08:01:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9865",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9865#event-24847"
+}
+```
+
+
+
+---
+
+archive/issue_events_024848.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -191,7 +242,7 @@ archive/issue_events_009995.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9865#event-9995"
+    "url": "https://github.com/sagemath/sagetest/issues/9865#event-24848"
 }
 ```
 
@@ -354,7 +405,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009996.json:
+archive/issue_events_024849.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -362,7 +413,7 @@ archive/issue_events_009996.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9865#event-9996"
+    "url": "https://github.com/sagemath/sagetest/issues/9865#event-24849"
 }
 ```
 

@@ -108,6 +108,23 @@ The fix is quite trivial, so should be easy to review.
 
 ---
 
+archive/issue_events_012231.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-02-14T11:21:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5267",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5267#event-12231"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040357.json:
 ```json
 {
@@ -180,7 +197,7 @@ Looks good.
 
 ---
 
-archive/issue_events_005523.json:
+archive/issue_events_012232.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -188,7 +205,7 @@ archive/issue_events_005523.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#event-5523"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#event-12232"
 }
 ```
 

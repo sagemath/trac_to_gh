@@ -317,6 +317,23 @@ fix segfault in py_float
 
 ---
 
+archive/issue_events_022431.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-05-25T18:02:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9130",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9130#event-22431"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084924.json:
 ```json
 {
@@ -625,6 +642,40 @@ archive/issue_comments_084938.json:
 ```
 
 Attachment [trac_9130-py_float_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-py_float_segfault.take2.patch) by @burcin created at 2012-01-12 17:02:54
+
+
+
+---
+
+archive/issue_events_022432.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-01-12T17:06:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9130",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9130#event-22432"
+}
+```
+
+
+
+---
+
+archive/issue_events_022433.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-01-12T17:06:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9130",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9130#event-22433"
+}
+```
 
 
 
@@ -1446,7 +1497,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009288.json:
+archive/issue_events_022434.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1454,6 +1505,6 @@ archive/issue_events_009288.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9130#event-9288"
+    "url": "https://github.com/sagemath/sagetest/issues/9130#event-22434"
 }
 ```

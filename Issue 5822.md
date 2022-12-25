@@ -142,7 +142,7 @@ I think it would be very natural to have a class for the set of cusps modulo a c
 
 ---
 
-archive/issue_events_006072.json:
+archive/issue_events_013686.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -150,7 +150,7 @@ archive/issue_events_006072.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5822#event-6072"
+    "url": "https://github.com/sagemath/sagetest/issues/5822#event-13686"
 }
 ```
 
@@ -193,3 +193,20 @@ archive/issue_comments_045670.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_013687.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T07:19:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#event-13687"
+}
+```

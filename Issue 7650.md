@@ -318,6 +318,23 @@ Quit spawned worksheet processes.  Replaces previous sagenb repo patch.
 
 ---
 
+archive/issue_events_018199.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-14T01:58:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#event-18199"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065286.json:
 ```json
 {
@@ -470,6 +487,40 @@ archive/issue_comments_065293.json:
 ```
 
 I'm declaring a total feature freeze on sage-4.3.
+
+
+
+---
+
+archive/issue_events_018200.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:06:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#event-18200"
+}
+```
+
+
+
+---
+
+archive/issue_events_018201.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:06:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#event-18201"
+}
+```
 
 
 
@@ -864,7 +915,7 @@ I applied the scripts patch and replaced makefile in SAGE_ROOT. Please post a `s
 
 ---
 
-archive/issue_events_007871.json:
+archive/issue_events_018202.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -872,7 +923,7 @@ archive/issue_events_007871.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7650#event-7871"
+    "url": "https://github.com/sagemath/sagetest/issues/7650#event-18202"
 }
 ```
 

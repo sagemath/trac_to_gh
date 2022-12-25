@@ -214,6 +214,23 @@ Michael
 
 ---
 
+archive/issue_events_014164.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T05:36:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6030",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6030#event-14164"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047926.json:
 ```json
 {
@@ -251,6 +268,40 @@ archive/issue_comments_047927.json:
 Attachment [trac_6030-fix.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030-fix.patch) by @kcrisman created at 2009-05-14 16:17:21
 
 Both depend on #6023
+
+
+
+---
+
+archive/issue_events_014165.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-05-15T07:04:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6030",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6030#event-14165"
+}
+```
+
+
+
+---
+
+archive/issue_events_014166.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-05-15T07:04:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6030",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6030#event-14166"
+}
+```
 
 
 
@@ -296,7 +347,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006285.json:
+archive/issue_events_014167.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -304,7 +355,7 @@ archive/issue_events_006285.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#event-6285"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#event-14167"
 }
 ```
 

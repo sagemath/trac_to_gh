@@ -301,6 +301,23 @@ archive/issue_comments_064796.json:
 
 ---
 
+archive/issue_events_018078.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
+    "created_at": "2009-12-06T01:59:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7608",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7608#event-18078"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064797.json:
 ```json
 {
@@ -2540,7 +2557,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007834.json:
+archive/issue_events_018079.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -2548,6 +2565,6 @@ archive/issue_events_007834.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7608#event-7834"
+    "url": "https://github.com/sagemath/sagetest/issues/7608#event-18079"
 }
 ```

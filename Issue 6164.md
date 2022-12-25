@@ -402,7 +402,7 @@ Yep that works! positive review again!
 
 ---
 
-archive/issue_events_006413.json:
+archive/issue_events_014490.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -410,7 +410,7 @@ archive/issue_events_006413.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6164",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6164#event-6413"
+    "url": "https://github.com/sagemath/sagetest/issues/6164#event-14490"
 }
 ```
 

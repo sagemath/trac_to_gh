@@ -123,7 +123,7 @@ Err, it's a duplicate of #5755 which has been fixed.
 
 ---
 
-archive/issue_events_007323.json:
+archive/issue_events_016794.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -131,6 +131,23 @@ archive/issue_events_007323.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7101",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7101#event-7323"
+    "url": "https://github.com/sagemath/sagetest/issues/7101#event-16794"
+}
+```
+
+
+
+---
+
+archive/issue_events_016795.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-14T16:57:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7101",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7101#event-16795"
 }
 ```

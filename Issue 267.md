@@ -65,7 +65,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000282.json:
+archive/issue_events_000586.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -73,7 +73,7 @@ archive/issue_events_000282.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/267",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/267#event-282"
+    "url": "https://github.com/sagemath/sagetest/issues/267#event-586"
 }
 ```
 
@@ -98,3 +98,20 @@ Adds options "-bt" and "-btnew" for "build current and test/test new".
 Adds option "-r clone" for "switch to and run clone".
 
 Changes cloning so that "-clone existing" switches to "existing" clone.
+
+
+
+---
+
+archive/issue_events_000587.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-02-25T16:08:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/267",
+    "milestone": "sage-2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/267#event-587"
+}
+```

@@ -199,7 +199,7 @@ Merged in Sage 3.1.2.alpha1
 
 ---
 
-archive/issue_events_003944.json:
+archive/issue_events_008520.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -207,7 +207,7 @@ archive/issue_events_003944.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3944"
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-8520"
 }
 ```
 
@@ -270,7 +270,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003945.json:
+archive/issue_events_008521.json:
 ```json
 {
     "actor": "https://github.com/simon-king-jena",
@@ -278,7 +278,7 @@ archive/issue_events_003945.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3945"
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-8521"
 }
 ```
 
@@ -452,7 +452,7 @@ Merged m4ri_hash2.patch in Sage 3.1.2.alpha1
 
 ---
 
-archive/issue_events_003946.json:
+archive/issue_events_008522.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -460,7 +460,7 @@ archive/issue_events_003946.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3946"
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-8522"
 }
 ```
 
@@ -522,7 +522,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003947.json:
+archive/issue_events_008523.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -530,7 +530,7 @@ archive/issue_events_003947.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3947"
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-8523"
 }
 ```
 
@@ -598,7 +598,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003948.json:
+archive/issue_events_008524.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -606,6 +606,6 @@ archive/issue_events_003948.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3948"
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-8524"
 }
 ```

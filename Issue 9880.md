@@ -192,7 +192,7 @@ Apply after initial patch.
 
 ---
 
-archive/issue_events_010009.json:
+archive/issue_events_024891.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -200,7 +200,7 @@ archive/issue_events_010009.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9880#event-10009"
+    "url": "https://github.com/sagemath/sagetest/issues/9880#event-24891"
 }
 ```
 

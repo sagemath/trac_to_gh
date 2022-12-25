@@ -126,7 +126,7 @@ The patch **5529-new.patch** applies fine against Sage 3.4, all doctests passed 
 
 ---
 
-archive/issue_events_005778.json:
+archive/issue_events_012959.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -134,7 +134,7 @@ archive/issue_events_005778.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5529",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5529#event-5778"
+    "url": "https://github.com/sagemath/sagetest/issues/5529#event-12959"
 }
 ```
 

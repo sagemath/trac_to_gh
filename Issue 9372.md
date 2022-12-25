@@ -373,7 +373,7 @@ I'm updating the Reviewer(s) field.  Please correct me if I'm wrong.
 
 ---
 
-archive/issue_events_009527.json:
+archive/issue_events_023114.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -381,6 +381,6 @@ archive/issue_events_009527.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9372#event-9527"
+    "url": "https://github.com/sagemath/sagetest/issues/9372#event-23114"
 }
 ```

@@ -199,7 +199,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008880.json:
+archive/issue_events_021144.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -207,7 +207,7 @@ archive/issue_events_008880.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8710#event-8880"
+    "url": "https://github.com/sagemath/sagetest/issues/8710#event-21144"
 }
 ```
 
@@ -228,3 +228,20 @@ archive/issue_comments_079354.json:
 ```
 
 Sorry, Rob.  This was actually merged in 4.4.alpha1 but I forgot to mark it as closed.  (So it didn't get recorded in the release notes, either.)
+
+
+
+---
+
+archive/issue_events_021145.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-27T12:58:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8710",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8710#event-21145"
+}
+```

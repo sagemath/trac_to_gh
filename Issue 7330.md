@@ -120,7 +120,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007552.json:
+archive/issue_events_017350.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -128,7 +128,7 @@ archive/issue_events_007552.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7330",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7330#event-7552"
+    "url": "https://github.com/sagemath/sagetest/issues/7330#event-17350"
 }
 ```
 
@@ -149,3 +149,20 @@ archive/issue_comments_061187.json:
 ```
 
 I'm closing this for lack of additional information.  But please reopen it, if the problem is still around.
+
+
+
+---
+
+archive/issue_events_017351.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-26T00:27:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7330",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7330#event-17351"
+}
+```

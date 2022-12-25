@@ -123,6 +123,23 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_021192.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-07-05T10:39:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8727",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8727#event-21192"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079581.json:
 ```json
 {
@@ -141,7 +158,7 @@ Out of sync with latest package.
 
 ---
 
-archive/issue_events_008897.json:
+archive/issue_events_021193.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -149,6 +166,6 @@ archive/issue_events_008897.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8727",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8727#event-8897"
+    "url": "https://github.com/sagemath/sagetest/issues/8727#event-21193"
 }
 ```

@@ -3966,7 +3966,24 @@ Sollte ich dein Urteil infrage stellen weil du uns für sterblich hältst?
 
 ---
 
-archive/issue_events_009707.json:
+archive/issue_events_023808.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-03T09:11:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#event-23808"
+}
+```
+
+
+
+---
+
+archive/issue_events_023809.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -3974,7 +3991,7 @@ archive/issue_events_009707.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9562",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9562#event-9707"
+    "url": "https://github.com/sagemath/sagetest/issues/9562#event-23809"
 }
 ```
 
@@ -4018,7 +4035,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009708.json:
+archive/issue_events_023810.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4026,7 +4043,7 @@ archive/issue_events_009708.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9562",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9562#event-9708"
+    "url": "https://github.com/sagemath/sagetest/issues/9562#event-23810"
 }
 ```
 
@@ -4106,7 +4123,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009709.json:
+archive/issue_events_023811.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4114,7 +4131,7 @@ archive/issue_events_009709.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9562",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9562#event-9709"
+    "url": "https://github.com/sagemath/sagetest/issues/9562#event-23811"
 }
 ```
 
@@ -4135,3 +4152,37 @@ archive/issue_comments_092167.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_023812.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-04-19T06:47:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#event-23812"
+}
+```
+
+
+
+---
+
+archive/issue_events_023813.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2015-04-19T13:10:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#event-23813"
+}
+```

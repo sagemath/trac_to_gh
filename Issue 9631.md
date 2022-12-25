@@ -177,6 +177,23 @@ I've attached a tweaked version of William's patch v2 from #9501.
 
 ---
 
+archive/issue_events_024012.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-22T08:04:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9631",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9631#event-24012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093171.json:
 ```json
 {
@@ -268,6 +285,40 @@ Attachment [trac_9631-fork_decorator.3.patch](tarball://root/attachments/some-uu
 I've updated the patch for Sage-4.7.1, there were some rejects due to changed docstrings. I didn't touch any actual functionality. 
 
 The actual workings of the fork decorator look good. Positive review.
+
+
+
+---
+
+archive/issue_events_024013.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-08-03T14:44:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9631",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9631#event-24013"
+}
+```
+
+
+
+---
+
+archive/issue_events_024014.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-08-03T14:44:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9631",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9631#event-24014"
+}
+```
 
 
 
@@ -831,7 +882,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009770.json:
+archive/issue_events_024015.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -839,7 +890,7 @@ archive/issue_events_009770.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9631",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9631#event-9770"
+    "url": "https://github.com/sagemath/sagetest/issues/9631#event-24015"
 }
 ```
 

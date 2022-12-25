@@ -96,7 +96,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007236.json:
+archive/issue_events_016458.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -104,7 +104,7 @@ archive/issue_events_007236.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7014",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7014#event-7236"
+    "url": "https://github.com/sagemath/sagetest/issues/7014#event-16458"
 }
 ```
 

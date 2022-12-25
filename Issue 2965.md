@@ -86,7 +86,7 @@ Merged in Sage 3.0.rc0
 
 ---
 
-archive/issue_events_003170.json:
+archive/issue_events_006779.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -94,7 +94,7 @@ archive/issue_events_003170.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2965",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2965#event-3170"
+    "url": "https://github.com/sagemath/sagetest/issues/2965#event-6779"
 }
 ```
 
@@ -115,3 +115,20 @@ archive/issue_comments_020406.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006780.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-20T04:32:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2965",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2965#event-6780"
+}
+```

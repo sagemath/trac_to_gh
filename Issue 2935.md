@@ -325,6 +325,23 @@ Jaap
 
 ---
 
+archive/issue_events_006710.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-18T20:33:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2935",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2935#event-6710"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020181.json:
 ```json
 {
@@ -389,6 +406,40 @@ archive/issue_comments_020183.json:
 ```
 
 Can anybody but Jaap replicate this problem?
+
+
+
+---
+
+archive/issue_events_006711.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-20T22:05:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2935",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2935#event-6711"
+}
+```
+
+
+
+---
+
+archive/issue_events_006712.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-20T22:05:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2935",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2935#event-6712"
+}
+```
 
 
 
@@ -502,7 +553,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003137.json:
+archive/issue_events_006713.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -510,6 +561,6 @@ archive/issue_events_003137.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2935#event-3137"
+    "url": "https://github.com/sagemath/sagetest/issues/2935#event-6713"
 }
 ```

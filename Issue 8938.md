@@ -114,6 +114,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_021822.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-06-29T07:59:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#event-21822"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082165.json:
 ```json
 {
@@ -325,6 +342,40 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_021823.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2011-07-22T16:41:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#event-21823"
+}
+```
+
+
+
+---
+
+archive/issue_events_021824.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2011-07-22T16:41:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#event-21824"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082173.json:
 ```json
 {
@@ -397,7 +448,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009091.json:
+archive/issue_events_021825.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -405,6 +456,6 @@ archive/issue_events_009091.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8938#event-9091"
+    "url": "https://github.com/sagemath/sagetest/issues/8938#event-21825"
 }
 ```

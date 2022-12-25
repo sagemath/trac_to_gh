@@ -91,7 +91,7 @@ Looks good and fixes the doctest failures.
 
 ---
 
-archive/issue_events_004464.json:
+archive/issue_events_009567.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -99,7 +99,7 @@ archive/issue_events_004464.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4227",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4227#event-4464"
+    "url": "https://github.com/sagemath/sagetest/issues/4227#event-9567"
 }
 ```
 

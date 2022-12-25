@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2362
 
 ---
 
+archive/issue_events_005573.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jbmohler",
+    "created_at": "2008-03-02T05:51:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2362",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2362#event-5573"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015890.json:
 ```json
 {
@@ -131,6 +148,40 @@ Note that I also tweaked the ndigits method just a bit so that it works for arbi
 
 ---
 
+archive/issue_events_005574.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:17:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2362",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2362#event-5574"
+}
+```
+
+
+
+---
+
+archive/issue_events_005575.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:17:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2362",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2362#event-5575"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015894.json:
 ```json
 {
@@ -189,7 +240,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002539.json:
+archive/issue_events_005576.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -197,7 +248,7 @@ archive/issue_events_002539.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2362",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2362#event-2539"
+    "url": "https://github.com/sagemath/sagetest/issues/2362#event-5576"
 }
 ```
 

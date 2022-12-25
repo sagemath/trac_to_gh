@@ -91,7 +91,7 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_events_001667.json:
+archive/issue_events_003828.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -99,7 +99,7 @@ archive/issue_events_001667.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1513",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1513#event-1667"
+    "url": "https://github.com/sagemath/sagetest/issues/1513#event-3828"
 }
 ```
 

@@ -45,7 +45,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000769.json:
+archive/issue_events_001871.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -53,7 +53,7 @@ archive/issue_events_000769.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/701",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/701#event-769"
+    "url": "https://github.com/sagemath/sagetest/issues/701#event-1871"
 }
 ```
 
@@ -115,7 +115,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000770.json:
+archive/issue_events_001872.json:
 ```json
 {
     "actor": "https://github.com/jaapspies",
@@ -123,7 +123,7 @@ archive/issue_events_000770.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/701",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/701#event-770"
+    "url": "https://github.com/sagemath/sagetest/issues/701#event-1872"
 }
 ```
 
@@ -172,6 +172,23 @@ Attachment [srange-fixes.hg](tarball://root/attachments/some-uuid/ticket701/sran
 
 ---
 
+archive/issue_events_001873.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T18:49:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/701",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/701#event-1873"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003667.json:
 ```json
 {
@@ -190,7 +207,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000771.json:
+archive/issue_events_001874.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -198,6 +215,6 @@ archive/issue_events_000771.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/701",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/701#event-771"
+    "url": "https://github.com/sagemath/sagetest/issues/701#event-1874"
 }
 ```

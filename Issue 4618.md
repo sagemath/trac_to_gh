@@ -158,6 +158,57 @@ See also #9555.
 
 ---
 
+archive/issue_events_010499.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10499"
+}
+```
+
+
+
+---
+
+archive/issue_events_010500.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10500"
+}
+```
+
+
+
+---
+
+archive/issue_events_010501.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034598.json:
 ```json
 {
@@ -176,6 +227,74 @@ Changing keywords from "" to "Puiseux".
 
 ---
 
+archive/issue_events_010502.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10502"
+}
+```
+
+
+
+---
+
+archive/issue_events_010503.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10503"
+}
+```
+
+
+
+---
+
+archive/issue_events_010504.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10504"
+}
+```
+
+
+
+---
+
+archive/issue_events_010505.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10505"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034599.json:
 ```json
 {
@@ -189,6 +308,40 @@ archive/issue_comments_034599.json:
 ```
 
 See also #9289.
+
+
+
+---
+
+archive/issue_events_010506.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-17T13:57:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10506"
+}
+```
+
+
+
+---
+
+archive/issue_events_010507.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-17T13:57:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10507"
+}
+```
 
 
 
@@ -452,6 +605,40 @@ The above example is the q-series expansion of the [Dedekind eta function](https
 
 ---
 
+archive/issue_events_010508.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2017-12-26T16:12:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10508"
+}
+```
+
+
+
+---
+
+archive/issue_events_010509.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2017-12-26T16:12:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10509"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034613.json:
 ```json
 {
@@ -562,6 +749,40 @@ archive/issue_comments_034615.json:
 ```
 
 Changing keywords from "Puiseux" to "Puiseux, days100".
+
+
+
+---
+
+archive/issue_events_010510.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2019-07-19T20:11:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10510"
+}
+```
+
+
+
+---
+
+archive/issue_events_010511.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2019-07-19T20:11:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10511"
+}
+```
 
 
 
@@ -1115,6 +1336,40 @@ Ticket retargeted after milestone closed
 
 ---
 
+archive/issue_events_010512.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-12-30T14:48:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10512"
+}
+```
+
+
+
+---
+
+archive/issue_events_010513.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-12-30T14:48:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4618",
+    "milestone": "sage-9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10513"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034637.json:
 ```json
 {
@@ -1477,7 +1732,7 @@ Thanks a lot, as well!
 
 ---
 
-archive/issue_events_004867.json:
+archive/issue_events_010514.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1485,7 +1740,7 @@ archive/issue_events_004867.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4618#event-4867"
+    "url": "https://github.com/sagemath/sagetest/issues/4618#event-10514"
 }
 ```
 

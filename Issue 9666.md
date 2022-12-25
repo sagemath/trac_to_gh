@@ -152,7 +152,24 @@ I will postpone this to the release after the PARI upgrade, i.e. sage-4.6.1 or s
 
 ---
 
-archive/issue_events_009801.json:
+archive/issue_events_024110.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-03T07:10:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9666",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9666#event-24110"
+}
+```
+
+
+
+---
+
+archive/issue_events_024111.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -160,7 +177,7 @@ archive/issue_events_009801.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9666#event-9801"
+    "url": "https://github.com/sagemath/sagetest/issues/9666#event-24111"
 }
 ```
 
@@ -199,3 +216,37 @@ archive/issue_comments_093696.json:
 ```
 
 The same is fixed correctly in #9400.  So I'm closing this as a dupe of that.
+
+
+
+---
+
+archive/issue_events_024112.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-14T10:31:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9666",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9666#event-24112"
+}
+```
+
+
+
+---
+
+archive/issue_events_024113.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-14T10:31:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9666",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9666#event-24113"
+}
+```

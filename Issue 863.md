@@ -46,6 +46,23 @@ Changing component from algebraic geometry to packages.
 
 ---
 
+archive/issue_events_002416.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-19T21:00:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/863",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/863#event-2416"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005314.json:
 ```json
 {
@@ -64,7 +81,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000975.json:
+archive/issue_events_002417.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,6 +89,6 @@ archive/issue_events_000975.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/863",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/863#event-975"
+    "url": "https://github.com/sagemath/sagetest/issues/863#event-2417"
 }
 ```

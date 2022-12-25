@@ -47,6 +47,23 @@ Attachment [intutils.patch](tarball://root/attachments/some-uuid/ticket6080/intu
 
 ---
 
+archive/issue_events_014277.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-05-19T03:56:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6080",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6080#event-14277"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048305.json:
 ```json
 {
@@ -65,7 +82,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_006333.json:
+archive/issue_events_014278.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -73,7 +90,7 @@ archive/issue_events_006333.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6080",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6080#event-6333"
+    "url": "https://github.com/sagemath/sagetest/issues/6080#event-14278"
 }
 ```
 
@@ -94,6 +111,40 @@ archive/issue_comments_048306.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_014279.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T20:37:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6080",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6080#event-14279"
+}
+```
+
+
+
+---
+
+archive/issue_events_014280.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T20:37:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6080",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6080#event-14280"
+}
+```
 
 
 

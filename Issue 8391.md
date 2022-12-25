@@ -232,6 +232,23 @@ I'm removing the 'temporary and ugly fix' from the title, as this actually works
 
 ---
 
+archive/issue_events_020124.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-01T01:56:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8391",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8391#event-20124"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075018.json:
 ```json
 {
@@ -374,7 +391,7 @@ Jaap
 
 ---
 
-archive/issue_events_008576.json:
+archive/issue_events_020125.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -382,7 +399,7 @@ archive/issue_events_008576.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8391#event-8576"
+    "url": "https://github.com/sagemath/sagetest/issues/8391#event-20125"
 }
 ```
 

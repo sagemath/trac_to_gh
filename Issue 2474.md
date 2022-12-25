@@ -70,6 +70,125 @@ My vote is that RIF should not have a round method, since I can't think of a def
 
 ---
 
+archive/issue_events_005837.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5837"
+}
+```
+
+
+
+---
+
+archive/issue_events_005838.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5838"
+}
+```
+
+
+
+---
+
+archive/issue_events_005839.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5839"
+}
+```
+
+
+
+---
+
+archive/issue_events_005840.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5840"
+}
+```
+
+
+
+---
+
+archive/issue_events_005841.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5841"
+}
+```
+
+
+
+---
+
+archive/issue_events_005842.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5842"
+}
+```
+
+
+
+---
+
+archive/issue_events_005843.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5843"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016718.json:
 ```json
 {
@@ -83,6 +202,40 @@ archive/issue_comments_016718.json:
 ```
 
 This now exists, with some definition.
+
+
+
+---
+
+archive/issue_events_005844.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-09-13T19:38:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5844"
+}
+```
+
+
+
+---
+
+archive/issue_events_005845.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-09-13T19:38:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2474",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5845"
+}
+```
 
 
 
@@ -160,7 +313,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_002653.json:
+archive/issue_events_005846.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -168,7 +321,7 @@ archive/issue_events_002653.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2474#event-2653"
+    "url": "https://github.com/sagemath/sagetest/issues/2474#event-5846"
 }
 ```
 

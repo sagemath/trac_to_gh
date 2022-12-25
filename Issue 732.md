@@ -44,6 +44,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/732
 
 ---
 
+archive/issue_events_001988.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-23T10:33:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/732",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/732#event-1988"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004284.json:
 ```json
 {
@@ -62,7 +79,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000819.json:
+archive/issue_events_001989.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -70,7 +87,7 @@ archive/issue_events_000819.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/732",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/732#event-819"
+    "url": "https://github.com/sagemath/sagetest/issues/732#event-1989"
 }
 ```
 
@@ -91,3 +108,37 @@ archive/issue_comments_004285.json:
 ```
 
 This works now that vertices() sorts the vertices it returns (as of 2.8.6, I believe).
+
+
+
+---
+
+archive/issue_events_001990.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-24T17:13:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/732",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/732#event-1990"
+}
+```
+
+
+
+---
+
+archive/issue_events_001991.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-24T17:13:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/732",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/732#event-1991"
+}
+```

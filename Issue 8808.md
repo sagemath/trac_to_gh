@@ -337,7 +337,24 @@ Thanks for pointing this out.  I didn't see that.
 
 ---
 
-archive/issue_events_008973.json:
+archive/issue_events_021488.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-14T21:30:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#event-21488"
+}
+```
+
+
+
+---
+
+archive/issue_events_021489.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -345,7 +362,7 @@ archive/issue_events_008973.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8808",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8808#event-8973"
+    "url": "https://github.com/sagemath/sagetest/issues/8808#event-21489"
 }
 ```
 

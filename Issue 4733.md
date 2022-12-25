@@ -344,7 +344,24 @@ Attachment [trac_4733.patch](tarball://root/attachments/some-uuid/ticket4733/tra
 
 ---
 
-archive/issue_events_004977.json:
+archive/issue_events_010813.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T07:30:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#event-10813"
+}
+```
+
+
+
+---
+
+archive/issue_events_010814.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -352,7 +369,7 @@ archive/issue_events_004977.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4733#event-4977"
+    "url": "https://github.com/sagemath/sagetest/issues/4733#event-10814"
 }
 ```
 

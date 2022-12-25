@@ -97,6 +97,23 @@ Michael
 
 ---
 
+archive/issue_events_004359.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-15T19:18:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1784",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1784#event-4359"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011267.json:
 ```json
 {
@@ -157,7 +174,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_001941.json:
+archive/issue_events_004360.json:
 ```json
 {
     "actor": "https://github.com/pdenapo",
@@ -165,7 +182,7 @@ archive/issue_events_001941.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1784",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1784#event-1941"
+    "url": "https://github.com/sagemath/sagetest/issues/1784#event-4360"
 }
 ```
 
@@ -190,3 +207,20 @@ pari in #258, I could not reproduce the bug in a fresh install
 of sage-2.9.3
 
 I'll check further...
+
+
+
+---
+
+archive/issue_events_004361.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-19T22:18:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1784",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1784#event-4361"
+}
+```

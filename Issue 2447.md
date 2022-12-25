@@ -49,6 +49,23 @@ Attachment [8822.patch](tarball://root/attachments/some-uuid/ticket2447/8822.pat
 
 ---
 
+archive/issue_events_005767.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-10T03:23:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2447",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2447#event-5767"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016505.json:
 ```json
 {
@@ -62,6 +79,40 @@ archive/issue_comments_016505.json:
 ```
 
 Looks good and passes tests.
+
+
+
+---
+
+archive/issue_events_005768.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:34:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2447",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2447#event-5768"
+}
+```
+
+
+
+---
+
+archive/issue_events_005769.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:34:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2447",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2447#event-5769"
+}
+```
 
 
 
@@ -85,7 +136,7 @@ Merged in Sage 2.10.4.alpha0
 
 ---
 
-archive/issue_events_002624.json:
+archive/issue_events_005770.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -93,7 +144,7 @@ archive/issue_events_002624.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2447",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2447#event-2624"
+    "url": "https://github.com/sagemath/sagetest/issues/2447#event-5770"
 }
 ```
 

@@ -46,6 +46,23 @@ Attachment [gd-2.0.35.p1.patch](tarball://root/attachments/some-uuid/ticket5867/
 
 ---
 
+archive/issue_events_013796.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T07:01:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5867",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5867#event-13796"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046257.json:
 ```json
 {
@@ -142,7 +159,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006123.json:
+archive/issue_events_013797.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -150,6 +167,6 @@ archive/issue_events_006123.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5867",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5867#event-6123"
+    "url": "https://github.com/sagemath/sagetest/issues/5867#event-13797"
 }
 ```

@@ -88,7 +88,7 @@ Changing assignee from @williamstein to somebody.
 
 ---
 
-archive/issue_events_000430.json:
+archive/issue_events_000971.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -96,7 +96,7 @@ archive/issue_events_000430.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/404",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/404#event-430"
+    "url": "https://github.com/sagemath/sagetest/issues/404#event-971"
 }
 ```
 

@@ -127,7 +127,7 @@ So this is ready to go - positive review.
 
 ---
 
-archive/issue_events_006038.json:
+archive/issue_events_013588.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -135,7 +135,24 @@ archive/issue_events_006038.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5791",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5791#event-6038"
+    "url": "https://github.com/sagemath/sagetest/issues/5791#event-13588"
+}
+```
+
+
+
+---
+
+archive/issue_events_013589.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T04:09:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5791",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5791#event-13589"
 }
 ```
 

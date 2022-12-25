@@ -171,6 +171,23 @@ Michael
 
 ---
 
+archive/issue_events_001819.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T10:03:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/684",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/684#event-1819"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003539.json:
 ```json
 {
@@ -189,7 +206,7 @@ Yep, this fully works now, and is implemented in ntl_wrap.cpp.  Nice.
 
 ---
 
-archive/issue_events_000752.json:
+archive/issue_events_001820.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -197,7 +214,7 @@ archive/issue_events_000752.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/684",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/684#event-752"
+    "url": "https://github.com/sagemath/sagetest/issues/684#event-1820"
 }
 ```
 

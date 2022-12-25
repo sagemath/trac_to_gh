@@ -50,6 +50,23 @@ Changing component from Cygwin to packages.
 
 ---
 
+archive/issue_events_005640.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-15T05:45:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2389",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2389#event-5640"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016088.json:
 ```json
 {
@@ -108,7 +125,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_002565.json:
+archive/issue_events_005641.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -116,7 +133,7 @@ archive/issue_events_002565.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2389",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2389#event-2565"
+    "url": "https://github.com/sagemath/sagetest/issues/2389#event-5641"
 }
 ```
 

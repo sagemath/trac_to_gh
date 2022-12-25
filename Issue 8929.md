@@ -88,7 +88,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009084.json:
+archive/issue_events_021798.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/jasonbhill",
@@ -96,7 +96,7 @@ archive/issue_events_009084.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8929",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8929#event-9084"
+    "url": "https://github.com/sagemath/sagetest/issues/8929#event-21798"
 }
 ```
 
@@ -119,3 +119,20 @@ archive/issue_comments_082115.json:
 I'm removing this, as
 (1) The present project to rewrite permutation groups will accomplish these tasks.
 (2) I've noticed that some of the methods are placed in the wrong subsections.
+
+
+
+---
+
+archive/issue_events_021799.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-23T22:56:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8929",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8929#event-21799"
+}
+```

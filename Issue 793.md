@@ -46,6 +46,23 @@ see also #811
 
 ---
 
+archive/issue_events_002199.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-04T19:54:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/793#event-2199"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004750.json:
 ```json
 {
@@ -106,6 +123,40 @@ Wall time: 1.63 s
 x^6 + 4*x^5 + 21884*x^4 - 99088*x^3 + 218993188*x^2 + 400560196*x + 100210147034
 ```
 
+
+
+
+---
+
+archive/issue_events_002200.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-03-31T18:04:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/793#event-2200"
+}
+```
+
+
+
+---
+
+archive/issue_events_002201.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-03-31T18:04:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/793#event-2201"
+}
+```
 
 
 
@@ -354,7 +405,7 @@ Cheers, gsw
 
 ---
 
-archive/issue_events_000902.json:
+archive/issue_events_002202.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -362,7 +413,7 @@ archive/issue_events_000902.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/793",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/793#event-902"
+    "url": "https://github.com/sagemath/sagetest/issues/793#event-2202"
 }
 ```
 

@@ -270,6 +270,23 @@ is a chance of getting this merged. It is quite a substantial enhancement.
 
 ---
 
+archive/issue_events_013596.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2009-05-06T20:21:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#event-13596"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045337.json:
 ```json
 {
@@ -661,7 +678,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006043.json:
+archive/issue_events_013597.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -669,7 +686,7 @@ archive/issue_events_006043.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5794#event-6043"
+    "url": "https://github.com/sagemath/sagetest/issues/5794#event-13597"
 }
 ```
 

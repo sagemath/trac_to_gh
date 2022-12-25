@@ -109,6 +109,23 @@ I'm not sure we should be fixing this... or at least, sage-wishlist.
 
 ---
 
+archive/issue_events_003844.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-02-13T02:34:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1523",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1523#event-3844"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009725.json:
 ```json
 {

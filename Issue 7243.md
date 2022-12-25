@@ -75,6 +75,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_017150.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-19T04:08:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7243",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7243#event-17150"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060024.json:
 ```json
 {
@@ -246,7 +263,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007462.json:
+archive/issue_events_017151.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -254,7 +271,7 @@ archive/issue_events_007462.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7243#event-7462"
+    "url": "https://github.com/sagemath/sagetest/issues/7243#event-17151"
 }
 ```
 
@@ -275,3 +292,37 @@ archive/issue_comments_060032.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_017152.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:45:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7243",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7243#event-17152"
+}
+```
+
+
+
+---
+
+archive/issue_events_017153.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:45:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7243",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7243#event-17153"
+}
+```

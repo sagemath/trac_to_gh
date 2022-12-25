@@ -106,7 +106,7 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
-archive/issue_events_006772.json:
+archive/issue_events_015415.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -114,7 +114,7 @@ archive/issue_events_006772.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6536",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6536#event-6772"
+    "url": "https://github.com/sagemath/sagetest/issues/6536#event-15415"
 }
 ```
 

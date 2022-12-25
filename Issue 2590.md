@@ -283,7 +283,7 @@ Merged trac-2590-rebased.patch in Sage 3.0.alpha4
 
 ---
 
-archive/issue_events_002779.json:
+archive/issue_events_006046.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -291,7 +291,7 @@ archive/issue_events_002779.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2590#event-2779"
+    "url": "https://github.com/sagemath/sagetest/issues/2590#event-6046"
 }
 ```
 

@@ -243,7 +243,7 @@ Sorry for the noise...
 
 ---
 
-archive/issue_events_007812.json:
+archive/issue_events_018002.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -251,7 +251,7 @@ archive/issue_events_007812.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7587",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7587#event-7812"
+    "url": "https://github.com/sagemath/sagetest/issues/7587#event-18002"
 }
 ```
 
@@ -272,3 +272,20 @@ archive/issue_comments_064577.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018003.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-09T00:42:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7587",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7587#event-18003"
+}
+```

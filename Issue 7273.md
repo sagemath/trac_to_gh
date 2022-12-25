@@ -271,6 +271,23 @@ Attachment [trac_7273-sage-bdist.spkg](tarball://root/attachments/some-uuid/tick
 
 ---
 
+archive/issue_events_017200.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T17:41:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7273",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7273#event-17200"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060407.json:
 ```json
 {
@@ -381,7 +398,7 @@ For standard yes, but for optional, the main thing is to get somebody to referee
 
 ---
 
-archive/issue_events_007496.json:
+archive/issue_events_017201.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -389,7 +406,7 @@ archive/issue_events_007496.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7273",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7273#event-7496"
+    "url": "https://github.com/sagemath/sagetest/issues/7273#event-17201"
 }
 ```
 

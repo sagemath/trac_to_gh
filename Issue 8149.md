@@ -83,6 +83,125 @@ so I guess any fix for files with spacebars will break the backwards compatibili
 
 ---
 
+archive/issue_events_019508.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19508"
+}
+```
+
+
+
+---
+
+archive/issue_events_019509.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19509"
+}
+```
+
+
+
+---
+
+archive/issue_events_019510.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19510"
+}
+```
+
+
+
+---
+
+archive/issue_events_019511.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19511"
+}
+```
+
+
+
+---
+
+archive/issue_events_019512.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19512"
+}
+```
+
+
+
+---
+
+archive/issue_events_019513.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19513"
+}
+```
+
+
+
+---
+
+archive/issue_events_019514.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19514"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071515.json:
 ```json
 {
@@ -114,6 +233,40 @@ archive/issue_comments_071516.json:
 ```
 
 This works correctly now (with a doctest in `src/sage/repl/load.py`)
+
+
+
+---
+
+archive/issue_events_019515.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-03-25T16:28:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19515"
+}
+```
+
+
+
+---
+
+archive/issue_events_019516.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-03-25T16:28:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8149",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19516"
+}
+```
 
 
 
@@ -155,7 +308,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008354.json:
+archive/issue_events_019517.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -163,6 +316,6 @@ archive/issue_events_008354.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8149",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8149#event-8354"
+    "url": "https://github.com/sagemath/sagetest/issues/8149#event-19517"
 }
 ```

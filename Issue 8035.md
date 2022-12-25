@@ -69,6 +69,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_019253.json:
+```json
+{
+    "actor": "https://github.com/dandrake",
+    "created_at": "2012-05-25T03:42:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8035",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8035#event-19253"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070061.json:
 ```json
 {
@@ -105,7 +122,7 @@ Hmm, I forget how to close tickets. Release manager, please close this.
 
 ---
 
-archive/issue_events_008246.json:
+archive/issue_events_019254.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -113,7 +130,7 @@ archive/issue_events_008246.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8035",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8035#event-8246"
+    "url": "https://github.com/sagemath/sagetest/issues/8035#event-19254"
 }
 ```
 

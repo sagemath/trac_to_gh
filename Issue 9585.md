@@ -109,6 +109,23 @@ Proposing to close all sagenb tickets as outdated, so that all remaining open ti
 
 ---
 
+archive/issue_events_023866.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-18T00:36:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9585",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9585#event-23866"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092538.json:
 ```json
 {
@@ -145,7 +162,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009730.json:
+archive/issue_events_023867.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -153,6 +170,6 @@ archive/issue_events_009730.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9585",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9585#event-9730"
+    "url": "https://github.com/sagemath/sagetest/issues/9585#event-23867"
 }
 ```

@@ -68,6 +68,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_007750.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-06-15T22:32:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3431",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3431#event-7750"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024138.json:
 ```json
 {
@@ -144,7 +161,7 @@ Merged both patches in Sage 3.1.2.alpha2
 
 ---
 
-archive/issue_events_003650.json:
+archive/issue_events_007751.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -152,7 +169,7 @@ archive/issue_events_003650.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3431",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3431#event-3650"
+    "url": "https://github.com/sagemath/sagetest/issues/3431#event-7751"
 }
 ```
 

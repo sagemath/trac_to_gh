@@ -1740,7 +1740,7 @@ Changing priority from critical to blocker.
 
 ---
 
-archive/issue_events_009678.json:
+archive/issue_events_023678.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1748,7 +1748,7 @@ archive/issue_events_009678.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9530#event-9678"
+    "url": "https://github.com/sagemath/sagetest/issues/9530#event-23678"
 }
 ```
 
@@ -1769,3 +1769,54 @@ archive/issue_comments_091604.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_023679.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-30T23:14:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9530",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9530#event-23679"
+}
+```
+
+
+
+---
+
+archive/issue_events_023680.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-30T23:14:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9530",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9530#event-23680"
+}
+```
+
+
+
+---
+
+archive/issue_events_023681.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-30T23:14:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9530",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9530#event-23681"
+}
+```

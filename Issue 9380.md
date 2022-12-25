@@ -105,7 +105,24 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_009535.json:
+archive/issue_events_023131.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-15T09:58:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9380",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9380#event-23131"
+}
+```
+
+
+
+---
+
+archive/issue_events_023132.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -113,7 +130,7 @@ archive/issue_events_009535.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9380",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9380#event-9535"
+    "url": "https://github.com/sagemath/sagetest/issues/9380#event-23132"
 }
 ```
 

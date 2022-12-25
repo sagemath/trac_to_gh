@@ -70,7 +70,7 @@ Positive review.
 
 ---
 
-archive/issue_events_003482.json:
+archive/issue_events_007348.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -78,7 +78,7 @@ archive/issue_events_003482.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3263",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3263#event-3482"
+    "url": "https://github.com/sagemath/sagetest/issues/3263#event-7348"
 }
 ```
 
@@ -117,3 +117,20 @@ archive/issue_comments_022537.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007349.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-21T13:25:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3263",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3263#event-7349"
+}
+```

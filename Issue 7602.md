@@ -73,6 +73,91 @@ AndyNovo on [sage-devel]:
 
 ---
 
+archive/issue_events_018061.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18061"
+}
+```
+
+
+
+---
+
+archive/issue_events_018062.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18062"
+}
+```
+
+
+
+---
+
+archive/issue_events_018063.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18063"
+}
+```
+
+
+
+---
+
+archive/issue_events_018064.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18064"
+}
+```
+
+
+
+---
+
+archive/issue_events_018065.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18065"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064748.json:
 ```json
 {
@@ -86,6 +171,40 @@ archive/issue_comments_064748.json:
 ```
 
 I can't reproduce/test due to lack of 32-bit machine, anyone still got one?
+
+
+
+---
+
+archive/issue_events_018066.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18066"
+}
+```
+
+
+
+---
+
+archive/issue_events_018067.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18067"
+}
+```
 
 
 
@@ -127,6 +246,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_018068.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-08-13T21:26:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18068"
+}
+```
+
+
+
+---
+
+archive/issue_events_018069.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-08-13T21:26:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064751.json:
 ```json
 {
@@ -163,7 +316,7 @@ The example in the ticket description also works fine on 32-bit ARM, so I think 
 
 ---
 
-archive/issue_events_007828.json:
+archive/issue_events_018070.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -171,7 +324,7 @@ archive/issue_events_007828.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7602",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7602#event-7828"
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-18070"
 }
 ```
 

@@ -137,6 +137,23 @@ Power throttling checking was disabled as per irc discussion, and after testing 
 
 ---
 
+archive/issue_events_005350.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-20T10:51:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2260",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2260#event-5350"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014932.json:
 ```json
 {
@@ -161,7 +178,7 @@ Michael
 
 ---
 
-archive/issue_events_002432.json:
+archive/issue_events_005351.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -169,7 +186,7 @@ archive/issue_events_002432.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2260",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2260#event-2432"
+    "url": "https://github.com/sagemath/sagetest/issues/2260#event-5351"
 }
 ```
 

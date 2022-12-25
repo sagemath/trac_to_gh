@@ -27,6 +27,125 @@ Issue created by migration from https://trac.sagemath.org/ticket/5110
 
 ---
 
+archive/issue_events_011812.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11812"
+}
+```
+
+
+
+---
+
+archive/issue_events_011813.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11813"
+}
+```
+
+
+
+---
+
+archive/issue_events_011814.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11814"
+}
+```
+
+
+
+---
+
+archive/issue_events_011815.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11815"
+}
+```
+
+
+
+---
+
+archive/issue_events_011816.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11816"
+}
+```
+
+
+
+---
+
+archive/issue_events_011817.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11817"
+}
+```
+
+
+
+---
+
+archive/issue_events_011818.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11818"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038965.json:
 ```json
 {
@@ -84,6 +203,40 @@ I did see that patch, but looking at the source code for diagonal_matrix(), the 
 3. Casting to Sequence
 
 1 could be a good fix since the current function uses "arg0, arg1, arg2" which is pretty bad, but in my opinion, 2 and 3 are not necessary (although if we do change 1 we will need to change 2).
+
+
+
+---
+
+archive/issue_events_011819.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2019-12-14T00:07:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11819"
+}
+```
+
+
+
+---
+
+archive/issue_events_011820.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2019-12-14T00:07:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5110",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11820"
+}
+```
 
 
 
@@ -179,7 +332,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005357.json:
+archive/issue_events_011821.json:
 ```json
 {
     "actor": "https://github.com/slel",
@@ -187,6 +340,6 @@ archive/issue_events_005357.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5110",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5110#event-5357"
+    "url": "https://github.com/sagemath/sagetest/issues/5110#event-11821"
 }
 ```

@@ -473,6 +473,125 @@ Case (1) is actually OK if we don't pass zeta as an argument at all, because we 
 
 ---
 
+archive/issue_events_014132.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6018",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6018#event-14132"
+}
+```
+
+
+
+---
+
+archive/issue_events_014133.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6018",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6018#event-14133"
+}
+```
+
+
+
+---
+
+archive/issue_events_014134.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6018",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6018#event-14134"
+}
+```
+
+
+
+---
+
+archive/issue_events_014135.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6018",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6018#event-14135"
+}
+```
+
+
+
+---
+
+archive/issue_events_014136.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6018",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6018#event-14136"
+}
+```
+
+
+
+---
+
+archive/issue_events_014137.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6018",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6018#event-14137"
+}
+```
+
+
+
+---
+
+archive/issue_events_014138.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6018",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6018#event-14138"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047807.json:
 ```json
 {
@@ -927,7 +1046,7 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_006273.json:
+archive/issue_events_014139.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -935,7 +1054,7 @@ archive/issue_events_006273.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6018#event-6273"
+    "url": "https://github.com/sagemath/sagetest/issues/6018#event-14139"
 }
 ```
 

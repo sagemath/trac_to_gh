@@ -39,6 +39,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/554
 
 ---
 
+archive/issue_events_001471.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:22:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/554",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/554#event-1471"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002853.json:
 ```json
 {
@@ -93,7 +110,7 @@ Attachment [554.patch](tarball://root/attachments/some-uuid/ticket554/554.patch)
 
 ---
 
-archive/issue_events_000597.json:
+archive/issue_events_001472.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -101,7 +118,7 @@ archive/issue_events_000597.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/554",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/554#event-597"
+    "url": "https://github.com/sagemath/sagetest/issues/554#event-1472"
 }
 ```
 

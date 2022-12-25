@@ -219,7 +219,7 @@ Looks like its all ready now.
 
 ---
 
-archive/issue_events_005715.json:
+archive/issue_events_012766.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -227,7 +227,7 @@ archive/issue_events_005715.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5460#event-5715"
+    "url": "https://github.com/sagemath/sagetest/issues/5460#event-12766"
 }
 ```
 

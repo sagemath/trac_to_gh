@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2413
 
 ---
 
+archive/issue_events_005689.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-07T02:40:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2413",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2413#event-5689"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016247.json:
 ```json
 {
@@ -54,7 +71,41 @@ I believe this refers to documentation which is generated from server/notebook/t
 
 ---
 
-archive/issue_events_002589.json:
+archive/issue_events_005690.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-14T05:34:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2413",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2413#event-5690"
+}
+```
+
+
+
+---
+
+archive/issue_events_005691.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-14T05:34:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2413",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2413#event-5691"
+}
+```
+
+
+
+---
+
+archive/issue_events_005692.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -62,7 +113,7 @@ archive/issue_events_002589.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2413",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2413#event-2589"
+    "url": "https://github.com/sagemath/sagetest/issues/2413#event-5692"
 }
 ```
 

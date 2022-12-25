@@ -88,7 +88,7 @@ Michael
 
 ---
 
-archive/issue_events_002092.json:
+archive/issue_events_004650.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -96,7 +96,7 @@ archive/issue_events_002092.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1936",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1936#event-2092"
+    "url": "https://github.com/sagemath/sagetest/issues/1936#event-4650"
 }
 ```
 
@@ -117,6 +117,23 @@ archive/issue_comments_012253.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_004651.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-02T07:01:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1936",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1936#event-4651"
+}
+```
 
 
 

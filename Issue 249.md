@@ -125,6 +125,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/249
 
 ---
 
+archive/issue_events_000516.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:26:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/249",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/249#event-516"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001090.json:
 ```json
 {
@@ -160,6 +177,40 @@ archive/issue_comments_001091.json:
 ```
 
 The examples above very clearly indicate that by factoring preparsed constants out when preparsing chunks of code results in potentially vast speedups.   We should have been doing this since day 1, but just haven't got around to it.  This ticket should definitely *not* be invalidated.  I've reworded it to be much more precise with one clear example.
+
+
+
+---
+
+archive/issue_events_000517.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-22T19:42:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/249",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/249#event-517"
+}
+```
+
+
+
+---
+
+archive/issue_events_000518.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-22T19:42:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/249",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/249#event-518"
+}
+```
 
 
 
@@ -261,7 +312,7 @@ Looks good.  I have tried it with a bunch of different types of constants (reals
 
 ---
 
-archive/issue_events_000263.json:
+archive/issue_events_000519.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -269,7 +320,7 @@ archive/issue_events_000263.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/249",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/249#event-263"
+    "url": "https://github.com/sagemath/sagetest/issues/249#event-519"
 }
 ```
 

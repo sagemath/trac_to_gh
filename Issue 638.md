@@ -56,7 +56,7 @@ Attachment [sage-638_1.patch](tarball://root/attachments/some-uuid/ticket638/sag
 
 ---
 
-archive/issue_events_000700.json:
+archive/issue_events_001700.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -64,7 +64,7 @@ archive/issue_events_000700.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/638",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/638#event-700"
+    "url": "https://github.com/sagemath/sagetest/issues/638#event-1700"
 }
 ```
 

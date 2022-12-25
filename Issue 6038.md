@@ -72,7 +72,7 @@ Merged in Sage 4.0.rc1.
 
 ---
 
-archive/issue_events_006293.json:
+archive/issue_events_014182.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -80,7 +80,7 @@ archive/issue_events_006293.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6038",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6038#event-6293"
+    "url": "https://github.com/sagemath/sagetest/issues/6038#event-14182"
 }
 ```
 

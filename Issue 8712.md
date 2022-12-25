@@ -286,7 +286,7 @@ Merged:
 
 ---
 
-archive/issue_events_008882.json:
+archive/issue_events_021147.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -294,6 +294,6 @@ archive/issue_events_008882.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8712#event-8882"
+    "url": "https://github.com/sagemath/sagetest/issues/8712#event-21147"
 }
 ```

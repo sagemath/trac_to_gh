@@ -135,7 +135,7 @@ This should be brought up as a thread on sage-devel.
 
 ---
 
-archive/issue_events_003221.json:
+archive/issue_events_006848.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -143,6 +143,6 @@ archive/issue_events_003221.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3016",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3016#event-3221"
+    "url": "https://github.com/sagemath/sagetest/issues/3016#event-6848"
 }
 ```

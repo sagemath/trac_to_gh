@@ -122,6 +122,125 @@ That last error is already #3859
 
 ---
 
+archive/issue_events_008845.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8845"
+}
+```
+
+
+
+---
+
+archive/issue_events_008846.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8846"
+}
+```
+
+
+
+---
+
+archive/issue_events_008847.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8847"
+}
+```
+
+
+
+---
+
+archive/issue_events_008848.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8848"
+}
+```
+
+
+
+---
+
+archive/issue_events_008849.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8849"
+}
+```
+
+
+
+---
+
+archive/issue_events_008850.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8850"
+}
+```
+
+
+
+---
+
+archive/issue_events_008851.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8851"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027458.json:
 ```json
 {
@@ -137,3 +256,37 @@ archive/issue_comments_027458.json:
 Related:
 
 - #3546: line3d with jmol draws curves instead of straight lines
+
+
+
+---
+
+archive/issue_events_008852.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2021-04-27T22:07:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8852"
+}
+```
+
+
+
+---
+
+archive/issue_events_008853.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2021-04-27T22:07:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3861",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3861#event-8853"
+}
+```

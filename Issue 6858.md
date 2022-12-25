@@ -124,7 +124,7 @@ Nathann
 
 ---
 
-archive/issue_events_007091.json:
+archive/issue_events_016131.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -132,7 +132,7 @@ archive/issue_events_007091.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6858",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6858#event-7091"
+    "url": "https://github.com/sagemath/sagetest/issues/6858#event-16131"
 }
 ```
 

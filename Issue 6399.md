@@ -224,7 +224,24 @@ I'm not sure who the reviewer was. And the milestone for this ticket should be 4
 
 ---
 
-archive/issue_events_006645.json:
+archive/issue_events_015079.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-17T07:43:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6399",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6399#event-15079"
+}
+```
+
+
+
+---
+
+archive/issue_events_015080.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -232,7 +249,7 @@ archive/issue_events_006645.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6399",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6399#event-6645"
+    "url": "https://github.com/sagemath/sagetest/issues/6399#event-15080"
 }
 ```
 

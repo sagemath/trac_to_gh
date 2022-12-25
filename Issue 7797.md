@@ -1710,6 +1710,57 @@ So, problem vanished.
 
 ---
 
+archive/issue_events_018668.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2011-05-26T13:04:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18668"
+}
+```
+
+
+
+---
+
+archive/issue_events_018669.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2011-05-27T06:39:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18669"
+}
+```
+
+
+
+---
+
+archive/issue_events_018670.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2011-05-27T06:39:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18670"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067278.json:
 ```json
 {
@@ -2437,7 +2488,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008011.json:
+archive/issue_events_018671.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2445,7 +2496,7 @@ archive/issue_events_008011.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7797#event-8011"
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18671"
 }
 ```
 
@@ -2519,7 +2570,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008012.json:
+archive/issue_events_018672.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2527,7 +2578,7 @@ archive/issue_events_008012.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7797#event-8012"
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18672"
 }
 ```
 
@@ -2548,6 +2599,40 @@ archive/issue_comments_067318.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_018673.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-24T20:24:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18673"
+}
+```
+
+
+
+---
+
+archive/issue_events_018674.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-24T20:24:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18674"
+}
+```
 
 
 
@@ -3178,6 +3263,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_018675.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-29T21:29:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18675"
+}
+```
+
+
+
+---
+
+archive/issue_events_018676.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-29T21:29:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18676"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067343.json:
 ```json
 {
@@ -3360,7 +3479,7 @@ Just realized, that I'm the reviewer: I'm fine with reestablishing to positive r
 
 ---
 
-archive/issue_events_008013.json:
+archive/issue_events_018677.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -3368,7 +3487,7 @@ archive/issue_events_008013.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7797#event-8013"
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-18677"
 }
 ```
 

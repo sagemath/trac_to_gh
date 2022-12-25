@@ -682,7 +682,7 @@ I am very happy to endorse this decision.  When I looked at this some time ago I
 
 ---
 
-archive/issue_events_006820.json:
+archive/issue_events_015525.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -690,7 +690,7 @@ archive/issue_events_006820.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6583#event-6820"
+    "url": "https://github.com/sagemath/sagetest/issues/6583#event-15525"
 }
 ```
 

@@ -139,7 +139,7 @@ which appropriately returns an empty string.
 
 ---
 
-archive/issue_events_009797.json:
+archive/issue_events_024101.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -147,6 +147,23 @@ archive/issue_events_009797.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9662",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9662#event-9797"
+    "url": "https://github.com/sagemath/sagetest/issues/9662#event-24101"
+}
+```
+
+
+
+---
+
+archive/issue_events_024102.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-24T12:23:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9662",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9662#event-24102"
 }
 ```

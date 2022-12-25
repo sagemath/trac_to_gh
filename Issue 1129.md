@@ -58,6 +58,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1129
 
 ---
 
+archive/issue_events_003018.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-15T02:24:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#event-3018"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006804.json:
 ```json
 {
@@ -353,7 +370,7 @@ I like the new version.  Doctests pass in sage/rings.  (Apply trac_1129.hg, then
 
 ---
 
-archive/issue_events_001255.json:
+archive/issue_events_003019.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -361,7 +378,7 @@ archive/issue_events_001255.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1129#event-1255"
+    "url": "https://github.com/sagemath/sagetest/issues/1129#event-3019"
 }
 ```
 

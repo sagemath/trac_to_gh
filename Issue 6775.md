@@ -106,6 +106,23 @@ SAGE will now terminate (sorry).
 
 ---
 
+archive/issue_events_015969.json:
+```json
+{
+    "actor": "https://github.com/seblabbe",
+    "created_at": "2009-08-19T19:11:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6775",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6775#event-15969"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055693.json:
 ```json
 {
@@ -643,7 +660,7 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_events_007006.json:
+archive/issue_events_015970.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -651,7 +668,7 @@ archive/issue_events_007006.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6775#event-7006"
+    "url": "https://github.com/sagemath/sagetest/issues/6775#event-15970"
 }
 ```
 

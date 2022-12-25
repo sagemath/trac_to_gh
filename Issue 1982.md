@@ -214,7 +214,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_002138.json:
+archive/issue_events_004786.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -222,6 +222,6 @@ archive/issue_events_002138.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1982",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1982#event-2138"
+    "url": "https://github.com/sagemath/sagetest/issues/1982#event-4786"
 }
 ```

@@ -47,6 +47,23 @@ Attachment [trac-2454.patch](tarball://root/attachments/some-uuid/ticket2454/tra
 
 ---
 
+archive/issue_events_005787.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:10:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2454",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2454#event-5787"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016579.json:
 ```json
 {
@@ -67,7 +84,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_002631.json:
+archive/issue_events_005788.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -75,7 +92,7 @@ archive/issue_events_002631.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2454",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2454#event-2631"
+    "url": "https://github.com/sagemath/sagetest/issues/2454#event-5788"
 }
 ```
 

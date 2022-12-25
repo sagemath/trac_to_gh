@@ -165,6 +165,23 @@ Emmanuel, I found this on oooold tickets. I guess this can be closed. (Or could 
 
 ---
 
+archive/issue_events_013987.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-08-25T10:13:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5964",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5964#event-13987"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047145.json:
 ```json
 {
@@ -237,7 +254,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_006219.json:
+archive/issue_events_013988.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -245,7 +262,7 @@ archive/issue_events_006219.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5964",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5964#event-6219"
+    "url": "https://github.com/sagemath/sagetest/issues/5964#event-13988"
 }
 ```
 

@@ -59,6 +59,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7918
 
 ---
 
+archive/issue_events_018966.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-01-13T09:14:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7918",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7918#event-18966"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068780.json:
 ```json
 {
@@ -77,7 +94,7 @@ Although it is not the same issue, this will be fixed by #7822. I have a new pat
 
 ---
 
-archive/issue_events_008133.json:
+archive/issue_events_018967.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -85,7 +102,7 @@ archive/issue_events_008133.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7918",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7918#event-8133"
+    "url": "https://github.com/sagemath/sagetest/issues/7918#event-18967"
 }
 ```
 

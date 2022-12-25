@@ -143,7 +143,7 @@ Haven't tried testing since I'm about to get on a plane, but this patch looks st
 
 ---
 
-archive/issue_events_005706.json:
+archive/issue_events_012737.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -151,7 +151,7 @@ archive/issue_events_005706.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5452",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5452#event-5706"
+    "url": "https://github.com/sagemath/sagetest/issues/5452#event-12737"
 }
 ```
 

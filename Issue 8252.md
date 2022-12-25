@@ -70,6 +70,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_019735.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2014-04-18T05:29:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8252",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8252#event-19735"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072886.json:
 ```json
 {
@@ -83,6 +100,40 @@ archive/issue_comments_072886.json:
 ```
 
 New commits:
+
+
+
+---
+
+archive/issue_events_019736.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8252",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8252#event-19736"
+}
+```
+
+
+
+---
+
+archive/issue_events_019737.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8252",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8252#event-19737"
+}
+```
 
 
 
@@ -123,3 +174,37 @@ archive/issue_comments_072888.json:
 ```
 
 Changing status from needs_review to needs_work.
+
+
+
+---
+
+archive/issue_events_019738.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8252",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8252#event-19738"
+}
+```
+
+
+
+---
+
+archive/issue_events_019739.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8252",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8252#event-19739"
+}
+```

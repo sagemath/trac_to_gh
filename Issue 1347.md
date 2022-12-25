@@ -47,7 +47,7 @@ The patch on #1349 implemented this.
 
 ---
 
-archive/issue_events_001489.json:
+archive/issue_events_003493.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -55,7 +55,7 @@ archive/issue_events_001489.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1347",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1347#event-1489"
+    "url": "https://github.com/sagemath/sagetest/issues/1347#event-3493"
 }
 ```
 

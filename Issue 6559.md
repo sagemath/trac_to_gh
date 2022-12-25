@@ -147,6 +147,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_015471.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-18T02:43:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6559",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6559#event-15471"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053383.json:
 ```json
 {
@@ -884,7 +901,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006796.json:
+archive/issue_events_015472.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -892,7 +909,7 @@ archive/issue_events_006796.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6559#event-6796"
+    "url": "https://github.com/sagemath/sagetest/issues/6559#event-15472"
 }
 ```
 

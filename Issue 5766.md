@@ -252,6 +252,23 @@ OK with all three patches the tests pass.  It's a pity we cannot make it determi
 
 ---
 
+archive/issue_events_013518.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T00:44:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5766",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5766#event-13518"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045010.json:
 ```json
 {
@@ -305,6 +322,40 @@ Actually, the above seems broken, i.e. notice the missing ***** - so 'needs work
 Cheers,
 
 Michaek
+
+
+
+---
+
+archive/issue_events_013519.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T00:45:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5766",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5766#event-13519"
+}
+```
+
+
+
+---
+
+archive/issue_events_013520.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T00:45:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5766",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5766#event-13520"
+}
+```
 
 
 
@@ -366,7 +417,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006013.json:
+archive/issue_events_013521.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -374,7 +425,7 @@ archive/issue_events_006013.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#event-6013"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#event-13521"
 }
 ```
 

@@ -120,7 +120,7 @@ which incorporates the fixes at #8753.
 
 ---
 
-archive/issue_events_008813.json:
+archive/issue_events_020917.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -128,7 +128,7 @@ archive/issue_events_008813.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8644",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8644#event-8813"
+    "url": "https://github.com/sagemath/sagetest/issues/8644#event-20917"
 }
 ```
 

@@ -186,6 +186,23 @@ To release manager: please close this as fixed once #6376 is merged.
 
 ---
 
+archive/issue_events_015022.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-19T17:47:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6376",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6376#event-15022"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050930.json:
 ```json
 {
@@ -204,7 +221,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006624.json:
+archive/issue_events_015023.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -212,6 +229,6 @@ archive/issue_events_006624.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6376",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6376#event-6624"
+    "url": "https://github.com/sagemath/sagetest/issues/6376#event-15023"
 }
 ```

@@ -131,6 +131,23 @@ Looks good, applies cleanly against sage-2.10.3.rc3, and passes tests.
 
 ---
 
+archive/issue_events_004589.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:59:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1907",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1907#event-4589"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012052.json:
 ```json
 {
@@ -167,7 +184,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002064.json:
+archive/issue_events_004590.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -175,6 +192,6 @@ archive/issue_events_002064.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1907",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1907#event-2064"
+    "url": "https://github.com/sagemath/sagetest/issues/1907#event-4590"
 }
 ```

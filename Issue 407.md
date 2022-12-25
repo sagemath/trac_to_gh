@@ -93,6 +93,23 @@ Michael
 
 ---
 
+archive/issue_events_000976.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:48:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/407",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/407#event-976"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001996.json:
 ```json
 {
@@ -111,7 +128,75 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_000433.json:
+archive/issue_events_000977.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-03T12:14:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/407",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/407#event-977"
+}
+```
+
+
+
+---
+
+archive/issue_events_000978.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-03T12:14:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/407",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/407#event-978"
+}
+```
+
+
+
+---
+
+archive/issue_events_000979.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:56:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/407",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/407#event-979"
+}
+```
+
+
+
+---
+
+archive/issue_events_000980.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:56:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/407",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/407#event-980"
+}
+```
+
+
+
+---
+
+archive/issue_events_000981.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -119,7 +204,7 @@ archive/issue_events_000433.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/407",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/407#event-433"
+    "url": "https://github.com/sagemath/sagetest/issues/407#event-981"
 }
 ```
 

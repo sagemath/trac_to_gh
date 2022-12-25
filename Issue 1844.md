@@ -210,7 +210,7 @@ Merged 1844-2.patch and 1844-2a.patch in Sage 2.10.1.alpha1 - finally :)
 
 ---
 
-archive/issue_events_002003.json:
+archive/issue_events_004471.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -218,6 +218,6 @@ archive/issue_events_002003.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1844#event-2003"
+    "url": "https://github.com/sagemath/sagetest/issues/1844#event-4471"
 }
 ```

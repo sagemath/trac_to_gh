@@ -158,7 +158,7 @@ The patch `trac9364-BooleanFunction_is_symmetric.patch` uses tabs for indentatio
 
 ---
 
-archive/issue_events_009517.json:
+archive/issue_events_023100.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -166,7 +166,7 @@ archive/issue_events_009517.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9364",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9364#event-9517"
+    "url": "https://github.com/sagemath/sagetest/issues/9364#event-23100"
 }
 ```
 

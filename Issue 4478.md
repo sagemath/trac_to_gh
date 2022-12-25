@@ -133,6 +133,23 @@ Michael
 
 ---
 
+archive/issue_events_010122.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-11T12:35:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4478",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4478#event-10122"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033016.json:
 ```json
 {
@@ -211,6 +228,74 @@ Changing assignee from mabshoff to @craigcitro.
 
 ---
 
+archive/issue_events_010123.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2009-05-27T04:36:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4478",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4478#event-10123"
+}
+```
+
+
+
+---
+
+archive/issue_events_010124.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2009-05-27T04:36:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4478",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4478#event-10124"
+}
+```
+
+
+
+---
+
+archive/issue_events_010125.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T07:47:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4478",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4478#event-10125"
+}
+```
+
+
+
+---
+
+archive/issue_events_010126.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T07:47:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4478",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4478#event-10126"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033020.json:
 ```json
 {
@@ -267,7 +352,7 @@ Both patches merged in 4.0.rc2.
 
 ---
 
-archive/issue_events_004727.json:
+archive/issue_events_010127.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -275,6 +360,40 @@ archive/issue_events_004727.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4478#event-4727"
+    "url": "https://github.com/sagemath/sagetest/issues/4478#event-10127"
+}
+```
+
+
+
+---
+
+archive/issue_events_010128.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T20:07:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4478",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4478#event-10128"
+}
+```
+
+
+
+---
+
+archive/issue_events_010129.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T20:07:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4478",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4478#event-10129"
 }
 ```

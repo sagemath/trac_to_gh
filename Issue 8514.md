@@ -82,6 +82,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8514
 
 ---
 
+archive/issue_events_020439.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-03-13T14:30:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8514",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8514#event-20439"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076774.json:
 ```json
 {
@@ -426,7 +443,7 @@ Merged 2010/04/20.
 
 ---
 
-archive/issue_events_008694.json:
+archive/issue_events_020440.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -434,6 +451,6 @@ archive/issue_events_008694.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8514#event-8694"
+    "url": "https://github.com/sagemath/sagetest/issues/8514#event-20440"
 }
 ```

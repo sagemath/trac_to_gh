@@ -70,6 +70,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7092
 
 ---
 
+archive/issue_events_016771.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-02T17:49:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7092",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7092#event-16771"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058495.json:
 ```json
 {
@@ -411,7 +428,7 @@ merged into 4.1.2.
 
 ---
 
-archive/issue_events_007314.json:
+archive/issue_events_016772.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -419,6 +436,6 @@ archive/issue_events_007314.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7092#event-7314"
+    "url": "https://github.com/sagemath/sagetest/issues/7092#event-16772"
 }
 ```

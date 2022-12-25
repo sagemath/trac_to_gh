@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/168
 
 ---
 
-archive/issue_events_000174.json:
+archive/issue_events_000309.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -44,7 +44,7 @@ archive/issue_events_000174.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/168",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/168#event-174"
+    "url": "https://github.com/sagemath/sagetest/issues/168#event-309"
 }
 ```
 
@@ -83,3 +83,20 @@ archive/issue_comments_000750.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000310.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:56:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/168",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/168#event-310"
+}
+```

@@ -84,7 +84,7 @@ Looks good and passes tests for me.
 
 ---
 
-archive/issue_events_003598.json:
+archive/issue_events_007626.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -92,7 +92,7 @@ archive/issue_events_003598.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3382",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3382#event-3598"
+    "url": "https://github.com/sagemath/sagetest/issues/3382#event-7626"
 }
 ```
 
@@ -113,6 +113,23 @@ archive/issue_comments_023629.json:
 ```
 
 Merged in Sage 3.0.4.alpha0
+
+
+
+---
+
+archive/issue_events_007627.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T09:34:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3382",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3382#event-7627"
+}
+```
 
 
 

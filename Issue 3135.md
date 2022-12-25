@@ -64,7 +64,7 @@ This is fixed by the patch up at #3124, so should be closed when #3124 gets clos
 
 ---
 
-archive/issue_events_003351.json:
+archive/issue_events_007090.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +72,7 @@ archive/issue_events_003351.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3135",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3135#event-3351"
+    "url": "https://github.com/sagemath/sagetest/issues/3135#event-7090"
 }
 ```
 
@@ -97,6 +97,23 @@ Fixed in Sage 3.3.alpha1 by merging #3124.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007091.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T08:36:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3135",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3135#event-7091"
+}
+```
 
 
 

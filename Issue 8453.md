@@ -294,6 +294,23 @@ All pass on 32-bit.
 
 ---
 
+archive/issue_events_020285.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-03-18T17:54:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8453",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8453#event-20285"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075942.json:
 ```json
 {
@@ -312,7 +329,7 @@ FWIW: I've just checked and it *does* build and run OK on Solaris, by the way. I
 
 ---
 
-archive/issue_events_008637.json:
+archive/issue_events_020286.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -320,7 +337,7 @@ archive/issue_events_008637.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8453#event-8637"
+    "url": "https://github.com/sagemath/sagetest/issues/8453#event-20286"
 }
 ```
 

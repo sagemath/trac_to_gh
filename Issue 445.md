@@ -34,6 +34,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/445
 
 ---
 
+archive/issue_events_001109.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:25:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/445",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/445#event-1109"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002221.json:
 ```json
 {
@@ -52,7 +69,24 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000472.json:
+archive/issue_events_001110.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-20T18:19:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/445",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/445#event-1110"
+}
+```
+
+
+
+---
+
+archive/issue_events_001111.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -60,6 +94,6 @@ archive/issue_events_000472.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/445",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/445#event-472"
+    "url": "https://github.com/sagemath/sagetest/issues/445#event-1111"
 }
 ```

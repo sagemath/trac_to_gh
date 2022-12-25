@@ -160,6 +160,23 @@ Changing component from doctest to interfaces.
 
 ---
 
+archive/issue_events_024736.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-04-05T13:12:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-5.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24736"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096777.json:
 ```json
 {
@@ -196,6 +213,108 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_024737.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-5.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24737"
+}
+```
+
+
+
+---
+
+archive/issue_events_024738.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24738"
+}
+```
+
+
+
+---
+
+archive/issue_events_024739.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24739"
+}
+```
+
+
+
+---
+
+archive/issue_events_024740.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24740"
+}
+```
+
+
+
+---
+
+archive/issue_events_024741.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24741"
+}
+```
+
+
+
+---
+
+archive/issue_events_024742.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24742"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096779.json:
 ```json
 {
@@ -209,6 +328,40 @@ archive/issue_comments_096779.json:
 ```
 
 I too ran into intermittent doctest failures in #12061
+
+
+
+---
+
+archive/issue_events_024743.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24743"
+}
+```
+
+
+
+---
+
+archive/issue_events_024744.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9826",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24744"
+}
+```
 
 
 
@@ -286,7 +439,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009949.json:
+archive/issue_events_024745.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -294,7 +447,7 @@ archive/issue_events_009949.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9826#event-9949"
+    "url": "https://github.com/sagemath/sagetest/issues/9826#event-24745"
 }
 ```
 

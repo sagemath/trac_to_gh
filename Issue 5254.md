@@ -220,6 +220,23 @@ Michael
 
 ---
 
+archive/issue_events_012200.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-01T02:25:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5254",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5254#event-12200"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040239.json:
 ```json
 {
@@ -326,7 +343,41 @@ Sounds good to me.
 
 ---
 
-archive/issue_events_005510.json:
+archive/issue_events_012201.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-08T17:12:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5254",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5254#event-12201"
+}
+```
+
+
+
+---
+
+archive/issue_events_012202.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-08T17:12:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5254",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5254#event-12202"
+}
+```
+
+
+
+---
+
+archive/issue_events_012203.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -334,7 +385,7 @@ archive/issue_events_005510.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#event-5510"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#event-12203"
 }
 ```
 

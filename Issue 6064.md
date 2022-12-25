@@ -93,6 +93,23 @@ Joint review with #6062:  applied both patches, both are fine and tests pass.
 
 ---
 
+archive/issue_events_014232.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T00:42:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6064",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6064#event-14232"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048179.json:
 ```json
 {
@@ -115,7 +132,7 @@ Michael
 
 ---
 
-archive/issue_events_006319.json:
+archive/issue_events_014233.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -123,7 +140,7 @@ archive/issue_events_006319.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6064",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6064#event-6319"
+    "url": "https://github.com/sagemath/sagetest/issues/6064#event-14233"
 }
 ```
 

@@ -184,7 +184,7 @@ Thanks, this fixes it and explains why it hasn't surfaced earlier: Tests usually
 
 ---
 
-archive/issue_events_009911.json:
+archive/issue_events_024523.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -192,7 +192,7 @@ archive/issue_events_009911.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9781",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9781#event-9911"
+    "url": "https://github.com/sagemath/sagetest/issues/9781#event-24523"
 }
 ```
 

@@ -143,6 +143,23 @@ Besides this issue, it includes fixes for #6401, #6243 and #6377. Please apply t
 
 ---
 
+archive/issue_events_015087.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-08-01T02:27:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#event-15087"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051339.json:
 ```json
 {
@@ -163,7 +180,7 @@ Note: I am giving partial positive review because I tested this patch against my
 
 ---
 
-archive/issue_events_006649.json:
+archive/issue_events_015088.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -171,7 +188,7 @@ archive/issue_events_006649.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6404",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6404#event-6649"
+    "url": "https://github.com/sagemath/sagetest/issues/6404#event-15088"
 }
 ```
 

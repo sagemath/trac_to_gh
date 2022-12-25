@@ -27,6 +27,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/436
 
 ---
 
+archive/issue_events_001072.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-22T21:41:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/436",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/436#event-1072"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002174.json:
 ```json
 {
@@ -125,7 +142,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000463.json:
+archive/issue_events_001073.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -133,7 +150,7 @@ archive/issue_events_000463.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/436#event-463"
+    "url": "https://github.com/sagemath/sagetest/issues/436#event-1073"
 }
 ```
 
@@ -156,3 +173,37 @@ archive/issue_comments_002179.json:
 > However, the issue of "user connects to port x with wrong protocol" is never going to go away.
 
 Tom is right.   I'm closing this ticket as invalid.
+
+
+
+---
+
+archive/issue_events_001074.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-08T23:41:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/436",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/436#event-1074"
+}
+```
+
+
+
+---
+
+archive/issue_events_001075.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-08T23:41:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/436",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/436#event-1075"
+}
+```

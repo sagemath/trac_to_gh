@@ -125,6 +125,23 @@ Changing assignee from tba to @jdemeyer.
 
 ---
 
+archive/issue_events_024151.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-14T17:40:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9678",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9678#event-24151"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093929.json:
 ```json
 {
@@ -213,6 +230,40 @@ Replying to [comment:30 vbraun]:
 > Definite improvement! We should put it in the very next Sage-4.6.2.alpha to give it as much exposure as possible since it touches a couple of core C files.
 
 Alternatively, I am considering making 4.6.2 a pretty straightforward release and then putting various "big" tickets such as this one, #9433, #10572 in the next release which would then be sage-4.7.
+
+
+
+---
+
+archive/issue_events_024152.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-07T08:22:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9678",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9678#event-24152"
+}
+```
+
+
+
+---
+
+archive/issue_events_024153.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-07T08:22:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9678",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9678#event-24153"
+}
+```
 
 
 
@@ -485,7 +536,7 @@ I agree and will report it upstream.
 
 ---
 
-archive/issue_events_009810.json:
+archive/issue_events_024154.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -493,7 +544,7 @@ archive/issue_events_009810.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#event-9810"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#event-24154"
 }
 ```
 

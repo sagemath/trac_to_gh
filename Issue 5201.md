@@ -58,6 +58,23 @@ Michael
 
 ---
 
+archive/issue_events_012037.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-07T19:23:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12037"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039779.json:
 ```json
 {
@@ -190,3 +207,173 @@ archive/issue_comments_039783.json:
 ```
 
 Changing keywords from "beginner" to "".
+
+
+
+---
+
+archive/issue_events_012038.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12038"
+}
+```
+
+
+
+---
+
+archive/issue_events_012039.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12039"
+}
+```
+
+
+
+---
+
+archive/issue_events_012040.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12040"
+}
+```
+
+
+
+---
+
+archive/issue_events_012041.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12041"
+}
+```
+
+
+
+---
+
+archive/issue_events_012042.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12042"
+}
+```
+
+
+
+---
+
+archive/issue_events_012043.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12043"
+}
+```
+
+
+
+---
+
+archive/issue_events_012044.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12044"
+}
+```
+
+
+
+---
+
+archive/issue_events_012045.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12045"
+}
+```
+
+
+
+---
+
+archive/issue_events_012046.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-24T09:07:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12046"
+}
+```
+
+
+
+---
+
+archive/issue_events_012047.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-24T09:07:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5201",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5201#event-12047"
+}
+```

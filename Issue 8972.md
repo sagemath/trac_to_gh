@@ -1054,7 +1054,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009122.json:
+archive/issue_events_021918.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -1062,7 +1062,7 @@ archive/issue_events_009122.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9122"
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21918"
 }
 ```
 
@@ -1106,7 +1106,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_009123.json:
+archive/issue_events_021919.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -1114,7 +1114,7 @@ archive/issue_events_009123.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9123"
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21919"
 }
 ```
 
@@ -1449,7 +1449,7 @@ I don't know if the patch would still apply (probably not), but at least I verif
 
 ---
 
-archive/issue_events_009124.json:
+archive/issue_events_021920.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1457,7 +1457,7 @@ archive/issue_events_009124.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9124"
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21920"
 }
 ```
 
@@ -1483,7 +1483,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009125.json:
+archive/issue_events_021921.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1491,7 +1491,7 @@ archive/issue_events_009125.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9125"
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21921"
 }
 ```
 
@@ -2304,6 +2304,57 @@ I think it would be great for this ticket to come back to life! Is it possible t
 
 ---
 
+archive/issue_events_021922.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21922"
+}
+```
+
+
+
+---
+
+archive/issue_events_021923.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21923"
+}
+```
+
+
+
+---
+
+archive/issue_events_021924.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21924"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082612.json:
 ```json
 {
@@ -2329,6 +2380,40 @@ sage -t --long src/sage/rings/multi_power_series_ring_element.py  # 4 doctests f
 
 ---
 
+archive/issue_events_021925.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21925"
+}
+```
+
+
+
+---
+
+archive/issue_events_021926.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21926"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082613.json:
 ```json
 {
@@ -2344,6 +2429,40 @@ archive/issue_comments_082613.json:
 just rebased on 6.3.beta5
 ----
 New commits:
+
+
+
+---
+
+archive/issue_events_021927.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21927"
+}
+```
+
+
+
+---
+
+archive/issue_events_021928.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21928"
+}
+```
 
 
 
@@ -2572,6 +2691,40 @@ archive/issue_comments_082625.json:
 ```
 
 This should do.
+
+
+
+---
+
+archive/issue_events_021929.json:
+```json
+{
+    "actor": "https://github.com/mjungmath",
+    "created_at": "2021-01-20T08:34:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21929"
+}
+```
+
+
+
+---
+
+archive/issue_events_021930.json:
+```json
+{
+    "actor": "https://github.com/mjungmath",
+    "created_at": "2021-01-20T08:34:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "milestone": "sage-9.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21930"
+}
+```
 
 
 
@@ -2834,7 +2987,7 @@ Thanks. LGTM.
 
 ---
 
-archive/issue_events_009126.json:
+archive/issue_events_021931.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -2842,7 +2995,7 @@ archive/issue_events_009126.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9126"
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-21931"
 }
 ```
 

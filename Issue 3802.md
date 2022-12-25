@@ -86,7 +86,7 @@ Is this still an issue? I'm guessing you mean logging out of the Mac OSX system?
 
 ---
 
-archive/issue_events_004024.json:
+archive/issue_events_008732.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -94,7 +94,7 @@ archive/issue_events_004024.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3802",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3802#event-4024"
+    "url": "https://github.com/sagemath/sagetest/issues/3802#event-8732"
 }
 ```
 

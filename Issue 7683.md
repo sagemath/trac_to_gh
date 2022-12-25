@@ -229,6 +229,23 @@ I sent Georg a message about it, but I haven't heard back from him.  I'll try to
 
 ---
 
+archive/issue_events_018342.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-15T17:54:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#event-18342"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065830.json:
 ```json
 {
@@ -247,7 +264,7 @@ I also give this a positive review.  I tested the code and also read it, and it 
 
 ---
 
-archive/issue_events_007900.json:
+archive/issue_events_018343.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -255,7 +272,7 @@ archive/issue_events_007900.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7683#event-7900"
+    "url": "https://github.com/sagemath/sagetest/issues/7683#event-18343"
 }
 ```
 

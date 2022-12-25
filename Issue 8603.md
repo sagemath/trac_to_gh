@@ -323,6 +323,159 @@ I think I looked at this at Sage Days 31, but now I forgot whether that statemen
 
 ---
 
+archive/issue_events_020790.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20790"
+}
+```
+
+
+
+---
+
+archive/issue_events_020791.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20791"
+}
+```
+
+
+
+---
+
+archive/issue_events_020792.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20792"
+}
+```
+
+
+
+---
+
+archive/issue_events_020793.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20793"
+}
+```
+
+
+
+---
+
+archive/issue_events_020794.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20794"
+}
+```
+
+
+
+---
+
+archive/issue_events_020795.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20795"
+}
+```
+
+
+
+---
+
+archive/issue_events_020796.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20796"
+}
+```
+
+
+
+---
+
+archive/issue_events_020797.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2016-06-27T03:31:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20797"
+}
+```
+
+
+
+---
+
+archive/issue_events_020798.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2016-06-27T03:31:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-7.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20798"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077794.json:
 ```json
 {
@@ -406,6 +559,40 @@ archive/issue_comments_077797.json:
 ```
 
 Changing status from needs_info to positive_review.
+
+
+
+---
+
+archive/issue_events_020799.json:
+```json
+{
+    "actor": "https://github.com/egourgoulhon",
+    "created_at": "2017-09-07T12:01:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-7.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20799"
+}
+```
+
+
+
+---
+
+archive/issue_events_020800.json:
+```json
+{
+    "actor": "https://github.com/egourgoulhon",
+    "created_at": "2017-09-07T12:01:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20800"
+}
+```
 
 
 
@@ -558,7 +745,7 @@ My concern was just that the *correct* nature was doctested, not the wrong one, 
 
 ---
 
-archive/issue_events_008775.json:
+archive/issue_events_020801.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -566,7 +753,7 @@ archive/issue_events_008775.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8603#event-8775"
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-20801"
 }
 ```
 

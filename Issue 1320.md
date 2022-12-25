@@ -142,6 +142,23 @@ Attachment [planarity.hg](tarball://root/attachments/some-uuid/ticket1320/planar
 
 ---
 
+archive/issue_events_003450.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-02-28T02:27:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1320",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1320#event-3450"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008378.json:
 ```json
 {
@@ -191,7 +208,7 @@ Merged in Sage 2.10.3.rc0
 
 ---
 
-archive/issue_events_001460.json:
+archive/issue_events_003451.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -199,7 +216,7 @@ archive/issue_events_001460.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1320",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1320#event-1460"
+    "url": "https://github.com/sagemath/sagetest/issues/1320#event-3451"
 }
 ```
 

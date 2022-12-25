@@ -138,7 +138,7 @@ Juanjo
 
 ---
 
-archive/issue_events_007335.json:
+archive/issue_events_016814.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -146,7 +146,7 @@ archive/issue_events_007335.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7113",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7113#event-7335"
+    "url": "https://github.com/sagemath/sagetest/issues/7113#event-16814"
 }
 ```
 

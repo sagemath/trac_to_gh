@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8871
 
 ---
 
+archive/issue_events_021655.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ecurry",
+    "created_at": "2010-05-04T19:17:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8871",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8871#event-21655"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081416.json:
 ```json
 {

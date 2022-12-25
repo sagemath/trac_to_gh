@@ -254,6 +254,23 @@ Using `pipestatus` there, too (i.e. in `sage-sage`) most probably requires #1015
 
 ---
 
+archive/issue_events_024650.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2010-10-23T13:40:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#event-24650"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096587.json:
 ```json
 {
@@ -440,7 +457,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009933.json:
+archive/issue_events_024651.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -448,7 +465,7 @@ archive/issue_events_009933.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9810#event-9933"
+    "url": "https://github.com/sagemath/sagetest/issues/9810#event-24651"
 }
 ```
 

@@ -107,6 +107,23 @@ Michael
 
 ---
 
+archive/issue_events_013749.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-21T22:37:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5846",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5846#event-13749"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045898.json:
 ```json
 {
@@ -185,7 +202,7 @@ The first two hunks of the first patch didn't apply to sage-3.4.2.alpha0, but th
 
 ---
 
-archive/issue_events_006098.json:
+archive/issue_events_013750.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -193,7 +210,7 @@ archive/issue_events_006098.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5846",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5846#event-6098"
+    "url": "https://github.com/sagemath/sagetest/issues/5846#event-13750"
 }
 ```
 

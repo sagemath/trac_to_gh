@@ -107,6 +107,23 @@ Uhm... my code does nothing like what you said.  And I didn't post the patch bec
 
 ---
 
+archive/issue_events_015912.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-08-16T06:11:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6747",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6747#event-15912"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055406.json:
 ```json
 {
@@ -282,7 +299,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006979.json:
+archive/issue_events_015913.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -290,6 +307,6 @@ archive/issue_events_006979.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6747#event-6979"
+    "url": "https://github.com/sagemath/sagetest/issues/6747#event-15913"
 }
 ```

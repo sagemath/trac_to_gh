@@ -133,7 +133,7 @@ diff -r 01a95c126cbc -r e6383f221f93 sage/rings/number_field/number_field_elemen
 
 ---
 
-archive/issue_events_000126.json:
+archive/issue_events_000236.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -141,6 +141,6 @@ archive/issue_events_000126.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/120",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/120#event-126"
+    "url": "https://github.com/sagemath/sagetest/issues/120#event-236"
 }
 ```

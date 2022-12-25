@@ -49,7 +49,7 @@ Dsage has been deprecated.
 
 ---
 
-archive/issue_events_002493.json:
+archive/issue_events_005460.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -57,7 +57,7 @@ archive/issue_events_002493.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2317",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2317#event-2493"
+    "url": "https://github.com/sagemath/sagetest/issues/2317#event-5460"
 }
 ```
 
@@ -78,3 +78,20 @@ archive/issue_comments_015387.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_005461.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T10:01:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2317",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2317#event-5461"
+}
+```

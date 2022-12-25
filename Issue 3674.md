@@ -678,6 +678,23 @@ D-69-91-158-184:~ was$
 
 ---
 
+archive/issue_events_008413.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-29T20:46:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3674",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3674#event-8413"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025928.json:
 ```json
 {
@@ -1606,7 +1623,7 @@ in Sage 3.1.alpha2
 
 ---
 
-archive/issue_events_003895.json:
+archive/issue_events_008414.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1614,7 +1631,7 @@ archive/issue_events_003895.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#event-3895"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#event-8414"
 }
 ```
 

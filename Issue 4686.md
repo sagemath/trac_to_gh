@@ -66,6 +66,23 @@ Here are two patches (one each for the hg_sage and hg_doc repositories).
 
 ---
 
+archive/issue_events_010726.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2008-12-03T10:23:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4686",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4686#event-10726"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035255.json:
 ```json
 {
@@ -148,7 +165,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004932.json:
+archive/issue_events_010727.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -156,6 +173,6 @@ archive/issue_events_004932.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4686#event-4932"
+    "url": "https://github.com/sagemath/sagetest/issues/4686#event-10727"
 }
 ```

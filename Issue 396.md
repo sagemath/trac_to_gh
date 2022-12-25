@@ -45,6 +45,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/396
 
 ---
 
+archive/issue_events_000950.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T14:08:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/396",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/396#event-950"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001940.json:
 ```json
 {
@@ -66,6 +83,40 @@ sage: a*b
 (1, 4, 9)
 
 I think that this is wrong.
+
+
+
+---
+
+archive/issue_events_000951.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-06T20:59:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/396",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/396#event-951"
+}
+```
+
+
+
+---
+
+archive/issue_events_000952.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-06T20:59:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/396",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/396#event-952"
+}
+```
 
 
 
@@ -107,7 +158,7 @@ Attachment [396.patch](tarball://root/attachments/some-uuid/ticket396/396.patch)
 
 ---
 
-archive/issue_events_000420.json:
+archive/issue_events_000953.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -115,7 +166,7 @@ archive/issue_events_000420.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/396",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/396#event-420"
+    "url": "https://github.com/sagemath/sagetest/issues/396#event-953"
 }
 ```
 

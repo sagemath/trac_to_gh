@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7365
 
 ---
 
+archive/issue_events_017422.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2009-11-18T18:09:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7365",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7365#event-17422"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061608.json:
 ```json
 {
@@ -205,7 +222,7 @@ Attachment [trac_7365-doctest.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_events_007588.json:
+archive/issue_events_017423.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -213,7 +230,7 @@ archive/issue_events_007588.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7365#event-7588"
+    "url": "https://github.com/sagemath/sagetest/issues/7365#event-17423"
 }
 ```
 
@@ -234,3 +251,37 @@ archive/issue_comments_061617.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_017424.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-19T22:59:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7365",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7365#event-17424"
+}
+```
+
+
+
+---
+
+archive/issue_events_017425.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-19T22:59:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7365",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7365#event-17425"
+}
+```

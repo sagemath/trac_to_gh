@@ -100,7 +100,7 @@ Installs successfully, poset and graph doctests pass.
 
 ---
 
-archive/issue_events_004023.json:
+archive/issue_events_008731.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -108,7 +108,7 @@ archive/issue_events_004023.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3801",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3801#event-4023"
+    "url": "https://github.com/sagemath/sagetest/issues/3801#event-8731"
 }
 ```
 

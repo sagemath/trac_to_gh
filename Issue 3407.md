@@ -133,6 +133,23 @@ Michael
 
 ---
 
+archive/issue_events_007684.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T08:47:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3407",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3407#event-7684"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023853.json:
 ```json
 {
@@ -163,7 +180,7 @@ Since this patch depends on #3406 anyway, I'll add the positive review back.
 
 ---
 
-archive/issue_events_003623.json:
+archive/issue_events_007685.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -171,7 +188,7 @@ archive/issue_events_003623.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3407",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3407#event-3623"
+    "url": "https://github.com/sagemath/sagetest/issues/3407#event-7685"
 }
 ```
 

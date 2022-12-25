@@ -158,6 +158,23 @@ Changing component from algebraic topology to group theory.
 
 ---
 
+archive/issue_events_025071.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-09-18T18:03:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9939",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9939#event-25071"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098789.json:
 ```json
 {
@@ -654,7 +671,7 @@ Well, I was helped a lot by Mitesh's pointer to the Python docs for `__cmp__`.
 
 ---
 
-archive/issue_events_010066.json:
+archive/issue_events_025072.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -662,7 +679,7 @@ archive/issue_events_010066.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9939",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9939#event-10066"
+    "url": "https://github.com/sagemath/sagetest/issues/9939#event-25072"
 }
 ```
 

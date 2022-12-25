@@ -221,6 +221,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_022217.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-25T10:52:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9065",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9065#event-22217"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083992.json:
 ```json
 {
@@ -243,7 +260,7 @@ Florent just checked it, and is ok to leave the positive review.
 
 ---
 
-archive/issue_events_009216.json:
+archive/issue_events_022218.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -251,7 +268,7 @@ archive/issue_events_009216.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9065#event-9216"
+    "url": "https://github.com/sagemath/sagetest/issues/9065#event-22218"
 }
 ```
 

@@ -48,6 +48,23 @@ Attachment [polytope.patch](tarball://root/attachments/some-uuid/ticket403/polyt
 
 ---
 
+archive/issue_events_000969.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-20T07:36:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/403",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/403#event-969"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001970.json:
 ```json
 {
@@ -84,7 +101,7 @@ I changed the priority to minor because polymake is an optional package.
 
 ---
 
-archive/issue_events_000429.json:
+archive/issue_events_000970.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -92,7 +109,7 @@ archive/issue_events_000429.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/403",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/403#event-429"
+    "url": "https://github.com/sagemath/sagetest/issues/403#event-970"
 }
 ```
 

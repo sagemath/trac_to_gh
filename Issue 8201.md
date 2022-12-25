@@ -201,7 +201,7 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_events_008403.json:
+archive/issue_events_019622.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -209,7 +209,7 @@ archive/issue_events_008403.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8201",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8201#event-8403"
+    "url": "https://github.com/sagemath/sagetest/issues/8201#event-19622"
 }
 ```
 
@@ -391,6 +391,23 @@ Oops, I realised it was Alex this pointed out this policy, not Minh.
 Anyway, Sorry for the problem. I still stand by the fact I do not think the patch should be integrated. 
 
 Dave
+
+
+
+---
+
+archive/issue_events_019623.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-23T02:49:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8201",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8201#event-19623"
+}
+```
 
 
 

@@ -68,7 +68,7 @@ http://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/mpir-1.2.
 
 ---
 
-archive/issue_events_006418.json:
+archive/issue_events_014497.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -76,7 +76,7 @@ archive/issue_events_006418.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6169",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6169#event-6418"
+    "url": "https://github.com/sagemath/sagetest/issues/6169#event-14497"
 }
 ```
 

@@ -158,6 +158,125 @@ Just for the record, the position of `-o foo` is irrelevant; it's usually safe t
 
 ---
 
+archive/issue_events_021949.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21949"
+}
+```
+
+
+
+---
+
+archive/issue_events_021950.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21950"
+}
+```
+
+
+
+---
+
+archive/issue_events_021951.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21951"
+}
+```
+
+
+
+---
+
+archive/issue_events_021952.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21952"
+}
+```
+
+
+
+---
+
+archive/issue_events_021953.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21953"
+}
+```
+
+
+
+---
+
+archive/issue_events_021954.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21954"
+}
+```
+
+
+
+---
+
+archive/issue_events_021955.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21955"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082703.json:
 ```json
 {
@@ -171,6 +290,40 @@ archive/issue_comments_082703.json:
 ```
 
 Outdated spkg or build system ticket, should be closed
+
+
+
+---
+
+archive/issue_events_021956.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-17T16:38:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21956"
+}
+```
+
+
+
+---
+
+archive/issue_events_021957.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-17T16:38:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8978",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21957"
+}
+```
 
 
 
@@ -194,7 +347,7 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_events_009132.json:
+archive/issue_events_021958.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -202,7 +355,7 @@ archive/issue_events_009132.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8978",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8978#event-9132"
+    "url": "https://github.com/sagemath/sagetest/issues/8978#event-21958"
 }
 ```
 

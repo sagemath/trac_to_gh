@@ -50,7 +50,24 @@ Attachment [subst_hash.hg](tarball://root/attachments/some-uuid/ticket1075/subst
 
 ---
 
-archive/issue_events_001197.json:
+archive/issue_events_002905.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jbmohler",
+    "created_at": "2007-11-05T01:59:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1075",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1075#event-2905"
+}
+```
+
+
+
+---
+
+archive/issue_events_002906.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/jbmohler",
@@ -58,7 +75,7 @@ archive/issue_events_001197.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1075",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1075#event-1197"
+    "url": "https://github.com/sagemath/sagetest/issues/1075#event-2906"
 }
 ```
 
@@ -97,3 +114,20 @@ archive/issue_comments_006488.json:
 ```
 
 I'm closing this because the patch I'm going to attached to #1181 is much better and much broader.
+
+
+
+---
+
+archive/issue_events_002907.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T13:55:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1075",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1075#event-2907"
+}
+```

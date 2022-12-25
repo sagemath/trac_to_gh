@@ -140,6 +140,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_023126.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2010-07-10T03:30:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9377",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9377#event-23126"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088962.json:
 ```json
 {
@@ -339,7 +356,7 @@ Merged trac#9377_revised.patch in 4.5.2.alpha1.
 
 ---
 
-archive/issue_events_009532.json:
+archive/issue_events_023127.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -347,7 +364,7 @@ archive/issue_events_009532.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9377#event-9532"
+    "url": "https://github.com/sagemath/sagetest/issues/9377#event-23127"
 }
 ```
 

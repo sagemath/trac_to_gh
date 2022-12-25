@@ -128,7 +128,24 @@ I suggest to close this ticket as "invalid" because this is essentially impossib
 
 ---
 
-archive/issue_events_008665.json:
+archive/issue_events_020376.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-10T21:47:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8483",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8483#event-20376"
+}
+```
+
+
+
+---
+
+archive/issue_events_020377.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -136,7 +153,7 @@ archive/issue_events_008665.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8483",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8483#event-8665"
+    "url": "https://github.com/sagemath/sagetest/issues/8483#event-20377"
 }
 ```
 

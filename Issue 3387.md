@@ -75,6 +75,23 @@ Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sag
 
 ---
 
+archive/issue_events_007639.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-06-09T22:49:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3387",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3387#event-7639"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023663.json:
 ```json
 {
@@ -137,7 +154,7 @@ Doctests pass, code looks fine.
 
 ---
 
-archive/issue_events_003603.json:
+archive/issue_events_007640.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -145,7 +162,7 @@ archive/issue_events_003603.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3387#event-3603"
+    "url": "https://github.com/sagemath/sagetest/issues/3387#event-7640"
 }
 ```
 

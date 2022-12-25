@@ -124,6 +124,125 @@ Changing component from AIX or HP-UX ports to porting.
 
 ---
 
+archive/issue_events_024668.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24668"
+}
+```
+
+
+
+---
+
+archive/issue_events_024669.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24669"
+}
+```
+
+
+
+---
+
+archive/issue_events_024670.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24670"
+}
+```
+
+
+
+---
+
+archive/issue_events_024671.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24671"
+}
+```
+
+
+
+---
+
+archive/issue_events_024672.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24672"
+}
+```
+
+
+
+---
+
+archive/issue_events_024673.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24673"
+}
+```
+
+
+
+---
+
+archive/issue_events_024674.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24674"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096648.json:
 ```json
 {
@@ -137,6 +256,40 @@ archive/issue_comments_096648.json:
 ```
 
 There is no longer a "blas" package.
+
+
+
+---
+
+archive/issue_events_024675.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-08T12:45:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24675"
+}
+```
+
+
+
+---
+
+archive/issue_events_024676.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-08T12:45:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9816",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24676"
+}
+```
 
 
 
@@ -178,7 +331,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009939.json:
+archive/issue_events_024677.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -186,7 +339,7 @@ archive/issue_events_009939.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9816",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9816#event-9939"
+    "url": "https://github.com/sagemath/sagetest/issues/9816#event-24677"
 }
 ```
 

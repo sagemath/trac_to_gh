@@ -236,6 +236,57 @@ Ina any event, this review is not for nought.  The doctest has `sage;` (w/ a sem
 
 ---
 
+archive/issue_events_015099.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#event-15099"
+}
+```
+
+
+
+---
+
+archive/issue_events_015100.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#event-15100"
+}
+```
+
+
+
+---
+
+archive/issue_events_015101.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#event-15101"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051382.json:
 ```json
 {
@@ -259,6 +310,40 @@ sage: %timeit xI=diagonal_matrix([x for i in range(n)])
 10 loops, best of 3: 15.8 ms per loop                                                         
 ```
 
+
+
+
+---
+
+archive/issue_events_015102.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-15T08:09:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#event-15102"
+}
+```
+
+
+
+---
+
+archive/issue_events_015103.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-15T08:09:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#event-15103"
+}
+```
 
 
 
@@ -336,7 +421,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006655.json:
+archive/issue_events_015104.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -344,6 +429,6 @@ archive/issue_events_006655.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6410",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6410#event-6655"
+    "url": "https://github.com/sagemath/sagetest/issues/6410#event-15104"
 }
 ```

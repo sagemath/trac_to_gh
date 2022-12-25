@@ -271,7 +271,7 @@ Wall time: 10.57 s
 
 ---
 
-archive/issue_events_007798.json:
+archive/issue_events_017954.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -279,7 +279,7 @@ archive/issue_events_007798.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#event-7798"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#event-17954"
 }
 ```
 

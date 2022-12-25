@@ -100,7 +100,7 @@ real number constructor.   While I was at it, I optimized that a lot.
 
 ---
 
-archive/issue_events_000213.json:
+archive/issue_events_000407.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -108,7 +108,7 @@ archive/issue_events_000213.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/204",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/204#event-213"
+    "url": "https://github.com/sagemath/sagetest/issues/204#event-407"
 }
 ```
 

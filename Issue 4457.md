@@ -89,6 +89,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4457
 
 ---
 
+archive/issue_events_010059.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-08T05:38:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4457",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4457#event-10059"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032811.json:
 ```json
 {
@@ -199,7 +216,41 @@ I think that's fine.  We can just move it to the Sphinx milestone and close it t
 
 ---
 
-archive/issue_events_004703.json:
+archive/issue_events_010060.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-24T13:32:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4457",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4457#event-10060"
+}
+```
+
+
+
+---
+
+archive/issue_events_010061.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-24T13:32:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4457",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4457#event-10061"
+}
+```
+
+
+
+---
+
+archive/issue_events_010062.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -207,7 +258,7 @@ archive/issue_events_004703.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4457",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4457#event-4703"
+    "url": "https://github.com/sagemath/sagetest/issues/4457#event-10062"
 }
 ```
 

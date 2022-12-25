@@ -376,6 +376,23 @@ I would like there to be a str type option for the other controls, so I don't se
 
 ---
 
+archive/issue_events_005773.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-11T01:31:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2449",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2449#event-5773"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016526.json:
 ```json
 {
@@ -394,7 +411,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002626.json:
+archive/issue_events_005774.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -402,6 +419,6 @@ archive/issue_events_002626.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2449#event-2626"
+    "url": "https://github.com/sagemath/sagetest/issues/2449#event-5774"
 }
 ```

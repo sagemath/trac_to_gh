@@ -48,6 +48,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/805
 
 ---
 
+archive/issue_events_002245.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-04T19:49:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/805",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/805#event-2245"
+}
+```
+
+
+
+---
+
+archive/issue_events_002246.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:28:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/805",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/805#event-2246"
+}
+```
+
+
+
+---
+
+archive/issue_events_002247.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:28:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/805",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/805#event-2247"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004847.json:
 ```json
 {
@@ -122,6 +173,40 @@ Both patches above should be applied: Robert's handles the special case of numbe
 
 ---
 
+archive/issue_events_002248.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:56:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/805",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/805#event-2248"
+}
+```
+
+
+
+---
+
+archive/issue_events_002249.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:56:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/805",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/805#event-2249"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004851.json:
 ```json
 {
@@ -140,7 +225,7 @@ GOOD -- I especially like Nick's improvements.
 
 ---
 
-archive/issue_events_000916.json:
+archive/issue_events_002250.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -148,7 +233,7 @@ archive/issue_events_000916.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/805",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/805#event-916"
+    "url": "https://github.com/sagemath/sagetest/issues/805#event-2250"
 }
 ```
 

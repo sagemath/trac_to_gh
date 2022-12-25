@@ -82,7 +82,7 @@ Attachment [trac-5362-transpose-matrix_double_dense.patch](tarball://root/attach
 
 ---
 
-archive/issue_events_005617.json:
+archive/issue_events_012501.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -90,7 +90,7 @@ archive/issue_events_005617.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5362",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5362#event-5617"
+    "url": "https://github.com/sagemath/sagetest/issues/5362#event-12501"
 }
 ```
 
@@ -133,3 +133,20 @@ Merged in Sage 3.4.rc0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_012502.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-28T17:09:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5362",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5362#event-12502"
+}
+```

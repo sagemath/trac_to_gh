@@ -109,7 +109,7 @@ Begone are the warnings :-)
 
 ---
 
-archive/issue_events_006814.json:
+archive/issue_events_015517.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -117,7 +117,7 @@ archive/issue_events_006814.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6577",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6577#event-6814"
+    "url": "https://github.com/sagemath/sagetest/issues/6577#event-15517"
 }
 ```
 

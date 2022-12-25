@@ -124,6 +124,23 @@ Changing component from algebra to optional packages.
 
 ---
 
+archive/issue_events_023083.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-07T06:26:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#event-23083"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088657.json:
 ```json
 {
@@ -142,7 +159,7 @@ Done.
 
 ---
 
-archive/issue_events_009507.json:
+archive/issue_events_023084.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -150,7 +167,7 @@ archive/issue_events_009507.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#event-9507"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#event-23084"
 }
 ```
 

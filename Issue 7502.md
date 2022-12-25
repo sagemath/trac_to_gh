@@ -205,7 +205,7 @@ Thanks. Yes, your additions look good as well.
 
 ---
 
-archive/issue_events_007730.json:
+archive/issue_events_017779.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -213,7 +213,7 @@ archive/issue_events_007730.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#event-7730"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#event-17779"
 }
 ```
 

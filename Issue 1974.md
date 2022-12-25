@@ -48,6 +48,23 @@ Attachment [1974-windowtitle.patch](tarball://root/attachments/some-uuid/ticket1
 
 ---
 
+archive/issue_events_004774.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-16T19:55:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1974",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1974#event-4774"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012761.json:
 ```json
 {
@@ -88,7 +105,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002130.json:
+archive/issue_events_004775.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -96,7 +113,7 @@ archive/issue_events_002130.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1974",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1974#event-2130"
+    "url": "https://github.com/sagemath/sagetest/issues/1974#event-4775"
 }
 ```
 

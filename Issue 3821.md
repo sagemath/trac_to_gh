@@ -49,6 +49,23 @@ Attachment [trac_3821.patch](tarball://root/attachments/some-uuid/ticket3821/tra
 
 ---
 
+archive/issue_events_008764.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-12T16:38:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3821",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3821#event-8764"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027118.json:
 ```json
 {
@@ -243,7 +260,7 @@ Merged both patches in Sage 3.1.alpha2
 
 ---
 
-archive/issue_events_004045.json:
+archive/issue_events_008765.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -251,6 +268,6 @@ archive/issue_events_004045.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3821",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3821#event-4045"
+    "url": "https://github.com/sagemath/sagetest/issues/3821#event-8765"
 }
 ```

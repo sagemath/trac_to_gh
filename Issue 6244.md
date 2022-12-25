@@ -74,6 +74,23 @@ I have a fix for (1) above, don't know about (2) yet. Same issue effects `.real_
 
 ---
 
+archive/issue_events_014626.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-06-13T22:28:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6244",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6244#event-14626"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049769.json:
 ```json
 {
@@ -155,7 +172,7 @@ Nick, can you review this?
 
 ---
 
-archive/issue_events_006489.json:
+archive/issue_events_014627.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -163,7 +180,7 @@ archive/issue_events_006489.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6244",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6244#event-6489"
+    "url": "https://github.com/sagemath/sagetest/issues/6244#event-14627"
 }
 ```
 

@@ -123,7 +123,7 @@ These errors do not occur with sage 4.6.2.
 
 ---
 
-archive/issue_events_005436.json:
+archive/issue_events_011997.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -131,7 +131,7 @@ archive/issue_events_005436.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5182",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5182#event-5436"
+    "url": "https://github.com/sagemath/sagetest/issues/5182#event-11997"
 }
 ```
 
@@ -152,3 +152,20 @@ archive/issue_comments_039669.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_011998.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2011-03-14T21:43:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5182",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5182#event-11998"
+}
+```

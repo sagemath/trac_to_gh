@@ -75,7 +75,7 @@ Changing component from solaris to packages.
 
 ---
 
-archive/issue_events_006989.json:
+archive/issue_events_015934.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -83,7 +83,7 @@ archive/issue_events_006989.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6759#event-6989"
+    "url": "https://github.com/sagemath/sagetest/issues/6759#event-15934"
 }
 ```
 
@@ -732,7 +732,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006990.json:
+archive/issue_events_015935.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -740,7 +740,7 @@ archive/issue_events_006990.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6759#event-6990"
+    "url": "https://github.com/sagemath/sagetest/issues/6759#event-15935"
 }
 ```
 
@@ -1074,7 +1074,7 @@ Merged sqlite-3.6.19.p0.spkg
 
 ---
 
-archive/issue_events_006991.json:
+archive/issue_events_015936.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -1082,7 +1082,7 @@ archive/issue_events_006991.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6759#event-6991"
+    "url": "https://github.com/sagemath/sagetest/issues/6759#event-15936"
 }
 ```
 

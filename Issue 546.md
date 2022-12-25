@@ -46,7 +46,126 @@ Changing priority from major to critical.
 
 ---
 
-archive/issue_events_000587.json:
+archive/issue_events_001436.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T03:15:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/546",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/546#event-1436"
+}
+```
+
+
+
+---
+
+archive/issue_events_001437.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T06:42:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/546",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/546#event-1437"
+}
+```
+
+
+
+---
+
+archive/issue_events_001438.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T06:42:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/546",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/546#event-1438"
+}
+```
+
+
+
+---
+
+archive/issue_events_001439.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-03T12:15:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/546",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/546#event-1439"
+}
+```
+
+
+
+---
+
+archive/issue_events_001440.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-03T12:15:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/546",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/546#event-1440"
+}
+```
+
+
+
+---
+
+archive/issue_events_001441.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:53:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/546",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/546#event-1441"
+}
+```
+
+
+
+---
+
+archive/issue_events_001442.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:53:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/546",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/546#event-1442"
+}
+```
+
+
+
+---
+
+archive/issue_events_001443.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -54,7 +173,7 @@ archive/issue_events_000587.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/546",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/546#event-587"
+    "url": "https://github.com/sagemath/sagetest/issues/546#event-1443"
 }
 ```
 

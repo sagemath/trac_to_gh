@@ -49,6 +49,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/6055
 
 ---
 
+archive/issue_events_014212.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-17T08:40:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6055",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6055#event-14212"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048132.json:
 ```json
 {
@@ -108,7 +125,41 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006310.json:
+archive/issue_events_014213.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-05T15:55:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6055",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6055#event-14213"
+}
+```
+
+
+
+---
+
+archive/issue_events_014214.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-05T15:55:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6055",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6055#event-14214"
+}
+```
+
+
+
+---
+
+archive/issue_events_014215.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -116,6 +167,6 @@ archive/issue_events_006310.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6055",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6055#event-6310"
+    "url": "https://github.com/sagemath/sagetest/issues/6055#event-14215"
 }
 ```

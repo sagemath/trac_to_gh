@@ -187,6 +187,23 @@ I found and fixed error in the doctest.
 
 ---
 
+archive/issue_events_022961.json:
+```json
+{
+    "actor": "https://github.com/annahaensch",
+    "created_at": "2010-06-24T23:09:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9317",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9317#event-22961"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087669.json:
 ```json
 {
@@ -241,7 +258,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009474.json:
+archive/issue_events_022962.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -249,6 +266,6 @@ archive/issue_events_009474.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9317#event-9474"
+    "url": "https://github.com/sagemath/sagetest/issues/9317#event-22962"
 }
 ```

@@ -70,6 +70,125 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001399.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-01T22:47:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1399"
+}
+```
+
+
+
+---
+
+archive/issue_events_001400.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1400"
+}
+```
+
+
+
+---
+
+archive/issue_events_001401.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1401"
+}
+```
+
+
+
+---
+
+archive/issue_events_001402.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:19:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1402"
+}
+```
+
+
+
+---
+
+archive/issue_events_001403.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:19:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1403"
+}
+```
+
+
+
+---
+
+archive/issue_events_001404.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:21:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1404"
+}
+```
+
+
+
+---
+
+archive/issue_events_001405.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:21:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1405"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002720.json:
 ```json
 {
@@ -88,7 +207,7 @@ I'm closing this as wontfix -- we don't know which doctest caused this, and it's
 
 ---
 
-archive/issue_events_000575.json:
+archive/issue_events_001406.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -96,7 +215,7 @@ archive/issue_events_000575.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/536",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/536#event-575"
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1406"
 }
 ```
 
@@ -117,3 +236,37 @@ archive/issue_comments_002721.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_001407.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-18T02:04:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1407"
+}
+```
+
+
+
+---
+
+archive/issue_events_001408.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-18T02:04:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-1408"
+}
+```

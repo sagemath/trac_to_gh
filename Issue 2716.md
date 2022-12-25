@@ -64,6 +64,23 @@ Changing assignee from mabshoff to @williamstein.
 
 ---
 
+archive/issue_events_006338.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-29T13:57:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2716",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2716#event-6338"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018678.json:
 ```json
 {
@@ -131,6 +148,40 @@ archive/issue_comments_018681.json:
 ```
 
 Changing type from defect to enhancement.
+
+
+
+---
+
+archive/issue_events_006339.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2008-03-30T04:32:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2716",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2716#event-6339"
+}
+```
+
+
+
+---
+
+archive/issue_events_006340.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2008-03-30T04:32:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2716",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2716#event-6340"
+}
+```
 
 
 
@@ -404,7 +455,7 @@ I believe I have made my imports explicit and minimal.
 
 ---
 
-archive/issue_events_002904.json:
+archive/issue_events_006341.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -412,7 +463,7 @@ archive/issue_events_002904.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2716#event-2904"
+    "url": "https://github.com/sagemath/sagetest/issues/2716#event-6341"
 }
 ```
 

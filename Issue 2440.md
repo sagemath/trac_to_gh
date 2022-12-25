@@ -167,7 +167,7 @@ Positive review, should be accepted.
 
 ---
 
-archive/issue_events_002617.json:
+archive/issue_events_005757.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -175,7 +175,7 @@ archive/issue_events_002617.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#event-2617"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#event-5757"
 }
 ```
 

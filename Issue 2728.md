@@ -74,7 +74,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2728
 
 ---
 
-archive/issue_events_002916.json:
+archive/issue_events_006355.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -82,7 +82,7 @@ archive/issue_events_002916.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2728",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2728#event-2916"
+    "url": "https://github.com/sagemath/sagetest/issues/2728#event-6355"
 }
 ```
 

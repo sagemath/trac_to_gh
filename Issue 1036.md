@@ -122,6 +122,23 @@ Attachment [macaulay2_gbTrace_linkage.diff](tarball://root/attachments/some-uuid
 
 ---
 
+archive/issue_events_002827.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-06T04:19:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1036",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1036#event-2827"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006310.json:
 ```json
 {
@@ -140,7 +157,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001161.json:
+archive/issue_events_002828.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -148,7 +165,7 @@ archive/issue_events_001161.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1036",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1036#event-1161"
+    "url": "https://github.com/sagemath/sagetest/issues/1036#event-2828"
 }
 ```
 

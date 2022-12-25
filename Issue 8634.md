@@ -86,7 +86,7 @@ The discussion at [sage-devel](http://groups.google.com/group/sage-devel/browse_
 
 ---
 
-archive/issue_events_008803.json:
+archive/issue_events_020902.json:
 ```json
 {
     "actor": "https://github.com/robert-marik",
@@ -94,7 +94,7 @@ archive/issue_events_008803.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8634",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8634#event-8803"
+    "url": "https://github.com/sagemath/sagetest/issues/8634#event-20902"
 }
 ```
 
@@ -151,6 +151,23 @@ archive/issue_comments_078181.json:
 ```
 
 Oops, I wanted to mark this ticket as duplicate and the ticket has been closed automatically. Sorry for this, I know that only the release manager should close tickets :).
+
+
+
+---
+
+archive/issue_events_020903.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-22T00:04:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8634",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8634#event-20903"
+}
+```
 
 
 

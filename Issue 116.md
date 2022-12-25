@@ -83,7 +83,7 @@ Is this a duplicate of #6357 ? This one is older, but #6357 has useful comments 
 
 ---
 
-archive/issue_events_000122.json:
+archive/issue_events_000231.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -91,7 +91,7 @@ archive/issue_events_000122.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/116",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/116#event-122"
+    "url": "https://github.com/sagemath/sagetest/issues/116#event-231"
 }
 ```
 
@@ -112,3 +112,20 @@ archive/issue_comments_000547.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_000232.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2011-01-11T09:21:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/116",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/116#event-232"
+}
+```

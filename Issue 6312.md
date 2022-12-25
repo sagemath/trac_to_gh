@@ -402,6 +402,125 @@ Changing keywords from "" to "Number Field Galois group".
 
 ---
 
+archive/issue_events_014763.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14763"
+}
+```
+
+
+
+---
+
+archive/issue_events_014764.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14764"
+}
+```
+
+
+
+---
+
+archive/issue_events_014765.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14765"
+}
+```
+
+
+
+---
+
+archive/issue_events_014766.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14766"
+}
+```
+
+
+
+---
+
+archive/issue_events_014767.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14767"
+}
+```
+
+
+
+---
+
+archive/issue_events_014768.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14768"
+}
+```
+
+
+
+---
+
+archive/issue_events_014769.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14769"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050296.json:
 ```json
 {
@@ -415,6 +534,40 @@ archive/issue_comments_050296.json:
 ```
 
 Changing status from needs_work to positive_review.
+
+
+
+---
+
+archive/issue_events_014770.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-09-02T09:26:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14770"
+}
+```
+
+
+
+---
+
+archive/issue_events_014771.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-09-02T09:26:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14771"
+}
+```
 
 
 
@@ -438,7 +591,7 @@ The `optional - database_gap` tests do pass. I don't know about `magma`, but let
 
 ---
 
-archive/issue_events_006560.json:
+archive/issue_events_014772.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -446,7 +599,7 @@ archive/issue_events_006560.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6312#event-6560"
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-14772"
 }
 ```
 

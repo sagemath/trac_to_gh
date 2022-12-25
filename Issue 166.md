@@ -53,7 +53,7 @@ patch that fixes the bug
 
 ---
 
-archive/issue_events_000172.json:
+archive/issue_events_000306.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -61,7 +61,7 @@ archive/issue_events_000172.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/166",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/166#event-172"
+    "url": "https://github.com/sagemath/sagetest/issues/166#event-306"
 }
 ```
 

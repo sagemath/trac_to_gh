@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/844
 
 ---
 
-archive/issue_events_000957.json:
+archive/issue_events_002377.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -48,7 +48,7 @@ archive/issue_events_000957.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/844",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/844#event-957"
+    "url": "https://github.com/sagemath/sagetest/issues/844#event-2377"
 }
 ```
 
@@ -87,3 +87,20 @@ archive/issue_comments_005206.json:
 ```
 
 Close as wontfix. The dsage module has been removed by #7975.
+
+
+
+---
+
+archive/issue_events_002378.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-01T03:07:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/844",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/844#event-2378"
+}
+```

@@ -64,7 +64,7 @@ However, while reviewing the patch I noticed that there are more formatting issu
 
 ---
 
-archive/issue_events_005783.json:
+archive/issue_events_012993.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +72,7 @@ archive/issue_events_005783.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5536",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5536#event-5783"
+    "url": "https://github.com/sagemath/sagetest/issues/5536#event-12993"
 }
 ```
 

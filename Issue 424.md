@@ -193,7 +193,7 @@ I just attached a patch (`fastgcd.hg`) which should be applied to the GMP spkg (
 
 ---
 
-archive/issue_events_000451.json:
+archive/issue_events_001037.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -201,7 +201,7 @@ archive/issue_events_000451.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/424#event-451"
+    "url": "https://github.com/sagemath/sagetest/issues/424#event-1037"
 }
 ```
 
@@ -222,3 +222,20 @@ archive/issue_comments_002121.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001038.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-09T16:53:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/424",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/424#event-1038"
+}
+```

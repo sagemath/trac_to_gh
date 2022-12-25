@@ -76,6 +76,23 @@ Michael
 
 ---
 
+archive/issue_events_003045.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-20T13:59:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1137",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1137#event-3045"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006880.json:
 ```json
 {
@@ -165,7 +182,7 @@ This patch does not fix the OS X 10.4 problem, but it does fix some other bugs i
 
 ---
 
-archive/issue_events_001262.json:
+archive/issue_events_003046.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -173,7 +190,7 @@ archive/issue_events_001262.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1137",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1137#event-1262"
+    "url": "https://github.com/sagemath/sagetest/issues/1137#event-3046"
 }
 ```
 
@@ -235,7 +252,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001263.json:
+archive/issue_events_003047.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -243,7 +260,41 @@ archive/issue_events_001263.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1137",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1137#event-1263"
+    "url": "https://github.com/sagemath/sagetest/issues/1137#event-3047"
+}
+```
+
+
+
+---
+
+archive/issue_events_003048.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-16T14:27:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1137",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1137#event-3048"
+}
+```
+
+
+
+---
+
+archive/issue_events_003049.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-16T14:27:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1137",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1137#event-3049"
 }
 ```
 
@@ -291,7 +342,7 @@ Michael
 
 ---
 
-archive/issue_events_001264.json:
+archive/issue_events_003050.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -299,7 +350,7 @@ archive/issue_events_001264.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1137",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1137#event-1264"
+    "url": "https://github.com/sagemath/sagetest/issues/1137#event-3050"
 }
 ```
 

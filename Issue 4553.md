@@ -49,6 +49,23 @@ Attachment [finitefieldelement.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
+archive/issue_events_010369.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2008-11-19T21:51:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#event-10369"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034062.json:
 ```json
 {
@@ -253,7 +270,7 @@ Merged finitefieldelement_new.patch in Sage 3.2.1.alpha1
 
 ---
 
-archive/issue_events_004798.json:
+archive/issue_events_010370.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -261,6 +278,6 @@ archive/issue_events_004798.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4553#event-4798"
+    "url": "https://github.com/sagemath/sagetest/issues/4553#event-10370"
 }
 ```

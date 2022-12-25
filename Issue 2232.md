@@ -45,6 +45,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2232
 
 ---
 
+archive/issue_events_005313.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-20T16:27:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2232",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2232#event-5313"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014751.json:
 ```json
 {
@@ -271,7 +288,7 @@ I applied both patches, checked it out a bit and give a positive review.
 
 ---
 
-archive/issue_events_002402.json:
+archive/issue_events_005314.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -279,7 +296,7 @@ archive/issue_events_002402.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2232",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2232#event-2402"
+    "url": "https://github.com/sagemath/sagetest/issues/2232#event-5314"
 }
 ```
 

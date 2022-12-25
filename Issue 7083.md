@@ -103,7 +103,58 @@ Passes sage -testall on ubuntu 9.04 32 bit. It seems to pass on an imac running 
 
 ---
 
-archive/issue_events_007305.json:
+archive/issue_events_016751.json:
+```json
+{
+    "actor": "https://github.com/wdjoyner",
+    "created_at": "2009-10-25T13:41:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#event-16751"
+}
+```
+
+
+
+---
+
+archive/issue_events_016752.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-29T17:25:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#event-16752"
+}
+```
+
+
+
+---
+
+archive/issue_events_016753.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-29T17:25:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#event-16753"
+}
+```
+
+
+
+---
+
+archive/issue_events_016754.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -111,7 +162,7 @@ archive/issue_events_007305.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7083",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7083#event-7305"
+    "url": "https://github.com/sagemath/sagetest/issues/7083#event-16754"
 }
 ```
 

@@ -137,6 +137,57 @@ Attachment [trac_4894.patch](tarball://root/attachments/some-uuid/ticket4894/tra
 
 ---
 
+archive/issue_events_011289.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-02T21:57:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4894",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4894#event-11289"
+}
+```
+
+
+
+---
+
+archive/issue_events_011290.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-03T06:01:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4894",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4894#event-11290"
+}
+```
+
+
+
+---
+
+archive/issue_events_011291.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-03T06:01:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4894",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4894#event-11291"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037040.json:
 ```json
 {
@@ -177,7 +228,7 @@ Merged in Sage 3.2.3.final
 
 ---
 
-archive/issue_events_005138.json:
+archive/issue_events_011292.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -185,7 +236,7 @@ archive/issue_events_005138.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4894",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4894#event-5138"
+    "url": "https://github.com/sagemath/sagetest/issues/4894#event-11292"
 }
 ```
 

@@ -139,7 +139,7 @@ Anyway, I'll invalidate it for now.
 
 ---
 
-archive/issue_events_001480.json:
+archive/issue_events_003480.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -147,7 +147,7 @@ archive/issue_events_001480.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1340#event-1480"
+    "url": "https://github.com/sagemath/sagetest/issues/1340#event-3480"
 }
 ```
 
@@ -191,7 +191,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001481.json:
+archive/issue_events_003481.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -199,7 +199,7 @@ archive/issue_events_001481.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1340#event-1481"
+    "url": "https://github.com/sagemath/sagetest/issues/1340#event-3481"
 }
 ```
 
@@ -265,7 +265,7 @@ Michael
 
 ---
 
-archive/issue_events_001482.json:
+archive/issue_events_003482.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -273,7 +273,7 @@ archive/issue_events_001482.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1340#event-1482"
+    "url": "https://github.com/sagemath/sagetest/issues/1340#event-3482"
 }
 ```
 

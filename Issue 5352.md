@@ -70,6 +70,23 @@ Changing assignee from cwitty to mabshoff.
 
 ---
 
+archive/issue_events_012484.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-01T02:27:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5352",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5352#event-12484"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041148.json:
 ```json
 {
@@ -342,7 +359,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_005608.json:
+archive/issue_events_012485.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -350,7 +367,7 @@ archive/issue_events_005608.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#event-5608"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#event-12485"
 }
 ```
 

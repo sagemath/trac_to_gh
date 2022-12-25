@@ -53,7 +53,7 @@ I've fixed the indicated problem, cleaned up the code, and documented the heck o
 
 ---
 
-archive/issue_events_003424.json:
+archive/issue_events_007212.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -61,7 +61,7 @@ archive/issue_events_003424.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3206",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3206#event-3424"
+    "url": "https://github.com/sagemath/sagetest/issues/3206#event-7212"
 }
 ```
 
@@ -100,3 +100,20 @@ archive/issue_comments_022116.json:
 ```
 
 Merged in Sage 3.0.4.alpha0
+
+
+
+---
+
+archive/issue_events_007213.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T07:01:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3206",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3206#event-7213"
+}
+```

@@ -137,6 +137,23 @@ I think the scope here is too wide.  Please close this ticket.
 
 ---
 
+archive/issue_events_015247.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-15T14:16:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6460",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6460#event-15247"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052118.json:
 ```json
 {
@@ -155,7 +172,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006700.json:
+archive/issue_events_015248.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -163,6 +180,6 @@ archive/issue_events_006700.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6460",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6460#event-6700"
+    "url": "https://github.com/sagemath/sagetest/issues/6460#event-15248"
 }
 ```

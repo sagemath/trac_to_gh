@@ -81,6 +81,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_008907.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2008-08-18T21:27:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3887",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3887#event-8907"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027677.json:
 ```json
 {
@@ -141,7 +158,7 @@ Michael
 
 ---
 
-archive/issue_events_004112.json:
+archive/issue_events_008908.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -149,7 +166,7 @@ archive/issue_events_004112.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3887#event-4112"
+    "url": "https://github.com/sagemath/sagetest/issues/3887#event-8908"
 }
 ```
 
@@ -287,7 +304,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004113.json:
+archive/issue_events_008909.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -295,7 +312,7 @@ archive/issue_events_004113.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3887#event-4113"
+    "url": "https://github.com/sagemath/sagetest/issues/3887#event-8909"
 }
 ```
 
@@ -339,7 +356,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004114.json:
+archive/issue_events_008910.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -347,7 +364,7 @@ archive/issue_events_004114.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3887#event-4114"
+    "url": "https://github.com/sagemath/sagetest/issues/3887#event-8910"
 }
 ```
 

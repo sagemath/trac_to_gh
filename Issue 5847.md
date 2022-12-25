@@ -2263,7 +2263,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006099.json:
+archive/issue_events_013751.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2271,7 +2271,7 @@ archive/issue_events_006099.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5847#event-6099"
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13751"
 }
 ```
 
@@ -2315,7 +2315,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_006100.json:
+archive/issue_events_013752.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2323,7 +2323,7 @@ archive/issue_events_006100.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5847#event-6100"
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13752"
 }
 ```
 
@@ -3338,6 +3338,23 @@ Tested successfully on
 
 ---
 
+archive/issue_events_013753.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-04T13:52:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13753"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046014.json:
 ```json
 {
@@ -4030,6 +4047,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_013754.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-09T19:37:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13754"
+}
+```
+
+
+
+---
+
+archive/issue_events_013755.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-09T19:37:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13755"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046037.json:
 ```json
 {
@@ -4077,6 +4128,40 @@ It still has the non-trivial dependency on mpir (#8664).  It has been said that 
 
 ---
 
+archive/issue_events_013756.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-10T08:39:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13756"
+}
+```
+
+
+
+---
+
+archive/issue_events_013757.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
+    "created_at": "2011-06-10T14:45:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13757"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046039.json:
 ```json
 {
@@ -4115,6 +4200,40 @@ Replying to [comment:114 mariah]:
 > This ticket (#5847) does **not** depend on #8664.  I reviewed this ticket (#5847) using the version of mpir in sage-4.7.1.alpha1.  Rather the ticket #8664 depends on this ticket, as the description and comments say.
 
 Correct. #8664 just depends on this ticket because the **old** GMP-ECM (currently in Sage) uses deprecated functions MPIR 2.x does no longer support.
+
+
+
+---
+
+archive/issue_events_013758.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-15T20:25:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13758"
+}
+```
+
+
+
+---
+
+archive/issue_events_013759.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-15T20:25:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13759"
+}
+```
 
 
 
@@ -4334,7 +4453,7 @@ Changing keywords from "MPIR elliptic curves libecm ecm spkg" to "sd32 MPIR elli
 
 ---
 
-archive/issue_events_006101.json:
+archive/issue_events_013760.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -4342,7 +4461,7 @@ archive/issue_events_006101.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5847#event-6101"
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-13760"
 }
 ```
 

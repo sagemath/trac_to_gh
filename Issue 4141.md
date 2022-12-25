@@ -55,6 +55,23 @@ Since we now automatically make Sage barf when /sw is in PATH, is this ticket in
 
 ---
 
+archive/issue_events_009427.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2010-05-26T20:28:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4141",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4141#event-9427"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030008.json:
 ```json
 {
@@ -160,7 +177,41 @@ In the meantime I found #4127, which talks about how to correctly use it.  Sadly
 
 ---
 
-archive/issue_events_004379.json:
+archive/issue_events_009428.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-26T09:08:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4141",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4141#event-9428"
+}
+```
+
+
+
+---
+
+archive/issue_events_009429.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-26T09:08:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4141",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4141#event-9429"
+}
+```
+
+
+
+---
+
+archive/issue_events_009430.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -168,7 +219,7 @@ archive/issue_events_004379.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4141",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4141#event-4379"
+    "url": "https://github.com/sagemath/sagetest/issues/4141#event-9430"
 }
 ```
 

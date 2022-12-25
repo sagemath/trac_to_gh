@@ -125,7 +125,7 @@ Merged in script repository.
 
 ---
 
-archive/issue_events_008217.json:
+archive/issue_events_019175.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -133,7 +133,7 @@ archive/issue_events_008217.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8002",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8002#event-8217"
+    "url": "https://github.com/sagemath/sagetest/issues/8002#event-19175"
 }
 ```
 

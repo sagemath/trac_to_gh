@@ -53,7 +53,7 @@ The patch is good, but I accidentally cut it from my symbolics branch.  Not real
 
 ---
 
-archive/issue_events_006268.json:
+archive/issue_events_014121.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -61,7 +61,7 @@ archive/issue_events_006268.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6013",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6013#event-6268"
+    "url": "https://github.com/sagemath/sagetest/issues/6013#event-14121"
 }
 ```
 
@@ -86,6 +86,23 @@ Merged in Sage 4.0.alpha0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_014122.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-12T05:52:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6013",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6013#event-14122"
+}
+```
 
 
 

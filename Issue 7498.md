@@ -207,7 +207,7 @@ Patch trac_7498-review.patch is ok => Positive review.
 
 ---
 
-archive/issue_events_007727.json:
+archive/issue_events_017769.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -215,7 +215,7 @@ archive/issue_events_007727.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7498#event-7727"
+    "url": "https://github.com/sagemath/sagetest/issues/7498#event-17769"
 }
 ```
 

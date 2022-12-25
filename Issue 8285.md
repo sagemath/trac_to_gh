@@ -209,7 +209,7 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_events_008483.json:
+archive/issue_events_019825.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -217,7 +217,7 @@ archive/issue_events_008483.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8285",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8285#event-8483"
+    "url": "https://github.com/sagemath/sagetest/issues/8285#event-19825"
 }
 ```
 

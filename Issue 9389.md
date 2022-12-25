@@ -567,7 +567,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_009547.json:
+archive/issue_events_023166.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -575,6 +575,23 @@ archive/issue_events_009547.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9389#event-9547"
+    "url": "https://github.com/sagemath/sagetest/issues/9389#event-23166"
+}
+```
+
+
+
+---
+
+archive/issue_events_023167.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-09T11:11:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9389",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9389#event-23167"
 }
 ```

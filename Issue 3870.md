@@ -182,7 +182,7 @@ Changing keywords from "" to "scipy".
 
 ---
 
-archive/issue_events_004091.json:
+archive/issue_events_008882.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -190,7 +190,7 @@ archive/issue_events_004091.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3870",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3870#event-4091"
+    "url": "https://github.com/sagemath/sagetest/issues/3870#event-8882"
 }
 ```
 
@@ -229,3 +229,20 @@ archive/issue_comments_027531.json:
 ```
 
 Yep.  In the scipy documentation, it assumes the function is continuous (from context, it seems over the reals).  So this function fails, as allowed by the documentation.
+
+
+
+---
+
+archive/issue_events_008883.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-20T10:43:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3870",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3870#event-8883"
+}
+```

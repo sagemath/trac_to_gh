@@ -569,6 +569,23 @@ Please fill in Author/Reviewer.
 
 ---
 
+archive/issue_events_022569.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jpflori",
+    "created_at": "2013-04-01T13:34:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9176",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9176#event-22569"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085715.json:
 ```json
 {
@@ -587,7 +604,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009333.json:
+archive/issue_events_022570.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -595,6 +612,6 @@ archive/issue_events_009333.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9176#event-9333"
+    "url": "https://github.com/sagemath/sagetest/issues/9176#event-22570"
 }
 ```

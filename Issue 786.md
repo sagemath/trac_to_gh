@@ -52,7 +52,7 @@ The previous attachement was filled with all sorts of other changes. This should
 
 ---
 
-archive/issue_events_000893.json:
+archive/issue_events_002167.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -60,7 +60,7 @@ archive/issue_events_000893.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/786",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/786#event-893"
+    "url": "https://github.com/sagemath/sagetest/issues/786#event-2167"
 }
 ```
 

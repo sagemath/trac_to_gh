@@ -52,7 +52,7 @@ coLinux isn't used anymore.
 
 ---
 
-archive/issue_events_000049.json:
+archive/issue_events_000103.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -60,7 +60,7 @@ archive/issue_events_000049.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/50",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/50#event-49"
+    "url": "https://github.com/sagemath/sagetest/issues/50#event-103"
 }
 ```
 

@@ -162,7 +162,7 @@ Please remember to update the Author(s) and Reviewer(s) fields.  I've entered gu
 
 ---
 
-archive/issue_events_009722.json:
+archive/issue_events_023833.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -170,7 +170,7 @@ archive/issue_events_009722.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9575#event-9722"
+    "url": "https://github.com/sagemath/sagetest/issues/9575#event-23833"
 }
 ```
 

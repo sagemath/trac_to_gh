@@ -255,7 +255,7 @@ apply this *after* applying trac_7158-captcha_v2.patch; it just makes a few mino
 
 ---
 
-archive/issue_events_007378.json:
+archive/issue_events_016916.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -263,7 +263,7 @@ archive/issue_events_007378.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#event-7378"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#event-16916"
 }
 ```
 

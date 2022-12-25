@@ -130,7 +130,7 @@ Fixed in patch #1410:d981cce6baa2
 
 ---
 
-archive/issue_events_000130.json:
+archive/issue_events_000241.json:
 ```json
 {
     "actor": "https://github.com/bobmoretti",
@@ -138,6 +138,6 @@ archive/issue_events_000130.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/124",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/124#event-130"
+    "url": "https://github.com/sagemath/sagetest/issues/124#event-241"
 }
 ```

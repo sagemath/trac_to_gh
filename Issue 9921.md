@@ -66,6 +66,159 @@ In sage-sdist, should we write VERSION.txt to `SAGE_ROOT`, or should we create a
 
 ---
 
+archive/issue_events_025014.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25014"
+}
+```
+
+
+
+---
+
+archive/issue_events_025015.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25015"
+}
+```
+
+
+
+---
+
+archive/issue_events_025016.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25016"
+}
+```
+
+
+
+---
+
+archive/issue_events_025017.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25017"
+}
+```
+
+
+
+---
+
+archive/issue_events_025018.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25018"
+}
+```
+
+
+
+---
+
+archive/issue_events_025019.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25019"
+}
+```
+
+
+
+---
+
+archive/issue_events_025020.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25020"
+}
+```
+
+
+
+---
+
+archive/issue_events_025021.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-04-11T09:56:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25021"
+}
+```
+
+
+
+---
+
+archive/issue_events_025022.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-04-11T09:56:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9921",
+    "milestone": "sage-7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9921#event-25022"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098608.json:
 ```json
 {

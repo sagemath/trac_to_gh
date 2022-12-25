@@ -362,7 +362,7 @@ Merged [trac_7822-py_log.take2.patch](http://trac.sagemath.org/sage_trac/attachm
 
 ---
 
-archive/issue_events_008037.json:
+archive/issue_events_018718.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -370,6 +370,6 @@ archive/issue_events_008037.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7822#event-8037"
+    "url": "https://github.com/sagemath/sagetest/issues/7822#event-18718"
 }
 ```

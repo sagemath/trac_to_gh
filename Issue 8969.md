@@ -280,7 +280,24 @@ Positive review.
 
 ---
 
-archive/issue_events_009119.json:
+archive/issue_events_021905.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-05-28T23:07:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8969",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8969#event-21905"
+}
+```
+
+
+
+---
+
+archive/issue_events_021906.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -288,7 +305,7 @@ archive/issue_events_009119.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8969",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8969#event-9119"
+    "url": "https://github.com/sagemath/sagetest/issues/8969#event-21906"
 }
 ```
 

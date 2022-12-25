@@ -60,7 +60,7 @@ delete - duplicate
 
 ---
 
-archive/issue_events_002743.json:
+archive/issue_events_005987.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -68,7 +68,7 @@ archive/issue_events_002743.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2560",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2560#event-2743"
+    "url": "https://github.com/sagemath/sagetest/issues/2560#event-5987"
 }
 ```
 

@@ -89,7 +89,7 @@ Wed Sep 13 08:17:07 PDT 2006  dmharvey`@`math.harvard.edu
 
 ---
 
-archive/issue_events_000048.json:
+archive/issue_events_000102.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -97,7 +97,7 @@ archive/issue_events_000048.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/49",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/49#event-48"
+    "url": "https://github.com/sagemath/sagetest/issues/49#event-102"
 }
 ```
 

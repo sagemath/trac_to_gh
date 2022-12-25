@@ -48,6 +48,23 @@ Attachment [trac-1450.patch](tarball://root/attachments/some-uuid/ticket1450/tra
 
 ---
 
+archive/issue_events_003704.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-10T17:14:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1450",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1450#event-3704"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009317.json:
 ```json
 {
@@ -106,7 +123,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001597.json:
+archive/issue_events_003705.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -114,6 +131,6 @@ archive/issue_events_001597.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1450",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1450#event-1597"
+    "url": "https://github.com/sagemath/sagetest/issues/1450#event-3705"
 }
 ```

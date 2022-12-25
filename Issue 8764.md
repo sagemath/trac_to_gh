@@ -105,6 +105,23 @@ The patch [trac_8764-original-des.patch](http://trac.sagemath.org/sage_trac/atta
 
 ---
 
+archive/issue_events_021330.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21330"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080054.json:
 ```json
 {
@@ -219,6 +236,108 @@ New commits:
 
 ---
 
+archive/issue_events_021331.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21331"
+}
+```
+
+
+
+---
+
+archive/issue_events_021332.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21332"
+}
+```
+
+
+
+---
+
+archive/issue_events_021333.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21333"
+}
+```
+
+
+
+---
+
+archive/issue_events_021334.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21334"
+}
+```
+
+
+
+---
+
+archive/issue_events_021335.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21335"
+}
+```
+
+
+
+---
+
+archive/issue_events_021336.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21336"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080060.json:
 ```json
 {
@@ -232,6 +351,40 @@ archive/issue_comments_080060.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_021337.json:
+```json
+{
+    "actor": "https://github.com/yhxnf",
+    "created_at": "2019-05-03T20:40:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21337"
+}
+```
+
+
+
+---
+
+archive/issue_events_021338.json:
+```json
+{
+    "actor": "https://github.com/yhxnf",
+    "created_at": "2019-05-03T20:40:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21338"
+}
+```
 
 
 
@@ -327,7 +480,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008932.json:
+archive/issue_events_021339.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -335,6 +488,6 @@ archive/issue_events_008932.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#event-8932"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-21339"
 }
 ```

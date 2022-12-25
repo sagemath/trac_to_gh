@@ -102,7 +102,7 @@ The code looks good, and the reported problem is fixed. I give this a positive r
 
 ---
 
-archive/issue_events_005096.json:
+archive/issue_events_011138.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,7 +110,7 @@ archive/issue_events_005096.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4851",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4851#event-5096"
+    "url": "https://github.com/sagemath/sagetest/issues/4851#event-11138"
 }
 ```
 
@@ -149,3 +149,20 @@ archive/issue_comments_036712.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_011139.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T09:52:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4851",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4851#event-11139"
+}
+```

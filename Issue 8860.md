@@ -516,7 +516,24 @@ Sounds good.
 
 ---
 
-archive/issue_events_009024.json:
+archive/issue_events_021621.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2012-05-28T05:12:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8860",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8860#event-21621"
+}
+```
+
+
+
+---
+
+archive/issue_events_021622.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -524,7 +541,7 @@ archive/issue_events_009024.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8860",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8860#event-9024"
+    "url": "https://github.com/sagemath/sagetest/issues/8860#event-21622"
 }
 ```
 

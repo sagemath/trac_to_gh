@@ -162,6 +162,23 @@ Confirmed that this is doctested there.
 
 ---
 
+archive/issue_events_009571.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-02-08T17:36:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4230",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4230#event-9571"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030687.json:
 ```json
 {
@@ -198,7 +215,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_004467.json:
+archive/issue_events_009572.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -206,6 +223,6 @@ archive/issue_events_004467.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4230#event-4467"
+    "url": "https://github.com/sagemath/sagetest/issues/4230#event-9572"
 }
 ```

@@ -193,7 +193,7 @@ Attachment [trac_8402-categories_missing_test-fh.patch](tarball://root/attachmen
 
 ---
 
-archive/issue_events_008587.json:
+archive/issue_events_020141.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -201,7 +201,7 @@ archive/issue_events_008587.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8402",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8402#event-8587"
+    "url": "https://github.com/sagemath/sagetest/issues/8402#event-20141"
 }
 ```
 

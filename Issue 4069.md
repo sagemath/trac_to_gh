@@ -259,7 +259,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004305.json:
+archive/issue_events_009287.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -267,7 +267,7 @@ archive/issue_events_004305.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4069",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4069#event-4305"
+    "url": "https://github.com/sagemath/sagetest/issues/4069#event-9287"
 }
 ```
 
@@ -288,3 +288,20 @@ archive/issue_comments_029312.json:
 ```
 
 Merged shortcut_extcode.patch and sage-4069_2.patch in Sage 3.2.3.alpha0
+
+
+
+---
+
+archive/issue_events_009288.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-23T21:03:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4069",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4069#event-9288"
+}
+```

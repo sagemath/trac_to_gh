@@ -105,7 +105,7 @@ Patch looks good to me. Positive review.
 
 ---
 
-archive/issue_events_002839.json:
+archive/issue_events_006200.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -113,7 +113,7 @@ archive/issue_events_002839.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2648",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2648#event-2839"
+    "url": "https://github.com/sagemath/sagetest/issues/2648#event-6200"
 }
 ```
 

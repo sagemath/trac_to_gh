@@ -238,7 +238,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009246.json:
+archive/issue_events_022286.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -246,6 +246,23 @@ archive/issue_events_009246.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9087#event-9246"
+    "url": "https://github.com/sagemath/sagetest/issues/9087#event-22286"
+}
+```
+
+
+
+---
+
+archive/issue_events_022287.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-20T18:04:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9087",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9087#event-22287"
 }
 ```

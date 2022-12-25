@@ -90,7 +90,7 @@ looks good to me, but i haven't tried applying the patch or testing...
 
 ---
 
-archive/issue_events_003494.json:
+archive/issue_events_007365.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -98,7 +98,7 @@ archive/issue_events_003494.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3275",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3275#event-3494"
+    "url": "https://github.com/sagemath/sagetest/issues/3275#event-7365"
 }
 ```
 

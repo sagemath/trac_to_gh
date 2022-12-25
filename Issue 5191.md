@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5191
 
 ---
 
-archive/issue_events_005445.json:
+archive/issue_events_012015.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -52,7 +52,7 @@ archive/issue_events_005445.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5191",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5191#event-5445"
+    "url": "https://github.com/sagemath/sagetest/issues/5191#event-12015"
 }
 ```
 
@@ -93,3 +93,20 @@ archive/issue_comments_039725.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_012016.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2009-02-06T03:26:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5191",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5191#event-12016"
+}
+```

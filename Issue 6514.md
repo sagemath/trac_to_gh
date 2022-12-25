@@ -266,7 +266,7 @@ full log of doctest failures
 
 ---
 
-archive/issue_events_006751.json:
+archive/issue_events_015376.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -274,7 +274,7 @@ archive/issue_events_006751.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6514#event-6751"
+    "url": "https://github.com/sagemath/sagetest/issues/6514#event-15376"
 }
 ```
 

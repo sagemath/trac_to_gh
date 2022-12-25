@@ -63,6 +63,23 @@ Note that in any case, if the current subs behavior is super fast or useful to p
 
 ---
 
+archive/issue_events_015299.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-08T19:50:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6481",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6481#event-15299"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052302.json:
 ```json
 {
@@ -99,7 +116,7 @@ Dupe of #6482
 
 ---
 
-archive/issue_events_006717.json:
+archive/issue_events_015300.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -107,6 +124,40 @@ archive/issue_events_006717.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6481",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6481#event-6717"
+    "url": "https://github.com/sagemath/sagetest/issues/6481#event-15300"
+}
+```
+
+
+
+---
+
+archive/issue_events_015301.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-20T22:10:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6481",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6481#event-15301"
+}
+```
+
+
+
+---
+
+archive/issue_events_015302.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-20T22:10:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6481",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6481#event-15302"
 }
 ```

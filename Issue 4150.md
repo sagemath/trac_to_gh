@@ -220,7 +220,7 @@ Merged both patches in Sage 3.1.3.alpha0
 
 ---
 
-archive/issue_events_004388.json:
+archive/issue_events_009441.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -228,6 +228,6 @@ archive/issue_events_004388.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#event-4388"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#event-9441"
 }
 ```

@@ -111,6 +111,23 @@ Changing assignee from somebody to @williamstein.
 
 ---
 
+archive/issue_events_002514.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2007-10-17T15:26:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/911",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/911#event-2514"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005579.json:
 ```json
 {
@@ -211,7 +228,7 @@ Michael
 
 ---
 
-archive/issue_events_001027.json:
+archive/issue_events_002515.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -219,7 +236,7 @@ archive/issue_events_001027.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/911#event-1027"
+    "url": "https://github.com/sagemath/sagetest/issues/911#event-2515"
 }
 ```
 

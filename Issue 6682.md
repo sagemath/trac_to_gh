@@ -85,6 +85,57 @@ Note: At #8000, Minh suggested polling sage-devel about allowing non-ASCII chara
 
 ---
 
+archive/issue_events_015765.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6682",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6682#event-15765"
+}
+```
+
+
+
+---
+
+archive/issue_events_015766.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6682",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6682#event-15766"
+}
+```
+
+
+
+---
+
+archive/issue_events_015767.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6682",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6682#event-15767"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054847.json:
 ```json
 {
@@ -98,6 +149,40 @@ archive/issue_comments_054847.json:
 ```
 
 We already do support UTF-8 in Sage sources, nothing to see here...
+
+
+
+---
+
+archive/issue_events_015768.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-14T12:39:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6682",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6682#event-15768"
+}
+```
+
+
+
+---
+
+archive/issue_events_015769.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-14T12:39:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6682",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6682#event-15769"
+}
+```
 
 
 
@@ -157,7 +242,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006917.json:
+archive/issue_events_015770.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -165,6 +250,6 @@ archive/issue_events_006917.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6682",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6682#event-6917"
+    "url": "https://github.com/sagemath/sagetest/issues/6682#event-15770"
 }
 ```

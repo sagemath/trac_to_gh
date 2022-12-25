@@ -109,6 +109,125 @@ I believe this is a duplicate of #11316, in which case it has been fixed!
 
 ---
 
+archive/issue_events_012406.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12406"
+}
+```
+
+
+
+---
+
+archive/issue_events_012407.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12407"
+}
+```
+
+
+
+---
+
+archive/issue_events_012408.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12408"
+}
+```
+
+
+
+---
+
+archive/issue_events_012409.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12409"
+}
+```
+
+
+
+---
+
+archive/issue_events_012410.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12410"
+}
+```
+
+
+
+---
+
+archive/issue_events_012411.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12411"
+}
+```
+
+
+
+---
+
+archive/issue_events_012412.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12412"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040920.json:
 ```json
 {
@@ -140,6 +259,40 @@ archive/issue_comments_040921.json:
 ```
 
 weighted term orders are implemented since long..
+
+
+
+---
+
+archive/issue_events_012413.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-04-06T10:05:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12413"
+}
+```
+
+
+
+---
+
+archive/issue_events_012414.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-04-06T10:05:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12414"
+}
+```
 
 
 
@@ -240,7 +393,7 @@ Closing tickets in the sage-duplicate/invalid/wontfix module with positive_revie
 
 ---
 
-archive/issue_events_005579.json:
+archive/issue_events_012415.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -248,7 +401,7 @@ archive/issue_events_005579.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#event-5579"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#event-12415"
 }
 ```
 

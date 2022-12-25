@@ -192,7 +192,7 @@ Great. Thank you Franco for the quick review.
 
 ---
 
-archive/issue_events_007748.json:
+archive/issue_events_017840.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -200,7 +200,7 @@ archive/issue_events_007748.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7519",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7519#event-7748"
+    "url": "https://github.com/sagemath/sagetest/issues/7519#event-17840"
 }
 ```
 

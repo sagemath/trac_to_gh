@@ -231,7 +231,7 @@ I'm including 4.5.2.alpha0's `spkg/standard/libdist_filelist` in 4.5.2.rc0.
 
 ---
 
-archive/issue_events_009752.json:
+archive/issue_events_023941.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -239,7 +239,7 @@ archive/issue_events_009752.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9609#event-9752"
+    "url": "https://github.com/sagemath/sagetest/issues/9609#event-23941"
 }
 ```
 

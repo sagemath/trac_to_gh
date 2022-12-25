@@ -360,7 +360,7 @@ I've looked at the changes and tested things out, and things look good to me.  T
 
 ---
 
-archive/issue_events_002524.json:
+archive/issue_events_005535.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -368,7 +368,7 @@ archive/issue_events_002524.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2347#event-2524"
+    "url": "https://github.com/sagemath/sagetest/issues/2347#event-5535"
 }
 ```
 

@@ -85,6 +85,23 @@ Credit goes to Dan Bump, Nicolas Thiery, Nicolas Borie (first contribution I bel
 
 ---
 
+archive/issue_events_008391.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-08-07T01:27:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3664",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3664#event-8391"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025847.json:
 ```json
 {
@@ -185,7 +202,7 @@ I added trac_3664-3.patch that fixes the doctest failures.
 
 ---
 
-archive/issue_events_003883.json:
+archive/issue_events_008392.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -193,7 +210,7 @@ archive/issue_events_003883.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3664",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3664#event-3883"
+    "url": "https://github.com/sagemath/sagetest/issues/3664#event-8392"
 }
 ```
 

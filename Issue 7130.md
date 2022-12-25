@@ -135,7 +135,7 @@ Attachment [libpng.patch](tarball://root/attachments/some-uuid/ticket7130/libpng
 
 ---
 
-archive/issue_events_007350.json:
+archive/issue_events_016846.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -143,7 +143,7 @@ archive/issue_events_007350.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7130",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7130#event-7350"
+    "url": "https://github.com/sagemath/sagetest/issues/7130#event-16846"
 }
 ```
 

@@ -45,6 +45,23 @@ Milestone sage-4.4.5 deleted
 
 ---
 
+archive/issue_events_022826.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-22T04:36:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9265",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9265#event-22826"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087064.json:
 ```json
 {
@@ -823,6 +840,40 @@ Thanks for your work!
 
 ---
 
+archive/issue_events_022827.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-19T20:12:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9265",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9265#event-22827"
+}
+```
+
+
+
+---
+
+archive/issue_events_022828.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-19T20:12:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9265",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9265#event-22828"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087094.json:
 ```json
 {
@@ -1004,7 +1055,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009425.json:
+archive/issue_events_022829.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1012,7 +1063,7 @@ archive/issue_events_009425.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9265#event-9425"
+    "url": "https://github.com/sagemath/sagetest/issues/9265#event-22829"
 }
 ```
 
@@ -1463,6 +1514,40 @@ Resolution changed from fixed to
 
 ---
 
+archive/issue_events_022830.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-17T07:28:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9265",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9265#event-22830"
+}
+```
+
+
+
+---
+
+archive/issue_events_022831.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-17T07:28:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9265",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9265#event-22831"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087122.json:
 ```json
 {
@@ -1481,7 +1566,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009426.json:
+archive/issue_events_022832.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1489,7 +1574,7 @@ archive/issue_events_009426.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9265#event-9426"
+    "url": "https://github.com/sagemath/sagetest/issues/9265#event-22832"
 }
 ```
 
@@ -1771,7 +1856,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009427.json:
+archive/issue_events_022833.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1779,6 +1864,6 @@ archive/issue_events_009427.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9265#event-9427"
+    "url": "https://github.com/sagemath/sagetest/issues/9265#event-22833"
 }
 ```

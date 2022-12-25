@@ -184,7 +184,24 @@ I think that the problem is that base had no documentation.
 
 ---
 
-archive/issue_events_003686.json:
+archive/issue_events_007866.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-20T07:03:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3465",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3465#event-7866"
+}
+```
+
+
+
+---
+
+archive/issue_events_007867.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -192,7 +209,7 @@ archive/issue_events_003686.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3465",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3465#event-3686"
+    "url": "https://github.com/sagemath/sagetest/issues/3465#event-7867"
 }
 ```
 

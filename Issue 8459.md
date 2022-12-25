@@ -258,6 +258,23 @@ This ticket depends on #7661.
 
 ---
 
+archive/issue_events_020306.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-04-05T10:51:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8459",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8459#event-20306"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076032.json:
 ```json
 {
@@ -468,7 +485,7 @@ Merged in this order:
 
 ---
 
-archive/issue_events_008643.json:
+archive/issue_events_020307.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -476,6 +493,6 @@ archive/issue_events_008643.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8459#event-8643"
+    "url": "https://github.com/sagemath/sagetest/issues/8459#event-20307"
 }
 ```

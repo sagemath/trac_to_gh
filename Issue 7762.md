@@ -103,7 +103,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007978.json:
+archive/issue_events_018569.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -111,7 +111,24 @@ archive/issue_events_007978.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7762",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7762#event-7978"
+    "url": "https://github.com/sagemath/sagetest/issues/7762#event-18569"
+}
+```
+
+
+
+---
+
+archive/issue_events_018570.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-12-24T18:34:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7762",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7762#event-18570"
 }
 ```
 

@@ -70,6 +70,125 @@ CCing people that may be interested, based on prior involvment with this or simi
 
 ---
 
+archive/issue_events_020966.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20966"
+}
+```
+
+
+
+---
+
+archive/issue_events_020967.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20967"
+}
+```
+
+
+
+---
+
+archive/issue_events_020968.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20968"
+}
+```
+
+
+
+---
+
+archive/issue_events_020969.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20969"
+}
+```
+
+
+
+---
+
+archive/issue_events_020970.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20970"
+}
+```
+
+
+
+---
+
+archive/issue_events_020971.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20971"
+}
+```
+
+
+
+---
+
+archive/issue_events_020972.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20972"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078537.json:
 ```json
 {
@@ -101,6 +220,40 @@ archive/issue_comments_078538.json:
 ```
 
 Setting spkg proposals that have not seen recent activity to "sage-wishlist".
+
+
+
+---
+
+archive/issue_events_020973.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-19T18:16:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20973"
+}
+```
+
+
+
+---
+
+archive/issue_events_020974.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-19T18:16:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8661",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8661#event-20974"
+}
+```
 
 
 

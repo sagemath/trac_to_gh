@@ -67,6 +67,23 @@ We are having trouble replicating this -- what hardware / os are you using?
 
 ---
 
+archive/issue_events_003310.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-20T03:00:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1255",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1255#event-3310"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007824.json:
 ```json
 {
@@ -142,7 +159,7 @@ David also says that he cannot reproduce the crash.
 
 ---
 
-archive/issue_events_001397.json:
+archive/issue_events_003311.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -150,7 +167,7 @@ archive/issue_events_001397.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1255",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1255#event-1397"
+    "url": "https://github.com/sagemath/sagetest/issues/1255#event-3311"
 }
 ```
 
@@ -171,6 +188,23 @@ archive/issue_comments_007827.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_003312.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-31T04:25:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1255",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1255#event-3312"
+}
+```
 
 
 

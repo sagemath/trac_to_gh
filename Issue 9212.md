@@ -68,7 +68,7 @@ Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/so
 
 ---
 
-archive/issue_events_009366.json:
+archive/issue_events_022692.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -76,7 +76,7 @@ archive/issue_events_009366.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#event-9366"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-22692"
 }
 ```
 
@@ -115,6 +115,23 @@ archive/issue_comments_086180.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_022693.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-11T07:53:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9212",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-22693"
+}
+```
 
 
 
@@ -288,6 +305,40 @@ I'm satisfied with the vote enough to reopen this ticket.
 
 ---
 
+archive/issue_events_022694.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-06-14T16:11:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9212",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-22694"
+}
+```
+
+
+
+---
+
+archive/issue_events_022695.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-06-14T16:11:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9212",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-22695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086189.json:
 ```json
 {
@@ -306,7 +357,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009367.json:
+archive/issue_events_022696.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -314,7 +365,7 @@ archive/issue_events_009367.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#event-9367"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-22696"
 }
 ```
 
@@ -465,7 +516,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009368.json:
+archive/issue_events_022697.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -473,7 +524,7 @@ archive/issue_events_009368.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#event-9368"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-22697"
 }
 ```
 

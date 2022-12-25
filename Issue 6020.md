@@ -141,6 +141,23 @@ Wall time: 1.68 s
 
 ---
 
+archive/issue_events_014141.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-12T06:55:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#event-14141"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047839.json:
 ```json
 {
@@ -266,6 +283,40 @@ What is the status here?
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_014142.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T05:27:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#event-14142"
+}
+```
+
+
+
+---
+
+archive/issue_events_014143.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T05:27:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#event-14143"
+}
+```
 
 
 
@@ -408,7 +459,7 @@ Closed as requested (fixed by #6671).
 
 ---
 
-archive/issue_events_006275.json:
+archive/issue_events_014144.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -416,6 +467,6 @@ archive/issue_events_006275.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6020#event-6275"
+    "url": "https://github.com/sagemath/sagetest/issues/6020#event-14144"
 }
 ```

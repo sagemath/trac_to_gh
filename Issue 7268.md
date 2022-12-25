@@ -386,7 +386,7 @@ Depends on #7270 !!!!!!!!!!!!!!!
 
 ---
 
-archive/issue_events_007489.json:
+archive/issue_events_017192.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -394,7 +394,7 @@ archive/issue_events_007489.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7268",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7268#event-7489"
+    "url": "https://github.com/sagemath/sagetest/issues/7268#event-17192"
 }
 ```
 

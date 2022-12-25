@@ -83,6 +83,23 @@ Thanks a lot for the report.
 
 ---
 
+archive/issue_events_018831.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-01-17T06:00:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7876",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7876#event-18831"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068305.json:
 ```json
 {
@@ -369,7 +386,7 @@ Merged [trac_7876-pynac_print.take2.patch](http://trac.sagemath.org/sage_trac/at
 
 ---
 
-archive/issue_events_008091.json:
+archive/issue_events_018832.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -377,6 +394,6 @@ archive/issue_events_008091.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7876#event-8091"
+    "url": "https://github.com/sagemath/sagetest/issues/7876#event-18832"
 }
 ```

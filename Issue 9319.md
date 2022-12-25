@@ -76,6 +76,23 @@ It bails if it cannot find a commit message or username in the patch. It issues 
 
 ---
 
+archive/issue_events_022964.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-19T13:17:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9319",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9319#event-22964"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087680.json:
 ```json
 {
@@ -148,7 +165,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009476.json:
+archive/issue_events_022965.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -156,6 +173,6 @@ archive/issue_events_009476.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9319",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9319#event-9476"
+    "url": "https://github.com/sagemath/sagetest/issues/9319#event-22965"
 }
 ```

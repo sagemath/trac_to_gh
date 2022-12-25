@@ -66,6 +66,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_003877.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-12-16T07:37:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1535",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1535#event-3877"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009777.json:
 ```json
 {
@@ -124,7 +141,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001689.json:
+archive/issue_events_003878.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -132,6 +149,6 @@ archive/issue_events_001689.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1535",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1535#event-1689"
+    "url": "https://github.com/sagemath/sagetest/issues/1535#event-3878"
 }
 ```

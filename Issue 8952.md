@@ -876,7 +876,7 @@ Rebased to sage-5.5.rc0.
 
 ---
 
-archive/issue_events_009105.json:
+archive/issue_events_021869.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -884,7 +884,7 @@ archive/issue_events_009105.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8952#event-9105"
+    "url": "https://github.com/sagemath/sagetest/issues/8952#event-21869"
 }
 ```
 

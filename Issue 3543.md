@@ -226,6 +226,125 @@ dsage is gone, so that doesn't matter. The files in `data/extcode/...` are used 
 
 ---
 
+archive/issue_events_008100.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8100"
+}
+```
+
+
+
+---
+
+archive/issue_events_008101.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8101"
+}
+```
+
+
+
+---
+
+archive/issue_events_008102.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8102"
+}
+```
+
+
+
+---
+
+archive/issue_events_008103.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8103"
+}
+```
+
+
+
+---
+
+archive/issue_events_008104.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8104"
+}
+```
+
+
+
+---
+
+archive/issue_events_008105.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8105"
+}
+```
+
+
+
+---
+
+archive/issue_events_008106.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8106"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025015.json:
 ```json
 {
@@ -262,6 +381,40 @@ The Sage library doesn't ship `jquery`. Various packages do, in particular `sage
 
 ---
 
+archive/issue_events_008107.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-04-22T09:42:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8107"
+}
+```
+
+
+
+---
+
+archive/issue_events_008108.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-04-22T09:42:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3543",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8108"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025017.json:
 ```json
 {
@@ -280,7 +433,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_003763.json:
+archive/issue_events_008109.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -288,7 +441,7 @@ archive/issue_events_003763.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3543#event-3763"
+    "url": "https://github.com/sagemath/sagetest/issues/3543#event-8109"
 }
 ```
 

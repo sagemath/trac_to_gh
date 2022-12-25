@@ -52,6 +52,23 @@ Changing assignee from somebody to didier deshommes.
 
 ---
 
+archive/issue_events_000488.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-22T20:30:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/233",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/233#event-488"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001029.json:
 ```json
 {
@@ -107,7 +124,7 @@ sage: RQDF(pi)
 
 ---
 
-archive/issue_events_000248.json:
+archive/issue_events_000489.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -115,7 +132,7 @@ archive/issue_events_000248.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/233#event-248"
+    "url": "https://github.com/sagemath/sagetest/issues/233#event-489"
 }
 ```
 

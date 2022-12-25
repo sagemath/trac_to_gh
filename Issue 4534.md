@@ -167,7 +167,7 @@ Jaap
 
 ---
 
-archive/issue_events_004780.json:
+archive/issue_events_010320.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -175,7 +175,7 @@ archive/issue_events_004780.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4534#event-4780"
+    "url": "https://github.com/sagemath/sagetest/issues/4534#event-10320"
 }
 ```
 

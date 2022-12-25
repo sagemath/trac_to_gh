@@ -583,6 +583,23 @@ I'm sure there are other problems to fix, and these patches certainly won't allo
 
 ---
 
+archive/issue_events_024041.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2010-08-20T00:59:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9644",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9644#event-24041"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093338.json:
 ```json
 {
@@ -1105,7 +1122,7 @@ Harald said we shouldn't "announce bugs" on the download pages; I think a simple
 
 ---
 
-archive/issue_events_009781.json:
+archive/issue_events_024042.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1113,7 +1130,7 @@ archive/issue_events_009781.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9644#event-9781"
+    "url": "https://github.com/sagemath/sagetest/issues/9644#event-24042"
 }
 ```
 

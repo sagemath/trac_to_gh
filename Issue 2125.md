@@ -48,7 +48,7 @@ Looks good.  I assume Jonathan knows how to spell his own name... :)
 
 ---
 
-archive/issue_events_002287.json:
+archive/issue_events_005094.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -56,7 +56,7 @@ archive/issue_events_002287.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2125#event-2287"
+    "url": "https://github.com/sagemath/sagetest/issues/2125#event-5094"
 }
 ```
 

@@ -819,7 +819,7 @@ Best, Christian
 
 ---
 
-archive/issue_events_009525.json:
+archive/issue_events_023112.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -827,7 +827,7 @@ archive/issue_events_009525.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9370#event-9525"
+    "url": "https://github.com/sagemath/sagetest/issues/9370#event-23112"
 }
 ```
 

@@ -251,6 +251,23 @@ We should close this after adding it as a doctest to #9880.
 
 ---
 
+archive/issue_events_022147.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-07-10T09:15:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9046",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9046#event-22147"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083617.json:
 ```json
 {
@@ -460,7 +477,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009198.json:
+archive/issue_events_022148.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -468,6 +485,6 @@ archive/issue_events_009198.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9046",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9046#event-9198"
+    "url": "https://github.com/sagemath/sagetest/issues/9046#event-22148"
 }
 ```

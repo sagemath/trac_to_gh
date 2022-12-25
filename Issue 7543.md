@@ -689,7 +689,7 @@ Nice patch this sadic one !
 
 ---
 
-archive/issue_events_007773.json:
+archive/issue_events_017892.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -697,7 +697,7 @@ archive/issue_events_007773.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7543#event-7773"
+    "url": "https://github.com/sagemath/sagetest/issues/7543#event-17892"
 }
 ```
 

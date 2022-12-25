@@ -129,6 +129,23 @@ I'm changing this to a positive review, because 1-3 above are just minor nitpick
 
 ---
 
+archive/issue_events_006369.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T07:29:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2740",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2740#event-6369"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018804.json:
 ```json
 {
@@ -151,7 +168,7 @@ Michael
 
 ---
 
-archive/issue_events_002928.json:
+archive/issue_events_006370.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -159,7 +176,7 @@ archive/issue_events_002928.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2740",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2740#event-2928"
+    "url": "https://github.com/sagemath/sagetest/issues/2740#event-6370"
 }
 ```
 

@@ -103,7 +103,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000239.json:
+archive/issue_events_000464.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -111,7 +111,7 @@ archive/issue_events_000239.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/226",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/226#event-239"
+    "url": "https://github.com/sagemath/sagetest/issues/226#event-464"
 }
 ```
 
@@ -133,3 +133,20 @@ archive/issue_comments_001005.json:
 
 The problem has been fixed in a previous release of cython.
 cython regression.pyx now works fine.
+
+
+
+---
+
+archive/issue_events_000465.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:24:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/226",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/226#event-465"
+}
+```

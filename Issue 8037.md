@@ -187,7 +187,7 @@ It can result in Mercurial ignoring your commit message, so that your commit mes
 
 ---
 
-archive/issue_events_008248.json:
+archive/issue_events_019256.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -195,7 +195,7 @@ archive/issue_events_008248.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8037#event-8248"
+    "url": "https://github.com/sagemath/sagetest/issues/8037#event-19256"
 }
 ```
 

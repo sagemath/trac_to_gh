@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/800
 
 ---
 
+archive/issue_events_002215.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:42:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/800",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/800#event-2215"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004809.json:
 ```json
 {
@@ -137,6 +154,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_002216.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-14T17:38:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/800",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/800#event-2216"
+}
+```
+
+
+
+---
+
+archive/issue_events_002217.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-14T17:38:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/800",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/800#event-2217"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004815.json:
 ```json
 {
@@ -173,7 +224,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_000911.json:
+archive/issue_events_002218.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -181,7 +232,7 @@ archive/issue_events_000911.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/800",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/800#event-911"
+    "url": "https://github.com/sagemath/sagetest/issues/800#event-2218"
 }
 ```
 

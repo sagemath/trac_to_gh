@@ -53,6 +53,23 @@ on OS X.
 
 ---
 
+archive/issue_events_005921.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-02-16T04:31:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2522",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2522#event-5921"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017166.json:
 ```json
 {
@@ -75,7 +92,7 @@ Michael
 
 ---
 
-archive/issue_events_002703.json:
+archive/issue_events_005922.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -83,7 +100,7 @@ archive/issue_events_002703.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2522",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2522#event-2703"
+    "url": "https://github.com/sagemath/sagetest/issues/2522#event-5922"
 }
 ```
 

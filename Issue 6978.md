@@ -70,7 +70,7 @@ I'll do so. I don't know why I used 0.98.5. I will first build femhub with this 
 
 ---
 
-archive/issue_events_007200.json:
+archive/issue_events_016390.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -78,7 +78,7 @@ archive/issue_events_007200.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6978#event-7200"
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-16390"
 }
 ```
 
@@ -122,6 +122,23 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_016391.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-22T16:57:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6978",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-16391"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057603.json:
 ```json
 {
@@ -140,7 +157,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_007201.json:
+archive/issue_events_016392.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -148,7 +165,7 @@ archive/issue_events_007201.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6978#event-7201"
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-16392"
 }
 ```
 
@@ -174,6 +191,40 @@ Resolution changed from fixed to
 
 ---
 
+archive/issue_events_016393.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-22T16:59:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6978",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-16393"
+}
+```
+
+
+
+---
+
+archive/issue_events_016394.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-22T16:59:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6978",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-16394"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057605.json:
 ```json
 {
@@ -192,7 +243,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007202.json:
+archive/issue_events_016395.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -200,6 +251,6 @@ archive/issue_events_007202.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6978#event-7202"
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-16395"
 }
 ```

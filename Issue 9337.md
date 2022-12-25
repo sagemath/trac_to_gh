@@ -147,6 +147,23 @@ I created a tracker bug at #9604 to for the patch queue/dependencies.
 
 ---
 
+archive/issue_events_023015.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2010-07-26T17:25:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#event-23015"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088022.json:
 ```json
 {
@@ -289,6 +306,40 @@ archive/issue_comments_088027.json:
 ```
 
 pickling fixes
+
+
+
+---
+
+archive/issue_events_023016.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2010-08-09T22:49:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#event-23016"
+}
+```
+
+
+
+---
+
+archive/issue_events_023017.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2010-08-09T22:49:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#event-23017"
+}
+```
 
 
 
@@ -1764,7 +1815,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009490.json:
+archive/issue_events_023018.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1772,6 +1823,6 @@ archive/issue_events_009490.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9337#event-9490"
+    "url": "https://github.com/sagemath/sagetest/issues/9337#event-23018"
 }
 ```

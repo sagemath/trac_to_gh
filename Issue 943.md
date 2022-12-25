@@ -132,7 +132,7 @@ The attached patches implement the NTL wrapping. They also make echelon_form fal
 
 ---
 
-archive/issue_events_001063.json:
+archive/issue_events_002604.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -140,7 +140,7 @@ archive/issue_events_001063.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/943",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/943#event-1063"
+    "url": "https://github.com/sagemath/sagetest/issues/943#event-2604"
 }
 ```
 
@@ -179,3 +179,20 @@ archive/issue_comments_005753.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002605.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T02:27:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/943",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/943#event-2605"
+}
+```

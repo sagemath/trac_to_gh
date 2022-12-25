@@ -88,7 +88,7 @@ Fixed by #7352
 
 ---
 
-archive/issue_events_007424.json:
+archive/issue_events_017065.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -96,6 +96,6 @@ archive/issue_events_007424.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7203",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7203#event-7424"
+    "url": "https://github.com/sagemath/sagetest/issues/7203#event-17065"
 }
 ```

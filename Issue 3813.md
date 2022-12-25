@@ -51,6 +51,23 @@ Better adaptive rendering
 
 ---
 
+archive/issue_events_008751.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
+    "created_at": "2008-08-12T17:41:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3813",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3813#event-8751"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027049.json:
 ```json
 {
@@ -430,7 +447,7 @@ Merged in Sage 3.1.2.alpha0
 
 ---
 
-archive/issue_events_004035.json:
+archive/issue_events_008752.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -438,7 +455,7 @@ archive/issue_events_004035.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3813#event-4035"
+    "url": "https://github.com/sagemath/sagetest/issues/3813#event-8752"
 }
 ```
 
@@ -567,7 +584,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004036.json:
+archive/issue_events_008753.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -575,7 +592,7 @@ archive/issue_events_004036.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3813#event-4036"
+    "url": "https://github.com/sagemath/sagetest/issues/3813#event-8753"
 }
 ```
 
@@ -643,7 +660,7 @@ The latest trac_3813-final.patch should apply to the latest Sage.
 
 ---
 
-archive/issue_events_004037.json:
+archive/issue_events_008754.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -651,7 +668,7 @@ archive/issue_events_004037.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3813#event-4037"
+    "url": "https://github.com/sagemath/sagetest/issues/3813#event-8754"
 }
 ```
 

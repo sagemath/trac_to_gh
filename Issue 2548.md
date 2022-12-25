@@ -133,7 +133,7 @@ sage: f
 
 ---
 
-archive/issue_events_002731.json:
+archive/issue_events_005967.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -141,7 +141,7 @@ archive/issue_events_002731.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2548",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2548#event-2731"
+    "url": "https://github.com/sagemath/sagetest/issues/2548#event-5967"
 }
 ```
 

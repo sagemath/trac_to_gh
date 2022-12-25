@@ -86,6 +86,23 @@ Changing component from algebra to notebook.
 
 ---
 
+archive/issue_events_012724.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2009-03-06T03:20:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5447",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5447#event-12724"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042029.json:
 ```json
 {
@@ -501,7 +518,7 @@ SageNB patches rebased against #7196, plus this queue: #7158, #4551, #3646, #645
 
 ---
 
-archive/issue_events_005699.json:
+archive/issue_events_012725.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -509,7 +526,7 @@ archive/issue_events_005699.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5447#event-5699"
+    "url": "https://github.com/sagemath/sagetest/issues/5447#event-12725"
 }
 ```
 

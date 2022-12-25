@@ -70,6 +70,23 @@ The attachment 3456-prelim.patch is a start.  Currently, it makes the notebook u
 
 ---
 
+archive/issue_events_007835.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-07-14T20:39:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3456",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3456#event-7835"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024317.json:
 ```json
 {
@@ -142,6 +159,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_007836.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-09-17T02:58:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3456",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3456#event-7836"
+}
+```
+
+
+
+---
+
+archive/issue_events_007837.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-09-17T02:58:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3456",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3456#event-7837"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024321.json:
 ```json
 {
@@ -160,7 +211,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_003675.json:
+archive/issue_events_007838.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -168,7 +219,7 @@ archive/issue_events_003675.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3456",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3456#event-3675"
+    "url": "https://github.com/sagemath/sagetest/issues/3456#event-7838"
 }
 ```
 

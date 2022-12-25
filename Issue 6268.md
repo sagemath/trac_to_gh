@@ -70,6 +70,23 @@ sage: latex(cot(x))
 
 ---
 
+archive/issue_events_014674.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2009-06-12T20:32:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6268",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6268#event-14674"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049970.json:
 ```json
 {
@@ -223,7 +240,7 @@ attachment:trac_6268-py_print_latex.patch fixes the reported problem. Apply only
 
 ---
 
-archive/issue_events_006512.json:
+archive/issue_events_014675.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -231,7 +248,7 @@ archive/issue_events_006512.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6268#event-6512"
+    "url": "https://github.com/sagemath/sagetest/issues/6268#event-14675"
 }
 ```
 

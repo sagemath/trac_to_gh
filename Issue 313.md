@@ -83,7 +83,7 @@ there hasn't been a slideshow mode for at least 6 months...
 
 ---
 
-archive/issue_events_000332.json:
+archive/issue_events_000732.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -91,7 +91,7 @@ archive/issue_events_000332.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/313#event-332"
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-732"
 }
 ```
 
@@ -135,7 +135,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000333.json:
+archive/issue_events_000733.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -143,7 +143,7 @@ archive/issue_events_000333.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/313#event-333"
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-733"
 }
 ```
 
@@ -164,6 +164,23 @@ archive/issue_comments_001494.json:
 ```
 
 There is too a slideshow mode.  Select Action-->One Cell Mode.
+
+
+
+---
+
+archive/issue_events_000734.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-26T04:30:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/313",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-734"
+}
+```
 
 
 
@@ -249,7 +266,41 @@ Michael
 
 ---
 
-archive/issue_events_000334.json:
+archive/issue_events_000735.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:01:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/313",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-735"
+}
+```
+
+
+
+---
+
+archive/issue_events_000736.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:01:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/313",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-736"
+}
+```
+
+
+
+---
+
+archive/issue_events_000737.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -257,7 +308,7 @@ archive/issue_events_000334.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/313#event-334"
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-737"
 }
 ```
 

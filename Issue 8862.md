@@ -65,6 +65,23 @@ Changing type from enhancement to defect.
 
 ---
 
+archive/issue_events_021625.json:
+```json
+{
+    "actor": "https://github.com/zimmermann6",
+    "created_at": "2010-05-03T20:44:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21625"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081317.json:
 ```json
 {
@@ -200,6 +217,142 @@ solve([(2*x^2/(x^2 + y^2) + log(x^2 + y^2))*(x^2 + y^2)^x,2*x*y*(x^2 + y^2)^(x -
 So the relevant problem is that it's returning something not in the domain of the functions in question, which is indeed a problem.  In addition to not finding other solutions.
 
 This is now Maxima bug [3216684](https://sourceforge.net/tracker/?func=detail&aid=3216684&group_id=4933&atid=104933).
+
+
+
+---
+
+archive/issue_events_021626.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21626"
+}
+```
+
+
+
+---
+
+archive/issue_events_021627.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21627"
+}
+```
+
+
+
+---
+
+archive/issue_events_021628.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21628"
+}
+```
+
+
+
+---
+
+archive/issue_events_021629.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21629"
+}
+```
+
+
+
+---
+
+archive/issue_events_021630.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21630"
+}
+```
+
+
+
+---
+
+archive/issue_events_021631.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21631"
+}
+```
+
+
+
+---
+
+archive/issue_events_021632.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21632"
+}
+```
+
+
+
+---
+
+archive/issue_events_021633.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8862",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8862#event-21633"
+}
+```
 
 
 

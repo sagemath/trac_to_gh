@@ -184,7 +184,7 @@ Robert
 
 ---
 
-archive/issue_events_007451.json:
+archive/issue_events_017119.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -192,7 +192,7 @@ archive/issue_events_007451.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7229#event-7451"
+    "url": "https://github.com/sagemath/sagetest/issues/7229#event-17119"
 }
 ```
 

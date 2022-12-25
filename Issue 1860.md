@@ -52,7 +52,7 @@ This works now (3.1.3), so should be closed.
 
 ---
 
-archive/issue_events_002018.json:
+archive/issue_events_004502.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -60,7 +60,7 @@ archive/issue_events_002018.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1860",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1860#event-2018"
+    "url": "https://github.com/sagemath/sagetest/issues/1860#event-4502"
 }
 ```
 

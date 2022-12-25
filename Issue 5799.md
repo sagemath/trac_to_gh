@@ -307,7 +307,7 @@ I think `\QQ` and friends generate an unsightly error message.  I'll try to lear
 
 ---
 
-archive/issue_events_006047.json:
+archive/issue_events_013613.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -315,7 +315,7 @@ archive/issue_events_006047.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5799#event-6047"
+    "url": "https://github.com/sagemath/sagetest/issues/5799#event-13613"
 }
 ```
 
@@ -524,7 +524,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006048.json:
+archive/issue_events_013614.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -532,7 +532,7 @@ archive/issue_events_006048.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5799#event-6048"
+    "url": "https://github.com/sagemath/sagetest/issues/5799#event-13614"
 }
 ```
 
@@ -633,7 +633,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006049.json:
+archive/issue_events_013615.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -641,7 +641,7 @@ archive/issue_events_006049.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5799#event-6049"
+    "url": "https://github.com/sagemath/sagetest/issues/5799#event-13615"
 }
 ```
 

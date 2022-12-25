@@ -155,7 +155,7 @@ Simon: The patch `gamma.2.patch` doesn't contain your username. I've committed i
 
 ---
 
-archive/issue_events_006847.json:
+archive/issue_events_015596.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -163,7 +163,7 @@ archive/issue_events_006847.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6606#event-6847"
+    "url": "https://github.com/sagemath/sagetest/issues/6606#event-15596"
 }
 ```
 

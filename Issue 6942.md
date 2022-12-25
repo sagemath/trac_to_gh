@@ -59,6 +59,23 @@ Changing component from algebra to linear algebra.
 
 ---
 
+archive/issue_events_016337.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-11-15T13:07:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6942",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6942#event-16337"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057285.json:
 ```json
 {
@@ -498,7 +515,7 @@ Minh and Rob---thank you both of you for reviewing this!
 
 ---
 
-archive/issue_events_007166.json:
+archive/issue_events_016338.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -506,7 +523,7 @@ archive/issue_events_007166.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6942#event-7166"
+    "url": "https://github.com/sagemath/sagetest/issues/6942#event-16338"
 }
 ```
 

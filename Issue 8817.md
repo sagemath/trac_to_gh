@@ -222,7 +222,7 @@ Attachment [trac_8817-wstein.patch](tarball://root/attachments/some-uuid/ticket8
 
 ---
 
-archive/issue_events_008982.json:
+archive/issue_events_021503.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -230,7 +230,24 @@ archive/issue_events_008982.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8817#event-8982"
+    "url": "https://github.com/sagemath/sagetest/issues/8817#event-21503"
+}
+```
+
+
+
+---
+
+archive/issue_events_021504.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-02T23:57:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8817",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8817#event-21504"
 }
 ```
 

@@ -129,6 +129,23 @@ this is now working
 
 ---
 
+archive/issue_events_016113.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-08-08T14:00:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6847",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6847#event-16113"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056366.json:
 ```json
 {
@@ -183,7 +200,7 @@ Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all 
 
 ---
 
-archive/issue_events_007080.json:
+archive/issue_events_016114.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -191,7 +208,7 @@ archive/issue_events_007080.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6847#event-7080"
+    "url": "https://github.com/sagemath/sagetest/issues/6847#event-16114"
 }
 ```
 

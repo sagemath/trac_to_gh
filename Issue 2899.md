@@ -114,7 +114,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_003097.json:
+archive/issue_events_006632.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -122,7 +122,7 @@ archive/issue_events_003097.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3097"
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-6632"
 }
 ```
 
@@ -242,7 +242,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003098.json:
+archive/issue_events_006633.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -250,7 +250,7 @@ archive/issue_events_003098.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3098"
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-6633"
 }
 ```
 
@@ -367,7 +367,7 @@ Michael
 
 ---
 
-archive/issue_events_003099.json:
+archive/issue_events_006634.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -375,7 +375,24 @@ archive/issue_events_003099.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3099"
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-6634"
+}
+```
+
+
+
+---
+
+archive/issue_events_006635.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T16:33:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-6635"
 }
 ```
 
@@ -419,7 +436,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003100.json:
+archive/issue_events_006636.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -427,7 +444,7 @@ archive/issue_events_003100.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3100"
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-6636"
 }
 ```
 
@@ -459,6 +476,40 @@ Michael
 
 ---
 
+archive/issue_events_006637.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T07:27:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-6637"
+}
+```
+
+
+
+---
+
+archive/issue_events_006638.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T07:27:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-6638"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019943.json:
 ```json
 {
@@ -477,7 +528,7 @@ There are doctests.
 
 ---
 
-archive/issue_events_003101.json:
+archive/issue_events_006639.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -485,7 +536,7 @@ archive/issue_events_003101.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3101"
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-6639"
 }
 ```
 

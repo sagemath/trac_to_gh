@@ -87,6 +87,23 @@ based on 3.1.2.alpha4
 
 ---
 
+archive/issue_events_009296.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-08T19:04:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4075",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4075#event-9296"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029352.json:
 ```json
 {
@@ -145,7 +162,7 @@ Merged in Sage 3.1.2.rc1
 
 ---
 
-archive/issue_events_004313.json:
+archive/issue_events_009297.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -153,7 +170,7 @@ archive/issue_events_004313.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4075",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4075#event-4313"
+    "url": "https://github.com/sagemath/sagetest/issues/4075#event-9297"
 }
 ```
 

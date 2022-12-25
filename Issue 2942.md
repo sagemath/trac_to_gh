@@ -222,7 +222,7 @@ Changing component from notebook to build.
 
 ---
 
-archive/issue_events_003146.json:
+archive/issue_events_006727.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -230,7 +230,7 @@ archive/issue_events_003146.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2942#event-3146"
+    "url": "https://github.com/sagemath/sagetest/issues/2942#event-6727"
 }
 ```
 

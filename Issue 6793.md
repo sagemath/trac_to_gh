@@ -103,6 +103,23 @@ Changing component from elliptic curves to solaris.
 
 ---
 
+archive/issue_events_015998.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6793",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6793#event-15998"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055870.json:
 ```json
 {
@@ -116,6 +133,40 @@ archive/issue_comments_055870.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_015999.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-02T20:51:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6793",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6793#event-15999"
+}
+```
+
+
+
+---
+
+archive/issue_events_016000.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-02T20:51:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6793",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6793#event-16000"
+}
+```
 
 
 
@@ -157,7 +208,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007028.json:
+archive/issue_events_016001.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -165,6 +216,6 @@ archive/issue_events_007028.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6793",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6793#event-7028"
+    "url": "https://github.com/sagemath/sagetest/issues/6793#event-16001"
 }
 ```

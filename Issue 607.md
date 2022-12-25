@@ -132,6 +132,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001615.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-07T00:31:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/607",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/607#event-1615"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003114.json:
 ```json
 {
@@ -150,7 +167,7 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
-archive/issue_events_000664.json:
+archive/issue_events_001616.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -158,7 +175,7 @@ archive/issue_events_000664.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/607",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/607#event-664"
+    "url": "https://github.com/sagemath/sagetest/issues/607#event-1616"
 }
 ```
 

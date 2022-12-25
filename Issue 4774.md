@@ -71,6 +71,23 @@ Changing component from algebra to packages.
 
 ---
 
+archive/issue_events_010904.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-13T00:10:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4774",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4774#event-10904"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036083.json:
 ```json
 {
@@ -321,6 +338,40 @@ ImportError: dlopen(/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packa
 
 
 So... wtf the linker is doing in `/System/Library/Frameworks` I can't say, but something is not right in Dodge.
+
+
+
+---
+
+archive/issue_events_010905.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-06T01:09:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4774",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4774#event-10905"
+}
+```
+
+
+
+---
+
+archive/issue_events_010906.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-06T01:09:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4774",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4774#event-10906"
+}
+```
 
 
 
@@ -683,6 +734,40 @@ This patch is on top of Jason's latest spkg and resolved libpng12 linking issues
 
 ---
 
+archive/issue_events_010907.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T10:50:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4774",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4774#event-10907"
+}
+```
+
+
+
+---
+
+archive/issue_events_010908.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T10:50:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4774",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4774#event-10908"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036108.json:
 ```json
 {
@@ -998,7 +1083,7 @@ Michael
 
 ---
 
-archive/issue_events_005016.json:
+archive/issue_events_010909.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1006,6 +1091,6 @@ archive/issue_events_005016.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4774#event-5016"
+    "url": "https://github.com/sagemath/sagetest/issues/4774#event-10909"
 }
 ```

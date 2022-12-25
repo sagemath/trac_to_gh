@@ -264,7 +264,7 @@ The minute you lose control over the user's environment it gets quite messy.  Oh
 
 ---
 
-archive/issue_events_006018.json:
+archive/issue_events_013538.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -272,7 +272,7 @@ archive/issue_events_006018.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5771#event-6018"
+    "url": "https://github.com/sagemath/sagetest/issues/5771#event-13538"
 }
 ```
 

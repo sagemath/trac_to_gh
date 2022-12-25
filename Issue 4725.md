@@ -37,6 +37,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4725
 
 ---
 
+archive/issue_events_010794.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
+    "created_at": "2009-04-21T08:43:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4725",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4725#event-10794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035600.json:
 ```json
 {
@@ -111,7 +128,7 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
-archive/issue_events_004970.json:
+archive/issue_events_010795.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -119,7 +136,7 @@ archive/issue_events_004970.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4725",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4725#event-4970"
+    "url": "https://github.com/sagemath/sagetest/issues/4725#event-10795"
 }
 ```
 

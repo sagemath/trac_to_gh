@@ -128,6 +128,23 @@ I cannot reproduce the problem.
 
 ---
 
+archive/issue_events_016225.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-08-18T19:11:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6900",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6900#event-16225"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056899.json:
 ```json
 {
@@ -173,7 +190,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007128.json:
+archive/issue_events_016226.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -181,7 +198,7 @@ archive/issue_events_007128.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6900",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6900#event-7128"
+    "url": "https://github.com/sagemath/sagetest/issues/6900#event-16226"
 }
 ```
 

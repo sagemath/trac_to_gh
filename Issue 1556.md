@@ -84,7 +84,7 @@ Merged in 2.9.1 alpha2
 
 ---
 
-archive/issue_events_001710.json:
+archive/issue_events_003903.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -92,7 +92,7 @@ archive/issue_events_001710.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1556",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1556#event-1710"
+    "url": "https://github.com/sagemath/sagetest/issues/1556#event-3903"
 }
 ```
 

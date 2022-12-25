@@ -95,7 +95,7 @@ It incorporates ncohen's original spkg, but with some general clean up.
 
 ---
 
-archive/issue_events_007100.json:
+archive/issue_events_016159.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -103,7 +103,7 @@ archive/issue_events_007100.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6868",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6868#event-7100"
+    "url": "https://github.com/sagemath/sagetest/issues/6868#event-16159"
 }
 ```
 

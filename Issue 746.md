@@ -87,6 +87,23 @@ archive/issue_comments_004355.json:
 
 ---
 
+archive/issue_events_002026.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2007-09-28T18:55:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/746",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/746#event-2026"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004356.json:
 ```json
 {
@@ -148,7 +165,41 @@ Let's try that again:
 
 ---
 
-archive/issue_events_000837.json:
+archive/issue_events_002027.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:52:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/746",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/746#event-2027"
+}
+```
+
+
+
+---
+
+archive/issue_events_002028.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:52:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/746",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/746#event-2028"
+}
+```
+
+
+
+---
+
+archive/issue_events_002029.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -156,7 +207,7 @@ archive/issue_events_000837.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/746",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/746#event-837"
+    "url": "https://github.com/sagemath/sagetest/issues/746#event-2029"
 }
 ```
 
@@ -177,3 +228,37 @@ archive/issue_comments_004357.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002030.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:10:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/746",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/746#event-2030"
+}
+```
+
+
+
+---
+
+archive/issue_events_002031.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:10:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/746",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/746#event-2031"
+}
+```

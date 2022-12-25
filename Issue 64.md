@@ -54,7 +54,7 @@ Changing assignee from somebody to dmharvey.
 
 ---
 
-archive/issue_events_000065.json:
+archive/issue_events_000130.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -62,7 +62,7 @@ archive/issue_events_000065.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/64",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/64#event-65"
+    "url": "https://github.com/sagemath/sagetest/issues/64#event-130"
 }
 ```
 

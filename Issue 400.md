@@ -65,6 +65,23 @@ Attachment [T400.hg](tarball://root/attachments/some-uuid/ticket400/T400.hg) by 
 
 ---
 
+archive/issue_events_000963.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T11:32:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/400",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/400#event-963"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001963.json:
 ```json
 {
@@ -121,7 +138,7 @@ Fixed for sage-2.8.3.
 
 ---
 
-archive/issue_events_000426.json:
+archive/issue_events_000964.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -129,6 +146,6 @@ archive/issue_events_000426.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/400",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/400#event-426"
+    "url": "https://github.com/sagemath/sagetest/issues/400#event-964"
 }
 ```

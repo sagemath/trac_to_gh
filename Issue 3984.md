@@ -619,6 +619,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_009122.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-10T04:04:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#event-9122"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028594.json:
 ```json
 {
@@ -680,6 +697,40 @@ We will deal with this post 3.1.2.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_009123.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-13T02:04:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#event-9123"
+}
+```
+
+
+
+---
+
+archive/issue_events_009124.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-13T02:04:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#event-9124"
+}
+```
 
 
 
@@ -902,6 +953,40 @@ This is really old and it must have been fixed at some point if tests actually p
 
 ---
 
+archive/issue_events_009125.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/bober",
+    "created_at": "2012-03-21T00:31:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#event-9125"
+}
+```
+
+
+
+---
+
+archive/issue_events_009126.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/bober",
+    "created_at": "2012-03-21T00:31:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#event-9126"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028604.json:
 ```json
 {
@@ -920,7 +1005,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004214.json:
+archive/issue_events_009127.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -928,6 +1013,6 @@ archive/issue_events_004214.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3984",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3984#event-4214"
+    "url": "https://github.com/sagemath/sagetest/issues/3984#event-9127"
 }
 ```

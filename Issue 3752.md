@@ -176,7 +176,7 @@ I have a performance concern, but this is #5086 now.
 
 ---
 
-archive/issue_events_003974.json:
+archive/issue_events_008601.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -184,7 +184,24 @@ archive/issue_events_003974.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3752",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3752#event-3974"
+    "url": "https://github.com/sagemath/sagetest/issues/3752#event-8601"
+}
+```
+
+
+
+---
+
+archive/issue_events_008602.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T19:31:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#event-8602"
 }
 ```
 

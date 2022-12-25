@@ -184,7 +184,7 @@ Wall time: 10.56 s
 
 ---
 
-archive/issue_events_001485.json:
+archive/issue_events_003487.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -192,7 +192,7 @@ archive/issue_events_001485.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1343",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1343#event-1485"
+    "url": "https://github.com/sagemath/sagetest/issues/1343#event-3487"
 }
 ```
 

@@ -64,6 +64,23 @@ Michael
 
 ---
 
+archive/issue_events_012053.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-08T08:23:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5206",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5206#event-12053"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039814.json:
 ```json
 {
@@ -82,7 +99,41 @@ This seems to be fixed already (probably by #7514).
 
 ---
 
-archive/issue_events_005461.json:
+archive/issue_events_012054.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T02:59:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5206",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5206#event-12054"
+}
+```
+
+
+
+---
+
+archive/issue_events_012055.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T02:59:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5206",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5206#event-12055"
+}
+```
+
+
+
+---
+
+archive/issue_events_012056.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -90,7 +141,7 @@ archive/issue_events_005461.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5206",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5206#event-5461"
+    "url": "https://github.com/sagemath/sagetest/issues/5206#event-12056"
 }
 ```
 
@@ -111,6 +162,40 @@ archive/issue_comments_039815.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_012057.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:38:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5206",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5206#event-12057"
+}
+```
+
+
+
+---
+
+archive/issue_events_012058.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:38:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5206",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5206#event-12058"
+}
+```
 
 
 

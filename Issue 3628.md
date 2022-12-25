@@ -81,6 +81,23 @@ diff -r 3fb5fefd13e4 -r 894ef09f7493 spkg-install
 
 ---
 
+archive/issue_events_008330.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-10T00:39:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3628",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3628#event-8330"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025622.json:
 ```json
 {
@@ -159,7 +176,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003847.json:
+archive/issue_events_008331.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -167,7 +184,7 @@ archive/issue_events_003847.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3628",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3628#event-3847"
+    "url": "https://github.com/sagemath/sagetest/issues/3628#event-8331"
 }
 ```
 

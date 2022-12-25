@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/6041
 
 ---
 
+archive/issue_events_014186.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-05-19T11:16:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#event-14186"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048012.json:
 ```json
 {
@@ -559,7 +576,7 @@ There is another patch at #6085 now: You should be working on top of `part-1` an
 
 ---
 
-archive/issue_events_006296.json:
+archive/issue_events_014187.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -567,7 +584,7 @@ archive/issue_events_006296.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6041",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6041#event-6296"
+    "url": "https://github.com/sagemath/sagetest/issues/6041#event-14187"
 }
 ```
 
@@ -588,6 +605,40 @@ archive/issue_comments_048019.json:
 ```
 
 This ticket is now a duplicate of #7608. The latter has a patch and an updated NetworkX 1.0rc1 package.
+
+
+
+---
+
+archive/issue_events_014188.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-05T23:29:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#event-14188"
+}
+```
+
+
+
+---
+
+archive/issue_events_014189.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-05T23:29:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#event-14189"
+}
+```
 
 
 

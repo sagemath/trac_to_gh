@@ -51,6 +51,23 @@ The proposed spkg is here:
 
 ---
 
+archive/issue_events_008772.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-13T02:47:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3828",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3828#event-8772"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027174.json:
 ```json
 {
@@ -73,7 +90,7 @@ Michael
 
 ---
 
-archive/issue_events_004052.json:
+archive/issue_events_008773.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -81,7 +98,7 @@ archive/issue_events_004052.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3828",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3828#event-4052"
+    "url": "https://github.com/sagemath/sagetest/issues/3828#event-8773"
 }
 ```
 

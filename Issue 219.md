@@ -27,6 +27,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/219
 
 ---
 
+archive/issue_events_000447.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-11-14T04:51:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/219",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/219#event-447"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000980.json:
 ```json
 {
@@ -45,7 +62,7 @@ This ticket is too vague to be useful at this point in time.  Please open up a m
 
 ---
 
-archive/issue_events_000232.json:
+archive/issue_events_000448.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -53,7 +70,7 @@ archive/issue_events_000232.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/219",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/219#event-232"
+    "url": "https://github.com/sagemath/sagetest/issues/219#event-448"
 }
 ```
 

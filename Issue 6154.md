@@ -49,7 +49,7 @@ Still passes doctests on my machine for those two files.  Looks good to me.  Pos
 
 ---
 
-archive/issue_events_006403.json:
+archive/issue_events_014474.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -57,7 +57,7 @@ archive/issue_events_006403.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6154",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6154#event-6403"
+    "url": "https://github.com/sagemath/sagetest/issues/6154#event-14474"
 }
 ```
 

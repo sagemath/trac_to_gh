@@ -119,7 +119,7 @@ Since this is a design decision and not a bug, I'm invalidating the ticket. If y
 
 ---
 
-archive/issue_events_004346.json:
+archive/issue_events_009362.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -127,6 +127,6 @@ archive/issue_events_004346.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4109",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4109#event-4346"
+    "url": "https://github.com/sagemath/sagetest/issues/4109#event-9362"
 }
 ```

@@ -159,7 +159,7 @@ Didn't seem to be the case when I applied the patch. The boxen.math url is just 
 
 ---
 
-archive/issue_events_009452.json:
+archive/issue_events_022893.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -167,7 +167,7 @@ archive/issue_events_009452.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9294#event-9452"
+    "url": "https://github.com/sagemath/sagetest/issues/9294#event-22893"
 }
 ```
 
@@ -188,3 +188,20 @@ archive/issue_comments_087385.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_022894.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-13T07:04:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9294",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9294#event-22894"
+}
+```

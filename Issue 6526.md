@@ -114,7 +114,7 @@ Positive review.
 
 ---
 
-archive/issue_events_006763.json:
+archive/issue_events_015399.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -122,7 +122,7 @@ archive/issue_events_006763.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6526",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6526#event-6763"
+    "url": "https://github.com/sagemath/sagetest/issues/6526#event-15399"
 }
 ```
 

@@ -944,7 +944,7 @@ I'm almost ready to give this a positive review, but it makes me uneasy, since i
 
 ---
 
-archive/issue_events_006592.json:
+archive/issue_events_014938.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -952,7 +952,7 @@ archive/issue_events_006592.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6348",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6348#event-6592"
+    "url": "https://github.com/sagemath/sagetest/issues/6348#event-14938"
 }
 ```
 
@@ -973,6 +973,23 @@ archive/issue_comments_050676.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_014939.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-02T07:37:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6348",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6348#event-14939"
+}
+```
 
 
 

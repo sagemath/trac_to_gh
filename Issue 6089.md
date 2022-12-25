@@ -476,6 +476,23 @@ I have not experimented with the scenarios where some of the tools (like convert
 
 ---
 
+archive/issue_events_014303.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T07:23:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6089",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6089#event-14303"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048429.json:
 ```json
 {
@@ -664,7 +681,7 @@ Nice work!
 
 ---
 
-archive/issue_events_006342.json:
+archive/issue_events_014304.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -672,7 +689,7 @@ archive/issue_events_006342.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6089#event-6342"
+    "url": "https://github.com/sagemath/sagetest/issues/6089#event-14304"
 }
 ```
 

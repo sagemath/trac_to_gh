@@ -82,7 +82,7 @@ This requires the new jmol spkg
 
 ---
 
-archive/issue_events_001824.json:
+archive/issue_events_004109.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -90,7 +90,7 @@ archive/issue_events_001824.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1665",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1665#event-1824"
+    "url": "https://github.com/sagemath/sagetest/issues/1665#event-4109"
 }
 ```
 

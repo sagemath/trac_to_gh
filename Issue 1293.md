@@ -237,7 +237,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_001435.json:
+archive/issue_events_003391.json:
 ```json
 {
     "actor": "https://github.com/zimmermann6",
@@ -245,7 +245,7 @@ archive/issue_events_001435.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1293#event-1435"
+    "url": "https://github.com/sagemath/sagetest/issues/1293#event-3391"
 }
 ```
 
@@ -284,6 +284,23 @@ archive/issue_comments_008101.json:
 ```
 
 Make sure you understand the procedure for closing tickets. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for more information.
+
+
+
+---
+
+archive/issue_events_003392.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-05T21:13:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#event-3392"
+}
+```
 
 
 

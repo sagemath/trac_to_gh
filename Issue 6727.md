@@ -66,7 +66,7 @@ Looks good.  I think "PNG's" should be "PNGs", but I still give this a positive 
 
 ---
 
-archive/issue_events_006961.json:
+archive/issue_events_015871.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -74,7 +74,7 @@ archive/issue_events_006961.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6727",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6727#event-6961"
+    "url": "https://github.com/sagemath/sagetest/issues/6727#event-15871"
 }
 ```
 

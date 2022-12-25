@@ -64,7 +64,7 @@ This isn't an issue so nevermind.
 
 ---
 
-archive/issue_events_001441.json:
+archive/issue_events_003401.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/jkantor",
@@ -72,6 +72,40 @@ archive/issue_events_001441.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1299",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1299#event-1441"
+    "url": "https://github.com/sagemath/sagetest/issues/1299#event-3401"
+}
+```
+
+
+
+---
+
+archive/issue_events_003402.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-30T06:58:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1299",
+    "milestone": "sage-2.8.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1299#event-3402"
+}
+```
+
+
+
+---
+
+archive/issue_events_003403.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-30T06:58:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1299",
+    "milestone": "sage-2.8.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1299#event-3403"
 }
 ```

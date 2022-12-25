@@ -32,6 +32,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1184
 
 ---
 
+archive/issue_events_003165.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-26T19:56:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1184",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1184#event-3165"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007288.json:
 ```json
 {
@@ -132,7 +149,7 @@ Merged in 2.8.15.alpha2.
 
 ---
 
-archive/issue_events_001316.json:
+archive/issue_events_003166.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -140,6 +157,6 @@ archive/issue_events_001316.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1184",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1184#event-1316"
+    "url": "https://github.com/sagemath/sagetest/issues/1184#event-3166"
 }
 ```

@@ -152,7 +152,7 @@ We should add a "timeout=-1" to that url so it waits for the computation to fini
 
 ---
 
-archive/issue_events_007330.json:
+archive/issue_events_016806.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -160,7 +160,7 @@ archive/issue_events_007330.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7108",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7108#event-7330"
+    "url": "https://github.com/sagemath/sagetest/issues/7108#event-16806"
 }
 ```
 
@@ -199,3 +199,20 @@ archive/issue_comments_058742.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_016807.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-14T17:12:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7108",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7108#event-16807"
+}
+```

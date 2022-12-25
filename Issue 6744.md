@@ -102,7 +102,7 @@ I don't see how this can hurt anything. Tried building anyways, no problem.
 
 ---
 
-archive/issue_events_006976.json:
+archive/issue_events_015908.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -110,7 +110,7 @@ archive/issue_events_006976.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6744",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6744#event-6976"
+    "url": "https://github.com/sagemath/sagetest/issues/6744#event-15908"
 }
 ```
 

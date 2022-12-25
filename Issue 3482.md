@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3482
 
 ---
 
+archive/issue_events_007926.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-06-20T06:27:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3482",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3482#event-7926"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024484.json:
 ```json
 {
@@ -365,7 +382,41 @@ I still want to see doctests that show a failing unpickle, but this is still goo
 
 ---
 
-archive/issue_events_003702.json:
+archive/issue_events_007927.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-07T03:34:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3482",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3482#event-7927"
+}
+```
+
+
+
+---
+
+archive/issue_events_007928.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-07T03:34:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3482",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3482#event-7928"
+}
+```
+
+
+
+---
+
+archive/issue_events_007929.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -373,7 +424,7 @@ archive/issue_events_003702.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3482#event-3702"
+    "url": "https://github.com/sagemath/sagetest/issues/3482#event-7929"
 }
 ```
 

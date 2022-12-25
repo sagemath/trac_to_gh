@@ -104,7 +104,7 @@ archive/issue_comments_002531.json:
 
 ---
 
-archive/issue_events_000542.json:
+archive/issue_events_001290.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -112,7 +112,7 @@ archive/issue_events_000542.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/507",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/507#event-542"
+    "url": "https://github.com/sagemath/sagetest/issues/507#event-1290"
 }
 ```
 

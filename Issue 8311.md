@@ -239,7 +239,7 @@ Merged [trac_8311_random_point_2.patch](http://trac.sagemath.org/sage_trac/attac
 
 ---
 
-archive/issue_events_008507.json:
+archive/issue_events_019880.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -247,7 +247,7 @@ archive/issue_events_008507.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#event-8507"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#event-19880"
 }
 ```
 

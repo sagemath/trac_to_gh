@@ -257,7 +257,24 @@ That's a lot of confirmation.
 
 ---
 
-archive/issue_events_008240.json:
+archive/issue_events_019235.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/johanbosman",
+    "created_at": "2011-12-22T09:31:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8029",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8029#event-19235"
+}
+```
+
+
+
+---
+
+archive/issue_events_019236.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -265,7 +282,7 @@ archive/issue_events_008240.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8029#event-8240"
+    "url": "https://github.com/sagemath/sagetest/issues/8029#event-19236"
 }
 ```
 

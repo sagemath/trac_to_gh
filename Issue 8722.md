@@ -161,7 +161,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008892.json:
+archive/issue_events_021169.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -169,7 +169,7 @@ archive/issue_events_008892.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8722",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8722#event-8892"
+    "url": "https://github.com/sagemath/sagetest/issues/8722#event-21169"
 }
 ```
 
@@ -190,3 +190,20 @@ archive/issue_comments_079526.json:
 ```
 
 Merged into 4.4.alpha2.
+
+
+
+---
+
+archive/issue_events_021170.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-24T12:45:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8722",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8722#event-21170"
+}
+```

@@ -76,6 +76,23 @@ Replying to [comment:1 jason]:
 
 ---
 
+archive/issue_events_016656.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-02T17:45:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7060",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7060#event-16656"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058308.json:
 ```json
 {
@@ -94,7 +111,7 @@ This is fixed by switching to the new notebook.
 
 ---
 
-archive/issue_events_007280.json:
+archive/issue_events_016657.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -102,7 +119,7 @@ archive/issue_events_007280.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7060",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7060#event-7280"
+    "url": "https://github.com/sagemath/sagetest/issues/7060#event-16657"
 }
 ```
 
@@ -123,3 +140,37 @@ archive/issue_comments_058309.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_016658.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-14T16:12:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7060",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7060#event-16658"
+}
+```
+
+
+
+---
+
+archive/issue_events_016659.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-14T16:12:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7060",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7060#event-16659"
+}
+```

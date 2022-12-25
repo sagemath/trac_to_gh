@@ -64,7 +64,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006377.json:
+archive/issue_events_014425.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -72,7 +72,7 @@ archive/issue_events_006377.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6127",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6127#event-6377"
+    "url": "https://github.com/sagemath/sagetest/issues/6127#event-14425"
 }
 ```
 
@@ -93,3 +93,20 @@ archive/issue_comments_048859.json:
 ```
 
 Merged in 4.0.rc1.
+
+
+
+---
+
+archive/issue_events_014426.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T00:32:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6127",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6127#event-14426"
+}
+```

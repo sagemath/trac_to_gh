@@ -89,7 +89,7 @@ Changing assignee from @mwhansen to @rlmill.
 
 ---
 
-archive/issue_events_001456.json:
+archive/issue_events_003442.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -97,7 +97,7 @@ archive/issue_events_001456.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1316",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1316#event-1456"
+    "url": "https://github.com/sagemath/sagetest/issues/1316#event-3442"
 }
 ```
 
@@ -136,3 +136,20 @@ archive/issue_comments_008349.json:
 ```
 
 Since there are tickets to include cliquer, this ticket is now officially silly.
+
+
+
+---
+
+archive/issue_events_003443.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-08T20:31:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1316",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1316#event-3443"
+}
+```

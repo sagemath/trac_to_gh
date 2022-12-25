@@ -414,7 +414,7 @@ positive review, and merged into 4.0.2.rc1
 
 ---
 
-archive/issue_events_006510.json:
+archive/issue_events_014671.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -422,7 +422,7 @@ archive/issue_events_006510.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6266",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6266#event-6510"
+    "url": "https://github.com/sagemath/sagetest/issues/6266#event-14671"
 }
 ```
 

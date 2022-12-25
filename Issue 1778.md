@@ -129,6 +129,23 @@ I'll try to fix this....
 
 ---
 
+archive/issue_events_004341.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-15T05:52:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#event-4341"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011231.json:
 ```json
 {
@@ -225,7 +242,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001935.json:
+archive/issue_events_004342.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -233,7 +250,7 @@ archive/issue_events_001935.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1778#event-1935"
+    "url": "https://github.com/sagemath/sagetest/issues/1778#event-4342"
 }
 ```
 

@@ -95,6 +95,23 @@ Changing component from basic arithmetic to memleak.
 
 ---
 
+archive/issue_events_001338.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:34:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/520",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/520#event-1338"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002622.json:
 ```json
 {
@@ -193,7 +210,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000559.json:
+archive/issue_events_001339.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -201,7 +218,7 @@ archive/issue_events_000559.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/520",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/520#event-559"
+    "url": "https://github.com/sagemath/sagetest/issues/520#event-1339"
 }
 ```
 

@@ -167,7 +167,24 @@ Looks good to me.  I'll make these changes in the ReST version too.
 
 ---
 
-archive/issue_events_003753.json:
+archive/issue_events_008066.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-16T03:53:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#event-8066"
+}
+```
+
+
+
+---
+
+archive/issue_events_008067.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -175,7 +192,7 @@ archive/issue_events_003753.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3534",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3534#event-3753"
+    "url": "https://github.com/sagemath/sagetest/issues/3534#event-8067"
 }
 ```
 

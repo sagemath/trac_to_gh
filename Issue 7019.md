@@ -384,7 +384,7 @@ I'm a little confused on how to use the spkg-check script, but that's not your f
 
 ---
 
-archive/issue_events_007241.json:
+archive/issue_events_016471.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -392,7 +392,24 @@ archive/issue_events_007241.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7019",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7019#event-7241"
+    "url": "https://github.com/sagemath/sagetest/issues/7019#event-16471"
+}
+```
+
+
+
+---
+
+archive/issue_events_016472.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-25T06:52:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7019",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7019#event-16472"
 }
 ```
 

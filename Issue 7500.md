@@ -64,7 +64,7 @@ Closing deprecated notebook tickets
 
 ---
 
-archive/issue_events_007728.json:
+archive/issue_events_017777.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -72,6 +72,6 @@ archive/issue_events_007728.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7500",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7500#event-7728"
+    "url": "https://github.com/sagemath/sagetest/issues/7500#event-17777"
 }
 ```

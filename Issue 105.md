@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/105
 
 ---
 
+archive/issue_events_000209.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:13:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/105",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/105#event-209"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000491.json:
 ```json
 {
@@ -150,6 +167,40 @@ In fact, the fourth-lowest remaining, I think.
 
 ---
 
+archive/issue_events_000210.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-04-04T18:11:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/105",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/105#event-210"
+}
+```
+
+
+
+---
+
+archive/issue_events_000211.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-04-04T18:11:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/105",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/105#event-211"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000497.json:
 ```json
 {
@@ -222,7 +273,7 @@ closing positively reviewed duplicates
 
 ---
 
-archive/issue_events_000109.json:
+archive/issue_events_000212.json:
 ```json
 {
     "actor": "https://github.com/videlec",
@@ -230,6 +281,6 @@ archive/issue_events_000109.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/105#event-109"
+    "url": "https://github.com/sagemath/sagetest/issues/105#event-212"
 }
 ```

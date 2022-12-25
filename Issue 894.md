@@ -329,6 +329,57 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_002475.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:34:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/894",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/894#event-2475"
+}
+```
+
+
+
+---
+
+archive/issue_events_002476.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/894",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/894#event-2476"
+}
+```
+
+
+
+---
+
+archive/issue_events_002477.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/894",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/894#event-2477"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005485.json:
 ```json
 {
@@ -342,6 +393,40 @@ archive/issue_comments_005485.json:
 ```
 
 I'm attaching a patch that fixes about half or more of the memory leaks above (many of them are now irrelevant due to a rewrite of the GF(2)-stuff by malb). I think we should close this ticket and wait until mabshoff valgrinds the directory again to open more to fix. Also, these aren't super-high priority: any "production" code that uses parts of NTL in a serious way should often be using NTL directly, not going through the wrapper (for speed).
+
+
+
+---
+
+archive/issue_events_002478.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2007-11-03T18:14:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/894",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/894#event-2478"
+}
+```
+
+
+
+---
+
+archive/issue_events_002479.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2007-11-03T18:14:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/894",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/894#event-2479"
+}
+```
 
 
 
@@ -437,7 +522,7 @@ Previous version of this patch didn't actually work. This should work fine. I di
 
 ---
 
-archive/issue_events_001008.json:
+archive/issue_events_002480.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -445,7 +530,7 @@ archive/issue_events_001008.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/894",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/894#event-1008"
+    "url": "https://github.com/sagemath/sagetest/issues/894#event-2480"
 }
 ```
 

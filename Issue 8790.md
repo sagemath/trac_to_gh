@@ -76,6 +76,23 @@ Changing keywords from "" to "beginner doctest documentation".
 
 ---
 
+archive/issue_events_021424.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8790",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8790#event-21424"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080352.json:
 ```json
 {
@@ -180,6 +197,108 @@ fix for the combine function #15262
 
 ---
 
+archive/issue_events_021425.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8790",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8790#event-21425"
+}
+```
+
+
+
+---
+
+archive/issue_events_021426.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8790",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8790#event-21426"
+}
+```
+
+
+
+---
+
+archive/issue_events_021427.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8790",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8790#event-21427"
+}
+```
+
+
+
+---
+
+archive/issue_events_021428.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8790",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8790#event-21428"
+}
+```
+
+
+
+---
+
+archive/issue_events_021429.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-06-22T14:27:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8790",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8790#event-21429"
+}
+```
+
+
+
+---
+
+archive/issue_events_021430.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-06-22T14:27:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8790",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8790#event-21430"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080357.json:
 ```json
 {
@@ -260,7 +379,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008955.json:
+archive/issue_events_021431.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -268,6 +387,6 @@ archive/issue_events_008955.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8790#event-8955"
+    "url": "https://github.com/sagemath/sagetest/issues/8790#event-21431"
 }
 ```

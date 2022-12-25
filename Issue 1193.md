@@ -65,6 +65,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1193
 
 ---
 
+archive/issue_events_003187.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-17T18:10:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1193",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1193#event-3187"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007384.json:
 ```json
 {
@@ -100,6 +117,40 @@ archive/issue_comments_007385.json:
 ```
 
 The error message suggests corruption of the patch file itself.
+
+
+
+---
+
+archive/issue_events_003188.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:08:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1193",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1193#event-3188"
+}
+```
+
+
+
+---
+
+archive/issue_events_003189.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:08:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1193",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1193#event-3189"
+}
+```
 
 
 
@@ -141,7 +192,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_001329.json:
+archive/issue_events_003190.json:
 ```json
 {
     "actor": "https://github.com/jvoight",
@@ -149,6 +200,6 @@ archive/issue_events_001329.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1193",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1193#event-1329"
+    "url": "https://github.com/sagemath/sagetest/issues/1193#event-3190"
 }
 ```

@@ -64,7 +64,7 @@ I can't speak to mathematical correctness, but the patch looks good to me.  Appl
 
 ---
 
-archive/issue_events_001863.json:
+archive/issue_events_004160.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +72,7 @@ archive/issue_events_001863.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1704",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1704#event-1863"
+    "url": "https://github.com/sagemath/sagetest/issues/1704#event-4160"
 }
 ```
 

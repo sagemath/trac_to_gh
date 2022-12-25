@@ -58,6 +58,91 @@ Issue created by migration from https://trac.sagemath.org/ticket/790
 
 ---
 
+archive/issue_events_002188.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-04T19:50:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/790",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/790#event-2188"
+}
+```
+
+
+
+---
+
+archive/issue_events_002189.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T05:57:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/790",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/790#event-2189"
+}
+```
+
+
+
+---
+
+archive/issue_events_002190.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T05:57:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/790",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/790#event-2190"
+}
+```
+
+
+
+---
+
+archive/issue_events_002191.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:07:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/790",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/790#event-2191"
+}
+```
+
+
+
+---
+
+archive/issue_events_002192.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:07:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/790",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/790#event-2192"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004738.json:
 ```json
 {
@@ -94,7 +179,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000899.json:
+archive/issue_events_002193.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -102,6 +187,6 @@ archive/issue_events_000899.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/790",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/790#event-899"
+    "url": "https://github.com/sagemath/sagetest/issues/790#event-2193"
 }
 ```

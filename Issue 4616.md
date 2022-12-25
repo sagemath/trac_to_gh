@@ -206,6 +206,23 @@ Hope this is sufficient for a positive review.
 
 ---
 
+archive/issue_events_010487.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:26:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4616",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4616#event-10487"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034586.json:
 ```json
 {
@@ -224,7 +241,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004865.json:
+archive/issue_events_010488.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -232,7 +249,7 @@ archive/issue_events_004865.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4616#event-4865"
+    "url": "https://github.com/sagemath/sagetest/issues/4616#event-10488"
 }
 ```
 

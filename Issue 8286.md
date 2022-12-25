@@ -115,7 +115,7 @@ Yes, it works for me now.
 
 ---
 
-archive/issue_events_008484.json:
+archive/issue_events_019826.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -123,7 +123,7 @@ archive/issue_events_008484.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8286",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8286#event-8484"
+    "url": "https://github.com/sagemath/sagetest/issues/8286#event-19826"
 }
 ```
 
@@ -144,3 +144,20 @@ archive/issue_comments_073254.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_019827.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2011-02-24T06:15:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8286",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8286#event-19827"
+}
+```

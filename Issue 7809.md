@@ -501,7 +501,7 @@ This ticket also fixes #5885, so that should be closed when this is.
 
 ---
 
-archive/issue_events_008023.json:
+archive/issue_events_018700.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -509,7 +509,7 @@ archive/issue_events_008023.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7809#event-8023"
+    "url": "https://github.com/sagemath/sagetest/issues/7809#event-18700"
 }
 ```
 

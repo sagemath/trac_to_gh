@@ -93,7 +93,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_004776.json:
+archive/issue_events_010314.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/ronanpaixao",
@@ -101,7 +101,7 @@ archive/issue_events_004776.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4530",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4530#event-4776"
+    "url": "https://github.com/sagemath/sagetest/issues/4530#event-10314"
 }
 ```
 
@@ -124,3 +124,20 @@ archive/issue_comments_033681.json:
 Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket4530/sage0.png) by ronanpaixao created at 2008-11-15 19:03:48
 
 Duplicate of bug #4529 (Submitted two times)
+
+
+
+---
+
+archive/issue_events_010315.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-20T10:22:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4530",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4530#event-10315"
+}
+```

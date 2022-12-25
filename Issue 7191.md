@@ -477,6 +477,23 @@ And now that I've put you back to work anyway, let's remove the C-style brackets
 
 ---
 
+archive/issue_events_017024.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7191",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7191#event-17024"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059465.json:
 ```json
 {
@@ -535,6 +552,40 @@ New commits:
 
 ---
 
+archive/issue_events_017025.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7191",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7191#event-17025"
+}
+```
+
+
+
+---
+
+archive/issue_events_017026.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7191",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7191#event-17026"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059468.json:
 ```json
 {
@@ -566,6 +617,40 @@ archive/issue_comments_059469.json:
 ```
 
 There was a merge conflict with the current development branch.  I also fixed a doctest and made the changes suggested by Johan in comment:9.  If you agree with these, it is a positive review from me.
+
+
+
+---
+
+archive/issue_events_017027.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7191",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7191#event-17027"
+}
+```
+
+
+
+---
+
+archive/issue_events_017028.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7191",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7191#event-17028"
+}
+```
 
 
 
@@ -625,7 +710,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007410.json:
+archive/issue_events_017029.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -633,6 +718,6 @@ archive/issue_events_007410.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7191#event-7410"
+    "url": "https://github.com/sagemath/sagetest/issues/7191#event-17029"
 }
 ```

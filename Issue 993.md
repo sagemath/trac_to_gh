@@ -121,7 +121,7 @@ applied to 2.8.11.alpha0
 
 ---
 
-archive/issue_events_001116.json:
+archive/issue_events_002740.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -129,6 +129,6 @@ archive/issue_events_001116.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/993",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/993#event-1116"
+    "url": "https://github.com/sagemath/sagetest/issues/993#event-2740"
 }
 ```

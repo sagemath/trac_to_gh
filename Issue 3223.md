@@ -66,6 +66,23 @@ To referee this 3-line patch, just verify that clearly I didn't break anything, 
 
 ---
 
+archive/issue_events_007252.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-11-17T15:49:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3223",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3223#event-7252"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022262.json:
 ```json
 {
@@ -138,7 +155,7 @@ Merged in Sage 3.2.rc2
 
 ---
 
-archive/issue_events_003442.json:
+archive/issue_events_007253.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -146,7 +163,7 @@ archive/issue_events_003442.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3223#event-3442"
+    "url": "https://github.com/sagemath/sagetest/issues/3223#event-7253"
 }
 ```
 

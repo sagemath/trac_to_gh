@@ -516,7 +516,24 @@ Specifically in the major revision I'm working on, not here.
 
 ---
 
-archive/issue_events_009029.json:
+archive/issue_events_021644.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-29T13:25:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8867",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8867#event-21644"
+}
+```
+
+
+
+---
+
+archive/issue_events_021645.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -524,7 +541,7 @@ archive/issue_events_009029.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8867#event-9029"
+    "url": "https://github.com/sagemath/sagetest/issues/8867#event-21645"
 }
 ```
 

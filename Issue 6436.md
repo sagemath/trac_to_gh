@@ -99,7 +99,7 @@ Attachment [ref_6436.patch](tarball://root/attachments/some-uuid/ticket6436/ref_
 
 ---
 
-archive/issue_events_006677.json:
+archive/issue_events_015183.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -107,7 +107,7 @@ archive/issue_events_006677.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6436",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6436#event-6677"
+    "url": "https://github.com/sagemath/sagetest/issues/6436#event-15183"
 }
 ```
 

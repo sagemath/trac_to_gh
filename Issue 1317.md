@@ -215,7 +215,7 @@ I'd say this could be closed.  Eventually we should figure out how to make it a 
 
 ---
 
-archive/issue_events_001457.json:
+archive/issue_events_003444.json:
 ```json
 {
     "actor": "https://github.com/nathanncohen",
@@ -223,7 +223,24 @@ archive/issue_events_001457.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1317#event-1457"
+    "url": "https://github.com/sagemath/sagetest/issues/1317#event-3444"
+}
+```
+
+
+
+---
+
+archive/issue_events_003445.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2010-02-27T13:33:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1317",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1317#event-3445"
 }
 ```
 

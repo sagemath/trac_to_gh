@@ -76,6 +76,23 @@ I don't know what happened as a result yet.
 
 ---
 
+archive/issue_events_003702.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-12T13:26:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1449",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1449#event-3702"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009310.json:
 ```json
 {
@@ -158,7 +175,7 @@ I posted a slight polish patch.
 
 ---
 
-archive/issue_events_001596.json:
+archive/issue_events_003703.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -166,7 +183,7 @@ archive/issue_events_001596.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1449",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1449#event-1596"
+    "url": "https://github.com/sagemath/sagetest/issues/1449#event-3703"
 }
 ```
 

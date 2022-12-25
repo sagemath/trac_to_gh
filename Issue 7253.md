@@ -83,6 +83,23 @@ This has been resolved upstream (see previous Singular link), so I propose to cl
 
 ---
 
+archive/issue_events_017166.json:
+```json
+{
+    "actor": "https://github.com/kedlaya",
+    "created_at": "2017-10-19T06:11:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7253",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7253#event-17166"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060139.json:
 ```json
 {
@@ -119,7 +136,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007474.json:
+archive/issue_events_017167.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -127,7 +144,7 @@ archive/issue_events_007474.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7253",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7253#event-7474"
+    "url": "https://github.com/sagemath/sagetest/issues/7253#event-17167"
 }
 ```
 

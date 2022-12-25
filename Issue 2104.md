@@ -46,6 +46,23 @@ Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket2104/deps.pat
 
 ---
 
+archive/issue_events_005048.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-08T23:40:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2104",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2104#event-5048"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013691.json:
 ```json
 {
@@ -68,7 +85,7 @@ Michael
 
 ---
 
-archive/issue_events_002264.json:
+archive/issue_events_005049.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -76,7 +93,7 @@ archive/issue_events_002264.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2104",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2104#event-2264"
+    "url": "https://github.com/sagemath/sagetest/issues/2104#event-5049"
 }
 ```
 

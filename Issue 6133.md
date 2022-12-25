@@ -66,6 +66,23 @@ No hurry, so this should go in 4.0.1.  But I also read it, and it's a positive r
 
 ---
 
+archive/issue_events_014440.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T07:20:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6133",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6133#event-14440"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048894.json:
 ```json
 {
@@ -154,7 +171,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006382.json:
+archive/issue_events_014441.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -162,7 +179,7 @@ archive/issue_events_006382.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6133#event-6382"
+    "url": "https://github.com/sagemath/sagetest/issues/6133#event-14441"
 }
 ```
 
@@ -185,3 +202,37 @@ archive/issue_comments_048898.json:
 The new patch works.
 
 Merged in 4.0.rc2.
+
+
+
+---
+
+archive/issue_events_014442.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T20:01:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6133",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6133#event-14442"
+}
+```
+
+
+
+---
+
+archive/issue_events_014443.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T20:01:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6133",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6133#event-14443"
+}
+```

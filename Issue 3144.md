@@ -142,7 +142,7 @@ stupid mistake by me, since var is defined in the list...
 
 ---
 
-archive/issue_events_003360.json:
+archive/issue_events_007104.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -150,6 +150,23 @@ archive/issue_events_003360.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3144",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3144#event-3360"
+    "url": "https://github.com/sagemath/sagetest/issues/3144#event-7104"
+}
+```
+
+
+
+---
+
+archive/issue_events_007105.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:55:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3144",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3144#event-7105"
 }
 ```

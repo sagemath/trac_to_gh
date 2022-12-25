@@ -98,6 +98,23 @@ this should fix the problem pretty well
 
 ---
 
+archive/issue_events_001658.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-12T18:32:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/622",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/622#event-1658"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003188.json:
 ```json
 {
@@ -116,7 +133,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000680.json:
+archive/issue_events_001659.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -124,6 +141,6 @@ archive/issue_events_000680.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/622",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/622#event-680"
+    "url": "https://github.com/sagemath/sagetest/issues/622#event-1659"
 }
 ```

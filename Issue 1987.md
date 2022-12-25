@@ -172,7 +172,7 @@ Ok, I consider John's review to be a positive one. Changing the subject accordin
 
 ---
 
-archive/issue_events_002143.json:
+archive/issue_events_004793.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -180,7 +180,7 @@ archive/issue_events_002143.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1987",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1987#event-2143"
+    "url": "https://github.com/sagemath/sagetest/issues/1987#event-4793"
 }
 ```
 

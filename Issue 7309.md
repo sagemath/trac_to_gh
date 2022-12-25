@@ -171,7 +171,7 @@ To the extent that it counts, my review is positive.
 
 ---
 
-archive/issue_events_007532.json:
+archive/issue_events_017321.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -179,7 +179,7 @@ archive/issue_events_007532.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7309",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7309#event-7532"
+    "url": "https://github.com/sagemath/sagetest/issues/7309#event-17321"
 }
 ```
 
@@ -236,3 +236,20 @@ archive/issue_comments_060935.json:
 ```
 
 (by the way mpatel gave it a positive-ish review, and I give it a positive review).
+
+
+
+---
+
+archive/issue_events_017322.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:44:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7309",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7309#event-17322"
+}
+```

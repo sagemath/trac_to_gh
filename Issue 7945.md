@@ -74,6 +74,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_019010.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-06-29T11:24:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7945",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7945#event-19010"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069202.json:
 ```json
 {
@@ -110,7 +127,7 @@ I'm setting this to "positive review" to bring it to the attention of the releas
 
 ---
 
-archive/issue_events_008161.json:
+archive/issue_events_019011.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -118,7 +135,41 @@ archive/issue_events_008161.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7945",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7945#event-8161"
+    "url": "https://github.com/sagemath/sagetest/issues/7945#event-19011"
+}
+```
+
+
+
+---
+
+archive/issue_events_019012.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-20T07:52:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7945",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7945#event-19012"
+}
+```
+
+
+
+---
+
+archive/issue_events_019013.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-20T07:52:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7945",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7945#event-19013"
 }
 ```
 

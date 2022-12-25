@@ -201,7 +201,7 @@ Merged "trac_8502-mpoly.patch" in 4.4.alpha0.
 
 ---
 
-archive/issue_events_008682.json:
+archive/issue_events_020416.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -209,6 +209,6 @@ archive/issue_events_008682.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8502#event-8682"
+    "url": "https://github.com/sagemath/sagetest/issues/8502#event-20416"
 }
 ```

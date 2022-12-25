@@ -48,7 +48,7 @@ Attachment [sf_fix.patch](tarball://root/attachments/some-uuid/ticket1025/sf_fix
 
 ---
 
-archive/issue_events_001149.json:
+archive/issue_events_002800.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -56,7 +56,7 @@ archive/issue_events_001149.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1025",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1025#event-1149"
+    "url": "https://github.com/sagemath/sagetest/issues/1025#event-2800"
 }
 ```
 

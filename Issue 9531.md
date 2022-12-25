@@ -77,7 +77,24 @@ I've created #9533 to update the version of GSL and to fix the spkg-check issues
 
 ---
 
-archive/issue_events_009679.json:
+archive/issue_events_023682.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-15T02:03:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9531",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9531#event-23682"
+}
+```
+
+
+
+---
+
+archive/issue_events_023683.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -85,7 +102,7 @@ archive/issue_events_009679.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9531",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9531#event-9679"
+    "url": "https://github.com/sagemath/sagetest/issues/9531#event-23683"
 }
 ```
 

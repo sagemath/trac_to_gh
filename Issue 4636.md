@@ -270,6 +270,23 @@ I agree with malb.
 
 ---
 
+archive/issue_events_010571.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2012-05-28T07:33:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#event-10571"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034806.json:
 ```json
 {
@@ -324,7 +341,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_004883.json:
+archive/issue_events_010572.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -332,6 +349,6 @@ archive/issue_events_004883.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4636#event-4883"
+    "url": "https://github.com/sagemath/sagetest/issues/4636#event-10572"
 }
 ```

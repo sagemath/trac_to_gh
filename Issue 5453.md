@@ -1193,7 +1193,7 @@ Due to differences in the interface of uni- and multivariate polynomials, a bug 
 
 ---
 
-archive/issue_events_005707.json:
+archive/issue_events_012738.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -1201,7 +1201,7 @@ archive/issue_events_005707.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5453#event-5707"
+    "url": "https://github.com/sagemath/sagetest/issues/5453#event-12738"
 }
 ```
 
@@ -1222,6 +1222,23 @@ archive/issue_comments_042177.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_012739.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-04T18:14:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5453",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5453#event-12739"
+}
+```
 
 
 

@@ -128,7 +128,7 @@ Replaced SAGE_ROOT/README.txt with the README.txt here in 4.5.2.alpha1.
 
 ---
 
-archive/issue_events_009384.json:
+archive/issue_events_022715.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -136,7 +136,7 @@ archive/issue_events_009384.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9226#event-9384"
+    "url": "https://github.com/sagemath/sagetest/issues/9226#event-22715"
 }
 ```
 
@@ -198,7 +198,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009385.json:
+archive/issue_events_022716.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -206,7 +206,7 @@ archive/issue_events_009385.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9226#event-9385"
+    "url": "https://github.com/sagemath/sagetest/issues/9226#event-22716"
 }
 ```
 
@@ -304,7 +304,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009386.json:
+archive/issue_events_022717.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -312,7 +312,7 @@ archive/issue_events_009386.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9226#event-9386"
+    "url": "https://github.com/sagemath/sagetest/issues/9226#event-22717"
 }
 ```
 

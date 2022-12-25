@@ -39,6 +39,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/154
 
 ---
 
+archive/issue_events_000285.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:57:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/154",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/154#event-285"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000697.json:
 ```json
 {
@@ -75,7 +92,7 @@ This is now fixed.
 
 ---
 
-archive/issue_events_000160.json:
+archive/issue_events_000286.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -83,6 +100,6 @@ archive/issue_events_000160.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/154",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/154#event-160"
+    "url": "https://github.com/sagemath/sagetest/issues/154#event-286"
 }
 ```

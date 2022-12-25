@@ -71,7 +71,7 @@ Note that dsage is so broken that it isn't even possible to test this out.  See 
 
 ---
 
-archive/issue_events_006056.json:
+archive/issue_events_013633.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -79,7 +79,7 @@ archive/issue_events_006056.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5807",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5807#event-6056"
+    "url": "https://github.com/sagemath/sagetest/issues/5807#event-13633"
 }
 ```
 
@@ -118,3 +118,20 @@ archive/issue_comments_045524.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_013634.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T09:58:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5807",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5807#event-13634"
+}
+```

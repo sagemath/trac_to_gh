@@ -68,7 +68,24 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_events_000181.json:
+archive/issue_events_000320.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:14:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/173",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/173#event-320"
+}
+```
+
+
+
+---
+
+archive/issue_events_000321.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -76,7 +93,7 @@ archive/issue_events_000181.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/173",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/173#event-181"
+    "url": "https://github.com/sagemath/sagetest/issues/173#event-321"
 }
 ```
 
@@ -140,6 +157,40 @@ archive/issue_comments_000793.json:
 "The computer allows you to make mistakes faster than any other invention, with the possible exception of handguns and tequila."
 ```
 
+
+
+
+---
+
+archive/issue_events_000322.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-03T19:04:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/173",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/173#event-322"
+}
+```
+
+
+
+---
+
+archive/issue_events_000323.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-03T19:04:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/173",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/173#event-323"
+}
+```
 
 
 

@@ -98,7 +98,7 @@ i confirm that the doctests correctly repesents the given testcase.
 
 ---
 
-archive/issue_events_006853.json:
+archive/issue_events_015614.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -106,7 +106,7 @@ archive/issue_events_006853.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6613",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6613#event-6853"
+    "url": "https://github.com/sagemath/sagetest/issues/6613#event-15614"
 }
 ```
 

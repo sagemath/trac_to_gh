@@ -78,6 +78,23 @@ I fixed this and put up a new patch that incorporates both this fix and Robert's
 
 ---
 
+archive/issue_events_005804.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:19:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2461",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2461#event-5804"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016644.json:
 ```json
 {
@@ -134,7 +151,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002640.json:
+archive/issue_events_005805.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -142,7 +159,7 @@ archive/issue_events_002640.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2461",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2461#event-2640"
+    "url": "https://github.com/sagemath/sagetest/issues/2461#event-5805"
 }
 ```
 

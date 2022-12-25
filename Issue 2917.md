@@ -181,7 +181,7 @@ This fixes the problem for me.
 
 ---
 
-archive/issue_events_003119.json:
+archive/issue_events_006678.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -189,7 +189,7 @@ archive/issue_events_003119.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2917#event-3119"
+    "url": "https://github.com/sagemath/sagetest/issues/2917#event-6678"
 }
 ```
 

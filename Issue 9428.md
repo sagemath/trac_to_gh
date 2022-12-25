@@ -1257,6 +1257,23 @@ This ticket has been superseded by #11471.
 
 ---
 
+archive/issue_events_023297.json:
+```json
+{
+    "actor": "https://github.com/kini",
+    "created_at": "2012-06-23T09:09:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9428",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9428#event-23297"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089859.json:
 ```json
 {
@@ -1275,7 +1292,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009583.json:
+archive/issue_events_023298.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1283,6 +1300,6 @@ archive/issue_events_009583.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9428#event-9583"
+    "url": "https://github.com/sagemath/sagetest/issues/9428#event-23298"
 }
 ```

@@ -718,6 +718,23 @@ checking above in Tableau.)
 
 ---
 
+archive/issue_events_005742.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:08:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2432",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2432#event-5742"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016424.json:
 ```json
 {
@@ -994,7 +1011,7 @@ Merged both patches in Sage 2.10.4.alpha0
 
 ---
 
-archive/issue_events_002609.json:
+archive/issue_events_005743.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1002,7 +1019,7 @@ archive/issue_events_002609.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2432#event-2609"
+    "url": "https://github.com/sagemath/sagetest/issues/2432#event-5743"
 }
 ```
 

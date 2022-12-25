@@ -57,7 +57,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003875.json:
+archive/issue_events_008378.json:
 ```json
 {
     "actor": "https://github.com/syazdani77",
@@ -65,7 +65,7 @@ archive/issue_events_003875.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3656",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3656#event-3875"
+    "url": "https://github.com/sagemath/sagetest/issues/3656#event-8378"
 }
 ```
 

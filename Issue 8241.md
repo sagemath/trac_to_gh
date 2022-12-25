@@ -71,6 +71,23 @@ I called the function `frobenius` rather than `witt_frobenius`.
 
 ---
 
+archive/issue_events_019712.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2010-11-22T09:51:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8241",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8241#event-19712"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072732.json:
 ```json
 {
@@ -401,7 +418,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008442.json:
+archive/issue_events_019713.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -409,6 +426,6 @@ archive/issue_events_008442.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8241#event-8442"
+    "url": "https://github.com/sagemath/sagetest/issues/8241#event-19713"
 }
 ```

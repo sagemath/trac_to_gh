@@ -140,7 +140,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_003203.json:
+archive/issue_events_006823.json:
 ```json
 {
     "actor": "https://github.com/dfdeshom",
@@ -148,6 +148,6 @@ archive/issue_events_003203.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2998",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2998#event-3203"
+    "url": "https://github.com/sagemath/sagetest/issues/2998#event-6823"
 }
 ```

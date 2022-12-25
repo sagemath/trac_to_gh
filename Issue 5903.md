@@ -240,6 +240,23 @@ for filename in os.listdir("."):
 
 ---
 
+archive/issue_events_013850.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
+    "created_at": "2011-05-19T20:10:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#event-13850"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046576.json:
 ```json
 {
@@ -271,6 +288,40 @@ archive/issue_comments_046577.json:
 ```
 
 Changing component from debian-package to packages.
+
+
+
+---
+
+archive/issue_events_013851.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#event-13851"
+}
+```
+
+
+
+---
+
+archive/issue_events_013852.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#event-13852"
+}
+```
 
 
 
@@ -402,7 +453,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006157.json:
+archive/issue_events_013853.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -410,6 +461,6 @@ archive/issue_events_006157.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5903#event-6157"
+    "url": "https://github.com/sagemath/sagetest/issues/5903#event-13853"
 }
 ```

@@ -204,7 +204,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007637.json:
+archive/issue_events_017536.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
@@ -212,7 +212,7 @@ archive/issue_events_007637.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7412",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7412#event-7637"
+    "url": "https://github.com/sagemath/sagetest/issues/7412#event-17536"
 }
 ```
 
@@ -235,3 +235,20 @@ archive/issue_comments_062262.json:
 I don't know if duplicate is the right word, but the patch in #7414 solves this problem as well, but improve also the performance. Sometimes it's useful to think a little bit more...
 
 Yann
+
+
+
+---
+
+archive/issue_events_017537.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-11-10T21:26:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7412",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7412#event-17537"
+}
+```

@@ -57,6 +57,23 @@ Patch file for piecewise derivative
 
 ---
 
+archive/issue_events_010732.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-04T01:24:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4690",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4690#event-10732"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035285.json:
 ```json
 {
@@ -125,7 +142,7 @@ Michael
 
 ---
 
-archive/issue_events_004936.json:
+archive/issue_events_010733.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -133,7 +150,7 @@ archive/issue_events_004936.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4690",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4690#event-4936"
+    "url": "https://github.com/sagemath/sagetest/issues/4690#event-10733"
 }
 ```
 

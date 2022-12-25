@@ -174,7 +174,7 @@ I can imagine similar problems arising, but this seems like a reasonable fix.  A
 
 ---
 
-archive/issue_events_001991.json:
+archive/issue_events_004450.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -182,7 +182,7 @@ archive/issue_events_001991.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1832",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1832#event-1991"
+    "url": "https://github.com/sagemath/sagetest/issues/1832#event-4450"
 }
 ```
 

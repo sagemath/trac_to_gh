@@ -353,6 +353,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2938
 
 ---
 
+archive/issue_events_006716.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-20T07:52:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2938",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2938#event-6716"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020195.json:
 ```json
 {
@@ -371,7 +388,7 @@ The patch at #2523 fixes this, too. (It was the same problem with data generated
 
 ---
 
-archive/issue_events_003140.json:
+archive/issue_events_006717.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -379,7 +396,7 @@ archive/issue_events_003140.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2938",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2938#event-3140"
+    "url": "https://github.com/sagemath/sagetest/issues/2938#event-6717"
 }
 ```
 
@@ -476,7 +493,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003141.json:
+archive/issue_events_006718.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -484,7 +501,7 @@ archive/issue_events_003141.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2938",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2938#event-3141"
+    "url": "https://github.com/sagemath/sagetest/issues/2938#event-6718"
 }
 ```
 
@@ -546,7 +563,7 @@ Attachment [trac-2938-doc.patch](tarball://root/attachments/some-uuid/ticket2938
 
 ---
 
-archive/issue_events_003142.json:
+archive/issue_events_006719.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -554,7 +571,7 @@ archive/issue_events_003142.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2938",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2938#event-3142"
+    "url": "https://github.com/sagemath/sagetest/issues/2938#event-6719"
 }
 ```
 

@@ -155,7 +155,7 @@ was-1162: #1162 is ready.
 
 ---
 
-archive/issue_events_001294.json:
+archive/issue_events_003125.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -163,7 +163,7 @@ archive/issue_events_001294.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1162",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1162#event-1294"
+    "url": "https://github.com/sagemath/sagetest/issues/1162#event-3125"
 }
 ```
 

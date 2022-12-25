@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1923
 
 ---
 
+archive/issue_events_004628.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-25T17:49:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1923",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1923#event-4628"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012162.json:
 ```json
 {
@@ -226,7 +243,7 @@ Merged prettyprint-checkbox-updated.patch in Sage 2.10.1.rc3
 
 ---
 
-archive/issue_events_002079.json:
+archive/issue_events_004629.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -234,6 +251,6 @@ archive/issue_events_002079.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1923#event-2079"
+    "url": "https://github.com/sagemath/sagetest/issues/1923#event-4629"
 }
 ```

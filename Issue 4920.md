@@ -83,6 +83,23 @@ I've added an additional patch which fixes the documentation for sage.modular.et
 
 ---
 
+archive/issue_events_011338.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-01-15T21:42:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#event-11338"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037266.json:
 ```json
 {
@@ -114,6 +131,40 @@ archive/issue_comments_037267.json:
 ```
 
 aargh, don't change the Milestone
+
+
+
+---
+
+archive/issue_events_011339.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-01-15T21:42:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#event-11339"
+}
+```
+
+
+
+---
+
+archive/issue_events_011340.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-01-15T21:42:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#event-11340"
+}
+```
 
 
 
@@ -221,7 +272,7 @@ Attachment [sage.modular-final.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_events_005163.json:
+archive/issue_events_011341.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -229,7 +280,7 @@ archive/issue_events_005163.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4920#event-5163"
+    "url": "https://github.com/sagemath/sagetest/issues/4920#event-11341"
 }
 ```
 

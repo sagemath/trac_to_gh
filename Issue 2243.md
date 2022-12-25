@@ -95,7 +95,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_002413.json:
+archive/issue_events_005329.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -103,7 +103,7 @@ archive/issue_events_002413.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2243",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2243#event-2413"
+    "url": "https://github.com/sagemath/sagetest/issues/2243#event-5329"
 }
 ```
 
@@ -137,3 +137,20 @@ I think Arnaud's comment is the correct one.  If you look at the (current) docum
                             automatically, and is usually about 5.
 ```
 
+
+
+
+---
+
+archive/issue_events_005330.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-04T21:29:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2243",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2243#event-5330"
+}
+```

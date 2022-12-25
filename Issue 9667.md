@@ -82,6 +82,23 @@ Attachment [9667.patch](tarball://root/attachments/some-uuid/ticket9667/9667.pat
 
 ---
 
+archive/issue_events_024114.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-09-15T17:12:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#event-24114"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093700.json:
 ```json
 {
@@ -136,7 +153,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009802.json:
+archive/issue_events_024115.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -144,7 +161,7 @@ archive/issue_events_009802.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9667#event-9802"
+    "url": "https://github.com/sagemath/sagetest/issues/9667#event-24115"
 }
 ```
 

@@ -73,6 +73,23 @@ Attachment [sage-4087.patch](tarball://root/attachments/some-uuid/ticket4087/sag
 
 ---
 
+archive/issue_events_009324.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-10T00:46:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4087",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4087#event-9324"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029427.json:
 ```json
 {
@@ -118,7 +135,7 @@ I take it that "sage -testall" has been done?  With or without "-long"?  Assumin
 
 ---
 
-archive/issue_events_004325.json:
+archive/issue_events_009325.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -126,7 +143,7 @@ archive/issue_events_004325.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4087",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4087#event-4325"
+    "url": "https://github.com/sagemath/sagetest/issues/4087#event-9325"
 }
 ```
 

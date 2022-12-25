@@ -120,6 +120,23 @@ rlm: are you saying that fixing #3877 and #3880 should fix the problem?
 
 ---
 
+archive/issue_events_008905.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-18T23:35:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3886",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3886#event-8905"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027672.json:
 ```json
 {
@@ -138,7 +155,7 @@ Fixed by the patch at #3880.
 
 ---
 
-archive/issue_events_004111.json:
+archive/issue_events_008906.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -146,7 +163,7 @@ archive/issue_events_004111.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3886",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3886#event-4111"
+    "url": "https://github.com/sagemath/sagetest/issues/3886#event-8906"
 }
 ```
 

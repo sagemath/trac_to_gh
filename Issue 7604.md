@@ -187,7 +187,7 @@ solevillar`@`gmail.com, could we get your name for the release notes?  Or, you c
 
 ---
 
-archive/issue_events_007830.json:
+archive/issue_events_018072.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -195,7 +195,7 @@ archive/issue_events_007830.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7604",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7604#event-7830"
+    "url": "https://github.com/sagemath/sagetest/issues/7604#event-18072"
 }
 ```
 
@@ -216,3 +216,20 @@ archive/issue_comments_064764.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018073.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-09T00:56:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#event-18073"
+}
+```

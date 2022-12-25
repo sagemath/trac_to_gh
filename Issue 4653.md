@@ -394,6 +394,23 @@ Franco
 
 ---
 
+archive/issue_events_010624.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-15T18:53:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4653",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4653#event-10624"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034969.json:
 ```json
 {
@@ -739,7 +756,7 @@ Positive review on words-import-fix.patch
 
 ---
 
-archive/issue_events_004902.json:
+archive/issue_events_010625.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -747,7 +764,7 @@ archive/issue_events_004902.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4653#event-4902"
+    "url": "https://github.com/sagemath/sagetest/issues/4653#event-10625"
 }
 ```
 

@@ -304,7 +304,7 @@ Paul
 
 ---
 
-archive/issue_events_009985.json:
+archive/issue_events_024816.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -312,7 +312,7 @@ archive/issue_events_009985.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9855#event-9985"
+    "url": "https://github.com/sagemath/sagetest/issues/9855#event-24816"
 }
 ```
 

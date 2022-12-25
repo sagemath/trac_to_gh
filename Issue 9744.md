@@ -830,7 +830,7 @@ Attachment [trac_9744-reviewer.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_events_009878.json:
+archive/issue_events_024407.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -838,7 +838,7 @@ archive/issue_events_009878.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9744#event-9878"
+    "url": "https://github.com/sagemath/sagetest/issues/9744#event-24407"
 }
 ```
 

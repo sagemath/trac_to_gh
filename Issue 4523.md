@@ -46,6 +46,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4523
 
 ---
 
+archive/issue_events_010286.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-16T08:57:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4523",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4523#event-10286"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033504.json:
 ```json
 {
@@ -88,6 +105,40 @@ I tested this with Firefox (Ubuntu, XP), IE7, IE8 beta, and Opera (Ubuntu and XP
 
 ---
 
+archive/issue_events_010287.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T02:34:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4523",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4523#event-10287"
+}
+```
+
+
+
+---
+
+archive/issue_events_010288.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T02:34:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4523",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4523#event-10288"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033506.json:
 ```json
 {
@@ -106,7 +157,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004767.json:
+archive/issue_events_010289.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -114,7 +165,7 @@ archive/issue_events_004767.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4523",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4523#event-4767"
+    "url": "https://github.com/sagemath/sagetest/issues/4523#event-10289"
 }
 ```
 

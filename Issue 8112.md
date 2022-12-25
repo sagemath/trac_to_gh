@@ -469,7 +469,7 @@ Positive review.
 
 ---
 
-archive/issue_events_008318.json:
+archive/issue_events_019426.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -477,7 +477,7 @@ archive/issue_events_008318.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8112#event-8318"
+    "url": "https://github.com/sagemath/sagetest/issues/8112#event-19426"
 }
 ```
 

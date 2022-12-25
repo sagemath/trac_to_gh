@@ -159,6 +159,23 @@ Applied patch to sage-4.7.1.alpha2 and did 'make testlong'.  All tests passed.  
 
 ---
 
+archive/issue_events_023378.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-16T21:34:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9453",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9453#event-23378"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090441.json:
 ```json
 {
@@ -177,7 +194,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009609.json:
+archive/issue_events_023379.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -185,6 +202,6 @@ archive/issue_events_009609.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9453",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9453#event-9609"
+    "url": "https://github.com/sagemath/sagetest/issues/9453#event-23379"
 }
 ```

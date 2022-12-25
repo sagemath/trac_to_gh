@@ -89,6 +89,23 @@ Replaces the first patch above.
 
 ---
 
+archive/issue_events_002502.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:24:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/904",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/904#event-2502"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005551.json:
 ```json
 {
@@ -107,7 +124,7 @@ This patch looks ready for inclusion. Jason -- do you notice any other functions
 
 ---
 
-archive/issue_events_001020.json:
+archive/issue_events_002503.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -115,7 +132,7 @@ archive/issue_events_001020.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/904#event-1020"
+    "url": "https://github.com/sagemath/sagetest/issues/904#event-2503"
 }
 ```
 

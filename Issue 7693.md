@@ -98,7 +98,7 @@ IU fixed that #5018 was never actually uploaded.
 
 ---
 
-archive/issue_events_007910.json:
+archive/issue_events_018381.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -106,7 +106,7 @@ archive/issue_events_007910.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7693",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7693#event-7910"
+    "url": "https://github.com/sagemath/sagetest/issues/7693#event-18381"
 }
 ```
 
@@ -127,3 +127,20 @@ archive/issue_comments_065895.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018382.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:39:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7693",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7693#event-18382"
+}
+```

@@ -95,6 +95,23 @@ Georg
 
 ---
 
+archive/issue_events_010722.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-15T18:42:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4683",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4683#event-10722"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035233.json:
 ```json
 {
@@ -194,7 +211,7 @@ I don't see any growth in memory usage anymore either. I guess we can safely clo
 
 ---
 
-archive/issue_events_004929.json:
+archive/issue_events_010723.json:
 ```json
 {
     "actor": "https://github.com/wjp",
@@ -202,7 +219,7 @@ archive/issue_events_004929.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4683",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4683#event-4929"
+    "url": "https://github.com/sagemath/sagetest/issues/4683#event-10723"
 }
 ```
 

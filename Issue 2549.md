@@ -129,6 +129,57 @@ edrex, sagenb has been reset, which means your class is not available anymore.  
 
 ---
 
+archive/issue_events_005968.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2549",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2549#event-5968"
+}
+```
+
+
+
+---
+
+archive/issue_events_005969.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2549",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2549#event-5969"
+}
+```
+
+
+
+---
+
+archive/issue_events_005970.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2549",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2549#event-5970"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017373.json:
 ```json
 {
@@ -142,6 +193,40 @@ archive/issue_comments_017373.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_005971.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-15T18:05:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2549",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2549#event-5971"
+}
+```
+
+
+
+---
+
+archive/issue_events_005972.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-15T18:05:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2549",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2549#event-5972"
+}
+```
 
 
 
@@ -210,7 +295,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002732.json:
+archive/issue_events_005973.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -218,7 +303,7 @@ archive/issue_events_002732.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2549",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2549#event-2732"
+    "url": "https://github.com/sagemath/sagetest/issues/2549#event-5973"
 }
 ```
 

@@ -453,7 +453,7 @@ Lukáš: in the future try to remember to add yourself as Author.
 
 ---
 
-archive/issue_events_008642.json:
+archive/issue_events_020305.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -461,7 +461,7 @@ archive/issue_events_008642.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#event-8642"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#event-20305"
 }
 ```
 

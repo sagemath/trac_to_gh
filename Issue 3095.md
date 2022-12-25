@@ -98,6 +98,23 @@ Changing assignee from boothby to mabshoff.
 
 ---
 
+archive/issue_events_006987.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-03T15:01:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3095",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3095#event-6987"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021321.json:
 ```json
 {
@@ -170,7 +187,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003311.json:
+archive/issue_events_006988.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -178,6 +195,6 @@ archive/issue_events_003311.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3095",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3095#event-3311"
+    "url": "https://github.com/sagemath/sagetest/issues/3095#event-6988"
 }
 ```

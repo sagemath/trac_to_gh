@@ -117,6 +117,23 @@ Attachment [2143.patch](tarball://root/attachments/some-uuid/ticket2143/2143.pat
 
 ---
 
+archive/issue_events_005128.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:02:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2143",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2143#event-5128"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014023.json:
 ```json
 {
@@ -153,7 +170,7 @@ I fixed some typos and formatting issues. Both 2143.patch and 2143-2.patch shoul
 
 ---
 
-archive/issue_events_002305.json:
+archive/issue_events_005129.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -161,7 +178,7 @@ archive/issue_events_002305.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2143#event-2305"
+    "url": "https://github.com/sagemath/sagetest/issues/2143#event-5129"
 }
 ```
 

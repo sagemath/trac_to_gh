@@ -64,7 +64,7 @@ Attachment [trac_6700-spell-check-geometry.patch](tarball://root/attachments/som
 
 ---
 
-archive/issue_events_006935.json:
+archive/issue_events_015791.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -72,7 +72,7 @@ archive/issue_events_006935.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6700",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6700#event-6935"
+    "url": "https://github.com/sagemath/sagetest/issues/6700#event-15791"
 }
 ```
 

@@ -216,7 +216,7 @@ Patch v3 at #6673 subsumes v2 here.  If/when the former merges, please close thi
 
 ---
 
-archive/issue_events_007425.json:
+archive/issue_events_017066.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -224,7 +224,7 @@ archive/issue_events_007425.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7204#event-7425"
+    "url": "https://github.com/sagemath/sagetest/issues/7204#event-17066"
 }
 ```
 

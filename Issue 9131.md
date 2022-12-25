@@ -61,6 +61,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9131
 
 ---
 
+archive/issue_events_022435.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T15:27:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9131",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9131#event-22435"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084979.json:
 ```json
 {
@@ -160,7 +177,7 @@ This went away when I used a new tarball.   So it's some random corruption...
 
 ---
 
-archive/issue_events_009289.json:
+archive/issue_events_022436.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -168,6 +185,40 @@ archive/issue_events_009289.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9131#event-9289"
+    "url": "https://github.com/sagemath/sagetest/issues/9131#event-22436"
+}
+```
+
+
+
+---
+
+archive/issue_events_022437.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-04T16:44:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9131",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9131#event-22437"
+}
+```
+
+
+
+---
+
+archive/issue_events_022438.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-04T16:44:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9131",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9131#event-22438"
 }
 ```

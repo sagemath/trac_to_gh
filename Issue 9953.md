@@ -73,6 +73,23 @@ Patch might depend on #9798, #10148, #10024. Should be logically independent, bu
 
 ---
 
+archive/issue_events_025112.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2010-10-25T11:46:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9953",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9953#event-25112"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099114.json:
 ```json
 {
@@ -410,7 +427,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_010082.json:
+archive/issue_events_025113.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -418,7 +435,7 @@ archive/issue_events_010082.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9953#event-10082"
+    "url": "https://github.com/sagemath/sagetest/issues/9953#event-25113"
 }
 ```
 

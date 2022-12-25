@@ -234,7 +234,7 @@ David roe says this *is* just a dupe of #919.
 
 ---
 
-archive/issue_events_001061.json:
+archive/issue_events_002600.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -242,7 +242,7 @@ archive/issue_events_001061.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/941",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/941#event-1061"
+    "url": "https://github.com/sagemath/sagetest/issues/941#event-2600"
 }
 ```
 
@@ -263,3 +263,20 @@ archive/issue_comments_005745.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002601.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-20T17:59:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/941",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/941#event-2601"
+}
+```

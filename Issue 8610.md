@@ -120,7 +120,7 @@ Merged "trac_8610.patch" in 4.4.alpha0.
 
 ---
 
-archive/issue_events_008781.json:
+archive/issue_events_020815.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -128,7 +128,7 @@ archive/issue_events_008781.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8610",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8610#event-8781"
+    "url": "https://github.com/sagemath/sagetest/issues/8610#event-20815"
 }
 ```
 

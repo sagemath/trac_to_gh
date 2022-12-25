@@ -157,7 +157,7 @@ Michael
 
 ---
 
-archive/issue_events_000455.json:
+archive/issue_events_001045.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -165,7 +165,7 @@ archive/issue_events_000455.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/428#event-455"
+    "url": "https://github.com/sagemath/sagetest/issues/428#event-1045"
 }
 ```
 

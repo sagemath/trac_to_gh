@@ -384,7 +384,7 @@ I'm still changing this to positive review since the patch fixes a bug and a mor
 
 ---
 
-archive/issue_events_008778.json:
+archive/issue_events_020805.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -392,7 +392,7 @@ archive/issue_events_008778.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#event-8778"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#event-20805"
 }
 ```
 

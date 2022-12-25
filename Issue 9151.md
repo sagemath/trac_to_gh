@@ -115,6 +115,23 @@ Superseded by #10508.
 
 ---
 
+archive/issue_events_022501.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jpflori",
+    "created_at": "2013-04-05T15:42:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9151",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9151#event-22501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085301.json:
 ```json
 {
@@ -151,7 +168,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009310.json:
+archive/issue_events_022502.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -159,6 +176,6 @@ archive/issue_events_009310.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9151",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9151#event-9310"
+    "url": "https://github.com/sagemath/sagetest/issues/9151#event-22502"
 }
 ```

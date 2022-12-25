@@ -63,7 +63,7 @@ sage: b.dot_product(u)
 
 ---
 
-archive/issue_events_000326.json:
+archive/issue_events_000714.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -71,7 +71,7 @@ archive/issue_events_000326.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/307",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/307#event-326"
+    "url": "https://github.com/sagemath/sagetest/issues/307#event-714"
 }
 ```
 

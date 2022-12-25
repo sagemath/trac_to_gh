@@ -96,7 +96,7 @@ I thought `MPolynomialRing` was set to be deprecated, see #2353.
 
 ---
 
-archive/issue_events_003490.json:
+archive/issue_events_007361.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -104,7 +104,7 @@ archive/issue_events_003490.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3271",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3271#event-3490"
+    "url": "https://github.com/sagemath/sagetest/issues/3271#event-7361"
 }
 ```
 

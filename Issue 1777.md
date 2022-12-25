@@ -115,7 +115,24 @@ Changing assignee from @williamstein to @jasongrout.
 
 ---
 
-archive/issue_events_001934.json:
+archive/issue_events_004339.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T14:50:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1777",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1777#event-4339"
+}
+```
+
+
+
+---
+
+archive/issue_events_004340.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -123,7 +140,7 @@ archive/issue_events_001934.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1777",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1777#event-1934"
+    "url": "https://github.com/sagemath/sagetest/issues/1777#event-4340"
 }
 ```
 

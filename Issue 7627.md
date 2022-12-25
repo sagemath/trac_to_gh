@@ -248,7 +248,7 @@ merged into sagenb-0.4.6
 
 ---
 
-archive/issue_events_007854.json:
+archive/issue_events_018130.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -256,7 +256,7 @@ archive/issue_events_007854.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7627",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7627#event-7854"
+    "url": "https://github.com/sagemath/sagetest/issues/7627#event-18130"
 }
 ```
 

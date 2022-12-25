@@ -51,7 +51,24 @@ Attachment [steenrod_odd.patch](tarball://root/attachments/some-uuid/ticket5523/
 
 ---
 
-archive/issue_events_005773.json:
+archive/issue_events_012952.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-25T08:16:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5523",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5523#event-12952"
+}
+```
+
+
+
+---
+
+archive/issue_events_012953.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -59,7 +76,7 @@ archive/issue_events_005773.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5523",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5523#event-5773"
+    "url": "https://github.com/sagemath/sagetest/issues/5523#event-12953"
 }
 ```
 

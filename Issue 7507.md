@@ -115,6 +115,23 @@ Sorry, I meant *closely* related.
 
 ---
 
+archive/issue_events_017794.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-05-08T20:11:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7507",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7507#event-17794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063401.json:
 ```json
 {
@@ -225,7 +242,7 @@ Nice catch to close this; tests pass.
 
 ---
 
-archive/issue_events_007735.json:
+archive/issue_events_017795.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -233,7 +250,7 @@ archive/issue_events_007735.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7507",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7507#event-7735"
+    "url": "https://github.com/sagemath/sagetest/issues/7507#event-17795"
 }
 ```
 

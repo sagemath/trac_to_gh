@@ -102,6 +102,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_021673.json:
+```json
+{
+    "actor": "https://github.com/jbandlow",
+    "created_at": "2010-05-05T13:16:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8877",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8877#event-21673"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081447.json:
 ```json
 {
@@ -138,7 +155,7 @@ Merged [trac_8877-k_bounded-as.2.patch](http://trac.sagemath.org/sage_trac/attac
 
 ---
 
-archive/issue_events_009035.json:
+archive/issue_events_021674.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -146,7 +163,7 @@ archive/issue_events_009035.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8877",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8877#event-9035"
+    "url": "https://github.com/sagemath/sagetest/issues/8877#event-21674"
 }
 ```
 

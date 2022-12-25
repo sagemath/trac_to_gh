@@ -48,7 +48,7 @@ Attachment [trac_6930_axes3d_frame_label.patch](tarball://root/attachments/some-
 
 ---
 
-archive/issue_events_007154.json:
+archive/issue_events_016303.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -56,7 +56,7 @@ archive/issue_events_007154.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6930",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6930#event-7154"
+    "url": "https://github.com/sagemath/sagetest/issues/6930#event-16303"
 }
 ```
 

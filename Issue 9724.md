@@ -88,6 +88,23 @@ From `#sage-devel` (IRC):
 
 ---
 
+archive/issue_events_024333.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2011-06-18T05:17:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9724",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9724#event-24333"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094839.json:
 ```json
 {
@@ -216,7 +233,7 @@ It does work.  This is not mentioned in the patch for #7496, though, so I'm addi
 
 ---
 
-archive/issue_events_009857.json:
+archive/issue_events_024334.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -224,7 +241,7 @@ archive/issue_events_009857.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9724#event-9857"
+    "url": "https://github.com/sagemath/sagetest/issues/9724#event-24334"
 }
 ```
 

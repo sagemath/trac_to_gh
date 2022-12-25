@@ -131,7 +131,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001915.json:
+archive/issue_events_004259.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -139,6 +139,23 @@ archive/issue_events_001915.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1757",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1757#event-1915"
+    "url": "https://github.com/sagemath/sagetest/issues/1757#event-4259"
+}
+```
+
+
+
+---
+
+archive/issue_events_004260.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-20T21:39:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1757",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1757#event-4260"
 }
 ```

@@ -120,6 +120,23 @@ I'm marking this as needs_info.  If you think it's not worth the trouble, I'll p
 
 ---
 
+archive/issue_events_018835.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-19T16:10:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7879",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7879#event-18835"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068343.json:
 ```json
 {
@@ -206,6 +223,40 @@ archive/issue_comments_068347.json:
 ```
 
 Robert, what is your opinion?  `sig_on()` and `sig_off()` became a lot faster since #9678, but they still take up some cycles.
+
+
+
+---
+
+archive/issue_events_018836.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2011-05-17T18:26:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7879",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7879#event-18836"
+}
+```
+
+
+
+---
+
+archive/issue_events_018837.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2011-05-17T18:26:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7879",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7879#event-18837"
+}
+```
 
 
 
@@ -625,7 +676,7 @@ Attached a rebased patch because of fuzz.
 
 ---
 
-archive/issue_events_008094.json:
+archive/issue_events_018838.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -633,7 +684,7 @@ archive/issue_events_008094.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7879#event-8094"
+    "url": "https://github.com/sagemath/sagetest/issues/7879#event-18838"
 }
 ```
 

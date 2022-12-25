@@ -126,7 +126,7 @@ Closely related: #378, #1484
 
 ---
 
-archive/issue_events_005419.json:
+archive/issue_events_011964.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -134,7 +134,7 @@ archive/issue_events_005419.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5169",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5169#event-5419"
+    "url": "https://github.com/sagemath/sagetest/issues/5169#event-11964"
 }
 ```
 
@@ -173,3 +173,20 @@ archive/issue_comments_039527.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_011965.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-16T04:35:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5169",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5169#event-11965"
+}
+```

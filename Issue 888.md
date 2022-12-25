@@ -68,6 +68,23 @@ I've disabled dsage doctesting for that file for sage-2.8.7, and moved this to 2
 
 ---
 
+archive/issue_events_002464.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-14T05:12:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/888",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/888#event-2464"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005461.json:
 ```json
 {
@@ -100,6 +117,40 @@ archive/issue_comments_005462.json:
 ```
 
 Changing assignee from @williamstein to @yqiang.
+
+
+
+---
+
+archive/issue_events_002465.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-19T16:13:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/888",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/888#event-2465"
+}
+```
+
+
+
+---
+
+archive/issue_events_002466.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T07:51:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/888",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/888#event-2466"
+}
+```
 
 
 
@@ -226,7 +277,7 @@ Ok, it's easy enough to check that dsage.setup() has been run (i.e. check that D
 
 ---
 
-archive/issue_events_001002.json:
+archive/issue_events_002467.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -234,7 +285,7 @@ archive/issue_events_001002.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/888#event-1002"
+    "url": "https://github.com/sagemath/sagetest/issues/888#event-2467"
 }
 ```
 
@@ -283,3 +334,37 @@ archive/issue_comments_005470.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002468.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-21T23:39:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/888",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/888#event-2468"
+}
+```
+
+
+
+---
+
+archive/issue_events_002469.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-21T23:39:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/888",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/888#event-2469"
+}
+```

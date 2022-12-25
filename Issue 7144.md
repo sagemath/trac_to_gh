@@ -63,7 +63,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007364.json:
+archive/issue_events_016891.json:
 ```json
 {
     "actor": "https://github.com/robert-marik",
@@ -71,7 +71,7 @@ archive/issue_events_007364.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7144",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7144#event-7364"
+    "url": "https://github.com/sagemath/sagetest/issues/7144#event-16891"
 }
 ```
 
@@ -92,3 +92,20 @@ archive/issue_comments_059077.json:
 ```
 
 Closed as duplicate of #6479.
+
+
+
+---
+
+archive/issue_events_016892.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-14T17:11:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7144",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7144#event-16892"
+}
+```

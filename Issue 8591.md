@@ -95,6 +95,23 @@ Nathann
 
 ---
 
+archive/issue_events_020753.json:
+```json
+{
+    "actor": "https://github.com/ohanar",
+    "created_at": "2012-06-07T08:48:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8591",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8591#event-20753"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077689.json:
 ```json
 {
@@ -131,7 +148,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008768.json:
+archive/issue_events_020754.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -139,7 +156,7 @@ archive/issue_events_008768.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8591",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8591#event-8768"
+    "url": "https://github.com/sagemath/sagetest/issues/8591#event-20754"
 }
 ```
 

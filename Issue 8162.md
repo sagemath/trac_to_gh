@@ -201,6 +201,23 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_019549.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2011-12-12T15:28:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8162",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8162#event-19549"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071681.json:
 ```json
 {
@@ -418,6 +435,74 @@ The startup plugin says that the startup time might have increased. However, the
 
 ---
 
+archive/issue_events_019550.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8162",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8162#event-19550"
+}
+```
+
+
+
+---
+
+archive/issue_events_019551.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8162",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8162#event-19551"
+}
+```
+
+
+
+---
+
+archive/issue_events_019552.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8162",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8162#event-19552"
+}
+```
+
+
+
+---
+
+archive/issue_events_019553.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8162",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8162#event-19553"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071691.json:
 ```json
 {
@@ -521,7 +606,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008366.json:
+archive/issue_events_019554.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -529,7 +614,7 @@ archive/issue_events_008366.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8162#event-8366"
+    "url": "https://github.com/sagemath/sagetest/issues/8162#event-19554"
 }
 ```
 

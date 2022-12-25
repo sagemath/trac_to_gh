@@ -79,7 +79,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_003663.json:
+archive/issue_events_007798.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -87,6 +87,23 @@ archive/issue_events_003663.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3444",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3444#event-3663"
+    "url": "https://github.com/sagemath/sagetest/issues/3444#event-7798"
+}
+```
+
+
+
+---
+
+archive/issue_events_007799.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-11T21:03:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3444",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3444#event-7799"
 }
 ```

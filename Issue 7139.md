@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7139
 
 ---
 
-archive/issue_events_007359.json:
+archive/issue_events_016884.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -67,7 +67,7 @@ archive/issue_events_007359.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7139",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7139#event-7359"
+    "url": "https://github.com/sagemath/sagetest/issues/7139#event-16884"
 }
 ```
 
@@ -106,3 +106,20 @@ archive/issue_comments_059062.json:
 ```
 
 Like an idiot, I created another ticket for this same problem. I'm closing this one, as the other one has the patch and is more upto date.
+
+
+
+---
+
+archive/issue_events_016885.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-04T02:03:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7139",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7139#event-16885"
+}
+```

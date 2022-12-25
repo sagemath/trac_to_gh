@@ -71,6 +71,23 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_000372.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:53:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-372"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000864.json:
 ```json
 {
@@ -143,7 +160,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_000198.json:
+archive/issue_events_000373.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -151,7 +168,7 @@ archive/issue_events_000198.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/191#event-198"
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-373"
 }
 ```
 
@@ -213,7 +230,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_000199.json:
+archive/issue_events_000374.json:
 ```json
 {
     "actor": "https://github.com/loefflerd",
@@ -221,7 +238,7 @@ archive/issue_events_000199.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/191#event-199"
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-374"
 }
 ```
 
@@ -321,7 +338,7 @@ I'm resolving this as a "duplicate," simply because the only relevant milestone 
 
 ---
 
-archive/issue_events_000200.json:
+archive/issue_events_000375.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -329,7 +346,7 @@ archive/issue_events_000200.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/191#event-200"
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-375"
 }
 ```
 
@@ -350,3 +367,37 @@ archive/issue_comments_000876.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_000376.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-20T09:40:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-376"
+}
+```
+
+
+
+---
+
+archive/issue_events_000377.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-20T09:40:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-377"
+}
+```

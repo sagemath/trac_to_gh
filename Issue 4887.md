@@ -65,7 +65,7 @@ See comment:ticket:4886:3
 
 ---
 
-archive/issue_events_005131.json:
+archive/issue_events_011270.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +73,7 @@ archive/issue_events_005131.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4887",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4887#event-5131"
+    "url": "https://github.com/sagemath/sagetest/issues/4887#event-11270"
 }
 ```
 
@@ -94,6 +94,23 @@ archive/issue_comments_036975.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_011271.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-09T22:26:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4887",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4887#event-11271"
+}
+```
 
 
 

@@ -105,7 +105,7 @@ I believe this was taken care of in #3863.
 
 ---
 
-archive/issue_events_008920.json:
+archive/issue_events_021266.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -113,7 +113,24 @@ archive/issue_events_008920.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8752",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8752#event-8920"
+    "url": "https://github.com/sagemath/sagetest/issues/8752#event-21266"
+}
+```
+
+
+
+---
+
+archive/issue_events_021267.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-04-23T18:22:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8752",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8752#event-21267"
 }
 ```
 

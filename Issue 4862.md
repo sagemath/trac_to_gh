@@ -100,6 +100,23 @@ now fixed.  and it does build on sage.math, but not in parallel...
 
 ---
 
+archive/issue_events_011180.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-24T11:49:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4862",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4862#event-11180"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036782.json:
 ```json
 {
@@ -169,7 +186,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005105.json:
+archive/issue_events_011181.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -177,7 +194,7 @@ archive/issue_events_005105.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4862",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4862#event-5105"
+    "url": "https://github.com/sagemath/sagetest/issues/4862#event-11181"
 }
 ```
 
@@ -202,3 +219,37 @@ Merged in Sage 3.2.3.final and uploaded to the optional spkg repo.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_011182.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-26T17:18:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4862",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4862#event-11182"
+}
+```
+
+
+
+---
+
+archive/issue_events_011183.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-26T17:18:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4862",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4862#event-11183"
+}
+```

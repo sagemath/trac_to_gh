@@ -129,6 +129,23 @@ I wrote a patch at ticket #6680 including flows and (possibly weighted) matching
 
 ---
 
+archive/issue_events_017202.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-11-20T00:24:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7274",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7274#event-17202"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060421.json:
 ```json
 {
@@ -240,7 +257,7 @@ Nathann
 
 ---
 
-archive/issue_events_007497.json:
+archive/issue_events_017203.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -248,7 +265,7 @@ archive/issue_events_007497.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7274#event-7497"
+    "url": "https://github.com/sagemath/sagetest/issues/7274#event-17203"
 }
 ```
 
@@ -287,3 +304,37 @@ archive/issue_comments_060427.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_017204.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-10-09T08:35:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7274",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7274#event-17204"
+}
+```
+
+
+
+---
+
+archive/issue_events_017205.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-10-09T08:35:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7274",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7274#event-17205"
+}
+```

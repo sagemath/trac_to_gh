@@ -65,6 +65,23 @@ This is a dup of #9793.  Since that one has actual comments, this one should be 
 
 ---
 
+archive/issue_events_019353.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-09-07T12:47:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8085",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8085#event-19353"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070732.json:
 ```json
 {
@@ -101,7 +118,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008291.json:
+archive/issue_events_019354.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -109,6 +126,6 @@ archive/issue_events_008291.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8085",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8085#event-8291"
+    "url": "https://github.com/sagemath/sagetest/issues/8085#event-19354"
 }
 ```

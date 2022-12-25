@@ -354,7 +354,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006366.json:
+archive/issue_events_014391.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -362,6 +362,23 @@ archive/issue_events_006366.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#event-6366"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#event-14391"
+}
+```
+
+
+
+---
+
+archive/issue_events_014392.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2009-05-29T19:13:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6115",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6115#event-14392"
 }
 ```

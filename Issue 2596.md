@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2596
 
 ---
 
-archive/issue_events_002785.json:
+archive/issue_events_006052.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -63,7 +63,7 @@ archive/issue_events_002785.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2596",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2596#event-2785"
+    "url": "https://github.com/sagemath/sagetest/issues/2596#event-6052"
 }
 ```
 
@@ -129,6 +129,23 @@ Resolution changed from duplicate to
 
 ---
 
+archive/issue_events_006053.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-22T22:27:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2596",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2596#event-6053"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017724.json:
 ```json
 {
@@ -147,7 +164,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002786.json:
+archive/issue_events_006054.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -155,7 +172,7 @@ archive/issue_events_002786.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2596",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2596#event-2786"
+    "url": "https://github.com/sagemath/sagetest/issues/2596#event-6054"
 }
 ```
 
@@ -241,7 +258,7 @@ Patch looks good to me. Positive review.
 
 ---
 
-archive/issue_events_002787.json:
+archive/issue_events_006055.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -249,7 +266,7 @@ archive/issue_events_002787.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2596",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2596#event-2787"
+    "url": "https://github.com/sagemath/sagetest/issues/2596#event-6055"
 }
 ```
 

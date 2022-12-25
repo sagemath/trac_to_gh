@@ -267,6 +267,23 @@ and the corresponding bit in plot.py in 2.10.3.rc1 is
 
 ---
 
+archive/issue_events_005331.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:41:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2244",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2244#event-5331"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014846.json:
 ```json
 {
@@ -341,7 +358,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002414.json:
+archive/issue_events_005332.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -349,6 +366,6 @@ archive/issue_events_002414.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2244#event-2414"
+    "url": "https://github.com/sagemath/sagetest/issues/2244#event-5332"
 }
 ```

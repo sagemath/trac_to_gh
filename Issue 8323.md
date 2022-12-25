@@ -230,6 +230,23 @@ great: positive review for me.
 
 ---
 
+archive/issue_events_019928.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-02T21:02:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#event-19928"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073750.json:
 ```json
 {
@@ -248,7 +265,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008516.json:
+archive/issue_events_019929.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -256,6 +273,6 @@ archive/issue_events_008516.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8323#event-8516"
+    "url": "https://github.com/sagemath/sagetest/issues/8323#event-19929"
 }
 ```

@@ -75,7 +75,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1708
 
 ---
 
-archive/issue_events_001867.json:
+archive/issue_events_004169.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -83,7 +83,7 @@ archive/issue_events_001867.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1708",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1708#event-1867"
+    "url": "https://github.com/sagemath/sagetest/issues/1708#event-4169"
 }
 ```
 

@@ -548,7 +548,7 @@ To the release manager:  Copy just [attachment:makefile.2] to `SAGE_ROOT/`.
 
 ---
 
-archive/issue_events_009240.json:
+archive/issue_events_022261.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -556,7 +556,7 @@ archive/issue_events_009240.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9083#event-9240"
+    "url": "https://github.com/sagemath/sagetest/issues/9083#event-22261"
 }
 ```
 

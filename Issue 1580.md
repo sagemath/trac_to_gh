@@ -99,7 +99,7 @@ merged in 2.9.1 rc2
 
 ---
 
-archive/issue_events_001736.json:
+archive/issue_events_003944.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -107,7 +107,7 @@ archive/issue_events_001736.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1580",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1580#event-1736"
+    "url": "https://github.com/sagemath/sagetest/issues/1580#event-3944"
 }
 ```
 

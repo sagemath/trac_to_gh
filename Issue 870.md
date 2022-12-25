@@ -91,6 +91,23 @@ malb's temporary solution
 
 ---
 
+archive/issue_events_002425.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:37:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/870",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/870#event-2425"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005349.json:
 ```json
 {
@@ -166,7 +183,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000982.json:
+archive/issue_events_002426.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -174,6 +191,6 @@ archive/issue_events_000982.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/870",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/870#event-982"
+    "url": "https://github.com/sagemath/sagetest/issues/870#event-2426"
 }
 ```

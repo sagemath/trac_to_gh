@@ -37,6 +37,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2512
 
 ---
 
+archive/issue_events_005899.json:
+```json
+{
+    "actor": "https://github.com/haraldschilly",
+    "created_at": "2008-03-13T22:44:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2512",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2512#event-5899"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016995.json:
 ```json
 {
@@ -289,7 +306,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_002693.json:
+archive/issue_events_005900.json:
 ```json
 {
     "actor": "https://github.com/haikona",
@@ -297,7 +314,7 @@ archive/issue_events_002693.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#event-2693"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#event-5900"
 }
 ```
 
@@ -322,3 +339,37 @@ archive/issue_comments_017004.json:
 Yep, looks like 3 to 10 times faster.  I might steal your code for a verification doctest on #10837.
 
 Thanks for the timing tests.
+
+
+
+---
+
+archive/issue_events_005901.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2011-03-23T05:09:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2512",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2512#event-5901"
+}
+```
+
+
+
+---
+
+archive/issue_events_005902.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2011-03-23T05:09:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2512",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2512#event-5902"
+}
+```

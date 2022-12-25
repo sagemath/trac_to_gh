@@ -209,7 +209,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006507.json:
+archive/issue_events_014659.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -217,6 +217,6 @@ archive/issue_events_006507.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6263#event-6507"
+    "url": "https://github.com/sagemath/sagetest/issues/6263#event-14659"
 }
 ```

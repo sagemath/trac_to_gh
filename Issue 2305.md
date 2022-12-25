@@ -201,7 +201,7 @@ Merged rings.ideal.patch in 2.10.3.rc3. The patch does add a single docstring in
 
 ---
 
-archive/issue_events_002482.json:
+archive/issue_events_005435.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -209,7 +209,7 @@ archive/issue_events_002482.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2305#event-2482"
+    "url": "https://github.com/sagemath/sagetest/issues/2305#event-5435"
 }
 ```
 

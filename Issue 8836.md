@@ -137,7 +137,7 @@ Attachment [trac_8836.patch](tarball://root/attachments/some-uuid/ticket8836/tra
 
 ---
 
-archive/issue_events_009001.json:
+archive/issue_events_021568.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -145,7 +145,7 @@ archive/issue_events_009001.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8836",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8836#event-9001"
+    "url": "https://github.com/sagemath/sagetest/issues/8836#event-21568"
 }
 ```
 

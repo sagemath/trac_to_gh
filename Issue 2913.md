@@ -76,7 +76,7 @@ Patch applied cleanly against alpha3 and fixes my original issue, good job!
 
 ---
 
-archive/issue_events_003115.json:
+archive/issue_events_006673.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -84,7 +84,7 @@ archive/issue_events_003115.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2913",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2913#event-3115"
+    "url": "https://github.com/sagemath/sagetest/issues/2913#event-6673"
 }
 ```
 

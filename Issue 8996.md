@@ -48,7 +48,7 @@ Dupe of #8995 (though this description is slightly more informative). If it's no
 
 ---
 
-archive/issue_events_009150.json:
+archive/issue_events_022019.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -56,7 +56,7 @@ archive/issue_events_009150.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8996",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8996#event-9150"
+    "url": "https://github.com/sagemath/sagetest/issues/8996#event-22019"
 }
 ```
 
@@ -98,3 +98,20 @@ Replying to [comment:1 robertwb]:
 > Dupe of #8995 (though this description is slightly more informative). If it's not to hard, I have a strong preference for allowing `@` in usernames, as I often use my email address as a username because it's both easy to remember and likely to be unique. 
 
 I agree. I use my email address as a username for the same reasons.
+
+
+
+---
+
+archive/issue_events_022020.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-20T05:26:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8996",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8996#event-22020"
+}
+```

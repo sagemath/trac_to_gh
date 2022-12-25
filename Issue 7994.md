@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7994
 
 ---
 
-archive/issue_events_008208.json:
+archive/issue_events_019145.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -58,7 +58,7 @@ archive/issue_events_008208.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7994",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7994#event-8208"
+    "url": "https://github.com/sagemath/sagetest/issues/7994#event-19145"
 }
 ```
 

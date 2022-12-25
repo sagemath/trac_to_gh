@@ -125,7 +125,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/152
 
 ---
 
-archive/issue_events_000158.json:
+archive/issue_events_000283.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -133,7 +133,7 @@ archive/issue_events_000158.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/152",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/152#event-158"
+    "url": "https://github.com/sagemath/sagetest/issues/152#event-283"
 }
 ```
 

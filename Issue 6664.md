@@ -111,6 +111,23 @@ Does this really depend on #6586, or can it be merged now?
 
 ---
 
+archive/issue_events_015723.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2009-08-23T21:22:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6664",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6664#event-15723"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054600.json:
 ```json
 {
@@ -131,7 +148,7 @@ It's not dependent, according to `du -s`.  I tested this with and without the pa
 
 ---
 
-archive/issue_events_006900.json:
+archive/issue_events_015724.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -139,7 +156,7 @@ archive/issue_events_006900.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6664",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6664#event-6900"
+    "url": "https://github.com/sagemath/sagetest/issues/6664#event-15724"
 }
 ```
 

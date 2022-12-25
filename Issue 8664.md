@@ -471,6 +471,23 @@ The diff shows they just fixed that single bug, bumped the MPIR version number (
 
 ---
 
+archive/issue_events_020984.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2010-09-05T18:55:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20984"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078568.json:
 ```json
 {
@@ -2482,7 +2499,7 @@ in fact this bug is already fixed upstream (in revision 1516), see
 
 ---
 
-archive/issue_events_008834.json:
+archive/issue_events_020985.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2490,7 +2507,7 @@ archive/issue_events_008834.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8834"
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20985"
 }
 ```
 
@@ -2534,7 +2551,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008835.json:
+archive/issue_events_020986.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2542,7 +2559,7 @@ archive/issue_events_008835.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8835"
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20986"
 }
 ```
 
@@ -2617,6 +2634,40 @@ archive/issue_comments_078641.json:
 ```
 
 Unmerged from sage-4.6.1.alpha1 because of the problems with the ECM package, see #10252.
+
+
+
+---
+
+archive/issue_events_020987.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:06:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20987"
+}
+```
+
+
+
+---
+
+archive/issue_events_020988.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:06:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20988"
+}
+```
 
 
 
@@ -3523,6 +3574,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_020989.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-07-22T12:52:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20989"
+}
+```
+
+
+
+---
+
+archive/issue_events_020990.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-07-22T12:52:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20990"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078679.json:
 ```json
 {
@@ -3536,6 +3621,40 @@ archive/issue_comments_078679.json:
 ```
 
 because it depends on a not-yet-positively-reviewed ticket
+
+
+
+---
+
+archive/issue_events_020991.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-07-24T18:53:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20991"
+}
+```
+
+
+
+---
+
+archive/issue_events_020992.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-07-24T18:53:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20992"
+}
+```
 
 
 
@@ -3616,6 +3735,40 @@ archive/issue_comments_078681.json:
 ```
 
 #5847 has a positive review again
+
+
+
+---
+
+archive/issue_events_020993.json:
+```json
+{
+    "actor": "https://github.com/ohanar",
+    "created_at": "2011-08-23T05:57:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20993"
+}
+```
+
+
+
+---
+
+archive/issue_events_020994.json:
+```json
+{
+    "actor": "https://github.com/ohanar",
+    "created_at": "2011-08-23T05:57:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20994"
+}
+```
 
 
 
@@ -3711,7 +3864,7 @@ Changing keywords from "sd32, GMP ECM execstack Fedora 14 extension module libra
 
 ---
 
-archive/issue_events_008836.json:
+archive/issue_events_020995.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -3719,7 +3872,7 @@ archive/issue_events_008836.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8836"
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20995"
 }
 ```
 
@@ -3879,6 +4032,23 @@ An MPIR 2.1.3.p5 spkg fixing this is now available at #11896, currently needing 
 
 ---
 
+archive/issue_events_020996.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-11T07:36:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20996"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078691.json:
 ```json
 {
@@ -3915,7 +4085,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008837.json:
+archive/issue_events_020997.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -3923,7 +4093,7 @@ archive/issue_events_008837.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8837"
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20997"
 }
 ```
 
@@ -4032,7 +4202,7 @@ Ooops, #11896 of course. XD
 
 ---
 
-archive/issue_events_008838.json:
+archive/issue_events_020998.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4040,7 +4210,7 @@ archive/issue_events_008838.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8838"
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20998"
 }
 ```
 
@@ -4079,6 +4249,23 @@ archive/issue_comments_078699.json:
 ```
 
 Milestone sage-4.7.3 deleted
+
+
+
+---
+
+archive/issue_events_020999.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-03T16:15:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-20999"
+}
+```
 
 
 

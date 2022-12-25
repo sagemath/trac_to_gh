@@ -205,6 +205,23 @@ This must get fixed.  This seems to be responsible for about 1/3 of bug/confusio
 
 ---
 
+archive/issue_events_004895.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T05:01:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2038",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2038#event-4895"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013164.json:
 ```json
 {
@@ -259,7 +276,7 @@ This ticket is addressed now with #2517 and #2590 and should probably be marked 
 
 ---
 
-archive/issue_events_002194.json:
+archive/issue_events_004896.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -267,7 +284,7 @@ archive/issue_events_002194.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2038#event-2194"
+    "url": "https://github.com/sagemath/sagetest/issues/2038#event-4896"
 }
 ```
 
@@ -288,3 +305,20 @@ archive/issue_comments_013167.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_004897.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-19T02:17:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2038",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2038#event-4897"
+}
+```

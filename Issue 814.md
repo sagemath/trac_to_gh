@@ -78,6 +78,57 @@ poly's over number fields print even more nicely.
 
 ---
 
+archive/issue_events_002290.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T18:34:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/814",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/814#event-2290"
+}
+```
+
+
+
+---
+
+archive/issue_events_002291.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:35:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/814",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/814#event-2291"
+}
+```
+
+
+
+---
+
+archive/issue_events_002292.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:35:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/814",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/814#event-2292"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005047.json:
 ```json
 {
@@ -96,7 +147,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000926.json:
+archive/issue_events_002293.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -104,7 +155,7 @@ archive/issue_events_000926.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/814",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/814#event-926"
+    "url": "https://github.com/sagemath/sagetest/issues/814#event-2293"
 }
 ```
 

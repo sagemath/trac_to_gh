@@ -246,6 +246,23 @@ Same patch as listed in the post.
 
 ---
 
+archive/issue_events_002219.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:56:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/801",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/801#event-2219"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004819.json:
 ```json
 {
@@ -282,7 +299,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000912.json:
+archive/issue_events_002220.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -290,6 +307,40 @@ archive/issue_events_000912.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/801",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/801#event-912"
+    "url": "https://github.com/sagemath/sagetest/issues/801#event-2220"
+}
+```
+
+
+
+---
+
+archive/issue_events_002221.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:11:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/801",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/801#event-2221"
+}
+```
+
+
+
+---
+
+archive/issue_events_002222.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:11:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/801",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/801#event-2222"
 }
 ```

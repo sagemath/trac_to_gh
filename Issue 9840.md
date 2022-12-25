@@ -172,7 +172,7 @@ The new package is now being mirrored.
 
 ---
 
-archive/issue_events_009966.json:
+archive/issue_events_024775.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -180,7 +180,7 @@ archive/issue_events_009966.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9840#event-9966"
+    "url": "https://github.com/sagemath/sagetest/issues/9840#event-24775"
 }
 ```
 

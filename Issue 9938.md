@@ -98,6 +98,23 @@ and not include them in `sage-VERSION.spkg`?
 
 ---
 
+archive/issue_events_025069.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-05T13:02:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9938",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9938#event-25069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098782.json:
 ```json
 {
@@ -170,7 +187,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010065.json:
+archive/issue_events_025070.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -178,6 +195,6 @@ archive/issue_events_010065.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9938",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9938#event-10065"
+    "url": "https://github.com/sagemath/sagetest/issues/9938#event-25070"
 }
 ```

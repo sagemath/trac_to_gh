@@ -233,7 +233,24 @@ Since much of this is against an old version of OpenMPI, I've closed this and op
 
 ---
 
-archive/issue_events_008702.json:
+archive/issue_events_020495.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2011-03-03T12:09:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8522",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8522#event-20495"
+}
+```
+
+
+
+---
+
+archive/issue_events_020496.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -241,6 +258,6 @@ archive/issue_events_008702.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8522",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8522#event-8702"
+    "url": "https://github.com/sagemath/sagetest/issues/8522#event-20496"
 }
 ```

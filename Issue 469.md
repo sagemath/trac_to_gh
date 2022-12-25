@@ -65,6 +65,23 @@ Changing assignee from @malb to @burcin.
 
 ---
 
+archive/issue_events_001176.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:20:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/469#event-1176"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002324.json:
 ```json
 {
@@ -271,7 +288,7 @@ Merged in 2.9.alpha6. - Finally. Doctests pass.
 
 ---
 
-archive/issue_events_000498.json:
+archive/issue_events_001177.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -279,7 +296,7 @@ archive/issue_events_000498.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/469#event-498"
+    "url": "https://github.com/sagemath/sagetest/issues/469#event-1177"
 }
 ```
 

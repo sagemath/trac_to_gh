@@ -173,6 +173,23 @@ All tests passed.
 
 ---
 
+archive/issue_events_011177.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-29T06:27:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4860",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4860#event-11177"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036769.json:
 ```json
 {
@@ -221,7 +238,7 @@ Michael
 
 ---
 
-archive/issue_events_005103.json:
+archive/issue_events_011178.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -229,7 +246,7 @@ archive/issue_events_005103.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4860",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4860#event-5103"
+    "url": "https://github.com/sagemath/sagetest/issues/4860#event-11178"
 }
 ```
 

@@ -70,6 +70,57 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
+archive/issue_events_003376.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-02T13:59:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1285",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1285#event-3376"
+}
+```
+
+
+
+---
+
+archive/issue_events_003377.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-22T08:32:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1285",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1285#event-3377"
+}
+```
+
+
+
+---
+
+archive/issue_events_003378.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-22T08:32:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1285",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1285#event-3378"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008054.json:
 ```json
 {
@@ -88,7 +139,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001428.json:
+archive/issue_events_003379.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -96,6 +147,23 @@ archive/issue_events_001428.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1285",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1285#event-1428"
+    "url": "https://github.com/sagemath/sagetest/issues/1285#event-3379"
+}
+```
+
+
+
+---
+
+archive/issue_events_003380.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-23T01:33:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1285",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1285#event-3380"
 }
 ```

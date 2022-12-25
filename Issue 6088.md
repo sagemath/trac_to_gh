@@ -65,7 +65,7 @@ And thanks for the comment on Sequence! (Here it was used only for pretty output
 
 ---
 
-archive/issue_events_006341.json:
+archive/issue_events_014301.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -73,7 +73,7 @@ archive/issue_events_006341.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6088",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6088#event-6341"
+    "url": "https://github.com/sagemath/sagetest/issues/6088#event-14301"
 }
 ```
 
@@ -116,3 +116,20 @@ archive/issue_comments_048413.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_014302.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-21T00:33:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6088",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6088#event-14302"
+}
+```

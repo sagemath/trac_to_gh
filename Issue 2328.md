@@ -168,6 +168,23 @@ My patch was against 2.10.2 + your 8710 patch + the #2432 patch...AFAIK mhansen 
 
 ---
 
+archive/issue_events_005479.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-11T03:05:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2328",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2328#event-5479"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015465.json:
 ```json
 {
@@ -183,6 +200,40 @@ archive/issue_comments_015465.json:
 I've looked over the patches and give this a positive review.
 
 Since my patch addressing the referee's concerns for #2432 touches a lot of things, I'll build a patch with the changes in #2328 to be included with #2432.
+
+
+
+---
+
+archive/issue_events_005480.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:19:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2328",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2328#event-5480"
+}
+```
+
+
+
+---
+
+archive/issue_events_005481.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:19:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2328",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2328#event-5481"
+}
+```
 
 
 
@@ -226,7 +277,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002506.json:
+archive/issue_events_005482.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -234,7 +285,7 @@ archive/issue_events_002506.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2328#event-2506"
+    "url": "https://github.com/sagemath/sagetest/issues/2328#event-5482"
 }
 ```
 

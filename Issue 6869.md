@@ -289,7 +289,7 @@ See #6913 for a follow-up to this ticket. It addresses the issue of writing thos
 
 ---
 
-archive/issue_events_007101.json:
+archive/issue_events_016160.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -297,7 +297,7 @@ archive/issue_events_007101.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6869",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6869#event-7101"
+    "url": "https://github.com/sagemath/sagetest/issues/6869#event-16160"
 }
 ```
 

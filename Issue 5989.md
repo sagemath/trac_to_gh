@@ -66,7 +66,7 @@ Applies OK against the "post-final" sage-3.4.2. Positive review.
 
 ---
 
-archive/issue_events_006244.json:
+archive/issue_events_014061.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -74,7 +74,24 @@ archive/issue_events_006244.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5989",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5989#event-6244"
+    "url": "https://github.com/sagemath/sagetest/issues/5989#event-14061"
+}
+```
+
+
+
+---
+
+archive/issue_events_014062.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-12T22:17:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5989",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5989#event-14062"
 }
 ```
 

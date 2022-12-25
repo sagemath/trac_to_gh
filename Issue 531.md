@@ -86,7 +86,24 @@ http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-20070830.spkg
 
 ---
 
-archive/issue_events_000570.json:
+archive/issue_events_001372.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-01T22:48:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/531",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/531#event-1372"
+}
+```
+
+
+
+---
+
+archive/issue_events_001373.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -94,7 +111,7 @@ archive/issue_events_000570.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/531",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/531#event-570"
+    "url": "https://github.com/sagemath/sagetest/issues/531#event-1373"
 }
 ```
 

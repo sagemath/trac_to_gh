@@ -176,7 +176,7 @@ Works for me and fixes the problem in Sage 4.3.1. Tests passed. Thanks for the p
 
 ---
 
-archive/issue_events_008290.json:
+archive/issue_events_019352.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -184,7 +184,7 @@ archive/issue_events_008290.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8084#event-8290"
+    "url": "https://github.com/sagemath/sagetest/issues/8084#event-19352"
 }
 ```
 

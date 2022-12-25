@@ -753,6 +753,23 @@ Replying to [comment:32 jdemeyer]:
 
 ---
 
+archive/issue_events_017894.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-01-03T17:15:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7545",
+    "milestone": "sage-7.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7545#event-17894"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063953.json:
 ```json
 {
@@ -820,6 +837,40 @@ archive/issue_comments_063956.json:
 ```
 
 Changing status from needs_review to needs_work.
+
+
+
+---
+
+archive/issue_events_017895.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-01-25T21:11:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7545",
+    "milestone": "sage-7.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7545#event-17895"
+}
+```
+
+
+
+---
+
+archive/issue_events_017896.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-01-25T21:11:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7545",
+    "milestone": "sage-7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7545#event-17896"
+}
+```
 
 
 
@@ -915,7 +966,7 @@ Thank you!!!
 
 ---
 
-archive/issue_events_007775.json:
+archive/issue_events_017897.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -923,7 +974,7 @@ archive/issue_events_007775.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#event-7775"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#event-17897"
 }
 ```
 

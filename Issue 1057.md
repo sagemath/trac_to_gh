@@ -58,6 +58,23 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
+archive/issue_events_002861.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-01T21:19:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1057",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1057#event-2861"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006405.json:
 ```json
 {
@@ -136,6 +153,40 @@ applied to 2.8.11.rc2 after reverting #1044.
 
 ---
 
+archive/issue_events_002862.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:55:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1057",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1057#event-2862"
+}
+```
+
+
+
+---
+
+archive/issue_events_002863.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:55:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1057",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1057#event-2863"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006409.json:
 ```json
 {
@@ -172,7 +223,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001180.json:
+archive/issue_events_002864.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -180,6 +231,6 @@ archive/issue_events_001180.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1057",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1057#event-1180"
+    "url": "https://github.com/sagemath/sagetest/issues/1057#event-2864"
 }
 ```

@@ -131,7 +131,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001062.json:
+archive/issue_events_002602.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -139,6 +139,23 @@ archive/issue_events_001062.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/942",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/942#event-1062"
+    "url": "https://github.com/sagemath/sagetest/issues/942#event-2602"
+}
+```
+
+
+
+---
+
+archive/issue_events_002603.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-23T05:36:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/942",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/942#event-2603"
 }
 ```

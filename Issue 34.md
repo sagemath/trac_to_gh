@@ -44,6 +44,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/34
 
 ---
 
+archive/issue_events_000065.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:55:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-65"
+}
+```
+
+
+
+---
+
+archive/issue_events_000066.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-25T19:48:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-66"
+}
+```
+
+
+
+---
+
+archive/issue_events_000067.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-25T19:48:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-1.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-67"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000220.json:
 ```json
 {
@@ -192,6 +243,108 @@ Michael
 
 ---
 
+archive/issue_events_000068.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-28T11:59:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-1.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-68"
+}
+```
+
+
+
+---
+
+archive/issue_events_000069.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-28T11:59:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-69"
+}
+```
+
+
+
+---
+
+archive/issue_events_000070.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:33:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-70"
+}
+```
+
+
+
+---
+
+archive/issue_events_000071.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:33:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-71"
+}
+```
+
+
+
+---
+
+archive/issue_events_000072.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-18T17:58:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-72"
+}
+```
+
+
+
+---
+
+archive/issue_events_000073.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-18T17:58:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-73"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000226.json:
 ```json
 {
@@ -207,6 +360,40 @@ archive/issue_comments_000226.json:
 This, as well as the other cases listed in Craig's post, work for me in sage-3.0.alpha5.
 
 I think this was fixed as a side effect of Craig's various fixes in the modular symbols code.
+
+
+
+---
+
+archive/issue_events_000074.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-04-19T01:59:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-74"
+}
+```
+
+
+
+---
+
+archive/issue_events_000075.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-04-19T01:59:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-75"
+}
+```
 
 
 
@@ -230,7 +417,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000033.json:
+archive/issue_events_000076.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -238,7 +425,41 @@ archive/issue_events_000033.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/34",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/34#event-33"
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-76"
+}
+```
+
+
+
+---
+
+archive/issue_events_000077.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-19T21:20:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-77"
+}
+```
+
+
+
+---
+
+archive/issue_events_000078.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-19T21:20:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/34#event-78"
 }
 ```
 

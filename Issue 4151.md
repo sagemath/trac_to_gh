@@ -248,7 +248,7 @@ David
 
 ---
 
-archive/issue_events_004389.json:
+archive/issue_events_009442.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -256,7 +256,7 @@ archive/issue_events_004389.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#event-4389"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#event-9442"
 }
 ```
 

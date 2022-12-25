@@ -64,6 +64,125 @@ The description isn't very clear. What exactly is requested? What part of it isn
 
 ---
 
+archive/issue_events_008664.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8664"
+}
+```
+
+
+
+---
+
+archive/issue_events_008665.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8665"
+}
+```
+
+
+
+---
+
+archive/issue_events_008666.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8666"
+}
+```
+
+
+
+---
+
+archive/issue_events_008667.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8667"
+}
+```
+
+
+
+---
+
+archive/issue_events_008668.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8668"
+}
+```
+
+
+
+---
+
+archive/issue_events_008669.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8669"
+}
+```
+
+
+
+---
+
+archive/issue_events_008670.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8670"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026834.json:
 ```json
 {
@@ -77,6 +196,40 @@ archive/issue_comments_026834.json:
 ```
 
 Have all the issues mentioned in the description been fixed?
+
+
+
+---
+
+archive/issue_events_008671.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2015-04-13T16:39:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8671"
+}
+```
+
+
+
+---
+
+archive/issue_events_008672.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2015-04-13T16:39:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3783",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8672"
+}
+```
 
 
 
@@ -160,7 +313,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004005.json:
+archive/issue_events_008673.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -168,6 +321,6 @@ archive/issue_events_004005.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3783#event-4005"
+    "url": "https://github.com/sagemath/sagetest/issues/3783#event-8673"
 }
 ```

@@ -237,7 +237,7 @@ Since this works now, and my original usage of `mathematica.eval` isn't supposed
 
 ---
 
-archive/issue_events_004570.json:
+archive/issue_events_009785.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -245,7 +245,7 @@ archive/issue_events_004570.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4325#event-4570"
+    "url": "https://github.com/sagemath/sagetest/issues/4325#event-9785"
 }
 ```
 
@@ -289,7 +289,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004571.json:
+archive/issue_events_009786.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -297,7 +297,7 @@ archive/issue_events_004571.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4325#event-4571"
+    "url": "https://github.com/sagemath/sagetest/issues/4325#event-9786"
 }
 ```
 
@@ -365,7 +365,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_004572.json:
+archive/issue_events_009787.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -373,7 +373,7 @@ archive/issue_events_004572.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4325#event-4572"
+    "url": "https://github.com/sagemath/sagetest/issues/4325#event-9787"
 }
 ```
 
@@ -398,3 +398,20 @@ And to close this it should be "wontfix" or "invalid" depending on taste. I thin
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_009788.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-22T07:34:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#event-9788"
+}
+```

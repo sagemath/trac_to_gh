@@ -89,6 +89,23 @@ Attachment [trac_8324-sagenb_sageinspect.patch](tarball://root/attachments/some-
 
 ---
 
+archive/issue_events_019930.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-02-22T04:06:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8324",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8324#event-19930"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073754.json:
 ```json
 {
@@ -259,6 +276,40 @@ archive/issue_comments_073762.json:
 
 ---
 
+archive/issue_events_019931.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-03-03T22:07:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8324",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8324#event-19931"
+}
+```
+
+
+
+---
+
+archive/issue_events_019932.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-03-03T22:07:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8324",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8324#event-19932"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073763.json:
 ```json
 {
@@ -315,7 +366,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008517.json:
+archive/issue_events_019933.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -323,6 +374,6 @@ archive/issue_events_008517.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8324#event-8517"
+    "url": "https://github.com/sagemath/sagetest/issues/8324#event-19933"
 }
 ```

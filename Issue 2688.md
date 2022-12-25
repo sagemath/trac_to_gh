@@ -153,7 +153,7 @@ Merged 2688-kuratowski-isolator.patch and 2688-fix.patch in Sage 2.11.rc0
 
 ---
 
-archive/issue_events_002879.json:
+archive/issue_events_006274.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -161,6 +161,6 @@ archive/issue_events_002879.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2688",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2688#event-2879"
+    "url": "https://github.com/sagemath/sagetest/issues/2688#event-6274"
 }
 ```

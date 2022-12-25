@@ -261,7 +261,7 @@ fi
 
 ---
 
-archive/issue_events_007196.json:
+archive/issue_events_016384.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -269,7 +269,7 @@ archive/issue_events_007196.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#event-7196"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#event-16384"
 }
 ```
 

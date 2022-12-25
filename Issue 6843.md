@@ -189,7 +189,7 @@ This was fixed in my rewrite of how notebook evaluates code.  In particular "Whe
 
 ---
 
-archive/issue_events_007076.json:
+archive/issue_events_016108.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -197,6 +197,6 @@ archive/issue_events_007076.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6843",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6843#event-7076"
+    "url": "https://github.com/sagemath/sagetest/issues/6843#event-16108"
 }
 ```

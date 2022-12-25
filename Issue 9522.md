@@ -110,6 +110,23 @@ Dave
 
 ---
 
+archive/issue_events_023659.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-09-29T23:46:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9522",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9522#event-23659"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091384.json:
 ```json
 {
@@ -128,7 +145,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009671.json:
+archive/issue_events_023660.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -136,6 +153,6 @@ archive/issue_events_009671.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9522",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9522#event-9671"
+    "url": "https://github.com/sagemath/sagetest/issues/9522#event-23660"
 }
 ```

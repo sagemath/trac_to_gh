@@ -311,6 +311,23 @@ Merged 3210-plot-Zp-typo-fix.patch and trac-3210-add-r.patch in Sage 3.0.4.alpha
 
 ---
 
+archive/issue_events_007224.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T10:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3210",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3210#event-7224"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022152.json:
 ```json
 {
@@ -329,7 +346,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003427.json:
+archive/issue_events_007225.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -337,6 +354,6 @@ archive/issue_events_003427.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3210#event-3427"
+    "url": "https://github.com/sagemath/sagetest/issues/3210#event-7225"
 }
 ```

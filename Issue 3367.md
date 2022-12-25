@@ -146,7 +146,7 @@ I think the alias is fine too.  Since CachedFunction is a class, it conforms to 
 
 ---
 
-archive/issue_events_003583.json:
+archive/issue_events_007584.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -154,7 +154,7 @@ archive/issue_events_003583.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3367",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3367#event-3583"
+    "url": "https://github.com/sagemath/sagetest/issues/3367#event-7584"
 }
 ```
 
@@ -175,3 +175,20 @@ archive/issue_comments_023518.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_007585.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2009-02-04T21:35:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3367",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3367#event-7585"
+}
+```

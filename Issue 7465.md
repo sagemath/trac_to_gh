@@ -128,7 +128,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_007691.json:
+archive/issue_events_017695.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -136,6 +136,23 @@ archive/issue_events_007691.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7465",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7465#event-7691"
+    "url": "https://github.com/sagemath/sagetest/issues/7465#event-17695"
+}
+```
+
+
+
+---
+
+archive/issue_events_017696.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-11-05T06:58:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7465",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7465#event-17696"
 }
 ```

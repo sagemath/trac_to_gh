@@ -56,6 +56,23 @@ Post a patch to fix this, since it will be too hard for me to debug and test mys
 
 ---
 
+archive/issue_events_001774.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T00:14:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/662",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/662#event-1774"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003427.json:
 ```json
 {
@@ -146,6 +163,40 @@ Changing status from assigned to new.
 
 ---
 
+archive/issue_events_001775.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-05T10:09:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/662",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/662#event-1775"
+}
+```
+
+
+
+---
+
+archive/issue_events_001776.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-05T10:09:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/662",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/662#event-1776"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003432.json:
 ```json
 {
@@ -164,7 +215,7 @@ Attachment [firefox-crash-bugfix.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_events_000730.json:
+archive/issue_events_001777.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -172,7 +223,7 @@ archive/issue_events_000730.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/662",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/662#event-730"
+    "url": "https://github.com/sagemath/sagetest/issues/662#event-1777"
 }
 ```
 

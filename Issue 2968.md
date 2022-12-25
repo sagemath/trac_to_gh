@@ -45,6 +45,23 @@ Attachment [ntl-5.4.2.patch](tarball://root/attachments/some-uuid/ticket2968/ntl
 
 ---
 
+archive/issue_events_006785.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-20T04:37:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2968",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2968#event-6785"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020416.json:
 ```json
 {
@@ -103,7 +120,7 @@ Merged in Safe 3.0.rc0
 
 ---
 
-archive/issue_events_003173.json:
+archive/issue_events_006786.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -111,6 +128,6 @@ archive/issue_events_003173.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2968",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2968#event-3173"
+    "url": "https://github.com/sagemath/sagetest/issues/2968#event-6786"
 }
 ```

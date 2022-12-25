@@ -85,7 +85,7 @@ Patch looks good, applies, doctests pass.
 
 ---
 
-archive/issue_events_005777.json:
+archive/issue_events_012958.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -93,7 +93,7 @@ archive/issue_events_005777.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5527",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5527#event-5777"
+    "url": "https://github.com/sagemath/sagetest/issues/5527#event-12958"
 }
 ```
 

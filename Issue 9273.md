@@ -287,6 +287,23 @@ I have never seen this problem and in any case, the doctesting framework will be
 
 ---
 
+archive/issue_events_022844.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-28T16:08:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9273",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9273#event-22844"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087204.json:
 ```json
 {
@@ -323,7 +340,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009435.json:
+archive/issue_events_022845.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -331,6 +348,6 @@ archive/issue_events_009435.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9273#event-9435"
+    "url": "https://github.com/sagemath/sagetest/issues/9273#event-22845"
 }
 ```

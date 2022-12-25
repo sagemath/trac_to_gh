@@ -84,7 +84,24 @@ clisp build error fixed by installing GNU sed instead of the BusyBox version.
 
 ---
 
-archive/issue_events_000847.json:
+archive/issue_events_002054.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-07T03:45:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/754#event-2054"
+}
+```
+
+
+
+---
+
+archive/issue_events_002055.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -92,7 +109,7 @@ archive/issue_events_000847.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/754",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/754#event-847"
+    "url": "https://github.com/sagemath/sagetest/issues/754#event-2055"
 }
 ```
 
@@ -131,3 +148,37 @@ archive/issue_comments_004449.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_002056.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-11-14T09:48:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/754#event-2056"
+}
+```
+
+
+
+---
+
+archive/issue_events_002057.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-11-14T09:48:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/754#event-2057"
+}
+```

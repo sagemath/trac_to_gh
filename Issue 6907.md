@@ -121,6 +121,23 @@ That's weird. I'm still using 4.1.1 and not getting the problem. I'm sorry; I ca
 
 ---
 
+archive/issue_events_016234.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-01-20T14:07:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6907",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6907#event-16234"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056955.json:
 ```json
 {
@@ -139,7 +156,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007135.json:
+archive/issue_events_016235.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -147,7 +164,7 @@ archive/issue_events_007135.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6907#event-7135"
+    "url": "https://github.com/sagemath/sagetest/issues/6907#event-16235"
 }
 ```
 

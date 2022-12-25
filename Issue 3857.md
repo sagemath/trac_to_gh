@@ -314,7 +314,7 @@ Changing assignee from NilsSkoruppa to choldsworth.
 
 ---
 
-archive/issue_events_004080.json:
+archive/issue_events_008820.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -322,7 +322,7 @@ archive/issue_events_004080.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3857#event-4080"
+    "url": "https://github.com/sagemath/sagetest/issues/3857#event-8820"
 }
 ```
 

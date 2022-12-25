@@ -27,6 +27,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/990
 
 ---
 
+archive/issue_events_002733.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-26T00:54:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/990",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/990#event-2733"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006020.json:
 ```json
 {
@@ -78,6 +95,40 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
+archive/issue_events_002734.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-30T23:32:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/990",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/990#event-2734"
+}
+```
+
+
+
+---
+
+archive/issue_events_002735.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-30T23:32:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/990",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/990#event-2735"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006022.json:
 ```json
 {
@@ -114,7 +165,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001113.json:
+archive/issue_events_002736.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -122,6 +173,6 @@ archive/issue_events_001113.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/990",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/990#event-1113"
+    "url": "https://github.com/sagemath/sagetest/issues/990#event-2736"
 }
 ```

@@ -49,6 +49,23 @@ isn't really a SAGE question.
 
 ---
 
+archive/issue_events_000301.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:15:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/164",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/164#event-301"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000729.json:
 ```json
 {
@@ -121,6 +138,40 @@ Changing component from user interface to doctest framework.
 
 ---
 
+archive/issue_events_000302.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-13T12:20:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/164",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/164#event-302"
+}
+```
+
+
+
+---
+
+archive/issue_events_000303.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-13T12:20:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/164",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/164#event-303"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000733.json:
 ```json
 {
@@ -139,7 +190,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_000170.json:
+archive/issue_events_000304.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -147,7 +198,7 @@ archive/issue_events_000170.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/164",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/164#event-170"
+    "url": "https://github.com/sagemath/sagetest/issues/164#event-304"
 }
 ```
 

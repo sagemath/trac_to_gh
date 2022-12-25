@@ -238,6 +238,23 @@ Patch commit string edited as requested. (Please ignore trac_9779.2.patch ... it
 
 ---
 
+archive/issue_events_024515.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-16T03:12:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#event-24515"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095811.json:
 ```json
 {
@@ -399,7 +416,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009908.json:
+archive/issue_events_024516.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -407,7 +424,7 @@ archive/issue_events_009908.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9778#event-9908"
+    "url": "https://github.com/sagemath/sagetest/issues/9778#event-24516"
 }
 ```
 

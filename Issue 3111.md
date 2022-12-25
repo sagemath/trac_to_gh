@@ -652,7 +652,7 @@ Finally! Merged all four patches in Sage 3.0.3.alpha1
 
 ---
 
-archive/issue_events_003329.json:
+archive/issue_events_007027.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -660,6 +660,6 @@ archive/issue_events_003329.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3111#event-3329"
+    "url": "https://github.com/sagemath/sagetest/issues/3111#event-7027"
 }
 ```

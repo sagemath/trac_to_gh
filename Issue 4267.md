@@ -800,7 +800,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_004510.json:
+archive/issue_events_009637.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -808,7 +808,7 @@ archive/issue_events_004510.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#event-4510"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#event-9637"
 }
 ```
 
@@ -834,7 +834,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004511.json:
+archive/issue_events_009638.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -842,7 +842,7 @@ archive/issue_events_004511.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#event-4511"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#event-9638"
 }
 ```
 
@@ -871,6 +871,23 @@ is still relevant and I am giving it a positive review.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_009639.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T08:16:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4267",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4267#event-9639"
+}
+```
 
 
 
@@ -912,7 +929,7 @@ Merged trac_4267_extcode-remove-javascript-packages.patch in Sage 3.3.alpha0
 
 ---
 
-archive/issue_events_004512.json:
+archive/issue_events_009640.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -920,7 +937,7 @@ archive/issue_events_004512.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#event-4512"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#event-9640"
 }
 ```
 

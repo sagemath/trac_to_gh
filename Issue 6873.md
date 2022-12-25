@@ -81,7 +81,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007105.json:
+archive/issue_events_016171.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -89,7 +89,7 @@ archive/issue_events_007105.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6873",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6873#event-7105"
+    "url": "https://github.com/sagemath/sagetest/issues/6873#event-16171"
 }
 ```
 
@@ -110,3 +110,20 @@ archive/issue_comments_056643.json:
 ```
 
 Dupe of #6482
+
+
+
+---
+
+archive/issue_events_016172.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-20T22:11:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6873",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6873#event-16172"
+}
+```

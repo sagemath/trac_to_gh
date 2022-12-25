@@ -114,6 +114,23 @@ Looks good to me.  I think the docstrings are clear enough.
 
 ---
 
+archive/issue_events_006897.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-25T02:20:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3045",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3045#event-6897"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020928.json:
 ```json
 {
@@ -136,7 +153,7 @@ Michael
 
 ---
 
-archive/issue_events_003252.json:
+archive/issue_events_006898.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -144,7 +161,7 @@ archive/issue_events_003252.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3045",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3045#event-3252"
+    "url": "https://github.com/sagemath/sagetest/issues/3045#event-6898"
 }
 ```
 

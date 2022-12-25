@@ -46,6 +46,23 @@ Changing assignee from tbd to boothby.
 
 ---
 
+archive/issue_events_009332.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-09-09T20:53:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4094",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4094#event-9332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029475.json:
 ```json
 {
@@ -77,6 +94,40 @@ archive/issue_comments_029476.json:
 ```
 
 Changing priority from major to blocker.
+
+
+
+---
+
+archive/issue_events_009333.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-09-09T21:09:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4094",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4094#event-9333"
+}
+```
+
+
+
+---
+
+archive/issue_events_009334.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-09-09T21:09:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4094",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4094#event-9334"
+}
+```
 
 
 
@@ -172,7 +223,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004332.json:
+archive/issue_events_009335.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -180,7 +231,7 @@ archive/issue_events_004332.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#event-4332"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#event-9335"
 }
 ```
 

@@ -48,6 +48,23 @@ Changing assignee from tba to @cswiercz.
 
 ---
 
+archive/issue_events_005324.json:
+```json
+{
+    "actor": "https://github.com/cswiercz",
+    "created_at": "2008-02-21T00:36:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2240",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2240#event-5324"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014806.json:
 ```json
 {
@@ -256,7 +273,7 @@ New patch posted.
 
 ---
 
-archive/issue_events_002410.json:
+archive/issue_events_005325.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -264,7 +281,7 @@ archive/issue_events_002410.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2240#event-2410"
+    "url": "https://github.com/sagemath/sagetest/issues/2240#event-5325"
 }
 ```
 

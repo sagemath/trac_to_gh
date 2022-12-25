@@ -1004,6 +1004,23 @@ I would say that it does have a lot of *digits* but that none of them is a *sign
 
 ---
 
+archive/issue_events_021706.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-08-02T19:32:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8896",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8896#event-21706"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081688.json:
 ```json
 {

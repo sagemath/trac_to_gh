@@ -71,7 +71,7 @@ Patch attached.
 
 ---
 
-archive/issue_events_000583.json:
+archive/issue_events_001424.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -79,7 +79,7 @@ archive/issue_events_000583.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/544",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/544#event-583"
+    "url": "https://github.com/sagemath/sagetest/issues/544#event-1424"
 }
 ```
 
@@ -100,3 +100,20 @@ archive/issue_comments_002745.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001425.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-07T11:01:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/544",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/544#event-1425"
+}
+```

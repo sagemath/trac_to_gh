@@ -503,7 +503,7 @@ Thanks!
 
 ---
 
-archive/issue_events_007157.json:
+archive/issue_events_016315.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -511,7 +511,7 @@ archive/issue_events_007157.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6934#event-7157"
+    "url": "https://github.com/sagemath/sagetest/issues/6934#event-16315"
 }
 ```
 

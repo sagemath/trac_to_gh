@@ -142,6 +142,23 @@ Perhaps we can get this into 4.6? It's hardly a massive change :-)
 
 ---
 
+archive/issue_events_025154.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-09-28T11:47:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9967",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9967#event-25154"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099713.json:
 ```json
 {
@@ -160,7 +177,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010094.json:
+archive/issue_events_025155.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -168,6 +185,6 @@ archive/issue_events_010094.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9967",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9967#event-10094"
+    "url": "https://github.com/sagemath/sagetest/issues/9967#event-25155"
 }
 ```

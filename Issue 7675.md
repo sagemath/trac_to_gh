@@ -49,6 +49,125 @@ Changing status from new to needs_work.
 
 ---
 
+archive/issue_events_018297.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18297"
+}
+```
+
+
+
+---
+
+archive/issue_events_018298.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18298"
+}
+```
+
+
+
+---
+
+archive/issue_events_018299.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18299"
+}
+```
+
+
+
+---
+
+archive/issue_events_018300.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18300"
+}
+```
+
+
+
+---
+
+archive/issue_events_018301.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18301"
+}
+```
+
+
+
+---
+
+archive/issue_events_018302.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18302"
+}
+```
+
+
+
+---
+
+archive/issue_events_018303.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18303"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065670.json:
 ```json
 {
@@ -507,6 +626,40 @@ OK, this looks good. Please do not forget to fill in "Authors:" field next time 
 
 ---
 
+archive/issue_events_018304.json:
+```json
+{
+    "actor": "https://github.com/dimpase",
+    "created_at": "2017-06-02T00:01:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18304"
+}
+```
+
+
+
+---
+
+archive/issue_events_018305.json:
+```json
+{
+    "actor": "https://github.com/dimpase",
+    "created_at": "2017-06-02T00:01:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18305"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065691.json:
 ```json
 {
@@ -687,6 +840,40 @@ It should be ok to do so, but be aware that some tickets like #23124 are current
 In `shortest_paths`, please change 
 `if self.num_verts()==1 and self.vertices()[0]==u` to
 `if self.order() == 1 and self.has_vertex(u):`
+
+
+
+---
+
+archive/issue_events_018306.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2017-06-04T10:10:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18306"
+}
+```
+
+
+
+---
+
+archive/issue_events_018307.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2017-06-04T10:10:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7675",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18307"
+}
+```
 
 
 
@@ -1089,7 +1276,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007894.json:
+archive/issue_events_018308.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1097,6 +1284,6 @@ archive/issue_events_007894.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#event-7894"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#event-18308"
 }
 ```

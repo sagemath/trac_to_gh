@@ -231,6 +231,23 @@ at this point.
 
 ---
 
+archive/issue_events_023285.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-05-10T17:21:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23285"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089794.json:
 ```json
 {
@@ -351,6 +368,142 @@ archive/issue_comments_089797.json:
 So the ascii output for plusInfinity is "+ infinity" and the `_fricas_init_()` method in attachment:fricas_infinity.patch works as intended.
 
 Wilfried, will you have time to revise the patch? Note that when #9880 is merged (almost) all symbolics patches will need to be rebased.
+
+
+
+---
+
+archive/issue_events_023286.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23286"
+}
+```
+
+
+
+---
+
+archive/issue_events_023287.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23287"
+}
+```
+
+
+
+---
+
+archive/issue_events_023288.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23288"
+}
+```
+
+
+
+---
+
+archive/issue_events_023289.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23289"
+}
+```
+
+
+
+---
+
+archive/issue_events_023290.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23290"
+}
+```
+
+
+
+---
+
+archive/issue_events_023291.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23291"
+}
+```
+
+
+
+---
+
+archive/issue_events_023292.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23292"
+}
+```
+
+
+
+---
+
+archive/issue_events_023293.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23293"
+}
+```
 
 
 
@@ -530,6 +683,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_023294.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-03T09:33:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23294"
+}
+```
+
+
+
+---
+
+archive/issue_events_023295.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-02-03T09:33:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9427",
+    "milestone": "sage-6.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23295"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089806.json:
 ```json
 {
@@ -548,7 +735,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009582.json:
+archive/issue_events_023296.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -556,6 +743,6 @@ archive/issue_events_009582.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9427",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9427#event-9582"
+    "url": "https://github.com/sagemath/sagetest/issues/9427#event-23296"
 }
 ```

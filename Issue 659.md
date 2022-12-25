@@ -64,7 +64,7 @@ Attachment [zeroinversion2.patch](tarball://root/attachments/some-uuid/ticket659
 
 ---
 
-archive/issue_events_000727.json:
+archive/issue_events_001771.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,7 +72,7 @@ archive/issue_events_000727.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/659",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/659#event-727"
+    "url": "https://github.com/sagemath/sagetest/issues/659#event-1771"
 }
 ```
 

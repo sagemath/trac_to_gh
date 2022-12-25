@@ -146,6 +146,23 @@ Changing status from new to needs_info.
 
 ---
 
+archive/issue_events_014784.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
+    "created_at": "2011-05-25T17:33:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6315",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6315#event-14784"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050312.json:
 ```json
 {
@@ -265,7 +282,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006563.json:
+archive/issue_events_014785.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -273,6 +290,6 @@ archive/issue_events_006563.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6315",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6315#event-6563"
+    "url": "https://github.com/sagemath/sagetest/issues/6315#event-14785"
 }
 ```

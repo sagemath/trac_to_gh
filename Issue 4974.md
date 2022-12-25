@@ -515,7 +515,7 @@ This patch applies and doctests pass in the file.
 
 ---
 
-archive/issue_events_005216.json:
+archive/issue_events_011503.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -523,7 +523,7 @@ archive/issue_events_005216.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4974#event-5216"
+    "url": "https://github.com/sagemath/sagetest/issues/4974#event-11503"
 }
 ```
 

@@ -69,7 +69,7 @@ This is fixed by the patches for #1367.  This should be closed as a dupe after #
 
 ---
 
-archive/issue_events_005112.json:
+archive/issue_events_011215.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -77,7 +77,7 @@ archive/issue_events_005112.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4869",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4869#event-5112"
+    "url": "https://github.com/sagemath/sagetest/issues/4869#event-11215"
 }
 ```
 
@@ -120,3 +120,20 @@ archive/issue_comments_036815.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_011216.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-29T05:45:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4869",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4869#event-11216"
+}
+```

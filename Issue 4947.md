@@ -97,6 +97,23 @@ This happened to me, but I cannot replicate it on 3.2.1 - only 3.2.2.  I hope th
 
 ---
 
+archive/issue_events_011423.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T02:27:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4947",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4947#event-11423"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037480.json:
 ```json
 {
@@ -211,7 +228,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005189.json:
+archive/issue_events_011424.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -219,6 +236,6 @@ archive/issue_events_005189.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4947",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4947#event-5189"
+    "url": "https://github.com/sagemath/sagetest/issues/4947#event-11424"
 }
 ```

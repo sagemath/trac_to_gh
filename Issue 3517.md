@@ -32,6 +32,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3517
 
 ---
 
+archive/issue_events_008020.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-03-20T22:36:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3517",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3517#event-8020"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024733.json:
 ```json
 {
@@ -104,7 +121,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_003734.json:
+archive/issue_events_008021.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -112,6 +129,6 @@ archive/issue_events_003734.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3517",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3517#event-3734"
+    "url": "https://github.com/sagemath/sagetest/issues/3517#event-8021"
 }
 ```

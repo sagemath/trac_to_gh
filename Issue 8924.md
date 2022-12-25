@@ -97,6 +97,23 @@ The tests from the description work as of 7.4.beta0.
 
 ---
 
+archive/issue_events_021785.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2016-08-15T17:54:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8924",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8924#event-21785"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082078.json:
 ```json
 {
@@ -169,7 +186,7 @@ Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all 
 
 ---
 
-archive/issue_events_009080.json:
+archive/issue_events_021786.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -177,6 +194,6 @@ archive/issue_events_009080.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8924",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8924#event-9080"
+    "url": "https://github.com/sagemath/sagetest/issues/8924#event-21786"
 }
 ```

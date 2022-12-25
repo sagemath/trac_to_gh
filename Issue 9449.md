@@ -766,7 +766,7 @@ Since #12415 completely rewrites the doctest framework with much better code, I'
 
 ---
 
-archive/issue_events_009606.json:
+archive/issue_events_023361.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -774,7 +774,24 @@ archive/issue_events_009606.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#event-9606"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#event-23361"
+}
+```
+
+
+
+---
+
+archive/issue_events_023362.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-22T21:37:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9449",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9449#event-23362"
 }
 ```
 

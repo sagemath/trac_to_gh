@@ -100,7 +100,7 @@ I don't really know where I got the `-a` argument -- I think I was copying it fr
 
 ---
 
-archive/issue_events_004788.json:
+archive/issue_events_010339.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -108,7 +108,7 @@ archive/issue_events_004788.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4543",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4543#event-4788"
+    "url": "https://github.com/sagemath/sagetest/issues/4543#event-10339"
 }
 ```
 

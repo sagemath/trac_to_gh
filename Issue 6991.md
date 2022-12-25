@@ -102,7 +102,7 @@ Changing priority from minor to trivial.
 
 ---
 
-archive/issue_events_007215.json:
+archive/issue_events_016411.json:
 ```json
 {
     "actor": "https://github.com/novoselt",
@@ -110,7 +110,7 @@ archive/issue_events_007215.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6991",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6991#event-7215"
+    "url": "https://github.com/sagemath/sagetest/issues/6991#event-16411"
 }
 ```
 
@@ -131,3 +131,54 @@ archive/issue_comments_057721.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_016412.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:38:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6991",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6991#event-16412"
+}
+```
+
+
+
+---
+
+archive/issue_events_016413.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:39:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6991",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6991#event-16413"
+}
+```
+
+
+
+---
+
+archive/issue_events_016414.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:39:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6991",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6991#event-16414"
+}
+```

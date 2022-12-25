@@ -82,6 +82,23 @@ Changing component from algebraic geometry to combinatorics.
 
 ---
 
+archive/issue_events_003594.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:11:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1394",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1394#event-3594"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008940.json:
 ```json
 {
@@ -100,7 +117,7 @@ Looks good to me!
 
 ---
 
-archive/issue_events_001538.json:
+archive/issue_events_003595.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -108,7 +125,7 @@ archive/issue_events_001538.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1394",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1394#event-1538"
+    "url": "https://github.com/sagemath/sagetest/issues/1394#event-3595"
 }
 ```
 

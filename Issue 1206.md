@@ -148,6 +148,23 @@ Michael
 
 ---
 
+archive/issue_events_003207.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:39:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1206",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1206#event-3207"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007444.json:
 ```json
 {
@@ -179,6 +196,40 @@ archive/issue_comments_007445.json:
 ```
 
 Changing type from defect to enhancement.
+
+
+
+---
+
+archive/issue_events_003208.json:
+```json
+{
+    "actor": "https://github.com/koffie",
+    "created_at": "2011-08-24T01:44:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1206",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1206#event-3208"
+}
+```
+
+
+
+---
+
+archive/issue_events_003209.json:
+```json
+{
+    "actor": "https://github.com/koffie",
+    "created_at": "2011-08-24T01:44:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1206",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1206#event-3209"
+}
+```
 
 
 
@@ -256,7 +307,7 @@ Setting this to positive_review so the release manager will see it.
 
 ---
 
-archive/issue_events_001342.json:
+archive/issue_events_003210.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -264,7 +315,7 @@ archive/issue_events_001342.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1206",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1206#event-1342"
+    "url": "https://github.com/sagemath/sagetest/issues/1206#event-3210"
 }
 ```
 

@@ -1157,6 +1157,23 @@ It's at http://pari.math.u-bordeaux.fr/cgi-bin/pkgreport.cgi?pkg=pari (#1075)
 
 ---
 
+archive/issue_events_023043.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2010-07-11T09:18:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9343",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9343#event-23043"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088180.json:
 ```json
 {
@@ -1211,6 +1228,40 @@ archive/issue_comments_088181.json:
 ```
 
 Please don't move stuff to sage-5.0.     There will be a sage between sage-4.5 and sage-5.0, and *that* is what you should move the ticket to. Otherwise it could much more easily get lost....  I'll make such a roadmap entry now.
+
+
+
+---
+
+archive/issue_events_023044.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-07-11T09:30:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9343",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9343#event-23044"
+}
+```
+
+
+
+---
+
+archive/issue_events_023045.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-07-11T09:30:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9343",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9343#event-23045"
+}
+```
 
 
 
@@ -4792,6 +4843,40 @@ archive/issue_comments_088308.json:
 ```
 
 New version to be tested: [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha1-9343.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha1-9343.tar).  I am testing it on 32-bit Linux, 64-bit Linux and 64-bit OS X.
+
+
+
+---
+
+archive/issue_events_023046.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-07-29T14:45:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9343",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9343#event-23046"
+}
+```
+
+
+
+---
+
+archive/issue_events_023047.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-07-29T14:45:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9343",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9343#event-23047"
+}
+```
 
 
 
@@ -11431,7 +11516,7 @@ I've updated the commit string for the extcode patch and updated [NewPARI](http:
 
 ---
 
-archive/issue_events_009496.json:
+archive/issue_events_023048.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -11439,7 +11524,7 @@ archive/issue_events_009496.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9343#event-9496"
+    "url": "https://github.com/sagemath/sagetest/issues/9343#event-23048"
 }
 ```
 

@@ -161,6 +161,23 @@ Changing type from enhancement to defect.
 
 ---
 
+archive/issue_events_008479.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-25T19:45:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3704",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3704#event-8479"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026219.json:
 ```json
 {
@@ -690,6 +707,40 @@ archive/issue_comments_026239.json:
 
 ---
 
+archive/issue_events_008480.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-28T14:12:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3704",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3704#event-8480"
+}
+```
+
+
+
+---
+
+archive/issue_events_008481.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-28T14:12:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3704",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3704#event-8481"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026240.json:
 ```json
 {
@@ -708,7 +759,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003925.json:
+archive/issue_events_008482.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -716,7 +767,7 @@ archive/issue_events_003925.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3704",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3704#event-3925"
+    "url": "https://github.com/sagemath/sagetest/issues/3704#event-8482"
 }
 ```
 

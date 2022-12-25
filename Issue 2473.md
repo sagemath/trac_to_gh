@@ -155,6 +155,23 @@ Apply bipartite_graph_input.2.patch, then this.
 
 ---
 
+archive/issue_events_005835.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-13T02:25:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2473",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2473#event-5835"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016715.json:
 ```json
 {
@@ -191,7 +208,7 @@ Merged in Sage 2.10.4.alpha0
 
 ---
 
-archive/issue_events_002652.json:
+archive/issue_events_005836.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -199,6 +216,6 @@ archive/issue_events_002652.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2473#event-2652"
+    "url": "https://github.com/sagemath/sagetest/issues/2473#event-5836"
 }
 ```

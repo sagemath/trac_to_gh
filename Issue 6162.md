@@ -143,6 +143,23 @@ wdj, ispell-comments-and-strings in emacs is your friend.  That and flyspell-mod
 
 ---
 
+archive/issue_events_014487.json:
+```json
+{
+    "actor": "https://github.com/ncalexan",
+    "created_at": "2009-06-15T19:06:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6162",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6162#event-14487"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049055.json:
 ```json
 {
@@ -440,7 +457,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006411.json:
+archive/issue_events_014488.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -448,7 +465,7 @@ archive/issue_events_006411.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6162#event-6411"
+    "url": "https://github.com/sagemath/sagetest/issues/6162#event-14488"
 }
 ```
 

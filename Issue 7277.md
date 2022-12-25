@@ -28,6 +28,125 @@ Issue created by migration from https://trac.sagemath.org/ticket/7277
 
 ---
 
+archive/issue_events_017210.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17210"
+}
+```
+
+
+
+---
+
+archive/issue_events_017211.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17211"
+}
+```
+
+
+
+---
+
+archive/issue_events_017212.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17212"
+}
+```
+
+
+
+---
+
+archive/issue_events_017213.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17213"
+}
+```
+
+
+
+---
+
+archive/issue_events_017214.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17214"
+}
+```
+
+
+
+---
+
+archive/issue_events_017215.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17215"
+}
+```
+
+
+
+---
+
+archive/issue_events_017216.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17216"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060456.json:
 ```json
 {
@@ -41,6 +160,40 @@ archive/issue_comments_060456.json:
 ```
 
 Actually they are just the direct product of these, and we do have #17243 where this could be mentioned.
+
+
+
+---
+
+archive/issue_events_017217.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-12-22T20:51:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17217"
+}
+```
+
+
+
+---
+
+archive/issue_events_017218.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-12-22T20:51:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17218"
+}
+```
 
 
 
@@ -100,7 +253,7 @@ Since I opened it as a request, I hope it's okay that I ask for it to be closed 
 
 ---
 
-archive/issue_events_007500.json:
+archive/issue_events_017219.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -108,7 +261,7 @@ archive/issue_events_007500.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7277",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7277#event-7500"
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-17219"
 }
 ```
 

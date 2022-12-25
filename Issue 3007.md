@@ -178,6 +178,23 @@ sage: gap."2"?
 
 ---
 
+archive/issue_events_006835.json:
+```json
+{
+    "actor": "https://github.com/gvol",
+    "created_at": "2013-03-10T22:24:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3007",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3007#event-6835"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020637.json:
 ```json
 {
@@ -232,7 +249,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_003212.json:
+archive/issue_events_006836.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -240,7 +257,7 @@ archive/issue_events_003212.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3007",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3007#event-3212"
+    "url": "https://github.com/sagemath/sagetest/issues/3007#event-6836"
 }
 ```
 

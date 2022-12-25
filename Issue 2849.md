@@ -165,7 +165,7 @@ Merged trac2849.patch and trac2849_doctest.patch in Sage 3.0.alpha3
 
 ---
 
-archive/issue_events_003039.json:
+archive/issue_events_006529.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -173,7 +173,7 @@ archive/issue_events_003039.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2849#event-3039"
+    "url": "https://github.com/sagemath/sagetest/issues/2849#event-6529"
 }
 ```
 

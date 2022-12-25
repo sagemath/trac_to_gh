@@ -158,7 +158,7 @@ I was not in time but this seems a reasonable compromise to me!
 
 ---
 
-archive/issue_events_005559.json:
+archive/issue_events_012334.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -166,7 +166,7 @@ archive/issue_events_005559.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5303",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5303#event-5559"
+    "url": "https://github.com/sagemath/sagetest/issues/5303#event-12334"
 }
 ```
 

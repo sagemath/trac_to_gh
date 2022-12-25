@@ -87,7 +87,24 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_events_007279.json:
+archive/issue_events_016654.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-02T17:26:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7059",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7059#event-16654"
+}
+```
+
+
+
+---
+
+archive/issue_events_016655.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -95,7 +112,7 @@ archive/issue_events_007279.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7059",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7059#event-7279"
+    "url": "https://github.com/sagemath/sagetest/issues/7059#event-16655"
 }
 ```
 

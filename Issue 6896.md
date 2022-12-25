@@ -189,7 +189,7 @@ with changes suggested by README.txt.trac-6896-1.patch
 
 ---
 
-archive/issue_events_007124.json:
+archive/issue_events_016220.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -197,7 +197,7 @@ archive/issue_events_007124.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6896",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6896#event-7124"
+    "url": "https://github.com/sagemath/sagetest/issues/6896#event-16220"
 }
 ```
 

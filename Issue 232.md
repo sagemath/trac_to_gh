@@ -97,7 +97,7 @@ Fixed for sage > 2.0.
 
 ---
 
-archive/issue_events_000247.json:
+archive/issue_events_000487.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -105,6 +105,6 @@ archive/issue_events_000247.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/232",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/232#event-247"
+    "url": "https://github.com/sagemath/sagetest/issues/232#event-487"
 }
 ```

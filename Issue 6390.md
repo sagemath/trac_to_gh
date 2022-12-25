@@ -470,7 +470,7 @@ Merged trac_6390.patch in 4.4.alpha0.
 
 ---
 
-archive/issue_events_006637.json:
+archive/issue_events_015050.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -478,7 +478,7 @@ archive/issue_events_006637.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#event-6637"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#event-15050"
 }
 ```
 

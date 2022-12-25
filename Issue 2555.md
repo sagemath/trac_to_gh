@@ -46,7 +46,7 @@ This is a dupe of #2553
 
 ---
 
-archive/issue_events_002738.json:
+archive/issue_events_005981.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -54,7 +54,7 @@ archive/issue_events_002738.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2555",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2555#event-2738"
+    "url": "https://github.com/sagemath/sagetest/issues/2555#event-5981"
 }
 ```
 

@@ -90,7 +90,7 @@ The patch applies, builds, and passes tests for me.
 
 ---
 
-archive/issue_events_001712.json:
+archive/issue_events_003905.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -98,7 +98,7 @@ archive/issue_events_001712.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1558",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1558#event-1712"
+    "url": "https://github.com/sagemath/sagetest/issues/1558#event-3905"
 }
 ```
 

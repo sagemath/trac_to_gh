@@ -66,6 +66,23 @@ Changing assignee from boothby to @williamstein.
 
 ---
 
+archive/issue_events_002908.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:11:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#event-2908"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006490.json:
 ```json
 {
@@ -124,6 +141,40 @@ Attachment [1076.patch](tarball://root/attachments/some-uuid/ticket1076/1076.pat
 
 ---
 
+archive/issue_events_002909.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-20T00:07:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#event-2909"
+}
+```
+
+
+
+---
+
+archive/issue_events_002910.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-20T00:07:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#event-2910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006493.json:
 ```json
 {
@@ -160,7 +211,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001198.json:
+archive/issue_events_002911.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -168,6 +219,40 @@ archive/issue_events_001198.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1076",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1076#event-1198"
+    "url": "https://github.com/sagemath/sagetest/issues/1076#event-2911"
+}
+```
+
+
+
+---
+
+archive/issue_events_002912.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-21T21:38:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#event-2912"
+}
+```
+
+
+
+---
+
+archive/issue_events_002913.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-21T21:38:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#event-2913"
 }
 ```

@@ -51,7 +51,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_006591.json:
+archive/issue_events_014936.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -59,7 +59,7 @@ archive/issue_events_006591.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6347",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6347#event-6591"
+    "url": "https://github.com/sagemath/sagetest/issues/6347#event-14936"
 }
 ```
 
@@ -80,3 +80,20 @@ archive/issue_comments_050641.json:
 ```
 
 I turns out  that the assumption above is wrong. There are a couple of places in the Singular code where int is assumed so this ticket cannot be implemented unless Singular changes.
+
+
+
+---
+
+archive/issue_events_014937.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-20T22:10:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6347",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6347#event-14937"
+}
+```

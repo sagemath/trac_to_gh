@@ -66,7 +66,7 @@ Attachment [trac_6689-spell-check-categories.patch](tarball://root/attachments/s
 
 ---
 
-archive/issue_events_006924.json:
+archive/issue_events_015779.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -74,7 +74,7 @@ archive/issue_events_006924.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6689",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6689#event-6924"
+    "url": "https://github.com/sagemath/sagetest/issues/6689#event-15779"
 }
 ```
 

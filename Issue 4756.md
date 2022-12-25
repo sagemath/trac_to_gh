@@ -559,7 +559,7 @@ Merged "trac_4756-double-eigen.3.patch" in 4.4.alpha0
 
 ---
 
-archive/issue_events_004998.json:
+archive/issue_events_010878.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -567,7 +567,7 @@ archive/issue_events_004998.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4756#event-4998"
+    "url": "https://github.com/sagemath/sagetest/issues/4756#event-10878"
 }
 ```
 

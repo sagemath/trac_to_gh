@@ -48,6 +48,23 @@ This patch depends on the changes in #2085, and the patch in #2134.
 
 ---
 
+archive/issue_events_005220.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-02-17T00:01:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2184",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2184#event-5220"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014316.json:
 ```json
 {
@@ -84,7 +101,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002351.json:
+archive/issue_events_005221.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -92,6 +109,6 @@ archive/issue_events_002351.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2184",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2184#event-2351"
+    "url": "https://github.com/sagemath/sagetest/issues/2184#event-5221"
 }
 ```

@@ -92,6 +92,159 @@ Changing keywords from "" to "sd32".
 
 ---
 
+archive/issue_events_023523.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23523"
+}
+```
+
+
+
+---
+
+archive/issue_events_023524.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23524"
+}
+```
+
+
+
+---
+
+archive/issue_events_023525.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23525"
+}
+```
+
+
+
+---
+
+archive/issue_events_023526.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23526"
+}
+```
+
+
+
+---
+
+archive/issue_events_023527.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23527"
+}
+```
+
+
+
+---
+
+archive/issue_events_023528.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23528"
+}
+```
+
+
+
+---
+
+archive/issue_events_023529.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23529"
+}
+```
+
+
+
+---
+
+archive/issue_events_023530.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2021-04-03T09:53:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23530"
+}
+```
+
+
+
+---
+
+archive/issue_events_023531.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2021-04-03T09:53:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-9.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23531"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090939.json:
 ```json
 {
@@ -105,6 +258,40 @@ archive/issue_comments_090939.json:
 ```
 
 I think we can close this ticket as outdated. `README.md` and the installation manual are in good shape; and since version 9.0, the release tours have a section in the end that talk about the version-specific details of tested platforms.
+
+
+
+---
+
+archive/issue_events_023532.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-04-03T18:16:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-9.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23532"
+}
+```
+
+
+
+---
+
+archive/issue_events_023533.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-04-03T18:16:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9487",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23533"
+}
+```
 
 
 
@@ -146,7 +333,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009638.json:
+archive/issue_events_023534.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -154,7 +341,7 @@ archive/issue_events_009638.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9487",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9487#event-9638"
+    "url": "https://github.com/sagemath/sagetest/issues/9487#event-23534"
 }
 ```
 

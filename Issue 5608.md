@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5608
 
 ---
 
+archive/issue_events_013205.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T08:05:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5608",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5608#event-13205"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043683.json:
 ```json
 {
@@ -42,6 +59,40 @@ archive/issue_comments_043683.json:
 ```
 
 #6200 has a fix for this. I would also like to see the wrongly named `merten` constant deprecated, though I don't know how we can do this.
+
+
+
+---
+
+archive/issue_events_013206.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5608",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5608#event-13206"
+}
+```
+
+
+
+---
+
+archive/issue_events_013207.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5608",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5608#event-13207"
+}
+```
 
 
 
@@ -331,7 +382,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005852.json:
+archive/issue_events_013208.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -339,6 +390,6 @@ archive/issue_events_005852.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5608#event-5852"
+    "url": "https://github.com/sagemath/sagetest/issues/5608#event-13208"
 }
 ```

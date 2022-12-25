@@ -74,7 +74,7 @@ Merged in Sage 3.0.2.alpha0
 
 ---
 
-archive/issue_events_003321.json:
+archive/issue_events_007017.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -82,7 +82,7 @@ archive/issue_events_003321.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3105",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3105#event-3321"
+    "url": "https://github.com/sagemath/sagetest/issues/3105#event-7017"
 }
 ```
 
@@ -126,7 +126,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003322.json:
+archive/issue_events_007018.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
@@ -134,7 +134,7 @@ archive/issue_events_003322.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3105",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3105#event-3322"
+    "url": "https://github.com/sagemath/sagetest/issues/3105#event-7018"
 }
 ```
 
@@ -212,7 +212,7 @@ It also simplifies  !__repr!__  for such elements slightly.
 
 ---
 
-archive/issue_events_003323.json:
+archive/issue_events_007019.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
@@ -220,7 +220,7 @@ archive/issue_events_003323.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3105",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3105#event-3323"
+    "url": "https://github.com/sagemath/sagetest/issues/3105#event-7019"
 }
 ```
 

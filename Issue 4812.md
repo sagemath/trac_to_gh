@@ -107,6 +107,23 @@ Code looks good, the SageTeX example file now works...positive review.
 
 ---
 
+archive/issue_events_011022.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-17T14:35:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4812",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4812#event-11022"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036408.json:
 ```json
 {
@@ -228,6 +245,40 @@ I put up a new patch which fixes the issue above.
 
 ---
 
+archive/issue_events_011023.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-12-22T16:37:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4812",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4812#event-11023"
+}
+```
+
+
+
+---
+
+archive/issue_events_011024.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-12-22T16:37:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4812",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4812#event-11024"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036412.json:
 ```json
 {
@@ -246,7 +297,7 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_events_005054.json:
+archive/issue_events_011025.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -254,7 +305,7 @@ archive/issue_events_005054.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4812",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4812#event-5054"
+    "url": "https://github.com/sagemath/sagetest/issues/4812#event-11025"
 }
 ```
 

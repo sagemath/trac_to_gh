@@ -310,6 +310,23 @@ patch: gp2c integration into sage
 
 ---
 
+archive/issue_events_000545.json:
+```json
+{
+    "actor": "https://github.com/pdenapo",
+    "created_at": "2008-01-15T15:36:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-545"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001161.json:
 ```json
 {
@@ -569,7 +586,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_000272.json:
+archive/issue_events_000546.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -577,7 +594,7 @@ archive/issue_events_000272.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/258#event-272"
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-546"
 }
 ```
 
@@ -670,6 +687,40 @@ Changing keywords from "editor_mabshoff" to "".
 
 ---
 
+archive/issue_events_000547.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-07-09T09:15:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-547"
+}
+```
+
+
+
+---
+
+archive/issue_events_000548.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-07-09T09:15:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-548"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001176.json:
 ```json
 {
@@ -724,7 +775,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_000273.json:
+archive/issue_events_000549.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -732,7 +783,7 @@ archive/issue_events_000273.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/258#event-273"
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-549"
 }
 ```
 
@@ -904,6 +955,40 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
+archive/issue_events_000550.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-08-13T09:57:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-550"
+}
+```
+
+
+
+---
+
+archive/issue_events_000551.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-08-13T09:57:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "milestone": "sage-6.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-551"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001188.json:
 ```json
 {
@@ -1016,6 +1101,40 @@ Yes, yes, but please, could you update "sage4" ?
 
 ---
 
+archive/issue_events_000552.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2015-10-21T20:09:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "milestone": "sage-6.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-552"
+}
+```
+
+
+
+---
+
+archive/issue_events_000553.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2015-10-21T20:09:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "milestone": "sage-6.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-553"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001194.json:
 ```json
 {
@@ -1108,7 +1227,7 @@ Is "upstream stable + patches" always better than "upstream develop"? Yes.
 
 ---
 
-archive/issue_events_000274.json:
+archive/issue_events_000554.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1116,7 +1235,7 @@ archive/issue_events_000274.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/258#event-274"
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-554"
 }
 ```
 

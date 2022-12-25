@@ -72,7 +72,7 @@ This is a dup of #8455, as a search for "update mpi" in trac shows.
 
 ---
 
-archive/issue_events_008716.json:
+archive/issue_events_020574.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -80,7 +80,7 @@ archive/issue_events_008716.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8537#event-8716"
+    "url": "https://github.com/sagemath/sagetest/issues/8537#event-20574"
 }
 ```
 
@@ -124,7 +124,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008717.json:
+archive/issue_events_020575.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -132,7 +132,7 @@ archive/issue_events_008717.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8537#event-8717"
+    "url": "https://github.com/sagemath/sagetest/issues/8537#event-20575"
 }
 ```
 
@@ -267,6 +267,23 @@ archive/issue_comments_077047.json:
 Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8537/spkg-install) by maldun created at 2011-01-07 00:18:41
 
 current spkg install
+
+
+
+---
+
+archive/issue_events_020576.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2011-01-07T00:30:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8537",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8537#event-20576"
+}
+```
 
 
 
@@ -521,7 +538,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008718.json:
+archive/issue_events_020577.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -529,6 +546,6 @@ archive/issue_events_008718.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8537#event-8718"
+    "url": "https://github.com/sagemath/sagetest/issues/8537#event-20577"
 }
 ```

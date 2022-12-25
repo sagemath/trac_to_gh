@@ -121,7 +121,58 @@ Attachment [trac_9534-permgroup_base.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_events_009682.json:
+archive/issue_events_023686.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-10T08:44:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9534",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23686"
+}
+```
+
+
+
+---
+
+archive/issue_events_023687.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-16T21:33:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9534",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23687"
+}
+```
+
+
+
+---
+
+archive/issue_events_023688.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-16T21:33:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9534",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23688"
+}
+```
+
+
+
+---
+
+archive/issue_events_023689.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -129,7 +180,7 @@ archive/issue_events_009682.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9534",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9534#event-9682"
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23689"
 }
 ```
 
@@ -209,7 +260,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009683.json:
+archive/issue_events_023690.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -217,7 +268,7 @@ archive/issue_events_009683.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9534",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9534#event-9683"
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23690"
 }
 ```
 
@@ -261,6 +312,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_023691.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-08-01T11:37:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9534",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23691"
+}
+```
+
+
+
+---
+
+archive/issue_events_023692.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-08-01T11:37:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9534",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23692"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091683.json:
 ```json
 {
@@ -281,7 +366,41 @@ In case it does, one should set it to "needs work", otherwise the milestone shou
 
 ---
 
-archive/issue_events_009684.json:
+archive/issue_events_023693.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-07T19:11:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9534",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23693"
+}
+```
+
+
+
+---
+
+archive/issue_events_023694.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-07T19:11:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9534",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23694"
+}
+```
+
+
+
+---
+
+archive/issue_events_023695.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -289,7 +408,7 @@ archive/issue_events_009684.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9534",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9534#event-9684"
+    "url": "https://github.com/sagemath/sagetest/issues/9534#event-23695"
 }
 ```
 

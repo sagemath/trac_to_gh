@@ -329,7 +329,7 @@ This is now #2750.
 
 ---
 
-archive/issue_events_002560.json:
+archive/issue_events_005633.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -337,7 +337,7 @@ archive/issue_events_002560.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2384#event-2560"
+    "url": "https://github.com/sagemath/sagetest/issues/2384#event-5633"
 }
 ```
 

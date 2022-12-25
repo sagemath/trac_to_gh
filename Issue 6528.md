@@ -146,7 +146,7 @@ http://sage.math.washington.edu/home/mvngu/patch/polybori-0.5rc.p9.spkg
 
 ---
 
-archive/issue_events_006764.json:
+archive/issue_events_015400.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -154,7 +154,7 @@ archive/issue_events_006764.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6528",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6528#event-6764"
+    "url": "https://github.com/sagemath/sagetest/issues/6528#event-15400"
 }
 ```
 

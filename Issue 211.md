@@ -92,6 +92,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/211
 
 ---
 
+archive/issue_events_000421.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-08-18T19:22:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-421"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000942.json:
 ```json
 {
@@ -125,6 +142,40 @@ archive/issue_comments_000943.json:
 In other words, numpy's speed is probably coming from its lack of accuracy. GSL gives highly accurate results, at least in the example given here:
 
 http://www.gnu.org/software/gsl/manual/html_node/Roots-of-Polynomials-Examples.html
+
+
+
+---
+
+archive/issue_events_000422.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-08-18T20:33:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-422"
+}
+```
+
+
+
+---
+
+archive/issue_events_000423.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-08-18T20:33:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-423"
+}
+```
 
 
 
@@ -165,6 +216,74 @@ Carl Witty and John Voight have done some work in this area, so we should discus
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000424.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T12:52:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-424"
+}
+```
+
+
+
+---
+
+archive/issue_events_000425.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T12:52:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-425"
+}
+```
+
+
+
+---
+
+archive/issue_events_000426.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:08:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-426"
+}
+```
+
+
+
+---
+
+archive/issue_events_000427.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:08:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-427"
+}
+```
 
 
 
@@ -246,7 +365,41 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000222.json:
+archive/issue_events_000428.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-25T18:27:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-428"
+}
+```
+
+
+
+---
+
+archive/issue_events_000429.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-25T18:27:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/211",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-429"
+}
+```
+
+
+
+---
+
+archive/issue_events_000430.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -254,6 +407,6 @@ archive/issue_events_000222.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/211",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/211#event-222"
+    "url": "https://github.com/sagemath/sagetest/issues/211#event-430"
 }
 ```

@@ -110,6 +110,23 @@ Changing keywords from "" to "stream".
 
 ---
 
+archive/issue_events_015707.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-07-29T12:26:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6652",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6652#event-15707"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054505.json:
 ```json
 {
@@ -152,7 +169,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006888.json:
+archive/issue_events_015708.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -160,6 +177,6 @@ archive/issue_events_006888.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6652",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6652#event-6888"
+    "url": "https://github.com/sagemath/sagetest/issues/6652#event-15708"
 }
 ```

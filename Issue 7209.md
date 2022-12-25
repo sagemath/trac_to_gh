@@ -168,7 +168,7 @@ Florent
 
 ---
 
-archive/issue_events_007430.json:
+archive/issue_events_017075.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -176,7 +176,7 @@ archive/issue_events_007430.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7209#event-7430"
+    "url": "https://github.com/sagemath/sagetest/issues/7209#event-17075"
 }
 ```
 

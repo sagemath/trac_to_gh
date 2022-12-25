@@ -70,6 +70,57 @@ Patch for this will be in the big patch for #962.
 
 ---
 
+archive/issue_events_002706.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-24T20:18:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/979",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/979#event-2706"
+}
+```
+
+
+
+---
+
+archive/issue_events_002707.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-28T19:01:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/979",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/979#event-2707"
+}
+```
+
+
+
+---
+
+archive/issue_events_002708.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-28T19:01:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/979",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/979#event-2708"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005953.json:
 ```json
 {
@@ -97,6 +148,40 @@ sage: a = .00000000000000000000001;a
 
 ---
 
+archive/issue_events_002709.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-06T21:21:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/979",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/979#event-2709"
+}
+```
+
+
+
+---
+
+archive/issue_events_002710.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-06T21:21:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/979",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/979#event-2710"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005954.json:
 ```json
 {
@@ -110,6 +195,40 @@ archive/issue_comments_005954.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002711.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-06T21:32:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/979",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/979#event-2711"
+}
+```
+
+
+
+---
+
+archive/issue_events_002712.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-06T21:32:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/979",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/979#event-2712"
+}
+```
 
 
 
@@ -133,7 +252,7 @@ Merged in 2.8.15.
 
 ---
 
-archive/issue_events_001100.json:
+archive/issue_events_002713.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -141,6 +260,6 @@ archive/issue_events_001100.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/979#event-1100"
+    "url": "https://github.com/sagemath/sagetest/issues/979#event-2713"
 }
 ```

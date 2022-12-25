@@ -429,6 +429,23 @@ All my concerns have been addressed in the patch `trac_2507.patch`. Doctest cove
 
 ---
 
+archive/issue_events_005890.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-13T18:35:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2507",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2507#event-5890"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016965.json:
 ```json
 {
@@ -451,7 +468,7 @@ Michael
 
 ---
 
-archive/issue_events_002688.json:
+archive/issue_events_005891.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -459,7 +476,7 @@ archive/issue_events_002688.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2507#event-2688"
+    "url": "https://github.com/sagemath/sagetest/issues/2507#event-5891"
 }
 ```
 

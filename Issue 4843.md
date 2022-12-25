@@ -33,6 +33,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4843
 
 ---
 
+archive/issue_events_011121.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-02T23:17:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4843",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4843#event-11121"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036655.json:
 ```json
 {
@@ -50,6 +67,40 @@ Unfortunately this will be bumped to Sage 3.3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_011122.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-06T04:38:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4843",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4843#event-11122"
+}
+```
+
+
+
+---
+
+archive/issue_events_011123.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-06T04:38:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4843",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4843#event-11123"
+}
+```
 
 
 
@@ -117,7 +168,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005088.json:
+archive/issue_events_011124.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -125,7 +176,7 @@ archive/issue_events_005088.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4843",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4843#event-5088"
+    "url": "https://github.com/sagemath/sagetest/issues/4843#event-11124"
 }
 ```
 

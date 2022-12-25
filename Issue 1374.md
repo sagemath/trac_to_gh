@@ -125,6 +125,23 @@ __pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (__pyx_v_self=0x2b62
 
 ---
 
+archive/issue_events_003549.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-02T21:20:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1374",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-3549"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008790.json:
 ```json
 {
@@ -203,6 +220,40 @@ Unhandled SIGBUS: A bus error occured in SAGE.
 
 ---
 
+archive/issue_events_003550.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-02T21:32:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1374",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-3550"
+}
+```
+
+
+
+---
+
+archive/issue_events_003551.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-02T21:32:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1374",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-3551"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008793.json:
 ```json
 {
@@ -239,7 +290,7 @@ Merged in 2.8.15.rc0.
 
 ---
 
-archive/issue_events_001517.json:
+archive/issue_events_003552.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -247,7 +298,7 @@ archive/issue_events_001517.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#event-1517"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-3552"
 }
 ```
 
@@ -327,7 +378,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001518.json:
+archive/issue_events_003553.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -335,7 +386,7 @@ archive/issue_events_001518.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#event-1518"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-3553"
 }
 ```
 
@@ -385,7 +436,7 @@ Michael
 
 ---
 
-archive/issue_events_001519.json:
+archive/issue_events_003554.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -393,7 +444,7 @@ archive/issue_events_001519.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#event-1519"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-3554"
 }
 ```
 

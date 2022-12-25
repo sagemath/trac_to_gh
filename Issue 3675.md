@@ -61,6 +61,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_008415.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-15T10:52:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3675",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3675#event-8415"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025962.json:
 ```json
 {
@@ -121,7 +138,7 @@ Merged in the optional spkg repo in Sage 3.1.2.rc4.
 
 ---
 
-archive/issue_events_003896.json:
+archive/issue_events_008416.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -129,7 +146,7 @@ archive/issue_events_003896.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3675",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3675#event-3896"
+    "url": "https://github.com/sagemath/sagetest/issues/3675#event-8416"
 }
 ```
 

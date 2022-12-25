@@ -269,6 +269,23 @@ since I don't know the answer. Though, quite likely Sage doesn't implement it. T
 
 ---
 
+archive/issue_events_007616.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2008-08-06T16:30:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#event-7616"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023568.json:
 ```json
 {
@@ -446,7 +463,7 @@ Michael
 
 ---
 
-archive/issue_events_003592.json:
+archive/issue_events_007617.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -454,7 +471,7 @@ archive/issue_events_003592.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3376#event-3592"
+    "url": "https://github.com/sagemath/sagetest/issues/3376#event-7617"
 }
 ```
 

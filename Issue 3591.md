@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3591
 
 ---
 
+archive/issue_events_008221.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
+    "created_at": "2008-07-07T22:01:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3591",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3591#event-8221"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025325.json:
 ```json
 {
@@ -43,6 +60,40 @@ archive/issue_comments_025325.json:
 Attachment [sage-3591.patch](tarball://root/attachments/some-uuid/ticket3591/sage-3591.patch) by TimothyClemans created at 2008-07-07 22:01:41
 
 Also removed "child_logout = Logout()" from Toplevel resource because it's already in UserToplevel and anonymous users can't logout anyways.
+
+
+
+---
+
+archive/issue_events_008222.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-07T23:50:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3591",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3591#event-8222"
+}
+```
+
+
+
+---
+
+archive/issue_events_008223.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-07T23:50:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3591",
+    "milestone": "sage-3.0.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3591#event-8223"
+}
+```
 
 
 
@@ -84,6 +135,40 @@ Merged in Sage 3.1.alpha1
 
 ---
 
+archive/issue_events_008224.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-11T02:40:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3591",
+    "milestone": "sage-3.0.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3591#event-8224"
+}
+```
+
+
+
+---
+
+archive/issue_events_008225.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-11T02:40:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3591",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3591#event-8225"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025328.json:
 ```json
 {
@@ -102,7 +187,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003810.json:
+archive/issue_events_008226.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,6 +195,6 @@ archive/issue_events_003810.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3591",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3591#event-3810"
+    "url": "https://github.com/sagemath/sagetest/issues/3591#event-8226"
 }
 ```

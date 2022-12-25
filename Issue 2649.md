@@ -73,7 +73,7 @@ subsumed by #2651
 
 ---
 
-archive/issue_events_002840.json:
+archive/issue_events_006201.json:
 ```json
 {
     "actor": "https://github.com/rhinton",
@@ -81,6 +81,6 @@ archive/issue_events_002840.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2649",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2649#event-2840"
+    "url": "https://github.com/sagemath/sagetest/issues/2649#event-6201"
 }
 ```

@@ -46,7 +46,7 @@ Attachment [12159-gaski.patch](tarball://root/attachments/some-uuid/ticket6167/1
 
 ---
 
-archive/issue_events_006416.json:
+archive/issue_events_014494.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -54,7 +54,7 @@ archive/issue_events_006416.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6167",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6167#event-6416"
+    "url": "https://github.com/sagemath/sagetest/issues/6167#event-14494"
 }
 ```
 

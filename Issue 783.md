@@ -101,6 +101,23 @@ Note that due to this problem, the plot function fails with:
 
 ---
 
+archive/issue_events_002159.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-04-19T14:41:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/783",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-2159"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004667.json:
 ```json
 {
@@ -216,7 +233,7 @@ Merged in Sage 3.0.1.alpha0
 
 ---
 
-archive/issue_events_000888.json:
+archive/issue_events_002160.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -224,7 +241,7 @@ archive/issue_events_000888.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/783#event-888"
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-2160"
 }
 ```
 
@@ -268,7 +285,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_000889.json:
+archive/issue_events_002161.json:
 ```json
 {
     "actor": "https://github.com/zimmermann6",
@@ -276,7 +293,7 @@ archive/issue_events_000889.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/783#event-889"
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-2161"
 }
 ```
 
@@ -315,6 +332,40 @@ sage: gp.dilog(-1.1)
 -0.89083809026228267332015894927022713036
 ```
 
+
+
+
+---
+
+archive/issue_events_002162.json:
+```json
+{
+    "actor": "https://github.com/zimmermann6",
+    "created_at": "2010-02-07T10:44:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/783",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-2162"
+}
+```
+
+
+
+---
+
+archive/issue_events_002163.json:
+```json
+{
+    "actor": "https://github.com/zimmermann6",
+    "created_at": "2010-02-07T10:44:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/783",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-2163"
+}
+```
 
 
 
@@ -629,7 +680,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000890.json:
+archive/issue_events_002164.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -637,6 +688,6 @@ archive/issue_events_000890.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/783#event-890"
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-2164"
 }
 ```

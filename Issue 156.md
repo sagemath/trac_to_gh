@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/156
 
 ---
 
+archive/issue_events_000288.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:57:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/156",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/156#event-288"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000701.json:
 ```json
 {
@@ -125,7 +142,7 @@ diff -r 08b375707022 -r 061691096b76 sage/rings/groebner_fan.py
 
 ---
 
-archive/issue_events_000162.json:
+archive/issue_events_000289.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -133,6 +150,6 @@ archive/issue_events_000162.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/156",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/156#event-162"
+    "url": "https://github.com/sagemath/sagetest/issues/156#event-289"
 }
 ```

@@ -66,7 +66,7 @@ I've attached a new patch which adds a simple doctest.  Only apply trac_3982.2.p
 
 ---
 
-archive/issue_events_004212.json:
+archive/issue_events_009120.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -74,7 +74,7 @@ archive/issue_events_004212.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3982",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3982#event-4212"
+    "url": "https://github.com/sagemath/sagetest/issues/3982#event-9120"
 }
 ```
 

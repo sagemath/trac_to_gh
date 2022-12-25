@@ -528,6 +528,23 @@ Michael
 
 ---
 
+archive/issue_events_012686.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2009-04-28T01:15:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5438",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5438#event-12686"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041992.json:
 ```json
 {
@@ -606,7 +623,7 @@ The plots look fine. This patch applies to Sage 3.4.2 and passes its doctests. P
 
 ---
 
-archive/issue_events_005690.json:
+archive/issue_events_012687.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -614,7 +631,41 @@ archive/issue_events_005690.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5438#event-5690"
+    "url": "https://github.com/sagemath/sagetest/issues/5438#event-12687"
+}
+```
+
+
+
+---
+
+archive/issue_events_012688.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T06:49:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5438",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5438#event-12688"
+}
+```
+
+
+
+---
+
+archive/issue_events_012689.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T06:49:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5438",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5438#event-12689"
 }
 ```
 

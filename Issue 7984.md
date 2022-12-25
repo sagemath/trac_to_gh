@@ -206,7 +206,7 @@ Robert: I have merged [7984-qqbar-cmp.patch](http://trac.sagemath.org/sage_trac/
 
 ---
 
-archive/issue_events_008199.json:
+archive/issue_events_019097.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -214,7 +214,7 @@ archive/issue_events_008199.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7984#event-8199"
+    "url": "https://github.com/sagemath/sagetest/issues/7984#event-19097"
 }
 ```
 

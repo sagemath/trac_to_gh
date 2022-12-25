@@ -75,6 +75,23 @@ Regards,
 
 ---
 
+archive/issue_events_020226.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-03-05T23:17:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8434",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8434#event-20226"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075577.json:
 ```json
 {
@@ -168,7 +185,7 @@ This was long, long time ago (perhaps even in a galaxy far, far away ...). So I 
 
 ---
 
-archive/issue_events_008619.json:
+archive/issue_events_020227.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -176,7 +193,7 @@ archive/issue_events_008619.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8434",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8434#event-8619"
+    "url": "https://github.com/sagemath/sagetest/issues/8434#event-20227"
 }
 ```
 

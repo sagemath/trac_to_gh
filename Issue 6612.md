@@ -563,6 +563,23 @@ Hmm... The coding style in the patch doesn't conform to coding conventions menti
 
 ---
 
+archive/issue_events_015612.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-14T12:02:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6612",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6612#event-15612"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054023.json:
 ```json
 {
@@ -1052,7 +1069,7 @@ Merged patches in the script repository in this order:
 
 ---
 
-archive/issue_events_006852.json:
+archive/issue_events_015613.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1060,6 +1077,6 @@ archive/issue_events_006852.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6612#event-6852"
+    "url": "https://github.com/sagemath/sagetest/issues/6612#event-15613"
 }
 ```

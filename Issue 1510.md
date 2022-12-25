@@ -58,6 +58,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1510
 
 ---
 
+archive/issue_events_003820.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-14T18:26:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1510",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1510#event-3820"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009645.json:
 ```json
 {
@@ -371,7 +388,41 @@ Yep, I think we can close this now that we're at Python 2.6.
 
 ---
 
-archive/issue_events_001664.json:
+archive/issue_events_003821.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-07-16T21:05:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1510",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1510#event-3821"
+}
+```
+
+
+
+---
+
+archive/issue_events_003822.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-07-16T21:05:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1510",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1510#event-3822"
+}
+```
+
+
+
+---
+
+archive/issue_events_003823.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -379,6 +430,6 @@ archive/issue_events_001664.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1510#event-1664"
+    "url": "https://github.com/sagemath/sagetest/issues/1510#event-3823"
 }
 ```

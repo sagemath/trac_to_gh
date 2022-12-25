@@ -56,6 +56,23 @@ So maybe it could be a optional package unless we can get a GPL version.
 
 ---
 
+archive/issue_events_005257.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-02-21T17:46:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2203",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2203#event-5257"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014470.json:
 ```json
 {
@@ -241,6 +258,40 @@ archive/issue_comments_014478.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_005258.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2010-02-05T09:07:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2203",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2203#event-5258"
+}
+```
+
+
+
+---
+
+archive/issue_events_005259.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2010-02-05T09:07:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2203",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2203#event-5259"
+}
+```
 
 
 
@@ -842,7 +893,7 @@ Nathann
 
 ---
 
-archive/issue_events_002369.json:
+archive/issue_events_005260.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -850,7 +901,7 @@ archive/issue_events_002369.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2203",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2203#event-2369"
+    "url": "https://github.com/sagemath/sagetest/issues/2203#event-5260"
 }
 ```
 

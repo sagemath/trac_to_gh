@@ -1179,6 +1179,23 @@ Done. I was waiting to see if anyone else had comments or concerns before settin
 
 ---
 
+archive/issue_events_003146.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-26T09:33:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1173",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1173#event-3146"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007214.json:
 ```json
 {
@@ -1192,6 +1209,40 @@ archive/issue_comments_007214.json:
 ```
 
 This obviously conflicts with #11948
+
+
+
+---
+
+archive/issue_events_003147.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-26T09:33:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1173",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1173#event-3147"
+}
+```
+
+
+
+---
+
+archive/issue_events_003148.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-26T09:33:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1173",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1173#event-3148"
+}
+```
 
 
 
@@ -1446,6 +1497,40 @@ Fine by me.
 
 ---
 
+archive/issue_events_003149.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-01-09T21:10:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1173",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1173#event-3149"
+}
+```
+
+
+
+---
+
+archive/issue_events_003150.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-01-09T21:10:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1173",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1173#event-3150"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007228.json:
 ```json
 {
@@ -1536,6 +1621,40 @@ Changing status from needs_work to positive_review.
 
 ---
 
+archive/issue_events_003151.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-06-19T06:20:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1173",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1173#event-3151"
+}
+```
+
+
+
+---
+
+archive/issue_events_003152.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-06-19T06:20:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1173",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1173#event-3152"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007233.json:
 ```json
 {
@@ -1554,7 +1673,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001305.json:
+archive/issue_events_003153.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1562,6 +1681,6 @@ archive/issue_events_001305.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1173#event-1305"
+    "url": "https://github.com/sagemath/sagetest/issues/1173#event-3153"
 }
 ```

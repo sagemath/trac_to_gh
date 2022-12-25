@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/386
 
 ---
 
-archive/issue_events_000408.json:
+archive/issue_events_000897.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -70,7 +70,7 @@ archive/issue_events_000408.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/386",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/386#event-408"
+    "url": "https://github.com/sagemath/sagetest/issues/386#event-897"
 }
 ```
 
@@ -151,3 +151,88 @@ archive/issue_comments_001890.json:
 > merged? If it was merged in Sage 4.3, was it alpha0 or alpha1? 
 
 It was back in 2008 sometime...
+
+
+
+---
+
+archive/issue_events_000898.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-26T16:55:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/386",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/386#event-898"
+}
+```
+
+
+
+---
+
+archive/issue_events_000899.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-26T17:06:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/386",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/386#event-899"
+}
+```
+
+
+
+---
+
+archive/issue_events_000900.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-26T17:06:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/386",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/386#event-900"
+}
+```
+
+
+
+---
+
+archive/issue_events_000901.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-26T17:07:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/386",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/386#event-901"
+}
+```
+
+
+
+---
+
+archive/issue_events_000902.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-26T17:07:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/386",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/386#event-902"
+}
+```

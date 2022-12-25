@@ -132,7 +132,7 @@ sage: A.eigenspaces()
 
 ---
 
-archive/issue_events_000082.json:
+archive/issue_events_000177.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -140,6 +140,6 @@ archive/issue_events_000082.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/82",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/82#event-82"
+    "url": "https://github.com/sagemath/sagetest/issues/82#event-177"
 }
 ```

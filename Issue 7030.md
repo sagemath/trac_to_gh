@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7030
 
 ---
 
-archive/issue_events_007251.json:
+archive/issue_events_016514.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -58,7 +58,7 @@ archive/issue_events_007251.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7030",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7030#event-7251"
+    "url": "https://github.com/sagemath/sagetest/issues/7030#event-16514"
 }
 ```
 
@@ -97,3 +97,20 @@ archive/issue_comments_058120.json:
 ```
 
 Quaddouble was supposed to be removed from Sage long ago.   So there is no point in fixing it.
+
+
+
+---
+
+archive/issue_events_016515.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-03T07:54:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7030",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7030#event-16515"
+}
+```

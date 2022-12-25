@@ -126,7 +126,7 @@ Looks good to me.  I agree with only sorting when plotjoined=True.
 
 ---
 
-archive/issue_events_009913.json:
+archive/issue_events_024525.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -134,7 +134,7 @@ archive/issue_events_009913.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9783#event-9913"
+    "url": "https://github.com/sagemath/sagetest/issues/9783#event-24525"
 }
 ```
 
@@ -155,3 +155,20 @@ archive/issue_comments_095876.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_024526.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-16T04:47:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9783",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9783#event-24526"
+}
+```

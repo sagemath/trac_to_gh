@@ -163,6 +163,23 @@ I've been reading more about GAP's implementation, and it heavily relies on char
 
 ---
 
+archive/issue_events_010156.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T05:41:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#event-10156"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033072.json:
 ```json
 {
@@ -473,7 +490,7 @@ Yep, William added a patch late in the 3.2 game which adds some canonicalization
 
 ---
 
-archive/issue_events_004734.json:
+archive/issue_events_010157.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -481,7 +498,7 @@ archive/issue_events_004734.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4487",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4487#event-4734"
+    "url": "https://github.com/sagemath/sagetest/issues/4487#event-10157"
 }
 ```
 

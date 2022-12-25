@@ -186,7 +186,7 @@ diff -r 931f47e34e11 -r 86ad31ae2e4a sage/rings/power_series_ring_element.py
 
 ---
 
-archive/issue_events_000179.json:
+archive/issue_events_000316.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -194,7 +194,7 @@ archive/issue_events_000179.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/171",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/171#event-179"
+    "url": "https://github.com/sagemath/sagetest/issues/171#event-316"
 }
 ```
 

@@ -66,6 +66,23 @@ Changing component from algebra to doctest.
 
 ---
 
+archive/issue_events_009780.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-19T09:34:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4323",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4323#event-9780"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031613.json:
 ```json
 {
@@ -139,6 +156,40 @@ yes.
 
 ---
 
+archive/issue_events_009781.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-10T07:19:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4323",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4323#event-9781"
+}
+```
+
+
+
+---
+
+archive/issue_events_009782.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-10T07:19:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4323",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4323#event-9782"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031616.json:
 ```json
 {
@@ -181,7 +232,7 @@ Michael
 
 ---
 
-archive/issue_events_004568.json:
+archive/issue_events_009783.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -189,6 +240,6 @@ archive/issue_events_004568.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4323",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4323#event-4568"
+    "url": "https://github.com/sagemath/sagetest/issues/4323#event-9783"
 }
 ```

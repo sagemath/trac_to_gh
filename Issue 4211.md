@@ -155,7 +155,7 @@ Nice.  +1 to the optional spkg
 
 ---
 
-archive/issue_events_004448.json:
+archive/issue_events_009542.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -163,7 +163,7 @@ archive/issue_events_004448.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4211",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4211#event-4448"
+    "url": "https://github.com/sagemath/sagetest/issues/4211#event-9542"
 }
 ```
 

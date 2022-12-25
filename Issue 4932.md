@@ -221,6 +221,23 @@ never mind; it seems like that comment is not true; I get the same spurious answ
 
 ---
 
+archive/issue_events_011353.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-04T19:39:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11353"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037347.json:
 ```json
 {
@@ -238,6 +255,40 @@ Better luck in 3.3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_011354.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-06T22:58:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11354"
+}
+```
+
+
+
+---
+
+archive/issue_events_011355.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-06T22:58:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11355"
+}
+```
 
 
 
@@ -496,6 +547,142 @@ OK, that makes sense, I was reading the code, not the doc string.  Three ideas:
 
 ---
 
+archive/issue_events_011356.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11356"
+}
+```
+
+
+
+---
+
+archive/issue_events_011357.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11357"
+}
+```
+
+
+
+---
+
+archive/issue_events_011358.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11358"
+}
+```
+
+
+
+---
+
+archive/issue_events_011359.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11359"
+}
+```
+
+
+
+---
+
+archive/issue_events_011360.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11360"
+}
+```
+
+
+
+---
+
+archive/issue_events_011361.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11361"
+}
+```
+
+
+
+---
+
+archive/issue_events_011362.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11362"
+}
+```
+
+
+
+---
+
+archive/issue_events_011363.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037360.json:
 ```json
 {
@@ -532,7 +719,41 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_events_005175.json:
+archive/issue_events_011364.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-02-23T11:13:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11364"
+}
+```
+
+
+
+---
+
+archive/issue_events_011365.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-02-23T11:13:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4932",
+    "milestone": "sage-6.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11365"
+}
+```
+
+
+
+---
+
+archive/issue_events_011366.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -540,7 +761,7 @@ archive/issue_events_005175.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4932#event-5175"
+    "url": "https://github.com/sagemath/sagetest/issues/4932#event-11366"
 }
 ```
 

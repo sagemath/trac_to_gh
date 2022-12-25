@@ -93,6 +93,23 @@ Review: patch applies fine to 4.0.2 and does what it says.  I tried both from th
 
 ---
 
+archive/issue_events_014973.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-06-24T09:46:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6363",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6363#event-14973"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050814.json:
 ```json
 {
@@ -111,7 +128,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006613.json:
+archive/issue_events_014974.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -119,6 +136,6 @@ archive/issue_events_006613.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6363",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6363#event-6613"
+    "url": "https://github.com/sagemath/sagetest/issues/6363#event-14974"
 }
 ```

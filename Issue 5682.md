@@ -87,6 +87,23 @@ This is done in #11726.
 
 ---
 
+archive/issue_events_013363.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2014-04-09T04:21:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5682",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5682#event-13363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044353.json:
 ```json
 {
@@ -141,7 +158,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005924.json:
+archive/issue_events_013364.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -149,6 +166,6 @@ archive/issue_events_005924.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5682",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5682#event-5924"
+    "url": "https://github.com/sagemath/sagetest/issues/5682#event-13364"
 }
 ```

@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/68
 
 ---
 
+archive/issue_events_000149.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:42:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/68",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/68#event-149"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000353.json:
 ```json
 {
@@ -100,7 +117,7 @@ We finished this in May 2007 at SD4!
 
 ---
 
-archive/issue_events_000069.json:
+archive/issue_events_000150.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -108,6 +125,40 @@ archive/issue_events_000069.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/68",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/68#event-69"
+    "url": "https://github.com/sagemath/sagetest/issues/68#event-150"
+}
+```
+
+
+
+---
+
+archive/issue_events_000151.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-27T14:52:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/68",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/68#event-151"
+}
+```
+
+
+
+---
+
+archive/issue_events_000152.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-27T14:52:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/68",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/68#event-152"
 }
 ```

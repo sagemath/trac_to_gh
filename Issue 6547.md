@@ -188,6 +188,23 @@ After the switch to using native namespace packages (#29705), we cannot use `__i
 
 ---
 
+archive/issue_events_015444.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-09-07T07:47:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#event-15444"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053290.json:
 ```json
 {
@@ -260,7 +277,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006782.json:
+archive/issue_events_015445.json:
 ```json
 {
     "actor": "https://github.com/mkoeppe",
@@ -268,6 +285,6 @@ archive/issue_events_006782.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6547#event-6782"
+    "url": "https://github.com/sagemath/sagetest/issues/6547#event-15445"
 }
 ```

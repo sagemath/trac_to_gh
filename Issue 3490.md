@@ -105,6 +105,23 @@ note: sage-3490_2.patch puts a somehow removed extract_title function
 
 ---
 
+archive/issue_events_007954.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-06-24T07:15:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#event-7954"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024539.json:
 ```json
 {
@@ -123,7 +140,7 @@ nice
 
 ---
 
-archive/issue_events_003710.json:
+archive/issue_events_007955.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -131,7 +148,41 @@ archive/issue_events_003710.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3490",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3490#event-3710"
+    "url": "https://github.com/sagemath/sagetest/issues/3490#event-7955"
+}
+```
+
+
+
+---
+
+archive/issue_events_007956.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T06:34:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#event-7956"
+}
+```
+
+
+
+---
+
+archive/issue_events_007957.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T06:34:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#event-7957"
 }
 ```
 

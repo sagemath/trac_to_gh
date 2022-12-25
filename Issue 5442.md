@@ -96,7 +96,7 @@ I'm marking this ticket as invalid unless you see a good reason to totally chang
 
 ---
 
-archive/issue_events_005692.json:
+archive/issue_events_012716.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -104,7 +104,7 @@ archive/issue_events_005692.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5442",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5442#event-5692"
+    "url": "https://github.com/sagemath/sagetest/issues/5442#event-12716"
 }
 ```
 
@@ -125,3 +125,20 @@ archive/issue_comments_042002.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_012717.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-07T19:12:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5442",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5442#event-12717"
+}
+```

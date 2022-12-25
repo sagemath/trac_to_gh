@@ -472,6 +472,23 @@ This has been sitting with a positive review for nearly two weeks, and I just no
 
 ---
 
+archive/issue_events_016193.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2009-12-22T17:42:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6887",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6887#event-16193"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056817.json:
 ```json
 {
@@ -485,6 +502,40 @@ archive/issue_comments_056817.json:
 ```
 
 This will be merged in first thing for 4.3.1.
+
+
+
+---
+
+archive/issue_events_016194.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:12:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6887",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6887#event-16194"
+}
+```
+
+
+
+---
+
+archive/issue_events_016195.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:12:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6887",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6887#event-16195"
+}
+```
 
 
 
@@ -510,7 +561,7 @@ That's fine -- thanks!
 
 ---
 
-archive/issue_events_007118.json:
+archive/issue_events_016196.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -518,7 +569,7 @@ archive/issue_events_007118.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#event-7118"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#event-16196"
 }
 ```
 

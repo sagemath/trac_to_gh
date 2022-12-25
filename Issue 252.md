@@ -89,6 +89,23 @@ boom
 
 ---
 
+archive/issue_events_000527.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T01:59:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-527"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001104.json:
 ```json
 {
@@ -251,6 +268,40 @@ I don't know about "we", but it is a total no brainer that this has to get done 
 
 ---
 
+archive/issue_events_000528.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/Bouillaguet",
+    "created_at": "2013-02-19T20:45:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-528"
+}
+```
+
+
+
+---
+
+archive/issue_events_000529.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/Bouillaguet",
+    "created_at": "2013-02-19T20:45:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-5.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-529"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001112.json:
 ```json
 {
@@ -264,6 +315,142 @@ archive/issue_comments_001112.json:
 ```
 
 I just ran into this issue
+
+
+
+---
+
+archive/issue_events_000530.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-5.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-530"
+}
+```
+
+
+
+---
+
+archive/issue_events_000531.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-531"
+}
+```
+
+
+
+---
+
+archive/issue_events_000532.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-532"
+}
+```
+
+
+
+---
+
+archive/issue_events_000533.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-533"
+}
+```
+
+
+
+---
+
+archive/issue_events_000534.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-534"
+}
+```
+
+
+
+---
+
+archive/issue_events_000535.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-535"
+}
+```
+
+
+
+---
+
+archive/issue_events_000536.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-536"
+}
+```
+
+
+
+---
+
+archive/issue_events_000537.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-537"
+}
+```
 
 
 
@@ -773,7 +960,7 @@ Perfect.
 
 ---
 
-archive/issue_events_000266.json:
+archive/issue_events_000538.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -781,7 +968,7 @@ archive/issue_events_000266.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/252#event-266"
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-538"
 }
 ```
 

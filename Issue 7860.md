@@ -122,6 +122,57 @@ Is this still  a problem?
 
 ---
 
+archive/issue_events_018787.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7860",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7860#event-18787"
+}
+```
+
+
+
+---
+
+archive/issue_events_018788.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7860",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7860#event-18788"
+}
+```
+
+
+
+---
+
+archive/issue_events_018789.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7860",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7860#event-18789"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068024.json:
 ```json
 {
@@ -158,6 +209,40 @@ Close as obsolete (`sage_fortran` is no longer used).
 
 ---
 
+archive/issue_events_018790.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-04-12T12:04:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7860",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7860#event-18790"
+}
+```
+
+
+
+---
+
+archive/issue_events_018791.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-04-12T12:04:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7860",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7860#event-18791"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068026.json:
 ```json
 {
@@ -176,7 +261,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008075.json:
+archive/issue_events_018792.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -184,7 +269,7 @@ archive/issue_events_008075.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7860",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7860#event-8075"
+    "url": "https://github.com/sagemath/sagetest/issues/7860#event-18792"
 }
 ```
 

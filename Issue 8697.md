@@ -97,7 +97,7 @@ Oops, right. Sorry.
 
 ---
 
-archive/issue_events_008868.json:
+archive/issue_events_021100.json:
 ```json
 {
     "actor": "https://github.com/nthiery",
@@ -105,6 +105,23 @@ archive/issue_events_008868.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8697",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8697#event-8868"
+    "url": "https://github.com/sagemath/sagetest/issues/8697#event-21100"
+}
+```
+
+
+
+---
+
+archive/issue_events_021101.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-18T23:54:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8697",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8697#event-21101"
 }
 ```

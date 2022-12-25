@@ -593,6 +593,23 @@ I replaced the review patch with one which applies to 5.11.rc1.  The only change
 
 ---
 
+archive/issue_events_020857.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8621",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8621#event-20857"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078017.json:
 ```json
 {
@@ -762,7 +779,41 @@ Please can we have this in Sage-6.1!  It will help lmfdb development a lot.
 
 ---
 
-archive/issue_events_008792.json:
+archive/issue_events_020858.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8621",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8621#event-20858"
+}
+```
+
+
+
+---
+
+archive/issue_events_020859.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8621",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8621#event-20859"
+}
+```
+
+
+
+---
+
+archive/issue_events_020860.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -770,7 +821,7 @@ archive/issue_events_008792.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8621#event-8792"
+    "url": "https://github.com/sagemath/sagetest/issues/8621#event-20860"
 }
 ```
 

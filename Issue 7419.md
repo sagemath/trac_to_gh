@@ -185,7 +185,7 @@ I'm pretty sure it's my fault from when I did the setup_eval_from_grid patch.
 
 ---
 
-archive/issue_events_007643.json:
+archive/issue_events_017556.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -193,7 +193,7 @@ archive/issue_events_007643.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7419",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7419#event-7643"
+    "url": "https://github.com/sagemath/sagetest/issues/7419#event-17556"
 }
 ```
 
@@ -214,3 +214,20 @@ archive/issue_comments_062322.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_017557.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-22T05:37:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7419",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7419#event-17557"
+}
+```

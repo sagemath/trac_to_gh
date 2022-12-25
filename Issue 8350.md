@@ -219,7 +219,7 @@ merged with #8330
 
 ---
 
-archive/issue_events_008540.json:
+archive/issue_events_020016.json:
 ```json
 {
     "actor": "https://github.com/rhinton",
@@ -227,6 +227,23 @@ archive/issue_events_008540.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8350#event-8540"
+    "url": "https://github.com/sagemath/sagetest/issues/8350#event-20016"
+}
+```
+
+
+
+---
+
+archive/issue_events_020017.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-02T11:11:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8350",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8350#event-20017"
 }
 ```

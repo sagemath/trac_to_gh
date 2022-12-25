@@ -123,6 +123,23 @@ In ell_modular_symbol there are now two option, either to use or not to use ecli
 
 ---
 
+archive/issue_events_010681.json:
+```json
+{
+    "actor": "https://github.com/categorie",
+    "created_at": "2008-12-10T12:48:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10681"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035069.json:
 ```json
 {
@@ -353,6 +370,74 @@ Apply the last two patches only, the latter is just a one-liner that makes a cer
 
 ---
 
+archive/issue_events_010682.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-02-26T05:24:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10682"
+}
+```
+
+
+
+---
+
+archive/issue_events_010683.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-02-26T05:24:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10683"
+}
+```
+
+
+
+---
+
+archive/issue_events_010684.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-01T02:03:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10684"
+}
+```
+
+
+
+---
+
+archive/issue_events_010685.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-01T02:03:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10685"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035077.json:
 ```json
 {
@@ -468,6 +553,40 @@ gsw
 
 ---
 
+archive/issue_events_010686.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-03-26T00:19:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10686"
+}
+```
+
+
+
+---
+
+archive/issue_events_010687.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-03-26T00:19:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10687"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035082.json:
 ```json
 {
@@ -493,6 +612,40 @@ These failures happen against my merge tree, so no point in reinstating the posi
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_010688.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-03-26T00:55:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10688"
+}
+```
+
+
+
+---
+
+archive/issue_events_010689.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-03-26T00:55:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10689"
+}
+```
 
 
 
@@ -724,6 +877,40 @@ Michael
 
 ---
 
+archive/issue_events_010690.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-03-31T18:11:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10690"
+}
+```
+
+
+
+---
+
+archive/issue_events_010691.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-03-31T18:11:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10691"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035092.json:
 ```json
 {
@@ -784,7 +971,7 @@ Michael
 
 ---
 
-archive/issue_events_004915.json:
+archive/issue_events_010692.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -792,6 +979,6 @@ archive/issue_events_004915.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4667#event-4915"
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-10692"
 }
 ```

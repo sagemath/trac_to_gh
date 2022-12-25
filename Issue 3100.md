@@ -240,6 +240,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3100
 
 ---
 
+archive/issue_events_007005.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-05T10:52:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3100",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3100#event-7005"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021368.json:
 ```json
 {
@@ -272,7 +289,7 @@ sage: CIF(a)
 
 ---
 
-archive/issue_events_003316.json:
+archive/issue_events_007006.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -280,7 +297,7 @@ archive/issue_events_003316.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3100",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3100#event-3316"
+    "url": "https://github.com/sagemath/sagetest/issues/3100#event-7006"
 }
 ```
 

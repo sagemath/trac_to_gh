@@ -65,7 +65,7 @@ This is fixed by the patch at #8565.
 
 ---
 
-archive/issue_events_008978.json:
+archive/issue_events_021498.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +73,7 @@ archive/issue_events_008978.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8813",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8813#event-8978"
+    "url": "https://github.com/sagemath/sagetest/issues/8813#event-21498"
 }
 ```
 
@@ -94,3 +94,20 @@ archive/issue_comments_080765.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_021499.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-29T14:53:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8813",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8813#event-21499"
+}
+```

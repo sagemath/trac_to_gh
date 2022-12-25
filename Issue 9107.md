@@ -1174,6 +1174,23 @@ to get it to compile (after I comment out the last Verbatim block before the lin
 
 ---
 
+archive/issue_events_022346.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9107",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9107#event-22346"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084527.json:
 ```json
 {
@@ -1993,6 +2010,74 @@ Thanks for the pointer. I answered there.
 
 ---
 
+archive/issue_events_022347.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9107",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9107#event-22347"
+}
+```
+
+
+
+---
+
+archive/issue_events_022348.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9107",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9107#event-22348"
+}
+```
+
+
+
+---
+
+archive/issue_events_022349.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9107",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9107#event-22349"
+}
+```
+
+
+
+---
+
+archive/issue_events_022350.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9107",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9107#event-22350"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084557.json:
 ```json
 {
@@ -2360,7 +2445,7 @@ Thanks for fixing this !!!
 
 ---
 
-archive/issue_events_009266.json:
+archive/issue_events_022351.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -2368,7 +2453,7 @@ archive/issue_events_009266.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9107#event-9266"
+    "url": "https://github.com/sagemath/sagetest/issues/9107#event-22351"
 }
 ```
 

@@ -242,7 +242,7 @@ sage: %timeit sage.games.sudoku.Sudoku('..............3.85..1.2.......5.7.....4.
 
 ---
 
-archive/issue_events_003298.json:
+archive/issue_events_006963.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -250,7 +250,7 @@ archive/issue_events_003298.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3084",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3084#event-3298"
+    "url": "https://github.com/sagemath/sagetest/issues/3084#event-6963"
 }
 ```
 

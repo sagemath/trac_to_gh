@@ -171,6 +171,23 @@ Changing assignee from failure to mabshoff.
 
 ---
 
+archive/issue_events_007015.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-21T13:21:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3104",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3104#event-7015"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021408.json:
 ```json
 {
@@ -229,7 +246,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003320.json:
+archive/issue_events_007016.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -237,7 +254,7 @@ archive/issue_events_003320.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3104",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3104#event-3320"
+    "url": "https://github.com/sagemath/sagetest/issues/3104#event-7016"
 }
 ```
 

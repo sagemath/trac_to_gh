@@ -26,7 +26,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/286
 
 ---
 
-archive/issue_events_000303.json:
+archive/issue_events_000649.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -34,7 +34,7 @@ archive/issue_events_000303.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/286",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/286#event-303"
+    "url": "https://github.com/sagemath/sagetest/issues/286#event-649"
 }
 ```
 

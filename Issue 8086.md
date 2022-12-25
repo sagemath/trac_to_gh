@@ -499,7 +499,7 @@ http://boxen.math.washington.edu/home/kirkby/patches/numpy-1.3.0.p4.spkg
 
 ---
 
-archive/issue_events_008292.json:
+archive/issue_events_019355.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -507,7 +507,7 @@ archive/issue_events_008292.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8086",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8086#event-8292"
+    "url": "https://github.com/sagemath/sagetest/issues/8086#event-19355"
 }
 ```
 

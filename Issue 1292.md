@@ -150,6 +150,23 @@ For the IntegerModRing case, we could probably do something with http://www.shou
 
 ---
 
+archive/issue_events_003389.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-28T02:09:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1292",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1292#event-3389"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008088.json:
 ```json
 {
@@ -226,7 +243,7 @@ Merged in 2.8.15.alpha2.
 
 ---
 
-archive/issue_events_001434.json:
+archive/issue_events_003390.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -234,6 +251,6 @@ archive/issue_events_001434.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1292",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1292#event-1434"
+    "url": "https://github.com/sagemath/sagetest/issues/1292#event-3390"
 }
 ```

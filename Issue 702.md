@@ -217,7 +217,7 @@ sage: list(1..5)
 
 ---
 
-archive/issue_events_000772.json:
+archive/issue_events_001875.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -225,7 +225,7 @@ archive/issue_events_000772.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/702#event-772"
+    "url": "https://github.com/sagemath/sagetest/issues/702#event-1875"
 }
 ```
 
@@ -307,7 +307,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000773.json:
+archive/issue_events_001876.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -315,7 +315,7 @@ archive/issue_events_000773.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/702#event-773"
+    "url": "https://github.com/sagemath/sagetest/issues/702#event-1876"
 }
 ```
 
@@ -336,6 +336,23 @@ archive/issue_comments_003680.json:
 ```
 
 [1,2,..,-10] should return the empty list.
+
+
+
+---
+
+archive/issue_events_001877.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-21T22:58:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/702",
+    "milestone": "sage-2.8.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/702#event-1877"
+}
+```
 
 
 
@@ -453,7 +470,7 @@ Fixed now by Robert...
 
 ---
 
-archive/issue_events_000774.json:
+archive/issue_events_001878.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -461,7 +478,7 @@ archive/issue_events_000774.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/702#event-774"
+    "url": "https://github.com/sagemath/sagetest/issues/702#event-1878"
 }
 ```
 

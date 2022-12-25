@@ -154,6 +154,23 @@ sage:
 
 ---
 
+archive/issue_events_024285.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-03-14T20:45:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9710",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9710#event-24285"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094480.json:
 ```json
 {
@@ -250,6 +267,40 @@ Sorry, forgot to actually cc: the release manager.
 
 ---
 
+archive/issue_events_024286.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-16T11:09:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9710",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9710#event-24286"
+}
+```
+
+
+
+---
+
+archive/issue_events_024287.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-16T11:09:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9710",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9710#event-24287"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094485.json:
 ```json
 {
@@ -268,7 +319,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009842.json:
+archive/issue_events_024288.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -276,6 +327,6 @@ archive/issue_events_009842.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9710#event-9842"
+    "url": "https://github.com/sagemath/sagetest/issues/9710#event-24288"
 }
 ```

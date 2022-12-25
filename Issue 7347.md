@@ -55,6 +55,23 @@ See #10088, a duplicate, which has a patch attached.
 
 ---
 
+archive/issue_events_017389.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-08-19T13:58:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7347",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7347#event-17389"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061456.json:
 ```json
 {
@@ -116,7 +133,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007571.json:
+archive/issue_events_017390.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -124,7 +141,7 @@ archive/issue_events_007571.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7347",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7347#event-7571"
+    "url": "https://github.com/sagemath/sagetest/issues/7347#event-17390"
 }
 ```
 

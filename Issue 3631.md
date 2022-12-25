@@ -46,7 +46,7 @@ Changing assignee from @garyfurnish to mabshoff.
 
 ---
 
-archive/issue_events_003850.json:
+archive/issue_events_008334.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -54,7 +54,7 @@ archive/issue_events_003850.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3631",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3631#event-3850"
+    "url": "https://github.com/sagemath/sagetest/issues/3631#event-8334"
 }
 ```
 
@@ -75,6 +75,23 @@ archive/issue_comments_025636.json:
 ```
 
 This is no longer relevant in sage-5.0, since any file which doesn't belong in the repository will be detected by `hg status`.
+
+
+
+---
+
+archive/issue_events_008335.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-03-12T21:30:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3631",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3631#event-8335"
+}
+```
 
 
 

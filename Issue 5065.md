@@ -68,6 +68,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5065
 
 ---
 
+archive/issue_events_011679.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T08:04:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5065",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5065#event-11679"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038511.json:
 ```json
 {
@@ -146,7 +163,7 @@ Remove assignee @loefflerd.
 
 ---
 
-archive/issue_events_005311.json:
+archive/issue_events_011680.json:
 ```json
 {
     "actor": "https://github.com/JohnCremona",
@@ -154,7 +171,7 @@ archive/issue_events_005311.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5065",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5065#event-5311"
+    "url": "https://github.com/sagemath/sagetest/issues/5065#event-11680"
 }
 ```
 
@@ -202,6 +219,40 @@ archive/issue_comments_038516.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_011681.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-14T21:01:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5065",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5065#event-11681"
+}
+```
+
+
+
+---
+
+archive/issue_events_011682.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-14T21:01:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5065",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5065#event-11682"
+}
+```
 
 
 

@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8401
 
 ---
 
-archive/issue_events_008586.json:
+archive/issue_events_020140.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -81,7 +81,7 @@ archive/issue_events_008586.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8401",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8401#event-8586"
+    "url": "https://github.com/sagemath/sagetest/issues/8401#event-20140"
 }
 ```
 

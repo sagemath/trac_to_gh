@@ -94,6 +94,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9792
 
 ---
 
+archive/issue_events_024559.json:
+```json
+{
+    "actor": "https://github.com/mwageringel",
+    "created_at": "2020-06-01T16:00:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9791",
+    "milestone": "sage-9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9791#event-24559"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095988.json:
 ```json
 {
@@ -382,7 +399,7 @@ Thank you.
 
 ---
 
-archive/issue_events_009919.json:
+archive/issue_events_024560.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -390,7 +407,7 @@ archive/issue_events_009919.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9791#event-9919"
+    "url": "https://github.com/sagemath/sagetest/issues/9791#event-24560"
 }
 ```
 

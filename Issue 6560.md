@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6560
 
 ---
 
-archive/issue_events_006797.json:
+archive/issue_events_015473.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -46,7 +46,7 @@ archive/issue_events_006797.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6560",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6560#event-6797"
+    "url": "https://github.com/sagemath/sagetest/issues/6560#event-15473"
 }
 ```
 
@@ -85,3 +85,20 @@ archive/issue_comments_053412.json:
 ```
 
 This is a duplicate of #6577.
+
+
+
+---
+
+archive/issue_events_015474.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-21T10:06:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6560",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6560#event-15474"
+}
+```

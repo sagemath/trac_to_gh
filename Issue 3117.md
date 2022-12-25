@@ -122,7 +122,7 @@ algebra book about localisation.
 
 ---
 
-archive/issue_events_003334.json:
+archive/issue_events_007041.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -130,6 +130,6 @@ archive/issue_events_003334.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3117",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3117#event-3334"
+    "url": "https://github.com/sagemath/sagetest/issues/3117#event-7041"
 }
 ```

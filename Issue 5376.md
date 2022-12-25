@@ -72,7 +72,7 @@ I see that the patch fixes the formatting and typo issues. Positive review.
 
 ---
 
-archive/issue_events_005631.json:
+archive/issue_events_012528.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -80,7 +80,7 @@ archive/issue_events_005631.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5376",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5376#event-5631"
+    "url": "https://github.com/sagemath/sagetest/issues/5376#event-12528"
 }
 ```
 

@@ -219,6 +219,23 @@ As a possible follow-up, we should also implement/check conversion to GP.
 
 ---
 
+archive/issue_events_009895.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-06T13:22:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4376",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4376#event-9895"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032125.json:
 ```json
 {
@@ -636,7 +653,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_004621.json:
+archive/issue_events_009896.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -644,7 +661,7 @@ archive/issue_events_004621.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4376#event-4621"
+    "url": "https://github.com/sagemath/sagetest/issues/4376#event-9896"
 }
 ```
 

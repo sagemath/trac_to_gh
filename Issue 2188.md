@@ -67,7 +67,7 @@ The bit-shift method uses the GMP function ``mpz_mul_2exp``, thus this ticket is
 
 ---
 
-archive/issue_events_002355.json:
+archive/issue_events_005226.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/spancratz",
@@ -75,6 +75,23 @@ archive/issue_events_002355.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2188",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2188#event-2355"
+    "url": "https://github.com/sagemath/sagetest/issues/2188#event-5226"
+}
+```
+
+
+
+---
+
+archive/issue_events_005227.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-16T08:33:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2188",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2188#event-5227"
 }
 ```

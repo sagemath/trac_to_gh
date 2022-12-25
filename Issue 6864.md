@@ -299,7 +299,7 @@ Great!  Thanks.   This passes all relevant doctests and nothing appears in my ho
 
 ---
 
-archive/issue_events_007096.json:
+archive/issue_events_016154.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -307,7 +307,7 @@ archive/issue_events_007096.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6864#event-7096"
+    "url": "https://github.com/sagemath/sagetest/issues/6864#event-16154"
 }
 ```
 

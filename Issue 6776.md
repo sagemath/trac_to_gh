@@ -90,7 +90,7 @@ Also, someday soon the polytope code should be unified (i.e. in polyhedra.py and
 
 ---
 
-archive/issue_events_007007.json:
+archive/issue_events_015971.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -98,7 +98,7 @@ archive/issue_events_007007.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6776",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6776#event-7007"
+    "url": "https://github.com/sagemath/sagetest/issues/6776#event-15971"
 }
 ```
 

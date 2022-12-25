@@ -150,7 +150,7 @@ At least I did. Anyway, the patch applies and does what it is supposed to do. Po
 
 ---
 
-archive/issue_events_002761.json:
+archive/issue_events_006027.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -158,7 +158,7 @@ archive/issue_events_002761.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2576",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2576#event-2761"
+    "url": "https://github.com/sagemath/sagetest/issues/2576#event-6027"
 }
 ```
 

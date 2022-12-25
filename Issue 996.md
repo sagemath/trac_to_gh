@@ -83,7 +83,7 @@ Attachment [fix_typo.patch](tarball://root/attachments/some-uuid/ticket996/fix_t
 
 ---
 
-archive/issue_events_001119.json:
+archive/issue_events_002744.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -91,7 +91,7 @@ archive/issue_events_001119.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/996",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/996#event-1119"
+    "url": "https://github.com/sagemath/sagetest/issues/996#event-2744"
 }
 ```
 

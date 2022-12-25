@@ -88,6 +88,23 @@ Okay, apply the patch to the extcode repository, then install the spkg, and you 
 
 ---
 
+archive/issue_events_008637.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-10-10T04:37:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3767",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3767#event-8637"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026741.json:
 ```json
 {
@@ -316,6 +333,40 @@ Apply tclemans  jquery-and-friends-spkg.2.patch patch instead of mine.
 
 ---
 
+archive/issue_events_008638.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T06:31:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3767",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3767#event-8638"
+}
+```
+
+
+
+---
+
+archive/issue_events_008639.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T06:31:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3767",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3767#event-8639"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026753.json:
 ```json
 {
@@ -338,7 +389,7 @@ Michael
 
 ---
 
-archive/issue_events_003989.json:
+archive/issue_events_008640.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -346,7 +397,7 @@ archive/issue_events_003989.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3767#event-3989"
+    "url": "https://github.com/sagemath/sagetest/issues/3767#event-8640"
 }
 ```
 

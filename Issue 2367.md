@@ -187,6 +187,23 @@ I think so, too. I am about to provide new patches for this ticket and for #2348
 
 ---
 
+archive/issue_events_005584.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-02T18:05:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2367",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2367#event-5584"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015935.json:
 ```json
 {
@@ -265,7 +282,7 @@ Excellent patch. Recommend acceptance.
 
 ---
 
-archive/issue_events_002544.json:
+archive/issue_events_005585.json:
 ```json
 {
     "actor": "https://github.com/simon-king-jena",
@@ -273,7 +290,7 @@ archive/issue_events_002544.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2367#event-2544"
+    "url": "https://github.com/sagemath/sagetest/issues/2367#event-5585"
 }
 ```
 

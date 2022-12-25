@@ -139,7 +139,7 @@ Nathann
 
 ---
 
-archive/issue_events_009849.json:
+archive/issue_events_024297.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -147,7 +147,24 @@ archive/issue_events_009849.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9715#event-9849"
+    "url": "https://github.com/sagemath/sagetest/issues/9715#event-24297"
+}
+```
+
+
+
+---
+
+archive/issue_events_024298.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-19T21:54:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9715",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9715#event-24298"
 }
 ```
 

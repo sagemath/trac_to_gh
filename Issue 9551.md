@@ -163,6 +163,23 @@ Replying to [ticket:9551 drkirkby]:
 
 ---
 
+archive/issue_events_023763.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9551",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9551#event-23763"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091910.json:
 ```json
 {
@@ -194,6 +211,40 @@ archive/issue_comments_091911.json:
 ```
 
 I have never seen this error recently, so I guess it is fixed.
+
+
+
+---
+
+archive/issue_events_023764.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-19T12:01:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9551",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9551#event-23764"
+}
+```
+
+
+
+---
+
+archive/issue_events_023765.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-19T12:01:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9551",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9551#event-23765"
+}
+```
 
 
 
@@ -235,7 +286,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009699.json:
+archive/issue_events_023766.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -243,6 +294,6 @@ archive/issue_events_009699.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9551",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9551#event-9699"
+    "url": "https://github.com/sagemath/sagetest/issues/9551#event-23766"
 }
 ```

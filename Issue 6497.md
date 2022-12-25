@@ -131,7 +131,7 @@ The above error is not due to the patch. Ticket #6825 contains steps to reproduc
 
 ---
 
-archive/issue_events_006735.json:
+archive/issue_events_015343.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -139,7 +139,7 @@ archive/issue_events_006735.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6497#event-6735"
+    "url": "https://github.com/sagemath/sagetest/issues/6497#event-15343"
 }
 ```
 

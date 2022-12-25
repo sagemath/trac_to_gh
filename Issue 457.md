@@ -92,7 +92,7 @@ it's been fixed now and the fix has been pushed out.
 
 ---
 
-archive/issue_events_000486.json:
+archive/issue_events_001156.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -100,6 +100,6 @@ archive/issue_events_000486.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/457",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/457#event-486"
+    "url": "https://github.com/sagemath/sagetest/issues/457#event-1156"
 }
 ```

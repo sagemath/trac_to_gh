@@ -119,7 +119,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_001629.json:
+archive/issue_events_003756.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -127,6 +127,6 @@ archive/issue_events_001629.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1476",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1476#event-1629"
+    "url": "https://github.com/sagemath/sagetest/issues/1476#event-3756"
 }
 ```

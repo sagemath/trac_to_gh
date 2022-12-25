@@ -29,7 +29,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7896
 
 ---
 
-archive/issue_events_008109.json:
+archive/issue_events_018888.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -37,7 +37,7 @@ archive/issue_events_008109.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7896",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7896#event-8109"
+    "url": "https://github.com/sagemath/sagetest/issues/7896#event-18888"
 }
 ```
 
@@ -76,3 +76,20 @@ archive/issue_comments_068563.json:
 ```
 
 Evidently, I was just panicked.  This is invalid.
+
+
+
+---
+
+archive/issue_events_018889.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-17T03:41:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7896",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7896#event-18889"
+}
+```

@@ -49,6 +49,23 @@ Attachment [trac_3537_scripts.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_008073.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-06-30T03:28:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3537",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-8073"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024912.json:
 ```json
 {
@@ -167,7 +184,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_003756.json:
+archive/issue_events_008074.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -175,7 +192,41 @@ archive/issue_events_003756.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3537#event-3756"
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-8074"
+}
+```
+
+
+
+---
+
+archive/issue_events_008075.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-01T04:40:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3537",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-8075"
+}
+```
+
+
+
+---
+
+archive/issue_events_008076.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2010-12-11T11:58:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3537",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-8076"
 }
 ```
 
@@ -201,7 +252,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_003757.json:
+archive/issue_events_008077.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -209,7 +260,7 @@ archive/issue_events_003757.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3537#event-3757"
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-8077"
 }
 ```
 
@@ -758,6 +809,40 @@ Singular's spkg-install no longer uses $RM, so the documentation is not up to da
 
 ---
 
+archive/issue_events_008078.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-12T14:57:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3537",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-8078"
+}
+```
+
+
+
+---
+
+archive/issue_events_008079.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-12T14:57:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3537",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-8079"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024940.json:
 ```json
 {
@@ -871,7 +956,7 @@ Apologies for not be clear.  I first applied the patch to the sage-4.7.rc2 sourc
 
 ---
 
-archive/issue_events_003758.json:
+archive/issue_events_008080.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -879,7 +964,7 @@ archive/issue_events_003758.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3537#event-3758"
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-8080"
 }
 ```
 

@@ -195,6 +195,57 @@ which isn't good either, though apparently that part of the expression still has
 
 ---
 
+archive/issue_events_016182.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6882",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6882#event-16182"
+}
+```
+
+
+
+---
+
+archive/issue_events_016183.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6882",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6882#event-16183"
+}
+```
+
+
+
+---
+
+archive/issue_events_016184.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6882",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6882#event-16184"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056734.json:
 ```json
 {
@@ -288,6 +339,40 @@ archive/issue_comments_056738.json:
 ```
 
 Yes, variables are all that's left, but the other way around!   (Don't forget the initial examples of this ticket.) We need to disambiguate Maxima variables like `i` and `e` from the things that become those in Sage - `%i` and `%e`.   I suppose one could take the Maxima variables `i` and `I` and turn them into `_i` and `_I`, and likewise for e, as at #16007, but I'm not sure if that's ideal or not.  Thoughts?
+
+
+
+---
+
+archive/issue_events_016185.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6882",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6882#event-16185"
+}
+```
+
+
+
+---
+
+archive/issue_events_016186.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6882",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6882#event-16186"
+}
+```
 
 
 
@@ -884,7 +969,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007113.json:
+archive/issue_events_016187.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -892,7 +977,7 @@ archive/issue_events_007113.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6882",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6882#event-7113"
+    "url": "https://github.com/sagemath/sagetest/issues/6882#event-16187"
 }
 ```
 

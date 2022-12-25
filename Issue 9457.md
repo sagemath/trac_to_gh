@@ -758,6 +758,23 @@ Patchbot: apply [attachment: trac_9457_power_series_eq_rebase.patch]
 
 ---
 
+archive/issue_events_023410.json:
+```json
+{
+    "actor": "https://github.com/nilesjohnson",
+    "created_at": "2012-05-03T14:59:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9457",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9457#event-23410"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090503.json:
 ```json
 {
@@ -816,6 +833,40 @@ archive/issue_comments_090505.json:
 ```
 
 Changing status from needs_review to needs_work.
+
+
+
+---
+
+archive/issue_events_023411.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9457",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9457#event-23411"
+}
+```
+
+
+
+---
+
+archive/issue_events_023412.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9457",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9457#event-23412"
+}
+```
 
 
 
@@ -1004,6 +1055,40 @@ sage: QpT(1 + R(0).add_bigoh(1))
 
 
 Is this issue already part of one of the other padic bug tickets?
+
+
+
+---
+
+archive/issue_events_023413.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9457",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9457#event-23413"
+}
+```
+
+
+
+---
+
+archive/issue_events_023414.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9457",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9457#event-23414"
+}
+```
 
 
 
@@ -1372,7 +1457,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009612.json:
+archive/issue_events_023415.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1380,6 +1465,6 @@ archive/issue_events_009612.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#event-9612"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#event-23415"
 }
 ```

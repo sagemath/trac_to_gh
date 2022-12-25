@@ -48,7 +48,24 @@ It looks like you're using Sage 3.4.1. Would it be possible to try your script w
 
 ---
 
-archive/issue_events_006840.json:
+archive/issue_events_015577.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-01-16T23:30:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6601",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6601#event-15577"
+}
+```
+
+
+
+---
+
+archive/issue_events_015578.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -56,7 +73,7 @@ archive/issue_events_006840.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6601",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6601#event-6840"
+    "url": "https://github.com/sagemath/sagetest/issues/6601#event-15578"
 }
 ```
 

@@ -600,7 +600,7 @@ Merged all four patches.
 
 ---
 
-archive/issue_events_006744.json:
+archive/issue_events_015359.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -608,7 +608,7 @@ archive/issue_events_006744.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#event-6744"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#event-15359"
 }
 ```
 

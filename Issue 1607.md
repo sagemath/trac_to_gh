@@ -134,7 +134,7 @@ This was taken care of by #2542.
 
 ---
 
-archive/issue_events_001765.json:
+archive/issue_events_003992.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -142,7 +142,24 @@ archive/issue_events_001765.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1607",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1607#event-1765"
+    "url": "https://github.com/sagemath/sagetest/issues/1607#event-3992"
+}
+```
+
+
+
+---
+
+archive/issue_events_003993.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-04-15T01:49:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1607",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1607#event-3993"
 }
 ```
 

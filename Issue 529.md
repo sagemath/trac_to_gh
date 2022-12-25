@@ -100,7 +100,7 @@ I don't think that this would be such an awesome idea anymore, invalidating it.
 
 ---
 
-archive/issue_events_000568.json:
+archive/issue_events_001367.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -108,6 +108,6 @@ archive/issue_events_000568.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/529",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/529#event-568"
+    "url": "https://github.com/sagemath/sagetest/issues/529#event-1367"
 }
 ```

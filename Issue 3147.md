@@ -79,7 +79,7 @@ The patch for #1230 resolves the issue for me, so once that ticket is closed, I 
 
 ---
 
-archive/issue_events_003363.json:
+archive/issue_events_007110.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -87,7 +87,7 @@ archive/issue_events_003363.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3147",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3147#event-3363"
+    "url": "https://github.com/sagemath/sagetest/issues/3147#event-7110"
 }
 ```
 

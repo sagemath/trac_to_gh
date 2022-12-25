@@ -109,7 +109,7 @@ Seems to work fine on my mac, with Safari and Firefox.  Based on the previous re
 
 ---
 
-archive/issue_events_006392.json:
+archive/issue_events_014460.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -117,7 +117,7 @@ archive/issue_events_006392.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6143",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6143#event-6392"
+    "url": "https://github.com/sagemath/sagetest/issues/6143#event-14460"
 }
 ```
 

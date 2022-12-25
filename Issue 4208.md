@@ -72,7 +72,7 @@ Builds for me, mabshoff claims all tests pass on sage.math.
 
 ---
 
-archive/issue_events_004445.json:
+archive/issue_events_009539.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -80,7 +80,7 @@ archive/issue_events_004445.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4208",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4208#event-4445"
+    "url": "https://github.com/sagemath/sagetest/issues/4208#event-9539"
 }
 ```
 

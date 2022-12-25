@@ -132,7 +132,7 @@ http://sage.math.washington.edu/home/mvngu/patch/numpy-1.3.0.p1.spkg
 
 ---
 
-archive/issue_events_006731.json:
+archive/issue_events_015331.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -140,7 +140,7 @@ archive/issue_events_006731.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6493",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6493#event-6731"
+    "url": "https://github.com/sagemath/sagetest/issues/6493#event-15331"
 }
 ```
 

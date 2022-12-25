@@ -182,7 +182,7 @@ to improve rapidly, IMHO.
 
 ---
 
-archive/issue_events_000947.json:
+archive/issue_events_002350.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -190,7 +190,7 @@ archive/issue_events_000947.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/834",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/834#event-947"
+    "url": "https://github.com/sagemath/sagetest/issues/834#event-2350"
 }
 ```
 
@@ -211,3 +211,20 @@ archive/issue_comments_005148.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002351.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-27T23:17:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/834",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/834#event-2351"
+}
+```

@@ -140,7 +140,7 @@ Looks good. The changes make sense, and testing `sage/modular/` works fine.
 
 ---
 
-archive/issue_events_003730.json:
+archive/issue_events_008013.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -148,7 +148,7 @@ archive/issue_events_003730.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3513",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3513#event-3730"
+    "url": "https://github.com/sagemath/sagetest/issues/3513#event-8013"
 }
 ```
 

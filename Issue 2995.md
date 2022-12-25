@@ -81,7 +81,7 @@ I hate the name `acton` -- it looks like a typoed `action`.  Could we change tha
 
 ---
 
-archive/issue_events_003200.json:
+archive/issue_events_006820.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -89,7 +89,7 @@ archive/issue_events_003200.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2995",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2995#event-3200"
+    "url": "https://github.com/sagemath/sagetest/issues/2995#event-6820"
 }
 ```
 

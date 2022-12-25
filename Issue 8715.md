@@ -103,7 +103,7 @@ and/or http://www.sagemath.org/doc/developer/patching_spkgs.html
 
 ---
 
-archive/issue_events_008885.json:
+archive/issue_events_021160.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -111,7 +111,7 @@ archive/issue_events_008885.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8715",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8715#event-8885"
+    "url": "https://github.com/sagemath/sagetest/issues/8715#event-21160"
 }
 ```
 

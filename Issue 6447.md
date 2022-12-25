@@ -641,6 +641,23 @@ When I gave this my positive review, I'm not saying that this patch is in it's f
 
 ---
 
+archive/issue_events_015200.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-08-29T05:57:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6447",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6447#event-15200"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051731.json:
 ```json
 {
@@ -677,7 +694,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006688.json:
+archive/issue_events_015201.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -685,7 +702,7 @@ archive/issue_events_006688.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6447#event-6688"
+    "url": "https://github.com/sagemath/sagetest/issues/6447#event-15201"
 }
 ```
 

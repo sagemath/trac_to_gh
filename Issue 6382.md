@@ -120,6 +120,23 @@ Please note the request to close this.
 
 ---
 
+archive/issue_events_015033.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-07T04:02:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6382",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6382#event-15033"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050995.json:
 ```json
 {
@@ -138,7 +155,7 @@ Duplicate of #3108.
 
 ---
 
-archive/issue_events_006630.json:
+archive/issue_events_015034.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -146,7 +163,7 @@ archive/issue_events_006630.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6382",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6382#event-6630"
+    "url": "https://github.com/sagemath/sagetest/issues/6382#event-15034"
 }
 ```
 

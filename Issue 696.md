@@ -70,7 +70,7 @@ See #694 instead!
 
 ---
 
-archive/issue_events_000762.json:
+archive/issue_events_001855.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -78,7 +78,7 @@ archive/issue_events_000762.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/696",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/696#event-762"
+    "url": "https://github.com/sagemath/sagetest/issues/696#event-1855"
 }
 ```
 

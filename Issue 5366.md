@@ -206,7 +206,7 @@ I was testing in parallel, so that must have been what happened, since testing t
 
 ---
 
-archive/issue_events_005621.json:
+archive/issue_events_012507.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -214,7 +214,7 @@ archive/issue_events_005621.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5366",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5366#event-5621"
+    "url": "https://github.com/sagemath/sagetest/issues/5366#event-12507"
 }
 ```
 

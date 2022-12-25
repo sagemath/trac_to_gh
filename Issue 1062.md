@@ -87,6 +87,23 @@ Changing keywords from "" to "pari/gp, help".
 
 ---
 
+archive/issue_events_002872.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2020-02-17T13:11:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1062",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1062#event-2872"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006431.json:
 ```json
 {

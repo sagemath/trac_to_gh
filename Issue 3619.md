@@ -317,7 +317,7 @@ Yes, definitely.  However, I don't think that has to be done in this patch.  Lit
 
 ---
 
-archive/issue_events_003836.json:
+archive/issue_events_008304.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -325,7 +325,7 @@ archive/issue_events_003836.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3619#event-3836"
+    "url": "https://github.com/sagemath/sagetest/issues/3619#event-8304"
 }
 ```
 

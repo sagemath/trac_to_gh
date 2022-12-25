@@ -402,7 +402,24 @@ Nathann
 
 ---
 
-archive/issue_events_008909.json:
+archive/issue_events_021232.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:04:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#event-21232"
+}
+```
+
+
+
+---
+
+archive/issue_events_021233.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -410,7 +427,7 @@ archive/issue_events_008909.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8739#event-8909"
+    "url": "https://github.com/sagemath/sagetest/issues/8739#event-21233"
 }
 ```
 

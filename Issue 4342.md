@@ -597,6 +597,23 @@ rebase against 3.3.alpha1
 
 ---
 
+archive/issue_events_009823.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/abergeron",
+    "created_at": "2009-01-24T02:40:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4342",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4342#event-9823"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031810.json:
 ```json
 {
@@ -1701,7 +1718,7 @@ I don't think so.  I originally tested them all without #9221.
 
 ---
 
-archive/issue_events_004589.json:
+archive/issue_events_009824.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1709,7 +1726,7 @@ archive/issue_events_004589.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4342#event-4589"
+    "url": "https://github.com/sagemath/sagetest/issues/4342#event-9824"
 }
 ```
 

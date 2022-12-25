@@ -285,6 +285,23 @@ ratpoints is also a problem on some Linux machines: see #6498. The new spkg seem
 
 ---
 
+archive/issue_events_015327.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-09T18:21:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6492",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6492#event-15327"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052440.json:
 ```json
 {
@@ -303,7 +320,7 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_events_006728.json:
+archive/issue_events_015328.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -311,7 +328,7 @@ archive/issue_events_006728.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#event-6728"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#event-15328"
 }
 ```
 
@@ -391,7 +408,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006729.json:
+archive/issue_events_015329.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -399,7 +416,7 @@ archive/issue_events_006729.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#event-6729"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#event-15329"
 }
 ```
 
@@ -425,7 +442,7 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_events_006730.json:
+archive/issue_events_015330.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -433,7 +450,7 @@ archive/issue_events_006730.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#event-6730"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#event-15330"
 }
 ```
 

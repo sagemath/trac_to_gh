@@ -353,6 +353,125 @@ On a different ticket, we might want to change the `TimeSeries` histogram and th
 
 ---
 
+archive/issue_events_024124.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9671",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9671#event-24124"
+}
+```
+
+
+
+---
+
+archive/issue_events_024125.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9671",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9671#event-24125"
+}
+```
+
+
+
+---
+
+archive/issue_events_024126.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9671",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9671#event-24126"
+}
+```
+
+
+
+---
+
+archive/issue_events_024127.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9671",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9671#event-24127"
+}
+```
+
+
+
+---
+
+archive/issue_events_024128.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9671",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9671#event-24128"
+}
+```
+
+
+
+---
+
+archive/issue_events_024129.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9671",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9671#event-24129"
+}
+```
+
+
+
+---
+
+archive/issue_events_024130.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9671",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9671#event-24130"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093804.json:
 ```json
 {
@@ -842,7 +961,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009804.json:
+archive/issue_events_024131.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -850,6 +969,6 @@ archive/issue_events_009804.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9671#event-9804"
+    "url": "https://github.com/sagemath/sagetest/issues/9671#event-24131"
 }
 ```

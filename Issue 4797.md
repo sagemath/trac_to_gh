@@ -35,6 +35,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/4797
 
 ---
 
+archive/issue_events_010972.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-15T18:29:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#event-10972"
+}
+```
+
+
+
+---
+
+archive/issue_events_010973.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-20T23:19:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#event-10973"
+}
+```
+
+
+
+---
+
+archive/issue_events_010974.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-20T23:19:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#event-10974"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036290.json:
 ```json
 {
@@ -52,6 +103,40 @@ I can live with this issue being fixed in 3.3 since we will not upgrade Cython i
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_010975.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-26T22:54:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#event-10975"
+}
+```
+
+
+
+---
+
+archive/issue_events_010976.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-26T22:54:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#event-10976"
+}
+```
 
 
 
@@ -369,7 +454,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_005039.json:
+archive/issue_events_010977.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -377,7 +462,7 @@ archive/issue_events_005039.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#event-5039"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#event-10977"
 }
 ```
 
@@ -398,3 +483,37 @@ archive/issue_comments_036307.json:
 ```
 
 Closing this since I haven't seen this problem at all recently.
+
+
+
+---
+
+archive/issue_events_010978.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-05T08:56:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#event-10978"
+}
+```
+
+
+
+---
+
+archive/issue_events_010979.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-05T08:56:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#event-10979"
+}
+```

@@ -111,6 +111,23 @@ Michael
 
 ---
 
+archive/issue_events_012562.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-27T12:18:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5390",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5390#event-12562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041433.json:
 ```json
 {
@@ -139,7 +156,7 @@ Cheers
 
 ---
 
-archive/issue_events_005647.json:
+archive/issue_events_012563.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -147,7 +164,7 @@ archive/issue_events_005647.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5390",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5390#event-5647"
+    "url": "https://github.com/sagemath/sagetest/issues/5390#event-12563"
 }
 ```
 
@@ -204,3 +221,37 @@ Yeah, but even *if* the env was messed up your fix does not resolve the problem 
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_012564.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-27T22:58:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5390",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5390#event-12564"
+}
+```
+
+
+
+---
+
+archive/issue_events_012565.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-27T22:58:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5390",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5390#event-12565"
+}
+```

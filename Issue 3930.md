@@ -289,7 +289,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_004157.json:
+archive/issue_events_009017.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -297,6 +297,23 @@ archive/issue_events_004157.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3930",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3930#event-4157"
+    "url": "https://github.com/sagemath/sagetest/issues/3930#event-9017"
+}
+```
+
+
+
+---
+
+archive/issue_events_009018.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-29T17:45:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3930",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3930#event-9018"
 }
 ```

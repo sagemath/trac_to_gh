@@ -77,7 +77,7 @@ and try uploading it.
 
 ---
 
-archive/issue_events_006020.json:
+archive/issue_events_013540.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -85,7 +85,7 @@ archive/issue_events_006020.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5773",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5773#event-6020"
+    "url": "https://github.com/sagemath/sagetest/issues/5773#event-13540"
 }
 ```
 
@@ -111,6 +111,23 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_013541.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:05:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5773",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5773#event-13541"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045067.json:
 ```json
 {
@@ -124,3 +141,37 @@ archive/issue_comments_045067.json:
 ```
 
 Resolution changed from duplicate to fixed
+
+
+
+---
+
+archive/issue_events_013542.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:37:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5773",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5773#event-13542"
+}
+```
+
+
+
+---
+
+archive/issue_events_013543.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:37:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5773",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5773#event-13543"
+}
+```

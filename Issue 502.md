@@ -471,6 +471,23 @@ Fixed by #10295.
 
 ---
 
+archive/issue_events_001280.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-12-04T13:59:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/502",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/502#event-1280"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002501.json:
 ```json
 {
@@ -546,7 +563,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_000537.json:
+archive/issue_events_001281.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -554,6 +571,6 @@ archive/issue_events_000537.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/502",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/502#event-537"
+    "url": "https://github.com/sagemath/sagetest/issues/502#event-1281"
 }
 ```

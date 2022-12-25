@@ -214,7 +214,7 @@ burcin: it seems that there are several people interested in helping with symbol
 
 ---
 
-archive/issue_events_007180.json:
+archive/issue_events_016354.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -222,7 +222,7 @@ archive/issue_events_007180.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#event-7180"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#event-16354"
 }
 ```
 

@@ -118,7 +118,7 @@ Tested both with and without the database installed!
 
 ---
 
-archive/issue_events_006558.json:
+archive/issue_events_014752.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -126,7 +126,7 @@ archive/issue_events_006558.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6310",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6310#event-6558"
+    "url": "https://github.com/sagemath/sagetest/issues/6310#event-14752"
 }
 ```
 

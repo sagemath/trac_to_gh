@@ -71,6 +71,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_024865.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-09-07T22:36:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9870",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9870#event-24865"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097348.json:
 ```json
 {
@@ -1368,7 +1385,7 @@ John, revert this again in case you encounter new errors... ;-)
 
 ---
 
-archive/issue_events_010000.json:
+archive/issue_events_024866.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1376,7 +1393,7 @@ archive/issue_events_010000.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9870#event-10000"
+    "url": "https://github.com/sagemath/sagetest/issues/9870#event-24866"
 }
 ```
 

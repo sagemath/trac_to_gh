@@ -124,7 +124,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006409.json:
+archive/issue_events_014483.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -132,7 +132,7 @@ archive/issue_events_006409.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6160",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6160#event-6409"
+    "url": "https://github.com/sagemath/sagetest/issues/6160#event-14483"
 }
 ```
 
@@ -153,3 +153,20 @@ archive/issue_comments_049046.json:
 ```
 
 Changing keywords from "" to "singular".
+
+
+
+---
+
+archive/issue_events_014484.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-01-17T02:12:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6160",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6160#event-14484"
+}
+```

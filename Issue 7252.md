@@ -102,7 +102,7 @@ PIL correctly gets installed with this patch. Positive review.
 
 ---
 
-archive/issue_events_007473.json:
+archive/issue_events_017165.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -110,7 +110,7 @@ archive/issue_events_007473.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7252",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7252#event-7473"
+    "url": "https://github.com/sagemath/sagetest/issues/7252#event-17165"
 }
 ```
 

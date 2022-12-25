@@ -268,6 +268,23 @@ William
 
 ---
 
+archive/issue_events_005238.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:04:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2192",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2192#event-5238"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014360.json:
 ```json
 {
@@ -389,7 +406,7 @@ Merged both patches as directed in Sage 2.10.4.alpha0
 
 ---
 
-archive/issue_events_002358.json:
+archive/issue_events_005239.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -397,6 +414,6 @@ archive/issue_events_002358.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2192#event-2358"
+    "url": "https://github.com/sagemath/sagetest/issues/2192#event-5239"
 }
 ```

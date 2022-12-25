@@ -73,7 +73,7 @@ Attachment [trac2233_padics2.patch](tarball://root/attachments/some-uuid/ticket2
 
 ---
 
-archive/issue_events_002403.json:
+archive/issue_events_005315.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -81,7 +81,7 @@ archive/issue_events_002403.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2233",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2233#event-2403"
+    "url": "https://github.com/sagemath/sagetest/issues/2233#event-5315"
 }
 ```
 

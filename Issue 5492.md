@@ -135,7 +135,24 @@ Applies cleanly to sage-4.6.alpha3.  I tried it out with various combinations of
 
 ---
 
-archive/issue_events_005745.json:
+archive/issue_events_012847.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-23T21:02:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5492",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5492#event-12847"
+}
+```
+
+
+
+---
+
+archive/issue_events_012848.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -143,7 +160,7 @@ archive/issue_events_005745.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5492",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5492#event-5745"
+    "url": "https://github.com/sagemath/sagetest/issues/5492#event-12848"
 }
 ```
 

@@ -156,7 +156,7 @@ archive/issue_comments_061084.json:
 
 ---
 
-archive/issue_events_007545.json:
+archive/issue_events_017342.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -164,7 +164,7 @@ archive/issue_events_007545.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7323#event-7545"
+    "url": "https://github.com/sagemath/sagetest/issues/7323#event-17342"
 }
 ```
 

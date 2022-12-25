@@ -135,6 +135,23 @@ By the way, Brian is now in version 1.3.1, but that is a different issue.
 
 ---
 
+archive/issue_events_025105.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-05-26T20:15:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9949",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9949#event-25105"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099070.json:
 ```json
 {
@@ -225,7 +242,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010078.json:
+archive/issue_events_025106.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -233,6 +250,6 @@ archive/issue_events_010078.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9949#event-10078"
+    "url": "https://github.com/sagemath/sagetest/issues/9949#event-25106"
 }
 ```

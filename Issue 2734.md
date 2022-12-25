@@ -269,7 +269,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2734
 
 ---
 
-archive/issue_events_002922.json:
+archive/issue_events_006362.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -277,7 +277,7 @@ archive/issue_events_002922.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2734",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2734#event-2922"
+    "url": "https://github.com/sagemath/sagetest/issues/2734#event-6362"
 }
 ```
 

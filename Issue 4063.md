@@ -125,6 +125,23 @@ I added a few extra cases and added a doctest.  Otherwise, it looks good to me.
 
 ---
 
+archive/issue_events_009274.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-16T06:53:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4063",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4063#event-9274"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029251.json:
 ```json
 {
@@ -183,7 +200,7 @@ Merged trac_4063.patch in Sage 3.1.2.rc5
 
 ---
 
-archive/issue_events_004297.json:
+archive/issue_events_009275.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -191,6 +208,6 @@ archive/issue_events_004297.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4063",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4063#event-4297"
+    "url": "https://github.com/sagemath/sagetest/issues/4063#event-9275"
 }
 ```

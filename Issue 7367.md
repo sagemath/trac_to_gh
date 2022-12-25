@@ -210,6 +210,23 @@ Feel free to bump the milestone to 4.3.
 
 ---
 
+archive/issue_events_017427.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-11-12T01:44:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7367",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7367#event-17427"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061632.json:
 ```json
 {
@@ -246,7 +263,7 @@ Looks good to me too.
 
 ---
 
-archive/issue_events_007590.json:
+archive/issue_events_017428.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -254,7 +271,7 @@ archive/issue_events_007590.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#event-7590"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#event-17428"
 }
 ```
 

@@ -105,7 +105,7 @@ has been removed.
 
 ---
 
-archive/issue_events_001718.json:
+archive/issue_events_003913.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -113,7 +113,7 @@ archive/issue_events_001718.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1564#event-1718"
+    "url": "https://github.com/sagemath/sagetest/issues/1564#event-3913"
 }
 ```
 
@@ -134,3 +134,20 @@ archive/issue_comments_009932.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_003914.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-25T09:34:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1564",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1564#event-3914"
+}
+```

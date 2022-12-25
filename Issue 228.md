@@ -95,7 +95,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000241.json:
+archive/issue_events_000472.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
@@ -103,7 +103,7 @@ archive/issue_events_000241.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/228",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/228#event-241"
+    "url": "https://github.com/sagemath/sagetest/issues/228#event-472"
 }
 ```
 
@@ -129,7 +129,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000242.json:
+archive/issue_events_000473.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
@@ -137,7 +137,7 @@ archive/issue_events_000242.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/228",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/228#event-242"
+    "url": "https://github.com/sagemath/sagetest/issues/228#event-473"
 }
 ```
 
@@ -181,6 +181,23 @@ Resolution changed from fixed to
 
 ---
 
+archive/issue_events_000474.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
+    "created_at": "2007-09-06T17:24:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/228",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/228#event-474"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001014.json:
 ```json
 {
@@ -196,6 +213,23 @@ archive/issue_comments_001014.json:
 Attachment [ncalexan-228-v2.hg](tarball://root/attachments/some-uuid/ticket228/ncalexan-228-v2.hg) by @ncalexan created at 2007-09-20 21:07:07
 
 The attached patch addresses this issue by only considering input examples if it starts with a prompt (sage: or >>>).
+
+
+
+---
+
+archive/issue_events_000475.json:
+```json
+{
+    "actor": "https://github.com/ncalexan",
+    "created_at": "2007-09-20T21:07:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/228",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/228#event-475"
+}
+```
 
 
 
@@ -219,7 +253,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000243.json:
+archive/issue_events_000476.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -227,6 +261,6 @@ archive/issue_events_000243.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/228",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/228#event-243"
+    "url": "https://github.com/sagemath/sagetest/issues/228#event-476"
 }
 ```

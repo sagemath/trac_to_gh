@@ -528,6 +528,23 @@ Nick, please address each of the above points.  In some cases the appropriate re
 
 ---
 
+archive/issue_events_004752.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:02:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1964",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1964#event-4752"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012691.json:
 ```json
 {
@@ -678,6 +695,40 @@ I will post a new patch with this fixed and doctested shortly.
 
 ---
 
+archive/issue_events_004753.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-21T13:36:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1964",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1964#event-4753"
+}
+```
+
+
+
+---
+
+archive/issue_events_004754.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-21T13:36:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1964",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1964#event-4754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012698.json:
 ```json
 {
@@ -756,7 +807,7 @@ Yes, close this.  :-)
 
 ---
 
-archive/issue_events_002119.json:
+archive/issue_events_004755.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -764,7 +815,7 @@ archive/issue_events_002119.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1964#event-2119"
+    "url": "https://github.com/sagemath/sagetest/issues/1964#event-4755"
 }
 ```
 

@@ -65,6 +65,23 @@ Note - Hoffman-Singleton is included in #2765
 
 ---
 
+archive/issue_events_006261.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2686",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2686#event-6261"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018426.json:
 ```json
 {
@@ -487,6 +504,40 @@ Nathann
 
 ---
 
+archive/issue_events_006262.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2686",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2686#event-6262"
+}
+```
+
+
+
+---
+
+archive/issue_events_006263.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2686",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2686#event-6263"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018447.json:
 ```json
 {
@@ -793,7 +844,41 @@ Nathann
 
 ---
 
-archive/issue_events_002878.json:
+archive/issue_events_006264.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2686",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2686#event-6264"
+}
+```
+
+
+
+---
+
+archive/issue_events_006265.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2686",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2686#event-6265"
+}
+```
+
+
+
+---
+
+archive/issue_events_006266.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -801,7 +886,7 @@ archive/issue_events_002878.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2686",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2686#event-2878"
+    "url": "https://github.com/sagemath/sagetest/issues/2686#event-6266"
 }
 ```
 

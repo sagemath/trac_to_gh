@@ -48,7 +48,7 @@ I've decided against this.  Instead I added a prominent easy-to-find link to sta
 
 ---
 
-archive/issue_events_002970.json:
+archive/issue_events_006423.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -56,7 +56,7 @@ archive/issue_events_002970.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2782",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2782#event-2970"
+    "url": "https://github.com/sagemath/sagetest/issues/2782#event-6423"
 }
 ```
 

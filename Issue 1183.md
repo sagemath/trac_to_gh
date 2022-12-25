@@ -202,7 +202,7 @@ Merged in 2.9.rc0.
 
 ---
 
-archive/issue_events_001315.json:
+archive/issue_events_003164.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -210,7 +210,7 @@ archive/issue_events_001315.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1183#event-1315"
+    "url": "https://github.com/sagemath/sagetest/issues/1183#event-3164"
 }
 ```
 

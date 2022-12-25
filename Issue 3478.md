@@ -31,6 +31,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3478
 
 ---
 
+archive/issue_events_007915.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T06:37:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3478",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3478#event-7915"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024463.json:
 ```json
 {
@@ -49,7 +66,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003698.json:
+archive/issue_events_007916.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -57,7 +74,7 @@ archive/issue_events_003698.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3478",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3478#event-3698"
+    "url": "https://github.com/sagemath/sagetest/issues/3478#event-7916"
 }
 ```
 
@@ -82,3 +99,37 @@ This is no longer an issue since Sage with MacPorts or Fink in $PATH will refuse
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007917.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T01:53:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3478",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3478#event-7917"
+}
+```
+
+
+
+---
+
+archive/issue_events_007918.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T01:53:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3478",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3478#event-7918"
+}
+```

@@ -173,7 +173,7 @@ All doctests passed with the latter SPKG and `6438-cython.patch`.
 
 ---
 
-archive/issue_events_006679.json:
+archive/issue_events_015188.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -181,7 +181,7 @@ archive/issue_events_006679.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6438#event-6679"
+    "url": "https://github.com/sagemath/sagetest/issues/6438#event-15188"
 }
 ```
 

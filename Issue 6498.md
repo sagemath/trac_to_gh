@@ -189,7 +189,7 @@ Since the other ticket provides a fix I am filing this as duplicate.
 
 ---
 
-archive/issue_events_006736.json:
+archive/issue_events_015344.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -197,7 +197,7 @@ archive/issue_events_006736.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6498",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6498#event-6736"
+    "url": "https://github.com/sagemath/sagetest/issues/6498#event-15344"
 }
 ```
 
@@ -218,3 +218,20 @@ archive/issue_comments_052764.json:
 ```
 
 Changing component from algebra to distribution.
+
+
+
+---
+
+archive/issue_events_015345.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-09T18:20:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6498",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6498#event-15345"
+}
+```

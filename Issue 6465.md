@@ -220,6 +220,23 @@ The problem with `gamma_incomplete` might be related to/fixed by #7748.
 
 ---
 
+archive/issue_events_015255.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-12-22T22:46:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6465",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6465#event-15255"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052158.json:
 ```json
 {
@@ -1114,7 +1131,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006705.json:
+archive/issue_events_015256.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1122,6 +1139,6 @@ archive/issue_events_006705.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#event-6705"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#event-15256"
 }
 ```

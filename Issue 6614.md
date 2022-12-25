@@ -259,6 +259,23 @@ It may be necessary to delete `doc/common/static/jsmath` manually, after applyin
 
 ---
 
+archive/issue_events_015615.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2009-08-20T21:21:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6614",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6614#event-15615"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054051.json:
 ```json
 {
@@ -344,7 +361,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006854.json:
+archive/issue_events_015616.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -352,7 +369,7 @@ archive/issue_events_006854.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6614#event-6854"
+    "url": "https://github.com/sagemath/sagetest/issues/6614#event-15616"
 }
 ```
 

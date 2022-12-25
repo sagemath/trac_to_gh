@@ -85,6 +85,23 @@ malb: if you want this, put the ticket to positive review with milestone sage-du
 
 ---
 
+archive/issue_events_009617.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-03-28T22:49:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4259",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4259#event-9617"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030936.json:
 ```json
 {
@@ -121,7 +138,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_004498.json:
+archive/issue_events_009618.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -129,7 +146,7 @@ archive/issue_events_004498.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4259",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4259#event-4498"
+    "url": "https://github.com/sagemath/sagetest/issues/4259#event-9618"
 }
 ```
 

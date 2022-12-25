@@ -116,7 +116,7 @@ Jaap
 
 ---
 
-archive/issue_events_008114.json:
+archive/issue_events_018895.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -124,7 +124,7 @@ archive/issue_events_008114.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7899#event-8114"
+    "url": "https://github.com/sagemath/sagetest/issues/7899#event-18895"
 }
 ```
 

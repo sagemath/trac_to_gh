@@ -48,6 +48,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/977
 
 ---
 
+archive/issue_events_002701.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-23T21:25:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/977",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/977#event-2701"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005945.json:
 ```json
 {
@@ -61,6 +78,40 @@ archive/issue_comments_005945.json:
 ```
 
 Changing status from new to assigned.
+
+
+
+---
+
+archive/issue_events_002702.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-23T23:50:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/977",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/977#event-2702"
+}
+```
+
+
+
+---
+
+archive/issue_events_002703.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-23T23:50:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/977",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/977#event-2703"
+}
+```
 
 
 
@@ -84,7 +135,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001098.json:
+archive/issue_events_002704.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -92,7 +143,7 @@ archive/issue_events_001098.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/977",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/977#event-1098"
+    "url": "https://github.com/sagemath/sagetest/issues/977#event-2704"
 }
 ```
 

@@ -104,7 +104,7 @@ I had to rebase the patch for sage-4.3.alpha1; rebased patch attached.
 
 ---
 
-archive/issue_events_007863.json:
+archive/issue_events_018164.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -112,7 +112,7 @@ archive/issue_events_007863.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7638",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7638#event-7863"
+    "url": "https://github.com/sagemath/sagetest/issues/7638#event-18164"
 }
 ```
 
@@ -151,3 +151,20 @@ archive/issue_comments_065168.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018165.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-26T19:56:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7638",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7638#event-18165"
+}
+```

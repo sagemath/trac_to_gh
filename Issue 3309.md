@@ -279,7 +279,7 @@ Attachment [trac_3309-referee.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_events_003527.json:
+archive/issue_events_007430.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -287,7 +287,7 @@ archive/issue_events_003527.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3309#event-3527"
+    "url": "https://github.com/sagemath/sagetest/issues/3309#event-7430"
 }
 ```
 
@@ -330,3 +330,20 @@ Merged both patches in Sage 3.4.1.rc3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007431.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-13T09:03:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3309",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3309#event-7431"
+}
+```

@@ -201,7 +201,7 @@ I'll leave this as positive review until the release manager decides what order 
 
 ---
 
-archive/issue_events_009247.json:
+archive/issue_events_022288.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -209,7 +209,7 @@ archive/issue_events_009247.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9088#event-9247"
+    "url": "https://github.com/sagemath/sagetest/issues/9088#event-22288"
 }
 ```
 

@@ -55,6 +55,57 @@ This works now, apparently. Confirm and close?
 
 ---
 
+archive/issue_events_013618.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5801",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5801#event-13618"
+}
+```
+
+
+
+---
+
+archive/issue_events_013619.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5801",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5801#event-13619"
+}
+```
+
+
+
+---
+
+archive/issue_events_013620.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5801",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5801#event-13620"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045458.json:
 ```json
 {
@@ -68,6 +119,40 @@ archive/issue_comments_045458.json:
 ```
 
 Files no longer exist. So let's close this.
+
+
+
+---
+
+archive/issue_events_013621.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-05-01T08:17:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5801",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5801#event-13621"
+}
+```
+
+
+
+---
+
+archive/issue_events_013622.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-05-01T08:17:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5801",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5801#event-13622"
+}
+```
 
 
 
@@ -109,7 +194,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_006051.json:
+archive/issue_events_013623.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -117,7 +202,7 @@ archive/issue_events_006051.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5801",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5801#event-6051"
+    "url": "https://github.com/sagemath/sagetest/issues/5801#event-13623"
 }
 ```
 

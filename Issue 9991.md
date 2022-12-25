@@ -367,7 +367,7 @@ I also tried after temporarily getting rid of my system's python.  Installing be
 
 ---
 
-archive/issue_events_010115.json:
+archive/issue_events_025309.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -375,7 +375,7 @@ archive/issue_events_010115.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9991#event-10115"
+    "url": "https://github.com/sagemath/sagetest/issues/9991#event-25309"
 }
 ```
 
@@ -414,3 +414,20 @@ archive/issue_comments_100250.json:
 ```
 
 Milestone sage-4.7.3 deleted
+
+
+
+---
+
+archive/issue_events_025310.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-03T16:16:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9991",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9991#event-25310"
+}
+```

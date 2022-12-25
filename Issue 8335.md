@@ -476,6 +476,23 @@ Nonetheless it would be great to get this in quickly.
 
 ---
 
+archive/issue_events_019952.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jpflori",
+    "created_at": "2013-02-08T14:40:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8335",
+    "milestone": "sage-5.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8335#event-19952"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074176.json:
 ```json
 {
@@ -3230,7 +3247,109 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008528.json:
+archive/issue_events_019953.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-07T08:01:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8335",
+    "milestone": "sage-5.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8335#event-19953"
+}
+```
+
+
+
+---
+
+archive/issue_events_019954.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-07T08:01:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8335",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8335#event-19954"
+}
+```
+
+
+
+---
+
+archive/issue_events_019955.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-30T08:29:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8335",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8335#event-19955"
+}
+```
+
+
+
+---
+
+archive/issue_events_019956.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-30T08:29:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8335",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8335#event-19956"
+}
+```
+
+
+
+---
+
+archive/issue_events_019957.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-09-03T14:51:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8335",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8335#event-19957"
+}
+```
+
+
+
+---
+
+archive/issue_events_019958.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-09-03T14:51:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8335",
+    "milestone": "sage-5.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8335#event-19958"
+}
+```
+
+
+
+---
+
+archive/issue_events_019959.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -3238,7 +3357,7 @@ archive/issue_events_008528.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8335#event-8528"
+    "url": "https://github.com/sagemath/sagetest/issues/8335#event-19959"
 }
 ```
 

@@ -355,7 +355,7 @@ Sounds good to me.
 
 ---
 
-archive/issue_events_006197.json:
+archive/issue_events_013922.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -363,7 +363,7 @@ archive/issue_events_006197.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5943#event-6197"
+    "url": "https://github.com/sagemath/sagetest/issues/5943#event-13922"
 }
 ```
 
@@ -407,7 +407,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_006198.json:
+archive/issue_events_013923.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -415,7 +415,7 @@ archive/issue_events_006198.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5943#event-6198"
+    "url": "https://github.com/sagemath/sagetest/issues/5943#event-13923"
 }
 ```
 
@@ -664,6 +664,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_013924.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2012-04-19T16:55:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#event-13924"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046903.json:
 ```json
 {
@@ -718,7 +735,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_006199.json:
+archive/issue_events_013925.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -726,6 +743,6 @@ archive/issue_events_006199.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5943#event-6199"
+    "url": "https://github.com/sagemath/sagetest/issues/5943#event-13925"
 }
 ```

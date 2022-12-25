@@ -141,7 +141,7 @@ Attachment [trac_6150.patch](tarball://root/attachments/some-uuid/ticket6150/tra
 
 ---
 
-archive/issue_events_006399.json:
+archive/issue_events_014470.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -149,7 +149,7 @@ archive/issue_events_006399.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6150",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6150#event-6399"
+    "url": "https://github.com/sagemath/sagetest/issues/6150#event-14470"
 }
 ```
 

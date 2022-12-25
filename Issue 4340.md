@@ -50,6 +50,23 @@ I'm pretty sure I've got all the corner cases covered, too, but one can never be
 
 ---
 
+archive/issue_events_009816.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-10-30T20:00:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4340",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4340#event-9816"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031772.json:
 ```json
 {
@@ -206,6 +223,40 @@ Michael
 
 ---
 
+archive/issue_events_009817.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-31T01:03:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4340",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4340#event-9817"
+}
+```
+
+
+
+---
+
+archive/issue_events_009818.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-31T01:03:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4340",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4340#event-9818"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031779.json:
 ```json
 {
@@ -264,6 +315,40 @@ Michael
 
 ---
 
+archive/issue_events_009819.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-31T03:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4340",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4340#event-9819"
+}
+```
+
+
+
+---
+
+archive/issue_events_009820.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-31T03:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4340",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4340#event-9820"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031782.json:
 ```json
 {
@@ -282,7 +367,7 @@ Merged both patches in Sage 3.2.alpha2
 
 ---
 
-archive/issue_events_004587.json:
+archive/issue_events_009821.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -290,7 +375,7 @@ archive/issue_events_004587.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4340#event-4587"
+    "url": "https://github.com/sagemath/sagetest/issues/4340#event-9821"
 }
 ```
 

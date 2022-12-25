@@ -96,6 +96,23 @@ Florent: the documentation should really include the __*__ methods. Here, this m
 
 ---
 
+archive/issue_events_023464.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2011-04-20T10:07:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9468",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9468#event-23464"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090667.json:
 ```json
 {
@@ -190,7 +207,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009621.json:
+archive/issue_events_023465.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -198,6 +215,6 @@ archive/issue_events_009621.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9468#event-9621"
+    "url": "https://github.com/sagemath/sagetest/issues/9468#event-23465"
 }
 ```

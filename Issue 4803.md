@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4803
 
 ---
 
+archive/issue_events_010985.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-15T09:52:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4803",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4803#event-10985"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036332.json:
 ```json
 {
@@ -206,7 +223,41 @@ Merged in Sage 3.2.2.rc1
 
 ---
 
-archive/issue_events_005045.json:
+archive/issue_events_010986.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-17T14:37:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4803",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4803#event-10986"
+}
+```
+
+
+
+---
+
+archive/issue_events_010987.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-17T14:37:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4803",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4803#event-10987"
+}
+```
+
+
+
+---
+
+archive/issue_events_010988.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -214,6 +265,6 @@ archive/issue_events_005045.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4803",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4803#event-5045"
+    "url": "https://github.com/sagemath/sagetest/issues/4803#event-10988"
 }
 ```

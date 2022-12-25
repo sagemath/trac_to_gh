@@ -526,7 +526,7 @@ Changing keywords from "RSA, public-key cryptosystem" to "RSA, public-key crypto
 
 ---
 
-archive/issue_events_008653.json:
+archive/issue_events_020329.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -534,7 +534,7 @@ archive/issue_events_008653.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8469#event-8653"
+    "url": "https://github.com/sagemath/sagetest/issues/8469#event-20329"
 }
 ```
 

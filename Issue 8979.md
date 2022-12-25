@@ -52,6 +52,23 @@ Attachment [trac_8979.diff](tarball://root/attachments/some-uuid/ticket8979/trac
 
 ---
 
+archive/issue_events_021959.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/Moredread",
+    "created_at": "2010-05-17T01:41:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8979",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8979#event-21959"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082707.json:
 ```json
 {
@@ -214,7 +231,7 @@ Merged [trac_8979_2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/
 
 ---
 
-archive/issue_events_009133.json:
+archive/issue_events_021960.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -222,7 +239,7 @@ archive/issue_events_009133.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8979",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8979#event-9133"
+    "url": "https://github.com/sagemath/sagetest/issues/8979#event-21960"
 }
 ```
 

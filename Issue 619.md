@@ -131,7 +131,7 @@ With the current release, 2.8.4.2.1, the output of valgrind for the given code d
 
 ---
 
-archive/issue_events_000676.json:
+archive/issue_events_001637.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -139,7 +139,7 @@ archive/issue_events_000676.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/619",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/619#event-676"
+    "url": "https://github.com/sagemath/sagetest/issues/619#event-1637"
 }
 ```
 
@@ -252,7 +252,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000677.json:
+archive/issue_events_001638.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -260,7 +260,7 @@ archive/issue_events_000677.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/619",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/619#event-677"
+    "url": "https://github.com/sagemath/sagetest/issues/619#event-1638"
 }
 ```
 
@@ -281,6 +281,23 @@ archive/issue_comments_003167.json:
 ```
 
 Resolution changed from worksforme to 
+
+
+
+---
+
+archive/issue_events_001639.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-16T03:03:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/619",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/619#event-1639"
+}
+```
 
 
 
@@ -322,7 +339,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_000678.json:
+archive/issue_events_001640.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -330,7 +347,7 @@ archive/issue_events_000678.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/619",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/619#event-678"
+    "url": "https://github.com/sagemath/sagetest/issues/619#event-1640"
 }
 ```
 

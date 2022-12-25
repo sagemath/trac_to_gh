@@ -52,6 +52,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1132
 
 ---
 
+archive/issue_events_003024.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-18T09:12:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1132",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1132#event-3024"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006841.json:
 ```json
 {
@@ -122,6 +139,40 @@ Michael
 
 ---
 
+archive/issue_events_003025.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T05:38:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1132",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1132#event-3025"
+}
+```
+
+
+
+---
+
+archive/issue_events_003026.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T05:38:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1132",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1132#event-3026"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006844.json:
 ```json
 {
@@ -162,7 +213,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_001258.json:
+archive/issue_events_003027.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -170,6 +221,6 @@ archive/issue_events_001258.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1132",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1132#event-1258"
+    "url": "https://github.com/sagemath/sagetest/issues/1132#event-3027"
 }
 ```

@@ -393,6 +393,23 @@ this is rebased against sage-3.2.alpha0 and uses an environment variable MAKE
 
 ---
 
+archive/issue_events_008633.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-26T18:11:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3765",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3765#event-8633"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026730.json:
 ```json
 {
@@ -435,7 +452,7 @@ Merged in Sage 3.2.alpha1
 
 ---
 
-archive/issue_events_003987.json:
+archive/issue_events_008634.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -443,7 +460,7 @@ archive/issue_events_003987.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3765#event-3987"
+    "url": "https://github.com/sagemath/sagetest/issues/3765#event-8634"
 }
 ```
 

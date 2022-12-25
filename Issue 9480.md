@@ -50,6 +50,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9480
 
 ---
 
+archive/issue_events_023501.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-08-29T10:54:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9480",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9480#event-23501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090855.json:
 ```json
 {
@@ -150,6 +167,40 @@ archive/issue_comments_090859.json:
 ```
 
 Sometimes it's `infinity` and others its `Infinity`. At the very least this should be consistent. Also there are other issues with infinity: #11506 #9547.
+
+
+
+---
+
+archive/issue_events_023502.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9480",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9480#event-23502"
+}
+```
+
+
+
+---
+
+archive/issue_events_023503.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9480",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9480#event-23503"
+}
+```
 
 
 
@@ -325,7 +376,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009632.json:
+archive/issue_events_023504.json:
 ```json
 {
     "actor": "https://github.com/zimmermann6",
@@ -333,7 +384,7 @@ archive/issue_events_009632.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9480#event-9632"
+    "url": "https://github.com/sagemath/sagetest/issues/9480#event-23504"
 }
 ```
 
@@ -374,3 +425,37 @@ archive/issue_comments_090868.json:
 ```
 
 I also verified that it works in `6.1.beta2`.
+
+
+
+---
+
+archive/issue_events_023505.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2014-01-03T15:09:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9480",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9480#event-23505"
+}
+```
+
+
+
+---
+
+archive/issue_events_023506.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2014-01-03T15:09:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9480",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9480#event-23506"
+}
+```

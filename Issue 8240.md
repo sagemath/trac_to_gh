@@ -810,6 +810,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_019710.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2017-10-09T16:52:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8240",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8240#event-19710"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072721.json:
 ```json
 {
@@ -958,7 +975,7 @@ New commits:
 
 ---
 
-archive/issue_events_008441.json:
+archive/issue_events_019711.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -966,7 +983,7 @@ archive/issue_events_008441.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8240#event-8441"
+    "url": "https://github.com/sagemath/sagetest/issues/8240#event-19711"
 }
 ```
 

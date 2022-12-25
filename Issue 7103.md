@@ -121,6 +121,23 @@ Can you tell me what your system is and exactly what you did to test this?  (Wha
 
 ---
 
+archive/issue_events_016797.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T17:42:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7103",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7103#event-16797"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058680.json:
 ```json
 {
@@ -267,7 +284,7 @@ I don't know if it fixes the "mysterious error" issue, since I couldn't cause th
 
 ---
 
-archive/issue_events_007325.json:
+archive/issue_events_016798.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -275,7 +292,7 @@ archive/issue_events_007325.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#event-7325"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#event-16798"
 }
 ```
 

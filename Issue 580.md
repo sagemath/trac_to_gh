@@ -174,7 +174,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000634.json:
+archive/issue_events_001550.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -182,7 +182,7 @@ archive/issue_events_000634.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/580",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/580#event-634"
+    "url": "https://github.com/sagemath/sagetest/issues/580#event-1550"
 }
 ```
 
@@ -203,3 +203,20 @@ archive/issue_comments_002991.json:
 ```
 
 This code now works, see #570.
+
+
+
+---
+
+archive/issue_events_001551.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-06T20:08:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/580",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/580#event-1551"
+}
+```

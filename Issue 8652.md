@@ -138,6 +138,91 @@ This still works properly on 5.1.beta0. In two years no one has reported or repr
 
 ---
 
+archive/issue_events_020937.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8652",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8652#event-20937"
+}
+```
+
+
+
+---
+
+archive/issue_events_020938.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8652",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8652#event-20938"
+}
+```
+
+
+
+---
+
+archive/issue_events_020939.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8652",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8652#event-20939"
+}
+```
+
+
+
+---
+
+archive/issue_events_020940.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-15T18:47:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8652",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8652#event-20940"
+}
+```
+
+
+
+---
+
+archive/issue_events_020941.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-15T18:47:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8652",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8652#event-20941"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078377.json:
 ```json
 {
@@ -192,7 +277,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008824.json:
+archive/issue_events_020942.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -200,6 +285,6 @@ archive/issue_events_008824.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8652#event-8824"
+    "url": "https://github.com/sagemath/sagetest/issues/8652#event-20942"
 }
 ```

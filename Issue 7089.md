@@ -140,7 +140,7 @@ Patch applies, and the tests run properly. Positive review.
 
 ---
 
-archive/issue_events_007311.json:
+archive/issue_events_016768.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -148,7 +148,7 @@ archive/issue_events_007311.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7089",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7089#event-7311"
+    "url": "https://github.com/sagemath/sagetest/issues/7089#event-16768"
 }
 ```
 

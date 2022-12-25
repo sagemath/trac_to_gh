@@ -160,7 +160,7 @@ Oops ... yep, that was totally a typo on my part while moving things around in t
 
 ---
 
-archive/issue_events_008231.json:
+archive/issue_events_019216.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -168,7 +168,7 @@ archive/issue_events_008231.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8020",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8020#event-8231"
+    "url": "https://github.com/sagemath/sagetest/issues/8020#event-19216"
 }
 ```
 

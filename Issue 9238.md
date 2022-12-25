@@ -4336,6 +4336,23 @@ I think everything that was discussed above has been resolved.  The issues that 
 
 ---
 
+archive/issue_events_022747.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-04T20:39:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9238",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9238#event-22747"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086748.json:
 ```json
 {
@@ -4372,7 +4389,7 @@ Okay, that sounds good.
 
 ---
 
-archive/issue_events_009400.json:
+archive/issue_events_022748.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4380,7 +4397,7 @@ archive/issue_events_009400.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9238#event-9400"
+    "url": "https://github.com/sagemath/sagetest/issues/9238#event-22748"
 }
 ```
 

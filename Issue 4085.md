@@ -266,6 +266,23 @@ exit code: 1024
 
 ---
 
+archive/issue_events_009320.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-10T00:44:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4085",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4085#event-9320"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029417.json:
 ```json
 {
@@ -324,7 +341,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004323.json:
+archive/issue_events_009321.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -332,7 +349,7 @@ archive/issue_events_004323.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4085#event-4323"
+    "url": "https://github.com/sagemath/sagetest/issues/4085#event-9321"
 }
 ```
 

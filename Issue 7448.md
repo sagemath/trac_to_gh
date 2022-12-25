@@ -961,6 +961,23 @@ I've attached V5, which should "just" fix Sphinx's rendering of nested classes. 
 
 ---
 
+archive/issue_events_017662.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2010-03-06T10:15:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7448",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7448#event-17662"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062623.json:
 ```json
 {
@@ -1006,7 +1023,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007675.json:
+archive/issue_events_017663.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -1014,7 +1031,7 @@ archive/issue_events_007675.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7448#event-7675"
+    "url": "https://github.com/sagemath/sagetest/issues/7448#event-17663"
 }
 ```
 

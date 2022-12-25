@@ -55,7 +55,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_006598.json:
+archive/issue_events_014946.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -63,7 +63,7 @@ archive/issue_events_006598.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6354#event-6598"
+    "url": "https://github.com/sagemath/sagetest/issues/6354#event-14946"
 }
 ```
 
@@ -145,7 +145,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_006599.json:
+archive/issue_events_014947.json:
 ```json
 {
     "actor": "https://github.com/nthiery",
@@ -153,7 +153,7 @@ archive/issue_events_006599.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6354#event-6599"
+    "url": "https://github.com/sagemath/sagetest/issues/6354#event-14947"
 }
 ```
 
@@ -174,6 +174,23 @@ archive/issue_comments_050704.json:
 ```
 
 Sorry, it must have gotten lost during merging....
+
+
+
+---
+
+archive/issue_events_014948.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2009-11-17T23:32:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6354",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6354#event-14948"
+}
+```
 
 
 
@@ -236,7 +253,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_006600.json:
+archive/issue_events_014949.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -244,7 +261,7 @@ archive/issue_events_006600.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6354#event-6600"
+    "url": "https://github.com/sagemath/sagetest/issues/6354#event-14949"
 }
 ```
 

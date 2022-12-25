@@ -155,7 +155,7 @@ archive/issue_comments_008230.json:
 
 ---
 
-archive/issue_events_001451.json:
+archive/issue_events_003422.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -163,7 +163,7 @@ archive/issue_events_001451.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1311",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1311#event-1451"
+    "url": "https://github.com/sagemath/sagetest/issues/1311#event-3422"
 }
 ```
 
@@ -202,3 +202,20 @@ archive/issue_comments_008232.json:
 ```
 
 Merged 1311_and_1313_chromatic_functions.patch and 1311_updated.patch in Sage 2.10.3.alpha0
+
+
+
+---
+
+archive/issue_events_003423.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-25T20:52:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1311",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1311#event-3423"
+}
+```

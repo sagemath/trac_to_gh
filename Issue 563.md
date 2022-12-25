@@ -94,6 +94,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001506.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:46:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/563",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/563#event-1506"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002905.json:
 ```json
 {
@@ -118,6 +135,40 @@ Michael
 
 ---
 
+archive/issue_events_001507.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-17T05:54:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/563",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/563#event-1507"
+}
+```
+
+
+
+---
+
+archive/issue_events_001508.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-17T05:54:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/563",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/563#event-1508"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002906.json:
 ```json
 {
@@ -136,7 +187,7 @@ Merged in 2.8.13.alpha0.
 
 ---
 
-archive/issue_events_000609.json:
+archive/issue_events_001509.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -144,7 +195,7 @@ archive/issue_events_000609.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/563",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/563#event-609"
+    "url": "https://github.com/sagemath/sagetest/issues/563#event-1509"
 }
 ```
 

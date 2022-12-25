@@ -54,6 +54,23 @@ Changing status from new to needs_work.
 
 ---
 
+archive/issue_events_021038.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-07-13T19:45:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21038"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078857.json:
 ```json
 {
@@ -67,6 +84,40 @@ archive/issue_comments_078857.json:
 ```
 
 Changing keywords from "homsest" to "homsets, module morphisms".
+
+
+
+---
+
+archive/issue_events_021039.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21039"
+}
+```
+
+
+
+---
+
+archive/issue_events_021040.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21040"
+}
+```
 
 
 
@@ -106,6 +157,74 @@ Replying to [comment:3 saraedum]:
 > This is is a very old ticket. Anyway, can I find the patch that fixes `_test_category` somewhere? This also fails for #15154. Or should I just disable these tests?
 
 Since there is no reply here, I created a partial fix at #15232.
+
+
+
+---
+
+archive/issue_events_021041.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21041"
+}
+```
+
+
+
+---
+
+archive/issue_events_021042.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21042"
+}
+```
+
+
+
+---
+
+archive/issue_events_021043.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21043"
+}
+```
+
+
+
+---
+
+archive/issue_events_021044.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21044"
+}
+```
 
 
 
@@ -322,6 +441,40 @@ archive/issue_comments_078871.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_021045.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21045"
+}
+```
+
+
+
+---
+
+archive/issue_events_021046.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21046"
+}
+```
 
 
 
@@ -1440,7 +1593,7 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_events_008852.json:
+archive/issue_events_021047.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1448,7 +1601,7 @@ archive/issue_events_008852.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8678",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8678#event-8852"
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-21047"
 }
 ```
 

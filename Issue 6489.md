@@ -109,7 +109,7 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_events_006725.json:
+archive/issue_events_015322.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -117,7 +117,7 @@ archive/issue_events_006725.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6489",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6489#event-6725"
+    "url": "https://github.com/sagemath/sagetest/issues/6489#event-15322"
 }
 ```
 
@@ -156,3 +156,20 @@ archive/issue_comments_052375.json:
 ```
 
 I think duplicating the work in rpy (which is quite effective) isn't a good plan.
+
+
+
+---
+
+archive/issue_events_015323.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-23T15:01:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6489",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6489#event-15323"
+}
+```

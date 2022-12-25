@@ -80,7 +80,7 @@ Minor doctest touchups.
 
 ---
 
-archive/issue_events_001555.json:
+archive/issue_events_003630.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -88,7 +88,7 @@ archive/issue_events_001555.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1407",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1407#event-1555"
+    "url": "https://github.com/sagemath/sagetest/issues/1407#event-3630"
 }
 ```
 

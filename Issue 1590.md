@@ -72,6 +72,23 @@ This was implemented some time before the notebook went to Twisted.  I'll try to
 
 ---
 
+archive/issue_events_003962.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-16T18:51:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1590",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1590#event-3962"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010096.json:
 ```json
 {
@@ -176,7 +193,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001748.json:
+archive/issue_events_003963.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -184,6 +201,6 @@ archive/issue_events_001748.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1590",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1590#event-1748"
+    "url": "https://github.com/sagemath/sagetest/issues/1590#event-3963"
 }
 ```

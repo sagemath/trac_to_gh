@@ -102,6 +102,23 @@ Michael
 
 ---
 
+archive/issue_events_003344.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-29T17:46:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1276",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1276#event-3344"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007974.json:
 ```json
 {
@@ -138,6 +155,40 @@ This code looks good, and I'm working in this area so I'll update it and ready i
 
 ---
 
+archive/issue_events_003345.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:58:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1276",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1276#event-3345"
+}
+```
+
+
+
+---
+
+archive/issue_events_003346.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:58:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1276",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1276#event-3346"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007976.json:
 ```json
 {
@@ -151,6 +202,74 @@ archive/issue_comments_007976.json:
 ```
 
 Changing priority from major to blocker.
+
+
+
+---
+
+archive/issue_events_003347.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-18T20:28:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1276",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1276#event-3347"
+}
+```
+
+
+
+---
+
+archive/issue_events_003348.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-18T20:28:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1276",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1276#event-3348"
+}
+```
+
+
+
+---
+
+archive/issue_events_003349.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-20T22:04:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1276",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1276#event-3349"
+}
+```
+
+
+
+---
+
+archive/issue_events_003350.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-20T22:04:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1276",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1276#event-3350"
+}
+```
 
 
 
@@ -304,7 +423,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_001420.json:
+archive/issue_events_003351.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -312,7 +431,7 @@ archive/issue_events_001420.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1276#event-1420"
+    "url": "https://github.com/sagemath/sagetest/issues/1276#event-3351"
 }
 ```
 

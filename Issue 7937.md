@@ -157,7 +157,7 @@ Changing priority from minor to critical.
 
 ---
 
-archive/issue_events_008153.json:
+archive/issue_events_019000.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -165,7 +165,7 @@ archive/issue_events_008153.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7937#event-8153"
+    "url": "https://github.com/sagemath/sagetest/issues/7937#event-19000"
 }
 ```
 

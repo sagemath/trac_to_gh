@@ -302,6 +302,23 @@ Changing keywords from "" to "factorisation".
 
 ---
 
+archive/issue_events_011702.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5074",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5074#event-11702"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038572.json:
 ```json
 {
@@ -338,6 +355,40 @@ Totally fixed upstream.
 
 ---
 
+archive/issue_events_011703.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:57:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5074",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5074#event-11703"
+}
+```
+
+
+
+---
+
+archive/issue_events_011704.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:57:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5074",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5074#event-11704"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038574.json:
 ```json
 {
@@ -356,7 +407,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_005319.json:
+archive/issue_events_011705.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -364,6 +415,6 @@ archive/issue_events_005319.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5074#event-5319"
+    "url": "https://github.com/sagemath/sagetest/issues/5074#event-11705"
 }
 ```

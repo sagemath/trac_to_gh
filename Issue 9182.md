@@ -216,7 +216,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_009339.json:
+archive/issue_events_022577.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -224,7 +224,7 @@ archive/issue_events_009339.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9182#event-9339"
+    "url": "https://github.com/sagemath/sagetest/issues/9182#event-22577"
 }
 ```
 
@@ -245,3 +245,20 @@ archive/issue_comments_085770.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_022578.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-09T04:33:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9182",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9182#event-22578"
+}
+```

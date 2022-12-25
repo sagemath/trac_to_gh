@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1385
 
 ---
 
+archive/issue_events_003577.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:12:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1385",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1385#event-3577"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008862.json:
 ```json
 {
@@ -77,6 +94,40 @@ archive/issue_comments_008864.json:
 ```
 
 Changing component from number theory to number fields.
+
+
+
+---
+
+archive/issue_events_003578.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-09T11:09:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1385",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1385#event-3578"
+}
+```
+
+
+
+---
+
+archive/issue_events_003579.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-09T11:09:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1385",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1385#event-3579"
+}
+```
 
 
 
@@ -172,7 +223,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_001529.json:
+archive/issue_events_003580.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -180,6 +231,6 @@ archive/issue_events_001529.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1385#event-1529"
+    "url": "https://github.com/sagemath/sagetest/issues/1385#event-3580"
 }
 ```

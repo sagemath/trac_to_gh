@@ -178,6 +178,23 @@ See #11227 for another issue with cliquer, unrelated to this ticket.
 
 ---
 
+archive/issue_events_024861.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9869",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9869#event-24861"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097337.json:
 ```json
 {
@@ -245,6 +262,40 @@ archive/issue_comments_097340.json:
 ```
 
 New commits:
+
+
+
+---
+
+archive/issue_events_024862.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9869",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9869#event-24862"
+}
+```
+
+
+
+---
+
+archive/issue_events_024863.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9869",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9869#event-24863"
+}
+```
 
 
 
@@ -330,7 +381,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009999.json:
+archive/issue_events_024864.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -338,7 +389,7 @@ archive/issue_events_009999.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9869#event-9999"
+    "url": "https://github.com/sagemath/sagetest/issues/9869#event-24864"
 }
 ```
 

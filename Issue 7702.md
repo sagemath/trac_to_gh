@@ -119,6 +119,23 @@ Hard to say what's going on here.  My guess would be a bare `except:` somewhere 
 
 ---
 
+archive/issue_events_018399.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-07T11:26:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7702",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7702#event-18399"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065964.json:
 ```json
 {
@@ -137,7 +154,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007919.json:
+archive/issue_events_018400.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -145,7 +162,7 @@ archive/issue_events_007919.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7702",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7702#event-7919"
+    "url": "https://github.com/sagemath/sagetest/issues/7702#event-18400"
 }
 ```
 

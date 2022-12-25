@@ -121,6 +121,23 @@ Unfortunately, I don't currently have access to sage so I am unable to report li
 
 ---
 
+archive/issue_events_022967.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jeremywest",
+    "created_at": "2010-07-01T06:32:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9322",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9322#event-22967"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087751.json:
 ```json
 {
@@ -467,6 +484,40 @@ In the other ticket on this we changed Simon's scripts so that the use of these 
 
 ---
 
+archive/issue_events_022968.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9322",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9322#event-22968"
+}
+```
+
+
+
+---
+
+archive/issue_events_022969.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9322",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9322#event-22969"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087765.json:
 ```json
 {
@@ -480,6 +531,40 @@ archive/issue_comments_087765.json:
 ```
 
 Changing keywords from "Simon ecc2011" to "simon_two_descent ecc2011".
+
+
+
+---
+
+archive/issue_events_022970.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9322",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9322#event-22970"
+}
+```
+
+
+
+---
+
+archive/issue_events_022971.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9322",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9322#event-22971"
+}
+```
 
 
 
@@ -866,7 +951,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009478.json:
+archive/issue_events_022972.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -874,6 +959,6 @@ archive/issue_events_009478.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9322#event-9478"
+    "url": "https://github.com/sagemath/sagetest/issues/9322#event-22972"
 }
 ```

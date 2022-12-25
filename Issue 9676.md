@@ -351,6 +351,23 @@ Nathann
 
 ---
 
+archive/issue_events_024142.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2010-08-23T02:41:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9676",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9676#event-24142"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093900.json:
 ```json
 {
@@ -541,7 +558,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009809.json:
+archive/issue_events_024143.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -549,6 +566,6 @@ archive/issue_events_009809.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9676",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9676#event-9809"
+    "url": "https://github.com/sagemath/sagetest/issues/9676#event-24143"
 }
 ```

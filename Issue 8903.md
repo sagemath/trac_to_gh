@@ -191,7 +191,7 @@ I've made a new spkg at  http://sage.math.washington.edu/home/burcin/pynac/pynac
 
 ---
 
-archive/issue_events_009059.json:
+archive/issue_events_021724.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -199,7 +199,7 @@ archive/issue_events_009059.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8903",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8903#event-9059"
+    "url": "https://github.com/sagemath/sagetest/issues/8903#event-21724"
 }
 ```
 

@@ -181,7 +181,7 @@ Don't forget to rename amsmath.sty back after testing.
 
 ---
 
-archive/issue_events_005867.json:
+archive/issue_events_013240.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -189,7 +189,24 @@ archive/issue_events_005867.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5626",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5626#event-5867"
+    "url": "https://github.com/sagemath/sagetest/issues/5626#event-13240"
+}
+```
+
+
+
+---
+
+archive/issue_events_013241.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:00:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5626",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5626#event-13241"
 }
 ```
 

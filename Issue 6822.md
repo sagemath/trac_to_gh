@@ -119,6 +119,23 @@ Changing keywords from "" to "bdist spkg".
 
 ---
 
+archive/issue_events_016069.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2012-10-06T00:00:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#event-16069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056164.json:
 ```json
 {
@@ -173,7 +190,41 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007056.json:
+archive/issue_events_016070.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-08T12:44:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#event-16070"
+}
+```
+
+
+
+---
+
+archive/issue_events_016071.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-08T12:44:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#event-16071"
+}
+```
+
+
+
+---
+
+archive/issue_events_016072.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -181,7 +232,7 @@ archive/issue_events_007056.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6822#event-7056"
+    "url": "https://github.com/sagemath/sagetest/issues/6822#event-16072"
 }
 ```
 
@@ -202,3 +253,20 @@ archive/issue_comments_056167.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_016073.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-04-19T06:47:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#event-16073"
+}
+```

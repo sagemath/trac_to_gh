@@ -807,7 +807,7 @@ Depending on how the release manager does things, we'll see which patch to resol
 
 ---
 
-archive/issue_events_001295.json:
+archive/issue_events_003126.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -815,7 +815,7 @@ archive/issue_events_001295.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1163#event-1295"
+    "url": "https://github.com/sagemath/sagetest/issues/1163#event-3126"
 }
 ```
 

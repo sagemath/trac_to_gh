@@ -50,6 +50,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1673
 
 ---
 
+archive/issue_events_004117.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-03T19:23:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1673",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1673#event-4117"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010594.json:
 ```json
 {
@@ -70,7 +87,7 @@ If anything I think the behaviour where you can do f % 11 and get an element of 
 
 ---
 
-archive/issue_events_001832.json:
+archive/issue_events_004118.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -78,7 +95,7 @@ archive/issue_events_001832.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1673",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1673#event-1832"
+    "url": "https://github.com/sagemath/sagetest/issues/1673#event-4118"
 }
 ```
 
@@ -132,3 +149,20 @@ sage: f.change_ring(GF(13))
 1 + 6*q^2 + q^4
 ```
 
+
+
+
+---
+
+archive/issue_events_004119.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-04T08:26:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1673",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1673#event-4119"
+}
+```

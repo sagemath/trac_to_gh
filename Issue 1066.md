@@ -65,7 +65,7 @@ Attachment [wikiconfig.py](tarball://root/attachments/some-uuid/ticket1066/wikic
 
 ---
 
-archive/issue_events_001188.json:
+archive/issue_events_002878.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +73,7 @@ archive/issue_events_001188.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1066",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1066#event-1188"
+    "url": "https://github.com/sagemath/sagetest/issues/1066#event-2878"
 }
 ```
 
@@ -112,3 +112,37 @@ archive/issue_comments_006449.json:
 ```
 
 accidental duplication.
+
+
+
+---
+
+archive/issue_events_002879.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-03T01:40:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1066",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1066#event-2879"
+}
+```
+
+
+
+---
+
+archive/issue_events_002880.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T13:55:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1066",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1066#event-2880"
+}
+```

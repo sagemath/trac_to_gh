@@ -57,7 +57,7 @@ Attached patch fixes the problem.
 
 ---
 
-archive/issue_events_000527.json:
+archive/issue_events_001262.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -65,7 +65,7 @@ archive/issue_events_000527.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/496#event-527"
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-1262"
 }
 ```
 
@@ -151,7 +151,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000528.json:
+archive/issue_events_001263.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -159,7 +159,7 @@ archive/issue_events_000528.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/496#event-528"
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-1263"
 }
 ```
 
@@ -207,7 +207,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000529.json:
+archive/issue_events_001264.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -215,7 +215,7 @@ archive/issue_events_000529.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/496#event-529"
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-1264"
 }
 ```
 
@@ -259,7 +259,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000530.json:
+archive/issue_events_001265.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -267,7 +267,7 @@ archive/issue_events_000530.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/496#event-530"
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-1265"
 }
 ```
 
@@ -293,7 +293,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000531.json:
+archive/issue_events_001266.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -301,7 +301,7 @@ archive/issue_events_000531.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/496#event-531"
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-1266"
 }
 ```
 
@@ -322,3 +322,20 @@ archive/issue_comments_002474.json:
 ```
 
 Everything seems to check out.  Almost all element classes are now using the generic code, and all tests pass.  The classes which do not use generic code are listed in #503, or have good reason not to use it (for example, integers call mpz library code).
+
+
+
+---
+
+archive/issue_events_001267.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-03T21:21:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/496",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-1267"
+}
+```

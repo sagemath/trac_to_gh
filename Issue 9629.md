@@ -30,6 +30,91 @@ Issue created by migration from https://trac.sagemath.org/ticket/9629
 
 ---
 
+archive/issue_events_024002.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9629",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9629#event-24002"
+}
+```
+
+
+
+---
+
+archive/issue_events_024003.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9629",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9629#event-24003"
+}
+```
+
+
+
+---
+
+archive/issue_events_024004.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9629",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9629#event-24004"
+}
+```
+
+
+
+---
+
+archive/issue_events_024005.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9629",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9629#event-24005"
+}
+```
+
+
+
+---
+
+archive/issue_events_024006.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9629",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9629#event-24006"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093154.json:
 ```json
 {
@@ -61,6 +146,40 @@ archive/issue_comments_093155.json:
 ```
 
 `-merge` option is gone.
+
+
+
+---
+
+archive/issue_events_024007.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-06-22T16:01:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9629",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9629#event-24007"
+}
+```
+
+
+
+---
+
+archive/issue_events_024008.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-06-22T16:01:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9629",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9629#event-24008"
+}
+```
 
 
 
@@ -122,7 +241,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009768.json:
+archive/issue_events_024009.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -130,6 +249,6 @@ archive/issue_events_009768.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9629",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9629#event-9768"
+    "url": "https://github.com/sagemath/sagetest/issues/9629#event-24009"
 }
 ```

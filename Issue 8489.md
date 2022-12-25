@@ -504,7 +504,7 @@ This ticket is marked as "needs review", but is there anything still to review h
 
 ---
 
-archive/issue_events_008670.json:
+archive/issue_events_020391.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -512,7 +512,7 @@ archive/issue_events_008670.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8489#event-8670"
+    "url": "https://github.com/sagemath/sagetest/issues/8489#event-20391"
 }
 ```
 
@@ -551,3 +551,20 @@ archive/issue_comments_076434.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_020392.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-28T14:48:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#event-20392"
+}
+```

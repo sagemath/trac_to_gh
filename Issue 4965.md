@@ -370,6 +370,23 @@ Got:
 
 ---
 
+archive/issue_events_011478.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2009-01-12T16:31:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#event-11478"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037683.json:
 ```json
 {
@@ -990,6 +1007,40 @@ to apply:
 
 ---
 
+archive/issue_events_011479.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T05:45:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#event-11479"
+}
+```
+
+
+
+---
+
+archive/issue_events_011480.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T05:45:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#event-11480"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037707.json:
 ```json
 {
@@ -1242,7 +1293,7 @@ Merged polynomial_template.patch and zmod_poly.patch in Sage 3.3.alpha1
 
 ---
 
-archive/issue_events_005208.json:
+archive/issue_events_011481.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1250,6 +1301,6 @@ archive/issue_events_005208.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4965#event-5208"
+    "url": "https://github.com/sagemath/sagetest/issues/4965#event-11481"
 }
 ```

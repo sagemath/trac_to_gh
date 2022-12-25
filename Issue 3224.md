@@ -110,7 +110,7 @@ Positive review.  It works.
 
 ---
 
-archive/issue_events_003443.json:
+archive/issue_events_007254.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -118,7 +118,7 @@ archive/issue_events_003443.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3224",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3224#event-3443"
+    "url": "https://github.com/sagemath/sagetest/issues/3224#event-7254"
 }
 ```
 

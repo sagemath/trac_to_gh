@@ -76,6 +76,23 @@ Changing assignee from tbd to boothby.
 
 ---
 
+archive/issue_events_011665.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2009-01-23T01:43:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5061",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5061#event-11665"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038481.json:
 ```json
 {
@@ -240,6 +257,40 @@ I'm happy with it.
 
 ---
 
+archive/issue_events_011666.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-28T17:08:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5061",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5061#event-11666"
+}
+```
+
+
+
+---
+
+archive/issue_events_011667.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-28T17:08:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5061",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5061#event-11667"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038490.json:
 ```json
 {
@@ -280,7 +331,7 @@ Michael
 
 ---
 
-archive/issue_events_005307.json:
+archive/issue_events_011668.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -288,6 +339,6 @@ archive/issue_events_005307.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5061",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5061#event-5307"
+    "url": "https://github.com/sagemath/sagetest/issues/5061#event-11668"
 }
 ```

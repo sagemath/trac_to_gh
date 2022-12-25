@@ -102,7 +102,24 @@ Then it's settled.
 
 ---
 
-archive/issue_events_008798.json:
+archive/issue_events_020885.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-30T09:32:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8629",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8629#event-20885"
+}
+```
+
+
+
+---
+
+archive/issue_events_020886.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -110,7 +127,7 @@ archive/issue_events_008798.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8629",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8629#event-8798"
+    "url": "https://github.com/sagemath/sagetest/issues/8629#event-20886"
 }
 ```
 

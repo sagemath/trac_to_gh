@@ -55,6 +55,23 @@ Quits a worksheet only if the only user viewing the worksheet is the person tras
 
 ---
 
+archive/issue_events_018541.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T10:43:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7752",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7752#event-18541"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066649.json:
 ```json
 {
@@ -145,7 +162,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007964.json:
+archive/issue_events_018542.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -153,6 +170,6 @@ archive/issue_events_007964.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7752",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7752#event-7964"
+    "url": "https://github.com/sagemath/sagetest/issues/7752#event-18542"
 }
 ```

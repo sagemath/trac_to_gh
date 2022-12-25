@@ -99,7 +99,7 @@ This can be closed as fixed by #7393 in sage-4.2.1.alpha0
 
 ---
 
-archive/issue_events_007282.json:
+archive/issue_events_016661.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -107,7 +107,24 @@ archive/issue_events_007282.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7062",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7062#event-7282"
+    "url": "https://github.com/sagemath/sagetest/issues/7062#event-16661"
+}
+```
+
+
+
+---
+
+archive/issue_events_016662.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-05T15:54:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7062",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7062#event-16662"
 }
 ```
 

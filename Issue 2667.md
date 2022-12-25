@@ -153,7 +153,7 @@ apply just 2667.patch; rhinton and mhansen (and maybe robertwb and cwitty?) shou
 
 ---
 
-archive/issue_events_002859.json:
+archive/issue_events_006238.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -161,7 +161,7 @@ archive/issue_events_002859.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#event-2859"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#event-6238"
 }
 ```
 

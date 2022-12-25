@@ -58,7 +58,7 @@ So this ticket should be closed.
 
 ---
 
-archive/issue_events_005848.json:
+archive/issue_events_013195.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -66,7 +66,7 @@ archive/issue_events_005848.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5604",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5604#event-5848"
+    "url": "https://github.com/sagemath/sagetest/issues/5604#event-13195"
 }
 ```
 

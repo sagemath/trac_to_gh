@@ -46,6 +46,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9880
 
 ---
 
+archive/issue_events_024887.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-09-09T09:06:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9879",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9879#event-24887"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097649.json:
 ```json
 {
@@ -3000,6 +3017,40 @@ Attachment [pynac-0.3.0.diff](tarball://root/attachments/some-uuid/ticket9880/py
 
 ---
 
+archive/issue_events_024888.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-27T20:16:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9879",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9879#event-24888"
+}
+```
+
+
+
+---
+
+archive/issue_events_024889.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-27T20:16:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9879",
+    "milestone": "sage-5.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9879#event-24889"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097767.json:
 ```json
 {
@@ -3152,7 +3203,7 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_010008.json:
+archive/issue_events_024890.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -3160,7 +3211,7 @@ archive/issue_events_010008.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9879#event-10008"
+    "url": "https://github.com/sagemath/sagetest/issues/9879#event-24890"
 }
 ```
 

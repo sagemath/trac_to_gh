@@ -205,7 +205,7 @@ Merged patches in this order:
 
 ---
 
-archive/issue_events_007139.json:
+archive/issue_events_016241.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -213,6 +213,6 @@ archive/issue_events_007139.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6911#event-7139"
+    "url": "https://github.com/sagemath/sagetest/issues/6911#event-16241"
 }
 ```

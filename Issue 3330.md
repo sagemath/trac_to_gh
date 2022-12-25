@@ -215,6 +215,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_007466.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2018-10-29T18:14:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3330",
+    "milestone": "sage-8.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3330#event-7466"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023050.json:
 ```json
 {
@@ -233,7 +250,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003548.json:
+archive/issue_events_007467.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -241,6 +258,6 @@ archive/issue_events_003548.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3330#event-3548"
+    "url": "https://github.com/sagemath/sagetest/issues/3330#event-7467"
 }
 ```

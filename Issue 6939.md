@@ -371,7 +371,7 @@ Minh--if there's something wrong with me positive reviewing mpatel's changes, pl
 
 ---
 
-archive/issue_events_007164.json:
+archive/issue_events_016325.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -379,7 +379,7 @@ archive/issue_events_007164.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6939#event-7164"
+    "url": "https://github.com/sagemath/sagetest/issues/6939#event-16325"
 }
 ```
 

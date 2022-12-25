@@ -58,7 +58,7 @@ Build log for soya build
 
 ---
 
-archive/issue_events_000152.json:
+archive/issue_events_000274.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -66,7 +66,7 @@ archive/issue_events_000152.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/146",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/146#event-152"
+    "url": "https://github.com/sagemath/sagetest/issues/146#event-274"
 }
 ```
 

@@ -122,7 +122,7 @@ That's fine with me. I left it as is in case someone else might have something t
 
 ---
 
-archive/issue_events_004759.json:
+archive/issue_events_010235.json:
 ```json
 {
     "actor": "https://github.com/saliola",
@@ -130,6 +130,23 @@ archive/issue_events_004759.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4514",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4514#event-4759"
+    "url": "https://github.com/sagemath/sagetest/issues/4514#event-10235"
+}
+```
+
+
+
+---
+
+archive/issue_events_010236.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T17:50:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4514",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4514#event-10236"
 }
 ```

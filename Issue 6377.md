@@ -106,6 +106,23 @@ The fix for `exp()` needs to go into pynac. I don't know what other functions ar
 
 ---
 
+archive/issue_events_015024.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-06-22T13:02:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6377",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6377#event-15024"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050934.json:
 ```json
 {
@@ -240,7 +257,7 @@ Note: I am giving partial positive review because I tested this patch against my
 
 ---
 
-archive/issue_events_006625.json:
+archive/issue_events_015025.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -248,7 +265,7 @@ archive/issue_events_006625.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6377#event-6625"
+    "url": "https://github.com/sagemath/sagetest/issues/6377#event-15025"
 }
 ```
 

@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2088
 
 ---
 
+archive/issue_events_004998.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2088",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2088#event-4998"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013482.json:
 ```json
 {
@@ -47,6 +64,40 @@ if is_package_installed('some_package'):
 ```
 
 in `module_list.py`.
+
+
+
+---
+
+archive/issue_events_004999.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:44:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2088",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2088#event-4999"
+}
+```
+
+
+
+---
+
+archive/issue_events_005000.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:44:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2088",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2088#event-5000"
+}
+```
 
 
 
@@ -88,7 +139,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002249.json:
+archive/issue_events_005001.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -96,7 +147,7 @@ archive/issue_events_002249.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2088",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2088#event-2249"
+    "url": "https://github.com/sagemath/sagetest/issues/2088#event-5001"
 }
 ```
 

@@ -63,6 +63,23 @@ Required: Fix hang on test segfault
 
 ---
 
+archive/issue_events_005621.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-20T23:08:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2379",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2379#event-5621"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016020.json:
 ```json
 {
@@ -141,7 +158,7 @@ Merged in Sage 3.0.alpha3
 
 ---
 
-archive/issue_events_002556.json:
+archive/issue_events_005622.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -149,7 +166,7 @@ archive/issue_events_002556.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2379",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2379#event-2556"
+    "url": "https://github.com/sagemath/sagetest/issues/2379#event-5622"
 }
 ```
 

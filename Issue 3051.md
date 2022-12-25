@@ -93,6 +93,23 @@ abort: unable to find sage/combinat/crystals/crystals.py or sage/combinat/crysta
 
 ---
 
+archive/issue_events_006914.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-29T00:27:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#event-6914"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020982.json:
 ```json
 {
@@ -922,7 +939,7 @@ Apply only the last two patches.
 
 ---
 
-archive/issue_events_003261.json:
+archive/issue_events_006915.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -930,7 +947,7 @@ archive/issue_events_003261.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3051#event-3261"
+    "url": "https://github.com/sagemath/sagetest/issues/3051#event-6915"
 }
 ```
 

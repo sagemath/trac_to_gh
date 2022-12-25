@@ -66,6 +66,23 @@ Also, I can't believe this doesn't touch lots of doctests throughout the system.
 
 ---
 
+archive/issue_events_004457.json:
+```json
+{
+    "actor": "https://github.com/haraldschilly",
+    "created_at": "2008-01-22T20:57:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1838",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1838#event-4457"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011607.json:
 ```json
 {
@@ -103,6 +120,40 @@ archive/issue_comments_011608.json:
 I don't think the "right way" is well defined--without the explicit space there is a bit more space after a comma than before, but just barely, and I think it looks fine. 
 
 Unless things look really bad, I think we should error on the side of producing the cleanest, simplest latex--as something to avoid just look at the state of auto-generated HTML that tries to be faithful to a given WYSIWYG editor.
+
+
+
+---
+
+archive/issue_events_004458.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-23T10:57:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1838",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1838#event-4458"
+}
+```
+
+
+
+---
+
+archive/issue_events_004459.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-23T10:57:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1838",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1838#event-4459"
+}
+```
 
 
 
@@ -146,7 +197,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_001997.json:
+archive/issue_events_004460.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -154,6 +205,23 @@ archive/issue_events_001997.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1838#event-1997"
+    "url": "https://github.com/sagemath/sagetest/issues/1838#event-4460"
+}
+```
+
+
+
+---
+
+archive/issue_events_004461.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2008-01-29T00:02:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1838",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1838#event-4461"
 }
 ```

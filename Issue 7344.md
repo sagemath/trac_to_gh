@@ -1193,6 +1193,23 @@ Changing component from packages: standard to packages: optional.
 
 ---
 
+archive/issue_events_017384.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-08-26T02:40:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7344",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7344#event-17384"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061412.json:
 ```json
 {
@@ -1247,7 +1264,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007568.json:
+archive/issue_events_017385.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -1255,7 +1272,7 @@ archive/issue_events_007568.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#event-7568"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#event-17385"
 }
 ```
 

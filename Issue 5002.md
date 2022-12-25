@@ -41,6 +41,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5002
 
 ---
 
+archive/issue_events_011562.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-17T17:06:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5002",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5002#event-11562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038073.json:
 ```json
 {
@@ -183,6 +200,40 @@ CrystalOfTableaux gets new methods cartan_type and module_generator
 CrystalOfTableauxElement __init__ revisions
 ```
 
+
+
+
+---
+
+archive/issue_events_011563.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2009-04-08T15:15:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5002",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5002#event-11563"
+}
+```
+
+
+
+---
+
+archive/issue_events_011564.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2009-04-08T15:15:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5002",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5002#event-11564"
+}
+```
 
 
 
@@ -439,7 +490,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005246.json:
+archive/issue_events_011565.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -447,6 +498,6 @@ archive/issue_events_005246.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5002#event-5246"
+    "url": "https://github.com/sagemath/sagetest/issues/5002#event-11565"
 }
 ```

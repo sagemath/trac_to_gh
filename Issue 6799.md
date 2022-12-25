@@ -82,7 +82,7 @@ The issue of ever-slowing comparisons doesn't occur anymore.
 
 ---
 
-archive/issue_events_007034.json:
+archive/issue_events_016016.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -90,7 +90,24 @@ archive/issue_events_007034.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6799",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6799#event-7034"
+    "url": "https://github.com/sagemath/sagetest/issues/6799#event-16016"
+}
+```
+
+
+
+---
+
+archive/issue_events_016017.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-05T08:24:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6799",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6799#event-16017"
 }
 ```
 

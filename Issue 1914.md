@@ -69,6 +69,23 @@ Michael
 
 ---
 
+archive/issue_events_004609.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-24T20:37:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1914",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1914#event-4609"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012098.json:
 ```json
 {
@@ -87,7 +104,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002070.json:
+archive/issue_events_004610.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -95,7 +112,7 @@ archive/issue_events_002070.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1914",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1914#event-2070"
+    "url": "https://github.com/sagemath/sagetest/issues/1914#event-4610"
 }
 ```
 
@@ -129,3 +146,37 @@ preparser doesn't get confused by the internal quotes):
 
 
 I think this bug can safely be resolved as worksforme.
+
+
+
+---
+
+archive/issue_events_004611.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-24T12:39:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1914",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1914#event-4611"
+}
+```
+
+
+
+---
+
+archive/issue_events_004612.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-24T12:39:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1914",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1914#event-4612"
+}
+```

@@ -95,7 +95,7 @@ Dsage has been deprecated.
 
 ---
 
-archive/issue_events_002495.json:
+archive/issue_events_005464.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -103,6 +103,23 @@ archive/issue_events_002495.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2319",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2319#event-2495"
+    "url": "https://github.com/sagemath/sagetest/issues/2319#event-5464"
+}
+```
+
+
+
+---
+
+archive/issue_events_005465.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T10:00:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2319",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2319#event-5465"
 }
 ```

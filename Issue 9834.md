@@ -130,6 +130,23 @@ Thanks for finding and fixing this!
 
 ---
 
+archive/issue_events_024760.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2010-09-21T13:15:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#event-24760"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096878.json:
 ```json
 {
@@ -436,7 +453,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009956.json:
+archive/issue_events_024761.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -444,7 +461,7 @@ archive/issue_events_009956.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9834#event-9956"
+    "url": "https://github.com/sagemath/sagetest/issues/9834#event-24761"
 }
 ```
 
@@ -465,6 +482,40 @@ archive/issue_comments_096889.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_024762.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-09-28T10:35:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#event-24762"
+}
+```
+
+
+
+---
+
+archive/issue_events_024763.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-09-28T10:35:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#event-24763"
+}
+```
 
 
 

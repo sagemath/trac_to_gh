@@ -65,6 +65,23 @@ It would be nice if there was some basic feature , such as the one that allows t
 
 ---
 
+archive/issue_events_004394.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-10-10T20:33:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1796",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1796#event-4394"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011346.json:
 ```json
 {
@@ -119,7 +136,7 @@ Changing component from distribution to notebook.
 
 ---
 
-archive/issue_events_001954.json:
+archive/issue_events_004395.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -127,7 +144,7 @@ archive/issue_events_001954.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1796",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1796#event-1954"
+    "url": "https://github.com/sagemath/sagetest/issues/1796#event-4395"
 }
 ```
 

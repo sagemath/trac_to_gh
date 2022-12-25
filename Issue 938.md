@@ -77,6 +77,23 @@ PS - this was on a macbook pro...
 
 ---
 
+archive/issue_events_002578.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-24T00:31:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/938",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-2578"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005717.json:
 ```json
 {
@@ -90,6 +107,40 @@ archive/issue_comments_005717.json:
 ```
 
 I think William fixed all of these.
+
+
+
+---
+
+archive/issue_events_002579.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-24T01:09:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/938",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-2579"
+}
+```
+
+
+
+---
+
+archive/issue_events_002580.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-24T01:09:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/938",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-2580"
+}
+```
 
 
 
@@ -173,6 +224,74 @@ Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket938/7087.patc
 
 ---
 
+archive/issue_events_002581.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-24T01:58:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/938",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-2581"
+}
+```
+
+
+
+---
+
+archive/issue_events_002582.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-24T01:58:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/938",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-2582"
+}
+```
+
+
+
+---
+
+archive/issue_events_002583.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/938",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-2583"
+}
+```
+
+
+
+---
+
+archive/issue_events_002584.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/938",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-2584"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005721.json:
 ```json
 {
@@ -191,7 +310,7 @@ This patches cleanly onto 2.8.9.
 
 ---
 
-archive/issue_events_001058.json:
+archive/issue_events_002585.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -199,7 +318,7 @@ archive/issue_events_001058.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/938#event-1058"
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-2585"
 }
 ```
 

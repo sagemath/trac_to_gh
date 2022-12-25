@@ -74,6 +74,23 @@ This patch is currently being voted on by the JSAGE editorial board.
 
 ---
 
+archive/issue_events_002009.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T03:51:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/737",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/737#event-2009"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004307.json:
 ```json
 {
@@ -92,7 +109,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_000826.json:
+archive/issue_events_002010.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -100,6 +117,40 @@ archive/issue_events_000826.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/737",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/737#event-826"
+    "url": "https://github.com/sagemath/sagetest/issues/737#event-2010"
+}
+```
+
+
+
+---
+
+archive/issue_events_002011.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-20T19:17:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/737",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/737#event-2011"
+}
+```
+
+
+
+---
+
+archive/issue_events_002012.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-20T19:17:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/737",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/737#event-2012"
 }
 ```

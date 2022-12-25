@@ -178,6 +178,23 @@ FWIW, I also like the MMA notation better. It is more consistent with the interf
 
 ---
 
+archive/issue_events_017710.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-11-23T14:08:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7472",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7472#event-17710"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062829.json:
 ```json
 {
@@ -549,7 +566,7 @@ Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7
 
 ---
 
-archive/issue_events_007698.json:
+archive/issue_events_017711.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -557,6 +574,6 @@ archive/issue_events_007698.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7472#event-7698"
+    "url": "https://github.com/sagemath/sagetest/issues/7472#event-17711"
 }
 ```

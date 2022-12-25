@@ -127,7 +127,7 @@ It disappeared with sage-1.8.2.1
 
 ---
 
-archive/issue_events_000220.json:
+archive/issue_events_000418.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -135,6 +135,6 @@ archive/issue_events_000220.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/209",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/209#event-220"
+    "url": "https://github.com/sagemath/sagetest/issues/209#event-418"
 }
 ```

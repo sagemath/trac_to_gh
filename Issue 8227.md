@@ -411,7 +411,7 @@ Merged in this order:
 
 ---
 
-archive/issue_events_008428.json:
+archive/issue_events_019687.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -419,7 +419,7 @@ archive/issue_events_008428.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8227#event-8428"
+    "url": "https://github.com/sagemath/sagetest/issues/8227#event-19687"
 }
 ```
 

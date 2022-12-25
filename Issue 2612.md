@@ -107,7 +107,7 @@ Merged in Sage 2.11.alpha2. I had to merge the first hunk of 2612-integer_plus.p
 
 ---
 
-archive/issue_events_002802.json:
+archive/issue_events_006088.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -115,7 +115,7 @@ archive/issue_events_002802.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2612",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2612#event-2802"
+    "url": "https://github.com/sagemath/sagetest/issues/2612#event-6088"
 }
 ```
 

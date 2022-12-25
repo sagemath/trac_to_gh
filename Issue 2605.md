@@ -54,6 +54,23 @@ SO -- took keep this from being marked invalid, please list the exact operating 
 
 ---
 
+archive/issue_events_006065.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-19T20:45:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2605",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2605#event-6065"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017774.json:
 ```json
 {
@@ -76,7 +93,7 @@ JV
 
 ---
 
-archive/issue_events_002795.json:
+archive/issue_events_006066.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -84,7 +101,7 @@ archive/issue_events_002795.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2605",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2605#event-2795"
+    "url": "https://github.com/sagemath/sagetest/issues/2605#event-6066"
 }
 ```
 

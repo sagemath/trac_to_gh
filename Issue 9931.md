@@ -77,6 +77,23 @@ Old-style packages are obsolete.
 
 ---
 
+archive/issue_events_025050.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-01-22T10:52:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9931",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9931#event-25050"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098731.json:
 ```json
 {
@@ -113,7 +130,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_010059.json:
+archive/issue_events_025051.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -121,7 +138,7 @@ archive/issue_events_010059.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9931",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9931#event-10059"
+    "url": "https://github.com/sagemath/sagetest/issues/9931#event-25051"
 }
 ```
 

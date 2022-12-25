@@ -305,6 +305,23 @@ Attachment [lie.py](tarball://root/attachments/some-uuid/ticket489/lie.py) by @m
 
 ---
 
+archive/issue_events_001251.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-28T23:56:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/489",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/489#event-1251"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002436.json:
 ```json
 {
@@ -323,7 +340,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000520.json:
+archive/issue_events_001252.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -331,6 +348,6 @@ archive/issue_events_000520.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/489#event-520"
+    "url": "https://github.com/sagemath/sagetest/issues/489#event-1252"
 }
 ```

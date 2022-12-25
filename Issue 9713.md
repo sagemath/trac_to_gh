@@ -828,6 +828,23 @@ B9. Would it make sense to derive `ChowGroup_degree_class` from some kind of a g
 
 ---
 
+archive/issue_events_024292.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-12-16T18:16:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9713",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9713#event-24292"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094540.json:
 ```json
 {
@@ -2080,7 +2097,7 @@ Thanks!  Patches apply fine now.  Sorry for the mess.
 
 ---
 
-archive/issue_events_009845.json:
+archive/issue_events_024293.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2088,7 +2105,7 @@ archive/issue_events_009845.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9713#event-9845"
+    "url": "https://github.com/sagemath/sagetest/issues/9713#event-24293"
 }
 ```
 
@@ -2170,7 +2187,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009846.json:
+archive/issue_events_024294.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2178,7 +2195,7 @@ archive/issue_events_009846.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9713#event-9846"
+    "url": "https://github.com/sagemath/sagetest/issues/9713#event-24294"
 }
 ```
 
@@ -2422,7 +2439,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009847.json:
+archive/issue_events_024295.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2430,6 +2447,6 @@ archive/issue_events_009847.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9713#event-9847"
+    "url": "https://github.com/sagemath/sagetest/issues/9713#event-24295"
 }
 ```

@@ -68,7 +68,7 @@ Attachment [pbori_gb.2.patch](tarball://root/attachments/some-uuid/ticket4045/pb
 
 ---
 
-archive/issue_events_004277.json:
+archive/issue_events_009244.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -76,7 +76,7 @@ archive/issue_events_004277.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4045",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4045#event-4277"
+    "url": "https://github.com/sagemath/sagetest/issues/4045#event-9244"
 }
 ```
 

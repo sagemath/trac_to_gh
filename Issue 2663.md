@@ -65,6 +65,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2663
 
 ---
 
+archive/issue_events_006229.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-25T08:57:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2663",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2663#event-6229"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018290.json:
 ```json
 {
@@ -107,7 +124,7 @@ Since it seems that on other platforms one does need to link against all one's d
 
 ---
 
-archive/issue_events_002855.json:
+archive/issue_events_006230.json:
 ```json
 {
     "actor": "https://github.com/timabbott",
@@ -115,6 +132,6 @@ archive/issue_events_002855.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2663",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2663#event-2855"
+    "url": "https://github.com/sagemath/sagetest/issues/2663#event-6230"
 }
 ```

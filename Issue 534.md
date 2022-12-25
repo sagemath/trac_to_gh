@@ -66,6 +66,91 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001385.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-01T22:48:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/534",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/534#event-1385"
+}
+```
+
+
+
+---
+
+archive/issue_events_001386.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/534",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/534#event-1386"
+}
+```
+
+
+
+---
+
+archive/issue_events_001387.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/534",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/534#event-1387"
+}
+```
+
+
+
+---
+
+archive/issue_events_001388.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T11:59:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/534",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/534#event-1388"
+}
+```
+
+
+
+---
+
+archive/issue_events_001389.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T11:59:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/534",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/534#event-1389"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002713.json:
 ```json
 {
@@ -88,7 +173,7 @@ Michael
 
 ---
 
-archive/issue_events_000573.json:
+archive/issue_events_001390.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -96,7 +181,7 @@ archive/issue_events_000573.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/534",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/534#event-573"
+    "url": "https://github.com/sagemath/sagetest/issues/534#event-1390"
 }
 ```
 

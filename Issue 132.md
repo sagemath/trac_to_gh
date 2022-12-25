@@ -86,6 +86,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/132
 
 ---
 
+archive/issue_events_000254.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:53:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/132",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/132#event-254"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000613.json:
 ```json
 {
@@ -168,6 +185,40 @@ sage: f+f.parent()(x)
 sin(x)+x
 ```
 
+
+
+
+---
+
+archive/issue_events_000255.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2008-08-14T17:07:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/132",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/132#event-255"
+}
+```
+
+
+
+---
+
+archive/issue_events_000256.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2008-08-14T17:07:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/132",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/132#event-256"
+}
+```
 
 
 
@@ -344,7 +395,7 @@ Attachment [trac_132_docstrings.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_events_000138.json:
+archive/issue_events_000257.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -352,7 +403,7 @@ archive/issue_events_000138.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/132",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/132#event-138"
+    "url": "https://github.com/sagemath/sagetest/issues/132#event-257"
 }
 ```
 

@@ -90,6 +90,23 @@ that I am working on now. I discovered them while implementing this ticket, so t
 
 ---
 
+archive/issue_events_003418.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-02T21:59:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1309",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1309#event-3418"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008216.json:
 ```json
 {
@@ -108,7 +125,7 @@ Attachment [trees.patch](tarball://root/attachments/some-uuid/ticket1309/trees.p
 
 ---
 
-archive/issue_events_001449.json:
+archive/issue_events_003419.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -116,7 +133,7 @@ archive/issue_events_001449.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1309",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1309#event-1449"
+    "url": "https://github.com/sagemath/sagetest/issues/1309#event-3419"
 }
 ```
 

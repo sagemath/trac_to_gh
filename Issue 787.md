@@ -52,7 +52,7 @@ implementation
 
 ---
 
-archive/issue_events_000894.json:
+archive/issue_events_002168.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -60,7 +60,7 @@ archive/issue_events_000894.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/787#event-894"
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2168"
 }
 ```
 
@@ -134,6 +134,23 @@ Cheers,
 
 ---
 
+archive/issue_events_002169.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T07:54:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2169"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004701.json:
 ```json
 {
@@ -170,7 +187,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000895.json:
+archive/issue_events_002170.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -178,7 +195,41 @@ archive/issue_events_000895.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/787#event-895"
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2170"
+}
+```
+
+
+
+---
+
+archive/issue_events_002171.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T14:10:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2171"
+}
+```
+
+
+
+---
+
+archive/issue_events_002172.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T14:10:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2172"
 }
 ```
 
@@ -208,6 +259,108 @@ Michael
 
 ---
 
+archive/issue_events_002173.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:32:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2173"
+}
+```
+
+
+
+---
+
+archive/issue_events_002174.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:32:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2174"
+}
+```
+
+
+
+---
+
+archive/issue_events_002175.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2175"
+}
+```
+
+
+
+---
+
+archive/issue_events_002176.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2176"
+}
+```
+
+
+
+---
+
+archive/issue_events_002177.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:59:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2177"
+}
+```
+
+
+
+---
+
+archive/issue_events_002178.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:59:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2178"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004704.json:
 ```json
 {
@@ -221,6 +374,40 @@ archive/issue_comments_004704.json:
 ```
 
 This has lingered too long -- I need to deal with it.
+
+
+
+---
+
+archive/issue_events_002179.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:56:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2179"
+}
+```
+
+
+
+---
+
+archive/issue_events_002180.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:56:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2180"
+}
+```
 
 
 
@@ -438,7 +625,7 @@ instead of applying those three patches, this is a clean bundle.
 
 ---
 
-archive/issue_events_000896.json:
+archive/issue_events_002181.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -446,7 +633,7 @@ archive/issue_events_000896.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/787#event-896"
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-2181"
 }
 ```
 

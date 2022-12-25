@@ -99,6 +99,23 @@ Michael
 
 ---
 
+archive/issue_events_009551.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-02T03:41:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4218",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4218#event-9551"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030593.json:
 ```json
 {
@@ -185,7 +202,41 @@ and also that `S.random_element()` gives a random integer (I think).  Another ti
 
 ---
 
-archive/issue_events_004455.json:
+archive/issue_events_009552.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-21T22:39:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4218",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4218#event-9552"
+}
+```
+
+
+
+---
+
+archive/issue_events_009553.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-21T22:39:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4218",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4218#event-9553"
+}
+```
+
+
+
+---
+
+archive/issue_events_009554.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -193,7 +244,7 @@ archive/issue_events_004455.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4218",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4218#event-4455"
+    "url": "https://github.com/sagemath/sagetest/issues/4218#event-9554"
 }
 ```
 

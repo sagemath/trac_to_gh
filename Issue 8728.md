@@ -291,6 +291,91 @@ See #13973 where this should (?) be fixed, just need a doctest here?
 
 ---
 
+archive/issue_events_021194.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21194"
+}
+```
+
+
+
+---
+
+archive/issue_events_021195.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21195"
+}
+```
+
+
+
+---
+
+archive/issue_events_021196.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21196"
+}
+```
+
+
+
+---
+
+archive/issue_events_021197.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21197"
+}
+```
+
+
+
+---
+
+archive/issue_events_021198.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21198"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079593.json:
 ```json
 {
@@ -326,6 +411,40 @@ negative;
 ```
 
 This appears to be the correct answer.  Note that the answers to both questions are "negative" for all *e* with -1 < *e* < 1, so it would be nice if Maxima didn't ask those questions.
+
+
+
+---
+
+archive/issue_events_021199.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21199"
+}
+```
+
+
+
+---
+
+archive/issue_events_021200.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21200"
+}
+```
 
 
 
@@ -461,6 +580,40 @@ A fortiori, the other two assumptions (after negating) are actually redundant.  
 
 ---
 
+archive/issue_events_021201.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2016-08-05T13:44:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21201"
+}
+```
+
+
+
+---
+
+archive/issue_events_021202.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2016-08-05T13:44:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8728",
+    "milestone": "sage-7.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21202"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079600.json:
 ```json
 {
@@ -515,7 +668,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008898.json:
+archive/issue_events_021203.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -523,7 +676,7 @@ archive/issue_events_008898.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8728#event-8898"
+    "url": "https://github.com/sagemath/sagetest/issues/8728#event-21203"
 }
 ```
 

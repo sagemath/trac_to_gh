@@ -160,6 +160,23 @@ http://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.p2.spkg
 
 ---
 
+archive/issue_events_003241.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-24T00:38:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1222",
+    "milestone": "sage-2.8.14",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1222#event-3241"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007586.json:
 ```json
 {
@@ -319,7 +336,7 @@ Merged in 2.8.15.alpha2.
 
 ---
 
-archive/issue_events_001360.json:
+archive/issue_events_003242.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -327,6 +344,6 @@ archive/issue_events_001360.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#event-1360"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#event-3242"
 }
 ```

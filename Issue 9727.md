@@ -271,7 +271,7 @@ Remove assignee edward.scheinerman.
 
 ---
 
-archive/issue_events_009861.json:
+archive/issue_events_024341.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -279,7 +279,7 @@ archive/issue_events_009861.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9727",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9727#event-9861"
+    "url": "https://github.com/sagemath/sagetest/issues/9727#event-24341"
 }
 ```
 
@@ -341,3 +341,20 @@ Ed Scheinerman
 
 
 I'm setting this as "wontfix" since it seems like they, well, won't use this enhancement and work on things later.
+
+
+
+---
+
+archive/issue_events_024342.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-08T04:09:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9727",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9727#event-24342"
+}
+```

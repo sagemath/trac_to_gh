@@ -102,6 +102,23 @@ This has been superseded by the optional sage-mode spkg.
 
 ---
 
+archive/issue_events_004503.json:
+```json
+{
+    "actor": "https://github.com/gvol",
+    "created_at": "2012-05-25T18:52:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1861",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1861#event-4503"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011748.json:
 ```json
 {
@@ -230,6 +247,40 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_004504.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-29T12:44:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1861",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1861#event-4504"
+}
+```
+
+
+
+---
+
+archive/issue_events_004505.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-29T12:44:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1861",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1861#event-4505"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011755.json:
 ```json
 {
@@ -289,7 +340,7 @@ Okay, that's clear.
 
 ---
 
-archive/issue_events_002019.json:
+archive/issue_events_004506.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -297,7 +348,7 @@ archive/issue_events_002019.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1861",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1861#event-2019"
+    "url": "https://github.com/sagemath/sagetest/issues/1861#event-4506"
 }
 ```
 

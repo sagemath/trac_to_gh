@@ -102,7 +102,7 @@ Note that one followup patch is needed.  After that everything works (all long d
 
 ---
 
-archive/issue_events_006358.json:
+archive/issue_events_014380.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,7 +110,7 @@ archive/issue_events_006358.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6107#event-6358"
+    "url": "https://github.com/sagemath/sagetest/issues/6107#event-14380"
 }
 ```
 

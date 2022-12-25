@@ -174,7 +174,7 @@ Builds for me, too -- if I install sagenb-0.7.3, building the PDF documentation 
 
 ---
 
-archive/issue_events_008371.json:
+archive/issue_events_019568.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -182,7 +182,7 @@ archive/issue_events_008371.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8167#event-8371"
+    "url": "https://github.com/sagemath/sagetest/issues/8167#event-19568"
 }
 ```
 

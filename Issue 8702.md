@@ -68,6 +68,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_021126.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-06-10T19:04:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8702",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8702#event-21126"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079180.json:
 ```json
 {
@@ -373,6 +390,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_021127.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:05:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8702",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8702#event-21127"
+}
+```
+
+
+
+---
+
+archive/issue_events_021128.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:05:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8702",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8702#event-21128"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079194.json:
 ```json
 {
@@ -391,7 +442,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008872.json:
+archive/issue_events_021129.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -399,6 +450,6 @@ archive/issue_events_008872.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8702#event-8872"
+    "url": "https://github.com/sagemath/sagetest/issues/8702#event-21129"
 }
 ```

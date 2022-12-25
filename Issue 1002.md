@@ -53,6 +53,23 @@ Michael
 
 ---
 
+archive/issue_events_002755.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:18:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1002",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1002#event-2755"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006080.json:
 ```json
 {
@@ -102,7 +119,7 @@ Michael
 
 ---
 
-archive/issue_events_001125.json:
+archive/issue_events_002756.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,7 +127,7 @@ archive/issue_events_001125.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1002",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1002#event-1125"
+    "url": "https://github.com/sagemath/sagetest/issues/1002#event-2756"
 }
 ```
 
@@ -216,7 +233,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001126.json:
+archive/issue_events_002757.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -224,7 +241,7 @@ archive/issue_events_001126.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1002",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1002#event-1126"
+    "url": "https://github.com/sagemath/sagetest/issues/1002#event-2757"
 }
 ```
 
@@ -347,7 +364,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_001127.json:
+archive/issue_events_002758.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -355,7 +372,24 @@ archive/issue_events_001127.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1002",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1002#event-1127"
+    "url": "https://github.com/sagemath/sagetest/issues/1002#event-2758"
+}
+```
+
+
+
+---
+
+archive/issue_events_002759.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-01T14:13:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1002",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1002#event-2759"
 }
 ```
 

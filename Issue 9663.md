@@ -175,6 +175,23 @@ Please see the new version of the patch.
 
 ---
 
+archive/issue_events_024103.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2010-09-05T15:19:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#event-24103"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093633.json:
 ```json
 {
@@ -294,6 +311,40 @@ archive/issue_comments_093638.json:
 ```
 
 I think you should add a patch with a test for "unknown algorithm".
+
+
+
+---
+
+archive/issue_events_024104.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-26T08:52:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#event-24104"
+}
+```
+
+
+
+---
+
+archive/issue_events_024105.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-26T08:52:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#event-24105"
+}
+```
 
 
 
@@ -559,7 +610,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009798.json:
+archive/issue_events_024106.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -567,6 +618,6 @@ archive/issue_events_009798.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9663#event-9798"
+    "url": "https://github.com/sagemath/sagetest/issues/9663#event-24106"
 }
 ```

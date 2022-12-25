@@ -213,7 +213,7 @@ What a subtle bug. Thank you for tracking this down. The updated package [scipy-
 
 ---
 
-archive/issue_events_008117.json:
+archive/issue_events_018898.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -221,7 +221,7 @@ archive/issue_events_008117.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7902",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7902#event-8117"
+    "url": "https://github.com/sagemath/sagetest/issues/7902#event-18898"
 }
 ```
 

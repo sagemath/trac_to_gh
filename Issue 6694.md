@@ -288,7 +288,24 @@ No problem.  To really tax a browser, try "evaluating all" cells in a long secti
 
 ---
 
-archive/issue_events_006929.json:
+archive/issue_events_015784.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-24T09:46:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6694",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6694#event-15784"
+}
+```
+
+
+
+---
+
+archive/issue_events_015785.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -296,7 +313,7 @@ archive/issue_events_006929.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6694",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6694#event-6929"
+    "url": "https://github.com/sagemath/sagetest/issues/6694#event-15785"
 }
 ```
 

@@ -151,7 +151,7 @@ works for me too; tested on 4.0.2.rc0
 
 ---
 
-archive/issue_events_006541.json:
+archive/issue_events_014730.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -159,7 +159,7 @@ archive/issue_events_006541.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6299",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6299#event-6541"
+    "url": "https://github.com/sagemath/sagetest/issues/6299#event-14730"
 }
 ```
 

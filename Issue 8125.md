@@ -162,7 +162,7 @@ This is still an issue in Sage 4.6.alpha3: it has not been fixed in matplotlib 1
 
 ---
 
-archive/issue_events_008333.json:
+archive/issue_events_019459.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mdboom",
@@ -170,7 +170,7 @@ archive/issue_events_008333.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8125#event-8333"
+    "url": "https://github.com/sagemath/sagetest/issues/8125#event-19459"
 }
 ```
 
@@ -236,7 +236,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008334.json:
+archive/issue_events_019460.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -244,7 +244,7 @@ archive/issue_events_008334.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8125#event-8334"
+    "url": "https://github.com/sagemath/sagetest/issues/8125#event-19460"
 }
 ```
 
@@ -283,6 +283,23 @@ archive/issue_comments_071318.json:
 ```
 
 We keep tickets open until the fix has actually gone into a Sage release.
+
+
+
+---
+
+archive/issue_events_019461.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2012-03-21T21:16:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8125",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8125#event-19461"
+}
+```
 
 
 
@@ -360,7 +377,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_008335.json:
+archive/issue_events_019462.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -368,6 +385,6 @@ archive/issue_events_008335.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8125#event-8335"
+    "url": "https://github.com/sagemath/sagetest/issues/8125#event-19462"
 }
 ```

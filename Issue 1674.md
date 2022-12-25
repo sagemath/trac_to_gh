@@ -47,7 +47,7 @@ Attachment [7915.patch](tarball://root/attachments/some-uuid/ticket1674/7915.pat
 
 ---
 
-archive/issue_events_001833.json:
+archive/issue_events_004120.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -55,7 +55,7 @@ archive/issue_events_001833.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1674",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1674#event-1833"
+    "url": "https://github.com/sagemath/sagetest/issues/1674#event-4120"
 }
 ```
 
@@ -80,6 +80,23 @@ Merged in 2.9.2.rc0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004121.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-03T21:18:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1674",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1674#event-4121"
+}
+```
 
 
 

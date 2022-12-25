@@ -27,6 +27,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/217
 
 ---
 
+archive/issue_events_000437.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-27T05:19:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/217",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/217#event-437"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000961.json:
 ```json
 {
@@ -149,7 +166,7 @@ Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/pat
 
 ---
 
-archive/issue_events_000228.json:
+archive/issue_events_000438.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -157,7 +174,7 @@ archive/issue_events_000228.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/217#event-228"
+    "url": "https://github.com/sagemath/sagetest/issues/217#event-438"
 }
 ```
 
@@ -245,7 +262,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000229.json:
+archive/issue_events_000439.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -253,7 +270,7 @@ archive/issue_events_000229.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/217#event-229"
+    "url": "https://github.com/sagemath/sagetest/issues/217#event-439"
 }
 ```
 
@@ -398,7 +415,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000230.json:
+archive/issue_events_000440.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -406,7 +423,7 @@ archive/issue_events_000230.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/217#event-230"
+    "url": "https://github.com/sagemath/sagetest/issues/217#event-440"
 }
 ```
 

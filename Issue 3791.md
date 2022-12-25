@@ -60,6 +60,159 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_008700.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-30T17:29:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8700"
+}
+```
+
+
+
+---
+
+archive/issue_events_008701.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8701"
+}
+```
+
+
+
+---
+
+archive/issue_events_008702.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8702"
+}
+```
+
+
+
+---
+
+archive/issue_events_008703.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8703"
+}
+```
+
+
+
+---
+
+archive/issue_events_008704.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8704"
+}
+```
+
+
+
+---
+
+archive/issue_events_008705.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8705"
+}
+```
+
+
+
+---
+
+archive/issue_events_008706.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8706"
+}
+```
+
+
+
+---
+
+archive/issue_events_008707.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8707"
+}
+```
+
+
+
+---
+
+archive/issue_events_008708.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8708"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026897.json:
 ```json
 {
@@ -227,7 +380,7 @@ You are supposed to change the milestone to "duplicate/invalid/wontfix" then...
 
 ---
 
-archive/issue_events_004013.json:
+archive/issue_events_008709.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -235,6 +388,40 @@ archive/issue_events_004013.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3791#event-4013"
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8709"
+}
+```
+
+
+
+---
+
+archive/issue_events_008710.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2015-01-13T01:13:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8710"
+}
+```
+
+
+
+---
+
+archive/issue_events_008711.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2015-01-13T01:13:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-8711"
 }
 ```

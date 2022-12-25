@@ -123,7 +123,24 @@ Looks good to me.  I've combined all the need patches into 2812.patch so that is
 
 ---
 
-archive/issue_events_003003.json:
+archive/issue_events_006471.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-05T21:35:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2812",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2812#event-6471"
+}
+```
+
+
+
+---
+
+archive/issue_events_006472.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -131,7 +148,7 @@ archive/issue_events_003003.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2812",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2812#event-3003"
+    "url": "https://github.com/sagemath/sagetest/issues/2812#event-6472"
 }
 ```
 

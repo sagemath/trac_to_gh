@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8826
 
 ---
 
-archive/issue_events_008989.json:
+archive/issue_events_021540.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/gostrc",
@@ -77,7 +77,7 @@ archive/issue_events_008989.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8826",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8826#event-8989"
+    "url": "https://github.com/sagemath/sagetest/issues/8826#event-21540"
 }
 ```
 
@@ -157,7 +157,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008990.json:
+archive/issue_events_021541.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/gostrc",
@@ -165,7 +165,7 @@ archive/issue_events_008990.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8826",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8826#event-8990"
+    "url": "https://github.com/sagemath/sagetest/issues/8826#event-21541"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_events_008990.json:
 
 ---
 
-archive/issue_events_008991.json:
+archive/issue_events_021542.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/gostrc",
@@ -181,7 +181,7 @@ archive/issue_events_008991.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8826",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8826#event-8991"
+    "url": "https://github.com/sagemath/sagetest/issues/8826#event-21542"
 }
 ```
 
@@ -220,6 +220,23 @@ archive/issue_comments_080922.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_021543.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-06-07T17:22:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#event-21543"
+}
+```
 
 
 

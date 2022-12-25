@@ -458,6 +458,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_004427.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2011-02-26T22:38:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1819",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1819#event-4427"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011478.json:
 ```json
 {
@@ -627,7 +644,7 @@ Looks good. Fixes the documentation warning.
 
 ---
 
-archive/issue_events_001976.json:
+archive/issue_events_004428.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -635,7 +652,7 @@ archive/issue_events_001976.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1819",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1819#event-1976"
+    "url": "https://github.com/sagemath/sagetest/issues/1819#event-4428"
 }
 ```
 

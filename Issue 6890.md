@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6890
 
 ---
 
-archive/issue_events_007120.json:
+archive/issue_events_016207.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -49,7 +49,7 @@ archive/issue_events_007120.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6890",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6890#event-7120"
+    "url": "https://github.com/sagemath/sagetest/issues/6890#event-16207"
 }
 ```
 
@@ -93,6 +93,23 @@ def is_SymbolicExpressionRing(R):
     return R is SR
 ```
 
+
+
+
+---
+
+archive/issue_events_016208.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-23T15:31:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6890",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6890#event-16208"
+}
+```
 
 
 

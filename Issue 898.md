@@ -46,6 +46,23 @@ Attachment [ntl_GF2.patch](tarball://root/attachments/some-uuid/ticket898/ntl_GF
 
 ---
 
+archive/issue_events_002487.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:35:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/898",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/898#event-2487"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005507.json:
 ```json
 {
@@ -82,7 +99,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_001014.json:
+archive/issue_events_002488.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -90,7 +107,7 @@ archive/issue_events_001014.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/898",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/898#event-1014"
+    "url": "https://github.com/sagemath/sagetest/issues/898#event-2488"
 }
 ```
 

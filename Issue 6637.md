@@ -274,6 +274,57 @@ Actually, my questions are :
 
 ---
 
+archive/issue_events_015675.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6637",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6637#event-15675"
+}
+```
+
+
+
+---
+
+archive/issue_events_015676.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6637",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6637#event-15676"
+}
+```
+
+
+
+---
+
+archive/issue_events_015677.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6637",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6637#event-15677"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054283.json:
 ```json
 {
@@ -507,6 +558,40 @@ archive/issue_comments_054295.json:
 ```
 
 Changing keywords from "backtrack, enumerated set, transitive closure" to "backtrack, enumerated set, transitive closure, days57".
+
+
+
+---
+
+archive/issue_events_015678.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6637",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6637#event-15678"
+}
+```
+
+
+
+---
+
+archive/issue_events_015679.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6637",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6637#event-15679"
+}
+```
 
 
 
@@ -1278,7 +1363,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006874.json:
+archive/issue_events_015680.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1286,6 +1371,6 @@ archive/issue_events_006874.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6637#event-6874"
+    "url": "https://github.com/sagemath/sagetest/issues/6637#event-15680"
 }
 ```

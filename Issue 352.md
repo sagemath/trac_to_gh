@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/352
 
 ---
 
-archive/issue_events_000375.json:
+archive/issue_events_000832.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -60,7 +60,7 @@ archive/issue_events_000375.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/352",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/352#event-375"
+    "url": "https://github.com/sagemath/sagetest/issues/352#event-832"
 }
 ```
 
@@ -125,3 +125,20 @@ sage: B(v)
 [0 0 0 0 0]
 ```
 
+
+
+
+---
+
+archive/issue_events_000833.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T23:55:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/352",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/352#event-833"
+}
+```

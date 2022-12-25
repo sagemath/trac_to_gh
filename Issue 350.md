@@ -68,7 +68,7 @@ In any case, the bug appears to be fixed now, so I'm closing this ticket.
 
 ---
 
-archive/issue_events_000373.json:
+archive/issue_events_000826.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -76,7 +76,7 @@ archive/issue_events_000373.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/350",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/350#event-373"
+    "url": "https://github.com/sagemath/sagetest/issues/350#event-826"
 }
 ```
 
@@ -97,3 +97,20 @@ archive/issue_comments_001692.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000827.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:22:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/350",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/350#event-827"
+}
+```

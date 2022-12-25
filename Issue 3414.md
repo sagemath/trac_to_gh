@@ -162,7 +162,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3414
 
 ---
 
-archive/issue_events_003630.json:
+archive/issue_events_007697.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -170,7 +170,7 @@ archive/issue_events_003630.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3414",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3414#event-3630"
+    "url": "https://github.com/sagemath/sagetest/issues/3414#event-7697"
 }
 ```
 

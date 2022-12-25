@@ -91,6 +91,23 @@ Michael
 
 ---
 
+archive/issue_events_012006.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
+    "created_at": "2011-05-24T20:13:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5187",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5187#event-12006"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039706.json:
 ```json
 {
@@ -127,7 +144,7 @@ I believe this ticket can be closed as it is superceded by #7870.
 
 ---
 
-archive/issue_events_005441.json:
+archive/issue_events_012007.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -135,7 +152,7 @@ archive/issue_events_005441.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5187",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5187#event-5441"
+    "url": "https://github.com/sagemath/sagetest/issues/5187#event-12007"
 }
 ```
 

@@ -187,6 +187,23 @@ Changing component from interfaces to user interface.
 
 ---
 
+archive/issue_events_006234.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-28T13:59:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2666",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2666#event-6234"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018310.json:
 ```json
 {
@@ -279,6 +296,40 @@ I think we should just close this.  I read the discussion on sage-devel again, a
 
 ---
 
+archive/issue_events_006235.json:
+```json
+{
+    "actor": "https://github.com/gvol",
+    "created_at": "2014-06-10T06:30:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2666",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2666#event-6235"
+}
+```
+
+
+
+---
+
+archive/issue_events_006236.json:
+```json
+{
+    "actor": "https://github.com/gvol",
+    "created_at": "2014-06-10T06:30:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2666",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2666#event-6236"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018315.json:
 ```json
 {
@@ -351,7 +402,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_002858.json:
+archive/issue_events_006237.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -359,6 +410,6 @@ archive/issue_events_002858.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2666",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2666#event-2858"
+    "url": "https://github.com/sagemath/sagetest/issues/2666#event-6237"
 }
 ```

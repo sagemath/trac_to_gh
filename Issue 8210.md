@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8210
 
 ---
 
-archive/issue_events_008412.json:
+archive/issue_events_019643.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -52,7 +52,7 @@ archive/issue_events_008412.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8210",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8210#event-8412"
+    "url": "https://github.com/sagemath/sagetest/issues/8210#event-19643"
 }
 ```
 
@@ -91,3 +91,20 @@ archive/issue_comments_072288.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_019644.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-02-09T15:42:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8210",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8210#event-19644"
+}
+```

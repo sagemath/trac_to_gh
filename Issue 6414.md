@@ -81,6 +81,23 @@ This is essentially the same as #5950, except newer and with a little more info,
 
 ---
 
+archive/issue_events_015114.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-04-11T09:55:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6414",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6414#event-15114"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051401.json:
 ```json
 {
@@ -314,7 +331,7 @@ That seems like a good compromise.
 
 ---
 
-archive/issue_events_006658.json:
+archive/issue_events_015115.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -322,7 +339,7 @@ archive/issue_events_006658.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6414#event-6658"
+    "url": "https://github.com/sagemath/sagetest/issues/6414#event-15115"
 }
 ```
 

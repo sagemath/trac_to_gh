@@ -174,7 +174,7 @@ Attachment [7069.patch](tarball://root/attachments/some-uuid/ticket956/7069.patc
 
 ---
 
-archive/issue_events_001076.json:
+archive/issue_events_002635.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -182,7 +182,7 @@ archive/issue_events_001076.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/956",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/956#event-1076"
+    "url": "https://github.com/sagemath/sagetest/issues/956#event-2635"
 }
 ```
 
@@ -284,7 +284,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001077.json:
+archive/issue_events_002636.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -292,7 +292,7 @@ archive/issue_events_001077.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/956",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/956#event-1077"
+    "url": "https://github.com/sagemath/sagetest/issues/956#event-2636"
 }
 ```
 
@@ -318,7 +318,7 @@ PLEASE NOTE -- Don't use the patch here!! Instead, use the ones in #968.
 
 ---
 
-archive/issue_events_001078.json:
+archive/issue_events_002637.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -326,7 +326,7 @@ archive/issue_events_001078.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/956",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/956#event-1078"
+    "url": "https://github.com/sagemath/sagetest/issues/956#event-2637"
 }
 ```
 

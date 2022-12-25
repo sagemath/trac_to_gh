@@ -232,7 +232,7 @@ Thank you very much for the positive review.
 
 ---
 
-archive/issue_events_008088.json:
+archive/issue_events_018826.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -240,7 +240,7 @@ archive/issue_events_008088.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7873",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7873#event-8088"
+    "url": "https://github.com/sagemath/sagetest/issues/7873#event-18826"
 }
 ```
 

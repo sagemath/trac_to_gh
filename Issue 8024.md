@@ -126,7 +126,7 @@ This is solved by #8052, which currently needs review
 
 ---
 
-archive/issue_events_008235.json:
+archive/issue_events_019223.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -134,7 +134,7 @@ archive/issue_events_008235.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8024",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8024#event-8235"
+    "url": "https://github.com/sagemath/sagetest/issues/8024#event-19223"
 }
 ```
 

@@ -101,6 +101,23 @@ I posted a new patch to add a test to make sure that this has been (and stays) f
 
 ---
 
+archive/issue_events_021670.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-05-04T21:53:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8875",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8875#event-21670"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081434.json:
 ```json
 {
@@ -137,7 +154,7 @@ Merged [trac_8875_Set_from_iterator_mr.2.patch](http://trac.sagemath.org/sage_tr
 
 ---
 
-archive/issue_events_009033.json:
+archive/issue_events_021671.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -145,7 +162,7 @@ archive/issue_events_009033.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8875",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8875#event-9033"
+    "url": "https://github.com/sagemath/sagetest/issues/8875#event-21671"
 }
 ```
 

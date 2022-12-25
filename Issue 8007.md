@@ -293,7 +293,7 @@ Merged [trac_8007_rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ti
 
 ---
 
-archive/issue_events_008222.json:
+archive/issue_events_019186.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -301,7 +301,7 @@ archive/issue_events_008222.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8007#event-8222"
+    "url": "https://github.com/sagemath/sagetest/issues/8007#event-19186"
 }
 ```
 

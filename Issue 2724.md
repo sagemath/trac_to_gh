@@ -85,7 +85,7 @@ This is an exact duplicate of #2477. Make sure to check before posting tickets!
 
 ---
 
-archive/issue_events_002912.json:
+archive/issue_events_006349.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -93,7 +93,7 @@ archive/issue_events_002912.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2724#event-2912"
+    "url": "https://github.com/sagemath/sagetest/issues/2724#event-6349"
 }
 ```
 

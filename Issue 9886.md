@@ -158,6 +158,23 @@ I'd be interested to see corresponding timings on other systems.
 
 ---
 
+archive/issue_events_024897.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-10-03T16:22:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#event-24897"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097832.json:
 ```json
 {
@@ -546,6 +563,40 @@ I'll tag this as "positive review" to bring it to the release manager's attentio
 
 ---
 
+archive/issue_events_024898.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-24T06:24:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#event-24898"
+}
+```
+
+
+
+---
+
+archive/issue_events_024899.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-24T06:24:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#event-24899"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097850.json:
 ```json
 {
@@ -564,7 +615,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_010013.json:
+archive/issue_events_024900.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -572,6 +623,6 @@ archive/issue_events_010013.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9886#event-10013"
+    "url": "https://github.com/sagemath/sagetest/issues/9886#event-24900"
 }
 ```

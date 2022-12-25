@@ -64,6 +64,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_021593.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-05-05T02:26:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#event-21593"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081199.json:
 ```json
 {
@@ -269,7 +286,7 @@ Attachment [trac_8847-take4.patch](tarball://root/attachments/some-uuid/ticket88
 
 ---
 
-archive/issue_events_009012.json:
+archive/issue_events_021594.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -277,7 +294,7 @@ archive/issue_events_009012.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8847#event-9012"
+    "url": "https://github.com/sagemath/sagetest/issues/8847#event-21594"
 }
 ```
 

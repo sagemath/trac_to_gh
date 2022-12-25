@@ -268,7 +268,7 @@ Merged conjugate-partition.4.patch in Sage 2.10.1.rc3
 
 ---
 
-archive/issue_events_002127.json:
+archive/issue_events_004771.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -276,7 +276,7 @@ archive/issue_events_002127.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1973#event-2127"
+    "url": "https://github.com/sagemath/sagetest/issues/1973#event-4771"
 }
 ```
 
@@ -338,7 +338,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002128.json:
+archive/issue_events_004772.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -346,7 +346,7 @@ archive/issue_events_002128.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1973#event-2128"
+    "url": "https://github.com/sagemath/sagetest/issues/1973#event-4772"
 }
 ```
 
@@ -505,7 +505,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002129.json:
+archive/issue_events_004773.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -513,7 +513,7 @@ archive/issue_events_002129.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1973#event-2129"
+    "url": "https://github.com/sagemath/sagetest/issues/1973#event-4773"
 }
 ```
 

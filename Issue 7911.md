@@ -108,6 +108,23 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_018934.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-01-25T14:54:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7911",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7911#event-18934"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068683.json:
 ```json
 {
@@ -1046,7 +1063,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008126.json:
+archive/issue_events_018935.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1054,7 +1071,7 @@ archive/issue_events_008126.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7911#event-8126"
+    "url": "https://github.com/sagemath/sagetest/issues/7911#event-18935"
 }
 ```
 

@@ -84,7 +84,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009218.json:
+archive/issue_events_022220.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -92,7 +92,7 @@ archive/issue_events_009218.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9067",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9067#event-9218"
+    "url": "https://github.com/sagemath/sagetest/issues/9067#event-22220"
 }
 ```
 
@@ -113,3 +113,20 @@ archive/issue_comments_084018.json:
 ```
 
 Looks good, and merged.
+
+
+
+---
+
+archive/issue_events_022221.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-29T07:57:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9067",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9067#event-22221"
+}
+```

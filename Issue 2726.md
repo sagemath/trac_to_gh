@@ -49,6 +49,23 @@ Attachment [build-system.patch](tarball://root/attachments/some-uuid/ticket2726/
 
 ---
 
+archive/issue_events_006351.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-29T23:21:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2726",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2726#event-6351"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018743.json:
 ```json
 {
@@ -129,7 +146,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002914.json:
+archive/issue_events_006352.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -137,6 +154,6 @@ archive/issue_events_002914.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2726",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2726#event-2914"
+    "url": "https://github.com/sagemath/sagetest/issues/2726#event-6352"
 }
 ```

@@ -72,6 +72,23 @@ this brings coverage to 100% and fixes a serious bug.
 
 ---
 
+archive/issue_events_005847.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-15T02:30:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2475",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2475#event-5847"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016728.json:
 ```json
 {
@@ -179,7 +196,7 @@ Attachment [trac_2475-part5.patch](tarball://root/attachments/some-uuid/ticket24
 
 ---
 
-archive/issue_events_002654.json:
+archive/issue_events_005848.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -187,7 +204,7 @@ archive/issue_events_002654.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2475#event-2654"
+    "url": "https://github.com/sagemath/sagetest/issues/2475#event-5848"
 }
 ```
 

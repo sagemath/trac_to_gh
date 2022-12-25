@@ -57,6 +57,23 @@ Upgraded to major. I'm running into this problem all the time and since other pr
 
 ---
 
+archive/issue_events_000813.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:24:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/346",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/346#event-813"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001679.json:
 ```json
 {
@@ -70,6 +87,23 @@ archive/issue_comments_001679.json:
 ```
 
 This isn't a bug but a feature request.
+
+
+
+---
+
+archive/issue_events_000814.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T02:08:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/346",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/346#event-814"
+}
+```
 
 
 
@@ -129,7 +163,7 @@ This hasn't been an issue since we removed syntax hilighting.
 
 ---
 
-archive/issue_events_000370.json:
+archive/issue_events_000815.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -137,6 +171,6 @@ archive/issue_events_000370.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/346",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/346#event-370"
+    "url": "https://github.com/sagemath/sagetest/issues/346#event-815"
 }
 ```

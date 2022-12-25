@@ -114,6 +114,23 @@ one unraveling some unnecessary complexity in the Weyl group action. I tested ea
 
 ---
 
+archive/issue_events_018544.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-01-03T15:39:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7754",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7754#event-18544"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066667.json:
 ```json
 {
@@ -150,7 +167,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007966.json:
+archive/issue_events_018545.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -158,7 +175,7 @@ archive/issue_events_007966.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7754#event-7966"
+    "url": "https://github.com/sagemath/sagetest/issues/7754#event-18545"
 }
 ```
 

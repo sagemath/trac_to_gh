@@ -89,6 +89,23 @@ i.e. change a 'False' to a 'True'. :)
 
 ---
 
+archive/issue_events_014615.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-13T21:32:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6238",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6238#event-14615"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049738.json:
 ```json
 {
@@ -107,7 +124,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006483.json:
+archive/issue_events_014616.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -115,6 +132,6 @@ archive/issue_events_006483.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6238",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6238#event-6483"
+    "url": "https://github.com/sagemath/sagetest/issues/6238#event-14616"
 }
 ```

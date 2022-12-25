@@ -110,7 +110,7 @@ I can't test on the latter one, though.
 
 ---
 
-archive/issue_events_006689.json:
+archive/issue_events_015202.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -118,7 +118,7 @@ archive/issue_events_006689.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6448",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6448#event-6689"
+    "url": "https://github.com/sagemath/sagetest/issues/6448#event-15202"
 }
 ```
 

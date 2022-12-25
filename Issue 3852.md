@@ -788,7 +788,7 @@ Merged in 4.4.alpha0:
 
 ---
 
-archive/issue_events_004075.json:
+archive/issue_events_008814.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -796,7 +796,7 @@ archive/issue_events_004075.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3852#event-4075"
+    "url": "https://github.com/sagemath/sagetest/issues/3852#event-8814"
 }
 ```
 

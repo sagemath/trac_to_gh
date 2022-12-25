@@ -74,7 +74,7 @@ David Kohel fixed this.
 
 ---
 
-archive/issue_events_000257.json:
+archive/issue_events_000503.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -82,6 +82,6 @@ archive/issue_events_000257.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/243",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/243#event-257"
+    "url": "https://github.com/sagemath/sagetest/issues/243#event-503"
 }
 ```

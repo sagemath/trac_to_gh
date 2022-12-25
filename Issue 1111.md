@@ -35,6 +35,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1111
 
 ---
 
+archive/issue_events_002975.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-07T08:40:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1111",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1111#event-2975"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006697.json:
 ```json
 {
@@ -84,6 +101,40 @@ archive/issue_comments_006699.json:
 ```
 
 Changing assignee from @williamstein to @mwhansen.
+
+
+
+---
+
+archive/issue_events_002976.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-26T22:01:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1111",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1111#event-2976"
+}
+```
+
+
+
+---
+
+archive/issue_events_002977.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-26T22:01:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1111",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1111#event-2977"
+}
+```
 
 
 
@@ -143,7 +194,7 @@ Merged in 2.8.15.alpha0.
 
 ---
 
-archive/issue_events_001237.json:
+archive/issue_events_002978.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -151,6 +202,6 @@ archive/issue_events_001237.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1111#event-1237"
+    "url": "https://github.com/sagemath/sagetest/issues/1111#event-2978"
 }
 ```

@@ -123,7 +123,7 @@ Anyway, I've patched this up for the release, but more work needs to be done...
 
 ---
 
-archive/issue_events_001013.json:
+archive/issue_events_002486.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -131,7 +131,7 @@ archive/issue_events_001013.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/897",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/897#event-1013"
+    "url": "https://github.com/sagemath/sagetest/issues/897#event-2486"
 }
 ```
 

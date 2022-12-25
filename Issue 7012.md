@@ -603,7 +603,7 @@ This is a known failure and has been reported before at ticket #6825. I then ins
 
 ---
 
-archive/issue_events_007235.json:
+archive/issue_events_016448.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -611,7 +611,7 @@ archive/issue_events_007235.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#event-7235"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#event-16448"
 }
 ```
 

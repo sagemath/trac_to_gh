@@ -63,6 +63,57 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001660.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-09T18:14:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/623",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/623#event-1660"
+}
+```
+
+
+
+---
+
+archive/issue_events_001661.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-12T04:25:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/623",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/623#event-1661"
+}
+```
+
+
+
+---
+
+archive/issue_events_001662.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-12T04:25:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/623",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/623#event-1662"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003191.json:
 ```json
 {
@@ -103,6 +154,40 @@ Michael
 
 ---
 
+archive/issue_events_001663.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-19T18:38:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/623",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/623#event-1663"
+}
+```
+
+
+
+---
+
+archive/issue_events_001664.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-19T18:38:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/623",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/623#event-1664"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003193.json:
 ```json
 {
@@ -121,7 +206,7 @@ I'm closing this, since the directory above points to an old version of cython.
 
 ---
 
-archive/issue_events_000681.json:
+archive/issue_events_001665.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -129,7 +214,7 @@ archive/issue_events_000681.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/623",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/623#event-681"
+    "url": "https://github.com/sagemath/sagetest/issues/623#event-1665"
 }
 ```
 

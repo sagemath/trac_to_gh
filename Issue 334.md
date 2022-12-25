@@ -46,6 +46,23 @@ Changing component from algebraic geometry to user interface.
 
 ---
 
+archive/issue_events_000780.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T23:08:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/334",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/334#event-780"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001639.json:
 ```json
 {
@@ -82,7 +99,7 @@ Patch attached.
 
 ---
 
-archive/issue_events_000358.json:
+archive/issue_events_000781.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -90,7 +107,7 @@ archive/issue_events_000358.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/334",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/334#event-358"
+    "url": "https://github.com/sagemath/sagetest/issues/334#event-781"
 }
 ```
 
@@ -111,3 +128,37 @@ archive/issue_comments_001641.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000782.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:17:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/334",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/334#event-782"
+}
+```
+
+
+
+---
+
+archive/issue_events_000783.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:17:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/334",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/334#event-783"
+}
+```

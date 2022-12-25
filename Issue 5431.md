@@ -88,7 +88,7 @@ Patch adds doctest.
 
 ---
 
-archive/issue_events_005683.json:
+archive/issue_events_012676.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -96,7 +96,7 @@ archive/issue_events_005683.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5431",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5431#event-5683"
+    "url": "https://github.com/sagemath/sagetest/issues/5431#event-12676"
 }
 ```
 

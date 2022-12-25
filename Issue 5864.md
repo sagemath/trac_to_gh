@@ -48,6 +48,23 @@ Attachment [eclib-20080310.p7.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_013790.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T08:09:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5864",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5864#event-13790"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046238.json:
 ```json
 {
@@ -167,7 +184,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006120.json:
+archive/issue_events_013791.json:
 ```json
 {
     "actor": "https://github.com/peterjeremy",
@@ -175,6 +192,6 @@ archive/issue_events_006120.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5864",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5864#event-6120"
+    "url": "https://github.com/sagemath/sagetest/issues/5864#event-13791"
 }
 ```

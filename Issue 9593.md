@@ -122,6 +122,23 @@ Oh, I completely forgot to add this here: The related *doctest error* in Sage 4.
 
 ---
 
+archive/issue_events_023893.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-07-15T20:48:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9593",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9593#event-23893"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092663.json:
 ```json
 {
@@ -212,7 +229,7 @@ Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all 
 
 ---
 
-archive/issue_events_009737.json:
+archive/issue_events_023894.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -220,7 +237,7 @@ archive/issue_events_009737.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9593#event-9737"
+    "url": "https://github.com/sagemath/sagetest/issues/9593#event-23894"
 }
 ```
 

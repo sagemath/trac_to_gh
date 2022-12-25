@@ -69,7 +69,7 @@ Sep 06 19:26:23 <wstein>        #599: +1
 
 ---
 
-archive/issue_events_000657.json:
+archive/issue_events_001596.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -77,7 +77,7 @@ archive/issue_events_000657.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/599",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/599#event-657"
+    "url": "https://github.com/sagemath/sagetest/issues/599#event-1596"
 }
 ```
 

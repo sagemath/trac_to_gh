@@ -78,7 +78,7 @@ this is apparently fixed at least as of 2.8
 
 ---
 
-archive/issue_events_000339.json:
+archive/issue_events_000745.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -86,6 +86,6 @@ archive/issue_events_000339.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/319",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/319#event-339"
+    "url": "https://github.com/sagemath/sagetest/issues/319#event-745"
 }
 ```

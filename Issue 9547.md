@@ -109,6 +109,57 @@ This is fixed by #12950. There is a doctest on line 2429 of `sage/symbolic/expre
 
 ---
 
+archive/issue_events_023748.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-05-15T22:23:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9547",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9547#event-23748"
+}
+```
+
+
+
+---
+
+archive/issue_events_023749.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-06-29T10:48:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9547",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9547#event-23749"
+}
+```
+
+
+
+---
+
+archive/issue_events_023750.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-06-29T10:48:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9547",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9547#event-23750"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091878.json:
 ```json
 {
@@ -140,6 +191,40 @@ archive/issue_comments_091879.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_023751.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-29T13:09:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9547",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9547#event-23751"
+}
+```
+
+
+
+---
+
+archive/issue_events_023752.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-29T13:09:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9547",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9547#event-23752"
+}
+```
 
 
 
@@ -269,6 +354,40 @@ On this particular ticket here, I don't see any work done, so I would simply clo
 
 ---
 
+archive/issue_events_023753.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-29T16:30:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9547",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9547#event-23753"
+}
+```
+
+
+
+---
+
+archive/issue_events_023754.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-29T16:30:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9547",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9547#event-23754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091886.json:
 ```json
 {
@@ -308,7 +427,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009696.json:
+archive/issue_events_023755.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -316,6 +435,6 @@ archive/issue_events_009696.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9547",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9547#event-9696"
+    "url": "https://github.com/sagemath/sagetest/issues/9547#event-23755"
 }
 ```

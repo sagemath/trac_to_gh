@@ -208,7 +208,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009640.json:
+archive/issue_events_023537.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -216,7 +216,7 @@ archive/issue_events_009640.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9489",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9489#event-9640"
+    "url": "https://github.com/sagemath/sagetest/issues/9489#event-23537"
 }
 ```
 
@@ -242,3 +242,54 @@ Replying to [comment:5 jhpalmieri]:
 Sorry, I missed this until now. I agree, it should be closed. Lets make it invalid. 
 
 Dave
+
+
+
+---
+
+archive/issue_events_023538.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-08-16T00:49:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#event-23538"
+}
+```
+
+
+
+---
+
+archive/issue_events_023539.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-16T11:32:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#event-23539"
+}
+```
+
+
+
+---
+
+archive/issue_events_023540.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-16T11:32:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#event-23540"
+}
+```

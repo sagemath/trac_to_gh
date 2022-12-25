@@ -71,7 +71,7 @@ Please delete
 
 ---
 
-archive/issue_events_009765.json:
+archive/issue_events_023987.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -79,7 +79,7 @@ archive/issue_events_009765.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9624",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9624#event-9765"
+    "url": "https://github.com/sagemath/sagetest/issues/9624#event-23987"
 }
 ```
 
@@ -100,3 +100,20 @@ archive/issue_comments_093126.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_023988.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-28T14:46:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9624",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9624#event-23988"
+}
+```

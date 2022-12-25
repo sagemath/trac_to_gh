@@ -75,6 +75,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/899
 
 ---
 
+archive/issue_events_002489.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-20T21:53:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/899",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/899#event-2489"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005511.json:
 ```json
 {
@@ -130,6 +147,40 @@ This bundle is empty.  It doesn't contain anything that isn't already released o
 
 ---
 
+archive/issue_events_002490.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:10:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/899",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/899#event-2490"
+}
+```
+
+
+
+---
+
+archive/issue_events_002491.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:10:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/899",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/899#event-2491"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005514.json:
 ```json
 {
@@ -148,7 +199,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001015.json:
+archive/issue_events_002492.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -156,6 +207,6 @@ archive/issue_events_001015.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/899#event-1015"
+    "url": "https://github.com/sagemath/sagetest/issues/899#event-2492"
 }
 ```

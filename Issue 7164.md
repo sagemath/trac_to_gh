@@ -187,6 +187,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_016938.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2009-12-03T04:34:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#event-16938"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059275.json:
 ```json
 {
@@ -279,7 +296,7 @@ Doh! I will write "I will check the hg repo" 100 times now on my blackboard.
 
 ---
 
-archive/issue_events_007383.json:
+archive/issue_events_016939.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -287,7 +304,7 @@ archive/issue_events_007383.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7164",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7164#event-7383"
+    "url": "https://github.com/sagemath/sagetest/issues/7164#event-16939"
 }
 ```
 

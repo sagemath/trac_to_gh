@@ -196,6 +196,23 @@ The following tests failed:
 
 ---
 
+archive/issue_events_014618.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-06-16T00:06:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6240",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6240#event-14618"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049745.json:
 ```json
 {
@@ -282,6 +299,23 @@ Turning the optimization level down to `-O0` from `-O2` fixes this -- see #6360.
 
 ---
 
+archive/issue_events_014619.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2009-06-19T04:48:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6240",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6240#event-14619"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049747.json:
 ```json
 {
@@ -300,7 +334,24 @@ Note that this is still fixed by lowering the optimization level, so i'm lowerin
 
 ---
 
-archive/issue_events_006485.json:
+archive/issue_events_014620.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-20T20:57:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6240",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6240#event-14620"
+}
+```
+
+
+
+---
+
+archive/issue_events_014621.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -308,7 +359,7 @@ archive/issue_events_006485.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6240#event-6485"
+    "url": "https://github.com/sagemath/sagetest/issues/6240#event-14621"
 }
 ```
 

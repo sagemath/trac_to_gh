@@ -58,6 +58,23 @@ and is more efficient.
 
 ---
 
+archive/issue_events_004214.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-18T06:21:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1737",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1737#event-4214"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010965.json:
 ```json
 {
@@ -76,7 +93,7 @@ This is fixed by #1833.
 
 ---
 
-archive/issue_events_001895.json:
+archive/issue_events_004215.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -84,7 +101,7 @@ archive/issue_events_001895.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1737",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1737#event-1895"
+    "url": "https://github.com/sagemath/sagetest/issues/1737#event-4215"
 }
 ```
 

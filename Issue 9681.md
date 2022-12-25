@@ -219,7 +219,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_009813.json:
+archive/issue_events_024167.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -227,7 +227,7 @@ archive/issue_events_009813.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9681",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9681#event-9813"
+    "url": "https://github.com/sagemath/sagetest/issues/9681#event-24167"
 }
 ```
 
@@ -266,3 +266,54 @@ archive/issue_comments_093965.json:
 ```
 
 Apparently NTL is not needed unless one makes those targets, so this is a non-issue.
+
+
+
+---
+
+archive/issue_events_024168.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-08-04T23:50:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9681",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9681#event-24168"
+}
+```
+
+
+
+---
+
+archive/issue_events_024169.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-05T10:11:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9681",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9681#event-24169"
+}
+```
+
+
+
+---
+
+archive/issue_events_024170.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-05T10:11:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9681",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9681#event-24170"
+}
+```

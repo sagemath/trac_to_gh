@@ -47,7 +47,7 @@ Changing assignee from @williamstein to @rlmill.
 
 ---
 
-archive/issue_events_000215.json:
+archive/issue_events_000410.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -55,7 +55,7 @@ archive/issue_events_000215.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/206",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/206#event-215"
+    "url": "https://github.com/sagemath/sagetest/issues/206#event-410"
 }
 ```
 
@@ -117,7 +117,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000216.json:
+archive/issue_events_000411.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -125,7 +125,7 @@ archive/issue_events_000216.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/206",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/206#event-216"
+    "url": "https://github.com/sagemath/sagetest/issues/206#event-411"
 }
 ```
 
@@ -164,6 +164,23 @@ archive/issue_comments_000925.json:
 ```
 
 Resolution changed from fixed to 
+
+
+
+---
+
+archive/issue_events_000412.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:20:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/206",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/206#event-412"
+}
+```
 
 
 
@@ -223,7 +240,7 @@ Changing status from reopened to new.
 
 ---
 
-archive/issue_events_000217.json:
+archive/issue_events_000413.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -231,7 +248,7 @@ archive/issue_events_000217.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/206",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/206#event-217"
+    "url": "https://github.com/sagemath/sagetest/issues/206#event-413"
 }
 ```
 

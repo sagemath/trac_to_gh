@@ -120,7 +120,7 @@ Looks good, doctests pass.
 
 ---
 
-archive/issue_events_009519.json:
+archive/issue_events_023102.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -128,7 +128,7 @@ archive/issue_events_009519.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9366",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9366#event-9519"
+    "url": "https://github.com/sagemath/sagetest/issues/9366#event-23102"
 }
 ```
 

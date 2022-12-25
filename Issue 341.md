@@ -98,6 +98,57 @@ sage: a.multiplicative_order()
 
 ---
 
+archive/issue_events_000801.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T23:12:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/341",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/341#event-801"
+}
+```
+
+
+
+---
+
+archive/issue_events_000802.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-30T00:04:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/341",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/341#event-802"
+}
+```
+
+
+
+---
+
+archive/issue_events_000803.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-30T00:04:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/341",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/341#event-803"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001667.json:
 ```json
 {
@@ -116,7 +167,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000365.json:
+archive/issue_events_000804.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -124,6 +175,6 @@ archive/issue_events_000365.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/341",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/341#event-365"
+    "url": "https://github.com/sagemath/sagetest/issues/341#event-804"
 }
 ```

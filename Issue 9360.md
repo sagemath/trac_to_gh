@@ -131,7 +131,7 @@ For the pedants out there, this number is a no-way strict upper bound on somethi
 
 ---
 
-archive/issue_events_009513.json:
+archive/issue_events_023091.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -139,7 +139,7 @@ archive/issue_events_009513.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9360",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9360#event-9513"
+    "url": "https://github.com/sagemath/sagetest/issues/9360#event-23091"
 }
 ```
 

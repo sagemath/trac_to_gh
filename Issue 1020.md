@@ -39,6 +39,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1020
 
 ---
 
+archive/issue_events_002794.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-28T16:54:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1020",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1020#event-2794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006236.json:
 ```json
 {
@@ -93,7 +110,7 @@ The attached patches fix these warnings, as well as several others.
 
 ---
 
-archive/issue_events_001144.json:
+archive/issue_events_002795.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -101,7 +118,7 @@ archive/issue_events_001144.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1020",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1020#event-1144"
+    "url": "https://github.com/sagemath/sagetest/issues/1020#event-2795"
 }
 ```
 

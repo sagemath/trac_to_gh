@@ -27,6 +27,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/690
 
 ---
 
+archive/issue_events_001845.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-19T11:32:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/690",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/690#event-1845"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003575.json:
 ```json
 {
@@ -85,7 +102,7 @@ That makes sense to me!  JV
 
 ---
 
-archive/issue_events_000756.json:
+archive/issue_events_001846.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -93,7 +110,7 @@ archive/issue_events_000756.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/690",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/690#event-756"
+    "url": "https://github.com/sagemath/sagetest/issues/690#event-1846"
 }
 ```
 

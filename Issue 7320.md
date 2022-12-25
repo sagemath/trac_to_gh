@@ -169,7 +169,7 @@ Sometimes I want to search the source with case-sensitivity on. For example, I m
 
 ---
 
-archive/issue_events_007542.json:
+archive/issue_events_017338.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -177,7 +177,7 @@ archive/issue_events_007542.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7320",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7320#event-7542"
+    "url": "https://github.com/sagemath/sagetest/issues/7320#event-17338"
 }
 ```
 

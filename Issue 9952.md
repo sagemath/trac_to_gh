@@ -206,7 +206,24 @@ archive/issue_comments_099111.json:
 
 ---
 
-archive/issue_events_010081.json:
+archive/issue_events_025110.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-05-22T22:40:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9952",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9952#event-25110"
+}
+```
+
+
+
+---
+
+archive/issue_events_025111.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -214,7 +231,7 @@ archive/issue_events_010081.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9952#event-10081"
+    "url": "https://github.com/sagemath/sagetest/issues/9952#event-25111"
 }
 ```
 

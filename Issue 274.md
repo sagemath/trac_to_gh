@@ -154,6 +154,23 @@ leak(10000)
 
 ---
 
+archive/issue_events_000612.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:21:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/274",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/274#event-612"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001300.json:
 ```json
 {
@@ -267,7 +284,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000291.json:
+archive/issue_events_000613.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -275,6 +292,6 @@ archive/issue_events_000291.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/274#event-291"
+    "url": "https://github.com/sagemath/sagetest/issues/274#event-613"
 }
 ```

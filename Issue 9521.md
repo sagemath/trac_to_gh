@@ -158,6 +158,23 @@ Dave
 
 ---
 
+archive/issue_events_023655.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9521",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9521#event-23655"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091377.json:
 ```json
 {
@@ -194,6 +211,40 @@ Duplicate of #9870.
 
 ---
 
+archive/issue_events_023656.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-01-16T13:32:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9521",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9521#event-23656"
+}
+```
+
+
+
+---
+
+archive/issue_events_023657.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-01-16T13:32:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9521",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9521#event-23657"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091379.json:
 ```json
 {
@@ -212,7 +263,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009670.json:
+archive/issue_events_023658.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -220,7 +271,7 @@ archive/issue_events_009670.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9521",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9521#event-9670"
+    "url": "https://github.com/sagemath/sagetest/issues/9521#event-23658"
 }
 ```
 

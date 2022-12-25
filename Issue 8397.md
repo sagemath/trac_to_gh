@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8397
 
 ---
 
-archive/issue_events_008582.json:
+archive/issue_events_020135.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -70,7 +70,7 @@ archive/issue_events_008582.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8397",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8397#event-8582"
+    "url": "https://github.com/sagemath/sagetest/issues/8397#event-20135"
 }
 ```
 

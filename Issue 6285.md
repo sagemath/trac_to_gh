@@ -120,7 +120,24 @@ Set assignee to @burcin.
 
 ---
 
-archive/issue_events_006529.json:
+archive/issue_events_014696.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-06-14T13:02:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6285",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6285#event-14696"
+}
+```
+
+
+
+---
+
+archive/issue_events_014697.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -128,7 +145,7 @@ archive/issue_events_006529.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6285",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6285#event-6529"
+    "url": "https://github.com/sagemath/sagetest/issues/6285#event-14697"
 }
 ```
 

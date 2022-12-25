@@ -46,6 +46,23 @@ I don't understand this bug report.
 
 ---
 
+archive/issue_events_000747.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:23:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/321",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/321#event-747"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001520.json:
 ```json
 {
@@ -64,7 +81,7 @@ There is no execute button anymore, so this bug is closed.
 
 ---
 
-archive/issue_events_000341.json:
+archive/issue_events_000748.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,7 +89,7 @@ archive/issue_events_000341.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/321",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/321#event-341"
+    "url": "https://github.com/sagemath/sagetest/issues/321#event-748"
 }
 ```
 

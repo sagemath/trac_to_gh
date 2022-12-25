@@ -225,7 +225,7 @@ Now, I would like to send this to review, because I see no more error (maybe I o
 
 ---
 
-archive/issue_events_009952.json:
+archive/issue_events_024750.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -233,7 +233,7 @@ archive/issue_events_009952.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9830",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9830#event-9952"
+    "url": "https://github.com/sagemath/sagetest/issues/9830#event-24750"
 }
 ```
 
@@ -272,3 +272,20 @@ archive/issue_comments_096855.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_024751.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-22T15:28:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9830",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9830#event-24751"
+}
+```

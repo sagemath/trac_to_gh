@@ -194,7 +194,7 @@ Thanks. The rebase looks good to me.
 
 ---
 
-archive/issue_events_006865.json:
+archive/issue_events_015639.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -202,7 +202,7 @@ archive/issue_events_006865.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6625",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6625#event-6865"
+    "url": "https://github.com/sagemath/sagetest/issues/6625#event-15639"
 }
 ```
 

@@ -48,6 +48,23 @@ Attachment [hypellfrob.hg](tarball://root/attachments/some-uuid/ticket1568/hypel
 
 ---
 
+archive/issue_events_003925.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-20T01:35:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1568",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1568#event-3925"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009965.json:
 ```json
 {
@@ -61,6 +78,40 @@ archive/issue_comments_009965.json:
 ```
 
 Everything applies, builds, and passes tests for me.
+
+
+
+---
+
+archive/issue_events_003926.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:59:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1568",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1568#event-3926"
+}
+```
+
+
+
+---
+
+archive/issue_events_003927.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:59:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1568",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1568#event-3927"
+}
+```
 
 
 
@@ -122,7 +173,7 @@ Merged in Sage 2.11.alpha0
 
 ---
 
-archive/issue_events_001722.json:
+archive/issue_events_003928.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,6 +181,6 @@ archive/issue_events_001722.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1568",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1568#event-1722"
+    "url": "https://github.com/sagemath/sagetest/issues/1568#event-3928"
 }
 ```

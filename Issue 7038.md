@@ -95,6 +95,23 @@ This issue is now fixed by #12682 (which provides a ratpoints-2.1.3.p3 spkg).
 
 ---
 
+archive/issue_events_016551.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2012-03-22T13:31:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7038",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7038#event-16551"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058161.json:
 ```json
 {
@@ -149,7 +166,7 @@ Dear release manager, I leave it up to you to close this now. :-)
 
 ---
 
-archive/issue_events_007259.json:
+archive/issue_events_016552.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -157,7 +174,7 @@ archive/issue_events_007259.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7038",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7038#event-7259"
+    "url": "https://github.com/sagemath/sagetest/issues/7038#event-16552"
 }
 ```
 

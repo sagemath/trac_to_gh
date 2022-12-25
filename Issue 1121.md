@@ -73,6 +73,23 @@ that should be #1120 instead of #1119
 
 ---
 
+archive/issue_events_002995.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/gmoose05",
+    "created_at": "2008-02-08T01:23:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#event-2995"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006753.json:
 ```json
 {
@@ -194,7 +211,7 @@ The issues raised here have all been sorted under other tickets.  This one can b
 
 ---
 
-archive/issue_events_001247.json:
+archive/issue_events_002996.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -202,7 +219,7 @@ archive/issue_events_001247.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1121",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1121#event-1247"
+    "url": "https://github.com/sagemath/sagetest/issues/1121#event-2996"
 }
 ```
 

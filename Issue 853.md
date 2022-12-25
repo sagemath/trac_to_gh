@@ -267,6 +267,23 @@ Changing status from needs_work to needs_info.
 
 ---
 
+archive/issue_events_002394.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2010-02-21T12:05:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/853#event-2394"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005261.json:
 ```json
 {
@@ -282,6 +299,40 @@ archive/issue_comments_005261.json:
 Attachment [trac_853.patch](tarball://root/attachments/some-uuid/ticket853/trac_853.patch) by @aghitza created at 2010-02-21 12:06:16
 
 apply after installing pslq-1.0.spkg
+
+
+
+---
+
+archive/issue_events_002395.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2010-02-21T12:21:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/853#event-2395"
+}
+```
+
+
+
+---
+
+archive/issue_events_002396.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2010-02-21T12:21:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/853#event-2396"
+}
+```
 
 
 

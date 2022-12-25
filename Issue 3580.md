@@ -167,6 +167,23 @@ I will open a new ticket for the new import of numpy on startup.
 
 ---
 
+archive/issue_events_008197.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-11-09T04:23:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3580",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3580#event-8197"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025230.json:
 ```json
 {
@@ -289,7 +306,7 @@ Merged in Sage 3.2.rc0
 
 ---
 
-archive/issue_events_003797.json:
+archive/issue_events_008198.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -297,6 +314,6 @@ archive/issue_events_003797.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3580#event-3797"
+    "url": "https://github.com/sagemath/sagetest/issues/3580#event-8198"
 }
 ```

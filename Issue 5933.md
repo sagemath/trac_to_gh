@@ -68,7 +68,7 @@ Positive review, based on eyeballing the patch and applying it successfully.
 
 ---
 
-archive/issue_events_006187.json:
+archive/issue_events_013906.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -76,7 +76,7 @@ archive/issue_events_006187.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5933",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5933#event-6187"
+    "url": "https://github.com/sagemath/sagetest/issues/5933#event-13906"
 }
 ```
 

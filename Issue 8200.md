@@ -50,6 +50,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_019618.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-02-06T12:07:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8200",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8200#event-19618"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072191.json:
 ```json
 {
@@ -470,7 +487,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008402.json:
+archive/issue_events_019619.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -478,6 +495,40 @@ archive/issue_events_008402.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8200#event-8402"
+    "url": "https://github.com/sagemath/sagetest/issues/8200#event-19619"
+}
+```
+
+
+
+---
+
+archive/issue_events_019620.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-07T02:39:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8200",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8200#event-19620"
+}
+```
+
+
+
+---
+
+archive/issue_events_019621.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-07T02:39:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8200",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8200#event-19621"
 }
 ```

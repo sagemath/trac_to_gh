@@ -145,6 +145,23 @@ Changing assignee from @jmbr to mabshoff.
 
 ---
 
+archive/issue_events_003740.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-22T07:06:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#event-3740"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009429.json:
 ```json
 {
@@ -662,7 +679,7 @@ Michael
 
 ---
 
-archive/issue_events_001621.json:
+archive/issue_events_003741.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -670,7 +687,7 @@ archive/issue_events_001621.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1470#event-1621"
+    "url": "https://github.com/sagemath/sagetest/issues/1470#event-3741"
 }
 ```
 

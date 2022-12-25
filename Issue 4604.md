@@ -161,7 +161,7 @@ LGTM.
 
 ---
 
-archive/issue_events_004853.json:
+archive/issue_events_010460.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -169,7 +169,7 @@ archive/issue_events_004853.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4604",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4604#event-4853"
+    "url": "https://github.com/sagemath/sagetest/issues/4604#event-10460"
 }
 ```
 

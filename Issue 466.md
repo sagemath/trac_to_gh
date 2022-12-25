@@ -220,6 +220,23 @@ Changing assignee from @williamstein to pdehaye.
 
 ---
 
+archive/issue_events_001166.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/pdehaye",
+    "created_at": "2007-08-22T23:25:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/466#event-1166"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002308.json:
 ```json
 {
@@ -238,7 +255,7 @@ Applied for sage-2.8.3
 
 ---
 
-archive/issue_events_000495.json:
+archive/issue_events_001167.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -246,7 +263,7 @@ archive/issue_events_000495.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/466",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/466#event-495"
+    "url": "https://github.com/sagemath/sagetest/issues/466#event-1167"
 }
 ```
 

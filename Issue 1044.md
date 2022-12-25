@@ -208,6 +208,23 @@ I've added an attachment that fixes the crash.  (I think the underlying problem 
 
 ---
 
+archive/issue_events_002841.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-01T02:40:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1044",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1044#event-2841"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006337.json:
 ```json
 {
@@ -251,7 +268,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001169.json:
+archive/issue_events_002842.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -259,7 +276,7 @@ archive/issue_events_001169.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1044",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1044#event-1169"
+    "url": "https://github.com/sagemath/sagetest/issues/1044#event-2842"
 }
 ```
 

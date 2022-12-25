@@ -55,6 +55,23 @@ Upstream has been notified.
 
 ---
 
+archive/issue_events_015324.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-18T18:05:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6490",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6490#event-15324"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052377.json:
 ```json
 {
@@ -91,7 +108,7 @@ This is a duplicate of #6564.
 
 ---
 
-archive/issue_events_006726.json:
+archive/issue_events_015325.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -99,6 +116,6 @@ archive/issue_events_006726.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6490",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6490#event-6726"
+    "url": "https://github.com/sagemath/sagetest/issues/6490#event-15325"
 }
 ```

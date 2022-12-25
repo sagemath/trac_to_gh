@@ -491,6 +491,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_022860.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-07-17T12:08:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9280",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9280#event-22860"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087283.json:
 ```json
 {
@@ -506,6 +523,40 @@ archive/issue_comments_087283.json:
 Yet another instance of someone asking a question related to this. Six (!) years ago, when I opened this ticket, I thought it would be good to have an example in the Sage library and in the documentation, and I really can't understand why this hasn't been taken care of yet. I am not interested in working on it myself any more, but I find it incredibly frustrating that this ticket has languished for so long.
 
 http://ask.sagemath.org/question/34577/can-sage-compute-a-basis-for-the-graded-parts-of-a-graded-ring/
+
+
+
+---
+
+archive/issue_events_022861.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2016-08-25T19:27:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9280",
+    "milestone": "sage-6.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9280#event-22861"
+}
+```
+
+
+
+---
+
+archive/issue_events_022862.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2016-08-25T19:27:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9280",
+    "milestone": "sage-7.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9280#event-22862"
+}
+```
 
 
 

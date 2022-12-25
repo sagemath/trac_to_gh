@@ -240,6 +240,23 @@ fixes docstring typo in sage-trac4392-new.patch
 
 ---
 
+archive/issue_events_009914.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-13T19:35:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4392",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4392#event-9914"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032267.json:
 ```json
 {
@@ -302,7 +319,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004637.json:
+archive/issue_events_009915.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -310,7 +327,7 @@ archive/issue_events_004637.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#event-4637"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#event-9915"
 }
 ```
 

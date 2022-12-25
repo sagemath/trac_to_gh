@@ -76,7 +76,7 @@ fixed in /home/malb/pkgs/singular-3-0-3-20070819.spkg.
 
 ---
 
-archive/issue_events_000482.json:
+archive/issue_events_001139.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -84,7 +84,7 @@ archive/issue_events_000482.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/453",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/453#event-482"
+    "url": "https://github.com/sagemath/sagetest/issues/453#event-1139"
 }
 ```
 
@@ -105,3 +105,20 @@ archive/issue_comments_002250.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001140.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-21T15:25:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/453",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/453#event-1140"
+}
+```

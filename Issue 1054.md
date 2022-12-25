@@ -31,6 +31,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1054
 
 ---
 
+archive/issue_events_002852.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:32:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1054",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1054#event-2852"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006392.json:
 ```json
 {
@@ -85,7 +102,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_001177.json:
+archive/issue_events_002853.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -93,6 +110,40 @@ archive/issue_events_001177.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1054",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1054#event-1177"
+    "url": "https://github.com/sagemath/sagetest/issues/1054#event-2853"
+}
+```
+
+
+
+---
+
+archive/issue_events_002854.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-01-18T19:03:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1054",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1054#event-2854"
+}
+```
+
+
+
+---
+
+archive/issue_events_002855.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-01-18T19:03:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1054",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1054#event-2855"
 }
 ```

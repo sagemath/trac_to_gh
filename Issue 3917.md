@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3917
 
 ---
 
+archive/issue_events_008982.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T06:47:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3917",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3917#event-8982"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027966.json:
 ```json
 {
@@ -65,7 +82,7 @@ Jason, you should probably just use TinyMCE text cells for this.
 
 ---
 
-archive/issue_events_004144.json:
+archive/issue_events_008983.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -73,7 +90,7 @@ archive/issue_events_004144.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3917",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3917#event-4144"
+    "url": "https://github.com/sagemath/sagetest/issues/3917#event-8983"
 }
 ```
 

@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/414
 
 ---
 
+archive/issue_events_000998.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T12:40:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/414",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/414#event-998"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002032.json:
 ```json
 {
@@ -56,7 +73,7 @@ I never remember allowing attaching of .pyx.  ????
 
 ---
 
-archive/issue_events_000440.json:
+archive/issue_events_000999.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -64,7 +81,7 @@ archive/issue_events_000440.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/414#event-440"
+    "url": "https://github.com/sagemath/sagetest/issues/414#event-999"
 }
 ```
 
@@ -85,6 +102,23 @@ archive/issue_comments_002033.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_001000.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-14T03:23:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/414",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/414#event-1000"
+}
+```
 
 
 
@@ -144,7 +178,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000441.json:
+archive/issue_events_001001.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -152,7 +186,7 @@ archive/issue_events_000441.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/414#event-441"
+    "url": "https://github.com/sagemath/sagetest/issues/414#event-1001"
 }
 ```
 
@@ -198,7 +232,7 @@ Fixed for sage-2.8.4.3.  Now both .spyx and .pyx files are accepted.
 
 ---
 
-archive/issue_events_000442.json:
+archive/issue_events_001002.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -206,6 +240,6 @@ archive/issue_events_000442.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/414#event-442"
+    "url": "https://github.com/sagemath/sagetest/issues/414#event-1002"
 }
 ```

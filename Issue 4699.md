@@ -51,6 +51,23 @@ archive/issue_comments_035325.json:
 
 ---
 
+archive/issue_events_010751.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-05T00:21:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4699",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4699#event-10751"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035326.json:
 ```json
 {
@@ -273,7 +290,7 @@ Merged trac_4699_fix.patch and trac_4699_new_bin.patch in Sage 3.2.2.alpha2
 
 ---
 
-archive/issue_events_004944.json:
+archive/issue_events_010752.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -281,7 +298,7 @@ archive/issue_events_004944.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4699#event-4944"
+    "url": "https://github.com/sagemath/sagetest/issues/4699#event-10752"
 }
 ```
 

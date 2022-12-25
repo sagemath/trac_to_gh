@@ -123,6 +123,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3464
 
 ---
 
+archive/issue_events_007864.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T06:37:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3464",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3464#event-7864"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024379.json:
 ```json
 {
@@ -159,7 +176,7 @@ Changing type from enhancement to defect.
 
 ---
 
-archive/issue_events_003685.json:
+archive/issue_events_007865.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -167,7 +184,7 @@ archive/issue_events_003685.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3464",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3464#event-3685"
+    "url": "https://github.com/sagemath/sagetest/issues/3464#event-7865"
 }
 ```
 

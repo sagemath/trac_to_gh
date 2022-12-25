@@ -186,7 +186,24 @@ Ah... I didn't know about this. The release management wiki page should have som
 
 ---
 
-archive/issue_events_006866.json:
+archive/issue_events_015640.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-30T15:15:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6626",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6626#event-15640"
+}
+```
+
+
+
+---
+
+archive/issue_events_015641.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -194,7 +211,7 @@ archive/issue_events_006866.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6626",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6626#event-6866"
+    "url": "https://github.com/sagemath/sagetest/issues/6626#event-15641"
 }
 ```
 

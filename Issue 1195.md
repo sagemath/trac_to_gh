@@ -39,6 +39,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1195
 
 ---
 
+archive/issue_events_003193.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-18T04:09:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1195",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1195#event-3193"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007393.json:
 ```json
 {
@@ -95,7 +112,7 @@ I vote against the proposal in this ticket, `len(Foo)` is the Python way.
 
 ---
 
-archive/issue_events_001331.json:
+archive/issue_events_003194.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -103,7 +120,7 @@ archive/issue_events_001331.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1195",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1195#event-1331"
+    "url": "https://github.com/sagemath/sagetest/issues/1195#event-3194"
 }
 ```
 

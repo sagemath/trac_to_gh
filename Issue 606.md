@@ -205,7 +205,7 @@ Attachment [6199.patch](tarball://root/attachments/some-uuid/ticket606/6199.patc
 
 ---
 
-archive/issue_events_000663.json:
+archive/issue_events_001613.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -213,6 +213,23 @@ archive/issue_events_000663.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/606#event-663"
+    "url": "https://github.com/sagemath/sagetest/issues/606#event-1613"
+}
+```
+
+
+
+---
+
+archive/issue_events_001614.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T02:38:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/606",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/606#event-1614"
 }
 ```

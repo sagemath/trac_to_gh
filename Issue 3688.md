@@ -167,7 +167,7 @@ skip dsage files
 
 ---
 
-archive/issue_events_003910.json:
+archive/issue_events_008459.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -175,7 +175,7 @@ archive/issue_events_003910.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3688#event-3910"
+    "url": "https://github.com/sagemath/sagetest/issues/3688#event-8459"
 }
 ```
 

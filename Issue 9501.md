@@ -514,7 +514,7 @@ Merged trac_9501.2.patch in 4.5.2.alpha1.
 
 ---
 
-archive/issue_events_009649.json:
+archive/issue_events_023583.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -522,7 +522,7 @@ archive/issue_events_009649.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9501",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9501#event-9649"
+    "url": "https://github.com/sagemath/sagetest/issues/9501#event-23583"
 }
 ```
 

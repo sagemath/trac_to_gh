@@ -277,6 +277,23 @@ See also [this thread](http://trac.sagemath.org/sage_trac/ticket/9240), where it
 
 ---
 
+archive/issue_events_022750.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-05-10T19:13:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9240",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9240#event-22750"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086761.json:
 ```json
 {
@@ -716,7 +733,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009402.json:
+archive/issue_events_022751.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -724,6 +741,6 @@ archive/issue_events_009402.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9240#event-9402"
+    "url": "https://github.com/sagemath/sagetest/issues/9240#event-22751"
 }
 ```

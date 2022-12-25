@@ -967,7 +967,7 @@ As far as the parallel compilation and parallel doctesting of Sage is concerned,
 
 ---
 
-archive/issue_events_006741.json:
+archive/issue_events_015356.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -975,7 +975,7 @@ archive/issue_events_006741.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6503#event-6741"
+    "url": "https://github.com/sagemath/sagetest/issues/6503#event-15356"
 }
 ```
 

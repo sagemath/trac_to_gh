@@ -198,7 +198,7 @@ This is a duplicate of #6594.
 
 ---
 
-archive/issue_events_006882.json:
+archive/issue_events_015698.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -206,6 +206,23 @@ archive/issue_events_006882.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6646",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6646#event-6882"
+    "url": "https://github.com/sagemath/sagetest/issues/6646#event-15698"
+}
+```
+
+
+
+---
+
+archive/issue_events_015699.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-12T16:10:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6646",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6646#event-15699"
 }
 ```

@@ -76,7 +76,7 @@ sage: sage: sage: s([2]).plethysm(s.zero_element())
 
 ---
 
-archive/issue_events_006723.json:
+archive/issue_events_015319.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -84,7 +84,7 @@ archive/issue_events_006723.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6487",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6487#event-6723"
+    "url": "https://github.com/sagemath/sagetest/issues/6487#event-15319"
 }
 ```
 
@@ -123,3 +123,20 @@ archive/issue_comments_052364.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_015320.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-05-06T16:02:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6487",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6487#event-15320"
+}
+```

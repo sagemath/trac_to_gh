@@ -311,6 +311,23 @@ archive/issue_comments_005222.json:
 
 ---
 
+archive/issue_events_002385.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-30T22:01:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/847#event-2385"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005223.json:
 ```json
 {
@@ -445,7 +462,7 @@ The revised patch looks good to me.
 
 ---
 
-archive/issue_events_000960.json:
+archive/issue_events_002386.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -453,7 +470,7 @@ archive/issue_events_000960.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/847",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/847#event-960"
+    "url": "https://github.com/sagemath/sagetest/issues/847#event-2386"
 }
 ```
 

@@ -54,7 +54,7 @@ This is fixed thanks to Sphinx and ReST which has native support for this.
 
 ---
 
-archive/issue_events_004138.json:
+archive/issue_events_008972.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -62,7 +62,7 @@ archive/issue_events_004138.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3911#event-4138"
+    "url": "https://github.com/sagemath/sagetest/issues/3911#event-8972"
 }
 ```
 
@@ -105,6 +105,23 @@ Well, it should be documented in some way how we do things things. If such docum
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_008973.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-27T15:39:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3911",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3911#event-8973"
+}
+```
 
 
 

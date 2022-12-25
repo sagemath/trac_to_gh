@@ -228,7 +228,7 @@ This patch also works with the optional package. I give this ticket a positive r
 
 ---
 
-archive/issue_events_005066.json:
+archive/issue_events_011057.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -236,7 +236,7 @@ archive/issue_events_005066.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4822#event-5066"
+    "url": "https://github.com/sagemath/sagetest/issues/4822#event-11057"
 }
 ```
 

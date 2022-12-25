@@ -131,7 +131,7 @@ Since Sage ships `gmp.h` (by MPIR), this is a non-issue.
 
 ---
 
-archive/issue_events_007391.json:
+archive/issue_events_016964.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -139,6 +139,23 @@ archive/issue_events_007391.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7172",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7172#event-7391"
+    "url": "https://github.com/sagemath/sagetest/issues/7172#event-16964"
+}
+```
+
+
+
+---
+
+archive/issue_events_016965.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-03T15:03:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7172",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7172#event-16965"
 }
 ```

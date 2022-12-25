@@ -90,7 +90,7 @@ Final version of the patch uploaded:
 
 ---
 
-archive/issue_events_005974.json:
+archive/issue_events_013448.json:
 ```json
 {
     "actor": "https://github.com/anneschilling",
@@ -98,7 +98,7 @@ archive/issue_events_005974.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5729#event-5974"
+    "url": "https://github.com/sagemath/sagetest/issues/5729#event-13448"
 }
 ```
 
@@ -182,7 +182,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_005975.json:
+archive/issue_events_013449.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -190,7 +190,7 @@ archive/issue_events_005975.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5729#event-5975"
+    "url": "https://github.com/sagemath/sagetest/issues/5729#event-13449"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_events_005975.json:
 
 ---
 
-archive/issue_events_005976.json:
+archive/issue_events_013450.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -206,7 +206,7 @@ archive/issue_events_005976.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5729#event-5976"
+    "url": "https://github.com/sagemath/sagetest/issues/5729#event-13450"
 }
 ```
 

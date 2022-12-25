@@ -405,7 +405,7 @@ Merged trac_3915_pbori_improvements.patch in Sage 3.1.2.alpha2
 
 ---
 
-archive/issue_events_004142.json:
+archive/issue_events_008979.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -413,7 +413,7 @@ archive/issue_events_004142.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#event-4142"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#event-8979"
 }
 ```
 

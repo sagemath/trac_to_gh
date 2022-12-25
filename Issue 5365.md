@@ -75,7 +75,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005620.json:
+archive/issue_events_012506.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/ekirkman",
@@ -83,7 +83,7 @@ archive/issue_events_005620.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5365",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5365#event-5620"
+    "url": "https://github.com/sagemath/sagetest/issues/5365#event-12506"
 }
 ```
 

@@ -763,6 +763,23 @@ Like some other things mentioned in this ticket, I think this deserves a followu
 
 ---
 
+archive/issue_events_010760.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-15T01:37:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#event-10760"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035418.json:
 ```json
 {
@@ -896,7 +913,7 @@ The ghost-text.patch corrects the ghostly text mentioned above and should be app
 
 ---
 
-archive/issue_events_004950.json:
+archive/issue_events_010761.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -904,7 +921,7 @@ archive/issue_events_004950.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4705#event-4950"
+    "url": "https://github.com/sagemath/sagetest/issues/4705#event-10761"
 }
 ```
 

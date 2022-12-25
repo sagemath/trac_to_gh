@@ -152,7 +152,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_004575.json:
+archive/issue_events_009792.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -160,6 +160,6 @@ archive/issue_events_004575.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4328",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4328#event-4575"
+    "url": "https://github.com/sagemath/sagetest/issues/4328#event-9792"
 }
 ```

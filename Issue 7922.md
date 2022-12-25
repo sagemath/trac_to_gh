@@ -79,6 +79,23 @@ Since I made the method `_irr_weights` a cached method, the caching done in the 
 
 ---
 
+archive/issue_events_018971.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2010-09-05T13:08:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18971"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068816.json:
 ```json
 {
@@ -153,6 +170,40 @@ I uploaded a revised version of the patch. The only change is in classical_cryst
 
 ---
 
+archive/issue_events_018972.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2010-10-29T00:31:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18972"
+}
+```
+
+
+
+---
+
+archive/issue_events_018973.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2010-10-29T00:31:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18973"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068820.json:
 ```json
 {
@@ -206,6 +257,40 @@ archive/issue_comments_068822.json:
 Since #9838 was merged in sage-4.6.1.alpha1, this patch needed rebasing.
 
 I therefore posted trac_7922-rebased-4.6.1.
+
+
+
+---
+
+archive/issue_events_018974.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2010-12-22T13:17:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18974"
+}
+```
+
+
+
+---
+
+archive/issue_events_018975.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2010-12-22T13:17:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18975"
+}
+```
 
 
 
@@ -537,7 +622,41 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008136.json:
+archive/issue_events_018976.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-12T13:36:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18976"
+}
+```
+
+
+
+---
+
+archive/issue_events_018977.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-12T13:36:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18977"
+}
+```
+
+
+
+---
+
+archive/issue_events_018978.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -545,7 +664,7 @@ archive/issue_events_008136.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7922#event-8136"
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18978"
 }
 ```
 
@@ -611,7 +730,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008137.json:
+archive/issue_events_018979.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -619,7 +738,7 @@ archive/issue_events_008137.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7922#event-8137"
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18979"
 }
 ```
 
@@ -645,7 +764,7 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_events_008138.json:
+archive/issue_events_018980.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -653,7 +772,7 @@ archive/issue_events_008138.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7922#event-8138"
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18980"
 }
 ```
 
@@ -674,6 +793,40 @@ archive/issue_comments_068843.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018981.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-03T12:54:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18981"
+}
+```
+
+
+
+---
+
+archive/issue_events_018982.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-03T12:54:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-18982"
+}
+```
 
 
 

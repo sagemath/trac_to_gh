@@ -128,6 +128,23 @@ Attachment [edge_labeled_isom.hg](tarball://root/attachments/some-uuid/ticket130
 
 ---
 
+archive/issue_events_003412.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-07T18:12:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1304",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1304#event-3412"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008181.json:
 ```json
 {
@@ -349,7 +366,7 @@ Merged in Sage 2.10.2.alpha1
 
 ---
 
-archive/issue_events_001446.json:
+archive/issue_events_003413.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -357,7 +374,7 @@ archive/issue_events_001446.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1304#event-1446"
+    "url": "https://github.com/sagemath/sagetest/issues/1304#event-3413"
 }
 ```
 

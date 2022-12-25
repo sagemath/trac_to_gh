@@ -107,6 +107,57 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_002439.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:20:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/875",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/875#event-2439"
+}
+```
+
+
+
+---
+
+archive/issue_events_002440.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/875",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/875#event-2440"
+}
+```
+
+
+
+---
+
+archive/issue_events_002441.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/875",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/875#event-2441"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005397.json:
 ```json
 {
@@ -127,7 +178,7 @@ Also, re: William's note above about "hacking the Python/C API" -- that's not fo
 
 ---
 
-archive/issue_events_000989.json:
+archive/issue_events_002442.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -135,7 +186,7 @@ archive/issue_events_000989.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/875",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/875#event-989"
+    "url": "https://github.com/sagemath/sagetest/issues/875#event-2442"
 }
 ```
 

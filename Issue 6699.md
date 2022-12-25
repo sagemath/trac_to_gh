@@ -800,7 +800,7 @@ Merged `maxima-5.19.1.p0.spkg` in the standard packages repository and applied t
 
 ---
 
-archive/issue_events_006934.json:
+archive/issue_events_015790.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -808,7 +808,7 @@ archive/issue_events_006934.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#event-6934"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#event-15790"
 }
 ```
 

@@ -47,6 +47,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_021999.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-05-18T09:46:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8988",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8988#event-21999"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082886.json:
 ```json
 {
@@ -1238,7 +1255,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009143.json:
+archive/issue_events_022000.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1246,7 +1263,7 @@ archive/issue_events_009143.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8988#event-9143"
+    "url": "https://github.com/sagemath/sagetest/issues/8988#event-22000"
 }
 ```
 

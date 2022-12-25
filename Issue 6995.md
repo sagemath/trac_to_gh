@@ -132,7 +132,7 @@ Note to release manager: this depends on #4898.
 
 ---
 
-archive/issue_events_007219.json:
+archive/issue_events_016419.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -140,7 +140,7 @@ archive/issue_events_007219.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6995",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6995#event-7219"
+    "url": "https://github.com/sagemath/sagetest/issues/6995#event-16419"
 }
 ```
 
@@ -161,3 +161,20 @@ archive/issue_comments_057753.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_016420.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-22T05:37:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6995",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6995#event-16420"
+}
+```

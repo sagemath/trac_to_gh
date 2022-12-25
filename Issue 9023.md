@@ -216,7 +216,7 @@ ghmm is now gone.
 
 ---
 
-archive/issue_events_009175.json:
+archive/issue_events_022077.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -224,7 +224,7 @@ archive/issue_events_009175.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#event-9175"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#event-22077"
 }
 ```
 
@@ -245,3 +245,54 @@ archive/issue_comments_083355.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_022078.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-22T17:56:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9023",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9023#event-22078"
+}
+```
+
+
+
+---
+
+archive/issue_events_022079.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-24T08:10:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9023",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9023#event-22079"
+}
+```
+
+
+
+---
+
+archive/issue_events_022080.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-24T08:10:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9023",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9023#event-22080"
+}
+```

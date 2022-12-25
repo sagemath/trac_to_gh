@@ -231,7 +231,7 @@ Acaccording to Yi this is fixed, so close this.
 
 ---
 
-archive/issue_events_002189.json:
+archive/issue_events_004877.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -239,6 +239,23 @@ archive/issue_events_002189.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2033",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2033#event-2189"
+    "url": "https://github.com/sagemath/sagetest/issues/2033#event-4877"
+}
+```
+
+
+
+---
+
+archive/issue_events_004878.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-24T16:58:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2033",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2033#event-4878"
 }
 ```

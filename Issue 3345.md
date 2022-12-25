@@ -357,6 +357,23 @@ While refereeing trac_3345.patch I:
 
 ---
 
+archive/issue_events_007492.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-21T18:23:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3345",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3345#event-7492"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023191.json:
 ```json
 {
@@ -517,7 +534,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003563.json:
+archive/issue_events_007493.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -525,6 +542,6 @@ archive/issue_events_003563.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3345#event-3563"
+    "url": "https://github.com/sagemath/sagetest/issues/3345#event-7493"
 }
 ```

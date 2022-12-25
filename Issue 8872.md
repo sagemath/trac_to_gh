@@ -25,3 +25,20 @@ This function will implement Scheicher and Thuswaldner's neighbor-finding algori
 Issue created by migration from https://trac.sagemath.org/ticket/8872
 
 
+
+
+
+---
+
+archive/issue_events_021656.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ecurry",
+    "created_at": "2010-05-04T19:17:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8872",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8872#event-21656"
+}
+```

@@ -53,6 +53,23 @@ Michael
 
 ---
 
+archive/issue_events_007695.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-15T19:03:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3413",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3413#event-7695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023889.json:
 ```json
 {
@@ -109,7 +126,7 @@ Looks good. It's ready to go.
 
 ---
 
-archive/issue_events_003629.json:
+archive/issue_events_007696.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -117,7 +134,7 @@ archive/issue_events_003629.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3413",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3413#event-3629"
+    "url": "https://github.com/sagemath/sagetest/issues/3413#event-7696"
 }
 ```
 

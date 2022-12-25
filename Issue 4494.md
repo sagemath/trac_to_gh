@@ -64,6 +64,23 @@ Changing component from algebra to linear algebra.
 
 ---
 
+archive/issue_events_010175.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-11-11T18:47:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4494",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4494#event-10175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033165.json:
 ```json
 {
@@ -248,6 +265,40 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_010176.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-21T22:26:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4494",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4494#event-10176"
+}
+```
+
+
+
+---
+
+archive/issue_events_010177.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-21T22:26:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4494",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4494#event-10177"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033175.json:
 ```json
 {
@@ -266,7 +317,7 @@ Merged in Sage 3.2.3.alpha0
 
 ---
 
-archive/issue_events_004740.json:
+archive/issue_events_010178.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -274,6 +325,6 @@ archive/issue_events_004740.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4494#event-4740"
+    "url": "https://github.com/sagemath/sagetest/issues/4494#event-10178"
 }
 ```

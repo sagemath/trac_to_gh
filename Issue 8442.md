@@ -1150,6 +1150,23 @@ http://match.stanford.edu/bump/thematic_tutorials-js/lie.html
 
 ---
 
+archive/issue_events_020243.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2010-10-29T02:17:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8442",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8442#event-20243"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075736.json:
 ```json
 {
@@ -1663,6 +1680,40 @@ I will make a patch for this. Perhaps it should be a separate ticket so as not t
 
 ---
 
+archive/issue_events_020244.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-19T12:52:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8442",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8442#event-20244"
+}
+```
+
+
+
+---
+
+archive/issue_events_020245.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-19T12:52:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8442",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8442#event-20245"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075756.json:
 ```json
 {
@@ -1762,6 +1813,40 @@ Setting milestone to sage-feature because of #8470.
 
 ---
 
+archive/issue_events_020246.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-13T05:46:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8442",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8442#event-20246"
+}
+```
+
+
+
+---
+
+archive/issue_events_020247.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-13T05:46:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8442",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8442#event-20247"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075761.json:
 ```json
 {
@@ -1805,6 +1890,40 @@ Replying to [comment:57 bump]:
 > 
 > 
 I second this. #8470 is a meta-ticket meant for coordinating documentation. Closing the current ticket is a prereq to closing it. So, please close the current ticket, which in no ways depends on #8470.
+
+
+
+---
+
+archive/issue_events_020248.json:
+```json
+{
+    "actor": "https://github.com/dimpase",
+    "created_at": "2011-01-13T17:17:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8442",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8442#event-20248"
+}
+```
+
+
+
+---
+
+archive/issue_events_020249.json:
+```json
+{
+    "actor": "https://github.com/dimpase",
+    "created_at": "2011-01-13T17:17:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8442",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8442#event-20249"
+}
+```
 
 
 
@@ -2015,7 +2134,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008626.json:
+archive/issue_events_020250.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2023,7 +2142,7 @@ archive/issue_events_008626.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8442#event-8626"
+    "url": "https://github.com/sagemath/sagetest/issues/8442#event-20250"
 }
 ```
 

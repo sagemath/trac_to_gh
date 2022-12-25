@@ -99,7 +99,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003973.json:
+archive/issue_events_008599.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -107,7 +107,7 @@ archive/issue_events_003973.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3751",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3751#event-3973"
+    "url": "https://github.com/sagemath/sagetest/issues/3751#event-8599"
 }
 ```
 
@@ -128,3 +128,20 @@ archive/issue_comments_026602.json:
 ```
 
 Merged 3751-ncalexan-class-number.patch in Sage 3.1.alpha1
+
+
+
+---
+
+archive/issue_events_008600.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-11T00:15:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3751",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3751#event-8600"
+}
+```

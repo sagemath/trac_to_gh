@@ -145,6 +145,23 @@ If you've really fixed the "factor of 2" issue, as it seems you have, then the d
 
 ---
 
+archive/issue_events_019706.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-04-19T06:38:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#event-19706"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072663.json:
 ```json
 {
@@ -466,7 +483,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008439.json:
+archive/issue_events_019707.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -474,6 +491,6 @@ archive/issue_events_008439.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8238",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8238#event-8439"
+    "url": "https://github.com/sagemath/sagetest/issues/8238#event-19707"
 }
 ```

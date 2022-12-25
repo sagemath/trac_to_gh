@@ -298,6 +298,23 @@ Thank you!  It's really silly that we hadn't removed it before, given that the d
 
 ---
 
+archive/issue_events_021474.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-03T12:37:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8803",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8803#event-21474"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080643.json:
 ```json
 {
@@ -311,6 +328,40 @@ archive/issue_comments_080643.json:
 ```
 
 The deprecation has been in place for a LONG time, (over 18 months), and this module does not have any remaining functionality, nor was it ever really very end-user available.  We thought at one point that 5.0 would be in the near future, so we thought that was a good goal for when to remove it, but that was over a year ago.    This should be removed.  Jason?
+
+
+
+---
+
+archive/issue_events_021475.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-05-03T13:12:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8803",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8803#event-21475"
+}
+```
+
+
+
+---
+
+archive/issue_events_021476.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-05-03T13:12:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8803",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8803#event-21476"
+}
+```
 
 
 
@@ -429,7 +480,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008968.json:
+archive/issue_events_021477.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -437,6 +488,6 @@ archive/issue_events_008968.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8803#event-8968"
+    "url": "https://github.com/sagemath/sagetest/issues/8803#event-21477"
 }
 ```

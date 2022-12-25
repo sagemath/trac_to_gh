@@ -47,6 +47,23 @@ Basic support has been merged, but "./sage -valgrind -testall" ignores the -test
 
 ---
 
+archive/issue_events_001086.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T07:04:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/441",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/441#event-1086"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002199.json:
 ```json
 {
@@ -65,7 +82,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000468.json:
+archive/issue_events_001087.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,6 +90,6 @@ archive/issue_events_000468.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/441",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/441#event-468"
+    "url": "https://github.com/sagemath/sagetest/issues/441#event-1087"
 }
 ```

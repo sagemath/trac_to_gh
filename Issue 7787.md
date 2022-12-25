@@ -148,6 +148,125 @@ Google's `jsmin.py` causes failures ("//" in a string deletes the rest of the li
 
 ---
 
+archive/issue_events_018619.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18619"
+}
+```
+
+
+
+---
+
+archive/issue_events_018620.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18620"
+}
+```
+
+
+
+---
+
+archive/issue_events_018621.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18621"
+}
+```
+
+
+
+---
+
+archive/issue_events_018622.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18622"
+}
+```
+
+
+
+---
+
+archive/issue_events_018623.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18623"
+}
+```
+
+
+
+---
+
+archive/issue_events_018624.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18624"
+}
+```
+
+
+
+---
+
+archive/issue_events_018625.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18625"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067093.json:
 ```json
 {
@@ -161,6 +280,40 @@ archive/issue_comments_067093.json:
 ```
 
 Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.
+
+
+
+---
+
+archive/issue_events_018626.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-18T00:36:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18626"
+}
+```
+
+
+
+---
+
+archive/issue_events_018627.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-18T00:36:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7787",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18627"
+}
+```
 
 
 
@@ -202,7 +355,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008003.json:
+archive/issue_events_018628.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -210,6 +363,6 @@ archive/issue_events_008003.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7787#event-8003"
+    "url": "https://github.com/sagemath/sagetest/issues/7787#event-18628"
 }
 ```

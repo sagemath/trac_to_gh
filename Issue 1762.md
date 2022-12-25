@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1762
 
 ---
 
+archive/issue_events_004276.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-13T18:57:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#event-4276"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011095.json:
 ```json
 {
@@ -246,7 +263,41 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001920.json:
+archive/issue_events_004277.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-23T01:41:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#event-4277"
+}
+```
+
+
+
+---
+
+archive/issue_events_004278.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-23T01:41:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#event-4278"
+}
+```
+
+
+
+---
+
+archive/issue_events_004279.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -254,7 +305,7 @@ archive/issue_events_001920.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1762",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1762#event-1920"
+    "url": "https://github.com/sagemath/sagetest/issues/1762#event-4279"
 }
 ```
 

@@ -70,7 +70,7 @@ merged in 4.2.1.rc1
 
 ---
 
-archive/issue_events_007369.json:
+archive/issue_events_016901.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -78,7 +78,7 @@ archive/issue_events_007369.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7149",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7149#event-7369"
+    "url": "https://github.com/sagemath/sagetest/issues/7149#event-16901"
 }
 ```
 
@@ -139,3 +139,20 @@ archive/issue_comments_059128.json:
 ```
 
 We can reopen #6774 or open a new ticket -- I'm not sure which is better.  In any case, we should make sure that the most recent version of the graph theory tour is included (combining at least #6774 and #6952 -- are there any other relevant tickets?).
+
+
+
+---
+
+archive/issue_events_016902.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-19T06:10:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7149",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7149#event-16902"
+}
+```

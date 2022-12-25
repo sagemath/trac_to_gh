@@ -178,7 +178,7 @@ Rebased version without changes to `template.py`. Replaces previous.
 
 ---
 
-archive/issue_events_006431.json:
+archive/issue_events_014513.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -186,7 +186,7 @@ archive/issue_events_006431.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6182#event-6431"
+    "url": "https://github.com/sagemath/sagetest/issues/6182#event-14513"
 }
 ```
 

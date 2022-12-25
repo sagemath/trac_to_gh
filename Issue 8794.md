@@ -47,6 +47,57 @@ Changing keywords from "" to "beginner doctest documentation".
 
 ---
 
+archive/issue_events_021436.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8794",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8794#event-21436"
+}
+```
+
+
+
+---
+
+archive/issue_events_021437.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8794",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8794#event-21437"
+}
+```
+
+
+
+---
+
+archive/issue_events_021438.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8794",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8794#event-21438"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080427.json:
 ```json
 {
@@ -103,6 +154,40 @@ New commits:
 
 ---
 
+archive/issue_events_021439.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-02-12T20:27:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8794",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8794#event-21439"
+}
+```
+
+
+
+---
+
+archive/issue_events_021440.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-02-12T20:27:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8794",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8794#event-21440"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080430.json:
 ```json
 {
@@ -121,7 +206,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008959.json:
+archive/issue_events_021441.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -129,7 +214,7 @@ archive/issue_events_008959.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8794",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8794#event-8959"
+    "url": "https://github.com/sagemath/sagetest/issues/8794#event-21441"
 }
 ```
 

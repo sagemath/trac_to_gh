@@ -181,6 +181,23 @@ See http://sage.maa.org/home/pub/140/ for what we have to do now.  I still think
 
 ---
 
+archive/issue_events_019556.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19556"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071707.json:
 ```json
 {
@@ -194,6 +211,108 @@ archive/issue_comments_071707.json:
 ```
 
 Here's a very interesting article from HackerNews about choosing colors procedurally: http://devmag.org.za/2012/07/29/how-to-choose-colours-procedurally-algorithms/.  The Golden Ratio method looks particularly interesting.  See also http://martin.ankerl.com/2009/12/09/how-to-create-random-colors-programmatically/ and the HackerNews comment thread: https://news.ycombinator.com/item?id=6309989 (where someone mentions that Mathematica uses the GoldenRatio method too.)
+
+
+
+---
+
+archive/issue_events_019557.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19557"
+}
+```
+
+
+
+---
+
+archive/issue_events_019558.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19558"
+}
+```
+
+
+
+---
+
+archive/issue_events_019559.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19559"
+}
+```
+
+
+
+---
+
+archive/issue_events_019560.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19560"
+}
+```
+
+
+
+---
+
+archive/issue_events_019561.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19561"
+}
+```
+
+
+
+---
+
+archive/issue_events_019562.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19562"
+}
+```
 
 
 
@@ -386,6 +505,40 @@ Changing status from needs_info to positive_review.
 
 ---
 
+archive/issue_events_019563.json:
+```json
+{
+    "actor": "https://github.com/paulmasson",
+    "created_at": "2016-08-12T20:17:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19563"
+}
+```
+
+
+
+---
+
+archive/issue_events_019564.json:
+```json
+{
+    "actor": "https://github.com/paulmasson",
+    "created_at": "2016-08-12T20:17:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19564"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071716.json:
 ```json
 {
@@ -440,7 +593,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_008368.json:
+archive/issue_events_019565.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -448,7 +601,7 @@ archive/issue_events_008368.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8164",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8164#event-8368"
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-19565"
 }
 ```
 

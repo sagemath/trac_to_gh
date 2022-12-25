@@ -109,7 +109,7 @@ This does not seem to be a problem anymore, especially noting the change to the 
 
 ---
 
-archive/issue_events_003975.json:
+archive/issue_events_008603.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -117,7 +117,7 @@ archive/issue_events_003975.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3753",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3753#event-3975"
+    "url": "https://github.com/sagemath/sagetest/issues/3753#event-8603"
 }
 ```
 
@@ -156,3 +156,20 @@ archive/issue_comments_026614.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_008604.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-08T23:50:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3753",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3753#event-8604"
+}
+```

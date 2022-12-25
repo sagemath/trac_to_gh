@@ -237,7 +237,7 @@ Yes.
 
 ---
 
-archive/issue_events_008879.json:
+archive/issue_events_021143.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -245,7 +245,7 @@ archive/issue_events_008879.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8709",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8709#event-8879"
+    "url": "https://github.com/sagemath/sagetest/issues/8709#event-21143"
 }
 ```
 

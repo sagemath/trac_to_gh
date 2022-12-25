@@ -217,7 +217,7 @@ This ticket can therefore be closed.
 
 ---
 
-archive/issue_events_005703.json:
+archive/issue_events_012733.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -225,7 +225,7 @@ archive/issue_events_005703.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5451#event-5703"
+    "url": "https://github.com/sagemath/sagetest/issues/5451#event-12733"
 }
 ```
 
@@ -311,6 +311,23 @@ add doctest
 
 ---
 
+archive/issue_events_012734.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-03-25T20:33:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5451",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5451#event-12734"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042129.json:
 ```json
 {
@@ -352,7 +369,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_005704.json:
+archive/issue_events_012735.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -360,7 +377,7 @@ archive/issue_events_005704.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5451#event-5704"
+    "url": "https://github.com/sagemath/sagetest/issues/5451#event-12735"
 }
 ```
 
@@ -430,7 +447,7 @@ Michael
 
 ---
 
-archive/issue_events_005705.json:
+archive/issue_events_012736.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -438,7 +455,7 @@ archive/issue_events_005705.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5451#event-5705"
+    "url": "https://github.com/sagemath/sagetest/issues/5451#event-12736"
 }
 ```
 

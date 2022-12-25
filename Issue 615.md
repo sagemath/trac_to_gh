@@ -65,7 +65,7 @@ backed out -- this was a mistake.
 
 ---
 
-archive/issue_events_000672.json:
+archive/issue_events_001630.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +73,7 @@ archive/issue_events_000672.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/615",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/615#event-672"
+    "url": "https://github.com/sagemath/sagetest/issues/615#event-1630"
 }
 ```
 

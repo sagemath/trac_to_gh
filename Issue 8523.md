@@ -1571,7 +1571,7 @@ Simon
 
 ---
 
-archive/issue_events_008703.json:
+archive/issue_events_020497.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -1579,7 +1579,7 @@ archive/issue_events_008703.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#event-8703"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#event-20497"
 }
 ```
 

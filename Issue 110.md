@@ -83,7 +83,7 @@ I fixed this for sage-1.4
 
 ---
 
-archive/issue_events_000114.json:
+archive/issue_events_000220.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -91,6 +91,6 @@ archive/issue_events_000114.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/110",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/110#event-114"
+    "url": "https://github.com/sagemath/sagetest/issues/110#event-220"
 }
 ```

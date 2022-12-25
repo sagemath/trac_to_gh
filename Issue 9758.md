@@ -69,6 +69,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_024452.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-05-10T18:54:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9758",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9758#event-24452"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095423.json:
 ```json
 {
@@ -235,7 +252,41 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_009889.json:
+archive/issue_events_024453.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-05-28T15:49:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9758",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9758#event-24453"
+}
+```
+
+
+
+---
+
+archive/issue_events_024454.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-05-28T15:49:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9758",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9758#event-24454"
+}
+```
+
+
+
+---
+
+archive/issue_events_024455.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -243,7 +294,7 @@ archive/issue_events_009889.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9758#event-9889"
+    "url": "https://github.com/sagemath/sagetest/issues/9758#event-24455"
 }
 ```
 

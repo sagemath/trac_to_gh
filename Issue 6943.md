@@ -135,6 +135,23 @@ Things work perfectly and as advertised. Positive review on my part, but my refe
 
 ---
 
+archive/issue_events_016339.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-11-30T16:50:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6943",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6943#event-16339"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057306.json:
 ```json
 {
@@ -176,7 +193,7 @@ Should we close this ticket as fixed?
 
 ---
 
-archive/issue_events_007167.json:
+archive/issue_events_016340.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -184,7 +201,7 @@ archive/issue_events_007167.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6943",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6943#event-7167"
+    "url": "https://github.com/sagemath/sagetest/issues/6943#event-16340"
 }
 ```
 

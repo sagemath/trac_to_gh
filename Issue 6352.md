@@ -217,7 +217,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006596.json:
+archive/issue_events_014943.json:
 ```json
 {
     "actor": "https://github.com/maxthemouse",
@@ -225,7 +225,7 @@ archive/issue_events_006596.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6352",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6352#event-6596"
+    "url": "https://github.com/sagemath/sagetest/issues/6352#event-14943"
 }
 ```
 
@@ -246,3 +246,20 @@ archive/issue_comments_050692.json:
 ```
 
 This was closed in #8229.
+
+
+
+---
+
+archive/issue_events_014944.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-21T12:56:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6352",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6352#event-14944"
+}
+```

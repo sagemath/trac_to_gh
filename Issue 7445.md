@@ -134,7 +134,7 @@ In particular, in the latest versions of jmol one can set defaultdirectory to be
 
 ---
 
-archive/issue_events_007672.json:
+archive/issue_events_017659.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -142,7 +142,7 @@ archive/issue_events_007672.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7445",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7445#event-7672"
+    "url": "https://github.com/sagemath/sagetest/issues/7445#event-17659"
 }
 ```
 

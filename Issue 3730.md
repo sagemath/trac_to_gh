@@ -61,6 +61,57 @@ To be clear, I think this is the only instance of this problem in the distributi
 
 ---
 
+archive/issue_events_008537.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-29T16:11:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3730",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3730#event-8537"
+}
+```
+
+
+
+---
+
+archive/issue_events_008538.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-01T18:05:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3730",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3730#event-8538"
+}
+```
+
+
+
+---
+
+archive/issue_events_008539.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-01T18:05:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3730",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3730#event-8539"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026428.json:
 ```json
 {
@@ -115,7 +166,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_003954.json:
+archive/issue_events_008540.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -123,7 +174,7 @@ archive/issue_events_003954.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3730",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3730#event-3954"
+    "url": "https://github.com/sagemath/sagetest/issues/3730#event-8540"
 }
 ```
 

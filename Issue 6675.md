@@ -111,7 +111,7 @@ I believe that this is fixed by #6674.  That is, the failure here is because the
 
 ---
 
-archive/issue_events_006911.json:
+archive/issue_events_015748.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -119,7 +119,7 @@ archive/issue_events_006911.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6675",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6675#event-6911"
+    "url": "https://github.com/sagemath/sagetest/issues/6675#event-15748"
 }
 ```
 

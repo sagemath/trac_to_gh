@@ -63,7 +63,7 @@ Problems with gcc-3.3:
 
 ---
 
-archive/issue_events_000731.json:
+archive/issue_events_001778.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -71,7 +71,7 @@ archive/issue_events_000731.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/663",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/663#event-731"
+    "url": "https://github.com/sagemath/sagetest/issues/663#event-1778"
 }
 ```
 

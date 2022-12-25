@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3662
 
 ---
 
+archive/issue_events_008387.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-08-06T16:35:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3662",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3662#event-8387"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025826.json:
 ```json
 {
@@ -139,7 +156,7 @@ Merged trac_3662-1.patch, trac_3662-2.patch, trac_3662-3.patch, trac_3662-4.patc
 
 ---
 
-archive/issue_events_003881.json:
+archive/issue_events_008388.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -147,7 +164,7 @@ archive/issue_events_003881.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3662#event-3881"
+    "url": "https://github.com/sagemath/sagetest/issues/3662#event-8388"
 }
 ```
 

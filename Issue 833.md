@@ -176,6 +176,23 @@ Michael
 
 ---
 
+archive/issue_events_002344.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-06T06:08:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/833",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/833#event-2344"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005133.json:
 ```json
 {
@@ -189,6 +206,40 @@ archive/issue_comments_005133.json:
 ```
 
 Changing assignee from somebody to @robertwb.
+
+
+
+---
+
+archive/issue_events_002345.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:15:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/833",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/833#event-2345"
+}
+```
+
+
+
+---
+
+archive/issue_events_002346.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:15:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/833",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/833#event-2346"
+}
+```
 
 
 
@@ -531,6 +582,40 @@ Cython copies a buggy chunk of C code into target files; the bug would be trigge
 
 ---
 
+archive/issue_events_002347.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-14T06:55:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/833",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/833#event-2347"
+}
+```
+
+
+
+---
+
+archive/issue_events_002348.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-14T06:55:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/833",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/833#event-2348"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005139.json:
 ```json
 {
@@ -653,7 +738,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000946.json:
+archive/issue_events_002349.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -661,6 +746,6 @@ archive/issue_events_000946.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/833",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/833#event-946"
+    "url": "https://github.com/sagemath/sagetest/issues/833#event-2349"
 }
 ```

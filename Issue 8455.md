@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8455
 
 ---
 
+archive/issue_events_020297.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-03-06T08:35:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8455",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8455#event-20297"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075952.json:
 ```json
 {
@@ -68,7 +85,7 @@ I think the builds options are relevant to building the optional sage spkg that 
 
 ---
 
-archive/issue_events_008639.json:
+archive/issue_events_020298.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -76,7 +93,7 @@ archive/issue_events_008639.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8455",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8455#event-8639"
+    "url": "https://github.com/sagemath/sagetest/issues/8455#event-20298"
 }
 ```
 
@@ -115,3 +132,37 @@ archive/issue_comments_075955.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_020299.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-17T18:45:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8455",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8455#event-20299"
+}
+```
+
+
+
+---
+
+archive/issue_events_020300.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-17T18:45:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8455",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8455#event-20300"
+}
+```

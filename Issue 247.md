@@ -59,7 +59,7 @@ Changing assignee from somebody to @malb.
 
 ---
 
-archive/issue_events_000261.json:
+archive/issue_events_000513.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -67,7 +67,7 @@ archive/issue_events_000261.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/247",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/247#event-261"
+    "url": "https://github.com/sagemath/sagetest/issues/247#event-513"
 }
 ```
 

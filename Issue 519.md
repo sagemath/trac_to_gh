@@ -129,6 +129,23 @@ Changing component from algebraic geometry to memleak.
 
 ---
 
+archive/issue_events_001332.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-01T22:48:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/519",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/519#event-1332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002616.json:
 ```json
 {
@@ -171,6 +188,40 @@ archive/issue_comments_002617.json:
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001333.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:43:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/519",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/519#event-1333"
+}
+```
+
+
+
+---
+
+archive/issue_events_001334.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:43:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/519",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/519#event-1334"
+}
+```
 
 
 
@@ -240,7 +291,41 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000558.json:
+archive/issue_events_001335.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-13T15:57:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/519",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/519#event-1335"
+}
+```
+
+
+
+---
+
+archive/issue_events_001336.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-13T15:57:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/519",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/519#event-1336"
+}
+```
+
+
+
+---
+
+archive/issue_events_001337.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -248,6 +333,6 @@ archive/issue_events_000558.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/519",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/519#event-558"
+    "url": "https://github.com/sagemath/sagetest/issues/519#event-1337"
 }
 ```

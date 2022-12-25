@@ -658,7 +658,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007578.json:
+archive/issue_events_017407.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -666,7 +666,7 @@ archive/issue_events_007578.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7355#event-7578"
+    "url": "https://github.com/sagemath/sagetest/issues/7355#event-17407"
 }
 ```
 
@@ -687,3 +687,20 @@ archive/issue_comments_061520.json:
 ```
 
 This introduced a bug as fixed at #7544.
+
+
+
+---
+
+archive/issue_events_017408.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-09T01:08:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7355",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7355#event-17408"
+}
+```

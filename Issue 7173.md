@@ -172,6 +172,23 @@ At ticket #12433, I ask about writing an autotools build system for zn_poly and 
 
 ---
 
+archive/issue_events_016966.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-14T12:45:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7173",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7173#event-16966"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059329.json:
 ```json
 {
@@ -244,7 +261,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_007392.json:
+archive/issue_events_016967.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -252,6 +269,6 @@ archive/issue_events_007392.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7173",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7173#event-7392"
+    "url": "https://github.com/sagemath/sagetest/issues/7173#event-16967"
 }
 ```

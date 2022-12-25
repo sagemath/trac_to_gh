@@ -117,6 +117,23 @@ Changing keywords from "" to "days71".
 
 ---
 
+archive/issue_events_020883.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-04-04T16:50:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8628",
+    "milestone": "sage-7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8628#event-20883"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078099.json:
 ```json
 {
@@ -227,7 +244,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008797.json:
+archive/issue_events_020884.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -235,7 +252,7 @@ archive/issue_events_008797.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8628#event-8797"
+    "url": "https://github.com/sagemath/sagetest/issues/8628#event-20884"
 }
 ```
 

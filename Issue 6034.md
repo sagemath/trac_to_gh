@@ -184,6 +184,23 @@ This will be a perfect addition for sage-4.0.1.
 
 ---
 
+archive/issue_events_014172.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T07:11:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6034",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6034#event-14172"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047960.json:
 ```json
 {
@@ -534,7 +551,7 @@ Indeed the dependencies are already in, Nick must have forgotten to `sage -b` ?
 
 ---
 
-archive/issue_events_006289.json:
+archive/issue_events_014173.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -542,7 +559,7 @@ archive/issue_events_006289.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6034#event-6289"
+    "url": "https://github.com/sagemath/sagetest/issues/6034#event-14173"
 }
 ```
 

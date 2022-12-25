@@ -83,7 +83,7 @@ Merged both patches in Sage 2.10.2.alpha0
 
 ---
 
-archive/issue_events_002336.json:
+archive/issue_events_005187.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -91,7 +91,7 @@ archive/issue_events_002336.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2169",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2169#event-2336"
+    "url": "https://github.com/sagemath/sagetest/issues/2169#event-5187"
 }
 ```
 

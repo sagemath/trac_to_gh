@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1891
 
 ---
 
+archive/issue_events_004550.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-23T23:02:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1891",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1891#event-4550"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011947.json:
 ```json
 {
@@ -142,7 +159,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_002049.json:
+archive/issue_events_004551.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -150,7 +167,7 @@ archive/issue_events_002049.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1891#event-2049"
+    "url": "https://github.com/sagemath/sagetest/issues/1891#event-4551"
 }
 ```
 
@@ -171,3 +188,37 @@ archive/issue_comments_011952.json:
 ```
 
 Well, I don't think this ticket is valid anymore -- but not because Pari fixed the issue. Does anyone know if this works in Pari unstable (2.4.x)?
+
+
+
+---
+
+archive/issue_events_004552.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-25T05:28:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1891",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1891#event-4552"
+}
+```
+
+
+
+---
+
+archive/issue_events_004553.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-25T05:28:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1891",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1891#event-4553"
+}
+```

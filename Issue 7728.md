@@ -221,7 +221,7 @@ Just a small comment: I believe that we can now use dollar signs for math input 
 
 ---
 
-archive/issue_events_007942.json:
+archive/issue_events_018478.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -229,7 +229,7 @@ archive/issue_events_007942.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7728",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7728#event-7942"
+    "url": "https://github.com/sagemath/sagetest/issues/7728#event-18478"
 }
 ```
 

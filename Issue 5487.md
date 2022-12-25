@@ -411,7 +411,7 @@ Positive review on Andrew and Florent's patches.
 
 ---
 
-archive/issue_events_005740.json:
+archive/issue_events_012825.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -419,7 +419,7 @@ archive/issue_events_005740.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5487#event-5740"
+    "url": "https://github.com/sagemath/sagetest/issues/5487#event-12825"
 }
 ```
 
@@ -506,6 +506,23 @@ I attached trac_5487_tableau-content-5487-AM.patch which is your patch checked i
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_012826.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-16T02:55:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5487",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5487#event-12826"
+}
+```
 
 
 

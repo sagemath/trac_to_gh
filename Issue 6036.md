@@ -90,6 +90,23 @@ Changing component from algebra to basic arithmetic.
 
 ---
 
+archive/issue_events_014176.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T05:27:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6036",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6036#event-14176"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047980.json:
 ```json
 {
@@ -170,7 +187,7 @@ Michael
 
 ---
 
-archive/issue_events_006291.json:
+archive/issue_events_014177.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -178,7 +195,7 @@ archive/issue_events_006291.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6036",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6036#event-6291"
+    "url": "https://github.com/sagemath/sagetest/issues/6036#event-14177"
 }
 ```
 
@@ -199,3 +216,37 @@ archive/issue_comments_047984.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_014178.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T18:51:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6036",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6036#event-14178"
+}
+```
+
+
+
+---
+
+archive/issue_events_014179.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T18:51:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6036",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6036#event-14179"
+}
+```

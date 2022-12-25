@@ -203,7 +203,7 @@ See #6953 for a follow-up to this ticket.
 
 ---
 
-archive/issue_events_007174.json:
+archive/issue_events_016348.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -211,7 +211,7 @@ archive/issue_events_007174.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6950",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6950#event-7174"
+    "url": "https://github.com/sagemath/sagetest/issues/6950#event-16348"
 }
 ```
 

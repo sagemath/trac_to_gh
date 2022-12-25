@@ -70,6 +70,23 @@ Michael
 
 ---
 
+archive/issue_events_011531.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-06T22:59:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4982",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4982#event-11531"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037907.json:
 ```json
 {
@@ -283,7 +300,7 @@ I have read and tested his patch, and I'm happy with it.
 
 ---
 
-archive/issue_events_005225.json:
+archive/issue_events_011532.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -291,7 +308,7 @@ archive/issue_events_005225.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4982#event-5225"
+    "url": "https://github.com/sagemath/sagetest/issues/4982#event-11532"
 }
 ```
 

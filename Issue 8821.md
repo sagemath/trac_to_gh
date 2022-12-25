@@ -649,6 +649,23 @@ Here's a referee's patch.  Positive review.
 
 ---
 
+archive/issue_events_021509.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2011-07-22T23:56:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8821",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8821#event-21509"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080889.json:
 ```json
 {
@@ -685,7 +702,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008986.json:
+archive/issue_events_021510.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -693,6 +710,6 @@ archive/issue_events_008986.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8821#event-8986"
+    "url": "https://github.com/sagemath/sagetest/issues/8821#event-21510"
 }
 ```

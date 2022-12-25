@@ -109,6 +109,23 @@ Attachment [trac-1460.patch](tarball://root/attachments/some-uuid/ticket1460/tra
 
 ---
 
+archive/issue_events_003722.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-12T00:27:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1460",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1460#event-3722"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009382.json:
 ```json
 {
@@ -147,7 +164,7 @@ Looks good to me.  One of the doctests failed on my machine due to numerical noi
 
 ---
 
-archive/issue_events_001611.json:
+archive/issue_events_003723.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -155,7 +172,7 @@ archive/issue_events_001611.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1460",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1460#event-1611"
+    "url": "https://github.com/sagemath/sagetest/issues/1460#event-3723"
 }
 ```
 

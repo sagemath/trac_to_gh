@@ -32,7 +32,24 @@ Issue created by migration from https://trac.sagemath.org/ticket/195
 
 ---
 
-archive/issue_events_000204.json:
+archive/issue_events_000383.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T10:02:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/195",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/195#event-383"
+}
+```
+
+
+
+---
+
+archive/issue_events_000384.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -40,7 +57,7 @@ archive/issue_events_000204.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/195",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/195#event-204"
+    "url": "https://github.com/sagemath/sagetest/issues/195#event-384"
 }
 ```
 

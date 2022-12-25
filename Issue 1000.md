@@ -64,6 +64,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_002750.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-25T16:52:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#event-2750"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006070.json:
 ```json
 {
@@ -104,7 +121,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001123.json:
+archive/issue_events_002751.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -112,7 +129,7 @@ archive/issue_events_001123.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1000",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1000#event-1123"
+    "url": "https://github.com/sagemath/sagetest/issues/1000#event-2751"
 }
 ```
 
@@ -133,6 +150,40 @@ archive/issue_comments_006072.json:
 ```
 
 I think we have 10000 users now based on downloads, etc.
+
+
+
+---
+
+archive/issue_events_002752.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-10T08:28:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#event-2752"
+}
+```
+
+
+
+---
+
+archive/issue_events_002753.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-10T08:28:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#event-2753"
+}
+```
 
 
 

@@ -72,7 +72,7 @@ Changing assignee from @malb to @rlmill.
 
 ---
 
-archive/issue_events_001530.json:
+archive/issue_events_003581.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -80,7 +80,24 @@ archive/issue_events_001530.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1386",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1386#event-1530"
+    "url": "https://github.com/sagemath/sagetest/issues/1386#event-3581"
+}
+```
+
+
+
+---
+
+archive/issue_events_003582.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-03-20T22:39:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1386",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1386#event-3582"
 }
 ```
 

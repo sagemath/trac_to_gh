@@ -121,6 +121,23 @@ Base patch is from #15137, but now uses the UCF as the default field.
 
 ---
 
+archive/issue_events_022891.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2013-09-11T18:54:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9290",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9290#event-22891"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087357.json:
 ```json
 {
@@ -539,7 +556,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009451.json:
+archive/issue_events_022892.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -547,6 +564,6 @@ archive/issue_events_009451.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9290#event-9451"
+    "url": "https://github.com/sagemath/sagetest/issues/9290#event-22892"
 }
 ```

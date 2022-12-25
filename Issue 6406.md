@@ -51,6 +51,23 @@ Attachment [trac_6406.patch](tarball://root/attachments/some-uuid/ticket6406/tra
 
 ---
 
+archive/issue_events_015093.json:
+```json
+{
+    "actor": "https://github.com/categorie",
+    "created_at": "2009-06-25T14:59:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6406",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6406#event-15093"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051347.json:
 ```json
 {
@@ -89,7 +106,7 @@ Is it possible to add a doctest illustrating the suggestion to "try an_padic ins
 
 ---
 
-archive/issue_events_006651.json:
+archive/issue_events_015094.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -97,7 +114,7 @@ archive/issue_events_006651.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6406",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6406#event-6651"
+    "url": "https://github.com/sagemath/sagetest/issues/6406#event-15094"
 }
 ```
 

@@ -48,7 +48,24 @@ bundle to add in bg option
 
 ---
 
-archive/issue_events_001111.json:
+archive/issue_events_002729.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:14:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/988",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/988#event-2729"
+}
+```
+
+
+
+---
+
+archive/issue_events_002730.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -56,7 +73,7 @@ archive/issue_events_001111.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/988",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/988#event-1111"
+    "url": "https://github.com/sagemath/sagetest/issues/988#event-2730"
 }
 ```
 

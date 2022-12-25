@@ -104,7 +104,7 @@ Seems good to me.  Fixed by #4948.
 
 ---
 
-archive/issue_events_006577.json:
+archive/issue_events_014871.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -112,7 +112,24 @@ archive/issue_events_006577.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6331",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6331#event-6577"
+    "url": "https://github.com/sagemath/sagetest/issues/6331#event-14871"
+}
+```
+
+
+
+---
+
+archive/issue_events_014872.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-05T04:47:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6331",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6331#event-14872"
 }
 ```
 

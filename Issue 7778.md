@@ -159,7 +159,7 @@ I've merged this in with the optional spkgs.
 
 ---
 
-archive/issue_events_007992.json:
+archive/issue_events_018605.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -167,7 +167,7 @@ archive/issue_events_007992.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7778#event-7992"
+    "url": "https://github.com/sagemath/sagetest/issues/7778#event-18605"
 }
 ```
 

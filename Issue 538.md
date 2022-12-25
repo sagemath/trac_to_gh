@@ -87,6 +87,23 @@ Changing assignee from @williamstein to @craigcitro.
 
 ---
 
+archive/issue_events_001415.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2007-09-01T06:38:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/538",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/538#event-1415"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002730.json:
 ```json
 {
@@ -123,7 +140,7 @@ Attachment [c_lib_fixes.hg](tarball://root/attachments/some-uuid/ticket538/c_lib
 
 ---
 
-archive/issue_events_000577.json:
+archive/issue_events_001416.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -131,6 +148,6 @@ archive/issue_events_000577.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/538",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/538#event-577"
+    "url": "https://github.com/sagemath/sagetest/issues/538#event-1416"
 }
 ```

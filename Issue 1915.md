@@ -153,7 +153,7 @@ Looks good to me. I like the new comparisons using == and `is` at the top, too.
 
 ---
 
-archive/issue_events_002071.json:
+archive/issue_events_004613.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -161,7 +161,7 @@ archive/issue_events_002071.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1915",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1915#event-2071"
+    "url": "https://github.com/sagemath/sagetest/issues/1915#event-4613"
 }
 ```
 
@@ -200,3 +200,20 @@ archive/issue_comments_012105.json:
 ```
 
 Merged in Sage 3.1.2.rc4
+
+
+
+---
+
+archive/issue_events_004614.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-15T03:54:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1915",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1915#event-4614"
+}
+```

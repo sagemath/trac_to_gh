@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7181
 
 ---
 
-archive/issue_events_007400.json:
+archive/issue_events_017002.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -38,7 +38,7 @@ archive/issue_events_007400.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7181",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7181#event-7400"
+    "url": "https://github.com/sagemath/sagetest/issues/7181#event-17002"
 }
 ```
 

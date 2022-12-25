@@ -683,7 +683,7 @@ This ticket can probably be closed once #6140 and #3391 are closed.
 
 ---
 
-archive/issue_events_004443.json:
+archive/issue_events_009530.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -691,7 +691,7 @@ archive/issue_events_004443.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4205#event-4443"
+    "url": "https://github.com/sagemath/sagetest/issues/4205#event-9530"
 }
 ```
 

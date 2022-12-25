@@ -151,6 +151,23 @@ Michael
 
 ---
 
+archive/issue_events_009497.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-30T17:31:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4185",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4185#event-9497"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030315.json:
 ```json
 {
@@ -170,6 +187,40 @@ http://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha0/jmol-11.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_009498.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T10:06:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4185",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4185#event-9498"
+}
+```
+
+
+
+---
+
+archive/issue_events_009499.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T10:06:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4185",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4185#event-9499"
+}
+```
 
 
 
@@ -229,7 +280,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004424.json:
+archive/issue_events_009500.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -237,7 +288,7 @@ archive/issue_events_004424.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4185",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4185#event-4424"
+    "url": "https://github.com/sagemath/sagetest/issues/4185#event-9500"
 }
 ```
 

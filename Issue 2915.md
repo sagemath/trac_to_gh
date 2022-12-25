@@ -128,7 +128,7 @@ REFEREE REPORT:
 
 ---
 
-archive/issue_events_003117.json:
+archive/issue_events_006675.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -136,7 +136,7 @@ archive/issue_events_003117.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2915",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2915#event-3117"
+    "url": "https://github.com/sagemath/sagetest/issues/2915#event-6675"
 }
 ```
 

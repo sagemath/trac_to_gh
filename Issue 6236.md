@@ -773,7 +773,24 @@ Right. Thank you.
 
 ---
 
-archive/issue_events_006481.json:
+archive/issue_events_014612.json:
+```json
+{
+    "actor": "https://github.com/dcoudert",
+    "created_at": "2017-08-20T08:34:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6236",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6236#event-14612"
+}
+```
+
+
+
+---
+
+archive/issue_events_014613.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -781,7 +798,7 @@ archive/issue_events_006481.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6236",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6236#event-6481"
+    "url": "https://github.com/sagemath/sagetest/issues/6236#event-14613"
 }
 ```
 

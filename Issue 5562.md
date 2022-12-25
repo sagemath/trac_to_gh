@@ -121,6 +121,23 @@ sage: v1 * v2
 
 ---
 
+archive/issue_events_013083.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2012-12-10T21:22:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#event-13083"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043205.json:
 ```json
 {
@@ -144,6 +161,40 @@ The patch also removes plenty of trailing whitespace in the affected file. I got
 into my "`.emacs.rc`".
 
 But maybe it might have been better to just give the "wontfix" a positive review instead...
+
+
+
+---
+
+archive/issue_events_013084.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2013-01-28T17:46:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#event-13084"
+}
+```
+
+
+
+---
+
+archive/issue_events_013085.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2013-01-28T17:46:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#event-13085"
+}
+```
 
 
 
@@ -310,7 +361,7 @@ Christian
 
 ---
 
-archive/issue_events_005806.json:
+archive/issue_events_013086.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -318,7 +369,7 @@ archive/issue_events_005806.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5562#event-5806"
+    "url": "https://github.com/sagemath/sagetest/issues/5562#event-13086"
 }
 ```
 

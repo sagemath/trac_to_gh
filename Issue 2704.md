@@ -110,6 +110,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2704
 
 ---
 
+archive/issue_events_006318.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-28T18:25:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#event-6318"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018609.json:
 ```json
 {
@@ -242,7 +259,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_002894.json:
+archive/issue_events_006319.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -250,7 +267,7 @@ archive/issue_events_002894.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2704",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2704#event-2894"
+    "url": "https://github.com/sagemath/sagetest/issues/2704#event-6319"
 }
 ```
 

@@ -67,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3808
 
 ---
 
-archive/issue_events_004030.json:
+archive/issue_events_008740.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
@@ -75,7 +75,7 @@ archive/issue_events_004030.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3808",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3808#event-4030"
+    "url": "https://github.com/sagemath/sagetest/issues/3808#event-8740"
 }
 ```
 

@@ -103,7 +103,7 @@ This is apparently fixed by #6532.
 
 ---
 
-archive/issue_events_005502.json:
+archive/issue_events_012187.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -111,7 +111,7 @@ archive/issue_events_005502.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5246",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5246#event-5502"
+    "url": "https://github.com/sagemath/sagetest/issues/5246#event-12187"
 }
 ```
 
@@ -150,3 +150,20 @@ archive/issue_comments_040142.json:
 ```
 
 Close as duplicate of #4959.
+
+
+
+---
+
+archive/issue_events_012188.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-25T23:24:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5246",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5246#event-12188"
+}
+```

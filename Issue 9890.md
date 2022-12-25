@@ -293,7 +293,24 @@ I put Richard's name in the authors list since he should get the credit for fixi
 
 ---
 
-archive/issue_events_010015.json:
+archive/issue_events_024909.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-10T07:32:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9890",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9890#event-24909"
+}
+```
+
+
+
+---
+
+archive/issue_events_024910.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -301,7 +318,7 @@ archive/issue_events_010015.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9890#event-10015"
+    "url": "https://github.com/sagemath/sagetest/issues/9890#event-24910"
 }
 ```
 

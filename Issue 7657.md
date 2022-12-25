@@ -77,6 +77,125 @@ Has this happened recently? Othrewise this can be closed.
 
 ---
 
+archive/issue_events_018224.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18224"
+}
+```
+
+
+
+---
+
+archive/issue_events_018225.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18225"
+}
+```
+
+
+
+---
+
+archive/issue_events_018226.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18226"
+}
+```
+
+
+
+---
+
+archive/issue_events_018227.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18227"
+}
+```
+
+
+
+---
+
+archive/issue_events_018228.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18228"
+}
+```
+
+
+
+---
+
+archive/issue_events_018229.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18229"
+}
+```
+
+
+
+---
+
+archive/issue_events_018230.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18230"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065385.json:
 ```json
 {
@@ -125,6 +244,40 @@ def worksheet_cell_update(worksheet):
 ```
 
 or if somehow in the code above the computation is interrupted but the same cell is enqueued, this kind of race condition could occur.  I'd recommend either enqueuing a lot of cells at once, or interrupting and restarting a lot of cells, to replicate this - which could be hard.
+
+
+
+---
+
+archive/issue_events_018231.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-03-29T08:15:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18231"
+}
+```
+
+
+
+---
+
+archive/issue_events_018232.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-03-29T08:15:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7657",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18232"
+}
+```
 
 
 
@@ -204,7 +357,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_007878.json:
+archive/issue_events_018233.json:
 ```json
 {
     "actor": "https://github.com/videlec",
@@ -212,6 +365,6 @@ archive/issue_events_007878.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7657",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7657#event-7878"
+    "url": "https://github.com/sagemath/sagetest/issues/7657#event-18233"
 }
 ```

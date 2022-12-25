@@ -289,7 +289,7 @@ Thanks for the review patch.  We'll hopefully get this merged this evening.
 
 ---
 
-archive/issue_events_009009.json:
+archive/issue_events_021590.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -297,7 +297,7 @@ archive/issue_events_009009.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#event-9009"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#event-21590"
 }
 ```
 

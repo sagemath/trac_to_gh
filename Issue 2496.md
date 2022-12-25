@@ -92,7 +92,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2496
 
 ---
 
-archive/issue_events_002677.json:
+archive/issue_events_005876.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -100,7 +100,7 @@ archive/issue_events_002677.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2496#event-2677"
+    "url": "https://github.com/sagemath/sagetest/issues/2496#event-5876"
 }
 ```
 

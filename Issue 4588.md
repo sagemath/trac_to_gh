@@ -65,6 +65,23 @@ One way to implement this though would be in sage-doctest when parsing the docst
 
 ---
 
+archive/issue_events_010437.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-23T01:34:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#event-10437"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034343.json:
 ```json
 {
@@ -250,7 +267,7 @@ Merged in Sage 3.3.alpha2
 
 ---
 
-archive/issue_events_004837.json:
+archive/issue_events_010438.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -258,6 +275,6 @@ archive/issue_events_004837.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4588",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4588#event-4837"
+    "url": "https://github.com/sagemath/sagetest/issues/4588#event-10438"
 }
 ```

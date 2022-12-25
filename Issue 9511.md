@@ -48,6 +48,23 @@ I'm currently working on the upgrade to givaro-3.3.3rc0 together with linbox-1.1
 
 ---
 
+archive/issue_events_023605.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2011-08-23T02:21:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23605"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091237.json:
 ```json
 {
@@ -820,6 +837,40 @@ Positive review.
 
 ---
 
+archive/issue_events_023606.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-26T06:43:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23606"
+}
+```
+
+
+
+---
+
+archive/issue_events_023607.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-26T06:43:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23607"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091268.json:
 ```json
 {
@@ -1247,6 +1298,74 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_023608.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-01T18:54:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23608"
+}
+```
+
+
+
+---
+
+archive/issue_events_023609.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-01T18:54:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23609"
+}
+```
+
+
+
+---
+
+archive/issue_events_023610.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-01T12:33:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23610"
+}
+```
+
+
+
+---
+
+archive/issue_events_023611.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-01T12:33:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23611"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091289.json:
 ```json
 {
@@ -1334,6 +1453,40 @@ archive/issue_comments_091293.json:
 ```
 
 Changing status from needs_work to positive_review.
+
+
+
+---
+
+archive/issue_events_023612.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-17T09:33:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23612"
+}
+```
+
+
+
+---
+
+archive/issue_events_023613.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-17T09:33:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23613"
+}
+```
 
 
 
@@ -1485,7 +1638,41 @@ Superseded by #13164, close this ticket as duplicate.
 
 ---
 
-archive/issue_events_009658.json:
+archive/issue_events_023614.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-03T13:11:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23614"
+}
+```
+
+
+
+---
+
+archive/issue_events_023615.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-03T13:11:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23615"
+}
+```
+
+
+
+---
+
+archive/issue_events_023616.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1493,7 +1680,7 @@ archive/issue_events_009658.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9511#event-9658"
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-23616"
 }
 ```
 

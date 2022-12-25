@@ -72,6 +72,23 @@ Changing assignee from @williamstein to @craigcitro.
 
 ---
 
+archive/issue_events_005927.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-12T23:46:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2527",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2527#event-5927"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017204.json:
 ```json
 {
@@ -112,7 +129,7 @@ Michael
 
 ---
 
-archive/issue_events_002708.json:
+archive/issue_events_005928.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -120,6 +137,6 @@ archive/issue_events_002708.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2527",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2527#event-2708"
+    "url": "https://github.com/sagemath/sagetest/issues/2527#event-5928"
 }
 ```

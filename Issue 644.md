@@ -77,6 +77,23 @@ sage: f(1)
 
 ---
 
+archive/issue_events_001715.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-12T20:34:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/644",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/644#event-1715"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003326.json:
 ```json
 {
@@ -157,6 +174,40 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
+archive/issue_events_001716.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-01T06:50:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/644",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/644#event-1716"
+}
+```
+
+
+
+---
+
+archive/issue_events_001717.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-01T06:50:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/644",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/644#event-1717"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003330.json:
 ```json
 {
@@ -175,7 +226,7 @@ This patch should be applied after #644.
 
 ---
 
-archive/issue_events_000708.json:
+archive/issue_events_001718.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -183,7 +234,7 @@ archive/issue_events_000708.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/644#event-708"
+    "url": "https://github.com/sagemath/sagetest/issues/644#event-1718"
 }
 ```
 

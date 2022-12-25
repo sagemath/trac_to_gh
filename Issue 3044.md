@@ -64,6 +64,23 @@ Attachment [trac_3044_phcpack.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_006893.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-27T14:14:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3044",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3044#event-6893"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020918.json:
 ```json
 {
@@ -136,7 +153,7 @@ Looks good!  Doctests pass with phc installed; the plot looks pretty; and after 
 
 ---
 
-archive/issue_events_003251.json:
+archive/issue_events_006894.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -144,7 +161,7 @@ archive/issue_events_003251.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#event-3251"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#event-6894"
 }
 ```
 
@@ -183,3 +200,37 @@ archive/issue_comments_020923.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006895.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T11:28:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3044",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3044#event-6895"
+}
+```
+
+
+
+---
+
+archive/issue_events_006896.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T11:28:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3044",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3044#event-6896"
+}
+```

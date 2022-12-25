@@ -117,6 +117,23 @@ The simple server does not currently work at all; however, the [Sage cell server
 
 ---
 
+archive/issue_events_022850.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-06-14T17:11:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9275",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9275#event-22850"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087232.json:
 ```json
 {
@@ -189,7 +206,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_009437.json:
+archive/issue_events_022851.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -197,6 +214,6 @@ archive/issue_events_009437.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9275",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9275#event-9437"
+    "url": "https://github.com/sagemath/sagetest/issues/9275#event-22851"
 }
 ```

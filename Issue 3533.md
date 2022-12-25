@@ -788,7 +788,7 @@ REVIEW:
 
 ---
 
-archive/issue_events_003752.json:
+archive/issue_events_008065.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -796,7 +796,7 @@ archive/issue_events_003752.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3533",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3533#event-3752"
+    "url": "https://github.com/sagemath/sagetest/issues/3533#event-8065"
 }
 ```
 

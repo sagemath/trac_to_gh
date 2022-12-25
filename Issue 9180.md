@@ -157,6 +157,23 @@ Should all 3 patches be applied?
 
 ---
 
+archive/issue_events_022574.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-19T08:42:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9180",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9180#event-22574"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085751.json:
 ```json
 {
@@ -193,7 +210,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009337.json:
+archive/issue_events_022575.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -201,7 +218,7 @@ archive/issue_events_009337.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9180#event-9337"
+    "url": "https://github.com/sagemath/sagetest/issues/9180#event-22575"
 }
 ```
 

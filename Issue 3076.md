@@ -65,7 +65,7 @@ Fixed in Sage 3.0.1.rc0
 
 ---
 
-archive/issue_events_003290.json:
+archive/issue_events_006952.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -73,6 +73,6 @@ archive/issue_events_003290.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3076",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3076#event-3290"
+    "url": "https://github.com/sagemath/sagetest/issues/3076#event-6952"
 }
 ```

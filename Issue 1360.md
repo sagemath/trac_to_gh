@@ -86,6 +86,23 @@ Changing assignee from @mwhansen to @rlmill.
 
 ---
 
+archive/issue_events_003515.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-02T04:37:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1360",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1360#event-3515"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008689.json:
 ```json
 {
@@ -165,7 +182,7 @@ Wall time: 0.15
 
 ---
 
-archive/issue_events_001501.json:
+archive/issue_events_003516.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -173,7 +190,7 @@ archive/issue_events_001501.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1360#event-1501"
+    "url": "https://github.com/sagemath/sagetest/issues/1360#event-3516"
 }
 ```
 
@@ -227,3 +244,37 @@ Permutation Group with generators [(1,6)(9,14)(18,28)(19,29)(34,44)(35,45)(50,60
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003517.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-20T10:31:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1360",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1360#event-3517"
+}
+```
+
+
+
+---
+
+archive/issue_events_003518.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-20T10:31:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1360",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1360#event-3518"
+}
+```

@@ -332,7 +332,7 @@ Changing component from algebra to linear algebra.
 
 ---
 
-archive/issue_events_009650.json:
+archive/issue_events_023584.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -340,7 +340,7 @@ archive/issue_events_009650.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9502",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9502#event-9650"
+    "url": "https://github.com/sagemath/sagetest/issues/9502#event-23584"
 }
 ```
 

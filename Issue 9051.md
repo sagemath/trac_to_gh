@@ -690,7 +690,7 @@ in 4.5.2.alpha0.  Please correct the Author(s) and Reviewer(s) fields, if I'm wr
 
 ---
 
-archive/issue_events_009202.json:
+archive/issue_events_022174.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -698,7 +698,7 @@ archive/issue_events_009202.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9051#event-9202"
+    "url": "https://github.com/sagemath/sagetest/issues/9051#event-22174"
 }
 ```
 

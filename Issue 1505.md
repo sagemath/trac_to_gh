@@ -92,7 +92,7 @@ oh, 'make test' passes on 64-bit Linux.
 
 ---
 
-archive/issue_events_001659.json:
+archive/issue_events_003814.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -100,7 +100,7 @@ archive/issue_events_001659.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1505",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1505#event-1659"
+    "url": "https://github.com/sagemath/sagetest/issues/1505#event-3814"
 }
 ```
 

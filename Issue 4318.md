@@ -83,6 +83,57 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
+archive/issue_events_009761.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-02T06:06:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4318",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4318#event-9761"
+}
+```
+
+
+
+---
+
+archive/issue_events_009762.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T11:58:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4318",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4318#event-9762"
+}
+```
+
+
+
+---
+
+archive/issue_events_009763.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T11:58:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4318",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4318#event-9763"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031544.json:
 ```json
 {
@@ -101,7 +152,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004561.json:
+archive/issue_events_009764.json:
 ```json
 {
     "actor": "https://github.com/mezzarobba",
@@ -109,7 +160,7 @@ archive/issue_events_004561.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4318#event-4561"
+    "url": "https://github.com/sagemath/sagetest/issues/4318#event-9764"
 }
 ```
 
@@ -153,7 +204,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004562.json:
+archive/issue_events_009765.json:
 ```json
 {
     "actor": "https://github.com/mezzarobba",
@@ -161,7 +212,7 @@ archive/issue_events_004562.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4318#event-4562"
+    "url": "https://github.com/sagemath/sagetest/issues/4318#event-9765"
 }
 ```
 
@@ -304,7 +355,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004563.json:
+archive/issue_events_009766.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -312,7 +363,7 @@ archive/issue_events_004563.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4318#event-4563"
+    "url": "https://github.com/sagemath/sagetest/issues/4318#event-9766"
 }
 ```
 

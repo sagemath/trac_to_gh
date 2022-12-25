@@ -184,7 +184,7 @@ Positive review.
 
 ---
 
-archive/issue_events_009071.json:
+archive/issue_events_021774.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -192,7 +192,7 @@ archive/issue_events_009071.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8915",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8915#event-9071"
+    "url": "https://github.com/sagemath/sagetest/issues/8915#event-21774"
 }
 ```
 

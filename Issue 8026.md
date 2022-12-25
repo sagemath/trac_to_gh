@@ -29,7 +29,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8026
 
 ---
 
-archive/issue_events_008237.json:
+archive/issue_events_019230.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -37,7 +37,7 @@ archive/issue_events_008237.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8026",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8026#event-8237"
+    "url": "https://github.com/sagemath/sagetest/issues/8026#event-19230"
 }
 ```
 
@@ -78,6 +78,23 @@ archive/issue_comments_069994.json:
 This is a basically a duplicate of #8024, thought #8024 says a Fortran compiler, rather than gfortran. Since you consider this critical, I'll change priority of #8024. (I'm working on it anyway, and will have something before the end of the day). 
 
 Dave
+
+
+
+---
+
+archive/issue_events_019231.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-26T00:20:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8026",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8026#event-19231"
+}
+```
 
 
 

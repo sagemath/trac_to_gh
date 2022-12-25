@@ -56,6 +56,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8158
 
 ---
 
+archive/issue_events_019540.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#event-19540"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071626.json:
 ```json
 {
@@ -89,6 +106,40 @@ Wall time: 34.89 s
 ```
 
 Paul
+
+
+
+---
+
+archive/issue_events_019541.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#event-19541"
+}
+```
+
+
+
+---
+
+archive/issue_events_019542.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#event-19542"
+}
+```
 
 
 
@@ -169,6 +220,40 @@ archive/issue_comments_071628.json:
 the speedup obtained with tcmalloc is impressive, could this be useful in other parts of Sage?
 
 Paul
+
+
+
+---
+
+archive/issue_events_019543.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-16T09:19:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#event-19543"
+}
+```
+
+
+
+---
+
+archive/issue_events_019544.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-16T09:19:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#event-19544"
+}
+```
 
 
 

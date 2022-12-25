@@ -39,6 +39,125 @@ Issue created by migration from https://trac.sagemath.org/ticket/7960
 
 ---
 
+archive/issue_events_019048.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19048"
+}
+```
+
+
+
+---
+
+archive/issue_events_019049.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19049"
+}
+```
+
+
+
+---
+
+archive/issue_events_019050.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19050"
+}
+```
+
+
+
+---
+
+archive/issue_events_019051.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19051"
+}
+```
+
+
+
+---
+
+archive/issue_events_019052.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19052"
+}
+```
+
+
+
+---
+
+archive/issue_events_019053.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19053"
+}
+```
+
+
+
+---
+
+archive/issue_events_019054.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19054"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069341.json:
 ```json
 {
@@ -54,6 +173,40 @@ archive/issue_comments_069341.json:
 cc'ing me.
 
 The function `sage.rings.number_field.number_field_morphisms.create_embedding_from_approx` should really be smarter. This is related to what I am currently doing in #17830.
+
+
+
+---
+
+archive/issue_events_019055.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2018-09-22T14:31:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19055"
+}
+```
+
+
+
+---
+
+archive/issue_events_019056.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2018-09-22T14:31:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7960",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19056"
+}
+```
 
 
 
@@ -196,7 +349,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008176.json:
+archive/issue_events_019057.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -204,7 +357,7 @@ archive/issue_events_008176.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7960#event-8176"
+    "url": "https://github.com/sagemath/sagetest/issues/7960#event-19057"
 }
 ```
 

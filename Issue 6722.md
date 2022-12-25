@@ -66,7 +66,7 @@ Executation.
 
 ---
 
-archive/issue_events_006956.json:
+archive/issue_events_015866.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -74,7 +74,7 @@ archive/issue_events_006956.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6722",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6722#event-6956"
+    "url": "https://github.com/sagemath/sagetest/issues/6722#event-15866"
 }
 ```
 

@@ -283,7 +283,7 @@ Merged nf-from-algebraic-v2.patch and nf-from-algebraic-response.patch  in Sage 
 
 ---
 
-archive/issue_events_002473.json:
+archive/issue_events_005420.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -291,6 +291,6 @@ archive/issue_events_002473.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2298#event-2473"
+    "url": "https://github.com/sagemath/sagetest/issues/2298#event-5420"
 }
 ```

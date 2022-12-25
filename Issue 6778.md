@@ -66,7 +66,7 @@ This is a simple patch for a simple bug.  I filed a duplicate ticket for this at
 
 ---
 
-archive/issue_events_007009.json:
+archive/issue_events_015974.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -74,7 +74,7 @@ archive/issue_events_007009.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6778",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6778#event-7009"
+    "url": "https://github.com/sagemath/sagetest/issues/6778#event-15974"
 }
 ```
 

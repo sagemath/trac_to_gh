@@ -222,6 +222,23 @@ No objections.  If you think this patch can make it into sage-4.5.3, go ahead an
 
 ---
 
+archive/issue_events_024382.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-14T19:39:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9738",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9738#event-24382"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095057.json:
 ```json
 {
@@ -314,7 +331,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009870.json:
+archive/issue_events_024383.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -322,6 +339,6 @@ archive/issue_events_009870.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9738#event-9870"
+    "url": "https://github.com/sagemath/sagetest/issues/9738#event-24383"
 }
 ```

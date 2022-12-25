@@ -115,7 +115,7 @@ and the output is put into the separate output area.
 
 ---
 
-archive/issue_events_001772.json:
+archive/issue_events_004013.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -123,7 +123,7 @@ archive/issue_events_001772.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1613",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1613#event-1772"
+    "url": "https://github.com/sagemath/sagetest/issues/1613#event-4013"
 }
 ```
 

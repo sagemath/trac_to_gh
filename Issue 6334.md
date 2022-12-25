@@ -171,6 +171,23 @@ Attachment [stock-tests.txt](tarball://root/attachments/some-uuid/ticket6334/sto
 
 ---
 
+archive/issue_events_014881.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2013-01-11T11:05:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6334",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6334#event-14881"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050465.json:
 ```json
 {
@@ -249,7 +266,7 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_events_006579.json:
+archive/issue_events_014882.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -257,7 +274,7 @@ archive/issue_events_006579.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6334#event-6579"
+    "url": "https://github.com/sagemath/sagetest/issues/6334#event-14882"
 }
 ```
 

@@ -72,7 +72,7 @@ This works on 2.10.2, I was using 2.10 at the time. Sorry for the noise.
 
 ---
 
-archive/issue_events_002584.json:
+archive/issue_events_005680.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -80,7 +80,7 @@ archive/issue_events_002584.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2408",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2408#event-2584"
+    "url": "https://github.com/sagemath/sagetest/issues/2408#event-5680"
 }
 ```
 

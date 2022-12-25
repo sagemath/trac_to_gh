@@ -133,6 +133,23 @@ Closing as it's about a very outdated notebook version.
 
 ---
 
+archive/issue_events_020617.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-16T07:43:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8556",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8556#event-20617"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077283.json:
 ```json
 {
@@ -151,7 +168,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008738.json:
+archive/issue_events_020618.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -159,6 +176,6 @@ archive/issue_events_008738.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8556",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8556#event-8738"
+    "url": "https://github.com/sagemath/sagetest/issues/8556#event-20618"
 }
 ```

@@ -206,6 +206,23 @@ The following tests failed:
 
 ---
 
+archive/issue_events_012520.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-04-12T08:10:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5371",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5371#event-12520"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041285.json:
 ```json
 {
@@ -261,6 +278,40 @@ archive/issue_comments_041287.json:
 Attachment [trac_5371_reviewer-2.patch](tarball://root/attachments/some-uuid/ticket5371/trac_5371_reviewer-2.patch) by mabshoff created at 2009-04-13 04:56:46
 
 Add a doctest, slightly rewrite the example
+
+
+
+---
+
+archive/issue_events_012521.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-17T22:48:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5371",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5371#event-12521"
+}
+```
+
+
+
+---
+
+archive/issue_events_012522.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-17T22:48:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5371",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5371#event-12522"
+}
+```
 
 
 
@@ -521,7 +572,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005626.json:
+archive/issue_events_012523.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -529,6 +580,6 @@ archive/issue_events_005626.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5371#event-5626"
+    "url": "https://github.com/sagemath/sagetest/issues/5371#event-12523"
 }
 ```

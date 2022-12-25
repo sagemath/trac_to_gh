@@ -1308,6 +1308,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_025148.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-11-04T08:58:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9966",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9966#event-25148"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099704.json:
 ```json
 {
@@ -1326,6 +1343,40 @@ Changing component from doctest to doctest framework.
 
 ---
 
+archive/issue_events_025149.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9966",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9966#event-25149"
+}
+```
+
+
+
+---
+
+archive/issue_events_025150.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9966",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9966#event-25150"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099705.json:
 ```json
 {
@@ -1339,6 +1390,40 @@ archive/issue_comments_099705.json:
 ```
 
 Changing status from needs_work to positive_review.
+
+
+
+---
+
+archive/issue_events_025151.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-01-28T16:55:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9966",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9966#event-25151"
+}
+```
+
+
+
+---
+
+archive/issue_events_025152.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-01-28T16:55:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9966",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9966#event-25152"
+}
+```
 
 
 
@@ -1380,7 +1465,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010093.json:
+archive/issue_events_025153.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1388,6 +1473,6 @@ archive/issue_events_010093.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9966#event-10093"
+    "url": "https://github.com/sagemath/sagetest/issues/9966#event-25153"
 }
 ```

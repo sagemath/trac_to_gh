@@ -287,7 +287,7 @@ Positive review; apply both patches.
 
 ---
 
-archive/issue_events_005214.json:
+archive/issue_events_011500.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -295,7 +295,7 @@ archive/issue_events_005214.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4972#event-5214"
+    "url": "https://github.com/sagemath/sagetest/issues/4972#event-11500"
 }
 ```
 

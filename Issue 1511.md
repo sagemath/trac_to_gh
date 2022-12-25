@@ -212,6 +212,23 @@ Positi
 
 ---
 
+archive/issue_events_003824.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-15T23:54:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1511",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1511#event-3824"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009668.json:
 ```json
 {
@@ -250,7 +267,7 @@ Merged in 2.9.rc2.
 
 ---
 
-archive/issue_events_001665.json:
+archive/issue_events_003825.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -258,6 +275,6 @@ archive/issue_events_001665.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1511#event-1665"
+    "url": "https://github.com/sagemath/sagetest/issues/1511#event-3825"
 }
 ```

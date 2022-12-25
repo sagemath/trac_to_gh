@@ -63,6 +63,23 @@ sorry I opened another ticket #10256 about this. I should have modified here but
 
 ---
 
+archive/issue_events_023696.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9535",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9535#event-23696"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091687.json:
 ```json
 {
@@ -94,6 +111,40 @@ archive/issue_comments_091688.json:
 ```
 
 This is indeed a duplicate of #10256. This one here can be closed.
+
+
+
+---
+
+archive/issue_events_023697.json:
+```json
+{
+    "actor": "https://github.com/categorie",
+    "created_at": "2013-12-27T00:42:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9535",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9535#event-23697"
+}
+```
+
+
+
+---
+
+archive/issue_events_023698.json:
+```json
+{
+    "actor": "https://github.com/categorie",
+    "created_at": "2013-12-27T00:42:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9535",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9535#event-23698"
+}
+```
 
 
 
@@ -135,7 +186,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009685.json:
+archive/issue_events_023699.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -143,7 +194,7 @@ archive/issue_events_009685.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9535",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9535#event-9685"
+    "url": "https://github.com/sagemath/sagetest/issues/9535#event-23699"
 }
 ```
 

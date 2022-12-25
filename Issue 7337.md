@@ -66,7 +66,7 @@ This no longer fails with Cygwin 1.7.
 
 ---
 
-archive/issue_events_007559.json:
+archive/issue_events_017361.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -74,7 +74,24 @@ archive/issue_events_007559.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7337#event-7559"
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-17361"
+}
+```
+
+
+
+---
+
+archive/issue_events_017362.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-02-17T08:12:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7337",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-17362"
 }
 ```
 
@@ -136,7 +153,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007560.json:
+archive/issue_events_017363.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -144,7 +161,7 @@ archive/issue_events_007560.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7337#event-7560"
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-17363"
 }
 ```
 
@@ -224,7 +241,7 @@ looks good
 
 ---
 
-archive/issue_events_007561.json:
+archive/issue_events_017364.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -232,7 +249,7 @@ archive/issue_events_007561.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7337#event-7561"
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-17364"
 }
 ```
 
@@ -253,3 +270,37 @@ archive/issue_comments_061291.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_017365.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-27T04:22:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7337",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-17365"
+}
+```
+
+
+
+---
+
+archive/issue_events_017366.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-27T04:22:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7337",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-17366"
+}
+```

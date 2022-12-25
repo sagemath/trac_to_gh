@@ -54,7 +54,7 @@ Michael
 
 ---
 
-archive/issue_events_002201.json:
+archive/issue_events_004907.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -62,7 +62,7 @@ archive/issue_events_002201.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2043",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2043#event-2201"
+    "url": "https://github.com/sagemath/sagetest/issues/2043#event-4907"
 }
 ```
 

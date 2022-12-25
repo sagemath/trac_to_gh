@@ -50,6 +50,23 @@ To test this you should really test the doctests in ell_rational_field.py both b
 
 ---
 
+archive/issue_events_008713.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-10T00:31:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3793",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3793#event-8713"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026912.json:
 ```json
 {
@@ -110,7 +127,7 @@ ok, so it already has a positive review!  Thanks!
 
 ---
 
-archive/issue_events_004015.json:
+archive/issue_events_008714.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -118,7 +135,7 @@ archive/issue_events_004015.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3793",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3793#event-4015"
+    "url": "https://github.com/sagemath/sagetest/issues/3793#event-8714"
 }
 ```
 

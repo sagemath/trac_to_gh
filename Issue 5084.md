@@ -66,6 +66,23 @@ Changing component from algebra to combinatorics.
 
 ---
 
+archive/issue_events_011732.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2009-01-24T03:14:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5084",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5084#event-11732"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038674.json:
 ```json
 {
@@ -174,6 +191,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_011733.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2013-02-26T15:55:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5084",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5084#event-11733"
+}
+```
+
+
+
+---
+
+archive/issue_events_011734.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2013-02-26T15:55:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5084",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5084#event-11734"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038677.json:
 ```json
 {
@@ -250,7 +301,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_005329.json:
+archive/issue_events_011735.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -258,6 +309,6 @@ archive/issue_events_005329.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5084#event-5329"
+    "url": "https://github.com/sagemath/sagetest/issues/5084#event-11735"
 }
 ```

@@ -88,6 +88,23 @@ Changing component from Cygwin to packages.
 
 ---
 
+archive/issue_events_006725.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-16T09:54:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2941",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2941#event-6725"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020216.json:
 ```json
 {
@@ -255,7 +272,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003145.json:
+archive/issue_events_006726.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -263,7 +280,7 @@ archive/issue_events_003145.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#event-3145"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#event-6726"
 }
 ```
 

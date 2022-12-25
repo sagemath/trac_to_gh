@@ -322,6 +322,23 @@ Exception raised:
 
 ---
 
+archive/issue_events_010050.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-07T09:58:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4453",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4453#event-10050"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032774.json:
 ```json
 {
@@ -696,6 +713,40 @@ Rob's patch looks fine to me, and patchbot's happy with it, so let's get this in
 
 ---
 
+archive/issue_events_010051.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-29T21:29:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4453",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4453#event-10051"
+}
+```
+
+
+
+---
+
+archive/issue_events_010052.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-29T21:29:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4453",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4453#event-10052"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032793.json:
 ```json
 {
@@ -786,7 +837,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004699.json:
+archive/issue_events_010053.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -794,6 +845,6 @@ archive/issue_events_004699.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4453",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4453#event-4699"
+    "url": "https://github.com/sagemath/sagetest/issues/4453#event-10053"
 }
 ```

@@ -112,6 +112,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_005012.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-08T22:27:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2093",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2093#event-5012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013501.json:
 ```json
 {
@@ -166,7 +183,7 @@ This was fixed by #5413. This call behavior is deprecated in 3.4.1.
 
 ---
 
-archive/issue_events_002253.json:
+archive/issue_events_005013.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -174,6 +191,40 @@ archive/issue_events_002253.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2093",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2093#event-2253"
+    "url": "https://github.com/sagemath/sagetest/issues/2093#event-5013"
+}
+```
+
+
+
+---
+
+archive/issue_events_005014.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-20T03:56:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2093",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2093#event-5014"
+}
+```
+
+
+
+---
+
+archive/issue_events_005015.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-20T03:56:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2093",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2093#event-5015"
 }
 ```

@@ -249,7 +249,24 @@ Tim Dumol has kindly merged v2 with #6840's v1.  Please close this ticket when #
 
 ---
 
-archive/issue_events_005615.json:
+archive/issue_events_012498.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-31T12:12:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5360",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5360#event-12498"
+}
+```
+
+
+
+---
+
+archive/issue_events_012499.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -257,7 +274,7 @@ archive/issue_events_005615.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5360#event-5615"
+    "url": "https://github.com/sagemath/sagetest/issues/5360#event-12499"
 }
 ```
 

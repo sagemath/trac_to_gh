@@ -94,7 +94,7 @@ This builds on 32-bit OSX smoothly.
 
 ---
 
-archive/issue_events_003412.json:
+archive/issue_events_007197.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -102,7 +102,7 @@ archive/issue_events_003412.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3194",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3194#event-3412"
+    "url": "https://github.com/sagemath/sagetest/issues/3194#event-7197"
 }
 ```
 

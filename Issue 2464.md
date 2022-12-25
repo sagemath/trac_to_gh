@@ -46,7 +46,24 @@ Attachment [scripts-2464.patch](tarball://root/attachments/some-uuid/ticket2464/
 
 ---
 
-archive/issue_events_002643.json:
+archive/issue_events_005812.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-11T01:30:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2464",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2464#event-5812"
+}
+```
+
+
+
+---
+
+archive/issue_events_005813.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -54,7 +71,7 @@ archive/issue_events_002643.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2464",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2464#event-2643"
+    "url": "https://github.com/sagemath/sagetest/issues/2464#event-5813"
 }
 ```
 

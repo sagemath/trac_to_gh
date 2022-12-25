@@ -65,6 +65,23 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ---
 
+archive/issue_events_022159.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22159"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083635.json:
 ```json
 {
@@ -158,6 +175,108 @@ i.e., it seems that all results from statements contained entirely on the last l
 
 ---
 
+archive/issue_events_022160.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22160"
+}
+```
+
+
+
+---
+
+archive/issue_events_022161.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22161"
+}
+```
+
+
+
+---
+
+archive/issue_events_022162.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22162"
+}
+```
+
+
+
+---
+
+archive/issue_events_022163.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22163"
+}
+```
+
+
+
+---
+
+archive/issue_events_022164.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22164"
+}
+```
+
+
+
+---
+
+archive/issue_events_022165.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22165"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083637.json:
 ```json
 {
@@ -171,6 +290,40 @@ archive/issue_comments_083637.json:
 ```
 
 I've added `automatic_names` in the description as a reminder, since we write in our book about Sage (which is currently being translated to english) that `automatic_names` does not work in the terminal version.
+
+
+
+---
+
+archive/issue_events_022166.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-07-14T09:20:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22166"
+}
+```
+
+
+
+---
+
+archive/issue_events_022167.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-07-14T09:20:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9048",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9048#event-22167"
+}
+```
 
 
 

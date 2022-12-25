@@ -56,6 +56,23 @@ Changing assignee from John Cremona to @JohnCremona.
 
 ---
 
+archive/issue_events_002015.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T15:17:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/740",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/740#event-2015"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004316.json:
 ```json
 {
@@ -360,7 +377,7 @@ Merged 8087.patch and 8088.patch in Sage 2.10.1.rc3
 
 ---
 
-archive/issue_events_000829.json:
+archive/issue_events_002016.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -368,6 +385,6 @@ archive/issue_events_000829.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/740#event-829"
+    "url": "https://github.com/sagemath/sagetest/issues/740#event-2016"
 }
 ```

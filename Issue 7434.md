@@ -120,6 +120,23 @@ LGTM.
 
 ---
 
+archive/issue_events_017612.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T08:27:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7434",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7434#event-17612"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062435.json:
 ```json
 {
@@ -334,7 +351,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007657.json:
+archive/issue_events_017613.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -342,6 +359,6 @@ archive/issue_events_007657.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7434#event-7657"
+    "url": "https://github.com/sagemath/sagetest/issues/7434#event-17613"
 }
 ```

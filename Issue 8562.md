@@ -443,7 +443,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008741.json:
+archive/issue_events_020658.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -451,6 +451,6 @@ archive/issue_events_008741.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#event-8741"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#event-20658"
 }
 ```

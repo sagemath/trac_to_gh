@@ -28,7 +28,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/326
 
 ---
 
-archive/issue_events_000348.json:
+archive/issue_events_000756.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -36,7 +36,7 @@ archive/issue_events_000348.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/326#event-348"
+    "url": "https://github.com/sagemath/sagetest/issues/326#event-756"
 }
 ```
 
@@ -103,7 +103,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000349.json:
+archive/issue_events_000757.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -111,7 +111,7 @@ archive/issue_events_000349.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/326#event-349"
+    "url": "https://github.com/sagemath/sagetest/issues/326#event-757"
 }
 ```
 
@@ -137,7 +137,7 @@ Resolution changed from invalid to
 
 ---
 
-archive/issue_events_000350.json:
+archive/issue_events_000758.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -145,7 +145,7 @@ archive/issue_events_000350.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/326#event-350"
+    "url": "https://github.com/sagemath/sagetest/issues/326#event-758"
 }
 ```
 

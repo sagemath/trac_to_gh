@@ -308,7 +308,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007185.json:
+archive/issue_events_016367.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -316,7 +316,7 @@ archive/issue_events_007185.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6962#event-7185"
+    "url": "https://github.com/sagemath/sagetest/issues/6962#event-16367"
 }
 ```
 
@@ -337,3 +337,20 @@ archive/issue_comments_057501.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_016368.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:45:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#event-16368"
+}
+```

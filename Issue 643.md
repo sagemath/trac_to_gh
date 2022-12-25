@@ -122,7 +122,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000705.json:
+archive/issue_events_001709.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
@@ -130,7 +130,7 @@ archive/issue_events_000705.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/643#event-705"
+    "url": "https://github.com/sagemath/sagetest/issues/643#event-1709"
 }
 ```
 
@@ -174,7 +174,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000706.json:
+archive/issue_events_001710.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
@@ -182,7 +182,7 @@ archive/issue_events_000706.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/643#event-706"
+    "url": "https://github.com/sagemath/sagetest/issues/643#event-1710"
 }
 ```
 
@@ -305,6 +305,23 @@ Changing assignee from boothby to @williamstein.
 
 ---
 
+archive/issue_events_001711.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T18:56:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/643#event-1711"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003317.json:
 ```json
 {
@@ -381,6 +398,40 @@ Accidental upload
 
 ---
 
+archive/issue_events_001712.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T19:02:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/643#event-1712"
+}
+```
+
+
+
+---
+
+archive/issue_events_001713.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T19:02:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/643#event-1713"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003321.json:
 ```json
 {
@@ -435,7 +486,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000707.json:
+archive/issue_events_001714.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -443,7 +494,7 @@ archive/issue_events_000707.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/643#event-707"
+    "url": "https://github.com/sagemath/sagetest/issues/643#event-1714"
 }
 ```
 

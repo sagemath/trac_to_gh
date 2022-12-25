@@ -142,7 +142,7 @@ Should we close this?
 
 ---
 
-archive/issue_events_006511.json:
+archive/issue_events_014672.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -150,7 +150,24 @@ archive/issue_events_006511.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6267",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6267#event-6511"
+    "url": "https://github.com/sagemath/sagetest/issues/6267#event-14672"
+}
+```
+
+
+
+---
+
+archive/issue_events_014673.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-02T05:04:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6267",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6267#event-14673"
 }
 ```
 

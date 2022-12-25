@@ -82,7 +82,7 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/89313eebbcc37bf2
 
 ---
 
-archive/issue_events_001576.json:
+archive/issue_events_003673.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -90,7 +90,7 @@ archive/issue_events_001576.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1429",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1429#event-1576"
+    "url": "https://github.com/sagemath/sagetest/issues/1429#event-3673"
 }
 ```
 

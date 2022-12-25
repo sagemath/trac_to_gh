@@ -143,7 +143,7 @@ The patch `trac_6372-rebased.patch` is rebased against Sage 4.1.alpha1. It depen
 
 ---
 
-archive/issue_events_006620.json:
+archive/issue_events_015017.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -151,7 +151,7 @@ archive/issue_events_006620.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6372",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6372#event-6620"
+    "url": "https://github.com/sagemath/sagetest/issues/6372#event-15017"
 }
 ```
 

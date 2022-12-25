@@ -86,6 +86,23 @@ Michael
 
 ---
 
+archive/issue_events_013505.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-13T03:40:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5761",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5761#event-13505"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044943.json:
 ```json
 {
@@ -375,7 +392,7 @@ Apply only: trac_5761-latex_docstrings-ts.patch
 
 ---
 
-archive/issue_events_006008.json:
+archive/issue_events_013506.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -383,7 +400,7 @@ archive/issue_events_006008.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5761#event-6008"
+    "url": "https://github.com/sagemath/sagetest/issues/5761#event-13506"
 }
 ```
 

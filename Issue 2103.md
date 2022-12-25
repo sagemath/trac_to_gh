@@ -98,6 +98,23 @@ patch against 3.1.2
 
 ---
 
+archive/issue_events_005044.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2008-09-22T19:28:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2103",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2103#event-5044"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013674.json:
 ```json
 {
@@ -445,7 +462,7 @@ I am happy to give this a positive review, reinforcing Craig's.
 
 ---
 
-archive/issue_events_002263.json:
+archive/issue_events_005045.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -453,7 +470,7 @@ archive/issue_events_002263.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2103#event-2263"
+    "url": "https://github.com/sagemath/sagetest/issues/2103#event-5045"
 }
 ```
 
@@ -492,3 +509,37 @@ archive/issue_comments_013689.json:
 ```
 
 Merged in Sage 3.2.alpha2
+
+
+
+---
+
+archive/issue_events_005046.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-29T13:47:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2103",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2103#event-5046"
+}
+```
+
+
+
+---
+
+archive/issue_events_005047.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-29T13:47:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2103",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2103#event-5047"
+}
+```

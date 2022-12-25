@@ -162,7 +162,7 @@ Merged in the experimental package repo
 
 ---
 
-archive/issue_events_002026.json:
+archive/issue_events_004518.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -170,7 +170,7 @@ archive/issue_events_002026.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1868",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1868#event-2026"
+    "url": "https://github.com/sagemath/sagetest/issues/1868#event-4518"
 }
 ```
 

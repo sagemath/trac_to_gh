@@ -120,6 +120,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_024921.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-09-27T09:00:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-24921"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097893.json:
 ```json
 {
@@ -174,7 +191,7 @@ Positive review of the proposal to close as duplicate.
 
 ---
 
-archive/issue_events_010017.json:
+archive/issue_events_024922.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -182,7 +199,7 @@ archive/issue_events_010017.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10017"
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-24922"
 }
 ```
 
@@ -226,6 +243,40 @@ I'm closing this now.  Feel free to reopen it, if #10018 ultimately does not sub
 
 ---
 
+archive/issue_events_024923.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-17T08:39:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-24923"
+}
+```
+
+
+
+---
+
+archive/issue_events_024924.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-17T08:39:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-24924"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097898.json:
 ```json
 {
@@ -244,7 +295,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_010018.json:
+archive/issue_events_024925.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -252,7 +303,7 @@ archive/issue_events_010018.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10018"
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-24925"
 }
 ```
 
@@ -480,7 +531,7 @@ Thanks!
 
 ---
 
-archive/issue_events_010019.json:
+archive/issue_events_024926.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -488,7 +539,7 @@ archive/issue_events_010019.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10019"
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-24926"
 }
 ```
 
@@ -550,7 +601,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_010020.json:
+archive/issue_events_024927.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -558,7 +609,7 @@ archive/issue_events_010020.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10020"
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-24927"
 }
 ```
 
@@ -638,7 +689,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010021.json:
+archive/issue_events_024928.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -646,6 +697,6 @@ archive/issue_events_010021.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10021"
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-24928"
 }
 ```

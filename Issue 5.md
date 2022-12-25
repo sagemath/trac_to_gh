@@ -65,6 +65,23 @@ Changing assignee from somebody to boothby.
 
 ---
 
+archive/issue_events_000005.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:41:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5#event-5"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000018.json:
 ```json
 {
@@ -83,7 +100,7 @@ Apparently I'm the only person who has ever requested this, and I don't particul
 
 ---
 
-archive/issue_events_000005.json:
+archive/issue_events_000006.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -91,7 +108,7 @@ archive/issue_events_000005.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5#event-5"
+    "url": "https://github.com/sagemath/sagetest/issues/5#event-6"
 }
 ```
 
@@ -112,3 +129,20 @@ archive/issue_comments_000019.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_000007.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-16T17:43:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5#event-7"
+}
+```

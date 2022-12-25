@@ -120,6 +120,23 @@ Perhaps this should be changed to an enhancement. Assume() is currently only the
 
 ---
 
+archive/issue_events_005030.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-08T22:27:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2095",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2095#event-5030"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013527.json:
 ```json
 {
@@ -156,7 +173,7 @@ Changing assignee from @williamstein to @garyfurnish.
 
 ---
 
-archive/issue_events_002255.json:
+archive/issue_events_005031.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -164,7 +181,7 @@ archive/issue_events_002255.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2095#event-2255"
+    "url": "https://github.com/sagemath/sagetest/issues/2095#event-5031"
 }
 ```
 
@@ -204,3 +221,20 @@ archive/issue_comments_013530.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_005032.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-16T21:06:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2095",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2095#event-5032"
+}
+```

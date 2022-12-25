@@ -77,6 +77,125 @@ Michael
 
 ---
 
+archive/issue_events_007538.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7538"
+}
+```
+
+
+
+---
+
+archive/issue_events_007539.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7539"
+}
+```
+
+
+
+---
+
+archive/issue_events_007540.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7540"
+}
+```
+
+
+
+---
+
+archive/issue_events_007541.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7541"
+}
+```
+
+
+
+---
+
+archive/issue_events_007542.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7542"
+}
+```
+
+
+
+---
+
+archive/issue_events_007543.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7543"
+}
+```
+
+
+
+---
+
+archive/issue_events_007544.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7544"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023346.json:
 ```json
 {
@@ -90,6 +209,40 @@ archive/issue_comments_023346.json:
 ```
 
 Changing keywords from "" to "upgrade, sympow".
+
+
+
+---
+
+archive/issue_events_007545.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2018-04-20T20:26:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7545"
+}
+```
+
+
+
+---
+
+archive/issue_events_007546.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2018-04-20T20:26:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7546"
+}
+```
 
 
 
@@ -1388,6 +1541,40 @@ update milestone 8.3 -> 8.4
 
 ---
 
+archive/issue_events_007547.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2018-08-03T19:20:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7547"
+}
+```
+
+
+
+---
+
+archive/issue_events_007548.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2018-08-03T19:20:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7548"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023381.json:
 ```json
 {
@@ -1830,6 +2017,74 @@ Why does that matter? I don't understand why an executable that is recognized as
 
 ---
 
+archive/issue_events_007549.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2019-01-13T14:33:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7549"
+}
+```
+
+
+
+---
+
+archive/issue_events_007550.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2019-01-13T14:33:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7550"
+}
+```
+
+
+
+---
+
+archive/issue_events_007551.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-03-25T10:56:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7551"
+}
+```
+
+
+
+---
+
+archive/issue_events_007552.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-03-25T10:56:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7552"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023395.json:
 ```json
 {
@@ -1848,6 +2103,40 @@ Ticket retargeted after milestone closed (if you don't believe this ticket is ap
 
 ---
 
+archive/issue_events_007553.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-07-03T11:37:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7553"
+}
+```
+
+
+
+---
+
+archive/issue_events_007554.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-07-03T11:37:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7554"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023396.json:
 ```json
 {
@@ -1861,6 +2150,40 @@ archive/issue_comments_023396.json:
 ```
 
 Moving tickets from the Sage 8.8 milestone that have been actively worked on in the last six months to the next release milestone (optimistically).
+
+
+
+---
+
+archive/issue_events_007555.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-12-30T14:48:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7555"
+}
+```
+
+
+
+---
+
+archive/issue_events_007556.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-12-30T14:48:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7556"
+}
+```
 
 
 
@@ -2093,6 +2416,40 @@ Replying to [comment:52 gh-timokau]:
 > - it also creates a `.sympow` folder in the user's home directory at runtime. Not sure if that was already the case before.
 
 This is probably still relevant. Other than that, I don't remember. I won't continue working on this for now, so anybody else should feel free to pick this up.
+
+
+
+---
+
+archive/issue_events_007557.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-04-03T09:53:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7557"
+}
+```
+
+
+
+---
+
+archive/issue_events_007558.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-04-03T09:53:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "milestone": "sage-9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7558"
+}
+```
 
 
 
@@ -3471,7 +3828,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003577.json:
+archive/issue_events_007559.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -3479,6 +3836,6 @@ archive/issue_events_003577.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3360",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3360#event-3577"
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-7559"
 }
 ```

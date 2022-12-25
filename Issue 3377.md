@@ -71,6 +71,23 @@ I'll be very happy to review this over the weekend.  Thanks, Chris!
 
 ---
 
+archive/issue_events_007618.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-06T22:09:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3377",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3377#event-7618"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023580.json:
 ```json
 {
@@ -612,7 +629,7 @@ One should apply 3377-torsion_nf.patch followed by 3377-torsion_nf-1.patch.
 
 ---
 
-archive/issue_events_003593.json:
+archive/issue_events_007619.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -620,7 +637,7 @@ archive/issue_events_003593.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3377",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3377#event-3593"
+    "url": "https://github.com/sagemath/sagetest/issues/3377#event-7619"
 }
 ```
 

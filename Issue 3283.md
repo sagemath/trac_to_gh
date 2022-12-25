@@ -32,6 +32,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3283
 
 ---
 
+archive/issue_events_007377.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-23T18:15:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#event-7377"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022654.json:
 ```json
 {
@@ -487,7 +504,7 @@ Since the pending changes are in the updated patch, I give the patch a positive 
 
 ---
 
-archive/issue_events_003502.json:
+archive/issue_events_007378.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -495,7 +512,7 @@ archive/issue_events_003502.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3283#event-3502"
+    "url": "https://github.com/sagemath/sagetest/issues/3283#event-7378"
 }
 ```
 
@@ -516,6 +533,40 @@ archive/issue_comments_022674.json:
 ```
 
 Merged pbori_iterators.patch in Sage 3.0.4.alpha2
+
+
+
+---
+
+archive/issue_events_007379.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-06T19:11:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#event-7379"
+}
+```
+
+
+
+---
+
+archive/issue_events_007380.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-06T19:11:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#event-7380"
+}
+```
 
 
 

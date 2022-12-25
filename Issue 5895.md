@@ -289,7 +289,7 @@ I applied this against 4.0.rc2, and it performs as advertised (and doesn't break
 
 ---
 
-archive/issue_events_006149.json:
+archive/issue_events_013841.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -297,7 +297,7 @@ archive/issue_events_006149.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5895#event-6149"
+    "url": "https://github.com/sagemath/sagetest/issues/5895#event-13841"
 }
 ```
 

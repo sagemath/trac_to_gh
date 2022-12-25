@@ -33,6 +33,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/3140
 
 ---
 
+archive/issue_events_007096.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#event-7096"
+}
+```
+
+
+
+---
+
+archive/issue_events_007097.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-29T23:10:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#event-7097"
+}
+```
+
+
+
+---
+
+archive/issue_events_007098.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-29T23:10:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#event-7098"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021751.json:
 ```json
 {
@@ -123,7 +174,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003356.json:
+archive/issue_events_007099.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -131,6 +182,6 @@ archive/issue_events_003356.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3140",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3140#event-3356"
+    "url": "https://github.com/sagemath/sagetest/issues/3140#event-7099"
 }
 ```

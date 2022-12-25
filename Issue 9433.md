@@ -387,6 +387,23 @@ Note that if you use "hg clone ..." to copy the repo, you have to do it earlier 
 
 ---
 
+archive/issue_events_023314.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-07T06:18:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9433",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-23314"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089920.json:
 ```json
 {
@@ -1668,6 +1685,40 @@ I meant so that people could test "sage -upgrade".   I'll do this pretty soon.
 
 ---
 
+archive/issue_events_023315.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-23T21:31:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9433",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-23315"
+}
+```
+
+
+
+---
+
+archive/issue_events_023316.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-23T21:31:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9433",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-23316"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089971.json:
 ```json
 {
@@ -2768,6 +2819,40 @@ Jeroen, can you plug this into 4.6.2.alpha as soon as possible to give it as muc
 
 ---
 
+archive/issue_events_023317.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2011-01-13T07:38:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9433",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-23317"
+}
+```
+
+
+
+---
+
+archive/issue_events_023318.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2011-01-13T07:38:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9433",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-23318"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090014.json:
 ```json
 {
@@ -3633,6 +3718,40 @@ archive/issue_comments_090051.json:
 ```
 
 For the record: I successfully upgraded a Sage-4.6.1 installation to Sage-4.6.2.alpha1.
+
+
+
+---
+
+archive/issue_events_023319.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-22T19:45:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9433",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-23319"
+}
+```
+
+
+
+---
+
+archive/issue_events_023320.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-22T19:45:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9433",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-23320"
+}
+```
 
 
 
@@ -4618,7 +4737,7 @@ Agreed!  This will get merged in sage-4.7.alpha0.  I still expect breakage here 
 
 ---
 
-archive/issue_events_009588.json:
+archive/issue_events_023321.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4626,7 +4745,7 @@ archive/issue_events_009588.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9433#event-9588"
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-23321"
 }
 ```
 

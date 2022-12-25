@@ -93,7 +93,7 @@ Michael
 
 ---
 
-archive/issue_events_002471.json:
+archive/issue_events_005418.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -101,7 +101,7 @@ archive/issue_events_002471.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2296",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2296#event-2471"
+    "url": "https://github.com/sagemath/sagetest/issues/2296#event-5418"
 }
 ```
 

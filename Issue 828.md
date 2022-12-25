@@ -92,6 +92,23 @@ sorry. Why can't I edit my comments? I meant "independent of the value of EDITOR
 
 ---
 
+archive/issue_events_002332.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-06T17:38:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/828",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/828#event-2332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005115.json:
 ```json
 {
@@ -128,7 +145,7 @@ I don't think this is needed -- it was only need for the old version...
 
 ---
 
-archive/issue_events_000939.json:
+archive/issue_events_002333.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -136,6 +153,6 @@ archive/issue_events_000939.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/828",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/828#event-939"
+    "url": "https://github.com/sagemath/sagetest/issues/828#event-2333"
 }
 ```

@@ -173,7 +173,7 @@ Oops!
 
 ---
 
-archive/issue_events_008417.json:
+archive/issue_events_019659.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -181,7 +181,7 @@ archive/issue_events_008417.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8215",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8215#event-8417"
+    "url": "https://github.com/sagemath/sagetest/issues/8215#event-19659"
 }
 ```
 

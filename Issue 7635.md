@@ -549,7 +549,7 @@ Merged into sagenb-0.4.8.
 
 ---
 
-archive/issue_events_007861.json:
+archive/issue_events_018154.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -557,7 +557,7 @@ archive/issue_events_007861.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7635#event-7861"
+    "url": "https://github.com/sagemath/sagetest/issues/7635#event-18154"
 }
 ```
 

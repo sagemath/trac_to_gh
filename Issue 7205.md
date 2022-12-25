@@ -93,6 +93,23 @@ Seems to me that almost every problem except the 6th problem is solved. There ar
 
 ---
 
+archive/issue_events_017067.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-05-17T22:05:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#event-17067"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059675.json:
 ```json
 {
@@ -183,7 +200,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007426.json:
+archive/issue_events_017068.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -191,7 +208,7 @@ archive/issue_events_007426.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7205",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7205#event-7426"
+    "url": "https://github.com/sagemath/sagetest/issues/7205#event-17068"
 }
 ```
 

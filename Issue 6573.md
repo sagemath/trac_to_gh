@@ -164,7 +164,7 @@ Merged both patches.
 
 ---
 
-archive/issue_events_006810.json:
+archive/issue_events_015511.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -172,6 +172,6 @@ archive/issue_events_006810.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6573",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6573#event-6810"
+    "url": "https://github.com/sagemath/sagetest/issues/6573#event-15511"
 }
 ```

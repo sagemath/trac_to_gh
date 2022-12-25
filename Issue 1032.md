@@ -148,7 +148,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001155.json:
+archive/issue_events_002820.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -156,7 +156,7 @@ archive/issue_events_001155.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1032#event-1155"
+    "url": "https://github.com/sagemath/sagetest/issues/1032#event-2820"
 }
 ```
 
@@ -265,7 +265,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001156.json:
+archive/issue_events_002821.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -273,7 +273,7 @@ archive/issue_events_001156.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1032#event-1156"
+    "url": "https://github.com/sagemath/sagetest/issues/1032#event-2821"
 }
 ```
 
@@ -364,7 +364,7 @@ It unbundles and passes all doc-tests against 2.8.11.rc1
 
 ---
 
-archive/issue_events_001157.json:
+archive/issue_events_002822.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -372,7 +372,7 @@ archive/issue_events_001157.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1032#event-1157"
+    "url": "https://github.com/sagemath/sagetest/issues/1032#event-2822"
 }
 ```
 

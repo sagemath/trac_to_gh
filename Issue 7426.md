@@ -80,6 +80,23 @@ SPKG Here:   http://wstein.org/home/wstein/patches/mpir-1.2.p8.spkg
 
 ---
 
+archive/issue_events_017582.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T17:42:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7426",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7426#event-17582"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062383.json:
 ```json
 {
@@ -211,7 +228,7 @@ Since the updated MPIR package now allows Sage 4.2.1.alpha0 to build on OS X 10.
 
 ---
 
-archive/issue_events_007650.json:
+archive/issue_events_017583.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -219,7 +236,7 @@ archive/issue_events_007650.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7426",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7426#event-7650"
+    "url": "https://github.com/sagemath/sagetest/issues/7426#event-17583"
 }
 ```
 

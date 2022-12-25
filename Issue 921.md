@@ -183,6 +183,23 @@ Attachment [921.patch](tarball://root/attachments/some-uuid/ticket921/921.patch)
 
 ---
 
+archive/issue_events_002532.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-24T00:38:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/921",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/921#event-2532"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005631.json:
 ```json
 {
@@ -219,7 +236,7 @@ applied to 2.8.9.alpha1
 
 ---
 
-archive/issue_events_001041.json:
+archive/issue_events_002533.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -227,7 +244,7 @@ archive/issue_events_001041.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/921",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/921#event-1041"
+    "url": "https://github.com/sagemath/sagetest/issues/921#event-2533"
 }
 ```
 

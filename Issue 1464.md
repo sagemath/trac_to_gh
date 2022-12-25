@@ -112,6 +112,23 @@ Total time for all tests: 169.8 seconds
 
 ---
 
+archive/issue_events_003728.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-14T18:02:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1464",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1464#event-3728"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009399.json:
 ```json
 {
@@ -147,6 +164,40 @@ Use the bundle at
 http://sage.math.washington.edu/home/rlmill/bcodes_2.9.alpha7.hg
 
 instead.
+
+
+
+---
+
+archive/issue_events_003729.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-15T22:24:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1464",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1464#event-3729"
+}
+```
+
+
+
+---
+
+archive/issue_events_003730.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-15T22:24:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1464",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1464#event-3730"
+}
+```
 
 
 
@@ -212,7 +263,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001615.json:
+archive/issue_events_003731.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -220,6 +271,6 @@ archive/issue_events_001615.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1464",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1464#event-1615"
+    "url": "https://github.com/sagemath/sagetest/issues/1464#event-3731"
 }
 ```

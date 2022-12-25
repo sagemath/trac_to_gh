@@ -67,6 +67,57 @@ Michael
 
 ---
 
+archive/issue_events_002559.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:34:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/932",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/932#event-2559"
+}
+```
+
+
+
+---
+
+archive/issue_events_002560.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/932",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/932#event-2560"
+}
+```
+
+
+
+---
+
+archive/issue_events_002561.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:09:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/932",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/932#event-2561"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005675.json:
 ```json
 {
@@ -186,7 +237,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001051.json:
+archive/issue_events_002562.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -194,7 +245,24 @@ archive/issue_events_001051.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/932",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/932#event-1051"
+    "url": "https://github.com/sagemath/sagetest/issues/932#event-2562"
+}
+```
+
+
+
+---
+
+archive/issue_events_002563.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-26T00:10:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/932",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/932#event-2563"
 }
 ```
 

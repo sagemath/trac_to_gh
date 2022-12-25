@@ -72,6 +72,23 @@ Michael
 
 ---
 
+archive/issue_events_008533.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-27T01:21:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3729",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3729#event-8533"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026421.json:
 ```json
 {
@@ -149,6 +166,40 @@ I think the code snippet I offered has the semantics you describe (the code will
 
 ---
 
+archive/issue_events_008534.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-31T00:13:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3729",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3729#event-8534"
+}
+```
+
+
+
+---
+
+archive/issue_events_008535.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-31T00:13:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3729",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3729#event-8535"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026424.json:
 ```json
 {
@@ -207,7 +258,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003953.json:
+archive/issue_events_008536.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -215,6 +266,6 @@ archive/issue_events_003953.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3729",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3729#event-3953"
+    "url": "https://github.com/sagemath/sagetest/issues/3729#event-8536"
 }
 ```

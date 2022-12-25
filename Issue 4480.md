@@ -128,6 +128,23 @@ Changing assignee from mabshoff to @craigcitro.
 
 ---
 
+archive/issue_events_010131.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-11-13T13:42:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4480",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4480#event-10131"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033032.json:
 ```json
 {
@@ -339,7 +356,7 @@ Michael
 
 ---
 
-archive/issue_events_004729.json:
+archive/issue_events_010132.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -347,7 +364,7 @@ archive/issue_events_004729.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#event-4729"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#event-10132"
 }
 ```
 

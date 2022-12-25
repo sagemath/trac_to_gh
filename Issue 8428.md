@@ -197,6 +197,23 @@ Changing assignee from cturner to @aghitza.
 
 ---
 
+archive/issue_events_020208.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2010-03-13T02:04:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8428",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8428#event-20208"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075438.json:
 ```json
 {
@@ -251,7 +268,7 @@ Merged "trac_8428_rational_points_iterator.patch" into 4.4.alpha0.
 
 ---
 
-archive/issue_events_008613.json:
+archive/issue_events_020209.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -259,7 +276,7 @@ archive/issue_events_008613.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8428#event-8613"
+    "url": "https://github.com/sagemath/sagetest/issues/8428#event-20209"
 }
 ```
 

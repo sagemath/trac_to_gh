@@ -124,6 +124,23 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
+archive/issue_events_002151.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-04T19:51:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/781",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/781#event-2151"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004657.json:
 ```json
 {
@@ -344,7 +361,7 @@ In particular, almost all Cython extension classes have a __new__ method, and it
 
 ---
 
-archive/issue_events_000886.json:
+archive/issue_events_002152.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -352,7 +369,7 @@ archive/issue_events_000886.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/781",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/781#event-886"
+    "url": "https://github.com/sagemath/sagetest/issues/781#event-2152"
 }
 ```
 
@@ -391,3 +408,37 @@ archive/issue_comments_004663.json:
 ```
 
 OK, I'm happy with that explanation.  I tripped over this during SD5, while fiddling with some ideas for Module code.  I probably had imported a bunch of stuff that let me call this by accident :-}.
+
+
+
+---
+
+archive/issue_events_002153.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-24T03:57:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/781",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/781#event-2153"
+}
+```
+
+
+
+---
+
+archive/issue_events_002154.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-24T03:57:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/781",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/781#event-2154"
+}
+```

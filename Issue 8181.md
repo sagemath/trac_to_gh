@@ -258,6 +258,23 @@ Changing status from positive_review to needs_work.
 
 ---
 
+archive/issue_events_019585.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-04-04T16:51:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8181",
+    "milestone": "sage-7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8181#event-19585"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071985.json:
 ```json
 {
@@ -350,7 +367,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008384.json:
+archive/issue_events_019586.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -358,6 +375,6 @@ archive/issue_events_008384.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8181#event-8384"
+    "url": "https://github.com/sagemath/sagetest/issues/8181#event-19586"
 }
 ```

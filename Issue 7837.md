@@ -117,6 +117,125 @@ This has some substantial overlap with #6072, where I reported the same problem 
 
 ---
 
+archive/issue_events_018738.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18738"
+}
+```
+
+
+
+---
+
+archive/issue_events_018739.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18739"
+}
+```
+
+
+
+---
+
+archive/issue_events_018740.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18740"
+}
+```
+
+
+
+---
+
+archive/issue_events_018741.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18741"
+}
+```
+
+
+
+---
+
+archive/issue_events_018742.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18742"
+}
+```
+
+
+
+---
+
+archive/issue_events_018743.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18743"
+}
+```
+
+
+
+---
+
+archive/issue_events_018744.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18744"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067776.json:
 ```json
 {
@@ -148,6 +267,40 @@ archive/issue_comments_067777.json:
 ```
 
 Fixed (and doctested) in the git branch I just uploaded at #6072. This ticket can be closed as duplicate when that gets merged.
+
+
+
+---
+
+archive/issue_events_018745.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2018-05-12T21:39:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18745"
+}
+```
+
+
+
+---
+
+archive/issue_events_018746.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2018-05-12T21:39:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7837",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18746"
+}
+```
 
 
 
@@ -189,7 +342,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008052.json:
+archive/issue_events_018747.json:
 ```json
 {
     "actor": "https://github.com/videlec",
@@ -197,7 +350,7 @@ archive/issue_events_008052.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7837",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7837#event-8052"
+    "url": "https://github.com/sagemath/sagetest/issues/7837#event-18747"
 }
 ```
 

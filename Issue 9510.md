@@ -63,7 +63,7 @@ So I'm going to close this ticket.
 
 ---
 
-archive/issue_events_009657.json:
+archive/issue_events_023603.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -71,7 +71,24 @@ archive/issue_events_009657.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9510",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9510#event-9657"
+    "url": "https://github.com/sagemath/sagetest/issues/9510#event-23603"
+}
+```
+
+
+
+---
+
+archive/issue_events_023604.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-07-15T20:11:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9510",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9510#event-23604"
 }
 ```
 

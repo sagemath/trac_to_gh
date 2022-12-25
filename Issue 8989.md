@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8989
 
 ---
 
+archive/issue_events_022001.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-05-18T10:00:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8989",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8989#event-22001"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082943.json:
 ```json
 {
@@ -746,7 +763,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009144.json:
+archive/issue_events_022002.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -754,7 +771,7 @@ archive/issue_events_009144.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8989#event-9144"
+    "url": "https://github.com/sagemath/sagetest/issues/8989#event-22002"
 }
 ```
 

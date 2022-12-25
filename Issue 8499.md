@@ -49,6 +49,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8499
 
 ---
 
+archive/issue_events_020404.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8499",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8499#event-20404"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076596.json:
 ```json
 {
@@ -245,6 +262,40 @@ Paul
 
 ---
 
+archive/issue_events_020405.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8499",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8499#event-20405"
+}
+```
+
+
+
+---
+
+archive/issue_events_020406.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8499",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8499#event-20406"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076604.json:
 ```json
 {
@@ -372,7 +423,7 @@ I tried the added examples with Sage 6.1 and they work, thus positive review for
 
 ---
 
-archive/issue_events_008680.json:
+archive/issue_events_020407.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -380,7 +431,7 @@ archive/issue_events_008680.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8499#event-8680"
+    "url": "https://github.com/sagemath/sagetest/issues/8499#event-20407"
 }
 ```
 

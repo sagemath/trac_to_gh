@@ -147,6 +147,23 @@ BTW, followup at #5800
 
 ---
 
+archive/issue_events_013600.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-16T06:09:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5796",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5796#event-13600"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045370.json:
 ```json
 {
@@ -568,6 +585,40 @@ Moving to 3.4.2 now that it has a positive review to keep things cleaner.
 
 ---
 
+archive/issue_events_013601.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2009-04-27T17:04:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5796",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5796#event-13601"
+}
+```
+
+
+
+---
+
+archive/issue_events_013602.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2009-04-27T17:04:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5796",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5796#event-13602"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045388.json:
 ```json
 {
@@ -655,7 +706,7 @@ Michael
 
 ---
 
-archive/issue_events_006045.json:
+archive/issue_events_013603.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -663,7 +714,7 @@ archive/issue_events_006045.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5796#event-6045"
+    "url": "https://github.com/sagemath/sagetest/issues/5796#event-13603"
 }
 ```
 

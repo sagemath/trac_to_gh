@@ -145,7 +145,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001947.json:
+archive/issue_events_004367.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -153,7 +153,7 @@ archive/issue_events_001947.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1790",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1790#event-1947"
+    "url": "https://github.com/sagemath/sagetest/issues/1790#event-4367"
 }
 ```
 
@@ -233,7 +233,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001948.json:
+archive/issue_events_004368.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -241,7 +241,7 @@ archive/issue_events_001948.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1790",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1790#event-1948"
+    "url": "https://github.com/sagemath/sagetest/issues/1790#event-4368"
 }
 ```
 
@@ -307,7 +307,7 @@ If Carl Witty and others are already aware of the issue, I'm more confident abou
 
 ---
 
-archive/issue_events_001949.json:
+archive/issue_events_004369.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -315,7 +315,7 @@ archive/issue_events_001949.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1790",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1790#event-1949"
+    "url": "https://github.com/sagemath/sagetest/issues/1790#event-4369"
 }
 ```
 

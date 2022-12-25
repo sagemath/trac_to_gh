@@ -102,6 +102,125 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_016198.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16198"
+}
+```
+
+
+
+---
+
+archive/issue_events_016199.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16199"
+}
+```
+
+
+
+---
+
+archive/issue_events_016200.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16200"
+}
+```
+
+
+
+---
+
+archive/issue_events_016201.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16201"
+}
+```
+
+
+
+---
+
+archive/issue_events_016202.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16202"
+}
+```
+
+
+
+---
+
+archive/issue_events_016203.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16203"
+}
+```
+
+
+
+---
+
+archive/issue_events_016204.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16204"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056826.json:
 ```json
 {
@@ -115,3 +234,37 @@ archive/issue_comments_056826.json:
 ```
 
 Note that Sage (via Singular) can compute minimal generating sets for invariant rings of permutation groups. But the result is not implemented as a ring on its own (i.e., it is a method that returns a list of generators).
+
+
+
+---
+
+archive/issue_events_016205.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2018-09-11T23:53:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16205"
+}
+```
+
+
+
+---
+
+archive/issue_events_016206.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2018-09-11T23:53:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6889",
+    "milestone": "sage-8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6889#event-16206"
+}
+```

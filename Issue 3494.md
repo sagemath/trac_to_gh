@@ -59,6 +59,23 @@ He's talking about the name of the keyword arguments.
 
 ---
 
+archive/issue_events_007965.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-11-16T05:55:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3494",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3494#event-7965"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024557.json:
 ```json
 {
@@ -159,7 +176,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003714.json:
+archive/issue_events_007966.json:
 ```json
 {
     "actor": "https://github.com/mkoeppe",
@@ -167,6 +184,6 @@ archive/issue_events_003714.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3494#event-3714"
+    "url": "https://github.com/sagemath/sagetest/issues/3494#event-7966"
 }
 ```

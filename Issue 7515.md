@@ -210,7 +210,7 @@ Perhaps it is possible to script it in emacs.... :-)
 
 ---
 
-archive/issue_events_007744.json:
+archive/issue_events_017826.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -218,7 +218,7 @@ archive/issue_events_007744.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7515#event-7744"
+    "url": "https://github.com/sagemath/sagetest/issues/7515#event-17826"
 }
 ```
 

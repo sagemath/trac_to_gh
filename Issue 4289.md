@@ -128,7 +128,7 @@ As noted there, we should remove `EllipticCurve(j)` from the possible ways of de
 
 ---
 
-archive/issue_events_004533.json:
+archive/issue_events_009684.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -136,7 +136,7 @@ archive/issue_events_004533.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4289",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4289#event-4533"
+    "url": "https://github.com/sagemath/sagetest/issues/4289#event-9684"
 }
 ```
 
@@ -179,3 +179,20 @@ archive/issue_comments_031336.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009685.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-15T20:29:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4289",
+    "milestone": "sage-3.1.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4289#event-9685"
+}
+```

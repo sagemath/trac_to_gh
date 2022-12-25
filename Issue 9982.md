@@ -59,6 +59,23 @@ Log of a failed build on an RS/6000 running AIX 5.3
 
 ---
 
+archive/issue_events_025226.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-08-30T04:43:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9982",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9982#event-25226"
+}
+```
+
+
+
+---
+
 archive/issue_comments_100148.json:
 ```json
 {
@@ -174,7 +191,7 @@ Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all 
 
 ---
 
-archive/issue_events_010106.json:
+archive/issue_events_025227.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -182,7 +199,7 @@ archive/issue_events_010106.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9982#event-10106"
+    "url": "https://github.com/sagemath/sagetest/issues/9982#event-25227"
 }
 ```
 

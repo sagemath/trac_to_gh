@@ -132,7 +132,7 @@ Total time for all tests: 8.9 seconds
 
 ---
 
-archive/issue_events_007242.json:
+archive/issue_events_016473.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -140,7 +140,7 @@ archive/issue_events_007242.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7020",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7020#event-7242"
+    "url": "https://github.com/sagemath/sagetest/issues/7020#event-16473"
 }
 ```
 

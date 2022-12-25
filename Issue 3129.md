@@ -86,7 +86,7 @@ Looks good; doctests pass in sage/rings/polynomial.  Positive review.
 
 ---
 
-archive/issue_events_003345.json:
+archive/issue_events_007065.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -94,7 +94,7 @@ archive/issue_events_003345.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3129",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3129#event-3345"
+    "url": "https://github.com/sagemath/sagetest/issues/3129#event-7065"
 }
 ```
 

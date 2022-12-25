@@ -65,6 +65,23 @@ Changing component from algebra to solaris.
 
 ---
 
+archive/issue_events_015184.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2009-06-28T23:10:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6437",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6437#event-15184"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051572.json:
 ```json
 {
@@ -314,7 +331,7 @@ David: I'm not sure how to deal with this one, since ticket #6528 contains the l
 
 ---
 
-archive/issue_events_006678.json:
+archive/issue_events_015185.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -322,7 +339,7 @@ archive/issue_events_006678.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6437",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6437#event-6678"
+    "url": "https://github.com/sagemath/sagetest/issues/6437#event-15185"
 }
 ```
 
@@ -361,3 +378,37 @@ archive/issue_comments_051583.json:
 ```
 
 OK, I see that the SPKG at #6528 also fixes the linker issue reported on this ticket. So I'm closing this ticket as a duplicate of #6528. Please correct me if I'm wrong.
+
+
+
+---
+
+archive/issue_events_015186.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-24T00:53:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6437",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6437#event-15186"
+}
+```
+
+
+
+---
+
+archive/issue_events_015187.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-24T00:53:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6437",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6437#event-15187"
+}
+```

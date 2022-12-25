@@ -59,7 +59,7 @@ Attachment [6115.patch](tarball://root/attachments/some-uuid/ticket585/6115.patc
 
 ---
 
-archive/issue_events_000639.json:
+archive/issue_events_001557.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -67,7 +67,7 @@ archive/issue_events_000639.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/585",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/585#event-639"
+    "url": "https://github.com/sagemath/sagetest/issues/585#event-1557"
 }
 ```
 
@@ -88,3 +88,20 @@ archive/issue_comments_003009.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001558.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-07T11:01:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/585",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/585#event-1558"
+}
+```

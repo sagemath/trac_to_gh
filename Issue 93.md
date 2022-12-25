@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/93
 
 ---
 
-archive/issue_events_000093.json:
+archive/issue_events_000188.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -61,7 +61,7 @@ archive/issue_events_000093.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/93",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/93#event-93"
+    "url": "https://github.com/sagemath/sagetest/issues/93#event-188"
 }
 ```
 
@@ -100,3 +100,20 @@ archive/issue_comments_000449.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000189.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T20:38:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/93",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/93#event-189"
+}
+```

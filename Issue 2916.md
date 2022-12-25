@@ -55,6 +55,23 @@ Attachment [finite_field_coercion.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
+archive/issue_events_006676.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-14T19:58:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2916",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2916#event-6676"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020045.json:
 ```json
 {
@@ -122,7 +139,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003118.json:
+archive/issue_events_006677.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,7 +147,7 @@ archive/issue_events_003118.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2916",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2916#event-3118"
+    "url": "https://github.com/sagemath/sagetest/issues/2916#event-6677"
 }
 ```
 

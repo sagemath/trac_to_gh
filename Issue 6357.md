@@ -164,6 +164,23 @@ Changing component from doctest to doctest framework.
 
 ---
 
+archive/issue_events_014955.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2017-01-02T22:48:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#event-14955"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050742.json:
 ```json
 {
@@ -254,7 +271,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006605.json:
+archive/issue_events_014956.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -262,6 +279,6 @@ archive/issue_events_006605.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6357#event-6605"
+    "url": "https://github.com/sagemath/sagetest/issues/6357#event-14956"
 }
 ```

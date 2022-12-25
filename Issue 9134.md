@@ -60,7 +60,7 @@ Duplicate to #9135 (where a more informative error message is pasted), please cl
 
 ---
 
-archive/issue_events_009292.json:
+archive/issue_events_022446.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -68,7 +68,7 @@ archive/issue_events_009292.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9134",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9134#event-9292"
+    "url": "https://github.com/sagemath/sagetest/issues/9134#event-22446"
 }
 ```
 
@@ -89,3 +89,20 @@ archive/issue_comments_084995.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_022447.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-04T16:45:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9134",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9134#event-22447"
+}
+```

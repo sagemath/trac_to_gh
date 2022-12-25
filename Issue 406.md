@@ -165,6 +165,23 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_000974.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-05-10T22:13:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/406#event-974"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001989.json:
 ```json
 {
@@ -255,7 +272,7 @@ Since this is a second opinion I think it is time to give a full positive review
 
 ---
 
-archive/issue_events_000432.json:
+archive/issue_events_000975.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -263,7 +280,7 @@ archive/issue_events_000432.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/406#event-432"
+    "url": "https://github.com/sagemath/sagetest/issues/406#event-975"
 }
 ```
 

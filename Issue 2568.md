@@ -63,7 +63,7 @@ Changing keywords from "" to "editor_wstein".
 
 ---
 
-archive/issue_events_002751.json:
+archive/issue_events_006007.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -71,7 +71,7 @@ archive/issue_events_002751.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2568",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2568#event-2751"
+    "url": "https://github.com/sagemath/sagetest/issues/2568#event-6007"
 }
 ```
 
@@ -92,6 +92,23 @@ archive/issue_comments_017516.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_006008.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-09T06:55:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2568",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2568#event-6008"
+}
+```
 
 
 

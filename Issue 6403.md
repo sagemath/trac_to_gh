@@ -115,6 +115,23 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_015085.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-02-19T11:56:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6403",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6403#event-15085"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051333.json:
 ```json
 {
@@ -133,7 +150,7 @@ I'm closing this, since #6559 just got merged. It adds a `latex_name` keyword ar
 
 ---
 
-archive/issue_events_006648.json:
+archive/issue_events_015086.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -141,6 +158,6 @@ archive/issue_events_006648.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6403",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6403#event-6648"
+    "url": "https://github.com/sagemath/sagetest/issues/6403#event-15086"
 }
 ```

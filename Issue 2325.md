@@ -61,6 +61,23 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_005473.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-15T02:27:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2325",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2325#event-5473"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015433.json:
 ```json
 {
@@ -197,7 +214,7 @@ This is fixed for me also, by applying the patch from #2843 against 3.0alpha3 (w
 
 ---
 
-archive/issue_events_002501.json:
+archive/issue_events_005474.json:
 ```json
 {
     "actor": "https://github.com/kedlaya",
@@ -205,7 +222,7 @@ archive/issue_events_002501.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2325#event-2501"
+    "url": "https://github.com/sagemath/sagetest/issues/2325#event-5474"
 }
 ```
 
@@ -249,7 +266,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002502.json:
+archive/issue_events_005475.json:
 ```json
 {
     "actor": "https://github.com/kedlaya",
@@ -257,7 +274,7 @@ archive/issue_events_002502.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2325#event-2502"
+    "url": "https://github.com/sagemath/sagetest/issues/2325#event-5475"
 }
 ```
 
@@ -355,7 +372,7 @@ Merged 9596.patch in Sage 3.0.1.alpha0
 
 ---
 
-archive/issue_events_002503.json:
+archive/issue_events_005476.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -363,7 +380,7 @@ archive/issue_events_002503.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2325#event-2503"
+    "url": "https://github.com/sagemath/sagetest/issues/2325#event-5476"
 }
 ```
 

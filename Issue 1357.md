@@ -105,7 +105,7 @@ sage: for x in x_coords:
 
 ---
 
-archive/issue_events_001499.json:
+archive/issue_events_003504.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -113,7 +113,7 @@ archive/issue_events_001499.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1357",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1357#event-1499"
+    "url": "https://github.com/sagemath/sagetest/issues/1357#event-3504"
 }
 ```
 

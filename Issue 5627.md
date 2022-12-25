@@ -409,7 +409,7 @@ Next time I feel inspired to do something similar I'll do so in a new ticket in 
 
 ---
 
-archive/issue_events_005868.json:
+archive/issue_events_013242.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -417,7 +417,7 @@ archive/issue_events_005868.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5627#event-5868"
+    "url": "https://github.com/sagemath/sagetest/issues/5627#event-13242"
 }
 ```
 
@@ -444,6 +444,23 @@ John: This is touching quadratic forms code, so I am CCing you. You really ought
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013243.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-24T09:54:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5627",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5627#event-13243"
+}
+```
 
 
 

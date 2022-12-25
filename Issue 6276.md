@@ -390,7 +390,7 @@ drkirkby -- can you set the Author line for this ticket, and add your full name 
 
 ---
 
-archive/issue_events_006520.json:
+archive/issue_events_014685.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -398,6 +398,6 @@ archive/issue_events_006520.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6276",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6276#event-6520"
+    "url": "https://github.com/sagemath/sagetest/issues/6276#event-14685"
 }
 ```

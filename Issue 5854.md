@@ -516,7 +516,7 @@ I have been using this for real as I try to fix #6381, since this should make it
 
 ---
 
-archive/issue_events_006110.json:
+archive/issue_events_013778.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -524,7 +524,7 @@ archive/issue_events_006110.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5854",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5854#event-6110"
+    "url": "https://github.com/sagemath/sagetest/issues/5854#event-13778"
 }
 ```
 

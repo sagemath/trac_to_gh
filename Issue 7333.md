@@ -305,7 +305,7 @@ Merged in with the optional packages.
 
 ---
 
-archive/issue_events_007555.json:
+archive/issue_events_017355.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -313,7 +313,7 @@ archive/issue_events_007555.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7333",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7333#event-7555"
+    "url": "https://github.com/sagemath/sagetest/issues/7333#event-17355"
 }
 ```
 

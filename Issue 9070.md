@@ -84,7 +84,7 @@ Looks great - merged into sage-4.4.3.
 
 ---
 
-archive/issue_events_009221.json:
+archive/issue_events_022225.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -92,7 +92,7 @@ archive/issue_events_009221.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9070",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9070#event-9221"
+    "url": "https://github.com/sagemath/sagetest/issues/9070#event-22225"
 }
 ```
 

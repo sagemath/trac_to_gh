@@ -125,7 +125,7 @@ diff -r 969de27b13ba -r a1d6af5dbe31 sage/server/notebook/worksheet.py
 
 ---
 
-archive/issue_events_000238.json:
+archive/issue_events_000462.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -133,7 +133,7 @@ archive/issue_events_000238.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/225",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/225#event-238"
+    "url": "https://github.com/sagemath/sagetest/issues/225#event-462"
 }
 ```
 
@@ -194,3 +194,20 @@ archive/issue_comments_001003.json:
 
 
 :)
+
+
+
+---
+
+archive/issue_events_000463.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T06:23:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/225",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/225#event-463"
+}
+```

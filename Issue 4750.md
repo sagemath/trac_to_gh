@@ -66,6 +66,23 @@ I don't understand what this ticket is suggesting.  I thought we already importe
 
 ---
 
+archive/issue_events_010859.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-28T15:58:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4750",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4750#event-10859"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035879.json:
 ```json
 {
@@ -102,7 +119,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_004993.json:
+archive/issue_events_010860.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -110,7 +127,7 @@ archive/issue_events_004993.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4750",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4750#event-4993"
+    "url": "https://github.com/sagemath/sagetest/issues/4750#event-10860"
 }
 ```
 

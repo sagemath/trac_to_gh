@@ -78,7 +78,7 @@ The problem is fixed at #8395.
 
 ---
 
-archive/issue_events_009931.json:
+archive/issue_events_024646.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -86,7 +86,7 @@ archive/issue_events_009931.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9808",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9808#event-9931"
+    "url": "https://github.com/sagemath/sagetest/issues/9808#event-24646"
 }
 ```
 
@@ -107,3 +107,20 @@ archive/issue_comments_096576.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_024647.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-12-05T11:50:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9808",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9808#event-24647"
+}
+```

@@ -107,6 +107,23 @@ The original patch was based on 3.0.alpha1 and did not apply to alpha3.  The new
 
 ---
 
+archive/issue_events_006600.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-11T22:49:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#event-6600"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019774.json:
 ```json
 {
@@ -167,7 +184,7 @@ Patches look good.
 
 ---
 
-archive/issue_events_003078.json:
+archive/issue_events_006601.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -175,7 +192,7 @@ archive/issue_events_003078.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2880",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2880#event-3078"
+    "url": "https://github.com/sagemath/sagetest/issues/2880#event-6601"
 }
 ```
 

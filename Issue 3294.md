@@ -98,6 +98,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3294
 
 ---
 
+archive/issue_events_007395.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-24T20:25:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3294",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3294#event-7395"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022735.json:
 ```json
 {
@@ -242,6 +259,40 @@ Yes, the GAP interface needs a kick after using CTRL-C.
 
 ---
 
+archive/issue_events_007396.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-08-10T03:38:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3294",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3294#event-7396"
+}
+```
+
+
+
+---
+
+archive/issue_events_007397.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-08-10T03:38:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3294",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3294#event-7397"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022739.json:
 ```json
 {
@@ -350,7 +401,7 @@ Attachment [trac_3294.patch](tarball://root/attachments/some-uuid/ticket3294/tra
 
 ---
 
-archive/issue_events_003513.json:
+archive/issue_events_007398.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -358,7 +409,7 @@ archive/issue_events_003513.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3294",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3294#event-3513"
+    "url": "https://github.com/sagemath/sagetest/issues/3294#event-7398"
 }
 ```
 
@@ -397,3 +448,37 @@ archive/issue_comments_022746.json:
 ```
 
 Merged in Sage 3.3.alpha2
+
+
+
+---
+
+archive/issue_events_007399.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T16:29:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3294",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3294#event-7399"
+}
+```
+
+
+
+---
+
+archive/issue_events_007400.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T16:29:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3294",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3294#event-7400"
+}
+```

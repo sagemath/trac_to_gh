@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4648
 
 ---
 
+archive/issue_events_010610.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-29T01:10:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4648",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4648#event-10610"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034923.json:
 ```json
 {
@@ -100,6 +117,40 @@ It would get rid of this code duplication, clean things up, etc.
 
 ---
 
+archive/issue_events_010611.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T19:55:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4648",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4648#event-10611"
+}
+```
+
+
+
+---
+
+archive/issue_events_010612.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T19:55:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4648",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4648#event-10612"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034926.json:
 ```json
 {
@@ -122,7 +173,7 @@ Michael
 
 ---
 
-archive/issue_events_004895.json:
+archive/issue_events_010613.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,7 +181,7 @@ archive/issue_events_004895.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4648",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4648#event-4895"
+    "url": "https://github.com/sagemath/sagetest/issues/4648#event-10613"
 }
 ```
 

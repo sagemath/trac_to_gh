@@ -66,6 +66,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_006149.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2013-03-14T20:36:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2630",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2630#event-6149"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018040.json:
 ```json
 {
@@ -102,7 +119,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_002821.json:
+archive/issue_events_006150.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -110,6 +127,6 @@ archive/issue_events_002821.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2630",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2630#event-2821"
+    "url": "https://github.com/sagemath/sagetest/issues/2630#event-6150"
 }
 ```

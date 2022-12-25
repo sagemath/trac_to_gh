@@ -378,7 +378,7 @@ The doctest failure is known to be related to bug 3856 (if it is a bug or not de
 
 ---
 
-archive/issue_events_004064.json:
+archive/issue_events_008794.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -386,7 +386,7 @@ archive/issue_events_004064.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#event-4064"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#event-8794"
 }
 ```
 

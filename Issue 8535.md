@@ -233,7 +233,7 @@ Note: only apply the second patch, not both!
 
 ---
 
-archive/issue_events_008714.json:
+archive/issue_events_020571.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -241,7 +241,7 @@ archive/issue_events_008714.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8535#event-8714"
+    "url": "https://github.com/sagemath/sagetest/issues/8535#event-20571"
 }
 ```
 

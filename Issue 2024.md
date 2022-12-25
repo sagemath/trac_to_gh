@@ -222,7 +222,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_002178.json:
+archive/issue_events_004864.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -230,7 +230,7 @@ archive/issue_events_002178.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2024#event-2178"
+    "url": "https://github.com/sagemath/sagetest/issues/2024#event-4864"
 }
 ```
 
@@ -316,7 +316,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002179.json:
+archive/issue_events_004865.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -324,7 +324,7 @@ archive/issue_events_002179.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2024#event-2179"
+    "url": "https://github.com/sagemath/sagetest/issues/2024#event-4865"
 }
 ```
 
@@ -452,7 +452,7 @@ Closing this ticket, per IRC discussion with malb (see also #2497):
 
 ---
 
-archive/issue_events_002180.json:
+archive/issue_events_004866.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -460,7 +460,7 @@ archive/issue_events_002180.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2024#event-2180"
+    "url": "https://github.com/sagemath/sagetest/issues/2024#event-4866"
 }
 ```
 

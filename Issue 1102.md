@@ -84,6 +84,23 @@ Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket1102/typo.pat
 
 ---
 
+archive/issue_events_002958.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:56:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1102",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1102#event-2958"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006649.json:
 ```json
 {
@@ -120,7 +137,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001228.json:
+archive/issue_events_002959.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,7 +145,7 @@ archive/issue_events_001228.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1102",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1102#event-1228"
+    "url": "https://github.com/sagemath/sagetest/issues/1102#event-2959"
 }
 ```
 

@@ -66,6 +66,23 @@ archive/issue_comments_091888.json:
 
 ---
 
+archive/issue_events_023756.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-02-02T11:40:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9548",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9548#event-23756"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091889.json:
 ```json
 {

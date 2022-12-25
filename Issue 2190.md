@@ -180,6 +180,23 @@ this code on top of it.
 
 ---
 
+archive/issue_events_005235.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-02-18T23:15:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2190",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2190#event-5235"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014346.json:
 ```json
 {
@@ -299,7 +316,7 @@ Merged in Sage 2.10.2.alpha1
 
 ---
 
-archive/issue_events_002356.json:
+archive/issue_events_005236.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -307,6 +324,6 @@ archive/issue_events_002356.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2190",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2190#event-2356"
+    "url": "https://github.com/sagemath/sagetest/issues/2190#event-5236"
 }
 ```

@@ -184,6 +184,23 @@ Made obsolete by the Pynac switch.
 
 ---
 
+archive/issue_events_012638.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-18T22:01:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5423",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5423#event-12638"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041894.json:
 ```json
 {
@@ -202,7 +219,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_005678.json:
+archive/issue_events_012639.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -210,6 +227,6 @@ archive/issue_events_005678.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5423#event-5678"
+    "url": "https://github.com/sagemath/sagetest/issues/5423#event-12639"
 }
 ```

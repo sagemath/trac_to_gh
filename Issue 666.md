@@ -79,7 +79,7 @@ Attachment [matrix_latex_spacing.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_events_000734.json:
+archive/issue_events_001781.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -87,7 +87,7 @@ archive/issue_events_000734.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/666",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/666#event-734"
+    "url": "https://github.com/sagemath/sagetest/issues/666#event-1781"
 }
 ```
 

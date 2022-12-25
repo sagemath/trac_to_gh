@@ -71,6 +71,23 @@ Changing assignee from somebody to @malb.
 
 ---
 
+archive/issue_events_000656.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-21T10:06:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/290",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/290#event-656"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001363.json:
 ```json
 {
@@ -119,6 +136,40 @@ Michael
 
 ---
 
+archive/issue_events_000657.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T20:43:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/290",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/290#event-657"
+}
+```
+
+
+
+---
+
+archive/issue_events_000658.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T20:43:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/290",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/290#event-658"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001364.json:
 ```json
 {
@@ -137,7 +188,7 @@ This works now.
 
 ---
 
-archive/issue_events_000307.json:
+archive/issue_events_000659.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -145,7 +196,7 @@ archive/issue_events_000307.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/290",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/290#event-307"
+    "url": "https://github.com/sagemath/sagetest/issues/290#event-659"
 }
 ```
 
@@ -166,3 +217,71 @@ archive/issue_comments_001365.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000660.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T20:44:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/290",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/290#event-660"
+}
+```
+
+
+
+---
+
+archive/issue_events_000661.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T20:44:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/290",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/290#event-661"
+}
+```
+
+
+
+---
+
+archive/issue_events_000662.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-03T21:20:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/290",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/290#event-662"
+}
+```
+
+
+
+---
+
+archive/issue_events_000663.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-03T21:20:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/290",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/290#event-663"
+}
+```

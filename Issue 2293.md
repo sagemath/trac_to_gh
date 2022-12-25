@@ -68,6 +68,23 @@ for the patch.
 
 ---
 
+archive/issue_events_005414.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-24T19:08:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2293",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2293#event-5414"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015181.json:
 ```json
 {
@@ -122,7 +139,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002468.json:
+archive/issue_events_005415.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,6 +147,6 @@ archive/issue_events_002468.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2293",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2293#event-2468"
+    "url": "https://github.com/sagemath/sagetest/issues/2293#event-5415"
 }
 ```

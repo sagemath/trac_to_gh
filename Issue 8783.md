@@ -771,6 +771,23 @@ Closing as a duplicate in light of #13007.
 
 ---
 
+archive/issue_events_021407.json:
+```json
+{
+    "actor": "https://github.com/benjaminfjones",
+    "created_at": "2012-05-25T20:27:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8783",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8783#event-21407"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080289.json:
 ```json
 {
@@ -789,7 +806,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008948.json:
+archive/issue_events_021408.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -797,6 +814,6 @@ archive/issue_events_008948.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8783#event-8948"
+    "url": "https://github.com/sagemath/sagetest/issues/8783#event-21408"
 }
 ```

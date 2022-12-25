@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/283
 
 ---
 
+archive/issue_events_000638.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-02-24T02:27:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/283",
+    "milestone": "sage-2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/283#event-638"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001346.json:
 ```json
 {
@@ -41,6 +58,40 @@ archive/issue_comments_001346.json:
 ```
 
 Virtual PC
+
+
+
+---
+
+archive/issue_events_000639.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T06:16:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/283",
+    "milestone": "sage-2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/283#event-639"
+}
+```
+
+
+
+---
+
+archive/issue_events_000640.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T06:16:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/283",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/283#event-640"
+}
+```
 
 
 
@@ -64,7 +115,7 @@ It would be nice if there was a upgrade login that would upgrade the whole vmwar
 
 ---
 
-archive/issue_events_000300.json:
+archive/issue_events_000641.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,7 +123,7 @@ archive/issue_events_000300.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/283",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/283#event-300"
+    "url": "https://github.com/sagemath/sagetest/issues/283#event-641"
 }
 ```
 
@@ -93,3 +144,37 @@ archive/issue_comments_001348.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_000642.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:17:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/283",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/283#event-642"
+}
+```
+
+
+
+---
+
+archive/issue_events_000643.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:17:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/283",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/283#event-643"
+}
+```

@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/604
 
 ---
 
+archive/issue_events_001610.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jbmohler",
+    "created_at": "2007-09-06T21:45:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/604",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/604#event-1610"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003098.json:
 ```json
 {
@@ -66,7 +83,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000661.json:
+archive/issue_events_001611.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -74,6 +91,6 @@ archive/issue_events_000661.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/604",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/604#event-661"
+    "url": "https://github.com/sagemath/sagetest/issues/604#event-1611"
 }
 ```

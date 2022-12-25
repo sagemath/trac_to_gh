@@ -185,7 +185,7 @@ Tested on sage-4.3.3 after having applied ticket #7619. All tests passed, lookin
 
 ---
 
-archive/issue_events_008434.json:
+archive/issue_events_019695.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -193,7 +193,7 @@ archive/issue_events_008434.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8233",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8233#event-8434"
+    "url": "https://github.com/sagemath/sagetest/issues/8233#event-19695"
 }
 ```
 

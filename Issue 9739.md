@@ -129,6 +129,23 @@ Doctest with unique temporary files.  Apply to scripts repo.
 
 ---
 
+archive/issue_events_024384.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-04T07:01:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9739",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9739#event-24384"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095066.json:
 ```json
 {
@@ -476,6 +493,40 @@ Changing keywords from "" to "doctest scripts".
 
 ---
 
+archive/issue_events_024385.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-25T08:00:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9739",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9739#event-24385"
+}
+```
+
+
+
+---
+
+archive/issue_events_024386.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-25T08:00:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9739",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9739#event-24386"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095081.json:
 ```json
 {
@@ -818,6 +869,40 @@ archive/issue_comments_095093.json:
 ```
 
 I'm still interested in working on this patch, but I don't expect it to be ready on time for 4.6.1.
+
+
+
+---
+
+archive/issue_events_024387.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-02T15:05:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9739",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9739#event-24387"
+}
+```
+
+
+
+---
+
+archive/issue_events_024388.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-02T15:05:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9739",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9739#event-24388"
+}
+```
 
 
 
@@ -1190,6 +1275,40 @@ Replying to [comment:37 jason]:
 > Please ban forextrading11 for spam.
 
 Done.
+
+
+
+---
+
+archive/issue_events_024389.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-14T08:52:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9739",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9739#event-24389"
+}
+```
+
+
+
+---
+
+archive/issue_events_024390.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-14T08:52:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9739",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9739#event-24390"
+}
+```
 
 
 
@@ -2906,7 +3025,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009871.json:
+archive/issue_events_024391.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -2914,7 +3033,7 @@ archive/issue_events_009871.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9739#event-9871"
+    "url": "https://github.com/sagemath/sagetest/issues/9739#event-24391"
 }
 ```
 

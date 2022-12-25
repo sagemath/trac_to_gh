@@ -336,7 +336,24 @@ Dave
 
 ---
 
-archive/issue_events_009256.json:
+archive/issue_events_022317.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-05T15:55:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9099",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9099#event-22317"
+}
+```
+
+
+
+---
+
+archive/issue_events_022318.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -344,7 +361,7 @@ archive/issue_events_009256.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#event-9256"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#event-22318"
 }
 ```
 

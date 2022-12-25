@@ -50,6 +50,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/777
 
 ---
 
+archive/issue_events_002140.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-04T19:52:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/777",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/777#event-2140"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004621.json:
 ```json
 {
@@ -95,7 +112,41 @@ so this ticket should be closed, presumably as a duplicate.
 
 ---
 
-archive/issue_events_000880.json:
+archive/issue_events_002141.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-10T16:17:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/777",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/777#event-2141"
+}
+```
+
+
+
+---
+
+archive/issue_events_002142.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-10T16:17:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/777",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/777#event-2142"
+}
+```
+
+
+
+---
+
+archive/issue_events_002143.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -103,7 +154,7 @@ archive/issue_events_000880.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/777",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/777#event-880"
+    "url": "https://github.com/sagemath/sagetest/issues/777#event-2143"
 }
 ```
 

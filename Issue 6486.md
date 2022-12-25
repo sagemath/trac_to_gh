@@ -132,7 +132,7 @@ This looks good. **Tons** of nice cleanup, and it's clearly the right fix for th
 
 ---
 
-archive/issue_events_006722.json:
+archive/issue_events_015318.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -140,7 +140,7 @@ archive/issue_events_006722.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6486",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6486#event-6722"
+    "url": "https://github.com/sagemath/sagetest/issues/6486#event-15318"
 }
 ```
 

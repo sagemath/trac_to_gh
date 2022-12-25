@@ -48,6 +48,23 @@ In fact, there are a *bunch* of situations where suddenly no cell has focus.  I 
 
 ---
 
+archive/issue_events_019692.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-02-14T01:39:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8231",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8231#event-19692"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072587.json:
 ```json
 {
@@ -212,7 +229,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008432.json:
+archive/issue_events_019693.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -220,6 +237,6 @@ archive/issue_events_008432.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8231#event-8432"
+    "url": "https://github.com/sagemath/sagetest/issues/8231#event-19693"
 }
 ```

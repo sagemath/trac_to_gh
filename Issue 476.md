@@ -65,6 +65,23 @@ Changing component from user interface to documentation.
 
 ---
 
+archive/issue_events_001206.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-29T03:20:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/476",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/476#event-1206"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002367.json:
 ```json
 {
@@ -87,7 +104,24 @@ Michael
 
 ---
 
-archive/issue_events_000508.json:
+archive/issue_events_001207.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-26T02:32:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/476",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/476#event-1207"
+}
+```
+
+
+
+---
+
+archive/issue_events_001208.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -95,7 +129,7 @@ archive/issue_events_000508.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/476",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/476#event-508"
+    "url": "https://github.com/sagemath/sagetest/issues/476#event-1208"
 }
 ```
 

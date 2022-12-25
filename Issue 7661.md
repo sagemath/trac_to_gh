@@ -495,7 +495,7 @@ Merged "trac_7661-maxima_convert_back.take2.patch" in 4.4.alpha0
 
 ---
 
-archive/issue_events_007881.json:
+archive/issue_events_018257.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -503,7 +503,7 @@ archive/issue_events_007881.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7661#event-7881"
+    "url": "https://github.com/sagemath/sagetest/issues/7661#event-18257"
 }
 ```
 

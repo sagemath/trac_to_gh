@@ -119,6 +119,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_008156.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2012-05-29T00:39:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3565",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3565#event-8156"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025144.json:
 ```json
 {
@@ -137,7 +154,7 @@ No longer valid since sagenb is a different project.
 
 ---
 
-archive/issue_events_003783.json:
+archive/issue_events_008157.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -145,7 +162,7 @@ archive/issue_events_003783.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3565",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3565#event-3783"
+    "url": "https://github.com/sagemath/sagetest/issues/3565#event-8157"
 }
 ```
 

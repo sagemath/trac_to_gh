@@ -70,6 +70,23 @@ The problem is that fcp (factored char poly) returns (x-1)*(x-1), as opposed to 
 
 ---
 
+archive/issue_events_004163.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2008-01-18T16:20:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1706",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1706#event-4163"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010778.json:
 ```json
 {
@@ -200,7 +217,7 @@ The patch for #2050 was merged in 2.10.3.rc0 .
 
 ---
 
-archive/issue_events_001865.json:
+archive/issue_events_004164.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -208,7 +225,7 @@ archive/issue_events_001865.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1706#event-1865"
+    "url": "https://github.com/sagemath/sagetest/issues/1706#event-4164"
 }
 ```
 

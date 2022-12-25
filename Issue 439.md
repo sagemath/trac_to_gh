@@ -30,6 +30,40 @@ Issue created by migration from https://trac.sagemath.org/ticket/439
 
 ---
 
+archive/issue_events_001080.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/pdehaye",
+    "created_at": "2007-08-18T18:03:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/439",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/439#event-1080"
+}
+```
+
+
+
+---
+
+archive/issue_events_001081.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/pdehaye",
+    "created_at": "2007-08-18T21:52:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/439",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/439#event-1081"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002187.json:
 ```json
 {
@@ -108,6 +142,23 @@ Trac #160, which will be included before this, might need to be revisited.
 
 ---
 
+archive/issue_events_001082.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-21T00:59:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/439",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/439#event-1082"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002191.json:
 ```json
 {
@@ -126,7 +177,7 @@ Paul has implemented this, sent me a patch, and I've applied it.
 
 ---
 
-archive/issue_events_000466.json:
+archive/issue_events_001083.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -134,7 +185,7 @@ archive/issue_events_000466.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/439",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/439#event-466"
+    "url": "https://github.com/sagemath/sagetest/issues/439#event-1083"
 }
 ```
 

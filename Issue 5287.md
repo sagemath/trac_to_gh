@@ -311,7 +311,7 @@ I just want to add that I'm ok with this being merged since there are a 1000 oth
 
 ---
 
-archive/issue_events_005542.json:
+archive/issue_events_012289.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -319,7 +319,7 @@ archive/issue_events_005542.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5287",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5287#event-5542"
+    "url": "https://github.com/sagemath/sagetest/issues/5287#event-12289"
 }
 ```
 

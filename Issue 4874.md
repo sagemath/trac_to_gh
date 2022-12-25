@@ -64,6 +64,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4874
 
 ---
 
+archive/issue_events_011223.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-24T21:54:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4874",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4874#event-11223"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036828.json:
 ```json
 {
@@ -103,6 +120,57 @@ Assigned to 3.3 since it would be nice to get this in due to its improved perfor
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_011224.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-06T19:52:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4874",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4874#event-11224"
+}
+```
+
+
+
+---
+
+archive/issue_events_011225.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-06T19:52:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4874",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4874#event-11225"
+}
+```
+
+
+
+---
+
+archive/issue_events_011226.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-07T17:14:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4874",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4874#event-11226"
+}
+```
 
 
 
@@ -180,7 +248,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005117.json:
+archive/issue_events_011227.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -188,6 +256,6 @@ archive/issue_events_005117.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4874",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4874#event-5117"
+    "url": "https://github.com/sagemath/sagetest/issues/4874#event-11227"
 }
 ```

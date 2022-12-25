@@ -299,7 +299,7 @@ See #6963 for a follow up to this ticket.
 
 ---
 
-archive/issue_events_003349.json:
+archive/issue_events_007087.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -307,6 +307,6 @@ archive/issue_events_003349.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3133#event-3349"
+    "url": "https://github.com/sagemath/sagetest/issues/3133#event-7087"
 }
 ```

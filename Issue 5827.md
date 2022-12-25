@@ -47,6 +47,57 @@ The patch implements an algorithm for solving the subset sum problem for super-i
 
 ---
 
+archive/issue_events_013693.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-04-21T06:55:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5827",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5827#event-13693"
+}
+```
+
+
+
+---
+
+archive/issue_events_013694.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-04-22T05:06:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5827",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5827#event-13694"
+}
+```
+
+
+
+---
+
+archive/issue_events_013695.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-04-22T05:06:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5827",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5827#event-13695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045717.json:
 ```json
 {
@@ -177,7 +228,7 @@ Changing assignee from somebody to jkantor.
 
 ---
 
-archive/issue_events_006077.json:
+archive/issue_events_013696.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -185,7 +236,7 @@ archive/issue_events_006077.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5827",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5827#event-6077"
+    "url": "https://github.com/sagemath/sagetest/issues/5827#event-13696"
 }
 ```
 

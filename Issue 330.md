@@ -51,7 +51,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000354.json:
+archive/issue_events_000771.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -59,7 +59,7 @@ archive/issue_events_000354.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/330",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/330#event-354"
+    "url": "https://github.com/sagemath/sagetest/issues/330#event-771"
 }
 ```
 
@@ -84,3 +84,20 @@ This is all in Sage now, see for example:
 http://www.informatik.uni-bremen.de/cgi-bin/cgiwrap/malb/blosxom.pl/2008/02/28
 
 . Also, curve fitting is in Sage via scipy. Marking this as `fixed`.
+
+
+
+---
+
+archive/issue_events_000772.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-29T00:19:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/330",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/330#event-772"
+}
+```

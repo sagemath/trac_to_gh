@@ -79,6 +79,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/845
 
 ---
 
+archive/issue_events_002379.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-10T13:09:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/845",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/845#event-2379"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005207.json:
 ```json
 {
@@ -128,6 +145,40 @@ archive/issue_comments_005209.json:
 ```
 
 fixed in attached patch. A Magma guru should look at this patch, though.
+
+
+
+---
+
+archive/issue_events_002380.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-30T16:38:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/845",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/845#event-2380"
+}
+```
+
+
+
+---
+
+archive/issue_events_002381.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-30T16:38:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/845",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/845#event-2381"
+}
+```
 
 
 
@@ -187,7 +238,7 @@ applied to 2.8.11.rc1
 
 ---
 
-archive/issue_events_000958.json:
+archive/issue_events_002382.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -195,6 +246,6 @@ archive/issue_events_000958.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/845",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/845#event-958"
+    "url": "https://github.com/sagemath/sagetest/issues/845#event-2382"
 }
 ```

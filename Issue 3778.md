@@ -50,6 +50,23 @@ Attachment [sage-3778.patch](tarball://root/attachments/some-uuid/ticket3778/sag
 
 ---
 
+archive/issue_events_008655.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-11T08:25:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3778",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3778#event-8655"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026808.json:
 ```json
 {
@@ -86,7 +103,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_004000.json:
+archive/issue_events_008656.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -94,6 +111,40 @@ archive/issue_events_004000.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3778",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3778#event-4000"
+    "url": "https://github.com/sagemath/sagetest/issues/3778#event-8656"
+}
+```
+
+
+
+---
+
+archive/issue_events_008657.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-08T23:51:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3778",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3778#event-8657"
+}
+```
+
+
+
+---
+
+archive/issue_events_008658.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-08T23:51:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3778",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3778#event-8658"
 }
 ```

@@ -73,6 +73,23 @@ patch to spkg-install
 
 ---
 
+archive/issue_events_007405.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-25T13:26:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3297",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3297#event-7405"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022758.json:
 ```json
 {
@@ -438,6 +455,40 @@ Changing status from needs_work to positive_review.
 
 ---
 
+archive/issue_events_007406.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-21T10:49:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3297",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3297#event-7406"
+}
+```
+
+
+
+---
+
+archive/issue_events_007407.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-21T10:49:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3297",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3297#event-7407"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022775.json:
 ```json
 {
@@ -459,7 +510,7 @@ be closed.
 
 ---
 
-archive/issue_events_003516.json:
+archive/issue_events_007408.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -467,7 +518,7 @@ archive/issue_events_003516.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3297#event-3516"
+    "url": "https://github.com/sagemath/sagetest/issues/3297#event-7408"
 }
 ```
 

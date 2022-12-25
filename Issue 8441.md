@@ -288,6 +288,23 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
+archive/issue_events_020240.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-02-26T09:18:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8441",
+    "milestone": "sage-7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8441#event-20240"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075678.json:
 ```json
 {
@@ -319,6 +336,40 @@ archive/issue_comments_075679.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_020241.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-03-27T17:17:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8441",
+    "milestone": "sage-7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8441#event-20241"
+}
+```
+
+
+
+---
+
+archive/issue_events_020242.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-03-27T17:17:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8441",
+    "milestone": "sage-7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8441#event-20242"
+}
+```
 
 
 

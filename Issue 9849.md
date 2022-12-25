@@ -267,6 +267,23 @@ See the attachment [attachment:reviewer-style.png] for a preview of the new colo
 
 ---
 
+archive/issue_events_024794.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-11T12:06:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9849",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9849#event-24794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097052.json:
 ```json
 {
@@ -591,7 +608,7 @@ The new style looks great.  I suggest that we open new ticket(s) for any further
 
 ---
 
-archive/issue_events_009977.json:
+archive/issue_events_024795.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -599,7 +616,7 @@ archive/issue_events_009977.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9849#event-9977"
+    "url": "https://github.com/sagemath/sagetest/issues/9849#event-24795"
 }
 ```
 

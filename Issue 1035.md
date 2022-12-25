@@ -56,7 +56,7 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_events_001160.json:
+archive/issue_events_002826.json:
 ```json
 {
     "actor": "https://github.com/ClementPernet",
@@ -64,7 +64,7 @@ archive/issue_events_001160.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1035",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1035#event-1160"
+    "url": "https://github.com/sagemath/sagetest/issues/1035#event-2826"
 }
 ```
 

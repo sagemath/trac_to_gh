@@ -119,6 +119,23 @@ Changing component from algebra to build.
 
 ---
 
+archive/issue_events_008467.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-21T18:12:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3694",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3694#event-8467"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026158.json:
 ```json
 {
@@ -166,7 +183,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003916.json:
+archive/issue_events_008468.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -174,7 +191,7 @@ archive/issue_events_003916.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3694",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3694#event-3916"
+    "url": "https://github.com/sagemath/sagetest/issues/3694#event-8468"
 }
 ```
 

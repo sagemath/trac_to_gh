@@ -189,6 +189,23 @@ This is the main overhaul.
 
 ---
 
+archive/issue_events_002041.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-27T00:14:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/749",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/749#event-2041"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004418.json:
 ```json
 {
@@ -225,7 +242,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000842.json:
+archive/issue_events_002042.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -233,6 +250,6 @@ archive/issue_events_000842.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/749#event-842"
+    "url": "https://github.com/sagemath/sagetest/issues/749#event-2042"
 }
 ```

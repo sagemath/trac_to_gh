@@ -92,6 +92,23 @@ Just a remark from a user:
 
 ---
 
+archive/issue_events_001060.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-18T10:00:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/432#event-1060"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002159.json:
 ```json
 {
@@ -107,6 +124,40 @@ archive/issue_comments_002159.json:
 Attachment [sage-432.patch](tarball://root/attachments/some-uuid/ticket432/sage-432.patch) by @williamstein created at 2008-03-13 15:56:56
 
 I finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).
+
+
+
+---
+
+archive/issue_events_001061.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-13T15:56:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/432#event-1061"
+}
+```
+
+
+
+---
+
+archive/issue_events_001062.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-13T15:56:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/432#event-1062"
+}
+```
 
 
 
@@ -130,7 +181,7 @@ Works for me.
 
 ---
 
-archive/issue_events_000459.json:
+archive/issue_events_001063.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -138,7 +189,7 @@ archive/issue_events_000459.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/432",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/432#event-459"
+    "url": "https://github.com/sagemath/sagetest/issues/432#event-1063"
 }
 ```
 

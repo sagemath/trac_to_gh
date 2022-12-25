@@ -106,7 +106,7 @@ The patch does what it advertises and doctests that behavior. All good, I say ap
 
 ---
 
-archive/issue_events_002790.json:
+archive/issue_events_006059.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -114,7 +114,7 @@ archive/issue_events_002790.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2599",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2599#event-2790"
+    "url": "https://github.com/sagemath/sagetest/issues/2599#event-6059"
 }
 ```
 

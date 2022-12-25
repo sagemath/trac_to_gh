@@ -74,6 +74,23 @@ Changing component from Cygwin to calculus.
 
 ---
 
+archive/issue_events_006373.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-31T21:10:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2743",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2743#event-6373"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018819.json:
 ```json
 {
@@ -205,7 +222,7 @@ Merged in Sage 3.0.alpha2
 
 ---
 
-archive/issue_events_002931.json:
+archive/issue_events_006374.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -213,6 +230,6 @@ archive/issue_events_002931.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2743#event-2931"
+    "url": "https://github.com/sagemath/sagetest/issues/2743#event-6374"
 }
 ```

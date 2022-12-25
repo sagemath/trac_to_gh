@@ -214,6 +214,23 @@ Attachment [trac_6329.patch](tarball://root/attachments/some-uuid/ticket6329/tra
 
 ---
 
+archive/issue_events_014868.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
+    "created_at": "2011-05-25T18:35:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#event-14868"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050428.json:
 ```json
 {
@@ -534,7 +551,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006575.json:
+archive/issue_events_014869.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -542,7 +559,7 @@ archive/issue_events_006575.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6329",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6329#event-6575"
+    "url": "https://github.com/sagemath/sagetest/issues/6329#event-14869"
 }
 ```
 

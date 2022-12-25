@@ -82,6 +82,23 @@ Changing priority from major to trivial.
 
 ---
 
+archive/issue_events_000276.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:57:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/148",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/148#event-276"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000675.json:
 ```json
 {
@@ -114,7 +131,7 @@ Anyway, I do not understand this bug report at all.
 
 ---
 
-archive/issue_events_000154.json:
+archive/issue_events_000277.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -122,7 +139,7 @@ archive/issue_events_000154.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/148",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/148#event-154"
+    "url": "https://github.com/sagemath/sagetest/issues/148#event-277"
 }
 ```
 

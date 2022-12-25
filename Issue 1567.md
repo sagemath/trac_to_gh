@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1567
 
 ---
 
+archive/issue_events_003921.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-19T16:58:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1567",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1567#event-3921"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009950.json:
 ```json
 {
@@ -117,6 +134,40 @@ I have added zn_poly-0.4.1.spkg to the experimental spkg repo.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003922.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:59:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1567",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1567#event-3922"
+}
+```
+
+
+
+---
+
+archive/issue_events_003923.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:59:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1567",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1567#event-3923"
+}
+```
 
 
 
@@ -290,7 +341,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001721.json:
+archive/issue_events_003924.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -298,7 +349,7 @@ archive/issue_events_001721.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1567",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1567#event-1721"
+    "url": "https://github.com/sagemath/sagetest/issues/1567#event-3924"
 }
 ```
 

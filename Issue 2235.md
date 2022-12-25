@@ -139,7 +139,24 @@ Looks good to me.
 
 ---
 
-archive/issue_events_002405.json:
+archive/issue_events_005317.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-03-14T23:17:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2235",
+    "milestone": "sage-5.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2235#event-5317"
+}
+```
+
+
+
+---
+
+archive/issue_events_005318.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -147,7 +164,7 @@ archive/issue_events_002405.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2235#event-2405"
+    "url": "https://github.com/sagemath/sagetest/issues/2235#event-5318"
 }
 ```
 

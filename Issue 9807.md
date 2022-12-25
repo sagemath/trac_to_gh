@@ -1087,6 +1087,23 @@ So I think it would still be good if someone else would test it
 
 ---
 
+archive/issue_events_024640.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2010-09-04T20:20:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9807",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9807#event-24640"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096295.json:
 ```json
 {
@@ -1353,6 +1370,40 @@ archive/issue_comments_096306.json:
 ```
 
 Included direct links to files in description.
+
+
+
+---
+
+archive/issue_events_024641.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2010-09-06T14:06:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9807",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9807#event-24641"
+}
+```
+
+
+
+---
+
+archive/issue_events_024642.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2010-09-06T14:06:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9807",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9807#event-24642"
+}
+```
 
 
 
@@ -8952,6 +9003,40 @@ Kudos to you guys!
 
 ---
 
+archive/issue_events_024643.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-23T12:32:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9807",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9807#event-24643"
+}
+```
+
+
+
+---
+
+archive/issue_events_024644.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-23T12:32:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9807",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9807#event-24644"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096571.json:
 ```json
 {
@@ -8988,7 +9073,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009930.json:
+archive/issue_events_024645.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -8996,7 +9081,7 @@ archive/issue_events_009930.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9807#event-9930"
+    "url": "https://github.com/sagemath/sagetest/issues/9807#event-24645"
 }
 ```
 

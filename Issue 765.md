@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/765
 
 ---
 
+archive/issue_events_002087.json:
+```json
+{
+    "actor": "https://github.com/nbruin",
+    "created_at": "2007-09-30T20:26:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/765",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/765#event-2087"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004511.json:
 ```json
 {
@@ -51,6 +68,40 @@ archive/issue_comments_004511.json:
 ```
 
 Weird.
+
+
+
+---
+
+archive/issue_events_002088.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:27:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/765",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/765#event-2088"
+}
+```
+
+
+
+---
+
+archive/issue_events_002089.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:27:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/765",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/765#event-2089"
+}
+```
 
 
 
@@ -92,7 +143,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000862.json:
+archive/issue_events_002090.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -100,7 +151,7 @@ archive/issue_events_000862.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/765",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/765#event-862"
+    "url": "https://github.com/sagemath/sagetest/issues/765#event-2090"
 }
 ```
 

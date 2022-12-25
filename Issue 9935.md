@@ -118,7 +118,7 @@ Indeed, `calculus.rst` seems like the right place to put this.  The patch applie
 
 ---
 
-archive/issue_events_010062.json:
+archive/issue_events_025063.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -126,7 +126,7 @@ archive/issue_events_010062.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9935",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9935#event-10062"
+    "url": "https://github.com/sagemath/sagetest/issues/9935#event-25063"
 }
 ```
 

@@ -59,6 +59,23 @@ Changing assignee from mabshoff to dmharvey.
 
 ---
 
+archive/issue_events_006920.json:
+```json
+{
+    "actor": "https://github.com/kedlaya",
+    "created_at": "2008-04-29T21:07:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3056",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3056#event-6920"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021055.json:
 ```json
 {
@@ -232,6 +249,40 @@ Also, I added the test that presented this problem to the doctests of polynomial
 
 ---
 
+archive/issue_events_006921.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2009-01-22T17:20:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3056",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3056#event-6921"
+}
+```
+
+
+
+---
+
+archive/issue_events_006922.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2009-01-22T17:20:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3056",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3056#event-6922"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021064.json:
 ```json
 {
@@ -250,7 +301,7 @@ Looks good.
 
 ---
 
-archive/issue_events_003266.json:
+archive/issue_events_006923.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -258,7 +309,7 @@ archive/issue_events_003266.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3056#event-3266"
+    "url": "https://github.com/sagemath/sagetest/issues/3056#event-6923"
 }
 ```
 

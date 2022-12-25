@@ -158,7 +158,7 @@ diff -r 4fe8209d82ae -r 2a6823917a29 sage/interfaces/gap.py
 
 ---
 
-archive/issue_events_000042.json:
+archive/issue_events_000091.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -166,7 +166,7 @@ archive/issue_events_000042.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/43",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/43#event-42"
+    "url": "https://github.com/sagemath/sagetest/issues/43#event-91"
 }
 ```
 

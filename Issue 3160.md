@@ -83,7 +83,7 @@ archive/issue_comments_021876.json:
 
 ---
 
-archive/issue_events_003380.json:
+archive/issue_events_007138.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -91,7 +91,7 @@ archive/issue_events_003380.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3160",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3160#event-3380"
+    "url": "https://github.com/sagemath/sagetest/issues/3160#event-7138"
 }
 ```
 

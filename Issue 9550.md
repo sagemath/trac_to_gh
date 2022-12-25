@@ -61,6 +61,57 @@ NOTE: this happened when upgrading a binary.  I've upgraded *source* installs wi
 
 ---
 
+archive/issue_events_023759.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9550",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9550#event-23759"
+}
+```
+
+
+
+---
+
+archive/issue_events_023760.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-19T12:06:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9550",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9550#event-23760"
+}
+```
+
+
+
+---
+
+archive/issue_events_023761.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-19T12:06:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9550",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9550#event-23761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091904.json:
 ```json
 {
@@ -115,7 +166,7 @@ Probably too late to investigate ;-)
 
 ---
 
-archive/issue_events_009698.json:
+archive/issue_events_023762.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -123,7 +174,7 @@ archive/issue_events_009698.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9550",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9550#event-9698"
+    "url": "https://github.com/sagemath/sagetest/issues/9550#event-23762"
 }
 ```
 

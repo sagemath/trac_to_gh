@@ -92,6 +92,159 @@ This was never the intended functionality of CartesianProduct -- it is different
 
 ---
 
+archive/issue_events_007586.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7586"
+}
+```
+
+
+
+---
+
+archive/issue_events_007587.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7587"
+}
+```
+
+
+
+---
+
+archive/issue_events_007588.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7588"
+}
+```
+
+
+
+---
+
+archive/issue_events_007589.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7589"
+}
+```
+
+
+
+---
+
+archive/issue_events_007590.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7590"
+}
+```
+
+
+
+---
+
+archive/issue_events_007591.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7591"
+}
+```
+
+
+
+---
+
+archive/issue_events_007592.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7592"
+}
+```
+
+
+
+---
+
+archive/issue_events_007593.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2016-08-31T15:37:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7593"
+}
+```
+
+
+
+---
+
+archive/issue_events_007594.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2016-08-31T15:37:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3368",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7594"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023520.json:
 ```json
 {
@@ -189,7 +342,7 @@ Yeah, let's close a 4 digits eight years old combinat ticket for cheap :-)
 
 ---
 
-archive/issue_events_003584.json:
+archive/issue_events_007595.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -197,7 +350,7 @@ archive/issue_events_003584.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3368",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3368#event-3584"
+    "url": "https://github.com/sagemath/sagetest/issues/3368#event-7595"
 }
 ```
 

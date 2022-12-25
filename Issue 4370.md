@@ -271,6 +271,23 @@ applies independently, but the other two are highly recommended first
 
 ---
 
+archive/issue_events_009882.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2008-11-04T00:26:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#event-9882"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032055.json:
 ```json
 {
@@ -315,6 +332,40 @@ archive/issue_comments_032056.json:
 Forgot to add:
 
 If someones really needs the possibility to clone the doc repo not on shell level, but inside sage using hg.py, please open another ticket for it, because it will take me quite some while before I will be able to sacrifice the time needed to finally adapt hg.py, thanks!
+
+
+
+---
+
+archive/issue_events_009883.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-04T00:39:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#event-9883"
+}
+```
+
+
+
+---
+
+archive/issue_events_009884.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-04T00:39:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#event-9884"
+}
+```
 
 
 
@@ -491,7 +542,41 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_004615.json:
+archive/issue_events_009885.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-21T09:40:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#event-9885"
+}
+```
+
+
+
+---
+
+archive/issue_events_009886.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-21T09:40:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#event-9886"
+}
+```
+
+
+
+---
+
+archive/issue_events_009887.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -499,7 +584,7 @@ archive/issue_events_004615.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4370",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4370#event-4615"
+    "url": "https://github.com/sagemath/sagetest/issues/4370#event-9887"
 }
 ```
 

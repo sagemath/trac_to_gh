@@ -35,6 +35,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8882
 
 ---
 
+archive/issue_events_021679.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2010-05-05T02:59:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8882",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8882#event-21679"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081501.json:
 ```json
 {
@@ -358,7 +375,7 @@ Merged [trac_8882-freemod_interface_cleanup-fh.patch](http://trac.sagemath.org/s
 
 ---
 
-archive/issue_events_009039.json:
+archive/issue_events_021680.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -366,6 +383,6 @@ archive/issue_events_009039.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8882#event-9039"
+    "url": "https://github.com/sagemath/sagetest/issues/8882#event-21680"
 }
 ```

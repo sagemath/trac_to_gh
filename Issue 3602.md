@@ -57,6 +57,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3602
 
 ---
 
+archive/issue_events_008250.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-08T06:24:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3602",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3602#event-8250"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025410.json:
 ```json
 {
@@ -93,7 +110,7 @@ Total time for all tests: 19.9 seconds
 
 ---
 
-archive/issue_events_003821.json:
+archive/issue_events_008251.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -101,7 +118,7 @@ archive/issue_events_003821.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3602",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3602#event-3821"
+    "url": "https://github.com/sagemath/sagetest/issues/3602#event-8251"
 }
 ```
 

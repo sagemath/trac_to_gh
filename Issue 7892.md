@@ -110,6 +110,23 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_018868.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-01-15T21:52:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7892",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7892#event-18868"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068531.json:
 ```json
 {
@@ -123,6 +140,40 @@ archive/issue_comments_068531.json:
 ```
 
 I'm drooping the priority of this, as Solaris 8 is not supported.
+
+
+
+---
+
+archive/issue_events_018869.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-04-25T02:56:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7892",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7892#event-18869"
+}
+```
+
+
+
+---
+
+archive/issue_events_018870.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-04-25T02:56:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7892",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7892#event-18870"
+}
+```
 
 
 
@@ -200,7 +251,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008105.json:
+archive/issue_events_018871.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -208,6 +259,6 @@ archive/issue_events_008105.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7892",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7892#event-8105"
+    "url": "https://github.com/sagemath/sagetest/issues/7892#event-18871"
 }
 ```

@@ -258,7 +258,7 @@ OK, I made the lrs_volume tests optional.  Thanks very much for reviewing this.
 
 ---
 
-archive/issue_events_004495.json:
+archive/issue_events_009613.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -266,7 +266,7 @@ archive/issue_events_004495.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4256",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4256#event-4495"
+    "url": "https://github.com/sagemath/sagetest/issues/4256#event-9613"
 }
 ```
 

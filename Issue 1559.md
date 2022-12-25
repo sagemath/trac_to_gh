@@ -58,6 +58,23 @@ using a new filename for each new module. Something like this last solution migh
 
 ---
 
+archive/issue_events_003906.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-19T10:27:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1559",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1559#event-3906"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009909.json:
 ```json
 {
@@ -112,7 +129,7 @@ Deleting the temp files is completely not needed -- it's just to save disk space
 
 ---
 
-archive/issue_events_001713.json:
+archive/issue_events_003907.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -120,7 +137,24 @@ archive/issue_events_001713.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1559#event-1713"
+    "url": "https://github.com/sagemath/sagetest/issues/1559#event-3907"
+}
+```
+
+
+
+---
+
+archive/issue_events_003908.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-14T16:35:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1559",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1559#event-3908"
 }
 ```
 

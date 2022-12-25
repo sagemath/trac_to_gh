@@ -1298,6 +1298,23 @@ I've added a SageNB patch, folded sage repository patch, and updated scripts rep
 
 ---
 
+archive/issue_events_024746.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-07T10:00:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#event-24746"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096833.json:
 ```json
 {
@@ -1347,7 +1364,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009950.json:
+archive/issue_events_024747.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1355,7 +1372,7 @@ archive/issue_events_009950.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9827#event-9950"
+    "url": "https://github.com/sagemath/sagetest/issues/9827#event-24747"
 }
 ```
 

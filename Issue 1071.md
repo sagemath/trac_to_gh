@@ -100,6 +100,23 @@ Updated patch attached.
 
 ---
 
+archive/issue_events_002898.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-03T18:30:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1071",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1071#event-2898"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006469.json:
 ```json
 {
@@ -144,7 +161,7 @@ I don't mean to push my original patch (which's problems were fixed by mhansen) 
 
 ---
 
-archive/issue_events_001193.json:
+archive/issue_events_002899.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -152,7 +169,7 @@ archive/issue_events_001193.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1071#event-1193"
+    "url": "https://github.com/sagemath/sagetest/issues/1071#event-2899"
 }
 ```
 

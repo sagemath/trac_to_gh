@@ -109,6 +109,23 @@ Well, to be fair, the new code is half doctested.  The new graph functions are d
 
 ---
 
+archive/issue_events_013332.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T08:06:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5669",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5669#event-13332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044265.json:
 ```json
 {
@@ -127,7 +144,7 @@ Duplication of #6355.
 
 ---
 
-archive/issue_events_005912.json:
+archive/issue_events_013333.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -135,7 +152,7 @@ archive/issue_events_005912.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5669",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5669#event-5912"
+    "url": "https://github.com/sagemath/sagetest/issues/5669#event-13333"
 }
 ```
 

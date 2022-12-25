@@ -172,6 +172,23 @@ Martin suggested to close this ticket as a duplicate of #4260, and I agree. So, 
 
 ---
 
+archive/issue_events_009615.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2012-03-02T09:59:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4258",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4258#event-9615"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030932.json:
 ```json
 {
@@ -190,7 +207,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_004497.json:
+archive/issue_events_009616.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -198,6 +215,6 @@ archive/issue_events_004497.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4258#event-4497"
+    "url": "https://github.com/sagemath/sagetest/issues/4258#event-9616"
 }
 ```

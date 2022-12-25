@@ -197,7 +197,7 @@ I applied this to sage-4.6.alpha1 with #9898 and #9753 installed. Changes look s
 
 ---
 
-archive/issue_events_009893.json:
+archive/issue_events_024469.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -205,7 +205,7 @@ archive/issue_events_009893.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9763#event-9893"
+    "url": "https://github.com/sagemath/sagetest/issues/9763#event-24469"
 }
 ```
 

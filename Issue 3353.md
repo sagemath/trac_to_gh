@@ -48,6 +48,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3353
 
 ---
 
+archive/issue_events_007517.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-03T02:10:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#event-7517"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023254.json:
 ```json
 {
@@ -444,7 +461,7 @@ That fixes it for me, and all else works well.
 
 ---
 
-archive/issue_events_003571.json:
+archive/issue_events_007518.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -452,7 +469,7 @@ archive/issue_events_003571.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3353#event-3571"
+    "url": "https://github.com/sagemath/sagetest/issues/3353#event-7518"
 }
 ```
 

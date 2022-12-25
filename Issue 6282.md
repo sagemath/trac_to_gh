@@ -116,7 +116,7 @@ Done by ncalexan for 4.0.2.alpha0.
 
 ---
 
-archive/issue_events_006526.json:
+archive/issue_events_014692.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -124,6 +124,6 @@ archive/issue_events_006526.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6282",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6282#event-6526"
+    "url": "https://github.com/sagemath/sagetest/issues/6282#event-14692"
 }
 ```

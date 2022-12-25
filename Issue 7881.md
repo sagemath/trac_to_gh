@@ -140,6 +140,23 @@ I propose closing this as "duplicate".
 
 ---
 
+archive/issue_events_018843.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-10-03T15:46:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#event-18843"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068387.json:
 ```json
 {
@@ -212,7 +229,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008096.json:
+archive/issue_events_018844.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -220,6 +237,6 @@ archive/issue_events_008096.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7881#event-8096"
+    "url": "https://github.com/sagemath/sagetest/issues/7881#event-18844"
 }
 ```

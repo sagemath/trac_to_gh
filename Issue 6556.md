@@ -121,6 +121,23 @@ Attachment [trac_6556.patch](tarball://root/attachments/some-uuid/ticket6556/tra
 
 ---
 
+archive/issue_events_015467.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/hgranath",
+    "created_at": "2009-08-17T17:47:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6556",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6556#event-15467"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053364.json:
 ```json
 {
@@ -159,7 +176,7 @@ Merged `trac_6556.patch`.
 
 ---
 
-archive/issue_events_006793.json:
+archive/issue_events_015468.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -167,7 +184,7 @@ archive/issue_events_006793.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6556",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6556#event-6793"
+    "url": "https://github.com/sagemath/sagetest/issues/6556#event-15468"
 }
 ```
 

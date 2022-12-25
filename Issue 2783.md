@@ -58,7 +58,7 @@ According to the ticket description the ticket should be marked as invalid since
 
 ---
 
-archive/issue_events_002971.json:
+archive/issue_events_006424.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -66,7 +66,7 @@ archive/issue_events_002971.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2783#event-2971"
+    "url": "https://github.com/sagemath/sagetest/issues/2783#event-6424"
 }
 ```
 
@@ -128,7 +128,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002972.json:
+archive/issue_events_006425.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -136,7 +136,7 @@ archive/issue_events_002972.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2783#event-2972"
+    "url": "https://github.com/sagemath/sagetest/issues/2783#event-6425"
 }
 ```
 
@@ -233,6 +233,23 @@ Any chance this could be related to using a terminal which has trouble with deal
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_006426.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-22T00:18:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2783",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2783#event-6426"
+}
+```
 
 
 
@@ -360,7 +377,7 @@ No, and using rpy2 instead doesn't produce it.  Moreover, I completely rewrote f
 
 ---
 
-archive/issue_events_002973.json:
+archive/issue_events_006427.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -368,7 +385,7 @@ archive/issue_events_002973.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2783#event-2973"
+    "url": "https://github.com/sagemath/sagetest/issues/2783#event-6427"
 }
 ```
 

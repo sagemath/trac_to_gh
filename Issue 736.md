@@ -85,6 +85,23 @@ I have no clue what this ticket means or involves.  What is it???
 
 ---
 
+archive/issue_events_002001.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-25T06:29:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/736",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/736#event-2001"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004299.json:
 ```json
 {
@@ -103,7 +120,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000823.json:
+archive/issue_events_002002.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -111,7 +128,7 @@ archive/issue_events_000823.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/736#event-823"
+    "url": "https://github.com/sagemath/sagetest/issues/736#event-2002"
 }
 ```
 
@@ -137,6 +154,40 @@ Please add a description or a patch.
 
 ---
 
+archive/issue_events_002003.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:59:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/736",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/736#event-2003"
+}
+```
+
+
+
+---
+
+archive/issue_events_002004.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:59:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/736",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/736#event-2004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004301.json:
 ```json
 {
@@ -155,7 +206,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000824.json:
+archive/issue_events_002005.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -163,7 +214,7 @@ archive/issue_events_000824.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/736#event-824"
+    "url": "https://github.com/sagemath/sagetest/issues/736#event-2005"
 }
 ```
 
@@ -209,6 +260,40 @@ Resolution changed from invalid to
 
 ---
 
+archive/issue_events_002006.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T15:29:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/736",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/736#event-2006"
+}
+```
+
+
+
+---
+
+archive/issue_events_002007.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T15:29:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/736",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/736#event-2007"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004304.json:
 ```json
 {
@@ -227,7 +312,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000825.json:
+archive/issue_events_002008.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -235,6 +320,6 @@ archive/issue_events_000825.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/736#event-825"
+    "url": "https://github.com/sagemath/sagetest/issues/736#event-2008"
 }
 ```

@@ -60,6 +60,23 @@ Patch proposal
 
 ---
 
+archive/issue_events_012204.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-02-13T23:34:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5255",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5255#event-12204"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040246.json:
 ```json
 {
@@ -211,7 +228,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005511.json:
+archive/issue_events_012205.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -219,6 +236,6 @@ archive/issue_events_005511.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5255",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5255#event-5511"
+    "url": "https://github.com/sagemath/sagetest/issues/5255#event-12205"
 }
 ```

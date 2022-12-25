@@ -93,7 +93,7 @@ Reported as fixed by jvoight in 2.8.11.
 
 ---
 
-archive/issue_events_001200.json:
+archive/issue_events_002918.json:
 ```json
 {
     "actor": "https://github.com/yqiang",
@@ -101,7 +101,7 @@ archive/issue_events_001200.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1078",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1078#event-1200"
+    "url": "https://github.com/sagemath/sagetest/issues/1078#event-2918"
 }
 ```
 

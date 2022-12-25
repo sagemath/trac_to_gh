@@ -395,7 +395,7 @@ I give a positive review to Nicolas's changes.
 
 ---
 
-archive/issue_events_006037.json:
+archive/issue_events_013586.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -403,7 +403,7 @@ archive/issue_events_006037.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5790",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5790#event-6037"
+    "url": "https://github.com/sagemath/sagetest/issues/5790#event-13586"
 }
 ```
 
@@ -442,3 +442,20 @@ archive/issue_comments_045264.json:
 ```
 
 Merged `trac_5790-partition.patch`.
+
+
+
+---
+
+archive/issue_events_013587.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-19T06:30:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5790",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5790#event-13587"
+}
+```

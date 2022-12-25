@@ -101,6 +101,23 @@ John
 
 ---
 
+archive/issue_events_009009.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2008-08-22T18:54:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3927",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3927#event-9009"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028052.json:
 ```json
 {
@@ -185,7 +202,7 @@ Last patch is fine -- thanks.
 
 ---
 
-archive/issue_events_004152.json:
+archive/issue_events_009010.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -193,7 +210,7 @@ archive/issue_events_004152.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3927",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3927#event-4152"
+    "url": "https://github.com/sagemath/sagetest/issues/3927#event-9010"
 }
 ```
 

@@ -119,6 +119,23 @@ Renamed patches and commit messages to follow conventions. Apply both patches st
 
 ---
 
+archive/issue_events_018890.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-04-11T21:43:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7897",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7897#event-18890"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068568.json:
 ```json
 {
@@ -191,7 +208,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008110.json:
+archive/issue_events_018891.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -199,6 +216,6 @@ archive/issue_events_008110.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7897#event-8110"
+    "url": "https://github.com/sagemath/sagetest/issues/7897#event-18891"
 }
 ```

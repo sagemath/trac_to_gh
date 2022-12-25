@@ -85,7 +85,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_005130.json:
+archive/issue_events_011268.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -93,7 +93,24 @@ archive/issue_events_005130.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4886",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4886#event-5130"
+    "url": "https://github.com/sagemath/sagetest/issues/4886#event-11268"
+}
+```
+
+
+
+---
+
+archive/issue_events_011269.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-09T22:27:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4886",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4886#event-11269"
 }
 ```
 

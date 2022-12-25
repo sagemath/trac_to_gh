@@ -32,6 +32,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1775
 
 ---
 
+archive/issue_events_004334.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-14T12:48:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1775",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1775#event-4334"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011211.json:
 ```json
 {
@@ -133,7 +150,41 @@ I cannot duplicate this in Sage 3.2.3 either.  I'm going to mark it as invalid a
 
 ---
 
-archive/issue_events_001932.json:
+archive/issue_events_004335.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-23T12:43:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1775",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1775#event-4335"
+}
+```
+
+
+
+---
+
+archive/issue_events_004336.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-23T12:43:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1775",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1775#event-4336"
+}
+```
+
+
+
+---
+
+archive/issue_events_004337.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -141,7 +192,7 @@ archive/issue_events_001932.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1775",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1775#event-1932"
+    "url": "https://github.com/sagemath/sagetest/issues/1775#event-4337"
 }
 ```
 

@@ -83,6 +83,23 @@ uh, in the interest of full disclosure, I didn't doctest this, but I did sage -b
 
 ---
 
+archive/issue_events_006964.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-03T03:27:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3085",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3085#event-6964"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021261.json:
 ```json
 {
@@ -100,6 +117,40 @@ After looking at the patch I am convinced it will not harm anybody when we merge
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_006965.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-03T04:43:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3085",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3085#event-6965"
+}
+```
+
+
+
+---
+
+archive/issue_events_006966.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-03T04:43:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3085",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3085#event-6966"
+}
+```
 
 
 
@@ -123,7 +174,7 @@ Merged in Sage 3.0.1.final
 
 ---
 
-archive/issue_events_003299.json:
+archive/issue_events_006967.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -131,7 +182,7 @@ archive/issue_events_003299.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3085#event-3299"
+    "url": "https://github.com/sagemath/sagetest/issues/3085#event-6967"
 }
 ```
 

@@ -87,6 +87,23 @@ wasn't using cvxopt's umfpack.
 
 ---
 
+archive/issue_events_002638.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-03T12:11:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/957",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/957#event-2638"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005818.json:
 ```json
 {
@@ -104,6 +121,40 @@ What is the current status of this?
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002639.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-18T09:06:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/957",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/957#event-2639"
+}
+```
+
+
+
+---
+
+archive/issue_events_002640.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-18T09:06:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/957",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/957#event-2640"
+}
+```
 
 
 
@@ -150,7 +201,7 @@ it also work for me with 2.8.13.rc2 on a G4 on 10.4, so close this.
 
 ---
 
-archive/issue_events_001079.json:
+archive/issue_events_002641.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -158,7 +209,7 @@ archive/issue_events_001079.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/957",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/957#event-1079"
+    "url": "https://github.com/sagemath/sagetest/issues/957#event-2641"
 }
 ```
 

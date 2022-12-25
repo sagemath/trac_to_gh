@@ -62,6 +62,23 @@ of course.
 
 ---
 
+archive/issue_events_010293.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T20:08:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4526",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4526#event-10293"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033541.json:
 ```json
 {
@@ -185,7 +202,7 @@ Merged in Sage 3.2.rc1
 
 ---
 
-archive/issue_events_004770.json:
+archive/issue_events_010294.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -193,7 +210,7 @@ archive/issue_events_004770.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4526",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4526#event-4770"
+    "url": "https://github.com/sagemath/sagetest/issues/4526#event-10294"
 }
 ```
 
@@ -214,3 +231,37 @@ archive/issue_comments_033546.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_010295.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T04:49:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4526",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4526#event-10295"
+}
+```
+
+
+
+---
+
+archive/issue_events_010296.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T04:49:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4526",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4526#event-10296"
+}
+```

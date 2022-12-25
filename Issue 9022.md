@@ -227,7 +227,7 @@ Dave
 
 ---
 
-archive/issue_events_009174.json:
+archive/issue_events_022075.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -235,7 +235,7 @@ archive/issue_events_009174.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9022",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9022#event-9174"
+    "url": "https://github.com/sagemath/sagetest/issues/9022#event-22075"
 }
 ```
 
@@ -294,3 +294,20 @@ archive/issue_comments_083345.json:
 I would also see #9295, which is an improvement on #9041, adding the facility to check Python by adding an spkg-check file. 
 
 Dave
+
+
+
+---
+
+archive/issue_events_022076.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-06-25T16:00:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9022",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9022#event-22076"
+}
+```

@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3934
 
 ---
 
+archive/issue_events_009034.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2008-08-23T11:56:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3934",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3934#event-9034"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028124.json:
 ```json
 {
@@ -410,7 +427,41 @@ I'm also changing this to target 3.2
 
 ---
 
-archive/issue_events_004163.json:
+archive/issue_events_009035.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-10-23T16:18:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3934",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3934#event-9035"
+}
+```
+
+
+
+---
+
+archive/issue_events_009036.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-10-23T16:18:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3934",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3934#event-9036"
+}
+```
+
+
+
+---
+
+archive/issue_events_009037.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -418,7 +469,7 @@ archive/issue_events_004163.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#event-4163"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#event-9037"
 }
 ```
 

@@ -828,7 +828,7 @@ Merged [gap-4.4.12.p1.spkg](http://sage.math.washington.edu/home/mvngu/spkg/stan
 
 ---
 
-archive/issue_events_008282.json:
+archive/issue_events_019343.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -836,6 +836,6 @@ archive/issue_events_008282.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8076#event-8282"
+    "url": "https://github.com/sagemath/sagetest/issues/8076#event-19343"
 }
 ```

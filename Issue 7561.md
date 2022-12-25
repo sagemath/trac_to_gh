@@ -252,7 +252,7 @@ Attachment [trac_7561-review.patch](tarball://root/attachments/some-uuid/ticket7
 
 ---
 
-archive/issue_events_007790.json:
+archive/issue_events_017931.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -260,7 +260,7 @@ archive/issue_events_007790.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7561#event-7790"
+    "url": "https://github.com/sagemath/sagetest/issues/7561#event-17931"
 }
 ```
 

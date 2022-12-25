@@ -79,7 +79,7 @@ Simple patch: just don't prefix the filename with the current directory if it al
 
 ---
 
-archive/issue_events_001069.json:
+archive/issue_events_002621.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -87,7 +87,7 @@ archive/issue_events_001069.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/949",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/949#event-1069"
+    "url": "https://github.com/sagemath/sagetest/issues/949#event-2621"
 }
 ```
 

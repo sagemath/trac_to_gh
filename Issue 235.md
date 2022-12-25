@@ -50,7 +50,7 @@ this is not much of a bug report.  useless.
 
 ---
 
-archive/issue_events_000250.json:
+archive/issue_events_000491.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -58,7 +58,7 @@ archive/issue_events_000250.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/235",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/235#event-250"
+    "url": "https://github.com/sagemath/sagetest/issues/235#event-491"
 }
 ```
 

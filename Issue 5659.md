@@ -49,7 +49,7 @@ Attachment [solve_mod.patch](tarball://root/attachments/some-uuid/ticket5659/sol
 
 ---
 
-archive/issue_events_005902.json:
+archive/issue_events_013297.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -57,7 +57,7 @@ archive/issue_events_005902.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5659",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5659#event-5902"
+    "url": "https://github.com/sagemath/sagetest/issues/5659#event-13297"
 }
 ```
 
@@ -100,3 +100,20 @@ Merged in Sage 3.4.1.rc3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013298.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-13T09:03:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5659",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5659#event-13298"
+}
+```

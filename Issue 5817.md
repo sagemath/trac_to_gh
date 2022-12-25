@@ -103,6 +103,23 @@ Michael
 
 ---
 
+archive/issue_events_013657.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T08:13:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5817",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5817#event-13657"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045627.json:
 ```json
 {
@@ -122,6 +139,40 @@ The spkg is at
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013658.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T08:29:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5817",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5817#event-13658"
+}
+```
+
+
+
+---
+
+archive/issue_events_013659.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-30T08:29:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5817",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5817#event-13659"
+}
+```
 
 
 
@@ -472,7 +523,7 @@ Merged flint-1.2.5.spkg in 4.0.1.rc0.  Note that testing is enabled.  I'll make 
 
 ---
 
-archive/issue_events_006068.json:
+archive/issue_events_013660.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -480,7 +531,7 @@ archive/issue_events_006068.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5817",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5817#event-6068"
+    "url": "https://github.com/sagemath/sagetest/issues/5817#event-13660"
 }
 ```
 

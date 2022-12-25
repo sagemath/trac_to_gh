@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/296
 
 ---
 
+archive/issue_events_000673.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-26T14:50:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/296",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/296#event-673"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001397.json:
 ```json
 {
@@ -50,7 +67,7 @@ Michael
 
 ---
 
-archive/issue_events_000313.json:
+archive/issue_events_000674.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -58,7 +75,7 @@ archive/issue_events_000313.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/296",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/296#event-313"
+    "url": "https://github.com/sagemath/sagetest/issues/296#event-674"
 }
 ```
 
@@ -97,3 +114,37 @@ archive/issue_comments_001399.json:
 ```
 
 I completely did this during bug day 6 or 7 or something.
+
+
+
+---
+
+archive/issue_events_000675.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-27T03:59:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/296",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/296#event-675"
+}
+```
+
+
+
+---
+
+archive/issue_events_000676.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-27T03:59:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/296",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/296#event-676"
+}
+```

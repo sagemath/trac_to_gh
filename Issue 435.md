@@ -29,6 +29,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/435
 
 ---
 
+archive/issue_events_001068.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-07T13:14:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/435",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/435#event-1068"
+}
+```
+
+
+
+---
+
+archive/issue_events_001069.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:17:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/435",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/435#event-1069"
+}
+```
+
+
+
+---
+
+archive/issue_events_001070.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:17:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/435",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/435#event-1070"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002171.json:
 ```json
 {
@@ -85,7 +136,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000462.json:
+archive/issue_events_001071.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -93,6 +144,6 @@ archive/issue_events_000462.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/435",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/435#event-462"
+    "url": "https://github.com/sagemath/sagetest/issues/435#event-1071"
 }
 ```

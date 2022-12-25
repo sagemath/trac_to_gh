@@ -29,6 +29,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/3352
 
 ---
 
+archive/issue_events_007513.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T06:37:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3352",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3352#event-7513"
+}
+```
+
+
+
+---
+
+archive/issue_events_007514.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-02T06:21:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3352",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3352#event-7514"
+}
+```
+
+
+
+---
+
+archive/issue_events_007515.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-02T06:21:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3352",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3352#event-7515"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023252.json:
 ```json
 {
@@ -65,7 +116,7 @@ As of Sage 4.3.1, ticket #7975 removed dsage from the standard spkg repository. 
 
 ---
 
-archive/issue_events_003570.json:
+archive/issue_events_007516.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -73,6 +124,6 @@ archive/issue_events_003570.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3352",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3352#event-3570"
+    "url": "https://github.com/sagemath/sagetest/issues/3352#event-7516"
 }
 ```

@@ -33,6 +33,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9518
 
 ---
 
+archive/issue_events_023637.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2010-07-16T17:36:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#event-23637"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091347.json:
 ```json
 {
@@ -226,6 +243,40 @@ I have been compiling pari and running its tests for about 20 years...
 
 ---
 
+archive/issue_events_023638.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-07-27T09:56:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#event-23638"
+}
+```
+
+
+
+---
+
+archive/issue_events_023639.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-07-27T09:56:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#event-23639"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091353.json:
 ```json
 {
@@ -280,7 +331,7 @@ There is an spkg-check in #9343 and it seems to work, so positive review.
 
 ---
 
-archive/issue_events_009667.json:
+archive/issue_events_023640.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -288,7 +339,7 @@ archive/issue_events_009667.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9518#event-9667"
+    "url": "https://github.com/sagemath/sagetest/issues/9518#event-23640"
 }
 ```
 

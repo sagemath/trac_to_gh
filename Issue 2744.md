@@ -51,3 +51,20 @@ archive/issue_comments_018825.json:
 ```
 
 #2778 was a duplicate of this.
+
+
+
+---
+
+archive/issue_events_006375.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-04-16T11:26:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2744",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2744#event-6375"
+}
+```

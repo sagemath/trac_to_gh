@@ -920,6 +920,23 @@ Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket524
 
 ---
 
+archive/issue_events_012193.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-13T16:03:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5249",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5249#event-12193"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040184.json:
 ```json
 {
@@ -992,7 +1009,7 @@ Michael
 
 ---
 
-archive/issue_events_005505.json:
+archive/issue_events_012194.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1000,7 +1017,7 @@ archive/issue_events_005505.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#event-5505"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#event-12194"
 }
 ```
 

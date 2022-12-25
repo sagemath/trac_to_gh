@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5767
 
 ---
 
+archive/issue_events_013522.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-13T03:41:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5767",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5767#event-13522"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045016.json:
 ```json
 {
@@ -444,7 +461,7 @@ I'm pretty sure queues can be used to preserve metadata using qfold, but that's 
 
 ---
 
-archive/issue_events_006014.json:
+archive/issue_events_013523.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -452,7 +469,7 @@ archive/issue_events_006014.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5767#event-6014"
+    "url": "https://github.com/sagemath/sagetest/issues/5767#event-13523"
 }
 ```
 

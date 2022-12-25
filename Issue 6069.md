@@ -192,6 +192,23 @@ V3 should
 
 ---
 
+archive/issue_events_014241.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-02-14T01:32:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6069",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6069#event-14241"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048211.json:
 ```json
 {
@@ -246,6 +263,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_014242.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:41:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6069",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6069#event-14242"
+}
+```
+
+
+
+---
+
+archive/issue_events_014243.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:41:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6069",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6069#event-14243"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048214.json:
 ```json
 {
@@ -264,7 +315,41 @@ archive/issue_comments_048214.json:
 
 ---
 
-archive/issue_events_006324.json:
+archive/issue_events_014244.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:22:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6069",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6069#event-14244"
+}
+```
+
+
+
+---
+
+archive/issue_events_014245.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:22:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6069",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6069#event-14245"
+}
+```
+
+
+
+---
+
+archive/issue_events_014246.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -272,7 +357,7 @@ archive/issue_events_006324.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#event-6324"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#event-14246"
 }
 ```
 

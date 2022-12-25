@@ -46,7 +46,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_001784.json:
+archive/issue_events_004033.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -54,7 +54,7 @@ archive/issue_events_001784.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1625",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1625#event-1784"
+    "url": "https://github.com/sagemath/sagetest/issues/1625#event-4033"
 }
 ```
 

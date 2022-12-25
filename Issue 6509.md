@@ -115,7 +115,7 @@ This is a duplicate of ticket #6529. That ticket also incorporates the code cont
 
 ---
 
-archive/issue_events_006747.json:
+archive/issue_events_015363.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -123,7 +123,7 @@ archive/issue_events_006747.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6509",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6509#event-6747"
+    "url": "https://github.com/sagemath/sagetest/issues/6509#event-15363"
 }
 ```
 
@@ -144,3 +144,20 @@ archive/issue_comments_052937.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_015364.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-18T18:34:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6509",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6509#event-15364"
+}
+```

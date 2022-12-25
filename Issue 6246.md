@@ -286,6 +286,23 @@ uname -m can return.
 
 ---
 
+archive/issue_events_014629.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T17:46:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6246",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6246#event-14629"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049796.json:
 ```json
 {
@@ -384,7 +401,7 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_events_006491.json:
+archive/issue_events_014630.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -392,7 +409,7 @@ archive/issue_events_006491.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6246",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6246#event-6491"
+    "url": "https://github.com/sagemath/sagetest/issues/6246#event-14630"
 }
 ```
 

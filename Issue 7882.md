@@ -102,7 +102,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008097.json:
+archive/issue_events_018845.json:
 ```json
 {
     "actor": "https://github.com/novoselt",
@@ -110,7 +110,7 @@ archive/issue_events_008097.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7882",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7882#event-8097"
+    "url": "https://github.com/sagemath/sagetest/issues/7882#event-18845"
 }
 ```
 
@@ -131,3 +131,20 @@ archive/issue_comments_068394.json:
 ```
 
 Ticket #7897 fixes this in a better way.
+
+
+
+---
+
+archive/issue_events_018846.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-12T01:52:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7882",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7882#event-18846"
+}
+```

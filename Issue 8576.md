@@ -144,7 +144,7 @@ Thanks for the review!
 
 ---
 
-archive/issue_events_008754.json:
+archive/issue_events_020702.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -152,7 +152,7 @@ archive/issue_events_008754.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8576#event-8754"
+    "url": "https://github.com/sagemath/sagetest/issues/8576#event-20702"
 }
 ```
 

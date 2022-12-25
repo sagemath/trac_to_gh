@@ -75,6 +75,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001489.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:46:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/559",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/559#event-1489"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002881.json:
 ```json
 {
@@ -130,6 +147,40 @@ m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache();
 
 ---
 
+archive/issue_events_001490.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T23:02:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/559",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/559#event-1490"
+}
+```
+
+
+
+---
+
+archive/issue_events_001491.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T23:02:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/559",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/559#event-1491"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002883.json:
 ```json
 {
@@ -152,7 +203,7 @@ Michael
 
 ---
 
-archive/issue_events_000603.json:
+archive/issue_events_001492.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -160,7 +211,7 @@ archive/issue_events_000603.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/559",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/559#event-603"
+    "url": "https://github.com/sagemath/sagetest/issues/559#event-1492"
 }
 ```
 
@@ -203,3 +254,37 @@ As it turns out the part of the patch the fixed this ticket was wrong and coinci
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001493.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-15T02:21:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/559",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/559#event-1493"
+}
+```
+
+
+
+---
+
+archive/issue_events_001494.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-15T02:21:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/559",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/559#event-1494"
+}
+```

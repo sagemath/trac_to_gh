@@ -66,6 +66,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_015531.json:
+```json
+{
+    "actor": "https://github.com/KPanComputes",
+    "created_at": "2013-02-03T19:50:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6589",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6589#event-15531"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053827.json:
 ```json
 {
@@ -111,7 +128,7 @@ SCORE rings/laurent_series_ring.py: 100% (25 of 25)
 
 ---
 
-archive/issue_events_006826.json:
+archive/issue_events_015532.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -119,7 +136,7 @@ archive/issue_events_006826.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6589",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6589#event-6826"
+    "url": "https://github.com/sagemath/sagetest/issues/6589#event-15532"
 }
 ```
 

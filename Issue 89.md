@@ -82,7 +82,7 @@ fixed in sage 1.4
 
 ---
 
-archive/issue_events_000089.json:
+archive/issue_events_000184.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -90,7 +90,7 @@ archive/issue_events_000089.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/89",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/89#event-89"
+    "url": "https://github.com/sagemath/sagetest/issues/89#event-184"
 }
 ```
 

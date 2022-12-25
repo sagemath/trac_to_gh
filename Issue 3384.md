@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3384
 
 ---
 
-archive/issue_events_003600.json:
+archive/issue_events_007632.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -59,7 +59,24 @@ archive/issue_events_003600.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3384",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3384#event-3600"
+    "url": "https://github.com/sagemath/sagetest/issues/3384#event-7632"
+}
+```
+
+
+
+---
+
+archive/issue_events_007633.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-07T15:43:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3384",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3384#event-7633"
 }
 ```
 

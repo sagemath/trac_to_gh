@@ -587,6 +587,23 @@ Milestone sage-4.7.3 deleted
 
 ---
 
+archive/issue_events_011940.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-06T21:32:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5155",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5155#event-11940"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039400.json:
 ```json
 {
@@ -809,7 +826,41 @@ Thanks for the review!
 
 ---
 
-archive/issue_events_005405.json:
+archive/issue_events_011941.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-12T13:40:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5155",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5155#event-11941"
+}
+```
+
+
+
+---
+
+archive/issue_events_011942.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-12T13:40:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5155",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5155#event-11942"
+}
+```
+
+
+
+---
+
+archive/issue_events_011943.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -817,7 +868,7 @@ archive/issue_events_005405.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5155#event-5405"
+    "url": "https://github.com/sagemath/sagetest/issues/5155#event-11943"
 }
 ```
 

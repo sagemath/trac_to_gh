@@ -120,7 +120,7 @@ Merged trac-1970-notebook-gnutls.2.patch in Sage 2.10.1.rc3
 
 ---
 
-archive/issue_events_002124.json:
+archive/issue_events_004768.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,6 +128,6 @@ archive/issue_events_002124.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1970",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1970#event-2124"
+    "url": "https://github.com/sagemath/sagetest/issues/1970#event-4768"
 }
 ```

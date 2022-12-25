@@ -936,6 +936,91 @@ Notice that the graph editor hasn't worked in a long time, but [this pull reques
 
 ---
 
+archive/issue_events_019667.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19667"
+}
+```
+
+
+
+---
+
+archive/issue_events_019668.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19668"
+}
+```
+
+
+
+---
+
+archive/issue_events_019669.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19669"
+}
+```
+
+
+
+---
+
+archive/issue_events_019670.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19670"
+}
+```
+
+
+
+---
+
+archive/issue_events_019671.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19671"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072484.json:
 ```json
 {
@@ -949,6 +1034,40 @@ archive/issue_comments_072484.json:
 ```
 
 Changing keywords from "" to "graph editor".
+
+
+
+---
+
+archive/issue_events_019672.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19672"
+}
+```
+
+
+
+---
+
+archive/issue_events_019673.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19673"
+}
+```
 
 
 
@@ -1008,6 +1127,40 @@ Proposing to close all sagenb tickets as outdated, so that all remaining open ti
 
 ---
 
+archive/issue_events_019674.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-18T00:36:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19674"
+}
+```
+
+
+
+---
+
+archive/issue_events_019675.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-18T00:36:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8222",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19675"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072488.json:
 ```json
 {
@@ -1062,7 +1215,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008424.json:
+archive/issue_events_019676.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -1070,6 +1223,6 @@ archive/issue_events_008424.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8222#event-8424"
+    "url": "https://github.com/sagemath/sagetest/issues/8222#event-19676"
 }
 ```

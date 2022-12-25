@@ -276,7 +276,7 @@ attachment:booleanmonomial_eval_doctest.patch makes it conform to the "all funct
 
 ---
 
-archive/issue_events_002219.json:
+archive/issue_events_004940.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -284,7 +284,7 @@ archive/issue_events_002219.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2058",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2058#event-2219"
+    "url": "https://github.com/sagemath/sagetest/issues/2058#event-4940"
 }
 ```
 

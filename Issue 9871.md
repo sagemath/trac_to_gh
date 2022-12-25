@@ -140,6 +140,23 @@ Dave
 
 ---
 
+archive/issue_events_024867.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-09-08T08:40:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#event-24867"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097395.json:
 ```json
 {
@@ -650,7 +667,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010001.json:
+archive/issue_events_024868.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -658,6 +675,6 @@ archive/issue_events_010001.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9871#event-10001"
+    "url": "https://github.com/sagemath/sagetest/issues/9871#event-24868"
 }
 ```

@@ -46,6 +46,23 @@ Attachment [utf8-sage-test.patch](tarball://root/attachments/some-uuid/ticket244
 
 ---
 
+archive/issue_events_005762.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:18:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2444",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2444#event-5762"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016493.json:
 ```json
 {
@@ -64,7 +81,7 @@ This applies for me against hg_scripts and works as intended.
 
 ---
 
-archive/issue_events_002621.json:
+archive/issue_events_005763.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +89,7 @@ archive/issue_events_002621.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2444",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2444#event-2621"
+    "url": "https://github.com/sagemath/sagetest/issues/2444#event-5763"
 }
 ```
 

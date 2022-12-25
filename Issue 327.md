@@ -102,7 +102,7 @@ Dave
 
 ---
 
-archive/issue_events_000351.json:
+archive/issue_events_000759.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -110,7 +110,7 @@ archive/issue_events_000351.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/327",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/327#event-351"
+    "url": "https://github.com/sagemath/sagetest/issues/327#event-759"
 }
 ```
 

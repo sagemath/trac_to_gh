@@ -41,6 +41,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2565
 
 ---
 
+archive/issue_events_005992.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T04:51:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2565",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2565#event-5992"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017446.json:
 ```json
 {
@@ -80,6 +97,40 @@ please attach mercurial patches so that you can get credited for them automatica
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005993.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T12:06:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2565",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2565#event-5993"
+}
+```
+
+
+
+---
+
+archive/issue_events_005994.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T12:06:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2565",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2565#event-5994"
+}
+```
 
 
 
@@ -267,7 +318,7 @@ Merged in Sage 2.11.alpha2
 
 ---
 
-archive/issue_events_002748.json:
+archive/issue_events_005995.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -275,7 +326,7 @@ archive/issue_events_002748.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2565#event-2748"
+    "url": "https://github.com/sagemath/sagetest/issues/2565#event-5995"
 }
 ```
 

@@ -96,6 +96,23 @@ I don't have admin privileges on trac, so I can't close tickets at the moment. I
 
 ---
 
+archive/issue_events_013285.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-21T03:20:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5652",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5652#event-13285"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044057.json:
 ```json
 {
@@ -114,7 +131,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005893.json:
+archive/issue_events_013286.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -122,6 +139,6 @@ archive/issue_events_005893.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5652",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5652#event-5893"
+    "url": "https://github.com/sagemath/sagetest/issues/5652#event-13286"
 }
 ```

@@ -65,6 +65,23 @@ depends on patch at #5726
 
 ---
 
+archive/issue_events_016115.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2009-09-03T04:36:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6848",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6848#event-16115"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056371.json:
 ```json
 {
@@ -101,7 +118,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007081.json:
+archive/issue_events_016116.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -109,6 +126,6 @@ archive/issue_events_007081.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6848",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6848#event-7081"
+    "url": "https://github.com/sagemath/sagetest/issues/6848#event-16116"
 }
 ```

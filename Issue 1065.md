@@ -159,6 +159,23 @@ Works for me.
 
 ---
 
+archive/issue_events_002876.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-13T12:41:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1065",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1065#event-2876"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006445.json:
 ```json
 {
@@ -195,7 +212,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_001187.json:
+archive/issue_events_002877.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -203,6 +220,6 @@ archive/issue_events_001187.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1065",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1065#event-1187"
+    "url": "https://github.com/sagemath/sagetest/issues/1065#event-2877"
 }
 ```

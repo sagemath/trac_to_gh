@@ -257,6 +257,23 @@ Wall time: 17.66
 
 ---
 
+archive/issue_events_003212.json:
+```json
+{
+    "actor": "https://github.com/jaapspies",
+    "created_at": "2007-11-27T20:35:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1208",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1208#event-3212"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007458.json:
 ```json
 {
@@ -311,7 +328,7 @@ Works for me.
 
 ---
 
-archive/issue_events_001344.json:
+archive/issue_events_003213.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -319,7 +336,7 @@ archive/issue_events_001344.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1208",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1208#event-1344"
+    "url": "https://github.com/sagemath/sagetest/issues/1208#event-3213"
 }
 ```
 

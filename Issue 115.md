@@ -66,6 +66,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/115
 
 ---
 
+archive/issue_events_000227.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T03:31:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/115",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/115#event-227"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000540.json:
 ```json
 {
@@ -102,6 +119,40 @@ Changing component from basic arithmetic to misc.
 
 ---
 
+archive/issue_events_000228.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-08-26T20:22:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/115",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/115#event-228"
+}
+```
+
+
+
+---
+
+archive/issue_events_000229.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-08-26T20:22:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/115",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/115#event-229"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000542.json:
 ```json
 {
@@ -120,7 +171,7 @@ I'm going to close this as invalid.  I made a copy of this ticket on the Cython 
 
 ---
 
-archive/issue_events_000121.json:
+archive/issue_events_000230.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -128,7 +179,7 @@ archive/issue_events_000121.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/115",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/115#event-121"
+    "url": "https://github.com/sagemath/sagetest/issues/115#event-230"
 }
 ```
 

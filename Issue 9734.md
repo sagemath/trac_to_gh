@@ -33,6 +33,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9734
 
 ---
 
+archive/issue_events_024364.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-08-12T18:18:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24364"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095028.json:
 ```json
 {
@@ -48,6 +65,176 @@ archive/issue_comments_095028.json:
 I discovered the GFAN issues were a mistake on my part, so #9736 was closed as invalid, and those doctest failures can be ignored. 
 
 Dave
+
+
+
+---
+
+archive/issue_events_024365.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24365"
+}
+```
+
+
+
+---
+
+archive/issue_events_024366.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24366"
+}
+```
+
+
+
+---
+
+archive/issue_events_024367.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24367"
+}
+```
+
+
+
+---
+
+archive/issue_events_024368.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24368"
+}
+```
+
+
+
+---
+
+archive/issue_events_024369.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24369"
+}
+```
+
+
+
+---
+
+archive/issue_events_024370.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24370"
+}
+```
+
+
+
+---
+
+archive/issue_events_024371.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24371"
+}
+```
+
+
+
+---
+
+archive/issue_events_024372.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24372"
+}
+```
+
+
+
+---
+
+archive/issue_events_024373.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-07T06:11:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24373"
+}
+```
+
+
+
+---
+
+archive/issue_events_024374.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-07T06:11:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9734",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24374"
+}
+```
 
 
 
@@ -107,7 +294,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009866.json:
+archive/issue_events_024375.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -115,7 +302,7 @@ archive/issue_events_009866.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9734",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9734#event-9866"
+    "url": "https://github.com/sagemath/sagetest/issues/9734#event-24375"
 }
 ```
 

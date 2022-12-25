@@ -53,6 +53,23 @@ https://bitbucket.org/burcin/pynac/issues
 
 ---
 
+archive/issue_events_014405.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-06-29T13:38:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14405"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048806.json:
 ```json
 {
@@ -66,6 +83,142 @@ archive/issue_comments_048806.json:
 ```
 
 As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.
+
+
+
+---
+
+archive/issue_events_014406.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14406"
+}
+```
+
+
+
+---
+
+archive/issue_events_014407.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14407"
+}
+```
+
+
+
+---
+
+archive/issue_events_014408.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14408"
+}
+```
+
+
+
+---
+
+archive/issue_events_014409.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14409"
+}
+```
+
+
+
+---
+
+archive/issue_events_014410.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14410"
+}
+```
+
+
+
+---
+
+archive/issue_events_014411.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14411"
+}
+```
+
+
+
+---
+
+archive/issue_events_014412.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14412"
+}
+```
+
+
+
+---
+
+archive/issue_events_014413.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#event-14413"
+}
+```
 
 
 

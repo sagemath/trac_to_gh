@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5587
 
 ---
 
-archive/issue_events_005832.json:
+archive/issue_events_013159.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -58,7 +58,7 @@ archive/issue_events_005832.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5587",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5587#event-5832"
+    "url": "https://github.com/sagemath/sagetest/issues/5587#event-13159"
 }
 ```
 

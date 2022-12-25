@@ -72,6 +72,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_015026.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2009-06-21T19:39:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6378",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6378#event-15026"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050943.json:
 ```json
 {
@@ -573,7 +590,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006626.json:
+archive/issue_events_015027.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -581,6 +598,40 @@ archive/issue_events_006626.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6378#event-6626"
+    "url": "https://github.com/sagemath/sagetest/issues/6378#event-15027"
+}
+```
+
+
+
+---
+
+archive/issue_events_015028.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-22T09:24:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6378",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6378#event-15028"
+}
+```
+
+
+
+---
+
+archive/issue_events_015029.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-22T09:24:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6378",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6378#event-15029"
 }
 ```

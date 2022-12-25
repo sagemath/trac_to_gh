@@ -64,6 +64,23 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
+archive/issue_events_003332.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-27T07:58:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1266",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1266#event-3332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007915.json:
 ```json
 {
@@ -122,7 +139,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001410.json:
+archive/issue_events_003333.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,7 +147,7 @@ archive/issue_events_001410.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1266#event-1410"
+    "url": "https://github.com/sagemath/sagetest/issues/1266#event-3333"
 }
 ```
 

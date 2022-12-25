@@ -142,7 +142,7 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
 ---
 
-archive/issue_events_007658.json:
+archive/issue_events_017614.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -150,7 +150,7 @@ archive/issue_events_007658.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7435#event-7658"
+    "url": "https://github.com/sagemath/sagetest/issues/7435#event-17614"
 }
 ```
 
@@ -254,7 +254,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007659.json:
+archive/issue_events_017615.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -262,7 +262,7 @@ archive/issue_events_007659.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7435#event-7659"
+    "url": "https://github.com/sagemath/sagetest/issues/7435#event-17615"
 }
 ```
 
@@ -344,7 +344,7 @@ LGTM.
 
 ---
 
-archive/issue_events_007660.json:
+archive/issue_events_017616.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -352,7 +352,7 @@ archive/issue_events_007660.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7435#event-7660"
+    "url": "https://github.com/sagemath/sagetest/issues/7435#event-17616"
 }
 ```
 

@@ -78,6 +78,23 @@ including the stack trace automatically is not possible, but i added an addition
 
 ---
 
+archive/issue_events_008527.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-29T16:11:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3727",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3727#event-8527"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026397.json:
 ```json
 {
@@ -136,7 +153,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003951.json:
+archive/issue_events_008528.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -144,7 +161,7 @@ archive/issue_events_003951.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3727",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3727#event-3951"
+    "url": "https://github.com/sagemath/sagetest/issues/3727#event-8528"
 }
 ```
 
@@ -165,3 +182,37 @@ archive/issue_comments_026400.json:
 ```
 
 Merged in Sage 3.1.alpha1
+
+
+
+---
+
+archive/issue_events_008529.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-09T23:26:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3727",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3727#event-8529"
+}
+```
+
+
+
+---
+
+archive/issue_events_008530.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-09T23:26:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3727",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3727#event-8530"
+}
+```

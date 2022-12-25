@@ -130,7 +130,7 @@ archive/issue_comments_063273.json:
 
 ---
 
-archive/issue_events_007726.json:
+archive/issue_events_017767.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -138,7 +138,7 @@ archive/issue_events_007726.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7497#event-7726"
+    "url": "https://github.com/sagemath/sagetest/issues/7497#event-17767"
 }
 ```
 
@@ -159,6 +159,23 @@ archive/issue_comments_063274.json:
 ```
 
 Works with sagenb-0.6.
+
+
+
+---
+
+archive/issue_events_017768.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:15:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7497",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7497#event-17768"
+}
+```
 
 
 

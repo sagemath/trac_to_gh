@@ -176,7 +176,7 @@ So lets do it ... one ticket less to worry about :-)
 
 ---
 
-archive/issue_events_000088.json:
+archive/issue_events_000183.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -184,6 +184,6 @@ archive/issue_events_000088.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/88",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/88#event-88"
+    "url": "https://github.com/sagemath/sagetest/issues/88#event-183"
 }
 ```

@@ -118,7 +118,24 @@ LGTM.
 
 ---
 
-archive/issue_events_008210.json:
+archive/issue_events_019147.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-22T14:59:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7996",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7996#event-19147"
+}
+```
+
+
+
+---
+
+archive/issue_events_019148.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -126,7 +143,7 @@ archive/issue_events_008210.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7996",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7996#event-8210"
+    "url": "https://github.com/sagemath/sagetest/issues/7996#event-19148"
 }
 ```
 
@@ -246,7 +263,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008211.json:
+archive/issue_events_019149.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/acleone",
@@ -254,7 +271,7 @@ archive/issue_events_008211.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7996",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7996#event-8211"
+    "url": "https://github.com/sagemath/sagetest/issues/7996#event-19149"
 }
 ```
 
@@ -372,7 +389,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008212.json:
+archive/issue_events_019150.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -380,6 +397,6 @@ archive/issue_events_008212.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7996",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7996#event-8212"
+    "url": "https://github.com/sagemath/sagetest/issues/7996#event-19150"
 }
 ```

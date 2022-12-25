@@ -352,7 +352,7 @@ I've made #7836 for this.
 
 ---
 
-archive/issue_events_007820.json:
+archive/issue_events_018026.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -360,7 +360,7 @@ archive/issue_events_007820.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7595#event-7820"
+    "url": "https://github.com/sagemath/sagetest/issues/7595#event-18026"
 }
 ```
 
@@ -404,7 +404,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007821.json:
+archive/issue_events_018027.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -412,7 +412,7 @@ archive/issue_events_007821.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7595#event-7821"
+    "url": "https://github.com/sagemath/sagetest/issues/7595#event-18027"
 }
 ```
 
@@ -640,7 +640,7 @@ Repeat: as of sage-4.3.1.alpha1, *both* patches need to be merged.
 
 ---
 
-archive/issue_events_007822.json:
+archive/issue_events_018028.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -648,6 +648,6 @@ archive/issue_events_007822.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7595#event-7822"
+    "url": "https://github.com/sagemath/sagetest/issues/7595#event-18028"
 }
 ```

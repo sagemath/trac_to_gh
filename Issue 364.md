@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/364
 
 ---
 
-archive/issue_events_000386.json:
+archive/issue_events_000851.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -80,7 +80,7 @@ archive/issue_events_000386.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/364",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/364#event-386"
+    "url": "https://github.com/sagemath/sagetest/issues/364#event-851"
 }
 ```
 

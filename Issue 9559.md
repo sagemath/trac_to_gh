@@ -47,6 +47,23 @@ Changing assignee from joyner to @rlmill.
 
 ---
 
+archive/issue_events_023801.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2011-05-17T04:18:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9559",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9559#event-23801"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091992.json:
 ```json
 {
@@ -227,7 +244,41 @@ Tests pass, formatting updated as requested by jdemeyer.
 
 ---
 
-archive/issue_events_009704.json:
+archive/issue_events_023802.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-17T07:30:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9559",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9559#event-23802"
+}
+```
+
+
+
+---
+
+archive/issue_events_023803.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-17T07:30:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9559",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9559#event-23803"
+}
+```
+
+
+
+---
+
+archive/issue_events_023804.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -235,7 +286,7 @@ archive/issue_events_009704.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9559#event-9704"
+    "url": "https://github.com/sagemath/sagetest/issues/9559#event-23804"
 }
 ```
 

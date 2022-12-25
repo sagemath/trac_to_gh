@@ -193,7 +193,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001586.json:
+archive/issue_events_003684.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -201,6 +201,91 @@ archive/issue_events_001586.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1439",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1439#event-1586"
+    "url": "https://github.com/sagemath/sagetest/issues/1439#event-3684"
+}
+```
+
+
+
+---
+
+archive/issue_events_003685.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:16:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#event-3685"
+}
+```
+
+
+
+---
+
+archive/issue_events_003686.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:38:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#event-3686"
+}
+```
+
+
+
+---
+
+archive/issue_events_003687.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:38:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#event-3687"
+}
+```
+
+
+
+---
+
+archive/issue_events_003688.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-09T13:56:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#event-3688"
+}
+```
+
+
+
+---
+
+archive/issue_events_003689.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-09T13:56:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#event-3689"
 }
 ```

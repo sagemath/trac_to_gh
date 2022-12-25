@@ -205,6 +205,23 @@ HG bundle fixing the bug
 
 ---
 
+archive/issue_events_002186.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-03T05:39:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/789",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/789#event-2186"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004736.json:
 ```json
 {
@@ -223,7 +240,7 @@ Attachment [T789.hg](tarball://root/attachments/some-uuid/ticket789/T789.hg) by 
 
 ---
 
-archive/issue_events_000898.json:
+archive/issue_events_002187.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -231,7 +248,7 @@ archive/issue_events_000898.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/789",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/789#event-898"
+    "url": "https://github.com/sagemath/sagetest/issues/789#event-2187"
 }
 ```
 

@@ -143,7 +143,7 @@ Just an FYI.  I deleted all snapshots, then ran this patch on all the sagenb.org
 
 ---
 
-archive/issue_events_006136.json:
+archive/issue_events_013815.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -151,7 +151,7 @@ archive/issue_events_006136.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5880",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5880#event-6136"
+    "url": "https://github.com/sagemath/sagetest/issues/5880#event-13815"
 }
 ```
 

@@ -53,6 +53,23 @@ Michael
 
 ---
 
+archive/issue_events_008315.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-10T13:23:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8315"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025582.json:
 ```json
 {
@@ -153,6 +170,74 @@ Ticket #8466 supersedes the current ticket.
 
 ---
 
+archive/issue_events_008316.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8316"
+}
+```
+
+
+
+---
+
+archive/issue_events_008317.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8317"
+}
+```
+
+
+
+---
+
+archive/issue_events_008318.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8318"
+}
+```
+
+
+
+---
+
+archive/issue_events_008319.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8319"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025587.json:
 ```json
 {
@@ -186,6 +271,40 @@ archive/issue_comments_025588.json:
 ```
 
 Changing status from needs_work to needs_review.
+
+
+
+---
+
+archive/issue_events_008320.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8320"
+}
+```
+
+
+
+---
+
+archive/issue_events_008321.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8321"
+}
+```
 
 
 
@@ -280,6 +399,40 @@ archive/issue_comments_025592.json:
 ```
 
 Changing status from needs_work to needs_review.
+
+
+
+---
+
+archive/issue_events_008322.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8322"
+}
+```
+
+
+
+---
+
+archive/issue_events_008323.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3624",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8323"
+}
+```
 
 
 
@@ -484,7 +637,7 @@ I really thought I had tested this.
 
 ---
 
-archive/issue_events_003843.json:
+archive/issue_events_008324.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -492,7 +645,7 @@ archive/issue_events_003843.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3624",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3624#event-3843"
+    "url": "https://github.com/sagemath/sagetest/issues/3624#event-8324"
 }
 ```
 

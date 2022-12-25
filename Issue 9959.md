@@ -1650,6 +1650,23 @@ I don't know how to avoid the duplication, but see #11073 for a ticket.
 
 ---
 
+archive/issue_events_025129.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-12T13:15:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9959",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9959#event-25129"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099575.json:
 ```json
 {
@@ -1745,7 +1762,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010087.json:
+archive/issue_events_025130.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1753,6 +1770,6 @@ archive/issue_events_010087.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#event-10087"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#event-25130"
 }
 ```

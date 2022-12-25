@@ -99,6 +99,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_022516.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-04-22T12:26:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9155",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9155#event-22516"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085340.json:
 ```json
 {
@@ -150,6 +167,40 @@ archive/issue_comments_085342.json:
 ```
 
 Changing priority from major to trivial.
+
+
+
+---
+
+archive/issue_events_022517.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-04-29T08:41:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9155",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9155#event-22517"
+}
+```
+
+
+
+---
+
+archive/issue_events_022518.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-04-29T08:41:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9155",
+    "milestone": "sage-7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9155#event-22518"
+}
+```
 
 
 
@@ -209,7 +260,7 @@ ok, let it be, thanks
 
 ---
 
-archive/issue_events_009315.json:
+archive/issue_events_022519.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -217,7 +268,7 @@ archive/issue_events_009315.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9155",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9155#event-9315"
+    "url": "https://github.com/sagemath/sagetest/issues/9155#event-22519"
 }
 ```
 

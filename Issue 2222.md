@@ -117,7 +117,7 @@ it's just that it's broken const.tex.
 
 ---
 
-archive/issue_events_002392.json:
+archive/issue_events_005303.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -125,7 +125,7 @@ archive/issue_events_002392.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2222",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2222#event-2392"
+    "url": "https://github.com/sagemath/sagetest/issues/2222#event-5303"
 }
 ```
 

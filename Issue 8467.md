@@ -289,7 +289,7 @@ Nathann
 
 ---
 
-archive/issue_events_008651.json:
+archive/issue_events_020326.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -297,7 +297,24 @@ archive/issue_events_008651.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8467#event-8651"
+    "url": "https://github.com/sagemath/sagetest/issues/8467#event-20326"
+}
+```
+
+
+
+---
+
+archive/issue_events_020327.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-10T12:50:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8467",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8467#event-20327"
 }
 ```
 

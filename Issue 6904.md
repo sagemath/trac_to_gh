@@ -377,7 +377,7 @@ I've filled in the Author(s) and Reviewer(s) fields.  If I'm wrong, please corre
 
 ---
 
-archive/issue_events_007132.json:
+archive/issue_events_016231.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -385,7 +385,7 @@ archive/issue_events_007132.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#event-7132"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#event-16231"
 }
 ```
 

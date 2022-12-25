@@ -71,7 +71,24 @@ My work at #5159 hopefully provides something a bit closer to what Lloyd was aft
 
 ---
 
-archive/issue_events_003976.json:
+archive/issue_events_008605.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-12T01:39:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3754",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3754#event-8605"
+}
+```
+
+
+
+---
+
+archive/issue_events_008606.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -79,7 +96,7 @@ archive/issue_events_003976.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3754",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3754#event-3976"
+    "url": "https://github.com/sagemath/sagetest/issues/3754#event-8606"
 }
 ```
 

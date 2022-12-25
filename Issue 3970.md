@@ -245,7 +245,7 @@ In that case, everything looks good. A quick retest also passes. ~ Adam
 
 ---
 
-archive/issue_events_004200.json:
+archive/issue_events_009103.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -253,7 +253,7 @@ archive/issue_events_004200.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#event-4200"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#event-9103"
 }
 ```
 

@@ -52,7 +52,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_004976.json:
+archive/issue_events_010811.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -60,7 +60,24 @@ archive/issue_events_004976.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4732",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4732#event-4976"
+    "url": "https://github.com/sagemath/sagetest/issues/4732#event-10811"
+}
+```
+
+
+
+---
+
+archive/issue_events_010812.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T08:08:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4732",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4732#event-10812"
 }
 ```
 

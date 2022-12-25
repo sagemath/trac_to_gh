@@ -77,6 +77,23 @@ Attachment [trac_9056_semirings_category-nb.2.patch](tarball://root/attachments/
 
 ---
 
+archive/issue_events_022194.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-05-27T14:55:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9056",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9056#event-22194"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083875.json:
 ```json
 {
@@ -574,7 +591,7 @@ I've folded together the two #9056 patches on the combinat server together and m
 
 ---
 
-archive/issue_events_009209.json:
+archive/issue_events_022195.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -582,7 +599,7 @@ archive/issue_events_009209.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9056#event-9209"
+    "url": "https://github.com/sagemath/sagetest/issues/9056#event-22195"
 }
 ```
 

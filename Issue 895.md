@@ -76,7 +76,7 @@ Upadated patch -- use the last one and ignore the first one.
 
 ---
 
-archive/issue_events_001009.json:
+archive/issue_events_002481.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -84,7 +84,7 @@ archive/issue_events_001009.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/895",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/895#event-1009"
+    "url": "https://github.com/sagemath/sagetest/issues/895#event-2481"
 }
 ```
 
@@ -146,7 +146,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001010.json:
+archive/issue_events_002482.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -154,7 +154,7 @@ archive/issue_events_001010.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/895",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/895#event-1010"
+    "url": "https://github.com/sagemath/sagetest/issues/895#event-2482"
 }
 ```
 
@@ -162,7 +162,24 @@ archive/issue_events_001010.json:
 
 ---
 
-archive/issue_events_001011.json:
+archive/issue_events_002483.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:34:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/895",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/895#event-2483"
+}
+```
+
+
+
+---
+
+archive/issue_events_002484.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -170,7 +187,7 @@ archive/issue_events_001011.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/895",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/895#event-1011"
+    "url": "https://github.com/sagemath/sagetest/issues/895#event-2484"
 }
 ```
 

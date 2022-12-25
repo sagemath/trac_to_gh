@@ -50,7 +50,7 @@ Michael
 
 ---
 
-archive/issue_events_002936.json:
+archive/issue_events_006381.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -58,7 +58,7 @@ archive/issue_events_002936.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2749",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2749#event-2936"
+    "url": "https://github.com/sagemath/sagetest/issues/2749#event-6381"
 }
 ```
 
@@ -97,3 +97,20 @@ archive/issue_comments_018847.json:
 ```
 
 I am closing this as invalid. We should only ship stable versions of flint unless there is a very compelling argument to the contrary.  See ticket #3523 for a stable version.
+
+
+
+---
+
+archive/issue_events_006382.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-06-27T14:57:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2749",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2749#event-6382"
+}
+```

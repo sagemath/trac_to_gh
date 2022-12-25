@@ -203,7 +203,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008186.json:
+archive/issue_events_019074.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -211,6 +211,23 @@ archive/issue_events_008186.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7971#event-8186"
+    "url": "https://github.com/sagemath/sagetest/issues/7971#event-19074"
+}
+```
+
+
+
+---
+
+archive/issue_events_019075.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-11-09T11:12:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7971",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7971#event-19075"
 }
 ```

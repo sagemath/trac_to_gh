@@ -64,6 +64,23 @@ Changing priority from blocker to critical.
 
 ---
 
+archive/issue_events_002017.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-26T16:36:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/741",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/741#event-2017"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004328.json:
 ```json
 {
@@ -126,7 +143,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000830.json:
+archive/issue_events_002018.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -134,6 +151,6 @@ archive/issue_events_000830.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/741",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/741#event-830"
+    "url": "https://github.com/sagemath/sagetest/issues/741#event-2018"
 }
 ```

@@ -117,7 +117,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3374
 
 ---
 
-archive/issue_events_003590.json:
+archive/issue_events_007605.json:
 ```json
 {
     "actor": "https://github.com/garyfurnish",
@@ -125,7 +125,7 @@ archive/issue_events_003590.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3374",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3374#event-3590"
+    "url": "https://github.com/sagemath/sagetest/issues/3374#event-7605"
 }
 ```
 

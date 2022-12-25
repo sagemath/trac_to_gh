@@ -52,6 +52,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1565
 
 ---
 
+archive/issue_events_003915.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-19T11:04:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1565",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1565#event-3915"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009933.json:
 ```json
 {
@@ -213,7 +230,7 @@ This is fixed as of 3.0.3.alpha2.  Please close
 
 ---
 
-archive/issue_events_001719.json:
+archive/issue_events_003916.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -221,7 +238,7 @@ archive/issue_events_001719.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1565",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1565#event-1719"
+    "url": "https://github.com/sagemath/sagetest/issues/1565#event-3916"
 }
 ```
 
@@ -246,6 +263,40 @@ Closed since it is fixed :)
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003917.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-16T19:05:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1565",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1565#event-3917"
+}
+```
+
+
+
+---
+
+archive/issue_events_003918.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-16T19:05:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1565",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1565#event-3918"
+}
+```
 
 
 

@@ -128,7 +128,7 @@ This replaces one of the same name and merges cleanly (but doctests will fail)
 
 ---
 
-archive/issue_events_001829.json:
+archive/issue_events_004114.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -136,7 +136,7 @@ archive/issue_events_001829.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1670#event-1829"
+    "url": "https://github.com/sagemath/sagetest/issues/1670#event-4114"
 }
 ```
 

@@ -64,7 +64,7 @@ This fixes it for me, and I have added a selenium test to verify that it is inde
 
 ---
 
-archive/issue_events_004326.json:
+archive/issue_events_009326.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +72,7 @@ archive/issue_events_004326.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4088",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4088#event-4326"
+    "url": "https://github.com/sagemath/sagetest/issues/4088#event-9326"
 }
 ```
 

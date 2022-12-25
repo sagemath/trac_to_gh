@@ -102,7 +102,7 @@ The module `sage/plot/axes.py` is being deprecated and its functionality has bee
 
 ---
 
-archive/issue_events_006783.json:
+archive/issue_events_015446.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -110,6 +110,6 @@ archive/issue_events_006783.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6548",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6548#event-6783"
+    "url": "https://github.com/sagemath/sagetest/issues/6548#event-15446"
 }
 ```

@@ -69,7 +69,7 @@ Attachment [1021.patch](tarball://root/attachments/some-uuid/ticket1021/1021.pat
 
 ---
 
-archive/issue_events_001145.json:
+archive/issue_events_002796.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -77,7 +77,7 @@ archive/issue_events_001145.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1021",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1021#event-1145"
+    "url": "https://github.com/sagemath/sagetest/issues/1021#event-2796"
 }
 ```
 

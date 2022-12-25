@@ -87,6 +87,23 @@ These patches pass -testall on my 32-bit and 64-bit x86 Linux boxes, but have no
 
 ---
 
+archive/issue_events_002742.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-04T04:01:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/995",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/995#event-2742"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006043.json:
 ```json
 {
@@ -170,7 +187,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001118.json:
+archive/issue_events_002743.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -178,6 +195,6 @@ archive/issue_events_001118.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/995",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/995#event-1118"
+    "url": "https://github.com/sagemath/sagetest/issues/995#event-2743"
 }
 ```

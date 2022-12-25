@@ -81,6 +81,23 @@ Duplicate of #11187, can be closed.
 
 ---
 
+archive/issue_events_022886.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-06-05T15:48:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9288",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9288#event-22886"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087343.json:
 ```json
 {
@@ -99,7 +116,7 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_events_009450.json:
+archive/issue_events_022887.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/stumpc5",
@@ -107,7 +124,7 @@ archive/issue_events_009450.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9288",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9288#event-9450"
+    "url": "https://github.com/sagemath/sagetest/issues/9288#event-22887"
 }
 ```
 

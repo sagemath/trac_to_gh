@@ -162,7 +162,7 @@ archive/issue_comments_039943.json:
 
 ---
 
-archive/issue_events_005478.json:
+archive/issue_events_012095.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -170,7 +170,7 @@ archive/issue_events_005478.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5221",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5221#event-5478"
+    "url": "https://github.com/sagemath/sagetest/issues/5221#event-12095"
 }
 ```
 

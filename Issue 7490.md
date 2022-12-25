@@ -527,7 +527,7 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_events_007719.json:
+archive/issue_events_017757.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -535,7 +535,7 @@ archive/issue_events_007719.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7490#event-7719"
+    "url": "https://github.com/sagemath/sagetest/issues/7490#event-17757"
 }
 ```
 

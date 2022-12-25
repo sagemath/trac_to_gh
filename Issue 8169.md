@@ -1300,6 +1300,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_019570.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2011-01-15T00:32:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8169",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8169#event-19570"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071813.json:
 ```json
 {
@@ -1318,7 +1335,7 @@ Changing component from geometry to optional packages.
 
 ---
 
-archive/issue_events_008373.json:
+archive/issue_events_019571.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1326,7 +1343,7 @@ archive/issue_events_008373.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8169#event-8373"
+    "url": "https://github.com/sagemath/sagetest/issues/8169#event-19571"
 }
 ```
 

@@ -82,7 +82,7 @@ This enhancement was made a long time ago.
 
 ---
 
-archive/issue_events_000338.json:
+archive/issue_events_000743.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
@@ -90,7 +90,7 @@ archive/issue_events_000338.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/318",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/318#event-338"
+    "url": "https://github.com/sagemath/sagetest/issues/318#event-743"
 }
 ```
 
@@ -111,3 +111,20 @@ archive/issue_comments_001514.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000744.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T02:26:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/318",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/318#event-744"
+}
+```

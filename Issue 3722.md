@@ -28,7 +28,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3722
 
 ---
 
-archive/issue_events_003942.json:
+archive/issue_events_008516.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -36,7 +36,7 @@ archive/issue_events_003942.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3722",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3722#event-3942"
+    "url": "https://github.com/sagemath/sagetest/issues/3722#event-8516"
 }
 ```
 
@@ -75,3 +75,20 @@ archive/issue_comments_026350.json:
 ```
 
 This is no longer an issue in Sage 3.2.3.
+
+
+
+---
+
+archive/issue_events_008517.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-23T13:44:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3722",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3722#event-8517"
+}
+```

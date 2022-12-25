@@ -113,7 +113,7 @@ I have attached a new `README.txt` file. The patch `readme.patch` shows the diff
 
 ---
 
-archive/issue_events_007794.json:
+archive/issue_events_017935.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -121,7 +121,7 @@ archive/issue_events_007794.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7565",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7565#event-7794"
+    "url": "https://github.com/sagemath/sagetest/issues/7565#event-17935"
 }
 ```
 

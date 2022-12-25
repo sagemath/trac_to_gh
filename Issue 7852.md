@@ -329,6 +329,23 @@ We should think about modifying the documentation so that it gets included in th
 
 ---
 
+archive/issue_events_018776.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-08-11T13:10:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#event-18776"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067912.json:
 ```json
 {
@@ -365,7 +382,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008067.json:
+archive/issue_events_018777.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -373,7 +390,7 @@ archive/issue_events_008067.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7852#event-8067"
+    "url": "https://github.com/sagemath/sagetest/issues/7852#event-18777"
 }
 ```
 

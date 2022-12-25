@@ -64,6 +64,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4781
 
 ---
 
+archive/issue_events_010927.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
+    "created_at": "2009-03-13T09:04:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4781",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4781#event-10927"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036169.json:
 ```json
 {
@@ -182,7 +199,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005023.json:
+archive/issue_events_010928.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -190,7 +207,7 @@ archive/issue_events_005023.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4781",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4781#event-5023"
+    "url": "https://github.com/sagemath/sagetest/issues/4781#event-10928"
 }
 ```
 
@@ -211,3 +228,37 @@ archive/issue_comments_036175.json:
 ```
 
 Closing this as a duplicate of #252.
+
+
+
+---
+
+archive/issue_events_010929.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-22T18:20:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4781",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4781#event-10929"
+}
+```
+
+
+
+---
+
+archive/issue_events_010930.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-22T18:20:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4781",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4781#event-10930"
+}
+```

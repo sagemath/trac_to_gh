@@ -249,7 +249,7 @@ See #5263 for the publish url bug.
 
 ---
 
-archive/issue_events_005918.json:
+archive/issue_events_013347.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -257,7 +257,7 @@ archive/issue_events_005918.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5675#event-5918"
+    "url": "https://github.com/sagemath/sagetest/issues/5675#event-13347"
 }
 ```
 

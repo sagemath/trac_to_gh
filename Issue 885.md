@@ -59,7 +59,7 @@ Changed class RingHomomorphism_im_gens to use _cmp_c_impl (this is necessary to 
 
 ---
 
-archive/issue_events_000999.json:
+archive/issue_events_002461.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -67,7 +67,7 @@ archive/issue_events_000999.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/885",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/885#event-999"
+    "url": "https://github.com/sagemath/sagetest/issues/885#event-2461"
 }
 ```
 

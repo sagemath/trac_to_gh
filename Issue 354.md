@@ -154,6 +154,57 @@ Michael
 
 ---
 
+archive/issue_events_000835.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-29T15:21:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/354#event-835"
+}
+```
+
+
+
+---
+
+archive/issue_events_000836.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T20:44:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/354#event-836"
+}
+```
+
+
+
+---
+
+archive/issue_events_000837.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T20:44:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/354#event-837"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001711.json:
 ```json
 {
@@ -194,7 +245,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000377.json:
+archive/issue_events_000838.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -202,6 +253,6 @@ archive/issue_events_000377.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/354",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/354#event-377"
+    "url": "https://github.com/sagemath/sagetest/issues/354#event-838"
 }
 ```

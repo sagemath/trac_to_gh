@@ -68,6 +68,23 @@ Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket951/7031.patc
 
 ---
 
+archive/issue_events_002624.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-21T01:19:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/951",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/951#event-2624"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005782.json:
 ```json
 {
@@ -86,7 +103,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001071.json:
+archive/issue_events_002625.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -94,6 +111,6 @@ archive/issue_events_001071.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/951",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/951#event-1071"
+    "url": "https://github.com/sagemath/sagetest/issues/951#event-2625"
 }
 ```

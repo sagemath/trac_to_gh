@@ -158,7 +158,7 @@ Looks good to me; doctests pass in sage/calculus and sage/rings.  (Apply all thr
 
 ---
 
-archive/issue_events_001306.json:
+archive/issue_events_003154.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -166,7 +166,7 @@ archive/issue_events_001306.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1174#event-1306"
+    "url": "https://github.com/sagemath/sagetest/issues/1174#event-3154"
 }
 ```
 

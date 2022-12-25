@@ -210,7 +210,7 @@ Added a patch to change `Lseries` to `lseries` throughout Sage. Apply after the 
 
 ---
 
-archive/issue_events_002415.json:
+archive/issue_events_005333.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -218,7 +218,7 @@ archive/issue_events_002415.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2245#event-2415"
+    "url": "https://github.com/sagemath/sagetest/issues/2245#event-5333"
 }
 ```
 

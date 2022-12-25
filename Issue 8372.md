@@ -338,6 +338,125 @@ Rob
 
 ---
 
+archive/issue_events_020053.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20053"
+}
+```
+
+
+
+---
+
+archive/issue_events_020054.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20054"
+}
+```
+
+
+
+---
+
+archive/issue_events_020055.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20055"
+}
+```
+
+
+
+---
+
+archive/issue_events_020056.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20056"
+}
+```
+
+
+
+---
+
+archive/issue_events_020057.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20057"
+}
+```
+
+
+
+---
+
+archive/issue_events_020058.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20058"
+}
+```
+
+
+
+---
+
+archive/issue_events_020059.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20059"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074724.json:
 ```json
 {
@@ -467,6 +586,40 @@ I have created ticket #29275, #29276, #29277
 
 ---
 
+archive/issue_events_020060.json:
+```json
+{
+    "actor": "https://github.com/vipul79321",
+    "created_at": "2020-03-09T08:56:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20060"
+}
+```
+
+
+
+---
+
+archive/issue_events_020061.json:
+```json
+{
+    "actor": "https://github.com/vipul79321",
+    "created_at": "2020-03-09T08:56:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20061"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074729.json:
 ```json
 {
@@ -480,6 +633,108 @@ archive/issue_comments_074729.json:
 ```
 
 Batch modifying tickets that will likely not be ready for 9.1, based on a review of the ticket title, branch/review status, and last modification date.
+
+
+
+---
+
+archive/issue_events_020062.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-04-14T19:41:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20062"
+}
+```
+
+
+
+---
+
+archive/issue_events_020063.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-04-14T19:41:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20063"
+}
+```
+
+
+
+---
+
+archive/issue_events_020064.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-09-05T19:21:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20064"
+}
+```
+
+
+
+---
+
+archive/issue_events_020065.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-09-05T19:21:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20065"
+}
+```
+
+
+
+---
+
+archive/issue_events_020066.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-02-13T20:51:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20066"
+}
+```
+
+
+
+---
+
+archive/issue_events_020067.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-02-13T20:51:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20067"
+}
+```
 
 
 
@@ -503,6 +758,40 @@ Setting new milestone based on a cursory review of ticket status, priority, and 
 
 ---
 
+archive/issue_events_020068.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-07-19T00:44:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20068"
+}
+```
+
+
+
+---
+
+archive/issue_events_020069.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-07-19T00:44:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074731.json:
 ```json
 {
@@ -516,3 +805,105 @@ archive/issue_comments_074731.json:
 ```
 
 Setting a new milestone for this ticket based on a cursory review.
+
+
+
+---
+
+archive/issue_events_020070.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-12-18T19:24:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20070"
+}
+```
+
+
+
+---
+
+archive/issue_events_020071.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2021-12-18T19:24:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20071"
+}
+```
+
+
+
+---
+
+archive/issue_events_020072.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-04-02T20:27:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20072"
+}
+```
+
+
+
+---
+
+archive/issue_events_020073.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-04-02T20:27:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20073"
+}
+```
+
+
+
+---
+
+archive/issue_events_020074.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-09-19T18:58:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20074"
+}
+```
+
+
+
+---
+
+archive/issue_events_020075.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2022-09-19T18:58:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8372",
+    "milestone": "sage-9.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8372#event-20075"
+}
+```

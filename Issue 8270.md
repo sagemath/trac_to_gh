@@ -156,7 +156,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008469.json:
+archive/issue_events_019789.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -164,7 +164,7 @@ archive/issue_events_008469.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8270#event-8469"
+    "url": "https://github.com/sagemath/sagetest/issues/8270#event-19789"
 }
 ```
 
@@ -185,3 +185,20 @@ archive/issue_comments_073091.json:
 ```
 
 I'm told by the iconv developers this is not a bug. The core dumps are expected and ignored.
+
+
+
+---
+
+archive/issue_events_019790.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-17T01:18:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8270",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8270#event-19790"
+}
+```

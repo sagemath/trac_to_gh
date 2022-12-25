@@ -159,7 +159,7 @@ Sebastian
 
 ---
 
-archive/issue_events_003834.json:
+archive/issue_events_008301.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -167,7 +167,7 @@ archive/issue_events_003834.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3617",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3617#event-3834"
+    "url": "https://github.com/sagemath/sagetest/issues/3617#event-8301"
 }
 ```
 

@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5977
 
 ---
 
+archive/issue_events_014024.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-04T06:06:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5977",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5977#event-14024"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047375.json:
 ```json
 {
@@ -95,6 +112,40 @@ archive/issue_comments_047377.json:
 ```
 
 Changing priority from major to blocker.
+
+
+
+---
+
+archive/issue_events_014025.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-15T14:37:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5977",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5977#event-14025"
+}
+```
+
+
+
+---
+
+archive/issue_events_014026.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-15T14:37:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5977",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5977#event-14026"
+}
+```
 
 
 
@@ -306,7 +357,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006232.json:
+archive/issue_events_014027.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -314,6 +365,6 @@ archive/issue_events_006232.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5977#event-6232"
+    "url": "https://github.com/sagemath/sagetest/issues/5977#event-14027"
 }
 ```

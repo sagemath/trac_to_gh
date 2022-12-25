@@ -954,6 +954,23 @@ PS  I'm glad I can make Florent's life that much easier.  ;-)
 
 ---
 
+archive/issue_events_017915.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-03-22T21:36:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7555",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7555#event-17915"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064119.json:
 ```json
 {
@@ -1603,7 +1620,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007785.json:
+archive/issue_events_017916.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -1611,7 +1628,7 @@ archive/issue_events_007785.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7555#event-7785"
+    "url": "https://github.com/sagemath/sagetest/issues/7555#event-17916"
 }
 ```
 

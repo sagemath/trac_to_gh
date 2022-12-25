@@ -134,6 +134,23 @@ Did you at least try it with PARI 2.3.**5** (which is e.g. included in Sage 4.5.
 
 ---
 
+archive/issue_events_018582.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7767",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7767#event-18582"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066840.json:
 ```json
 {
@@ -147,6 +164,40 @@ archive/issue_comments_066840.json:
 ```
 
 Assuming this is fixed.
+
+
+
+---
+
+archive/issue_events_018583.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-10-03T10:20:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7767",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7767#event-18583"
+}
+```
+
+
+
+---
+
+archive/issue_events_018584.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-10-03T10:20:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7767",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7767#event-18584"
+}
+```
 
 
 
@@ -188,7 +239,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007982.json:
+archive/issue_events_018585.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -196,7 +247,7 @@ archive/issue_events_007982.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7767",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7767#event-7982"
+    "url": "https://github.com/sagemath/sagetest/issues/7767#event-18585"
 }
 ```
 

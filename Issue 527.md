@@ -64,6 +64,23 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_001354.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T03:28:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1354"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002670.json:
 ```json
 {
@@ -77,6 +94,40 @@ archive/issue_comments_002670.json:
 ```
 
 Changing priority from blocker to critical.
+
+
+
+---
+
+archive/issue_events_001355.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T06:42:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1355"
+}
+```
+
+
+
+---
+
+archive/issue_events_001356.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-05T06:42:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1356"
+}
+```
 
 
 
@@ -99,6 +150,108 @@ This ticket is related to #407.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001357.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T14:14:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1357"
+}
+```
+
+
+
+---
+
+archive/issue_events_001358.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T14:14:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1358"
+}
+```
+
+
+
+---
+
+archive/issue_events_001359.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:11:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1359"
+}
+```
+
+
+
+---
+
+archive/issue_events_001360.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:11:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1360"
+}
+```
+
+
+
+---
+
+archive/issue_events_001361.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:52:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1361"
+}
+```
+
+
+
+---
+
+archive/issue_events_001362.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T14:52:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/527",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1362"
+}
+```
 
 
 
@@ -145,7 +298,7 @@ This is for the next release manager.
 
 ---
 
-archive/issue_events_000566.json:
+archive/issue_events_001363.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -153,7 +306,7 @@ archive/issue_events_000566.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/527",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/527#event-566"
+    "url": "https://github.com/sagemath/sagetest/issues/527#event-1363"
 }
 ```
 

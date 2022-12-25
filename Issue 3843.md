@@ -349,7 +349,7 @@ Merged trac_3843-flat-and-fixed.2.patch in Sage 3.1.2.alpha3
 
 ---
 
-archive/issue_events_004066.json:
+archive/issue_events_008796.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -357,7 +357,7 @@ archive/issue_events_004066.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3843#event-4066"
+    "url": "https://github.com/sagemath/sagetest/issues/3843#event-8796"
 }
 ```
 

@@ -70,6 +70,23 @@ Attachment [aspect.patch](tarball://root/attachments/some-uuid/ticket2097/aspect
 
 ---
 
+archive/issue_events_005034.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-08T02:22:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2097",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2097#event-5034"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013535.json:
 ```json
 {
@@ -92,7 +109,7 @@ Apply both patches.
 
 ---
 
-archive/issue_events_002257.json:
+archive/issue_events_005035.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -100,7 +117,7 @@ archive/issue_events_002257.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2097",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2097#event-2257"
+    "url": "https://github.com/sagemath/sagetest/issues/2097#event-5035"
 }
 ```
 

@@ -194,7 +194,7 @@ They seem unrelated. As far as I am concerned, this gets a positive review.
 
 ---
 
-archive/issue_events_006791.json:
+archive/issue_events_015464.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -202,7 +202,7 @@ archive/issue_events_006791.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6554#event-6791"
+    "url": "https://github.com/sagemath/sagetest/issues/6554#event-15464"
 }
 ```
 

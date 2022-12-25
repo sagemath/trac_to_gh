@@ -134,7 +134,7 @@ http://sage.math.washington.edu/home/weberg/spkg/singular-3-1-0-4-20090818.p0.sp
 
 ---
 
-archive/issue_events_007175.json:
+archive/issue_events_016349.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -142,7 +142,7 @@ archive/issue_events_007175.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6951",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6951#event-7175"
+    "url": "https://github.com/sagemath/sagetest/issues/6951#event-16349"
 }
 ```
 

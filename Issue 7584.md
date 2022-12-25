@@ -61,7 +61,7 @@ I went ahead and removed this from the spkg.  I also checked in the changes that
 
 ---
 
-archive/issue_events_007810.json:
+archive/issue_events_017992.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -69,7 +69,7 @@ archive/issue_events_007810.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7584",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7584#event-7810"
+    "url": "https://github.com/sagemath/sagetest/issues/7584#event-17992"
 }
 ```
 

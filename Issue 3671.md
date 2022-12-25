@@ -220,6 +220,23 @@ Michael
 
 ---
 
+archive/issue_events_008403.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-19T14:05:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3671",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-8403"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025895.json:
 ```json
 {
@@ -267,7 +284,7 @@ http://sage.math.washington.edu/home/was/patches/linbox-1.1.6rc0.p1.spkg
 
 ---
 
-archive/issue_events_003890.json:
+archive/issue_events_008404.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -275,7 +292,7 @@ archive/issue_events_003890.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3671",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3671#event-3890"
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-8404"
 }
 ```
 
@@ -350,6 +367,40 @@ archive/issue_comments_025900.json:
 ```
 
 Changing priority from blocker to critical.
+
+
+
+---
+
+archive/issue_events_008405.json:
+```json
+{
+    "actor": "https://github.com/ClementPernet",
+    "created_at": "2008-08-12T19:01:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3671",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-8405"
+}
+```
+
+
+
+---
+
+archive/issue_events_008406.json:
+```json
+{
+    "actor": "https://github.com/ClementPernet",
+    "created_at": "2008-08-12T19:01:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3671",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-8406"
+}
+```
 
 
 
@@ -432,7 +483,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003891.json:
+archive/issue_events_008407.json:
 ```json
 {
     "actor": "https://github.com/ClementPernet",
@@ -440,7 +491,7 @@ archive/issue_events_003891.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3671",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3671#event-3891"
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-8407"
 }
 ```
 
@@ -488,7 +539,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003892.json:
+archive/issue_events_008408.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -496,6 +547,6 @@ archive/issue_events_003892.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3671",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3671#event-3892"
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-8408"
 }
 ```

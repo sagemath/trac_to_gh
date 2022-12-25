@@ -169,7 +169,7 @@ Although I didn't test on a system, where the test already went fine before the 
 
 ---
 
-archive/issue_events_006952.json:
+archive/issue_events_015861.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -177,7 +177,7 @@ archive/issue_events_006952.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6717",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6717#event-6952"
+    "url": "https://github.com/sagemath/sagetest/issues/6717#event-15861"
 }
 ```
 

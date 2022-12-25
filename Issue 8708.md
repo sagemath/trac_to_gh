@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8708
 
 ---
 
+archive/issue_events_021139.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-08-11T08:41:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8708",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8708#event-21139"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079298.json:
 ```json
 {
@@ -989,7 +1006,41 @@ Fixed by #12415.
 
 ---
 
-archive/issue_events_008878.json:
+archive/issue_events_021140.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-28T16:03:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8708",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8708#event-21140"
+}
+```
+
+
+
+---
+
+archive/issue_events_021141.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-28T16:03:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8708",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8708#event-21141"
+}
+```
+
+
+
+---
+
+archive/issue_events_021142.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -997,7 +1048,7 @@ archive/issue_events_008878.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#event-8878"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#event-21142"
 }
 ```
 

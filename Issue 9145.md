@@ -131,7 +131,7 @@ As for `doc/common/macros.tex`, that file was during the days when Sage's docume
 
 ---
 
-archive/issue_events_009305.json:
+archive/issue_events_022487.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -139,7 +139,7 @@ archive/issue_events_009305.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9145",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9145#event-9305"
+    "url": "https://github.com/sagemath/sagetest/issues/9145#event-22487"
 }
 ```
 

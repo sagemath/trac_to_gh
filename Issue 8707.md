@@ -211,7 +211,7 @@ I thought about it, but it seems to me that such objects should be "special" rat
 
 ---
 
-archive/issue_events_008877.json:
+archive/issue_events_021138.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -219,7 +219,7 @@ archive/issue_events_008877.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8707#event-8877"
+    "url": "https://github.com/sagemath/sagetest/issues/8707#event-21138"
 }
 ```
 

@@ -153,6 +153,23 @@ First, don't worry, nobody is blaming you! I did go look at #6647, and I don't s
 
 ---
 
+archive/issue_events_017069.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7206",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7206#event-17069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059683.json:
 ```json
 {
@@ -209,6 +226,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_017070.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2013-10-27T15:37:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7206",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7206#event-17070"
+}
+```
+
+
+
+---
+
+archive/issue_events_017071.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2013-10-27T15:37:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7206",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7206#event-17071"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059686.json:
 ```json
 {
@@ -227,7 +278,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_007427.json:
+archive/issue_events_017072.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -235,6 +286,6 @@ archive/issue_events_007427.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7206#event-7427"
+    "url": "https://github.com/sagemath/sagetest/issues/7206#event-17072"
 }
 ```

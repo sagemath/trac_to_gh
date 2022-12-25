@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/260
 
 ---
 
+archive/issue_events_000559.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:32:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-559"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001204.json:
 ```json
 {
@@ -53,6 +70,40 @@ Attachment [trac_260-transparent_graphics.patch](tarball://root/attachments/some
 The attached patch adds a keyword argument `transparency` to `plot.show()`.  The default value is `None`, which makes the image background opaque.  A number between 0 (transparent) and 1 (opaque) determines the degree of transparency.
 
 Please test and make changes.  I'm new to the plotting code, so it's likely that I've missed and/or broken something.
+
+
+
+---
+
+archive/issue_events_000560.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-08-10T15:25:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-560"
+}
+```
+
+
+
+---
+
+archive/issue_events_000561.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-08-10T15:25:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-561"
+}
+```
 
 
 
@@ -554,3 +605,139 @@ archive/issue_comments_001227.json:
 ```
 
 Well, Jason, what do you think?  I wonder if mpl has new ways of designating these things now... anyway, just pinging about the status of this.
+
+
+
+---
+
+archive/issue_events_000562.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-562"
+}
+```
+
+
+
+---
+
+archive/issue_events_000563.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-563"
+}
+```
+
+
+
+---
+
+archive/issue_events_000564.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-564"
+}
+```
+
+
+
+---
+
+archive/issue_events_000565.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-565"
+}
+```
+
+
+
+---
+
+archive/issue_events_000566.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-566"
+}
+```
+
+
+
+---
+
+archive/issue_events_000567.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-567"
+}
+```
+
+
+
+---
+
+archive/issue_events_000568.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-568"
+}
+```
+
+
+
+---
+
+archive/issue_events_000569.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/260",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/260#event-569"
+}
+```

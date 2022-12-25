@@ -82,7 +82,7 @@ http://sage.math.washington.edu/home/jkantor/spkgs/fortran-20071120.p2.spkg
 
 ---
 
-archive/issue_events_001803.json:
+archive/issue_events_004068.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -90,7 +90,7 @@ archive/issue_events_001803.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1643",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1643#event-1803"
+    "url": "https://github.com/sagemath/sagetest/issues/1643#event-4068"
 }
 ```
 

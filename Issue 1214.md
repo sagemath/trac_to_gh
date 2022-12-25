@@ -134,6 +134,23 @@ Changing assignee from @malb to @mwhansen.
 
 ---
 
+archive/issue_events_003224.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-20T05:51:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1214",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1214#event-3224"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007518.json:
 ```json
 {
@@ -217,7 +234,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001352.json:
+archive/issue_events_003225.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -225,6 +242,6 @@ archive/issue_events_001352.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1214#event-1352"
+    "url": "https://github.com/sagemath/sagetest/issues/1214#event-3225"
 }
 ```

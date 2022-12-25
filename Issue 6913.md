@@ -48,7 +48,7 @@ This issue is fixed in ticket #7270.
 
 ---
 
-archive/issue_events_007140.json:
+archive/issue_events_016242.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -56,7 +56,7 @@ archive/issue_events_007140.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6913",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6913#event-7140"
+    "url": "https://github.com/sagemath/sagetest/issues/6913#event-16242"
 }
 ```
 

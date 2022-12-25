@@ -246,7 +246,7 @@ Yep, I'm happy with the changes. I didn't get a chance to do a full doctest run,
 
 ---
 
-archive/issue_events_006034.json:
+archive/issue_events_013580.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -254,7 +254,7 @@ archive/issue_events_006034.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5787#event-6034"
+    "url": "https://github.com/sagemath/sagetest/issues/5787#event-13580"
 }
 ```
 

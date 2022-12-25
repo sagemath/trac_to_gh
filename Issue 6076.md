@@ -78,7 +78,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006330.json:
+archive/issue_events_014264.json:
 ```json
 {
     "actor": "https://github.com/certik",
@@ -86,7 +86,7 @@ archive/issue_events_006330.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6076",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6076#event-6330"
+    "url": "https://github.com/sagemath/sagetest/issues/6076#event-14264"
 }
 ```
 
@@ -109,3 +109,20 @@ archive/issue_comments_048274.json:
 I can confirm that this is now fixed on sagenb.org, so this ticket can be closed. Thanks for fixing it!
 
 Ondrej
+
+
+
+---
+
+archive/issue_events_014265.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-30T09:00:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6076",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6076#event-14265"
+}
+```

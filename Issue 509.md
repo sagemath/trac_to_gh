@@ -65,6 +65,23 @@ Attachment [gdb-ipython.hg_export](tarball://root/attachments/some-uuid/ticket50
 
 ---
 
+archive/issue_events_001297.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-09T06:08:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/509",
+    "milestone": "sage-2.8.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/509#event-1297"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002548.json:
 ```json
 {
@@ -119,7 +136,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000544.json:
+archive/issue_events_001298.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -127,6 +144,6 @@ archive/issue_events_000544.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/509#event-544"
+    "url": "https://github.com/sagemath/sagetest/issues/509#event-1298"
 }
 ```

@@ -162,7 +162,24 @@ Closing this as wontfix. We have upgraded to R version 2.9.2 in Sage 4.1.2.alpha
 
 ---
 
-archive/issue_events_006524.json:
+archive/issue_events_014689.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-01T06:01:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6280",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6280#event-14689"
+}
+```
+
+
+
+---
+
+archive/issue_events_014690.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -170,7 +187,7 @@ archive/issue_events_006524.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6280",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6280#event-6524"
+    "url": "https://github.com/sagemath/sagetest/issues/6280#event-14690"
 }
 ```
 

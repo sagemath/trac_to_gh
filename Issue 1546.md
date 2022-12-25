@@ -64,7 +64,7 @@ Michael
 
 ---
 
-archive/issue_events_001700.json:
+archive/issue_events_003892.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -72,7 +72,7 @@ archive/issue_events_001700.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1546",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1546#event-1700"
+    "url": "https://github.com/sagemath/sagetest/issues/1546#event-3892"
 }
 ```
 

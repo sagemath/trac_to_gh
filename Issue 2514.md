@@ -904,7 +904,7 @@ Merged all four patches in Sage 2.11.alpha1. If anybody has issues with this pat
 
 ---
 
-archive/issue_events_002695.json:
+archive/issue_events_005904.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -912,6 +912,6 @@ archive/issue_events_002695.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2514#event-2695"
+    "url": "https://github.com/sagemath/sagetest/issues/2514#event-5904"
 }
 ```

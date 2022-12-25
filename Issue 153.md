@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/153
 
 ---
 
-archive/issue_events_000159.json:
+archive/issue_events_000284.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -57,7 +57,7 @@ archive/issue_events_000159.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/153",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/153#event-159"
+    "url": "https://github.com/sagemath/sagetest/issues/153#event-284"
 }
 ```
 

@@ -46,6 +46,23 @@ Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
+archive/issue_events_006783.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-20T04:35:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2967",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2967#event-6783"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020412.json:
 ```json
 {
@@ -104,7 +121,7 @@ Merged in Sage 3.0.rc0
 
 ---
 
-archive/issue_events_003172.json:
+archive/issue_events_006784.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -112,6 +129,6 @@ archive/issue_events_003172.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2967",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2967#event-3172"
+    "url": "https://github.com/sagemath/sagetest/issues/2967#event-6784"
 }
 ```

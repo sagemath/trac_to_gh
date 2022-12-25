@@ -189,6 +189,159 @@ I'm going to wait to talk to willem about this instead of just trying to do it m
 
 ---
 
+archive/issue_events_019032.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19032"
+}
+```
+
+
+
+---
+
+archive/issue_events_019033.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19033"
+}
+```
+
+
+
+---
+
+archive/issue_events_019034.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19034"
+}
+```
+
+
+
+---
+
+archive/issue_events_019035.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19035"
+}
+```
+
+
+
+---
+
+archive/issue_events_019036.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19036"
+}
+```
+
+
+
+---
+
+archive/issue_events_019037.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19037"
+}
+```
+
+
+
+---
+
+archive/issue_events_019038.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19038"
+}
+```
+
+
+
+---
+
+archive/issue_events_019039.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2020-07-06T09:54:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19039"
+}
+```
+
+
+
+---
+
+archive/issue_events_019040.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2020-07-06T09:54:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19040"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069292.json:
 ```json
 {
@@ -270,7 +423,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008170.json:
+archive/issue_events_019041.json:
 ```json
 {
     "actor": "https://github.com/slel",
@@ -278,6 +431,6 @@ archive/issue_events_008170.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7954#event-8170"
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-19041"
 }
 ```

@@ -58,6 +58,23 @@ Changing assignee from @rlmill to @jasongrout.
 
 ---
 
+archive/issue_events_006484.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-09-10T03:08:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2817",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2817#event-6484"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019303.json:
 ```json
 {
@@ -71,6 +88,40 @@ archive/issue_comments_019303.json:
 ```
 
 Nathann, I think this is a duplicate of #13827. If you agree, please put on positive_review.
+
+
+
+---
+
+archive/issue_events_006485.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-01-04T19:33:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2817",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2817#event-6485"
+}
+```
+
+
+
+---
+
+archive/issue_events_006486.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-01-04T19:33:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2817",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2817#event-6486"
+}
+```
 
 
 
@@ -173,7 +224,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_003007.json:
+archive/issue_events_006487.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -181,6 +232,6 @@ archive/issue_events_003007.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2817",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2817#event-3007"
+    "url": "https://github.com/sagemath/sagetest/issues/2817#event-6487"
 }
 ```

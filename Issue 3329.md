@@ -182,7 +182,7 @@ sage:   xgcd(y^2, a*h*y+b)
 
 ---
 
-archive/issue_events_003547.json:
+archive/issue_events_007465.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -190,7 +190,7 @@ archive/issue_events_003547.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3329",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3329#event-3547"
+    "url": "https://github.com/sagemath/sagetest/issues/3329#event-7465"
 }
 ```
 

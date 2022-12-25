@@ -109,7 +109,7 @@ See #6906 for apparently the solution (upgrade mercurial)
 
 ---
 
-archive/issue_events_006681.json:
+archive/issue_events_015191.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -117,7 +117,7 @@ archive/issue_events_006681.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6440",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6440#event-6681"
+    "url": "https://github.com/sagemath/sagetest/issues/6440#event-15191"
 }
 ```
 

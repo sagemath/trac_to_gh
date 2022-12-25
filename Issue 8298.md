@@ -113,7 +113,7 @@ Merged 2010/04/20.
 
 ---
 
-archive/issue_events_008495.json:
+archive/issue_events_019859.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -121,7 +121,7 @@ archive/issue_events_008495.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8298",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8298#event-8495"
+    "url": "https://github.com/sagemath/sagetest/issues/8298#event-19859"
 }
 ```
 

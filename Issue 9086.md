@@ -277,6 +277,23 @@ Positive review up at #9037.
 
 ---
 
+archive/issue_events_022282.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T15:27:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9086",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9086#event-22282"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084243.json:
 ```json
 {
@@ -295,7 +312,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009243.json:
+archive/issue_events_022283.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -303,7 +320,7 @@ archive/issue_events_009243.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9086#event-9243"
+    "url": "https://github.com/sagemath/sagetest/issues/9086#event-22283"
 }
 ```
 
@@ -347,7 +364,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009244.json:
+archive/issue_events_022284.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/damm",
@@ -355,7 +372,7 @@ archive/issue_events_009244.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9086#event-9244"
+    "url": "https://github.com/sagemath/sagetest/issues/9086#event-22284"
 }
 ```
 
@@ -449,7 +466,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009245.json:
+archive/issue_events_022285.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -457,6 +474,6 @@ archive/issue_events_009245.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9086#event-9245"
+    "url": "https://github.com/sagemath/sagetest/issues/9086#event-22285"
 }
 ```

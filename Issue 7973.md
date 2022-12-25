@@ -46,6 +46,23 @@ Is this a duplicate of #6987?
 
 ---
 
+archive/issue_events_019078.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-18T07:10:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7973",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7973#event-19078"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069427.json:
 ```json
 {
@@ -432,7 +449,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008188.json:
+archive/issue_events_019079.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -440,6 +457,6 @@ archive/issue_events_008188.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7973#event-8188"
+    "url": "https://github.com/sagemath/sagetest/issues/7973#event-19079"
 }
 ```

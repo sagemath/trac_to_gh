@@ -197,6 +197,23 @@ mhansen: what system are you getting that error on. Is it the Sage python?
 
 ---
 
+archive/issue_events_005533.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:16:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2346",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2346#event-5533"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015683.json:
 ```json
 {
@@ -325,7 +342,7 @@ Merged the bundle as well as the three patches in Sage 3.0.alpha2
 
 ---
 
-archive/issue_events_002523.json:
+archive/issue_events_005534.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -333,6 +350,6 @@ archive/issue_events_002523.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2346#event-2523"
+    "url": "https://github.com/sagemath/sagetest/issues/2346#event-5534"
 }
 ```

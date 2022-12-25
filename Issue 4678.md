@@ -45,6 +45,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4678
 
 ---
 
+archive/issue_events_010713.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-02T19:28:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4678",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4678#event-10713"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035175.json:
 ```json
 {
@@ -113,7 +130,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_004924.json:
+archive/issue_events_010714.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -121,7 +138,7 @@ archive/issue_events_004924.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4678",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4678#event-4924"
+    "url": "https://github.com/sagemath/sagetest/issues/4678#event-10714"
 }
 ```
 
@@ -151,6 +168,40 @@ This should be discussed on sage-devel if we want to patch hg to use sage-native
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_010715.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-02T19:43:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4678",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4678#event-10715"
+}
+```
+
+
+
+---
+
+archive/issue_events_010716.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-02T19:43:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4678",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4678#event-10716"
+}
+```
 
 
 

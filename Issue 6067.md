@@ -66,6 +66,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_014237.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2019-06-15T07:20:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6067",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6067#event-14237"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048193.json:
 ```json
 {
@@ -120,7 +137,7 @@ close 3 old invalid tickets
 
 ---
 
-archive/issue_events_006322.json:
+archive/issue_events_014238.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -128,7 +145,7 @@ archive/issue_events_006322.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6067",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6067#event-6322"
+    "url": "https://github.com/sagemath/sagetest/issues/6067#event-14238"
 }
 ```
 

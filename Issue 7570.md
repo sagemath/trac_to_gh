@@ -544,6 +544,23 @@ Positive reviewer, can you add your (real) name to the reviewer list?
 
 ---
 
+archive/issue_events_017952.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-23T20:24:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7570",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7570#event-17952"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064311.json:
 ```json
 {
@@ -767,7 +784,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007797.json:
+archive/issue_events_017953.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -775,7 +792,7 @@ archive/issue_events_007797.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#event-7797"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#event-17953"
 }
 ```
 

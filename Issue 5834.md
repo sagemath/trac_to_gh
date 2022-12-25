@@ -207,7 +207,7 @@ On your other question, it seems rather random.  I'm not sure what we can do abo
 
 ---
 
-archive/issue_events_006084.json:
+archive/issue_events_013707.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -215,7 +215,7 @@ archive/issue_events_006084.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5834#event-6084"
+    "url": "https://github.com/sagemath/sagetest/issues/5834#event-13707"
 }
 ```
 

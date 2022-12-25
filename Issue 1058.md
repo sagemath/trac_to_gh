@@ -60,6 +60,57 @@ Changing assignee from @williamstein to @bobmoretti.
 
 ---
 
+archive/issue_events_002865.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-02T00:34:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1058",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1058#event-2865"
+}
+```
+
+
+
+---
+
+archive/issue_events_002866.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T22:49:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1058",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1058#event-2866"
+}
+```
+
+
+
+---
+
+archive/issue_events_002867.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T22:49:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1058",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1058#event-2867"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006412.json:
 ```json
 {
@@ -247,7 +298,7 @@ Patch passes doctests. Note that the patch needs the updated eclib.spkg and the 
 
 ---
 
-archive/issue_events_001181.json:
+archive/issue_events_002868.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -255,7 +306,7 @@ archive/issue_events_001181.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1058",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1058#event-1181"
+    "url": "https://github.com/sagemath/sagetest/issues/1058#event-2868"
 }
 ```
 

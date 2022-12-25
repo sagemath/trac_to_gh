@@ -30,6 +30,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/715
 
 ---
 
+archive/issue_events_001908.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-23T10:33:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1908"
+}
+```
+
+
+
+---
+
+archive/issue_events_001909.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-03T02:19:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1909"
+}
+```
+
+
+
+---
+
+archive/issue_events_001910.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-03T02:19:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003730.json:
 ```json
 {
@@ -5657,7 +5708,41 @@ I'm just confirming that applying this patch & that at #11521 to 5.0-beta13 on a
 
 ---
 
-archive/issue_events_000788.json:
+archive/issue_events_001911.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-04-17T22:23:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1911"
+}
+```
+
+
+
+---
+
+archive/issue_events_001912.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-04-17T22:23:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1912"
+}
+```
+
+
+
+---
+
+archive/issue_events_001913.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -5665,7 +5750,7 @@ archive/issue_events_000788.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/715#event-788"
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1913"
 }
 ```
 
@@ -5709,7 +5794,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_000789.json:
+archive/issue_events_001914.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -5717,7 +5802,41 @@ archive/issue_events_000789.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/715#event-789"
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1914"
+}
+```
+
+
+
+---
+
+archive/issue_events_001915.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-05T08:40:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1915"
+}
+```
+
+
+
+---
+
+archive/issue_events_001916.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-05T08:40:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1916"
 }
 ```
 
@@ -5774,6 +5893,40 @@ archive/issue_comments_003952.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_001917.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-13T11:52:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1917"
+}
+```
+
+
+
+---
+
+archive/issue_events_001918.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-13T11:52:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1918"
+}
+```
 
 
 
@@ -6382,6 +6535,40 @@ archive/issue_comments_003970.json:
 ```
 
 I'm happy. Positive review. I think the bot gets confused and tries to apply the patches in the wrong order.
+
+
+
+---
+
+archive/issue_events_001919.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-17T09:32:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1919"
+}
+```
+
+
+
+---
+
+archive/issue_events_001920.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-17T09:32:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1920"
+}
+```
 
 
 
@@ -10150,6 +10337,40 @@ SInce these tickets have caused some trouble in the past, I prefer to merge them
 
 ---
 
+archive/issue_events_001921.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-23T16:15:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1921"
+}
+```
+
+
+
+---
+
+archive/issue_events_001922.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-23T16:15:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1922"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004099.json:
 ```json
 {
@@ -10188,7 +10409,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000790.json:
+archive/issue_events_001923.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -10196,7 +10417,7 @@ archive/issue_events_000790.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/715#event-790"
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1923"
 }
 ```
 
@@ -10240,7 +10461,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_000791.json:
+archive/issue_events_001924.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -10248,7 +10469,7 @@ archive/issue_events_000791.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/715#event-791"
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1924"
 }
 ```
 
@@ -10274,7 +10495,7 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_events_000792.json:
+archive/issue_events_001925.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -10282,7 +10503,7 @@ archive/issue_events_000792.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/715#event-792"
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-1925"
 }
 ```
 

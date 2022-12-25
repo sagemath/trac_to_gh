@@ -543,7 +543,7 @@ Ok, I simplified that last doctest in `_eval_`.
 
 ---
 
-archive/issue_events_009136.json:
+archive/issue_events_021980.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -551,7 +551,7 @@ archive/issue_events_009136.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8983#event-9136"
+    "url": "https://github.com/sagemath/sagetest/issues/8983#event-21980"
 }
 ```
 

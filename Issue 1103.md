@@ -278,7 +278,7 @@ Total time for all tests: 7.7 seconds
 
 ---
 
-archive/issue_events_001229.json:
+archive/issue_events_002960.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -286,7 +286,7 @@ archive/issue_events_001229.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1103",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1103#event-1229"
+    "url": "https://github.com/sagemath/sagetest/issues/1103#event-2960"
 }
 ```
 

@@ -377,7 +377,7 @@ I just added a new patch for my review. I had forgotten the word "reduced" and I
 
 ---
 
-archive/issue_events_008603.json:
+archive/issue_events_020168.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -385,7 +385,7 @@ archive/issue_events_008603.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8418#event-8603"
+    "url": "https://github.com/sagemath/sagetest/issues/8418#event-20168"
 }
 ```
 

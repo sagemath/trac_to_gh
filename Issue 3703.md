@@ -97,6 +97,23 @@ http://rlmill.blogspot.com/2008/07/adinkras.html
 
 ---
 
+archive/issue_events_008477.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-25T19:46:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3703",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3703#event-8477"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026210.json:
 ```json
 {
@@ -140,7 +157,7 @@ Michael
 
 ---
 
-archive/issue_events_003924.json:
+archive/issue_events_008478.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -148,7 +165,7 @@ archive/issue_events_003924.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3703",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3703#event-3924"
+    "url": "https://github.com/sagemath/sagetest/issues/3703#event-8478"
 }
 ```
 

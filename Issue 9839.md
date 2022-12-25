@@ -177,6 +177,23 @@ This problem was fixed by #10766, so can be closed as fixed in sage-4.7.alpha1
 
 ---
 
+archive/issue_events_024773.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-05T15:55:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9839",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9839#event-24773"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096963.json:
 ```json
 {
@@ -195,7 +212,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009965.json:
+archive/issue_events_024774.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -203,6 +220,6 @@ archive/issue_events_009965.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9839#event-9965"
+    "url": "https://github.com/sagemath/sagetest/issues/9839#event-24774"
 }
 ```

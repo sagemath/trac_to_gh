@@ -291,6 +291,23 @@ This works for me in 4.3.3 too.  This ticket should be closed.
 
 ---
 
+archive/issue_events_018701.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-17T05:07:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7810",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7810#event-18701"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067465.json:
 ```json
 {
@@ -309,7 +326,7 @@ Close as a duplicate of #8056.
 
 ---
 
-archive/issue_events_008024.json:
+archive/issue_events_018702.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -317,7 +334,7 @@ archive/issue_events_008024.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7810",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7810#event-8024"
+    "url": "https://github.com/sagemath/sagetest/issues/7810#event-18702"
 }
 ```
 

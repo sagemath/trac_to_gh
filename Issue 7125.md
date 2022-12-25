@@ -67,7 +67,7 @@ Yup!
 
 ---
 
-archive/issue_events_007345.json:
+archive/issue_events_016837.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -75,7 +75,24 @@ archive/issue_events_007345.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7125#event-7345"
+    "url": "https://github.com/sagemath/sagetest/issues/7125#event-16837"
+}
+```
+
+
+
+---
+
+archive/issue_events_016838.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-05T18:48:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7125",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7125#event-16838"
 }
 ```
 

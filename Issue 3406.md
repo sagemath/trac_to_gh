@@ -50,6 +50,23 @@ Changing keywords from "" to "editor_mhansen".
 
 ---
 
+archive/issue_events_007682.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T08:46:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3406",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3406#event-7682"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023840.json:
 ```json
 {
@@ -178,7 +195,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003622.json:
+archive/issue_events_007683.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -186,7 +203,7 @@ archive/issue_events_003622.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3406#event-3622"
+    "url": "https://github.com/sagemath/sagetest/issues/3406#event-7683"
 }
 ```
 

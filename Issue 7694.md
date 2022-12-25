@@ -37,6 +37,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7694
 
 ---
 
+archive/issue_events_018383.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:07:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#event-18383"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065896.json:
 ```json
 {
@@ -68,6 +85,74 @@ archive/issue_comments_065897.json:
 ```
 
 Moved to Sage 5.0.   This still needs a patch...
+
+
+
+---
+
+archive/issue_events_018384.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:57:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#event-18384"
+}
+```
+
+
+
+---
+
+archive/issue_events_018385.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:57:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#event-18385"
+}
+```
+
+
+
+---
+
+archive/issue_events_018386.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:23:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#event-18386"
+}
+```
+
+
+
+---
+
+archive/issue_events_018387.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:23:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#event-18387"
+}
+```
 
 
 
@@ -123,7 +208,7 @@ Cool.
 
 ---
 
-archive/issue_events_007911.json:
+archive/issue_events_018388.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -131,6 +216,6 @@ archive/issue_events_007911.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7694",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7694#event-7911"
+    "url": "https://github.com/sagemath/sagetest/issues/7694#event-18388"
 }
 ```

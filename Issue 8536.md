@@ -289,6 +289,23 @@ Thanks, and sorry for the typo.  John
 
 ---
 
+archive/issue_events_020572.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-04-16T15:46:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8536",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8536#event-20572"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077036.json:
 ```json
 {
@@ -307,7 +324,7 @@ Merged "trac_8536-SAGE.2.patch" in 4.4.alpha0.
 
 ---
 
-archive/issue_events_008715.json:
+archive/issue_events_020573.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -315,7 +332,7 @@ archive/issue_events_008715.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8536#event-8715"
+    "url": "https://github.com/sagemath/sagetest/issues/8536#event-20573"
 }
 ```
 

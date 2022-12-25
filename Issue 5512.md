@@ -96,6 +96,57 @@ Added reviewers.
 
 ---
 
+archive/issue_events_012917.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-08T21:08:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#event-12917"
+}
+```
+
+
+
+---
+
+archive/issue_events_012918.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-11T22:24:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#event-12918"
+}
+```
+
+
+
+---
+
+archive/issue_events_012919.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-11T22:24:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#event-12919"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042730.json:
 ```json
 {
@@ -109,6 +160,23 @@ archive/issue_comments_042730.json:
 ```
 
 Moving to sage-feature as long as #10227 does not have a positive_review.
+
+
+
+---
+
+archive/issue_events_012920.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-10T08:40:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#event-12920"
+}
+```
 
 
 
@@ -158,6 +226,23 @@ Replying to [comment:9 hivert]:
 > One question concerning sage-wait: if someone (eg: me this week end if I find the time) review #10227, am I supposed to change the milestone of this one ? 
 
 I would say: yes, you can do that, at least if you are sufficient familiar with *this* ticket to be sure that there is no further obstruction.
+
+
+
+---
+
+archive/issue_events_012921.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2012-07-31T22:01:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#event-12921"
+}
+```
 
 
 
@@ -235,7 +320,7 @@ Rebased to sage-5.3.beta0.
 
 ---
 
-archive/issue_events_005763.json:
+archive/issue_events_012922.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -243,7 +328,7 @@ archive/issue_events_005763.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5512#event-5763"
+    "url": "https://github.com/sagemath/sagetest/issues/5512#event-12922"
 }
 ```
 

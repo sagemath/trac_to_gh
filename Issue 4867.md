@@ -64,6 +64,23 @@ Michael
 
 ---
 
+archive/issue_events_011207.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-24T11:51:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4867",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4867#event-11207"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036804.json:
 ```json
 {
@@ -93,6 +110,40 @@ Michael
 
 ---
 
+archive/issue_events_011208.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4867",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4867#event-11208"
+}
+```
+
+
+
+---
+
+archive/issue_events_011209.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4867",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4867#event-11209"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036805.json:
 ```json
 {
@@ -106,6 +157,40 @@ archive/issue_comments_036805.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_011210.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:54:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4867",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4867#event-11210"
+}
+```
+
+
+
+---
+
+archive/issue_events_011211.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:54:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4867",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4867#event-11211"
+}
+```
 
 
 
@@ -165,7 +250,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_005110.json:
+archive/issue_events_011212.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -173,6 +258,6 @@ archive/issue_events_005110.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4867#event-5110"
+    "url": "https://github.com/sagemath/sagetest/issues/4867#event-11212"
 }
 ```

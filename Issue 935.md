@@ -117,7 +117,7 @@ archive/issue_comments_005689.json:
 
 ---
 
-archive/issue_events_001053.json:
+archive/issue_events_002572.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -125,7 +125,7 @@ archive/issue_events_001053.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/935#event-1053"
+    "url": "https://github.com/sagemath/sagetest/issues/935#event-2572"
 }
 ```
 
@@ -187,7 +187,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001054.json:
+archive/issue_events_002573.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -195,7 +195,24 @@ archive/issue_events_001054.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/935#event-1054"
+    "url": "https://github.com/sagemath/sagetest/issues/935#event-2573"
+}
+```
+
+
+
+---
+
+archive/issue_events_002574.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-28T16:07:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/935",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/935#event-2574"
 }
 ```
 
@@ -275,7 +292,7 @@ I think the attached patch should fix this problem.  (I will close the ticket on
 
 ---
 
-archive/issue_events_001055.json:
+archive/issue_events_002575.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -283,7 +300,7 @@ archive/issue_events_001055.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/935#event-1055"
+    "url": "https://github.com/sagemath/sagetest/issues/935#event-2575"
 }
 ```
 

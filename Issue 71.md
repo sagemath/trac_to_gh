@@ -93,6 +93,23 @@ This is not a bug.
 
 ---
 
+archive/issue_events_000155.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:42:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/71",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/71#event-155"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000363.json:
 ```json
 {
@@ -142,6 +159,40 @@ archive/issue_comments_000365.json:
 ```
 
 Hi.  This is a REALLY old ticket.  Is the documentation at [the programming tutorial](http://www.sagemath.org/doc/tutorial/programming.html) now sufficient, or should we still keep this ticket around?  I love the idea in William's (six-year-old) comment:1, so we could repurpose this ticket to implement this if desired.  Or, one could just improve the documentation a little to mention that errors refer to lines in the .py file.
+
+
+
+---
+
+archive/issue_events_000156.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-11-20T16:38:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/71",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/71#event-156"
+}
+```
+
+
+
+---
+
+archive/issue_events_000157.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-11-20T16:38:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/71",
+    "milestone": "sage-6.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/71#event-157"
+}
+```
 
 
 

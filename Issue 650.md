@@ -61,6 +61,23 @@ Added a patch that turns this into a NotImplementedError. The problem is that th
 
 ---
 
+archive/issue_events_001735.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-15T21:01:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/650#event-1735"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003367.json:
 ```json
 {
@@ -115,6 +132,40 @@ Actually, I discovered a second place where this needed to be turned into a NotI
 
 ---
 
+archive/issue_events_001736.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2007-10-12T21:58:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/650#event-1736"
+}
+```
+
+
+
+---
+
+archive/issue_events_001737.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2007-10-12T21:58:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/650#event-1737"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003370.json:
 ```json
 {
@@ -162,6 +213,40 @@ archive/issue_comments_003371.json:
 
 ---
 
+archive/issue_events_001738.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T06:08:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/650#event-1738"
+}
+```
+
+
+
+---
+
+archive/issue_events_001739.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T06:08:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/650#event-1739"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003372.json:
 ```json
 {
@@ -180,7 +265,7 @@ As the comments above point out, I was too hasty in commenting out the other doc
 
 ---
 
-archive/issue_events_000716.json:
+archive/issue_events_001740.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -188,7 +273,7 @@ archive/issue_events_000716.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/650#event-716"
+    "url": "https://github.com/sagemath/sagetest/issues/650#event-1740"
 }
 ```
 

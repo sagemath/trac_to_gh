@@ -294,6 +294,23 @@ Florent
 
 ---
 
+archive/issue_events_021686.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-07-28T10:26:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8886",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8886#event-21686"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081560.json:
 ```json
 {
@@ -460,6 +477,40 @@ I suggested that tiny change, so positive review on it :-)
 
 ---
 
+archive/issue_events_021687.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-06T11:54:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8886",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8886#event-21687"
+}
+```
+
+
+
+---
+
+archive/issue_events_021688.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-06T11:54:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8886",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8886#event-21688"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081567.json:
 ```json
 {
@@ -478,7 +529,7 @@ Attachment [trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch](tarball://r
 
 ---
 
-archive/issue_events_009043.json:
+archive/issue_events_021689.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -486,7 +537,7 @@ archive/issue_events_009043.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8886#event-9043"
+    "url": "https://github.com/sagemath/sagetest/issues/8886#event-21689"
 }
 ```
 

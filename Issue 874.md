@@ -27,6 +27,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/874
 
 ---
 
+archive/issue_events_002433.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-13T13:12:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/874",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/874#event-2433"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005371.json:
 ```json
 {
@@ -384,6 +401,74 @@ Jason, if you want to do that real quick when 2.10.2 is out, I'll give it a posi
 
 ---
 
+archive/issue_events_002434.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-02-23T01:05:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/874",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/874#event-2434"
+}
+```
+
+
+
+---
+
+archive/issue_events_002435.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-02-23T01:05:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/874",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/874#event-2435"
+}
+```
+
+
+
+---
+
+archive/issue_events_002436.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-02-23T01:08:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/874",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/874#event-2436"
+}
+```
+
+
+
+---
+
+archive/issue_events_002437.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-02-23T01:08:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/874",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/874#event-2437"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005388.json:
 ```json
 {
@@ -455,7 +540,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000988.json:
+archive/issue_events_002438.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -463,7 +548,7 @@ archive/issue_events_000988.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/874#event-988"
+    "url": "https://github.com/sagemath/sagetest/issues/874#event-2438"
 }
 ```
 

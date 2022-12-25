@@ -292,6 +292,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_023885.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2010-07-25T00:31:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9588",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9588#event-23885"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092568.json:
 ```json
 {
@@ -318,7 +335,7 @@ Release manager: apply only the second patch.
 
 ---
 
-archive/issue_events_009732.json:
+archive/issue_events_023886.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -326,7 +343,7 @@ archive/issue_events_009732.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9588#event-9732"
+    "url": "https://github.com/sagemath/sagetest/issues/9588#event-23886"
 }
 ```
 

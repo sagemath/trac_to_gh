@@ -113,6 +113,125 @@ I agree that the symbolic ring is inexact, and that Jordan normal form requires 
 
 ---
 
+archive/issue_events_014895.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14895"
+}
+```
+
+
+
+---
+
+archive/issue_events_014896.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14896"
+}
+```
+
+
+
+---
+
+archive/issue_events_014897.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14897"
+}
+```
+
+
+
+---
+
+archive/issue_events_014898.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14898"
+}
+```
+
+
+
+---
+
+archive/issue_events_014899.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14899"
+}
+```
+
+
+
+---
+
+archive/issue_events_014900.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14900"
+}
+```
+
+
+
+---
+
+archive/issue_events_014901.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14901"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050480.json:
 ```json
 {
@@ -146,6 +265,40 @@ archive/issue_comments_050481.json:
 Replying to [comment:3 darij]:
 > I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...
 So this would be invalid now?
+
+
+
+---
+
+archive/issue_events_014902.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-07-31T13:51:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14902"
+}
+```
+
+
+
+---
+
+archive/issue_events_014903.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2015-07-31T13:51:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14903"
+}
+```
 
 
 
@@ -201,6 +354,40 @@ sage:  ((d - x)**2).roots()
 [(x, 2)]
 ```
 
+
+
+
+---
+
+archive/issue_events_014904.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2015-08-31T18:13:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14904"
+}
+```
+
+
+
+---
+
+archive/issue_events_014905.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2015-08-31T18:13:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6337",
+    "milestone": "sage-6.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14905"
+}
+```
 
 
 
@@ -441,7 +628,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006581.json:
+archive/issue_events_014906.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -449,6 +636,6 @@ archive/issue_events_006581.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#event-6581"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#event-14906"
 }
 ```

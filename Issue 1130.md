@@ -78,6 +78,23 @@ Attachment [ell_bsgs.patch](tarball://root/attachments/some-uuid/ticket1130/ell_
 
 ---
 
+archive/issue_events_003020.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-10T23:12:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#event-3020"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006820.json:
 ```json
 {
@@ -441,7 +458,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001256.json:
+archive/issue_events_003021.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -449,7 +466,7 @@ archive/issue_events_001256.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1130#event-1256"
+    "url": "https://github.com/sagemath/sagetest/issues/1130#event-3021"
 }
 ```
 

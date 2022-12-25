@@ -140,6 +140,23 @@ No need to keep the ticket open then...
 
 ---
 
+archive/issue_events_017326.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2010-01-14T05:54:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7312",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7312#event-17326"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060992.json:
 ```json
 {
@@ -158,7 +175,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_007535.json:
+archive/issue_events_017327.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -166,6 +183,6 @@ archive/issue_events_007535.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7312",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7312#event-7535"
+    "url": "https://github.com/sagemath/sagetest/issues/7312#event-17327"
 }
 ```

@@ -232,6 +232,23 @@ I sympathise with robertwb's concern, but that should be a separate ticket.  I l
 
 ---
 
+archive/issue_events_009704.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T04:16:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4296",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4296#event-9704"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031371.json:
 ```json
 {
@@ -250,7 +267,7 @@ Merged in Sage 3.3.alpha0
 
 ---
 
-archive/issue_events_004539.json:
+archive/issue_events_009705.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -258,7 +275,7 @@ archive/issue_events_004539.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4296",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4296#event-4539"
+    "url": "https://github.com/sagemath/sagetest/issues/4296#event-9705"
 }
 ```
 

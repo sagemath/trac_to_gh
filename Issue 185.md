@@ -54,6 +54,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_000355.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:57:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/185",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/185#event-355"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000838.json:
 ```json
 {
@@ -71,6 +88,40 @@ Please investigate the issue. The orignial milestone was 1.8 so it has been a wh
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000356.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:37:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/185",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/185#event-356"
+}
+```
+
+
+
+---
+
+archive/issue_events_000357.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:37:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/185",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/185#event-357"
+}
+```
 
 
 
@@ -132,6 +183,40 @@ Attachment [185-smartpoll.patch](tarball://root/attachments/some-uuid/ticket185/
 
 ---
 
+archive/issue_events_000358.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-16T21:24:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/185",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/185#event-358"
+}
+```
+
+
+
+---
+
+archive/issue_events_000359.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-16T21:24:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/185",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/185#event-359"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000842.json:
 ```json
 {
@@ -150,7 +235,7 @@ It works fine for me; the code makes sense.
 
 ---
 
-archive/issue_events_000192.json:
+archive/issue_events_000360.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -158,7 +243,7 @@ archive/issue_events_000192.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/185",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/185#event-192"
+    "url": "https://github.com/sagemath/sagetest/issues/185#event-360"
 }
 ```
 

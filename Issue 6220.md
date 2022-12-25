@@ -28,7 +28,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6220
 
 ---
 
-archive/issue_events_006468.json:
+archive/issue_events_014587.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -36,7 +36,24 @@ archive/issue_events_006468.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6220",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6220#event-6468"
+    "url": "https://github.com/sagemath/sagetest/issues/6220#event-14587"
+}
+```
+
+
+
+---
+
+archive/issue_events_014588.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-05-27T10:26:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6220",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6220#event-14588"
 }
 ```
 

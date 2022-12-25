@@ -72,6 +72,23 @@ Changing component from algebraic geometry to packages.
 
 ---
 
+archive/issue_events_002846.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-01T04:49:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1050",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1050#event-2846"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006371.json:
 ```json
 {
@@ -186,7 +203,7 @@ Merged in the optional spkg repo and mirrored out.
 
 ---
 
-archive/issue_events_001173.json:
+archive/issue_events_002847.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -194,6 +211,6 @@ archive/issue_events_001173.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1050",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1050#event-1173"
+    "url": "https://github.com/sagemath/sagetest/issues/1050#event-2847"
 }
 ```

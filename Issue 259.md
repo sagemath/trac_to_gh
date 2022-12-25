@@ -108,6 +108,23 @@ Michael
 
 ---
 
+archive/issue_events_000555.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:33:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/259",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/259#event-555"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001202.json:
 ```json
 {
@@ -144,7 +161,7 @@ In sage 2.8.7.2 with axiom4sage 0.3.1, this works for me on 32-bit and 64-bit x8
 
 ---
 
-archive/issue_events_000275.json:
+archive/issue_events_000556.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -152,6 +169,40 @@ archive/issue_events_000275.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/259",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/259#event-275"
+    "url": "https://github.com/sagemath/sagetest/issues/259#event-556"
+}
+```
+
+
+
+---
+
+archive/issue_events_000557.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T00:56:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/259",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/259#event-557"
+}
+```
+
+
+
+---
+
+archive/issue_events_000558.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T00:56:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/259",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/259#event-558"
 }
 ```

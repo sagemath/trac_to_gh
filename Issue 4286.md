@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4286
 
 ---
 
+archive/issue_events_009680.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2008-10-14T22:53:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4286",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4286#event-9680"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031310.json:
 ```json
 {
@@ -124,7 +141,7 @@ cdef Integer z = <Integer>PY_NEW(Integer)
 
 ---
 
-archive/issue_events_004530.json:
+archive/issue_events_009681.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -132,7 +149,7 @@ archive/issue_events_004530.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4286",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4286#event-4530"
+    "url": "https://github.com/sagemath/sagetest/issues/4286#event-9681"
 }
 ```
 

@@ -130,7 +130,7 @@ I've attached a patch with these changes, and they look good to me.
 
 ---
 
-archive/issue_events_006376.json:
+archive/issue_events_014423.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -138,7 +138,7 @@ archive/issue_events_006376.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6126",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6126#event-6376"
+    "url": "https://github.com/sagemath/sagetest/issues/6126#event-14423"
 }
 ```
 
@@ -177,6 +177,23 @@ archive/issue_comments_048854.json:
 ```
 
 Merged in 4.0.rc1.
+
+
+
+---
+
+archive/issue_events_014424.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2009-05-29T19:13:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6126",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6126#event-14424"
+}
+```
 
 
 

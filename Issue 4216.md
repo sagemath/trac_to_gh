@@ -70,6 +70,23 @@ Attachment [4216.patch](tarball://root/attachments/some-uuid/ticket4216/4216.pat
 
 ---
 
+archive/issue_events_009548.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2008-09-29T18:17:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4216",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4216#event-9548"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030573.json:
 ```json
 {
@@ -128,7 +145,7 @@ Merged in Sage 3.1.3.alpha2
 
 ---
 
-archive/issue_events_004453.json:
+archive/issue_events_009549.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -136,7 +153,7 @@ archive/issue_events_004453.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4216",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4216#event-4453"
+    "url": "https://github.com/sagemath/sagetest/issues/4216#event-9549"
 }
 ```
 

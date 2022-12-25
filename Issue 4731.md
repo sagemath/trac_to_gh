@@ -240,7 +240,7 @@ I have verified that #6818 *does* fix this problem:
 
 ---
 
-archive/issue_events_004975.json:
+archive/issue_events_010809.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -248,7 +248,24 @@ archive/issue_events_004975.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4731",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4731#event-4975"
+    "url": "https://github.com/sagemath/sagetest/issues/4731#event-10809"
+}
+```
+
+
+
+---
+
+archive/issue_events_010810.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-25T01:18:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4731",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4731#event-10810"
 }
 ```
 

@@ -194,7 +194,7 @@ Merged 2888-incoming-alpha4.patch in Sage 3.0.alpha4
 
 ---
 
-archive/issue_events_003086.json:
+archive/issue_events_006609.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -202,7 +202,7 @@ archive/issue_events_003086.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2888#event-3086"
+    "url": "https://github.com/sagemath/sagetest/issues/2888#event-6609"
 }
 ```
 

@@ -88,7 +88,7 @@ Yes, this example was fixed in 2.10.3 by #1186, and I can't find any other examp
 
 ---
 
-archive/issue_events_002590.json:
+archive/issue_events_005693.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -96,6 +96,23 @@ archive/issue_events_002590.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2414",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2414#event-2590"
+    "url": "https://github.com/sagemath/sagetest/issues/2414#event-5693"
+}
+```
+
+
+
+---
+
+archive/issue_events_005694.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2008-03-21T06:20:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2414",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2414#event-5694"
 }
 ```

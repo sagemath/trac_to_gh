@@ -183,7 +183,7 @@ Looks good to me. Doctests pass. Positive review.
 
 ---
 
-archive/issue_events_009154.json:
+archive/issue_events_022027.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -191,7 +191,7 @@ archive/issue_events_009154.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9000#event-9154"
+    "url": "https://github.com/sagemath/sagetest/issues/9000#event-22027"
 }
 ```
 

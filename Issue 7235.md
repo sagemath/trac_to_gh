@@ -115,6 +115,23 @@ One might put more information there, too.
 
 ---
 
+archive/issue_events_017133.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T17:44:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7235",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7235#event-17133"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059905.json:
 ```json
 {
@@ -209,7 +226,7 @@ On the other hand, we *do* agree on what to do, so I confirm that the issue at h
 
 ---
 
-archive/issue_events_007455.json:
+archive/issue_events_017134.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -217,7 +234,7 @@ archive/issue_events_007455.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#event-7455"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#event-17134"
 }
 ```
 

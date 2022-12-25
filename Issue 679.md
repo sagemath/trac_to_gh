@@ -46,6 +46,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/679
 
 ---
 
+archive/issue_events_001810.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-24T09:12:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/679",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/679#event-1810"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003505.json:
 ```json
 {
@@ -95,6 +112,40 @@ archive/issue_comments_003507.json:
 ```
 
 This also fixes the segfault hang bug and the keyboard interrupt functionality of sage-ptest
+
+
+
+---
+
+archive/issue_events_001811.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-20T23:02:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/679",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/679#event-1811"
+}
+```
+
+
+
+---
+
+archive/issue_events_001812.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-20T23:02:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/679",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/679#event-1812"
+}
+```
 
 
 
@@ -158,7 +209,7 @@ Merged in Sage 2.11.alpha1
 
 ---
 
-archive/issue_events_000747.json:
+archive/issue_events_001813.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -166,7 +217,7 @@ archive/issue_events_000747.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/679#event-747"
+    "url": "https://github.com/sagemath/sagetest/issues/679#event-1813"
 }
 ```
 

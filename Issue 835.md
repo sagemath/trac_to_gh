@@ -43,6 +43,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/835
 
 ---
 
+archive/issue_events_002352.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-06T17:37:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/835",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/835#event-2352"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005149.json:
 ```json
 {
@@ -79,7 +96,7 @@ Attachment [6721.patch](tarball://root/attachments/some-uuid/ticket835/6721.patc
 
 ---
 
-archive/issue_events_000948.json:
+archive/issue_events_002353.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -87,7 +104,7 @@ archive/issue_events_000948.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/835",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/835#event-948"
+    "url": "https://github.com/sagemath/sagetest/issues/835#event-2353"
 }
 ```
 

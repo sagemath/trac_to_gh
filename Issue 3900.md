@@ -139,6 +139,57 @@ Changing priority from critical to blocker.
 
 ---
 
+archive/issue_events_008947.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-26T18:11:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3900",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3900#event-8947"
+}
+```
+
+
+
+---
+
+archive/issue_events_008948.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-09T17:54:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3900",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3900#event-8948"
+}
+```
+
+
+
+---
+
+archive/issue_events_008949.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-09T17:54:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3900",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3900#event-8949"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027847.json:
 ```json
 {
@@ -397,7 +448,7 @@ Merged in Sage 3.2.rc2
 
 ---
 
-archive/issue_events_004127.json:
+archive/issue_events_008950.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -405,6 +456,6 @@ archive/issue_events_004127.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3900#event-4127"
+    "url": "https://github.com/sagemath/sagetest/issues/3900#event-8950"
 }
 ```

@@ -79,6 +79,23 @@ Attachment [trac_7398_iter_detect-fh.patch](tarball://root/attachments/some-uuid
 
 ---
 
+archive/issue_events_017493.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-11-06T07:38:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7398",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7398#event-17493"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062087.json:
 ```json
 {
@@ -313,7 +330,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007621.json:
+archive/issue_events_017494.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -321,6 +338,40 @@ archive/issue_events_007621.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7398#event-7621"
+    "url": "https://github.com/sagemath/sagetest/issues/7398#event-17494"
+}
+```
+
+
+
+---
+
+archive/issue_events_017495.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2009-11-12T09:40:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7398",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7398#event-17495"
+}
+```
+
+
+
+---
+
+archive/issue_events_017496.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2009-11-12T09:40:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7398",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7398#event-17496"
 }
 ```

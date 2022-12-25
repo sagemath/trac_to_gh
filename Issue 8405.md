@@ -85,7 +85,7 @@ Nathann
 
 ---
 
-archive/issue_events_008590.json:
+archive/issue_events_020144.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mike3050",
@@ -93,7 +93,7 @@ archive/issue_events_008590.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8405",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8405#event-8590"
+    "url": "https://github.com/sagemath/sagetest/issues/8405#event-20144"
 }
 ```
 
@@ -135,3 +135,20 @@ Replying to [comment:2 ncohen]:
 > For an explanation of the Linear Program used to solve this problem, see the LP chapter from : http://code.google.com/p/graph-theory-algorithms-book/
 > 
 > Nathann
+
+
+
+---
+
+archive/issue_events_020145.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-23T01:09:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8405",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8405#event-20145"
+}
+```

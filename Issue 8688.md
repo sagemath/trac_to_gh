@@ -93,7 +93,7 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_events_008862.json:
+archive/issue_events_021067.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -101,7 +101,7 @@ archive/issue_events_008862.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8688",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8688#event-8862"
+    "url": "https://github.com/sagemath/sagetest/issues/8688#event-21067"
 }
 ```
 

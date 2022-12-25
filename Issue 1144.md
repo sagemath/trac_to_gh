@@ -42,6 +42,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1144
 
 ---
 
+archive/issue_events_003061.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-11T14:14:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1144",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1144#event-3061"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006931.json:
 ```json
 {
@@ -124,6 +141,40 @@ Should this be marked as invalid then?
 
 ---
 
+archive/issue_events_003062.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:58:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1144",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1144#event-3062"
+}
+```
+
+
+
+---
+
+archive/issue_events_003063.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:58:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1144",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1144#event-3063"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006935.json:
 ```json
 {
@@ -160,7 +211,41 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_001271.json:
+archive/issue_events_003064.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-11-14T08:34:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1144",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1144#event-3064"
+}
+```
+
+
+
+---
+
+archive/issue_events_003065.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-11-14T08:34:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1144",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1144#event-3065"
+}
+```
+
+
+
+---
+
+archive/issue_events_003066.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -168,6 +253,6 @@ archive/issue_events_001271.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1144",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1144#event-1271"
+    "url": "https://github.com/sagemath/sagetest/issues/1144#event-3066"
 }
 ```

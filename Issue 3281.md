@@ -65,7 +65,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_003500.json:
+archive/issue_events_007375.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -73,7 +73,7 @@ archive/issue_events_003500.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3281",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3281#event-3500"
+    "url": "https://github.com/sagemath/sagetest/issues/3281#event-7375"
 }
 ```
 

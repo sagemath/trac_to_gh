@@ -112,6 +112,23 @@ See #10430
 
 ---
 
+archive/issue_events_023975.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-09T21:44:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9620",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9620#event-23975"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093033.json:
 ```json
 {
@@ -173,7 +190,7 @@ thank you
 
 ---
 
-archive/issue_events_009761.json:
+archive/issue_events_023976.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -181,7 +198,7 @@ archive/issue_events_009761.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9620#event-9761"
+    "url": "https://github.com/sagemath/sagetest/issues/9620#event-23976"
 }
 ```
 

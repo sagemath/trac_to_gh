@@ -91,6 +91,23 @@ Very outdated.
 
 ---
 
+archive/issue_events_004784.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-13T12:33:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1981",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1981#event-4784"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012811.json:
 ```json
 {
@@ -127,7 +144,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_002137.json:
+archive/issue_events_004785.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -135,6 +152,6 @@ archive/issue_events_002137.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1981",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1981#event-2137"
+    "url": "https://github.com/sagemath/sagetest/issues/1981#event-4785"
 }
 ```

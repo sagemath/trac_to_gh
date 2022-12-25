@@ -315,7 +315,7 @@ I just indented the examples on Jason's patches.  +1 to them.  Apply only the la
 
 ---
 
-archive/issue_events_004440.json:
+archive/issue_events_009520.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -323,7 +323,7 @@ archive/issue_events_004440.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4201#event-4440"
+    "url": "https://github.com/sagemath/sagetest/issues/4201#event-9520"
 }
 ```
 

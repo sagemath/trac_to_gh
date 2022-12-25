@@ -50,7 +50,7 @@ Patch attached.
 
 ---
 
-archive/issue_events_000671.json:
+archive/issue_events_001629.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -58,7 +58,7 @@ archive/issue_events_000671.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/614",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/614#event-671"
+    "url": "https://github.com/sagemath/sagetest/issues/614#event-1629"
 }
 ```
 

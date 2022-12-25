@@ -46,6 +46,57 @@ Changing component from coding theory to calculus.
 
 ---
 
+archive/issue_events_001729.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-13T19:42:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/649",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/649#event-1729"
+}
+```
+
+
+
+---
+
+archive/issue_events_001730.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-14T17:31:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/649",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/649#event-1730"
+}
+```
+
+
+
+---
+
+archive/issue_events_001731.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-14T17:31:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/649",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/649#event-1731"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003358.json:
 ```json
 {
@@ -97,6 +148,40 @@ archive/issue_comments_003360.json:
 Attachment [649-symbolic-matrices.hg](tarball://root/attachments/some-uuid/ticket649/649-symbolic-matrices.hg) by @robertwb created at 2007-12-20 10:47:34
 
 I've posted a preliminary bundle. Something's up with the eigenvalues command however.
+
+
+
+---
+
+archive/issue_events_001732.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-12-20T10:47:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/649",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/649#event-1732"
+}
+```
+
+
+
+---
+
+archive/issue_events_001733.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-12-20T10:47:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/649",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/649#event-1733"
+}
+```
 
 
 
@@ -192,7 +277,7 @@ merged in 2.9.1 rc0
 
 ---
 
-archive/issue_events_000715.json:
+archive/issue_events_001734.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -200,6 +285,6 @@ archive/issue_events_000715.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/649#event-715"
+    "url": "https://github.com/sagemath/sagetest/issues/649#event-1734"
 }
 ```

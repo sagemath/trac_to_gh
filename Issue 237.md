@@ -50,6 +50,23 @@ This interface is running on a heavily ageing SGI server. The software providing
 
 ---
 
+archive/issue_events_000496.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:46:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/237",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/237#event-496"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001044.json:
 ```json
 {

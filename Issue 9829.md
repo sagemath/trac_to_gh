@@ -131,6 +131,23 @@ The work-around does not seem to work any more as of 4.6.2.
 
 ---
 
+archive/issue_events_024748.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-03-28T10:02:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9829",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9829#event-24748"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096843.json:
 ```json
 {
@@ -203,7 +220,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009951.json:
+archive/issue_events_024749.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -211,6 +228,6 @@ archive/issue_events_009951.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9829",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9829#event-9951"
+    "url": "https://github.com/sagemath/sagetest/issues/9829#event-24749"
 }
 ```

@@ -271,7 +271,7 @@ I think we can close this as a duplicate of those other tickets now that they ar
 
 ---
 
-archive/issue_events_006381.json:
+archive/issue_events_014438.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -279,7 +279,24 @@ archive/issue_events_006381.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6132#event-6381"
+    "url": "https://github.com/sagemath/sagetest/issues/6132#event-14438"
+}
+```
+
+
+
+---
+
+archive/issue_events_014439.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-22T15:02:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#event-14439"
 }
 ```
 

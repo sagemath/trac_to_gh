@@ -63,7 +63,7 @@ fixed.
 
 ---
 
-archive/issue_events_000063.json:
+archive/issue_events_000127.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -71,6 +71,6 @@ archive/issue_events_000063.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/62",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/62#event-63"
+    "url": "https://github.com/sagemath/sagetest/issues/62#event-127"
 }
 ```

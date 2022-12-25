@@ -72,7 +72,7 @@ Looks good to me.  Compiles and passes tests on sage.math.
 
 ---
 
-archive/issue_events_003133.json:
+archive/issue_events_006704.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -80,7 +80,7 @@ archive/issue_events_003133.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2931",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2931#event-3133"
+    "url": "https://github.com/sagemath/sagetest/issues/2931#event-6704"
 }
 ```
 

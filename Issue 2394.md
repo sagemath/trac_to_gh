@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2394
 
 ---
 
+archive/issue_events_005647.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-05T14:11:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2394",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2394#event-5647"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016109.json:
 ```json
 {
@@ -148,6 +165,40 @@ I didn't change the title of this ticket for a reason!  Nothing here is ready fo
 
 ---
 
+archive/issue_events_005648.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-09T22:59:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2394",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2394#event-5648"
+}
+```
+
+
+
+---
+
+archive/issue_events_005649.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-09T22:59:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2394",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2394#event-5649"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016114.json:
 ```json
 {
@@ -179,6 +230,40 @@ archive/issue_comments_016115.json:
 ```
 
 Attachment [2394-newforms.patch](tarball://root/attachments/some-uuid/ticket2394/2394-newforms.patch) by boothby created at 2008-03-13 06:45:34
+
+
+
+---
+
+archive/issue_events_005650.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-13T06:46:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2394",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2394#event-5650"
+}
+```
+
+
+
+---
+
+archive/issue_events_005651.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-13T06:46:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2394",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2394#event-5651"
+}
+```
 
 
 
@@ -271,7 +356,7 @@ I say apply.
 
 ---
 
-archive/issue_events_002570.json:
+archive/issue_events_005652.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -279,7 +364,7 @@ archive/issue_events_002570.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2394",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2394#event-2570"
+    "url": "https://github.com/sagemath/sagetest/issues/2394#event-5652"
 }
 ```
 

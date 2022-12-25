@@ -565,7 +565,7 @@ Due to the problems with Sage (disk related I believe), I unable to download thi
 
 ---
 
-archive/issue_events_007665.json:
+archive/issue_events_017640.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -573,7 +573,7 @@ archive/issue_events_007665.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7440#event-7665"
+    "url": "https://github.com/sagemath/sagetest/issues/7440#event-17640"
 }
 ```
 
@@ -617,7 +617,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007666.json:
+archive/issue_events_017641.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
@@ -625,7 +625,7 @@ archive/issue_events_007666.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7440#event-7666"
+    "url": "https://github.com/sagemath/sagetest/issues/7440#event-17641"
 }
 ```
 
@@ -666,7 +666,7 @@ Valgrind 3.6.0 is already out
 
 ---
 
-archive/issue_events_007667.json:
+archive/issue_events_017642.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
@@ -674,7 +674,7 @@ archive/issue_events_007667.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7440#event-7667"
+    "url": "https://github.com/sagemath/sagetest/issues/7440#event-17642"
 }
 ```
 

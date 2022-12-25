@@ -125,7 +125,7 @@ What exactly is wrong with this patch? Use this ticket to provide feedback about
 
 ---
 
-archive/issue_events_003532.json:
+archive/issue_events_007439.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -133,7 +133,7 @@ archive/issue_events_003532.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3312",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3312#event-3532"
+    "url": "https://github.com/sagemath/sagetest/issues/3312#event-7439"
 }
 ```
 
@@ -154,6 +154,23 @@ archive/issue_comments_022863.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007440.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-18T23:18:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3312",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3312#event-7440"
+}
+```
 
 
 

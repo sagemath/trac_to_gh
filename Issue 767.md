@@ -33,6 +33,91 @@ Issue created by migration from https://trac.sagemath.org/ticket/767
 
 ---
 
+archive/issue_events_002095.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-01T00:44:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/767",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/767#event-2095"
+}
+```
+
+
+
+---
+
+archive/issue_events_002096.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T05:58:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/767",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/767#event-2096"
+}
+```
+
+
+
+---
+
+archive/issue_events_002097.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T05:58:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/767",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/767#event-2097"
+}
+```
+
+
+
+---
+
+archive/issue_events_002098.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:13:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/767",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/767#event-2098"
+}
+```
+
+
+
+---
+
+archive/issue_events_002099.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:13:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/767",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/767#event-2099"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004518.json:
 ```json
 {
@@ -166,6 +251,40 @@ This seems okay to me, but I also don't know enough about doctesting to know if 
 
 ---
 
+archive/issue_events_002100.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-30T17:34:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/767",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/767#event-2100"
+}
+```
+
+
+
+---
+
+archive/issue_events_002101.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-30T17:34:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/767",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/767#event-2101"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004523.json:
 ```json
 {
@@ -244,7 +363,7 @@ Merged in Sage 3.1.3.alpha2
 
 ---
 
-archive/issue_events_000864.json:
+archive/issue_events_002102.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -252,7 +371,7 @@ archive/issue_events_000864.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/767#event-864"
+    "url": "https://github.com/sagemath/sagetest/issues/767#event-2102"
 }
 ```
 

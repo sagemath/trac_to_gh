@@ -88,6 +88,23 @@ Michael
 
 ---
 
+archive/issue_events_009716.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-16T09:30:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4305",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4305#event-9716"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031439.json:
 ```json
 {
@@ -167,6 +184,40 @@ archive/issue_comments_031442.json:
 ```
 
 I'm hoping to have a little time to look into this over the break. Don't delete the patches just yet.
+
+
+
+---
+
+archive/issue_events_009717.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2008-12-07T09:41:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4305",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4305#event-9717"
+}
+```
+
+
+
+---
+
+archive/issue_events_009718.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2008-12-07T09:41:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4305",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4305#event-9718"
+}
+```
 
 
 
@@ -291,6 +342,40 @@ I'm resolving this ticket as a "duplicate."
 
 ---
 
+archive/issue_events_009719.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-20T09:23:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4305",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4305#event-9719"
+}
+```
+
+
+
+---
+
+archive/issue_events_009720.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-20T09:23:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4305",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4305#event-9720"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031449.json:
 ```json
 {
@@ -309,7 +394,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_004548.json:
+archive/issue_events_009721.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -317,6 +402,6 @@ archive/issue_events_004548.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4305#event-4548"
+    "url": "https://github.com/sagemath/sagetest/issues/4305#event-9721"
 }
 ```

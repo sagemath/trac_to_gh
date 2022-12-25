@@ -54,6 +54,23 @@ This is related to #252
 
 ---
 
+archive/issue_events_018476.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2018-03-23T08:52:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7727",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7727#event-18476"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066274.json:
 ```json
 {
@@ -108,7 +125,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007941.json:
+archive/issue_events_018477.json:
 ```json
 {
     "actor": "https://github.com/videlec",
@@ -116,7 +133,7 @@ archive/issue_events_007941.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7727",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7727#event-7941"
+    "url": "https://github.com/sagemath/sagetest/issues/7727#event-18477"
 }
 ```
 

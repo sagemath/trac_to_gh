@@ -385,6 +385,23 @@ Changing keywords from "" to "sd35".
 
 ---
 
+archive/issue_events_016918.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-01-10T05:41:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7160",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7160#event-16918"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059240.json:
 ```json
 {
@@ -882,6 +899,40 @@ Thanks!
 
 ---
 
+archive/issue_events_016919.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-03T15:40:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7160",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7160#event-16919"
+}
+```
+
+
+
+---
+
+archive/issue_events_016920.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-03T15:40:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7160",
+    "milestone": "sage-5.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7160#event-16920"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059260.json:
 ```json
 {
@@ -900,7 +951,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007380.json:
+archive/issue_events_016921.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -908,6 +959,6 @@ archive/issue_events_007380.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7160#event-7380"
+    "url": "https://github.com/sagemath/sagetest/issues/7160#event-16921"
 }
 ```

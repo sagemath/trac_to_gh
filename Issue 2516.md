@@ -420,6 +420,23 @@ Changing status from needs_info to needs_review.
 
 ---
 
+archive/issue_events_005907.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-04-10T12:54:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2516",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2516#event-5907"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017071.json:
 ```json
 {
@@ -1199,6 +1216,40 @@ I can't vouch for the mathematical correctness here, but the translation to/from
 
 ---
 
+archive/issue_events_005908.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2516",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2516#event-5908"
+}
+```
+
+
+
+---
+
+archive/issue_events_005909.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2516",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2516#event-5909"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017101.json:
 ```json
 {
@@ -1665,7 +1716,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002697.json:
+archive/issue_events_005910.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1673,7 +1724,7 @@ archive/issue_events_002697.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2516",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2516#event-2697"
+    "url": "https://github.com/sagemath/sagetest/issues/2516#event-5910"
 }
 ```
 

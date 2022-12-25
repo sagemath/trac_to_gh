@@ -427,7 +427,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_004266.json:
+archive/issue_events_009222.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -435,7 +435,7 @@ archive/issue_events_004266.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4036",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4036#event-4266"
+    "url": "https://github.com/sagemath/sagetest/issues/4036#event-9222"
 }
 ```
 
@@ -456,3 +456,20 @@ archive/issue_comments_029069.json:
 ```
 
 This was indeed fixed as part of #5111.  I'm going ahead and closing it.
+
+
+
+---
+
+archive/issue_events_009223.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-05T06:53:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#event-9223"
+}
+```

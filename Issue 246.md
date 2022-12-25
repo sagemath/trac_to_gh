@@ -67,6 +67,57 @@ There is a javascript app for this at http://www.peterbe.com/Changing-textarea-s
 
 ---
 
+archive/issue_events_000509.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:32:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/246",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/246#event-509"
+}
+```
+
+
+
+---
+
+archive/issue_events_000510.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-04-15T07:25:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/246",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/246#event-510"
+}
+```
+
+
+
+---
+
+archive/issue_events_000511.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-04-15T07:25:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/246",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/246#event-511"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001084.json:
 ```json
 {
@@ -85,7 +136,7 @@ This ticket has been fixed based on the current behavior of the notebook since t
 
 ---
 
-archive/issue_events_000260.json:
+archive/issue_events_000512.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -93,7 +144,7 @@ archive/issue_events_000260.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/246",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/246#event-260"
+    "url": "https://github.com/sagemath/sagetest/issues/246#event-512"
 }
 ```
 

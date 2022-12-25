@@ -65,6 +65,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001531.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-02T20:11:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/572",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/572#event-1531"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002963.json:
 ```json
 {
@@ -83,7 +100,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000624.json:
+archive/issue_events_001532.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -91,6 +108,6 @@ archive/issue_events_000624.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/572",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/572#event-624"
+    "url": "https://github.com/sagemath/sagetest/issues/572#event-1532"
 }
 ```

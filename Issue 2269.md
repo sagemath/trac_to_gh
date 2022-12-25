@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2269
 
 ---
 
+archive/issue_events_005369.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-22T22:31:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2269",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2269#event-5369"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015006.json:
 ```json
 {
@@ -42,6 +59,40 @@ archive/issue_comments_015006.json:
 ```
 
 I believe this can be marked as invalid given the new coercion model.
+
+
+
+---
+
+archive/issue_events_005370.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T08:37:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2269",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2269#event-5370"
+}
+```
+
+
+
+---
+
+archive/issue_events_005371.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T08:37:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2269",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2269#event-5371"
+}
+```
 
 
 
@@ -65,7 +116,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_002440.json:
+archive/issue_events_005372.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -73,7 +124,7 @@ archive/issue_events_002440.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2269",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2269#event-2440"
+    "url": "https://github.com/sagemath/sagetest/issues/2269#event-5372"
 }
 ```
 

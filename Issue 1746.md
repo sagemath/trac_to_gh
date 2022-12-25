@@ -123,6 +123,23 @@ In the above example it should be
 
 ---
 
+archive/issue_events_004225.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-01-10T15:05:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#event-4225"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011000.json:
 ```json
 {
@@ -237,7 +254,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001904.json:
+archive/issue_events_004226.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -245,6 +262,6 @@ archive/issue_events_001904.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1746",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1746#event-1904"
+    "url": "https://github.com/sagemath/sagetest/issues/1746#event-4226"
 }
 ```

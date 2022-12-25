@@ -84,6 +84,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_007390.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-27T00:27:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3290",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3290#event-7390"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022718.json:
 ```json
 {
@@ -146,7 +163,7 @@ Merged in Sage 3.0.4.alpha1
 
 ---
 
-archive/issue_events_003509.json:
+archive/issue_events_007391.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -154,7 +171,7 @@ archive/issue_events_003509.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3290",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3290#event-3509"
+    "url": "https://github.com/sagemath/sagetest/issues/3290#event-7391"
 }
 ```
 

@@ -135,7 +135,7 @@ CPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s
 
 ---
 
-archive/issue_events_000688.json:
+archive/issue_events_001679.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -143,7 +143,7 @@ archive/issue_events_000688.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/630",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/630#event-688"
+    "url": "https://github.com/sagemath/sagetest/issues/630#event-1679"
 }
 ```
 

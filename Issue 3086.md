@@ -221,7 +221,7 @@ See #6972 for a continuation of the updated spkg above.
 
 ---
 
-archive/issue_events_003300.json:
+archive/issue_events_006968.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -229,7 +229,7 @@ archive/issue_events_003300.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3086",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3086#event-3300"
+    "url": "https://github.com/sagemath/sagetest/issues/3086#event-6968"
 }
 ```
 
@@ -250,6 +250,23 @@ archive/issue_comments_021272.json:
 ```
 
 Closing this ticket as a duplicate of #6972.
+
+
+
+---
+
+archive/issue_events_006969.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-22T17:02:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#event-6969"
+}
+```
 
 
 

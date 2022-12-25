@@ -130,7 +130,7 @@ Attachment [trac-3571.patch](tarball://root/attachments/some-uuid/ticket3571/tra
 
 ---
 
-archive/issue_events_003789.json:
+archive/issue_events_008166.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -138,7 +138,24 @@ archive/issue_events_003789.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3571",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3571#event-3789"
+    "url": "https://github.com/sagemath/sagetest/issues/3571#event-8166"
+}
+```
+
+
+
+---
+
+archive/issue_events_008167.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T09:39:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3571",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3571#event-8167"
 }
 ```
 

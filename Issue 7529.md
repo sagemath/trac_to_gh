@@ -234,7 +234,7 @@ This looks like spam but I didn't try the link.
 
 ---
 
-archive/issue_events_007757.json:
+archive/issue_events_017860.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -242,7 +242,7 @@ archive/issue_events_007757.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7529#event-7757"
+    "url": "https://github.com/sagemath/sagetest/issues/7529#event-17860"
 }
 ```
 

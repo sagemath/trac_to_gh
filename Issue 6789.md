@@ -85,6 +85,23 @@ Changing keywords from "" to "maxima".
 
 ---
 
+archive/issue_events_015991.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-08-20T23:55:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6789",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6789#event-15991"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055850.json:
 ```json
 {
@@ -103,7 +120,7 @@ This is fixed by #6699.
 
 ---
 
-archive/issue_events_007024.json:
+archive/issue_events_015992.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -111,7 +128,7 @@ archive/issue_events_007024.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6789",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6789#event-7024"
+    "url": "https://github.com/sagemath/sagetest/issues/6789#event-15992"
 }
 ```
 

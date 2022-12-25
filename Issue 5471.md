@@ -64,7 +64,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005725.json:
+archive/issue_events_012781.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
@@ -72,7 +72,7 @@ archive/issue_events_005725.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5471",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5471#event-5725"
+    "url": "https://github.com/sagemath/sagetest/issues/5471#event-12781"
 }
 ```
 
@@ -93,3 +93,20 @@ archive/issue_comments_042375.json:
 ```
 
 ups, duplicate to #5466, sorry for the fuzz
+
+
+
+---
+
+archive/issue_events_012782.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-10T20:20:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5471",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5471#event-12782"
+}
+```

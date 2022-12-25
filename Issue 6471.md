@@ -74,6 +74,23 @@ based on Sage 4.1.rc0
 
 ---
 
+archive/issue_events_015269.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-07T06:08:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6471",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6471#event-15269"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052215.json:
 ```json
 {
@@ -200,7 +217,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006709.json:
+archive/issue_events_015270.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -208,6 +225,6 @@ archive/issue_events_006709.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6471",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6471#event-6709"
+    "url": "https://github.com/sagemath/sagetest/issues/6471#event-15270"
 }
 ```

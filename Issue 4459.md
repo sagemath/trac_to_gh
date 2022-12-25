@@ -105,7 +105,7 @@ Rolled into #5079
 
 ---
 
-archive/issue_events_004705.json:
+archive/issue_events_010071.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -113,6 +113,23 @@ archive/issue_events_004705.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4459",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4459#event-4705"
+    "url": "https://github.com/sagemath/sagetest/issues/4459#event-10071"
+}
+```
+
+
+
+---
+
+archive/issue_events_010072.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T15:34:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4459",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4459#event-10072"
 }
 ```

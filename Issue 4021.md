@@ -217,7 +217,7 @@ Merged all three patches in Sage 3.1.3.alpha2 and this time I closed the ticket 
 
 ---
 
-archive/issue_events_004251.json:
+archive/issue_events_009195.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -225,6 +225,6 @@ archive/issue_events_004251.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4021",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4021#event-4251"
+    "url": "https://github.com/sagemath/sagetest/issues/4021#event-9195"
 }
 ```

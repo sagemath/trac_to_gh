@@ -143,7 +143,7 @@ So not a sage issue; case closed.
 
 ---
 
-archive/issue_events_008937.json:
+archive/issue_events_021356.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -151,7 +151,7 @@ archive/issue_events_008937.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8769",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8769#event-8937"
+    "url": "https://github.com/sagemath/sagetest/issues/8769#event-21356"
 }
 ```
 
@@ -190,3 +190,20 @@ archive/issue_comments_080126.json:
 ```
 
 Resolution changed from fixed to invalid
+
+
+
+---
+
+archive/issue_events_021357.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-29T15:05:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8769",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8769#event-21357"
+}
+```

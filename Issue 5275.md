@@ -88,6 +88,23 @@ Michael
 
 ---
 
+archive/issue_events_012253.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T20:19:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5275",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5275#event-12253"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040409.json:
 ```json
 {

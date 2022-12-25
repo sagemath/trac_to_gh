@@ -444,6 +444,23 @@ Notebook fixes for launch Jmol from cmd line
 
 ---
 
+archive/issue_events_022729.json:
+```json
+{
+    "actor": "https://github.com/gutow",
+    "created_at": "2011-03-22T15:09:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9232",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9232#event-22729"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086504.json:
 ```json
 {
@@ -1098,7 +1115,7 @@ That is correct.  Only the two patches listed at the end of the description are 
 
 ---
 
-archive/issue_events_009394.json:
+archive/issue_events_022730.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1106,7 +1123,7 @@ archive/issue_events_009394.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9232#event-9394"
+    "url": "https://github.com/sagemath/sagetest/issues/9232#event-22730"
 }
 ```
 

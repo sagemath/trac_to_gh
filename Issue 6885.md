@@ -83,7 +83,24 @@ Close this ticket as duplicate of #6988.
 
 ---
 
-archive/issue_events_007116.json:
+archive/issue_events_016190.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-22T20:14:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6885",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6885#event-16190"
+}
+```
+
+
+
+---
+
+archive/issue_events_016191.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -91,6 +108,6 @@ archive/issue_events_007116.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6885",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6885#event-7116"
+    "url": "https://github.com/sagemath/sagetest/issues/6885#event-16191"
 }
 ```

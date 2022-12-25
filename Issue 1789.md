@@ -152,7 +152,7 @@ This seems like a reasonable change to make.  The situation is tricky and it app
 
 ---
 
-archive/issue_events_001946.json:
+archive/issue_events_004366.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -160,7 +160,7 @@ archive/issue_events_001946.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1789",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1789#event-1946"
+    "url": "https://github.com/sagemath/sagetest/issues/1789#event-4366"
 }
 ```
 

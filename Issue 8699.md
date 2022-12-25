@@ -374,6 +374,23 @@ Changing keywords from "" to "7 years".
 
 ---
 
+archive/issue_events_021108.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2013-02-06T12:55:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8699",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8699#event-21108"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079135.json:
 ```json
 {
@@ -495,7 +512,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008870.json:
+archive/issue_events_021109.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -503,7 +520,7 @@ archive/issue_events_008870.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8699#event-8870"
+    "url": "https://github.com/sagemath/sagetest/issues/8699#event-21109"
 }
 ```
 

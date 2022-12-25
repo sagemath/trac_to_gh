@@ -130,7 +130,7 @@ I am splitting this ticket into smallers ones
 
 ---
 
-archive/issue_events_006915.json:
+archive/issue_events_015761.json:
 ```json
 {
     "actor": "https://github.com/nathanncohen",
@@ -138,7 +138,7 @@ archive/issue_events_006915.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6680",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6680#event-6915"
+    "url": "https://github.com/sagemath/sagetest/issues/6680#event-15761"
 }
 ```
 
@@ -212,3 +212,20 @@ Let's say :
 * #7600 Vertex cover 
 * #7601 Graph.edge_connectivity 
 * #7605 Graph.vertex_connectivity
+
+
+
+---
+
+archive/issue_events_015762.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-05T11:28:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6680",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6680#event-15762"
+}
+```

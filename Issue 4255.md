@@ -349,6 +349,23 @@ Michael
 
 ---
 
+archive/issue_events_009609.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-11T09:01:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4255",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4255#event-9609"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030904.json:
 ```json
 {
@@ -414,7 +431,7 @@ That patch enables easy creation of text cells--just shift-click on the "new cel
 
 ---
 
-archive/issue_events_004494.json:
+archive/issue_events_009610.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -422,7 +439,41 @@ archive/issue_events_004494.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4255",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4255#event-4494"
+    "url": "https://github.com/sagemath/sagetest/issues/4255#event-9610"
+}
+```
+
+
+
+---
+
+archive/issue_events_009611.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-06T06:37:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4255",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4255#event-9611"
+}
+```
+
+
+
+---
+
+archive/issue_events_009612.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-06T06:37:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4255",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4255#event-9612"
 }
 ```
 

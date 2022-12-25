@@ -227,7 +227,7 @@ Applies over the two precedent patches.
 
 ---
 
-archive/issue_events_008465.json:
+archive/issue_events_019784.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -235,7 +235,7 @@ archive/issue_events_008465.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8266#event-8465"
+    "url": "https://github.com/sagemath/sagetest/issues/8266#event-19784"
 }
 ```
 

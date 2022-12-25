@@ -180,6 +180,23 @@ In this case, I think the sage-combinat repo is probably OK.
 
 ---
 
+archive/issue_events_022004.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-19T07:49:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#event-22004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082988.json:
 ```json
 {
@@ -198,7 +215,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009146.json:
+archive/issue_events_022005.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -206,6 +223,6 @@ archive/issue_events_009146.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8991",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8991#event-9146"
+    "url": "https://github.com/sagemath/sagetest/issues/8991#event-22005"
 }
 ```

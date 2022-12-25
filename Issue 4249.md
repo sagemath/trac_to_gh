@@ -791,7 +791,7 @@ No, but she (my student) was the one who alerted me to the problem in the first 
 
 ---
 
-archive/issue_events_004488.json:
+archive/issue_events_009600.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -799,7 +799,7 @@ archive/issue_events_004488.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4249#event-4488"
+    "url": "https://github.com/sagemath/sagetest/issues/4249#event-9600"
 }
 ```
 
@@ -838,3 +838,20 @@ archive/issue_comments_030856.json:
 ```
 
 Merged all five patches in Sage 3.2.rc1
+
+
+
+---
+
+archive/issue_events_009601.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-19T21:48:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4249",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4249#event-9601"
+}
+```

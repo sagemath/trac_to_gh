@@ -464,6 +464,23 @@ Attachment [1138-sqrt-mod-rebased-2.10.4.patch](tarball://root/attachments/some-
 
 ---
 
+archive/issue_events_003051.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2008-03-26T03:14:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#event-3051"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006898.json:
 ```json
 {
@@ -556,7 +573,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001265.json:
+archive/issue_events_003052.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -564,6 +581,6 @@ archive/issue_events_001265.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1138#event-1265"
+    "url": "https://github.com/sagemath/sagetest/issues/1138#event-3052"
 }
 ```

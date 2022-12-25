@@ -204,6 +204,23 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_020389.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-03-11T01:50:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8488",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8488#event-20389"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076387.json:
 ```json
 {
@@ -745,7 +762,7 @@ Merged into 4.4.alpha1:
 
 ---
 
-archive/issue_events_008669.json:
+archive/issue_events_020390.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -753,7 +770,7 @@ archive/issue_events_008669.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8488",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8488#event-8669"
+    "url": "https://github.com/sagemath/sagetest/issues/8488#event-20390"
 }
 ```
 

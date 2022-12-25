@@ -128,7 +128,7 @@ diff -r 0c2736a0fd87 setup.py
 
 ---
 
-archive/issue_events_000107.json:
+archive/issue_events_000207.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -136,6 +136,6 @@ archive/issue_events_000107.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/103",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/103#event-107"
+    "url": "https://github.com/sagemath/sagetest/issues/103#event-207"
 }
 ```

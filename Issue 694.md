@@ -178,6 +178,23 @@ in Singular 2.0.4, which it did not support.
 
 ---
 
+archive/issue_events_001850.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-26T16:35:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/694",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/694#event-1850"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003623.json:
 ```json
 {
@@ -236,6 +253,40 @@ Changing assignee from jbmohler to @malb.
 
 ---
 
+archive/issue_events_001851.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-01T23:22:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/694",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/694#event-1851"
+}
+```
+
+
+
+---
+
+archive/issue_events_001852.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-01T23:22:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/694",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/694#event-1852"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003626.json:
 ```json
 {
@@ -272,7 +323,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000760.json:
+archive/issue_events_001853.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -280,6 +331,6 @@ archive/issue_events_000760.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/694#event-760"
+    "url": "https://github.com/sagemath/sagetest/issues/694#event-1853"
 }
 ```

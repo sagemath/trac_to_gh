@@ -103,7 +103,7 @@ For a related issue, see #6270.
 
 ---
 
-archive/issue_events_006501.json:
+archive/issue_events_014653.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -111,7 +111,7 @@ archive/issue_events_006501.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6257",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6257#event-6501"
+    "url": "https://github.com/sagemath/sagetest/issues/6257#event-14653"
 }
 ```
 

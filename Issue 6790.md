@@ -338,7 +338,7 @@ Dave
 
 ---
 
-archive/issue_events_007025.json:
+archive/issue_events_015993.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -346,7 +346,24 @@ archive/issue_events_007025.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6790",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6790#event-7025"
+    "url": "https://github.com/sagemath/sagetest/issues/6790#event-15993"
+}
+```
+
+
+
+---
+
+archive/issue_events_015994.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-20T12:31:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6790",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6790#event-15994"
 }
 ```
 

@@ -131,6 +131,57 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_024173.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9683",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9683#event-24173"
+}
+```
+
+
+
+---
+
+archive/issue_events_024174.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9683",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9683#event-24174"
+}
+```
+
+
+
+---
+
+archive/issue_events_024175.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9683",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9683#event-24175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093977.json:
 ```json
 {
@@ -185,7 +236,7 @@ Changing keywords from "pretty_print, history" to "pretty_print, history, days57
 
 ---
 
-archive/issue_events_009815.json:
+archive/issue_events_024176.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -193,7 +244,7 @@ archive/issue_events_009815.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9683#event-9815"
+    "url": "https://github.com/sagemath/sagetest/issues/9683#event-24176"
 }
 ```
 

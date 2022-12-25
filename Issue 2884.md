@@ -151,7 +151,7 @@ It was not clear to me, even upon rereading the documentation, that `@`interact 
 
 ---
 
-archive/issue_events_003082.json:
+archive/issue_events_006605.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -159,7 +159,7 @@ archive/issue_events_003082.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2884",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2884#event-3082"
+    "url": "https://github.com/sagemath/sagetest/issues/2884#event-6605"
 }
 ```
 

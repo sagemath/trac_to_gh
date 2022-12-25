@@ -68,6 +68,23 @@ Perhaps the right fix is to notice doctests, and disable these modifications for
 
 ---
 
+archive/issue_events_002731.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:09:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/989",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/989#event-2731"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006017.json:
 ```json
 {
@@ -123,7 +140,7 @@ applied to 2.8.12.rc0
 
 ---
 
-archive/issue_events_001112.json:
+archive/issue_events_002732.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -131,7 +148,7 @@ archive/issue_events_001112.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/989",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/989#event-1112"
+    "url": "https://github.com/sagemath/sagetest/issues/989#event-2732"
 }
 ```
 

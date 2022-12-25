@@ -78,7 +78,7 @@ This ticket can be closed.
 
 ---
 
-archive/issue_events_009161.json:
+archive/issue_events_022039.json:
 ```json
 {
     "actor": "https://github.com/dimpase",
@@ -86,7 +86,7 @@ archive/issue_events_009161.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9007",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9007#event-9161"
+    "url": "https://github.com/sagemath/sagetest/issues/9007#event-22039"
 }
 ```
 
@@ -107,3 +107,20 @@ archive/issue_comments_083179.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_022040.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-22T09:54:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9007",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9007#event-22040"
+}
+```

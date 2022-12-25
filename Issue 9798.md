@@ -925,7 +925,7 @@ I recently opened #10040 for not using `tar`'s `v` option (by default) when extr
 
 ---
 
-archive/issue_events_009923.json:
+archive/issue_events_024595.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -933,7 +933,7 @@ archive/issue_events_009923.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9798#event-9923"
+    "url": "https://github.com/sagemath/sagetest/issues/9798#event-24595"
 }
 ```
 
@@ -954,6 +954,23 @@ archive/issue_comments_096129.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_024596.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-11-01T10:23:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9798",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9798#event-24596"
+}
+```
 
 
 

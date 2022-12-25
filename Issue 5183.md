@@ -76,6 +76,23 @@ Resolution: worksforme
 
 ---
 
+archive/issue_events_011999.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-02-20T00:49:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5183",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5183#event-11999"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039671.json:
 ```json
 {
@@ -94,7 +111,7 @@ These two examples seem to work now, so I think we can close this.
 
 ---
 
-archive/issue_events_005437.json:
+archive/issue_events_012000.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -102,6 +119,6 @@ archive/issue_events_005437.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5183",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5183#event-5437"
+    "url": "https://github.com/sagemath/sagetest/issues/5183#event-12000"
 }
 ```

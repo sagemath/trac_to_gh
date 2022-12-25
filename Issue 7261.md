@@ -100,7 +100,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007482.json:
+archive/issue_events_017181.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -108,7 +108,7 @@ archive/issue_events_007482.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7261#event-7482"
+    "url": "https://github.com/sagemath/sagetest/issues/7261#event-17181"
 }
 ```
 
@@ -147,3 +147,54 @@ archive/issue_comments_060196.json:
 ```
 
 this was merged into sagenb-0.4
+
+
+
+---
+
+archive/issue_events_017182.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:47:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7261",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7261#event-17182"
+}
+```
+
+
+
+---
+
+archive/issue_events_017183.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:48:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7261",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7261#event-17183"
+}
+```
+
+
+
+---
+
+archive/issue_events_017184.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:48:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7261",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7261#event-17184"
+}
+```

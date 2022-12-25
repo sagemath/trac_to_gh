@@ -247,7 +247,7 @@ Thanks John! That was quick. Time difference is a good thing :-)
 
 ---
 
-archive/issue_events_006828.json:
+archive/issue_events_015534.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -255,7 +255,7 @@ archive/issue_events_006828.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6591#event-6828"
+    "url": "https://github.com/sagemath/sagetest/issues/6591#event-15534"
 }
 ```
 

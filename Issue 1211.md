@@ -144,6 +144,23 @@ Attachment [1211.hg](tarball://root/attachments/some-uuid/ticket1211/1211.hg) by
 
 ---
 
+archive/issue_events_003219.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-01T21:30:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1211",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1211#event-3219"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007497.json:
 ```json
 {
@@ -162,7 +179,7 @@ Looks good, and all doctests still pass in sage/rings/polynomial/.
 
 ---
 
-archive/issue_events_001349.json:
+archive/issue_events_003220.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -170,7 +187,7 @@ archive/issue_events_001349.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1211",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1211#event-1349"
+    "url": "https://github.com/sagemath/sagetest/issues/1211#event-3220"
 }
 ```
 

@@ -98,7 +98,7 @@ Attachment [maxima-error2.9.1.alpha2.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_events_001740.json:
+archive/issue_events_003948.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -106,7 +106,7 @@ archive/issue_events_001740.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1584",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1584#event-1740"
+    "url": "https://github.com/sagemath/sagetest/issues/1584#event-3948"
 }
 ```
 

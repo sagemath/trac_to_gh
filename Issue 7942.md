@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7942
 
 ---
 
-archive/issue_events_008158.json:
+archive/issue_events_019006.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -48,7 +48,7 @@ archive/issue_events_008158.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7942",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7942#event-8158"
+    "url": "https://github.com/sagemath/sagetest/issues/7942#event-19006"
 }
 ```
 
@@ -90,3 +90,20 @@ archive/issue_comments_069163.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_019007.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-16T09:31:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7942",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7942#event-19007"
+}
+```

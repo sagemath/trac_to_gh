@@ -65,7 +65,7 @@ This is a dupe of #5324.
 
 ---
 
-archive/issue_events_007638.json:
+archive/issue_events_017538.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,6 +73,23 @@ archive/issue_events_007638.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7413",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7413#event-7638"
+    "url": "https://github.com/sagemath/sagetest/issues/7413#event-17538"
+}
+```
+
+
+
+---
+
+archive/issue_events_017539.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-09T18:06:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7413",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7413#event-17539"
 }
 ```

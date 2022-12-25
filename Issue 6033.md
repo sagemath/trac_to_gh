@@ -124,6 +124,23 @@ Michael
 
 ---
 
+archive/issue_events_014170.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-14T05:36:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6033",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6033#event-14170"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047947.json:
 ```json
 {
@@ -226,7 +243,7 @@ Merged in 4.0.1.rc1.
 
 ---
 
-archive/issue_events_006288.json:
+archive/issue_events_014171.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -234,7 +251,7 @@ archive/issue_events_006288.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6033",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6033#event-6288"
+    "url": "https://github.com/sagemath/sagetest/issues/6033#event-14171"
 }
 ```
 

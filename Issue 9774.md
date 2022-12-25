@@ -233,6 +233,23 @@ I'm going to close this as a duplicate of #9845.  I'll post an spkg there which 
 
 ---
 
+archive/issue_events_024510.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-09-01T22:37:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#event-24510"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095769.json:
 ```json
 {
@@ -251,7 +268,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009905.json:
+archive/issue_events_024511.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -259,7 +276,7 @@ archive/issue_events_009905.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#event-9905"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#event-24511"
 }
 ```
 

@@ -194,7 +194,7 @@ Yes, I did split this ticket into individual items. Please close this ticket as 
 
 ---
 
-archive/issue_events_002148.json:
+archive/issue_events_004806.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -202,7 +202,7 @@ archive/issue_events_002148.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1993",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1993#event-2148"
+    "url": "https://github.com/sagemath/sagetest/issues/1993#event-4806"
 }
 ```
 

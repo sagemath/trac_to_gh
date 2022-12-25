@@ -150,6 +150,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1367
 
 ---
 
+archive/issue_events_003536.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-26T03:09:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#event-3536"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008744.json:
 ```json
 {
@@ -431,6 +448,40 @@ The more I look at `number_field_ideal_rel.py`, the more I notice needs doing.  
 (1) The generator of the absolute field is always called 'a'; it would be much better if the user could choose the name, and, even better, was also able to get the absolute ideal via something like `A = K.absolute_field('z'); A(J)`. (2) Neither `rnf` nor `nf` get used. (3) Since `x.polynomial()` is a rational polynomial, `L(R(x.polynomial()))` is the same as `L(x.polynomial())`. (4) In this context, `list(self.gens())`is no different from `self.gens()`.
 
 I've come to the conclusion that a more serious rewrite (with some more testing doctests) is needed, for which I'm unlikely to have much time in the next few weeks.  My one-line patch was really only meant to point out where the defect lay.
+
+
+
+---
+
+archive/issue_events_003537.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
+    "created_at": "2008-07-19T09:21:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#event-3537"
+}
+```
+
+
+
+---
+
+archive/issue_events_003538.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
+    "created_at": "2008-07-19T09:21:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#event-3538"
+}
+```
 
 
 
@@ -761,6 +812,40 @@ Michael
 
 ---
 
+archive/issue_events_003539.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-29T05:34:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#event-3539"
+}
+```
+
+
+
+---
+
+archive/issue_events_003540.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-29T05:34:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#event-3540"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008765.json:
 ```json
 {
@@ -823,7 +908,7 @@ Michael
 
 ---
 
-archive/issue_events_001510.json:
+archive/issue_events_003541.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -831,7 +916,7 @@ archive/issue_events_001510.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1367#event-1510"
+    "url": "https://github.com/sagemath/sagetest/issues/1367#event-3541"
 }
 ```
 

@@ -311,7 +311,7 @@ Moving to positive review. I'm about to release rc0, so this will get plenty of 
 
 ---
 
-archive/issue_events_009585.json:
+archive/issue_events_023311.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -319,7 +319,7 @@ archive/issue_events_009585.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9430#event-9585"
+    "url": "https://github.com/sagemath/sagetest/issues/9430#event-23311"
 }
 ```
 

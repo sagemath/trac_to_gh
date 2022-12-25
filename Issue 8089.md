@@ -221,7 +221,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008295.json:
+archive/issue_events_019364.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -229,7 +229,7 @@ archive/issue_events_008295.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8089",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8089#event-8295"
+    "url": "https://github.com/sagemath/sagetest/issues/8089#event-19364"
 }
 ```
 
@@ -273,7 +273,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008296.json:
+archive/issue_events_019365.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -281,7 +281,7 @@ archive/issue_events_008296.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8089",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8089#event-8296"
+    "url": "https://github.com/sagemath/sagetest/issues/8089#event-19365"
 }
 ```
 
@@ -345,7 +345,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008297.json:
+archive/issue_events_019366.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -353,6 +353,23 @@ archive/issue_events_008297.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8089",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8089#event-8297"
+    "url": "https://github.com/sagemath/sagetest/issues/8089#event-19366"
+}
+```
+
+
+
+---
+
+archive/issue_events_019367.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-06-25T15:58:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8089",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8089#event-19367"
 }
 ```

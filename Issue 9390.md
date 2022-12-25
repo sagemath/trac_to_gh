@@ -181,6 +181,23 @@ PS grammar: line 1177 of number_field_rel.py after the patch, previous should be
 
 ---
 
+archive/issue_events_023168.json:
+```json
+{
+    "actor": "https://github.com/mstreng",
+    "created_at": "2010-12-13T12:10:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9390",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9390#event-23168"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089252.json:
 ```json
 {
@@ -713,6 +730,40 @@ Apply trac_9390-3rd_replacement.patch
 
 ---
 
+archive/issue_events_023169.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-24T10:16:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9390",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9390#event-23169"
+}
+```
+
+
+
+---
+
+archive/issue_events_023170.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-24T10:16:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9390",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9390#event-23170"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089271.json:
 ```json
 {
@@ -731,7 +782,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009548.json:
+archive/issue_events_023171.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -739,6 +790,6 @@ archive/issue_events_009548.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9390#event-9548"
+    "url": "https://github.com/sagemath/sagetest/issues/9390#event-23171"
 }
 ```

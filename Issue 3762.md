@@ -162,6 +162,23 @@ Some issues that need to be dealt with are (1) the speed regression in partition
 
 ---
 
+archive/issue_events_008629.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-24T02:50:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3762",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3762#event-8629"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026695.json:
 ```json
 {
@@ -303,7 +320,7 @@ Followup for speed regression at #5084 and fpu_fix at #5085.
 
 ---
 
-archive/issue_events_003984.json:
+archive/issue_events_008630.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -311,7 +328,7 @@ archive/issue_events_003984.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3762#event-3984"
+    "url": "https://github.com/sagemath/sagetest/issues/3762#event-8630"
 }
 ```
 

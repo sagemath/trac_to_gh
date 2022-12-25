@@ -126,7 +126,7 @@ I realise this is a duplicate of #9521
 
 ---
 
-archive/issue_events_009896.json:
+archive/issue_events_024473.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -134,7 +134,7 @@ archive/issue_events_009896.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9766",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9766#event-9896"
+    "url": "https://github.com/sagemath/sagetest/issues/9766#event-24473"
 }
 ```
 
@@ -155,3 +155,20 @@ archive/issue_comments_095550.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_024474.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-05T05:08:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9766",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9766#event-24474"
+}
+```

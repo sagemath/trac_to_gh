@@ -198,7 +198,24 @@ Release manager:  please apply both patches.
 
 ---
 
-archive/issue_events_009816.json:
+archive/issue_events_024177.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-15T11:27:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9684",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9684#event-24177"
+}
+```
+
+
+
+---
+
+archive/issue_events_024178.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -206,7 +223,7 @@ archive/issue_events_009816.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9684#event-9816"
+    "url": "https://github.com/sagemath/sagetest/issues/9684#event-24178"
 }
 ```
 

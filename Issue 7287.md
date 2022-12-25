@@ -679,7 +679,7 @@ As far as I'm concerned, the updated Maxima spkg looks good to me. One could mak
 
 ---
 
-archive/issue_events_007510.json:
+archive/issue_events_017232.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -687,7 +687,7 @@ archive/issue_events_007510.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7287#event-7510"
+    "url": "https://github.com/sagemath/sagetest/issues/7287#event-17232"
 }
 ```
 

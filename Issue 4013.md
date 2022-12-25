@@ -46,7 +46,7 @@ The first cell of a new worksheet is of the "cell_not_evaluated" class.  I just 
 
 ---
 
-archive/issue_events_004243.json:
+archive/issue_events_009186.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -54,7 +54,24 @@ archive/issue_events_004243.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4013",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4013#event-4243"
+    "url": "https://github.com/sagemath/sagetest/issues/4013#event-9186"
+}
+```
+
+
+
+---
+
+archive/issue_events_009187.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-20T05:29:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4013",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4013#event-9187"
 }
 ```
 

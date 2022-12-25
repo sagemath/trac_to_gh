@@ -150,6 +150,23 @@ The reason I this fix is that I assumed that whoever made that test knew what th
 
 ---
 
+archive/issue_events_020747.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-08-18T21:50:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8588",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8588#event-20747"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077652.json:
 ```json
 {
@@ -219,7 +236,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008765.json:
+archive/issue_events_020748.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -227,6 +244,6 @@ archive/issue_events_008765.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8588#event-8765"
+    "url": "https://github.com/sagemath/sagetest/issues/8588#event-20748"
 }
 ```

@@ -59,6 +59,23 @@ To view a doc patch, you can use `hg_doc.inspect('pathname.hg')`.
 
 ---
 
+archive/issue_events_002494.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T00:45:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/901",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/901#event-2494"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005518.json:
 ```json
 {
@@ -134,6 +151,74 @@ http://sage.math.washington.edu/home/wdj/patches/inst-prog-2007-10-20.hg
 
 ---
 
+archive/issue_events_002495.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T14:02:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/901",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/901#event-2495"
+}
+```
+
+
+
+---
+
+archive/issue_events_002496.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T14:02:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/901",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/901#event-2496"
+}
+```
+
+
+
+---
+
+archive/issue_events_002497.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:11:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/901",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/901#event-2497"
+}
+```
+
+
+
+---
+
+archive/issue_events_002498.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:11:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/901",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/901#event-2498"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005522.json:
 ```json
 {
@@ -152,7 +237,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001017.json:
+archive/issue_events_002499.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -160,6 +245,6 @@ archive/issue_events_001017.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/901#event-1017"
+    "url": "https://github.com/sagemath/sagetest/issues/901#event-2499"
 }
 ```

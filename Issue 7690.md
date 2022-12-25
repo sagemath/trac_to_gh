@@ -130,6 +130,23 @@ CPU     ID                    FUNCTION:NAME
 
 ---
 
+archive/issue_events_018370.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:42:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-18370"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065866.json:
 ```json
 {
@@ -143,6 +160,40 @@ archive/issue_comments_065866.json:
 ```
 
 No patch available, so I'm deferring this to Sage 5.0.
+
+
+
+---
+
+archive/issue_events_018371.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:22:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-18371"
+}
+```
+
+
+
+---
+
+archive/issue_events_018372.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:22:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-18372"
+}
+```
 
 
 
@@ -184,7 +235,75 @@ No patch, so deferring...
 
 ---
 
-archive/issue_events_007907.json:
+archive/issue_events_018373.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T04:10:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-18373"
+}
+```
+
+
+
+---
+
+archive/issue_events_018374.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T04:10:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-18374"
+}
+```
+
+
+
+---
+
+archive/issue_events_018375.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-08T18:33:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-18375"
+}
+```
+
+
+
+---
+
+archive/issue_events_018376.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-08T18:33:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-18376"
+}
+```
+
+
+
+---
+
+archive/issue_events_018377.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -192,7 +311,7 @@ archive/issue_events_007907.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7690",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7690#event-7907"
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-18377"
 }
 ```
 

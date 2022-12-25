@@ -115,7 +115,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009868.json:
+archive/issue_events_024378.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -123,6 +123,23 @@ archive/issue_events_009868.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9736",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9736#event-9868"
+    "url": "https://github.com/sagemath/sagetest/issues/9736#event-24378"
+}
+```
+
+
+
+---
+
+archive/issue_events_024379.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-08-14T09:00:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9736",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9736#event-24379"
 }
 ```

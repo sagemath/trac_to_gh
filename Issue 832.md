@@ -46,6 +46,23 @@ Attachment [vdim.patch](tarball://root/attachments/some-uuid/ticket832/vdim.patc
 
 ---
 
+archive/issue_events_002342.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-06T06:28:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/832",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/832#event-2342"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005128.json:
 ```json
 {
@@ -102,7 +119,7 @@ second patch (multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patc
 
 ---
 
-archive/issue_events_000945.json:
+archive/issue_events_002343.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -110,7 +127,7 @@ archive/issue_events_000945.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/832",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/832#event-945"
+    "url": "https://github.com/sagemath/sagetest/issues/832#event-2343"
 }
 ```
 

@@ -65,6 +65,23 @@ Changing assignee from mabshoff to jkantor.
 
 ---
 
+archive/issue_events_006679.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-14T19:59:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2918",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2918#event-6679"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020057.json:
 ```json
 {
@@ -106,6 +123,40 @@ Note that cvxopt already compiles umfpack for intenal use, so we might be able t
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_006680.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-03-17T05:09:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2918",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2918#event-6680"
+}
+```
+
+
+
+---
+
+archive/issue_events_006681.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-03-17T05:09:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2918",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2918#event-6681"
+}
+```
 
 
 

@@ -84,7 +84,7 @@ I added two additional doctest patches, which should be applied.
 
 ---
 
-archive/issue_events_001892.json:
+archive/issue_events_004211.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -92,7 +92,7 @@ archive/issue_events_001892.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1734",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1734#event-1892"
+    "url": "https://github.com/sagemath/sagetest/issues/1734#event-4211"
 }
 ```
 

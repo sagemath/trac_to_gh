@@ -54,7 +54,7 @@ This has been fixed. Confirm and chekc please?
 
 ---
 
-archive/issue_events_006085.json:
+archive/issue_events_013708.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -62,7 +62,24 @@ archive/issue_events_006085.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5835",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5835#event-6085"
+    "url": "https://github.com/sagemath/sagetest/issues/5835#event-13708"
+}
+```
+
+
+
+---
+
+archive/issue_events_013709.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:11:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5835",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5835#event-13709"
 }
 ```
 
@@ -119,3 +136,37 @@ archive/issue_comments_045773.json:
 ```
 
 Resolution changed from duplicate to fixed
+
+
+
+---
+
+archive/issue_events_013710.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:37:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5835",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5835#event-13710"
+}
+```
+
+
+
+---
+
+archive/issue_events_013711.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:37:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5835",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5835#event-13711"
+}
+```

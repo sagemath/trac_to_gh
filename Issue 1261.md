@@ -100,6 +100,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1261
 
 ---
 
+archive/issue_events_003321.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-03T02:17:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1261",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1261#event-3321"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007859.json:
 ```json
 {
@@ -205,6 +222,40 @@ archive/issue_comments_007864.json:
 ```
 
 PBuild for extcode requires glib to work correctly.  Obtain at #2436.
+
+
+
+---
+
+archive/issue_events_003322.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-23T12:07:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1261",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1261#event-3322"
+}
+```
+
+
+
+---
+
+archive/issue_events_003323.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-23T12:07:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1261",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1261#event-3323"
+}
+```
 
 
 
@@ -757,7 +808,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001403.json:
+archive/issue_events_003324.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -765,7 +816,7 @@ archive/issue_events_001403.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1261#event-1403"
+    "url": "https://github.com/sagemath/sagetest/issues/1261#event-3324"
 }
 ```
 
@@ -809,7 +860,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001404.json:
+archive/issue_events_003325.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -817,7 +868,7 @@ archive/issue_events_001404.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1261#event-1404"
+    "url": "https://github.com/sagemath/sagetest/issues/1261#event-3325"
 }
 ```
 
@@ -961,7 +1012,7 @@ Merged in Sage 3.0.1.alpha1
 
 ---
 
-archive/issue_events_001405.json:
+archive/issue_events_003326.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -969,6 +1020,6 @@ archive/issue_events_001405.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1261#event-1405"
+    "url": "https://github.com/sagemath/sagetest/issues/1261#event-3326"
 }
 ```

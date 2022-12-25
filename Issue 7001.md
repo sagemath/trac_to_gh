@@ -185,7 +185,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007225.json:
+archive/issue_events_016427.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -193,7 +193,7 @@ archive/issue_events_007225.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7001#event-7225"
+    "url": "https://github.com/sagemath/sagetest/issues/7001#event-16427"
 }
 ```
 
@@ -214,3 +214,20 @@ archive/issue_comments_057777.json:
 ```
 
 Simon says "close this".
+
+
+
+---
+
+archive/issue_events_016428.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-27T15:41:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7001",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7001#event-16428"
+}
+```

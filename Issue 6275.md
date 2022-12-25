@@ -149,7 +149,7 @@ IGNORE THIS - THE ATTACHMENT DID NOT GET ATTACHED - SEE THE NEXT TICKET (6276)
 
 ---
 
-archive/issue_events_006519.json:
+archive/issue_events_014684.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -157,7 +157,7 @@ archive/issue_events_006519.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6275",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6275#event-6519"
+    "url": "https://github.com/sagemath/sagetest/issues/6275#event-14684"
 }
 ```
 

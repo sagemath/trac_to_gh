@@ -58,6 +58,23 @@ Changing assignee from tbd to @yqiang.
 
 ---
 
+archive/issue_events_007869.json:
+```json
+{
+    "actor": "https://github.com/yqiang",
+    "created_at": "2008-06-19T02:12:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3467",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3467#event-7869"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024395.json:
 ```json
 {
@@ -286,7 +303,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003688.json:
+archive/issue_events_007870.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -294,6 +311,40 @@ archive/issue_events_003688.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3467#event-3688"
+    "url": "https://github.com/sagemath/sagetest/issues/3467#event-7870"
+}
+```
+
+
+
+---
+
+archive/issue_events_007871.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T04:29:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3467",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3467#event-7871"
+}
+```
+
+
+
+---
+
+archive/issue_events_007872.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T04:29:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3467",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3467#event-7872"
 }
 ```

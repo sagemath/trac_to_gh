@@ -109,6 +109,23 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_012931.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-26T07:55:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5515",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5515#event-12931"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042790.json:
 ```json
 {
@@ -127,7 +144,7 @@ Close this ticket as a duplicate of #6295.
 
 ---
 
-archive/issue_events_005765.json:
+archive/issue_events_012932.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -135,6 +152,6 @@ archive/issue_events_005765.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5515",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5515#event-5765"
+    "url": "https://github.com/sagemath/sagetest/issues/5515#event-12932"
 }
 ```

@@ -173,6 +173,23 @@ What do people even benchmark in the context of calculus?
 
 ---
 
+archive/issue_events_003263.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-27T15:10:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1235",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-3263"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007684.json:
 ```json
 {
@@ -245,6 +262,40 @@ has different sign from a(y'), i.e., decide if there is a sign switch,
 which could be doable for many analytically defined functions at least.
 ```
 
+
+
+
+---
+
+archive/issue_events_003264.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-08T08:43:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1235",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-3264"
+}
+```
+
+
+
+---
+
+archive/issue_events_003265.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-08T08:43:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1235",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-3265"
+}
+```
 
 
 
@@ -325,7 +376,7 @@ Merged in 2.9.alpha2.
 
 ---
 
-archive/issue_events_001373.json:
+archive/issue_events_003266.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -333,7 +384,7 @@ archive/issue_events_001373.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1235#event-1373"
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-3266"
 }
 ```
 
@@ -397,7 +448,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001374.json:
+archive/issue_events_003267.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -405,7 +456,7 @@ archive/issue_events_001374.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1235#event-1374"
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-3267"
 }
 ```
 
@@ -467,7 +518,7 @@ Merged trac-1235-doctest_fix.patch   in 2.9.alpha5.
 
 ---
 
-archive/issue_events_001375.json:
+archive/issue_events_003268.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -475,6 +526,6 @@ archive/issue_events_001375.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1235#event-1375"
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-3268"
 }
 ```

@@ -420,6 +420,91 @@ Thanks!!
 
 ---
 
+archive/issue_events_010561.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#event-10561"
+}
+```
+
+
+
+---
+
+archive/issue_events_010562.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#event-10562"
+}
+```
+
+
+
+---
+
+archive/issue_events_010563.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#event-10563"
+}
+```
+
+
+
+---
+
+archive/issue_events_010564.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#event-10564"
+}
+```
+
+
+
+---
+
+archive/issue_events_010565.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#event-10565"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034773.json:
 ```json
 {
@@ -435,6 +520,40 @@ archive/issue_comments_034773.json:
 According to http://trac.sagemath.org/ticket/4633#comment:4, this is no longer needed in recent versions of FriCAS. Sage is now using FriCAS 1.0.9 (#9354).
 
 So maybe this can be closed ?
+
+
+
+---
+
+archive/issue_events_010566.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-07-19T12:31:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#event-10566"
+}
+```
+
+
+
+---
+
+archive/issue_events_010567.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-07-19T12:31:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#event-10567"
+}
+```
 
 
 
@@ -494,7 +613,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004880.json:
+archive/issue_events_010568.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -502,6 +621,6 @@ archive/issue_events_004880.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4633",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4633#event-4880"
+    "url": "https://github.com/sagemath/sagetest/issues/4633#event-10568"
 }
 ```

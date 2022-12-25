@@ -183,6 +183,57 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_010829.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-15T18:42:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4740",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4740#event-10829"
+}
+```
+
+
+
+---
+
+archive/issue_events_010830.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-21T00:53:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4740",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4740#event-10830"
+}
+```
+
+
+
+---
+
+archive/issue_events_010831.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-21T00:53:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4740",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4740#event-10831"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035725.json:
 ```json
 {
@@ -249,6 +300,40 @@ archive/issue_comments_035726.json:
 The patch is still relevant here. What is going on is every time coerce is called, a new homset is created. Creating a new homset doesn't leak anymore, but it's still sub-optimal. 
 
 I don't know that I'll have time to look into this anytime soon, but it's not a blocker anymore as the leak is solved elsewhere.
+
+
+
+---
+
+archive/issue_events_010832.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2008-12-21T09:57:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4740",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4740#event-10832"
+}
+```
+
+
+
+---
+
+archive/issue_events_010833.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2008-12-21T09:57:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4740",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4740#event-10833"
+}
+```
 
 
 
@@ -839,6 +924,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_010834.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-24T06:26:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4740",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4740#event-10834"
+}
+```
+
+
+
+---
+
+archive/issue_events_010835.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-24T06:26:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4740",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4740#event-10835"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035752.json:
 ```json
 {
@@ -933,7 +1052,7 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_004983.json:
+archive/issue_events_010836.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -941,7 +1060,7 @@ archive/issue_events_004983.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4740#event-4983"
+    "url": "https://github.com/sagemath/sagetest/issues/4740#event-10836"
 }
 ```
 

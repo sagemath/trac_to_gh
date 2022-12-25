@@ -66,6 +66,23 @@ Attachment [trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patc
 
 ---
 
+archive/issue_events_015395.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-08-01T11:16:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6523",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6523#event-15395"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053099.json:
 ```json
 {
@@ -194,7 +211,7 @@ Merged trac_6523-derivative_is_zero.patch.
 
 ---
 
-archive/issue_events_006761.json:
+archive/issue_events_015396.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -202,6 +219,6 @@ archive/issue_events_006761.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6523#event-6761"
+    "url": "https://github.com/sagemath/sagetest/issues/6523#event-15396"
 }
 ```

@@ -258,7 +258,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002221.json:
+archive/issue_events_004942.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -266,6 +266,6 @@ archive/issue_events_002221.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2060",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2060#event-2221"
+    "url": "https://github.com/sagemath/sagetest/issues/2060#event-4942"
 }
 ```

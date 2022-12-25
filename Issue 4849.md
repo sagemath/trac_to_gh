@@ -74,6 +74,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_011130.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2009-07-15T20:39:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4849",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4849#event-11130"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036698.json:
 ```json
 {
@@ -112,7 +129,7 @@ http://sage.math.washington.edu/home/mvngu/release/merged-tkt.txt
 
 ---
 
-archive/issue_events_005094.json:
+archive/issue_events_011131.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -120,7 +137,41 @@ archive/issue_events_005094.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4849",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4849#event-5094"
+    "url": "https://github.com/sagemath/sagetest/issues/4849#event-11131"
+}
+```
+
+
+
+---
+
+archive/issue_events_011132.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-20T15:52:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4849",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4849#event-11132"
+}
+```
+
+
+
+---
+
+archive/issue_events_011133.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-20T15:52:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4849",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4849#event-11133"
 }
 ```
 

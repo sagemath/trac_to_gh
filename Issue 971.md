@@ -173,6 +173,23 @@ so I push it back to 2.9.
 
 ---
 
+archive/issue_events_002684.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-23T21:17:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/971",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/971#event-2684"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005907.json:
 ```json
 {
@@ -218,6 +235,40 @@ does.
 
 ---
 
+archive/issue_events_002685.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-01T01:23:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/971",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/971#event-2685"
+}
+```
+
+
+
+---
+
+archive/issue_events_002686.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-01T01:23:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/971",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/971#event-2686"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005908.json:
 ```json
 {
@@ -258,7 +309,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001092.json:
+archive/issue_events_002687.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -266,7 +317,7 @@ archive/issue_events_001092.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/971",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/971#event-1092"
+    "url": "https://github.com/sagemath/sagetest/issues/971#event-2687"
 }
 ```
 

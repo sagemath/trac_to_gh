@@ -236,6 +236,23 @@ Changing component from algebraic geometry to graphics.
 
 ---
 
+archive/issue_events_004495.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-19T22:14:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1854",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1854#event-4495"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011703.json:
 ```json
 {
@@ -328,7 +345,7 @@ archive/issue_comments_011707.json:
 
 ---
 
-archive/issue_events_002012.json:
+archive/issue_events_004496.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -336,7 +353,7 @@ archive/issue_events_002012.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1854",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1854#event-2012"
+    "url": "https://github.com/sagemath/sagetest/issues/1854#event-4496"
 }
 ```
 

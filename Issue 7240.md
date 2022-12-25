@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7240
 
 ---
 
+archive/issue_events_017140.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
+    "created_at": "2009-10-18T18:34:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7240",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7240#event-17140"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059962.json:
 ```json
 {
@@ -808,6 +825,40 @@ I've addressed Andrew's comments, and added a new version of the SPKG at http://
 
 ---
 
+archive/issue_events_017141.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7240",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7240#event-17141"
+}
+```
+
+
+
+---
+
+archive/issue_events_017142.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7240",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7240#event-17142"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059999.json:
 ```json
 {
@@ -821,6 +872,40 @@ archive/issue_comments_059999.json:
 ```
 
 Attachment [7240.patch](tarball://root/attachments/some-uuid/ticket7240/7240.patch) by @jdemeyer created at 2013-08-13 15:35:53
+
+
+
+---
+
+archive/issue_events_017143.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7240",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7240#event-17143"
+}
+```
+
+
+
+---
+
+archive/issue_events_017144.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7240",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7240#event-17144"
+}
+```
 
 
 
@@ -1069,6 +1154,40 @@ archive/issue_comments_060012.json:
 Rebase on 6.2.beta6. Fix failing doctests.
 ----
 New commits:
+
+
+
+---
+
+archive/issue_events_017145.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-04-19T20:01:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7240",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7240#event-17145"
+}
+```
+
+
+
+---
+
+archive/issue_events_017146.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-04-19T20:01:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7240",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7240#event-17146"
+}
+```
 
 
 

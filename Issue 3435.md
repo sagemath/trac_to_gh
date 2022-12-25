@@ -48,6 +48,91 @@ Changing type from defect to task.
 
 ---
 
+archive/issue_events_007763.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7763"
+}
+```
+
+
+
+---
+
+archive/issue_events_007764.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7764"
+}
+```
+
+
+
+---
+
+archive/issue_events_007765.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7765"
+}
+```
+
+
+
+---
+
+archive/issue_events_007766.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7766"
+}
+```
+
+
+
+---
+
+archive/issue_events_007767.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7767"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024156.json:
 ```json
 {
@@ -61,6 +146,40 @@ archive/issue_comments_024156.json:
 ```
 
 Why nothing should link against GSL BLAS?
+
+
+
+---
+
+archive/issue_events_007768.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7768"
+}
+```
+
+
+
+---
+
+archive/issue_events_007769.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7769"
+}
+```
 
 
 
@@ -81,6 +200,40 @@ archive/issue_comments_024157.json:
 This was solved by #15685 where BLAS and LAPACK were replaced by ATLAS.
 
 Then OpenBLAS was introduced as an optional package in #20129 and made standard in in #20096.
+
+
+
+---
+
+archive/issue_events_007770.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2018-11-04T23:54:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7770"
+}
+```
+
+
+
+---
+
+archive/issue_events_007771.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2018-11-04T23:54:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3435",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7771"
+}
+```
 
 
 
@@ -176,7 +329,7 @@ very old stuff indeed, obsolete
 
 ---
 
-archive/issue_events_003654.json:
+archive/issue_events_007772.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -184,7 +337,7 @@ archive/issue_events_003654.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3435#event-3654"
+    "url": "https://github.com/sagemath/sagetest/issues/3435#event-7772"
 }
 ```
 

@@ -218,7 +218,7 @@ Although I have not been following all the details of this one, I applied all pa
 
 ---
 
-archive/issue_events_006336.json:
+archive/issue_events_014284.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -226,7 +226,7 @@ archive/issue_events_006336.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6083#event-6336"
+    "url": "https://github.com/sagemath/sagetest/issues/6083#event-14284"
 }
 ```
 

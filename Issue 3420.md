@@ -116,7 +116,7 @@ positive review
 
 ---
 
-archive/issue_events_003636.json:
+archive/issue_events_007711.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -124,7 +124,24 @@ archive/issue_events_003636.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3420",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3420#event-3636"
+    "url": "https://github.com/sagemath/sagetest/issues/3420#event-7711"
+}
+```
+
+
+
+---
+
+archive/issue_events_007712.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-15T19:05:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3420",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3420#event-7712"
 }
 ```
 

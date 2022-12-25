@@ -50,6 +50,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/335
 
 ---
 
+archive/issue_events_000784.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T23:09:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/335",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/335#event-784"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001642.json:
 ```json
 {
@@ -67,6 +84,40 @@ Mmmh, didn't this get fixed? Something with NFS mounts (or some other network fi
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000785.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-30T00:15:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/335",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/335#event-785"
+}
+```
+
+
+
+---
+
+archive/issue_events_000786.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-30T00:15:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/335",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/335#event-786"
+}
+```
 
 
 
@@ -90,7 +141,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000359.json:
+archive/issue_events_000787.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -98,7 +149,7 @@ archive/issue_events_000359.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/335",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/335#event-359"
+    "url": "https://github.com/sagemath/sagetest/issues/335#event-787"
 }
 ```
 

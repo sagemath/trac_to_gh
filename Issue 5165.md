@@ -150,7 +150,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005415.json:
+archive/issue_events_011960.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -158,7 +158,7 @@ archive/issue_events_005415.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5165#event-5415"
+    "url": "https://github.com/sagemath/sagetest/issues/5165#event-11960"
 }
 ```
 

@@ -89,6 +89,23 @@ Replying to [comment:1 lftabera]:
 
 ---
 
+archive/issue_events_021777.json:
+```json
+{
+    "actor": "https://github.com/KPanComputes",
+    "created_at": "2013-01-27T00:14:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8918",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8918#event-21777"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082003.json:
 ```json
 {
@@ -145,7 +162,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009074.json:
+archive/issue_events_021778.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -153,7 +170,7 @@ archive/issue_events_009074.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8918",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8918#event-9074"
+    "url": "https://github.com/sagemath/sagetest/issues/8918#event-21778"
 }
 ```
 

@@ -166,7 +166,7 @@ Looks good, passes tests, and fixes a number of inconsistencies.
 
 ---
 
-archive/issue_events_008849.json:
+archive/issue_events_021035.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -174,7 +174,7 @@ archive/issue_events_008849.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8675",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8675#event-8849"
+    "url": "https://github.com/sagemath/sagetest/issues/8675#event-21035"
 }
 ```
 

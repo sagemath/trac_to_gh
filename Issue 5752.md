@@ -117,7 +117,7 @@ I did eventually get a solution on that one, but didn't go back to do a timing o
 
 ---
 
-archive/issue_events_005999.json:
+archive/issue_events_013493.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -125,7 +125,7 @@ archive/issue_events_005999.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5752",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5752#event-5999"
+    "url": "https://github.com/sagemath/sagetest/issues/5752#event-13493"
 }
 ```
 

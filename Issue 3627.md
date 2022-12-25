@@ -121,6 +121,23 @@ Program received signal SIGILL, Illegal instruction.
 
 ---
 
+archive/issue_events_008328.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-09T18:51:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3627",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3627#event-8328"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025613.json:
 ```json
 {
@@ -367,7 +384,7 @@ Michael
 
 ---
 
-archive/issue_events_003846.json:
+archive/issue_events_008329.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -375,7 +392,7 @@ archive/issue_events_003846.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3627",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3627#event-3846"
+    "url": "https://github.com/sagemath/sagetest/issues/3627#event-8329"
 }
 ```
 

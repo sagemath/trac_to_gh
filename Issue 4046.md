@@ -322,7 +322,7 @@ Just [attachment:trac_4046-chrome_and_friends.patch].  The key capture utility *
 
 ---
 
-archive/issue_events_004278.json:
+archive/issue_events_009245.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -330,7 +330,7 @@ archive/issue_events_004278.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4046#event-4278"
+    "url": "https://github.com/sagemath/sagetest/issues/4046#event-9245"
 }
 ```
 

@@ -64,6 +64,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_022837.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-03-28T20:36:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9268",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9268#event-22837"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087159.json:
 ```json
 {
@@ -118,7 +135,7 @@ There were a number of wonky things like this we never saw often enough to diagn
 
 ---
 
-archive/issue_events_009430.json:
+archive/issue_events_022838.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -126,7 +143,7 @@ archive/issue_events_009430.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9268",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9268#event-9430"
+    "url": "https://github.com/sagemath/sagetest/issues/9268#event-22838"
 }
 ```
 

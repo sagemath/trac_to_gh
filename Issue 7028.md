@@ -71,6 +71,125 @@ One suggested workaround is to defined CC to be a C++ compiler, then all code ge
 
 ---
 
+archive/issue_events_016495.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16495"
+}
+```
+
+
+
+---
+
+archive/issue_events_016496.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16496"
+}
+```
+
+
+
+---
+
+archive/issue_events_016497.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16497"
+}
+```
+
+
+
+---
+
+archive/issue_events_016498.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16498"
+}
+```
+
+
+
+---
+
+archive/issue_events_016499.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16499"
+}
+```
+
+
+
+---
+
+archive/issue_events_016500.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16500"
+}
+```
+
+
+
+---
+
+archive/issue_events_016501.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058111.json:
 ```json
 {
@@ -84,6 +203,40 @@ archive/issue_comments_058111.json:
 ```
 
 Changing component from build to packages: standard.
+
+
+
+---
+
+archive/issue_events_016502.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-09-22T13:33:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16502"
+}
+```
+
+
+
+---
+
+archive/issue_events_016503.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-09-22T13:33:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7028",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7028#event-16503"
+}
+```
 
 
 

@@ -64,7 +64,7 @@ There is an spkg for this at http://sage.math.washington.edu/home/mhansen/ntl-5.
 
 ---
 
-archive/issue_events_009201.json:
+archive/issue_events_022172.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,7 +72,7 @@ archive/issue_events_009201.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9050",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9050#event-9201"
+    "url": "https://github.com/sagemath/sagetest/issues/9050#event-22172"
 }
 ```
 
@@ -93,3 +93,20 @@ archive/issue_comments_083663.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_022173.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-27T04:28:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9050",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9050#event-22173"
+}
+```

@@ -67,6 +67,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001379.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-01T22:48:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/533",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/533#event-1379"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002709.json:
 ```json
 {
@@ -109,6 +126,40 @@ Michael
 
 ---
 
+archive/issue_events_001380.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/533",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/533#event-1380"
+}
+```
+
+
+
+---
+
+archive/issue_events_001381.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/533",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/533#event-1381"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002710.json:
 ```json
 {
@@ -126,6 +177,40 @@ Fixed along the way.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001382.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T12:44:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/533",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/533#event-1382"
+}
+```
+
+
+
+---
+
+archive/issue_events_001383.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T12:44:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/533",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/533#event-1383"
+}
+```
 
 
 
@@ -149,7 +234,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000572.json:
+archive/issue_events_001384.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -157,6 +242,6 @@ archive/issue_events_000572.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/533",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/533#event-572"
+    "url": "https://github.com/sagemath/sagetest/issues/533#event-1384"
 }
 ```

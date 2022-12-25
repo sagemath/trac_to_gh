@@ -46,6 +46,23 @@ Attachment [3314_default_users.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
+archive/issue_events_007445.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-28T12:04:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3314",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3314#event-7445"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022905.json:
 ```json
 {
@@ -257,7 +274,7 @@ Ok. I tried this with 3.0.3rc0 after applying both #3312 and #3314 and can't rep
 
 ---
 
-archive/issue_events_003534.json:
+archive/issue_events_007446.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -265,7 +282,7 @@ archive/issue_events_003534.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#event-3534"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#event-7446"
 }
 ```
 
@@ -286,6 +303,40 @@ archive/issue_comments_022914.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007447.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-18T23:18:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3314",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3314#event-7447"
+}
+```
+
+
+
+---
+
+archive/issue_events_007448.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-18T23:18:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3314",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3314#event-7448"
+}
+```
 
 
 

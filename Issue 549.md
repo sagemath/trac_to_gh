@@ -79,6 +79,23 @@ Michael
 
 ---
 
+archive/issue_events_001460.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-05T16:59:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/549",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/549#event-1460"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002815.json:
 ```json
 {
@@ -117,7 +134,7 @@ This is fixed -- but it caused #601.
 
 ---
 
-archive/issue_events_000590.json:
+archive/issue_events_001461.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -125,7 +142,7 @@ archive/issue_events_000590.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/549",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/549#event-590"
+    "url": "https://github.com/sagemath/sagetest/issues/549#event-1461"
 }
 ```
 

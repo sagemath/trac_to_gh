@@ -383,6 +383,23 @@ I tried the patch on Sage-4.7.1.alpha4 without any other patches applied:
 
 ---
 
+archive/issue_events_015334.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2011-07-07T21:45:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6495",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6495#event-15334"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052475.json:
 ```json
 {
@@ -2662,6 +2679,40 @@ In more detail: using MathJax instead of jsMath saves room in the directory `doc
 
 ---
 
+archive/issue_events_015335.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-25T10:34:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6495",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6495#event-15335"
+}
+```
+
+
+
+---
+
+archive/issue_events_015336.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-25T10:34:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6495",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6495#event-15336"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052564.json:
 ```json
 {
@@ -4336,6 +4387,40 @@ Replying to [comment:181 jhpalmieri]:
 
 And thanks a lot for your patience, awaiting for me, not giving up, keeping
 trying to have this patch moving forward and constantly rebasing it.
+
+
+
+---
+
+archive/issue_events_015337.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-27T11:39:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6495",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6495#event-15337"
+}
+```
+
+
+
+---
+
+archive/issue_events_015338.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-27T11:39:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6495",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6495#event-15338"
+}
+```
 
 
 
@@ -6134,6 +6219,40 @@ Looks reasonable to me.
 
 ---
 
+archive/issue_events_015339.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-12T18:59:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6495",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6495#event-15339"
+}
+```
+
+
+
+---
+
+archive/issue_events_015340.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-12T18:59:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6495",
+    "milestone": "sage-5.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6495#event-15340"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052715.json:
 ```json
 {
@@ -6629,7 +6748,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006733.json:
+archive/issue_events_015341.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -6637,7 +6756,7 @@ archive/issue_events_006733.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6495#event-6733"
+    "url": "https://github.com/sagemath/sagetest/issues/6495#event-15341"
 }
 ```
 

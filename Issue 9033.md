@@ -97,6 +97,125 @@ For other OpenSolaris issues, see #9026
 
 ---
 
+archive/issue_events_022110.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22110"
+}
+```
+
+
+
+---
+
+archive/issue_events_022111.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22111"
+}
+```
+
+
+
+---
+
+archive/issue_events_022112.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22112"
+}
+```
+
+
+
+---
+
+archive/issue_events_022113.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22113"
+}
+```
+
+
+
+---
+
+archive/issue_events_022114.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22114"
+}
+```
+
+
+
+---
+
+archive/issue_events_022115.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22115"
+}
+```
+
+
+
+---
+
+archive/issue_events_022116.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22116"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083496.json:
 ```json
 {
@@ -110,6 +229,40 @@ archive/issue_comments_083496.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_022117.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-07-08T16:33:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22117"
+}
+```
+
+
+
+---
+
+archive/issue_events_022118.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-07-08T16:33:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22118"
+}
+```
 
 
 
@@ -169,7 +322,7 @@ Closing very old sun/solaris tickets. Any tentative for this OS should start afr
 
 ---
 
-archive/issue_events_009185.json:
+archive/issue_events_022119.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -177,7 +330,7 @@ archive/issue_events_009185.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9033",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9033#event-9185"
+    "url": "https://github.com/sagemath/sagetest/issues/9033#event-22119"
 }
 ```
 

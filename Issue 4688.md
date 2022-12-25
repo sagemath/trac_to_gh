@@ -108,6 +108,23 @@ Ticket #5306 will handle the user interface to these from with Sage's own classe
 
 ---
 
+archive/issue_events_010729.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-20T06:06:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4688",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4688#event-10729"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035271.json:
 ```json
 {
@@ -148,7 +165,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004934.json:
+archive/issue_events_010730.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -156,6 +173,6 @@ archive/issue_events_004934.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4688",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4688#event-4934"
+    "url": "https://github.com/sagemath/sagetest/issues/4688#event-10730"
 }
 ```

@@ -114,6 +114,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001194.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-29T03:23:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/473",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/473#event-1194"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002359.json:
 ```json
 {
@@ -133,6 +150,40 @@ Massif support will come for 2.9.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001195.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-06T18:57:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/473",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/473#event-1195"
+}
+```
+
+
+
+---
+
+archive/issue_events_001196.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-06T18:57:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/473",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/473#event-1196"
+}
+```
 
 
 
@@ -181,7 +232,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000506.json:
+archive/issue_events_001197.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -189,6 +240,6 @@ archive/issue_events_000506.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/473",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/473#event-506"
+    "url": "https://github.com/sagemath/sagetest/issues/473#event-1197"
 }
 ```

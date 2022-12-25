@@ -47,6 +47,23 @@ I tested it, and it works.
 
 ---
 
+archive/issue_events_013894.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-04-29T01:40:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5927",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5927#event-13894"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046769.json:
 ```json
 {
@@ -95,6 +112,40 @@ Mike: Any comments?
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013895.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-15T14:33:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5927",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5927#event-13895"
+}
+```
+
+
+
+---
+
+archive/issue_events_013896.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-15T14:33:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5927",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5927#event-13896"
+}
+```
 
 
 
@@ -221,7 +272,7 @@ Michael
 
 ---
 
-archive/issue_events_006181.json:
+archive/issue_events_013897.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -229,7 +280,7 @@ archive/issue_events_006181.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5927",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5927#event-6181"
+    "url": "https://github.com/sagemath/sagetest/issues/5927#event-13897"
 }
 ```
 

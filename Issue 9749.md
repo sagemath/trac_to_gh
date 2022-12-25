@@ -86,6 +86,23 @@ The attached patch makes ambient spaces of level 1 modular forms use the Victor 
 
 ---
 
+archive/issue_events_024425.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2010-08-31T08:56:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#event-24425"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095316.json:
 ```json
 {
@@ -158,7 +175,7 @@ apply this one only.
 
 ---
 
-archive/issue_events_009881.json:
+archive/issue_events_024426.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -166,7 +183,7 @@ archive/issue_events_009881.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9749",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9749#event-9881"
+    "url": "https://github.com/sagemath/sagetest/issues/9749#event-24426"
 }
 ```
 

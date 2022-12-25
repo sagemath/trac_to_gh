@@ -161,7 +161,7 @@ Michael
 
 ---
 
-archive/issue_events_005473.json:
+archive/issue_events_012079.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -169,7 +169,7 @@ archive/issue_events_005473.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5218",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5218#event-5473"
+    "url": "https://github.com/sagemath/sagetest/issues/5218#event-12079"
 }
 ```
 
@@ -195,7 +195,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_005474.json:
+archive/issue_events_012080.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -203,7 +203,7 @@ archive/issue_events_005474.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5218",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5218#event-5474"
+    "url": "https://github.com/sagemath/sagetest/issues/5218#event-12080"
 }
 ```
 
@@ -246,6 +246,23 @@ Unfortunately this introduced an unpleasant side effect since -sdist now does no
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_012081.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-20T06:11:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5218",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5218#event-12081"
+}
+```
 
 
 
@@ -295,6 +312,40 @@ Michael
 
 ---
 
+archive/issue_events_012082.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-27T23:10:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5218",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5218#event-12082"
+}
+```
+
+
+
+---
+
+archive/issue_events_012083.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-27T23:10:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5218",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5218#event-12083"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039911.json:
 ```json
 {
@@ -308,6 +359,40 @@ archive/issue_comments_039911.json:
 ```
 
 A new spkg which fixes the sdist issue is at http://sage.math.washington.edu/home/mhansen/python-2.5.4.p0.spkg
+
+
+
+---
+
+archive/issue_events_012084.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T21:04:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5218",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5218#event-12084"
+}
+```
+
+
+
+---
+
+archive/issue_events_012085.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T21:04:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5218",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5218#event-12085"
+}
+```
 
 
 
@@ -451,7 +536,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005475.json:
+archive/issue_events_012086.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -459,6 +544,6 @@ archive/issue_events_005475.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5218",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5218#event-5475"
+    "url": "https://github.com/sagemath/sagetest/issues/5218#event-12086"
 }
 ```

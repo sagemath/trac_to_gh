@@ -71,6 +71,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/455
 
 ---
 
+archive/issue_events_001151.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-29T02:41:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/455",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/455#event-1151"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002264.json:
 ```json
 {
@@ -230,6 +247,40 @@ So... positive review, sage-invalid?  I'll let you make the call.
 
 ---
 
+archive/issue_events_001152.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-22T15:37:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/455",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/455#event-1152"
+}
+```
+
+
+
+---
+
+archive/issue_events_001153.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-22T15:37:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/455",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/455#event-1153"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002271.json:
 ```json
 {
@@ -248,7 +299,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000484.json:
+archive/issue_events_001154.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -256,7 +307,7 @@ archive/issue_events_000484.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/455#event-484"
+    "url": "https://github.com/sagemath/sagetest/issues/455#event-1154"
 }
 ```
 

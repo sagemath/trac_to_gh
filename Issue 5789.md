@@ -447,6 +447,23 @@ Michael
 
 ---
 
+archive/issue_events_013582.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-17T22:48:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5789",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5789#event-13582"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045241.json:
 ```json
 {
@@ -501,7 +518,7 @@ To release manager: Since #485 was closed, this one should be as well.
 
 ---
 
-archive/issue_events_006036.json:
+archive/issue_events_013583.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -509,7 +526,7 @@ archive/issue_events_006036.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5789",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5789#event-6036"
+    "url": "https://github.com/sagemath/sagetest/issues/5789#event-13583"
 }
 ```
 
@@ -548,3 +565,37 @@ archive/issue_comments_045245.json:
 ```
 
 Yes, this is obsolete.
+
+
+
+---
+
+archive/issue_events_013584.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-07T00:44:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5789",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5789#event-13584"
+}
+```
+
+
+
+---
+
+archive/issue_events_013585.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-07T00:44:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5789",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5789#event-13585"
+}
+```

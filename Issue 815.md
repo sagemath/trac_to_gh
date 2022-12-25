@@ -62,6 +62,23 @@ Changing assignee from @williamstein to failure.
 
 ---
 
+archive/issue_events_002294.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-04T19:48:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/815",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/815#event-2294"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005050.json:
 ```json
 {
@@ -75,6 +92,40 @@ archive/issue_comments_005050.json:
 ```
 
 Changing component from algebraic geometry to doctest.
+
+
+
+---
+
+archive/issue_events_002295.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:29:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/815",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/815#event-2295"
+}
+```
+
+
+
+---
+
+archive/issue_events_002296.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:29:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/815",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/815#event-2296"
+}
+```
 
 
 
@@ -106,6 +157,40 @@ was-815: That 815 thing is because I have a completely custom script for going t
 [4:31pm] was-815: Basically, I just want to make it reduce to the case of .py.
 ```
 
+
+
+
+---
+
+archive/issue_events_002297.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T23:44:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/815",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/815#event-2297"
+}
+```
+
+
+
+---
+
+archive/issue_events_002298.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T23:44:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/815",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/815#event-2298"
+}
+```
 
 
 
@@ -189,7 +274,7 @@ Merged scripts-815.patch in Sage 3.2.1.rc0
 
 ---
 
-archive/issue_events_000927.json:
+archive/issue_events_002299.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -197,7 +282,7 @@ archive/issue_events_000927.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/815",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/815#event-927"
+    "url": "https://github.com/sagemath/sagetest/issues/815#event-2299"
 }
 ```
 

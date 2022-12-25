@@ -66,7 +66,58 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_000571.json:
+archive/issue_events_001374.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-01T22:48:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/532",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/532#event-1374"
+}
+```
+
+
+
+---
+
+archive/issue_events_001375.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/532",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/532#event-1375"
+}
+```
+
+
+
+---
+
+archive/issue_events_001376.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/532",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/532#event-1376"
+}
+```
+
+
+
+---
+
+archive/issue_events_001377.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -74,7 +125,7 @@ archive/issue_events_000571.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/532",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/532#event-571"
+    "url": "https://github.com/sagemath/sagetest/issues/532#event-1377"
 }
 ```
 
@@ -121,3 +172,20 @@ RR = RealField()
 (As a module-level variable, this never gets freed.)
 
 Each RealField holds two RealNumbers (._zero_element and ._one_element), so they never get freed either.
+
+
+
+---
+
+archive/issue_events_001378.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-11T22:04:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/532",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/532#event-1378"
+}
+```

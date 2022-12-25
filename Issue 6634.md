@@ -113,6 +113,23 @@ In case you don't know, spkgs are just .tar.bz files with the extension renamed.
 
 ---
 
+archive/issue_events_015665.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-08-19T12:53:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6634",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6634#event-15665"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054260.json:
 ```json
 {
@@ -161,7 +178,7 @@ abort: There is no Mercurial repository here (.hg not found)!
 
 ---
 
-archive/issue_events_006872.json:
+archive/issue_events_015666.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -169,7 +186,7 @@ archive/issue_events_006872.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6634",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6634#event-6872"
+    "url": "https://github.com/sagemath/sagetest/issues/6634#event-15666"
 }
 ```
 

@@ -116,6 +116,23 @@ Attachment [trac762.patch](tarball://root/attachments/some-uuid/ticket762/trac76
 
 ---
 
+archive/issue_events_002083.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T06:00:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/762",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/762#event-2083"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004501.json:
 ```json
 {
@@ -134,7 +151,7 @@ applied to 2.8.11.alpha0
 
 ---
 
-archive/issue_events_000859.json:
+archive/issue_events_002084.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -142,7 +159,7 @@ archive/issue_events_000859.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/762",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/762#event-859"
+    "url": "https://github.com/sagemath/sagetest/issues/762#event-2084"
 }
 ```
 

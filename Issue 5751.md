@@ -268,6 +268,23 @@ previous two patches.
 
 ---
 
+archive/issue_events_013491.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2009-04-22T14:17:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#event-13491"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044875.json:
 ```json
 {
@@ -290,7 +307,7 @@ Michael
 
 ---
 
-archive/issue_events_005998.json:
+archive/issue_events_013492.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -298,7 +315,7 @@ archive/issue_events_005998.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5751#event-5998"
+    "url": "https://github.com/sagemath/sagetest/issues/5751#event-13492"
 }
 ```
 

@@ -120,6 +120,23 @@ Changed the patch name and the commit message to contain the ticket number.
 
 ---
 
+archive/issue_events_018953.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-04-11T21:43:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7915",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7915#event-18953"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068760.json:
 ```json
 {
@@ -174,7 +191,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008130.json:
+archive/issue_events_018954.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -182,6 +199,6 @@ archive/issue_events_008130.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7915",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7915#event-8130"
+    "url": "https://github.com/sagemath/sagetest/issues/7915#event-18954"
 }
 ```

@@ -78,7 +78,7 @@ This is fixed in the maxima upgrade at #8731
 
 ---
 
-archive/issue_events_008899.json:
+archive/issue_events_021204.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -86,7 +86,7 @@ archive/issue_events_008899.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8729",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8729#event-8899"
+    "url": "https://github.com/sagemath/sagetest/issues/8729#event-21204"
 }
 ```
 
@@ -125,3 +125,20 @@ archive/issue_comments_079610.json:
 ```
 
 Note put on #8731 to check this with a doctest when that ticket is done.
+
+
+
+---
+
+archive/issue_events_021205.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-06-25T15:59:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8729",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8729#event-21205"
+}
+```

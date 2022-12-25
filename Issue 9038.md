@@ -112,7 +112,7 @@ You were right. After removing ttf-jsmath and installing the downloaded fonts it
 
 ---
 
-archive/issue_events_009190.json:
+archive/issue_events_022126.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/jan",
@@ -120,6 +120,23 @@ archive/issue_events_009190.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9038",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9038#event-9190"
+    "url": "https://github.com/sagemath/sagetest/issues/9038#event-22126"
+}
+```
+
+
+
+---
+
+archive/issue_events_022127.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-29T08:03:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9038",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9038#event-22127"
 }
 ```

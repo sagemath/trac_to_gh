@@ -562,7 +562,24 @@ Superseded by #12415.
 
 ---
 
-archive/issue_events_009382.json:
+archive/issue_events_022711.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-22T21:34:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9224",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9224#event-22711"
+}
+```
+
+
+
+---
+
+archive/issue_events_022712.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -570,6 +587,6 @@ archive/issue_events_009382.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9224#event-9382"
+    "url": "https://github.com/sagemath/sagetest/issues/9224#event-22712"
 }
 ```

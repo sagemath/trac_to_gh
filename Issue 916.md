@@ -60,6 +60,23 @@ Attachment [combinations.patch](tarball://root/attachments/some-uuid/ticket916/c
 
 ---
 
+archive/issue_events_002525.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:35:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/916",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/916#event-2525"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005607.json:
 ```json
 {
@@ -96,7 +113,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_001036.json:
+archive/issue_events_002526.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -104,7 +121,7 @@ archive/issue_events_001036.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/916",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/916#event-1036"
+    "url": "https://github.com/sagemath/sagetest/issues/916#event-2526"
 }
 ```
 

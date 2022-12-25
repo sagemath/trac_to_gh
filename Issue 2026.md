@@ -152,7 +152,7 @@ Jason positive reviewed my patch, and I positively review his patch on top of my
 
 ---
 
-archive/issue_events_002182.json:
+archive/issue_events_004869.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -160,7 +160,7 @@ archive/issue_events_002182.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2026#event-2182"
+    "url": "https://github.com/sagemath/sagetest/issues/2026#event-4869"
 }
 ```
 

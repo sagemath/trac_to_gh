@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/695
 
 ---
 
-archive/issue_events_000761.json:
+archive/issue_events_001854.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -58,7 +58,7 @@ archive/issue_events_000761.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/695",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/695#event-761"
+    "url": "https://github.com/sagemath/sagetest/issues/695#event-1854"
 }
 ```
 

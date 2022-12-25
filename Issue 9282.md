@@ -62,7 +62,7 @@ sage -testall log, with tracebacks.
 
 ---
 
-archive/issue_events_009443.json:
+archive/issue_events_022865.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/retry",
@@ -70,7 +70,7 @@ archive/issue_events_009443.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9282",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9282#event-9443"
+    "url": "https://github.com/sagemath/sagetest/issues/9282#event-22865"
 }
 ```
 
@@ -93,6 +93,23 @@ archive/issue_comments_087303.json:
 Attachment [test.log](tarball://root/attachments/some-uuid/ticket9282/test.log) by retry created at 2010-06-22 07:45:38
 
 Recompiled sage - no more problems.
+
+
+
+---
+
+archive/issue_events_022866.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/retry",
+    "created_at": "2010-06-22T07:45:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9282",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9282#event-22866"
+}
+```
 
 
 

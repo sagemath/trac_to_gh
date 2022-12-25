@@ -148,7 +148,7 @@ Added class EllipticCurveTorsionSubgroup class which exposes the points as gener
 
 ---
 
-archive/issue_events_000084.json:
+archive/issue_events_000179.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -156,7 +156,7 @@ archive/issue_events_000084.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/84#event-84"
+    "url": "https://github.com/sagemath/sagetest/issues/84#event-179"
 }
 ```
 

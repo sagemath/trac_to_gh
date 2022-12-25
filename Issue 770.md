@@ -109,7 +109,24 @@ Attachment [patch.770](tarball://root/attachments/some-uuid/ticket770/patch.770)
 
 ---
 
-archive/issue_events_000873.json:
+archive/issue_events_002118.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-01T11:51:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/770",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/770#event-2118"
+}
+```
+
+
+
+---
+
+archive/issue_events_002119.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -117,7 +134,7 @@ archive/issue_events_000873.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/770",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/770#event-873"
+    "url": "https://github.com/sagemath/sagetest/issues/770#event-2119"
 }
 ```
 

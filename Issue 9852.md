@@ -158,6 +158,23 @@ Nathann
 
 ---
 
+archive/issue_events_024798.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-09T08:46:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#event-24798"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097086.json:
 ```json
 {
@@ -176,7 +193,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009980.json:
+archive/issue_events_024799.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -184,7 +201,7 @@ archive/issue_events_009980.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9852#event-9980"
+    "url": "https://github.com/sagemath/sagetest/issues/9852#event-24799"
 }
 ```
 

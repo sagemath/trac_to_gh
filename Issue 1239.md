@@ -89,6 +89,23 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
+archive/issue_events_003275.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-21T20:12:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1239",
+    "milestone": "sage-2.8.14",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1239#event-3275"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007723.json:
 ```json
 {
@@ -335,7 +352,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001379.json:
+archive/issue_events_003276.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -343,6 +360,6 @@ archive/issue_events_001379.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1239#event-1379"
+    "url": "https://github.com/sagemath/sagetest/issues/1239#event-3276"
 }
 ```

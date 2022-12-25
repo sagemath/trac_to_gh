@@ -72,6 +72,23 @@ Changing assignee from somebody to dmharvey.
 
 ---
 
+archive/issue_events_000903.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-30T12:49:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/387",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/387#event-903"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001892.json:
 ```json
 {
@@ -123,6 +140,74 @@ Michael
 
 ---
 
+archive/issue_events_000904.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T18:39:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/387",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/387#event-904"
+}
+```
+
+
+
+---
+
+archive/issue_events_000905.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-31T18:39:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/387",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/387#event-905"
+}
+```
+
+
+
+---
+
+archive/issue_events_000906.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-06T23:17:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/387",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/387#event-906"
+}
+```
+
+
+
+---
+
+archive/issue_events_000907.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-06T23:17:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/387",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/387#event-907"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001893.json:
 ```json
 {
@@ -159,7 +244,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000409.json:
+archive/issue_events_000908.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -167,6 +252,6 @@ archive/issue_events_000409.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/387",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/387#event-409"
+    "url": "https://github.com/sagemath/sagetest/issues/387#event-908"
 }
 ```

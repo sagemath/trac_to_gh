@@ -82,7 +82,7 @@ Attachment [sage-2936-test.hg](tarball://root/attachments/some-uuid/ticket2936/s
 
 ---
 
-archive/issue_events_003138.json:
+archive/issue_events_006714.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -90,7 +90,7 @@ archive/issue_events_003138.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2936",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2936#event-3138"
+    "url": "https://github.com/sagemath/sagetest/issues/2936#event-6714"
 }
 ```
 

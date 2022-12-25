@@ -63,6 +63,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_013452.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2010-09-03T21:45:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5731",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5731#event-13452"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044690.json:
 ```json
 {
@@ -247,6 +264,40 @@ I am putting this for 4.7.1. Hopefully I'll find the time to give a proper revie
 
 ---
 
+archive/issue_events_013453.json:
+```json
+{
+    "actor": "https://github.com/kiwifb",
+    "created_at": "2011-05-02T00:00:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5731",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5731#event-13453"
+}
+```
+
+
+
+---
+
+archive/issue_events_013454.json:
+```json
+{
+    "actor": "https://github.com/kiwifb",
+    "created_at": "2011-05-02T00:00:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5731",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5731#event-13454"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044699.json:
 ```json
 {
@@ -402,7 +453,7 @@ The spkg itself is ok (though there's a typo "numbery" in the README, and Willia
 
 ---
 
-archive/issue_events_005978.json:
+archive/issue_events_013455.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -410,7 +461,7 @@ archive/issue_events_005978.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5731#event-5978"
+    "url": "https://github.com/sagemath/sagetest/issues/5731#event-13455"
 }
 ```
 

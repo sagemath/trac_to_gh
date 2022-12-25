@@ -64,6 +64,23 @@ Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket351
 
 ---
 
+archive/issue_events_008009.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-06-26T15:45:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3511",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3511#event-8009"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024689.json:
 ```json
 {
@@ -82,7 +99,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003728.json:
+archive/issue_events_008010.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -90,7 +107,7 @@ archive/issue_events_003728.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3511",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3511#event-3728"
+    "url": "https://github.com/sagemath/sagetest/issues/3511#event-8010"
 }
 ```
 

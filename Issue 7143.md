@@ -50,7 +50,7 @@ Fixed by #7352
 
 ---
 
-archive/issue_events_007363.json:
+archive/issue_events_016890.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -58,7 +58,7 @@ archive/issue_events_007363.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7143",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7143#event-7363"
+    "url": "https://github.com/sagemath/sagetest/issues/7143#event-16890"
 }
 ```
 

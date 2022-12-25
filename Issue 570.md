@@ -147,7 +147,7 @@ Added parse() method to take several kinds of inputs, re-enabled doctest for sol
 
 ---
 
-archive/issue_events_000618.json:
+archive/issue_events_001523.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -155,7 +155,7 @@ archive/issue_events_000618.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/570#event-618"
+    "url": "https://github.com/sagemath/sagetest/issues/570#event-1523"
 }
 ```
 
@@ -199,6 +199,23 @@ Changing component from basic arithmetic to combinatorics.
 
 ---
 
+archive/issue_events_001524.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-06T20:07:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/570",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/570#event-1524"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002947.json:
 ```json
 {
@@ -235,7 +252,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000619.json:
+archive/issue_events_001525.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -243,7 +260,7 @@ archive/issue_events_000619.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/570#event-619"
+    "url": "https://github.com/sagemath/sagetest/issues/570#event-1525"
 }
 ```
 
@@ -269,7 +286,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000620.json:
+archive/issue_events_001526.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -277,6 +294,6 @@ archive/issue_events_000620.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/570#event-620"
+    "url": "https://github.com/sagemath/sagetest/issues/570#event-1526"
 }
 ```

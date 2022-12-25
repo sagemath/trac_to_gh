@@ -68,6 +68,23 @@ Changing keywords from "singular" to "singular, editor_mabshoff".
 
 ---
 
+archive/issue_events_007680.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T06:47:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3405",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3405#event-7680"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023837.json:
 ```json
 {
@@ -90,7 +107,7 @@ Michael
 
 ---
 
-archive/issue_events_003621.json:
+archive/issue_events_007681.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -98,7 +115,7 @@ archive/issue_events_003621.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3405",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3405#event-3621"
+    "url": "https://github.com/sagemath/sagetest/issues/3405#event-7681"
 }
 ```
 

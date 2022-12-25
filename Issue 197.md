@@ -84,7 +84,7 @@ Much of this is implemented, or is brainstorming that should be totally re-evalu
 
 ---
 
-archive/issue_events_000206.json:
+archive/issue_events_000386.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -92,7 +92,7 @@ archive/issue_events_000206.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/197",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/197#event-206"
+    "url": "https://github.com/sagemath/sagetest/issues/197#event-386"
 }
 ```
 
@@ -113,3 +113,20 @@ archive/issue_comments_000893.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000387.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-23T17:26:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/197",
+    "milestone": "sage-2.8.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/197#event-387"
+}
+```

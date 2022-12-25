@@ -116,7 +116,7 @@ I can confirm that `singclap_factorize` mutates the parameter. Also, the patch l
 
 ---
 
-archive/issue_events_001154.json:
+archive/issue_events_002810.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -124,7 +124,7 @@ archive/issue_events_001154.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1030",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1030#event-1154"
+    "url": "https://github.com/sagemath/sagetest/issues/1030#event-2810"
 }
 ```
 

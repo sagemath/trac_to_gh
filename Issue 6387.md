@@ -67,7 +67,7 @@ Don't know how this made it so long without being hit...
 
 ---
 
-archive/issue_events_006635.json:
+archive/issue_events_015047.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -75,7 +75,7 @@ archive/issue_events_006635.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6387",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6387#event-6635"
+    "url": "https://github.com/sagemath/sagetest/issues/6387#event-15047"
 }
 ```
 

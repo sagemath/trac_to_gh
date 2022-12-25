@@ -330,7 +330,7 @@ One more thing: since the content depends on the optional packages, you should s
 
 ---
 
-archive/issue_events_006997.json:
+archive/issue_events_015943.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -338,7 +338,7 @@ archive/issue_events_006997.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#event-6997"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#event-15943"
 }
 ```
 
@@ -395,6 +395,23 @@ archive/issue_comments_055625.json:
 ```
 
 Feel free to open another ticket to put the linear programming tutorial in the [Constructions](http://www.sagemath.org/doc/constructions/) document.
+
+
+
+---
+
+archive/issue_events_015944.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-08T23:54:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6765",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6765#event-15944"
+}
+```
 
 
 

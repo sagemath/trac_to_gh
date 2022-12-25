@@ -77,6 +77,23 @@ I'm declaring a total feature freeze on sage-4.3.
 
 ---
 
+archive/issue_events_018424.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:07:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7711",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7711#event-18424"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066072.json:
 ```json
 {
@@ -162,6 +179,40 @@ archive/issue_comments_066075.json:
 ```
 
 Changing keywords from "" to "rd2".
+
+
+
+---
+
+archive/issue_events_018425.json:
+```json
+{
+    "actor": "https://github.com/jbalakrishnan",
+    "created_at": "2012-03-19T18:28:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7711",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7711#event-18425"
+}
+```
+
+
+
+---
+
+archive/issue_events_018426.json:
+```json
+{
+    "actor": "https://github.com/jbalakrishnan",
+    "created_at": "2012-03-19T18:28:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7711",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7711#event-18426"
+}
+```
 
 
 
@@ -304,6 +355,40 @@ archive/issue_comments_066081.json:
 ```
 
 Changing status from positive_review to needs_work.
+
+
+
+---
+
+archive/issue_events_018427.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2012-03-24T03:20:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7711",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7711#event-18427"
+}
+```
+
+
+
+---
+
+archive/issue_events_018428.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2012-03-24T03:20:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7711",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7711#event-18428"
+}
+```
 
 
 
@@ -1048,7 +1133,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007928.json:
+archive/issue_events_018429.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1056,6 +1141,6 @@ archive/issue_events_007928.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7711#event-7928"
+    "url": "https://github.com/sagemath/sagetest/issues/7711#event-18429"
 }
 ```

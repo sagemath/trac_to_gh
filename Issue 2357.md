@@ -520,7 +520,7 @@ I looked over the new patch added by Craig (the referee) and I'm happy with it.
 
 ---
 
-archive/issue_events_002534.json:
+archive/issue_events_005560.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -528,7 +528,24 @@ archive/issue_events_002534.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2357#event-2534"
+    "url": "https://github.com/sagemath/sagetest/issues/2357#event-5560"
+}
+```
+
+
+
+---
+
+archive/issue_events_005561.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-02T19:07:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2357",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2357#event-5561"
 }
 ```
 

@@ -161,6 +161,23 @@ Changing assignee from @williamstein to @malb.
 
 ---
 
+archive/issue_events_002737.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-11-17T17:21:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/991",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/991#event-2737"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006028.json:
 ```json
 {
@@ -181,7 +198,7 @@ Looks good to me, probably.  It's just a format issue anyways.
 
 ---
 
-archive/issue_events_001114.json:
+archive/issue_events_002738.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -189,7 +206,7 @@ archive/issue_events_001114.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/991",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/991#event-1114"
+    "url": "https://github.com/sagemath/sagetest/issues/991#event-2738"
 }
 ```
 

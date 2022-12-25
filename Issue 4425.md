@@ -265,7 +265,7 @@ If so, then let's finally let the square root of 4 be 2!
 
 ---
 
-archive/issue_events_004669.json:
+archive/issue_events_010010.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -273,7 +273,24 @@ archive/issue_events_004669.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4425#event-4669"
+    "url": "https://github.com/sagemath/sagetest/issues/4425#event-10010"
+}
+```
+
+
+
+---
+
+archive/issue_events_010011.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-08T07:12:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4425",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4425#event-10011"
 }
 ```
 

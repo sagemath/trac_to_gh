@@ -147,7 +147,7 @@ I don't think you're misinterpreting my question, I think I just don't understan
 
 ---
 
-archive/issue_events_008340.json:
+archive/issue_events_019469.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -155,6 +155,23 @@ archive/issue_events_008340.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8130",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8130#event-8340"
+    "url": "https://github.com/sagemath/sagetest/issues/8130#event-19469"
+}
+```
+
+
+
+---
+
+archive/issue_events_019470.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-01-31T00:57:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8130",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8130#event-19470"
 }
 ```

@@ -458,7 +458,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008089.json:
+archive/issue_events_018827.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -466,7 +466,7 @@ archive/issue_events_008089.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7874#event-8089"
+    "url": "https://github.com/sagemath/sagetest/issues/7874#event-18827"
 }
 ```
 
@@ -487,3 +487,20 @@ archive/issue_comments_068296.json:
 ```
 
 The milestone should be sage-4.3.1.
+
+
+
+---
+
+archive/issue_events_018828.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-26T00:22:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7874",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7874#event-18828"
+}
+```

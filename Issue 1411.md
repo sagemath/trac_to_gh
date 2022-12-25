@@ -84,7 +84,7 @@ revisid version by mabshoff
 
 ---
 
-archive/issue_events_001559.json:
+archive/issue_events_003635.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -92,7 +92,7 @@ archive/issue_events_001559.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1411",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1411#event-1559"
+    "url": "https://github.com/sagemath/sagetest/issues/1411#event-3635"
 }
 ```
 

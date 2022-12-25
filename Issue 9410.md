@@ -109,6 +109,23 @@ yes, please set to positive review with milestone "duplicate invalid wontfix"
 
 ---
 
+archive/issue_events_023242.json:
+```json
+{
+    "actor": "https://github.com/arminstraub",
+    "created_at": "2016-08-08T13:18:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9410",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9410#event-23242"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089540.json:
 ```json
 {
@@ -237,7 +254,7 @@ Done!
 
 ---
 
-archive/issue_events_009566.json:
+archive/issue_events_023243.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -245,7 +262,7 @@ archive/issue_events_009566.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9410",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9410#event-9566"
+    "url": "https://github.com/sagemath/sagetest/issues/9410#event-23243"
 }
 ```
 

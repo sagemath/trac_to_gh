@@ -126,6 +126,23 @@ Apologies for the hopeless formatting of the above, which looked quite different
 
 ---
 
+archive/issue_events_003255.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-21T10:40:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1233",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1233#event-3255"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007659.json:
 ```json
 {
@@ -217,6 +234,40 @@ Note that it is not correct to say that this was a Sage-wrapping problem!   The 
 I will attach a bundle which corrects this;  it should be possible to apply this to the cremona*.spkg in Sage 2.9.
 
 No, that failed, since it did not recognise the parent.  Help!
+
+
+
+---
+
+archive/issue_events_003256.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-19T11:59:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1233",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1233#event-3256"
+}
+```
+
+
+
+---
+
+archive/issue_events_003257.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-19T11:59:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1233",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1233#event-3257"
+}
+```
 
 
 
@@ -353,7 +404,7 @@ archive/issue_comments_007668.json:
 
 ---
 
-archive/issue_events_001371.json:
+archive/issue_events_003258.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -361,7 +412,7 @@ archive/issue_events_001371.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1233#event-1371"
+    "url": "https://github.com/sagemath/sagetest/issues/1233#event-3258"
 }
 ```
 

@@ -74,6 +74,23 @@ Looks good to me.
 
 ---
 
+archive/issue_events_009662.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-14T20:54:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4278",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4278#event-9662"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031221.json:
 ```json
 {
@@ -592,6 +609,40 @@ Looks good to me. All tests pass.
 
 ---
 
+archive/issue_events_009663.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T18:18:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4278",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4278#event-9663"
+}
+```
+
+
+
+---
+
+archive/issue_events_009664.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T18:18:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4278",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4278#event-9664"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031236.json:
 ```json
 {
@@ -646,7 +697,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004523.json:
+archive/issue_events_009665.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -654,6 +705,6 @@ archive/issue_events_004523.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4278#event-4523"
+    "url": "https://github.com/sagemath/sagetest/issues/4278#event-9665"
 }
 ```

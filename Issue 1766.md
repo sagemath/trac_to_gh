@@ -579,6 +579,23 @@ Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/saget
 
 ---
 
+archive/issue_events_004284.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:49:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1766",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1766#event-4284"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011149.json:
 ```json
 {
@@ -653,7 +670,7 @@ I've made http://sage.math.washington.edu/home/mhansen/1766.hg which replaces th
 
 ---
 
-archive/issue_events_001924.json:
+archive/issue_events_004285.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -661,7 +678,7 @@ archive/issue_events_001924.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#event-1924"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#event-4285"
 }
 ```
 

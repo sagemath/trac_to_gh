@@ -42,6 +42,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/187
 
 ---
 
+archive/issue_events_000362.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-28T18:56:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/187",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/187#event-362"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000847.json:
 ```json
 {
@@ -102,7 +119,7 @@ works for me now.
 
 ---
 
-archive/issue_events_000194.json:
+archive/issue_events_000363.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -110,6 +127,6 @@ archive/issue_events_000194.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/187",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/187#event-194"
+    "url": "https://github.com/sagemath/sagetest/issues/187#event-363"
 }
 ```

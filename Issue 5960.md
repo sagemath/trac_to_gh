@@ -215,6 +215,23 @@ To release manager - please close as a duplicate of #2607.
 
 ---
 
+archive/issue_events_013975.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-16T21:24:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5960",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5960#event-13975"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047118.json:
 ```json
 {
@@ -233,7 +250,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006215.json:
+archive/issue_events_013976.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -241,6 +258,6 @@ archive/issue_events_006215.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5960#event-6215"
+    "url": "https://github.com/sagemath/sagetest/issues/5960#event-13976"
 }
 ```

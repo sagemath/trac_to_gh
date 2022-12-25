@@ -196,7 +196,7 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
-archive/issue_events_006258.json:
+archive/issue_events_014107.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -204,7 +204,7 @@ archive/issue_events_006258.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6005#event-6258"
+    "url": "https://github.com/sagemath/sagetest/issues/6005#event-14107"
 }
 ```
 
@@ -245,3 +245,20 @@ archive/issue_comments_047689.json:
 This was merged in as part of #5930. 
 
 It was folded into one of those patches: http://hg.sagemath.org/sage-main/diff/d7533ae4895e/sage/rings/number_field/number_field_element_quadratic.pyx
+
+
+
+---
+
+archive/issue_events_014108.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2010-07-29T06:12:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6005",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6005#event-14108"
+}
+```

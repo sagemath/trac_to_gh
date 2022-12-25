@@ -64,7 +64,7 @@ Looks good and fixes the doctest failures on my machine.
 
 ---
 
-archive/issue_events_002650.json:
+archive/issue_events_005824.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,7 +72,7 @@ archive/issue_events_002650.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2471",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2471#event-2650"
+    "url": "https://github.com/sagemath/sagetest/issues/2471#event-5824"
 }
 ```
 

@@ -106,7 +106,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007525.json:
+archive/issue_events_017298.json:
 ```json
 {
     "actor": "https://github.com/haaninjo",
@@ -114,7 +114,7 @@ archive/issue_events_007525.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7304#event-7525"
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17298"
 }
 ```
 
@@ -135,6 +135,23 @@ archive/issue_comments_060806.json:
 ```
 
 Duplicate of #7159 . That ticket is about vertex merging, but it is basically the same thing.
+
+
+
+---
+
+archive/issue_events_017299.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-26T03:04:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17299"
+}
+```
 
 
 
@@ -182,6 +199,40 @@ If we have two vertices A, B, with two parallel edges between them, a merging of
 
 ---
 
+archive/issue_events_017300.json:
+```json
+{
+    "actor": "https://github.com/haaninjo",
+    "created_at": "2009-10-27T18:19:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17300"
+}
+```
+
+
+
+---
+
+archive/issue_events_017301.json:
+```json
+{
+    "actor": "https://github.com/haaninjo",
+    "created_at": "2009-10-27T18:19:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17301"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060809.json:
 ```json
 {
@@ -200,7 +251,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007526.json:
+archive/issue_events_017302.json:
 ```json
 {
     "actor": "https://github.com/haaninjo",
@@ -208,7 +259,7 @@ archive/issue_events_007526.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7304#event-7526"
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17302"
 }
 ```
 
@@ -899,6 +950,142 @@ archive/issue_comments_060842.json:
 Ok.... Which is the patch that needs to be reviewed ? Is it [attachment:trac_7304_contract_edge.patch] ?
 
 Nathann
+
+
+
+---
+
+archive/issue_events_017303.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17303"
+}
+```
+
+
+
+---
+
+archive/issue_events_017304.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17304"
+}
+```
+
+
+
+---
+
+archive/issue_events_017305.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17305"
+}
+```
+
+
+
+---
+
+archive/issue_events_017306.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17306"
+}
+```
+
+
+
+---
+
+archive/issue_events_017307.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17307"
+}
+```
+
+
+
+---
+
+archive/issue_events_017308.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17308"
+}
+```
+
+
+
+---
+
+archive/issue_events_017309.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17309"
+}
+```
+
+
+
+---
+
+archive/issue_events_017310.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17310"
+}
+```
 
 
 
@@ -1761,6 +1948,40 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
+archive/issue_events_017311.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/zgershkoff",
+    "created_at": "2017-06-29T23:36:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17311"
+}
+```
+
+
+
+---
+
+archive/issue_events_017312.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/zgershkoff",
+    "created_at": "2017-06-29T23:36:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17312"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060883.json:
 ```json
 {
@@ -1996,7 +2217,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007527.json:
+archive/issue_events_017313.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -2004,6 +2225,6 @@ archive/issue_events_007527.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7304#event-7527"
+    "url": "https://github.com/sagemath/sagetest/issues/7304#event-17313"
 }
 ```

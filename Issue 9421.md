@@ -68,6 +68,23 @@ This is a part of more general problem which has been reported in #6882.
 
 ---
 
+archive/issue_events_023259.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9421",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9421#event-23259"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089711.json:
 ```json
 {
@@ -119,6 +136,40 @@ archive/issue_comments_089713.json:
 waiting for the general problem to be solved, the attached patch prints a warning if the given equation contains the variable `c`.
 
 Paul
+
+
+
+---
+
+archive/issue_events_023260.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9421",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9421#event-23260"
+}
+```
+
+
+
+---
+
+archive/issue_events_023261.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9421",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9421#event-23261"
+}
+```
 
 
 
@@ -294,7 +345,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009576.json:
+archive/issue_events_023262.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -302,6 +353,6 @@ archive/issue_events_009576.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#event-9576"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#event-23262"
 }
 ```

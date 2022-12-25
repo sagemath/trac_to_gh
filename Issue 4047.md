@@ -121,7 +121,7 @@ The updated patch is good too :-)
 
 ---
 
-archive/issue_events_004279.json:
+archive/issue_events_009246.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -129,7 +129,7 @@ archive/issue_events_004279.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4047",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4047#event-4279"
+    "url": "https://github.com/sagemath/sagetest/issues/4047#event-9246"
 }
 ```
 

@@ -67,6 +67,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7535
 
 ---
 
+archive/issue_events_017870.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2009-11-26T10:26:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7535",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7535#event-17870"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063789.json:
 ```json
 {
@@ -253,7 +270,7 @@ Doctests pass with the latter patch and the one in #7532, so I'll mark both as p
 
 ---
 
-archive/issue_events_007765.json:
+archive/issue_events_017871.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -261,7 +278,7 @@ archive/issue_events_007765.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7535#event-7765"
+    "url": "https://github.com/sagemath/sagetest/issues/7535#event-17871"
 }
 ```
 

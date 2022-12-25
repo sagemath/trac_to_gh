@@ -54,6 +54,23 @@ patch works for me
 
 ---
 
+archive/issue_events_003636.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-08T04:38:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1412",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1412#event-3636"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009083.json:
 ```json
 {
@@ -90,7 +107,7 @@ Merged in 2.9.alpha2.
 
 ---
 
-archive/issue_events_001560.json:
+archive/issue_events_003637.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -98,6 +115,6 @@ archive/issue_events_001560.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1412",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1412#event-1560"
+    "url": "https://github.com/sagemath/sagetest/issues/1412#event-3637"
 }
 ```

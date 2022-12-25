@@ -272,7 +272,7 @@ Merged the patch `trac_6510.3.patch` in sage-4.1.1-alpha0. I can't close this ti
 
 ---
 
-archive/issue_events_006748.json:
+archive/issue_events_015365.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -280,7 +280,7 @@ archive/issue_events_006748.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6510#event-6748"
+    "url": "https://github.com/sagemath/sagetest/issues/6510#event-15365"
 }
 ```
 

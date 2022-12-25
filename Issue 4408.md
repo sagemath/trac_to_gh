@@ -109,7 +109,7 @@ Attachment [sage-4408-part3.patch](tarball://root/attachments/some-uuid/ticket44
 
 ---
 
-archive/issue_events_004653.json:
+archive/issue_events_009958.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -117,7 +117,7 @@ archive/issue_events_004653.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4408",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4408#event-4653"
+    "url": "https://github.com/sagemath/sagetest/issues/4408#event-9958"
 }
 ```
 
@@ -157,3 +157,20 @@ archive/issue_comments_032354.json:
 
 I've decided this approach with caching is the wrong design since it would introduce memory leaks.  I'm closing this ticket/approach as invalid, and opening a new one, which
 implements related ideas and gets it right.  See #4601.
+
+
+
+---
+
+archive/issue_events_009959.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-24T04:58:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4408",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4408#event-9959"
+}
+```

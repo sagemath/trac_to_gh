@@ -230,7 +230,7 @@ I think this ticket should be closed as "wontfix".
 
 ---
 
-archive/issue_events_008358.json:
+archive/issue_events_019533.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -238,7 +238,7 @@ archive/issue_events_008358.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8153#event-8358"
+    "url": "https://github.com/sagemath/sagetest/issues/8153#event-19533"
 }
 ```
 
@@ -259,6 +259,23 @@ archive/issue_comments_071569.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_019534.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-03T02:42:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8153",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8153#event-19534"
+}
+```
 
 
 

@@ -240,6 +240,23 @@ Changing component from build to porting: AIX or HP-UX.
 
 ---
 
+archive/issue_events_016988.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-06-25T13:36:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7179",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7179#event-16988"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059357.json:
 ```json
 {
@@ -312,7 +329,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007398.json:
+archive/issue_events_016989.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -320,6 +337,6 @@ archive/issue_events_007398.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7179",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7179#event-7398"
+    "url": "https://github.com/sagemath/sagetest/issues/7179#event-16989"
 }
 ```

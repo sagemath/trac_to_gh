@@ -215,6 +215,23 @@ I haven't been able to test this set of patches yet but from speaking with gfurn
 
 ---
 
+archive/issue_events_006990.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-21T13:36:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3097",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3097#event-6990"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021339.json:
 ```json
 {
@@ -313,7 +330,7 @@ Merged all six patches in Sage 3.0.2.rc0
 
 ---
 
-archive/issue_events_003313.json:
+archive/issue_events_006991.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -321,7 +338,7 @@ archive/issue_events_003313.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3097#event-3313"
+    "url": "https://github.com/sagemath/sagetest/issues/3097#event-6991"
 }
 ```
 

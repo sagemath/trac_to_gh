@@ -96,7 +96,7 @@ applied to 2.8.12.rc0
 
 ---
 
-archive/issue_events_001238.json:
+archive/issue_events_002979.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -104,6 +104,6 @@ archive/issue_events_001238.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1112",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1112#event-1238"
+    "url": "https://github.com/sagemath/sagetest/issues/1112#event-2979"
 }
 ```

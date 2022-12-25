@@ -96,6 +96,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9520
 
 ---
 
+archive/issue_events_023651.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-07-17T00:09:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9520",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9520#event-23651"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091370.json:
 ```json
 {
@@ -132,6 +149,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_023652.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-04-26T01:44:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9520",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9520#event-23652"
+}
+```
+
+
+
+---
+
+archive/issue_events_023653.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-04-26T01:44:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9520",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9520#event-23653"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091372.json:
 ```json
 {
@@ -150,7 +201,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009669.json:
+archive/issue_events_023654.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -158,7 +209,7 @@ archive/issue_events_009669.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9520",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9520#event-9669"
+    "url": "https://github.com/sagemath/sagetest/issues/9520#event-23654"
 }
 ```
 

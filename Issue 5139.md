@@ -64,7 +64,7 @@ archive/issue_comments_039223.json:
 
 ---
 
-archive/issue_events_005387.json:
+archive/issue_events_011907.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +72,7 @@ archive/issue_events_005387.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5139",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5139#event-5387"
+    "url": "https://github.com/sagemath/sagetest/issues/5139#event-11907"
 }
 ```
 

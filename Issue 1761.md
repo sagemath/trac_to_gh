@@ -48,6 +48,23 @@ Attachment [graphviz.hg](tarball://root/attachments/some-uuid/ticket1761/graphvi
 
 ---
 
+archive/issue_events_004274.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-13T18:58:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1761",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1761#event-4274"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011085.json:
 ```json
 {
@@ -182,7 +199,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001919.json:
+archive/issue_events_004275.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -190,7 +207,7 @@ archive/issue_events_001919.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1761#event-1919"
+    "url": "https://github.com/sagemath/sagetest/issues/1761#event-4275"
 }
 ```
 

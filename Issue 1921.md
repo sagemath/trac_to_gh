@@ -117,6 +117,23 @@ This change messes up a doctest in the tutorial, so there is also a small doc pa
 
 ---
 
+archive/issue_events_004625.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-04-17T02:36:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1921",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1921#event-4625"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012152.json:
 ```json
 {
@@ -173,7 +190,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002077.json:
+archive/issue_events_004626.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -181,7 +198,7 @@ archive/issue_events_002077.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1921#event-2077"
+    "url": "https://github.com/sagemath/sagetest/issues/1921#event-4626"
 }
 ```
 

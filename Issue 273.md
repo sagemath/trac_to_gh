@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/273
 
 ---
 
-archive/issue_events_000290.json:
+archive/issue_events_000610.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -49,7 +49,7 @@ archive/issue_events_000290.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/273",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/273#event-290"
+    "url": "https://github.com/sagemath/sagetest/issues/273#event-610"
 }
 ```
 
@@ -88,3 +88,20 @@ archive/issue_comments_001295.json:
 ```
 
 Fixed for sage-2.2.
+
+
+
+---
+
+archive/issue_events_000611.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-02-24T03:06:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/273",
+    "milestone": "sage-2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/273#event-611"
+}
+```

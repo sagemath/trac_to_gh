@@ -387,7 +387,7 @@ archive/issue_comments_062783.json:
 
 ---
 
-archive/issue_events_007693.json:
+archive/issue_events_017698.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -395,7 +395,7 @@ archive/issue_events_007693.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7467#event-7693"
+    "url": "https://github.com/sagemath/sagetest/issues/7467#event-17698"
 }
 ```
 

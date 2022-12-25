@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3953
 
 ---
 
-archive/issue_events_004181.json:
+archive/issue_events_009076.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -60,7 +60,24 @@ archive/issue_events_004181.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3953",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3953#event-4181"
+    "url": "https://github.com/sagemath/sagetest/issues/3953#event-9076"
+}
+```
+
+
+
+---
+
+archive/issue_events_009077.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-12T16:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3953",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3953#event-9077"
 }
 ```
 

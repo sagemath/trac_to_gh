@@ -241,6 +241,23 @@ all tests pass. I also confirmed that the test is a speedup.
 
 ---
 
+archive/issue_events_024060.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-23T11:59:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9651",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9651#event-24060"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093475.json:
 ```json
 {
@@ -336,7 +353,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009787.json:
+archive/issue_events_024061.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -344,6 +361,6 @@ archive/issue_events_009787.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9651",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9651#event-9787"
+    "url": "https://github.com/sagemath/sagetest/issues/9651#event-24061"
 }
 ```

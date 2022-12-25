@@ -392,6 +392,23 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_024827.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-07T21:58:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9863",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9863#event-24827"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097247.json:
 ```json
 {
@@ -799,6 +816,40 @@ archive/issue_comments_097262.json:
 ```
 
 I'm changing the milestone to 4.6.1.  Of course, the next release manager is welcome to change the priority.
+
+
+
+---
+
+archive/issue_events_024828.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-19T02:20:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9863",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9863#event-24828"
+}
+```
+
+
+
+---
+
+archive/issue_events_024829.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-19T02:20:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9863",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9863#event-24829"
+}
+```
 
 
 
@@ -1489,7 +1540,7 @@ Positive review implicit by #10359.
 
 ---
 
-archive/issue_events_009993.json:
+archive/issue_events_024830.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1497,7 +1548,7 @@ archive/issue_events_009993.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#event-9993"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#event-24830"
 }
 ```
 

@@ -139,7 +139,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005111.json:
+archive/issue_events_011213.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -147,7 +147,7 @@ archive/issue_events_005111.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4868",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4868#event-5111"
+    "url": "https://github.com/sagemath/sagetest/issues/4868#event-11213"
 }
 ```
 
@@ -172,3 +172,20 @@ This is a dupe of #3640.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_011214.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-24T11:44:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4868",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4868#event-11214"
+}
+```

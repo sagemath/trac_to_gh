@@ -1079,6 +1079,23 @@ I should add that v2 of the uni-patch also fixes the "User Management" page at, 
 
 ---
 
+archive/issue_events_015504.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-08-19T09:48:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6568",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6568#event-15504"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053526.json:
 ```json
 {
@@ -1150,7 +1167,7 @@ In part, the patch "v2" at #5360 is an attempt to include some `server/` docstri
 
 ---
 
-archive/issue_events_006805.json:
+archive/issue_events_015505.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1158,7 +1175,7 @@ archive/issue_events_006805.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6568#event-6805"
+    "url": "https://github.com/sagemath/sagetest/issues/6568#event-15505"
 }
 ```
 

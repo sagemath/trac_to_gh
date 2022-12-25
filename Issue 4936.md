@@ -117,6 +117,23 @@ and note that when you start sage the files you created in $DOT_SAGE/gap are del
 
 ---
 
+archive/issue_events_011374.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-24T06:07:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4936",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4936#event-11374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037402.json:
 ```json
 {
@@ -173,7 +190,7 @@ Merged in Sage 3.3.alpha2
 
 ---
 
-archive/issue_events_005179.json:
+archive/issue_events_011375.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -181,6 +198,6 @@ archive/issue_events_005179.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4936",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4936#event-5179"
+    "url": "https://github.com/sagemath/sagetest/issues/4936#event-11375"
 }
 ```

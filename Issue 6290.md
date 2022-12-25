@@ -117,7 +117,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_006534.json:
+archive/issue_events_014704.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -125,7 +125,7 @@ archive/issue_events_006534.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6290#event-6534"
+    "url": "https://github.com/sagemath/sagetest/issues/6290#event-14704"
 }
 ```
 
@@ -164,6 +164,23 @@ archive/issue_comments_050128.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_014705.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-06-24T09:44:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6290",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6290#event-14705"
+}
+```
 
 
 

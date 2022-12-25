@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/631
 
 ---
 
-archive/issue_events_000689.json:
+archive/issue_events_001680.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -52,7 +52,7 @@ archive/issue_events_000689.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/631#event-689"
+    "url": "https://github.com/sagemath/sagetest/issues/631#event-1680"
 }
 ```
 
@@ -114,7 +114,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000690.json:
+archive/issue_events_001681.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -122,7 +122,24 @@ archive/issue_events_000690.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/631#event-690"
+    "url": "https://github.com/sagemath/sagetest/issues/631#event-1681"
+}
+```
+
+
+
+---
+
+archive/issue_events_001682.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-13T16:18:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/631",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/631#event-1682"
 }
 ```
 
@@ -148,7 +165,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000691.json:
+archive/issue_events_001683.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -156,6 +173,6 @@ archive/issue_events_000691.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/631#event-691"
+    "url": "https://github.com/sagemath/sagetest/issues/631#event-1683"
 }
 ```

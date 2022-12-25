@@ -44,6 +44,125 @@ Issue created by migration from https://trac.sagemath.org/ticket/6430
 
 ---
 
+archive/issue_events_015159.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15159"
+}
+```
+
+
+
+---
+
+archive/issue_events_015160.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15160"
+}
+```
+
+
+
+---
+
+archive/issue_events_015161.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15161"
+}
+```
+
+
+
+---
+
+archive/issue_events_015162.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15162"
+}
+```
+
+
+
+---
+
+archive/issue_events_015163.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15163"
+}
+```
+
+
+
+---
+
+archive/issue_events_015164.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15164"
+}
+```
+
+
+
+---
+
+archive/issue_events_015165.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15165"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051546.json:
 ```json
 {
@@ -75,6 +194,40 @@ archive/issue_comments_051547.json:
 ```
 
 works fine in 8.4.b1
+
+
+
+---
+
+archive/issue_events_015166.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-08-22T18:48:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15166"
+}
+```
+
+
+
+---
+
+archive/issue_events_015167.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-08-22T18:48:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15167"
+}
+```
 
 
 
@@ -134,7 +287,7 @@ Presuming these are all correctly reviewed as either duplicate, invalid, or wont
 
 ---
 
-archive/issue_events_006672.json:
+archive/issue_events_015168.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -142,7 +295,7 @@ archive/issue_events_006672.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6430",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6430#event-6672"
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-15168"
 }
 ```
 

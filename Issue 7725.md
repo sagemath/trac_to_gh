@@ -86,7 +86,7 @@ Changing assignee from @robertwb to @dwbump.
 
 ---
 
-archive/issue_events_007939.json:
+archive/issue_events_018473.json:
 ```json
 {
     "actor": "https://github.com/dwbump",
@@ -94,7 +94,7 @@ archive/issue_events_007939.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7725",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7725#event-7939"
+    "url": "https://github.com/sagemath/sagetest/issues/7725#event-18473"
 }
 ```
 
@@ -151,6 +151,23 @@ archive/issue_comments_066264.json:
 ```
 
 Closing as a duplicate of #7718.
+
+
+
+---
+
+archive/issue_events_018474.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-21T04:26:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7725",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7725#event-18474"
+}
+```
 
 
 

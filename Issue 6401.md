@@ -84,6 +84,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_015081.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-07-28T12:45:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6401",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6401#event-15081"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051312.json:
 ```json
 {
@@ -257,7 +274,7 @@ All doctests pass in my merge tree. So I'm changing #6404, #6401, #6377 and #624
 
 ---
 
-archive/issue_events_006646.json:
+archive/issue_events_015082.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -265,6 +282,6 @@ archive/issue_events_006646.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6401#event-6646"
+    "url": "https://github.com/sagemath/sagetest/issues/6401#event-15082"
 }
 ```

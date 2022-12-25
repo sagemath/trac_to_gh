@@ -230,7 +230,7 @@ Merged "trac_8572-poset_doc_fix-fh.patch" in 4.4.alpha0
 
 ---
 
-archive/issue_events_008750.json:
+archive/issue_events_020694.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -238,7 +238,7 @@ archive/issue_events_008750.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8572#event-8750"
+    "url": "https://github.com/sagemath/sagetest/issues/8572#event-20694"
 }
 ```
 

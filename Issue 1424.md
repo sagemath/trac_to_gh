@@ -27,7 +27,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1424
 
 ---
 
-archive/issue_events_001571.json:
+archive/issue_events_003664.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -35,7 +35,7 @@ archive/issue_events_001571.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1424",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1424#event-1571"
+    "url": "https://github.com/sagemath/sagetest/issues/1424#event-3664"
 }
 ```
 

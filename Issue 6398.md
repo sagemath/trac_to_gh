@@ -65,7 +65,24 @@ so this is no longer even a problem.
 
 ---
 
-archive/issue_events_006644.json:
+archive/issue_events_015077.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-07-09T05:07:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6398",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6398#event-15077"
+}
+```
+
+
+
+---
+
+archive/issue_events_015078.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +90,7 @@ archive/issue_events_006644.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6398",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6398#event-6644"
+    "url": "https://github.com/sagemath/sagetest/issues/6398#event-15078"
 }
 ```
 

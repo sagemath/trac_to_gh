@@ -68,7 +68,7 @@ Attachment [sage-2989_rebased_part2.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_events_003194.json:
+archive/issue_events_006814.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -76,7 +76,7 @@ archive/issue_events_003194.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2989",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2989#event-3194"
+    "url": "https://github.com/sagemath/sagetest/issues/2989#event-6814"
 }
 ```
 

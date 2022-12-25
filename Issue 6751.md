@@ -115,7 +115,7 @@ Now at: trac_6751.patch
 
 ---
 
-archive/issue_events_006983.json:
+archive/issue_events_015918.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -123,7 +123,7 @@ archive/issue_events_006983.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6751",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6751#event-6983"
+    "url": "https://github.com/sagemath/sagetest/issues/6751#event-15918"
 }
 ```
 

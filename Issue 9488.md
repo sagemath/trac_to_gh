@@ -54,6 +54,23 @@ in which case the number of threads is infinite - i.e. limited only by what the 
 
 ---
 
+archive/issue_events_023535.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-19T13:10:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9488",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9488#event-23535"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090944.json:
 ```json
 {
@@ -126,7 +143,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_009639.json:
+archive/issue_events_023536.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -134,6 +151,6 @@ archive/issue_events_009639.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9488",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9488#event-9639"
+    "url": "https://github.com/sagemath/sagetest/issues/9488#event-23536"
 }
 ```

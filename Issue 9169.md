@@ -237,7 +237,24 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009326.json:
+archive/issue_events_022556.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jpflori",
+    "created_at": "2013-02-08T12:41:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#event-22556"
+}
+```
+
+
+
+---
+
+archive/issue_events_022557.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -245,7 +262,7 @@ archive/issue_events_009326.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9169#event-9326"
+    "url": "https://github.com/sagemath/sagetest/issues/9169#event-22557"
 }
 ```
 

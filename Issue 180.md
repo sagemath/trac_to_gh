@@ -117,6 +117,23 @@ line switches and doesn't claim to!
 
 ---
 
+archive/issue_events_000340.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T22:53:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/180",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/180#event-340"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000826.json:
 ```json
 {
@@ -157,7 +174,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_000188.json:
+archive/issue_events_000341.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -165,6 +182,23 @@ archive/issue_events_000188.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/180",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/180#event-188"
+    "url": "https://github.com/sagemath/sagetest/issues/180#event-341"
+}
+```
+
+
+
+---
+
+archive/issue_events_000342.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-24T02:58:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/180",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/180#event-342"
 }
 ```

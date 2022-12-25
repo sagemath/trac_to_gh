@@ -308,7 +308,7 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_events_009821.json:
+archive/issue_events_024192.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -316,7 +316,7 @@ archive/issue_events_009821.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9689#event-9821"
+    "url": "https://github.com/sagemath/sagetest/issues/9689#event-24192"
 }
 ```
 

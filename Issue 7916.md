@@ -324,7 +324,7 @@ Merged [trac_7916-same_name_method.take2.patch](http://trac.sagemath.org/sage_tr
 
 ---
 
-archive/issue_events_008131.json:
+archive/issue_events_018955.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -332,6 +332,6 @@ archive/issue_events_008131.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7916#event-8131"
+    "url": "https://github.com/sagemath/sagetest/issues/7916#event-18955"
 }
 ```

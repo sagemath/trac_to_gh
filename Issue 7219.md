@@ -99,6 +99,23 @@ Subsumed by #17336.
 
 ---
 
+archive/issue_events_017100.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-11-13T17:35:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7219",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7219#event-17100"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059776.json:
 ```json
 {
@@ -117,7 +134,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007441.json:
+archive/issue_events_017101.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -125,7 +142,7 @@ archive/issue_events_007441.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7219",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7219#event-7441"
+    "url": "https://github.com/sagemath/sagetest/issues/7219#event-17101"
 }
 ```
 

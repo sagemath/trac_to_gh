@@ -111,6 +111,23 @@ Updated to work with changed method names in `toric_variety_library.py`.
 
 ---
 
+archive/issue_events_022979.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-07-03T20:25:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9326",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9326#event-22979"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087810.json:
 ```json
 {
@@ -697,6 +714,40 @@ All tests pass, documentation compiles to HTML and PDF.
 
 ---
 
+archive/issue_events_022980.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2010-07-29T19:38:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9326",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9326#event-22980"
+}
+```
+
+
+
+---
+
+archive/issue_events_022981.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2010-07-29T19:38:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9326",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9326#event-22981"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087835.json:
 ```json
 {
@@ -816,7 +867,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009481.json:
+archive/issue_events_022982.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -824,6 +875,6 @@ archive/issue_events_009481.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9326#event-9481"
+    "url": "https://github.com/sagemath/sagetest/issues/9326#event-22982"
 }
 ```

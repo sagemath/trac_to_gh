@@ -50,7 +50,7 @@ OK, I fixed this by modifying SAGE_ROOT/makefile slightly.
 
 ---
 
-archive/issue_events_001406.json:
+archive/issue_events_003327.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -58,7 +58,7 @@ archive/issue_events_001406.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1262",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1262#event-1406"
+    "url": "https://github.com/sagemath/sagetest/issues/1262#event-3327"
 }
 ```
 

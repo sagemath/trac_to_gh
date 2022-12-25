@@ -114,6 +114,23 @@ Changing component from Cygwin to linear algebra.
 
 ---
 
+archive/issue_events_006241.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-27T09:42:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2670",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2670#event-6241"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018340.json:
 ```json
 {
@@ -180,7 +197,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_002862.json:
+archive/issue_events_006242.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -188,7 +205,7 @@ archive/issue_events_002862.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2670#event-2862"
+    "url": "https://github.com/sagemath/sagetest/issues/2670#event-6242"
 }
 ```
 

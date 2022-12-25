@@ -45,6 +45,23 @@ Attachment [parent.pyx.patch](tarball://root/attachments/some-uuid/ticket2268/pa
 
 ---
 
+archive/issue_events_005367.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-22T22:24:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2268",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2268#event-5367"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014996.json:
 ```json
 {
@@ -255,7 +272,7 @@ Merged 2268-alt.patch in Sage 2.10.3.rc1
 
 ---
 
-archive/issue_events_002439.json:
+archive/issue_events_005368.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -263,7 +280,7 @@ archive/issue_events_002439.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2268#event-2439"
+    "url": "https://github.com/sagemath/sagetest/issues/2268#event-5368"
 }
 ```
 

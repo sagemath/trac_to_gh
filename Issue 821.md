@@ -178,7 +178,58 @@ for number fields raise a clear exception (ValueError or NotImplementedError) th
 
 ---
 
-archive/issue_events_000932.json:
+archive/issue_events_002315.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T04:36:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/821",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/821#event-2315"
+}
+```
+
+
+
+---
+
+archive/issue_events_002316.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-20T05:52:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/821",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/821#event-2316"
+}
+```
+
+
+
+---
+
+archive/issue_events_002317.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-20T05:52:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/821",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/821#event-2317"
+}
+```
+
+
+
+---
+
+archive/issue_events_002318.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -186,7 +237,7 @@ archive/issue_events_000932.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/821#event-932"
+    "url": "https://github.com/sagemath/sagetest/issues/821#event-2318"
 }
 ```
 

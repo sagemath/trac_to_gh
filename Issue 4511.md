@@ -74,6 +74,23 @@ Technical note: the get_sage_version function will now return the version number
 
 ---
 
+archive/issue_events_010223.json:
+```json
+{
+    "actor": "https://github.com/saliola",
+    "created_at": "2008-11-13T11:06:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#event-10223"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033392.json:
 ```json
 {
@@ -346,7 +363,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004757.json:
+archive/issue_events_010224.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -354,6 +371,6 @@ archive/issue_events_004757.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4511#event-4757"
+    "url": "https://github.com/sagemath/sagetest/issues/4511#event-10224"
 }
 ```

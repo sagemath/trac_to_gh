@@ -160,7 +160,7 @@ Patch 6170.patch makes sure no new elements are added tot he pool once its free'
 
 ---
 
-archive/issue_events_000600.json:
+archive/issue_events_001483.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -168,7 +168,7 @@ archive/issue_events_000600.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/558#event-600"
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-1483"
 }
 ```
 
@@ -230,7 +230,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000601.json:
+archive/issue_events_001484.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -238,7 +238,7 @@ archive/issue_events_000601.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/558#event-601"
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-1484"
 }
 ```
 
@@ -280,7 +280,24 @@ it is commented out.
 
 ---
 
-archive/issue_events_000602.json:
+archive/issue_events_001485.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:46:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/558",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-1485"
+}
+```
+
+
+
+---
+
+archive/issue_events_001486.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -288,7 +305,7 @@ archive/issue_events_000602.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/558#event-602"
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-1486"
 }
 ```
 
@@ -345,3 +362,37 @@ archive/issue_comments_002879.json:
 ```
 
 Attachment [6253.patch](tarball://root/attachments/some-uuid/ticket558/6253.patch) by @malb created at 2007-09-07 11:11:23
+
+
+
+---
+
+archive/issue_events_001487.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-07T13:10:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/558",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-1487"
+}
+```
+
+
+
+---
+
+archive/issue_events_001488.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-07T13:10:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/558",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-1488"
+}
+```

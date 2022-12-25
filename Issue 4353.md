@@ -98,7 +98,7 @@ False
 
 ---
 
-archive/issue_events_004599.json:
+archive/issue_events_009839.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -106,7 +106,7 @@ archive/issue_events_004599.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4353",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4353#event-4599"
+    "url": "https://github.com/sagemath/sagetest/issues/4353#event-9839"
 }
 ```
 

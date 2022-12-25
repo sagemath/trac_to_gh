@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/137
 
 ---
 
-archive/issue_events_000143.json:
+archive/issue_events_000262.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -74,7 +74,7 @@ archive/issue_events_000143.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/137",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/137#event-143"
+    "url": "https://github.com/sagemath/sagetest/issues/137#event-262"
 }
 ```
 

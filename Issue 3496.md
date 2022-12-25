@@ -206,7 +206,7 @@ I'm happy.
 
 ---
 
-archive/issue_events_003716.json:
+archive/issue_events_007968.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -214,7 +214,7 @@ archive/issue_events_003716.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3496#event-3716"
+    "url": "https://github.com/sagemath/sagetest/issues/3496#event-7968"
 }
 ```
 
@@ -253,3 +253,20 @@ archive/issue_comments_024577.json:
 ```
 
 Merged both patches in Sage 3.2.alpha2
+
+
+
+---
+
+archive/issue_events_007969.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-28T12:18:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3496",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3496#event-7969"
+}
+```

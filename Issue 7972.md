@@ -276,7 +276,7 @@ Applying the patch to 4.3, this works.  In the notebook, running reset() then sh
 
 ---
 
-archive/issue_events_008187.json:
+archive/issue_events_019076.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -284,7 +284,7 @@ archive/issue_events_008187.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7972",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7972#event-8187"
+    "url": "https://github.com/sagemath/sagetest/issues/7972#event-19076"
 }
 ```
 
@@ -305,3 +305,20 @@ archive/issue_comments_069425.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_019077.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T10:02:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7972",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7972#event-19077"
+}
+```

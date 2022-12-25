@@ -157,7 +157,7 @@ I like the extra doctest!  Thanks.
 
 ---
 
-archive/issue_events_004090.json:
+archive/issue_events_008881.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -165,7 +165,7 @@ archive/issue_events_004090.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3869",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3869#event-4090"
+    "url": "https://github.com/sagemath/sagetest/issues/3869#event-8881"
 }
 ```
 

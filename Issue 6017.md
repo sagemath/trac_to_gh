@@ -39,6 +39,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/6017
 
 ---
 
+archive/issue_events_014128.json:
+```json
+{
+    "actor": "https://github.com/rbeezer",
+    "created_at": "2009-05-20T15:30:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6017",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6017#event-14128"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047783.json:
 ```json
 {
@@ -52,6 +69,40 @@ archive/issue_comments_047783.json:
 ```
 
 The proposed changes have been incorporated into #5975, so this is obsolete.
+
+
+
+---
+
+archive/issue_events_014129.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-20T16:49:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6017",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6017#event-14129"
+}
+```
+
+
+
+---
+
+archive/issue_events_014130.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-20T16:49:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6017",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6017#event-14130"
+}
+```
 
 
 
@@ -120,7 +171,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006272.json:
+archive/issue_events_014131.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -128,7 +179,7 @@ archive/issue_events_006272.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6017",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6017#event-6272"
+    "url": "https://github.com/sagemath/sagetest/issues/6017#event-14131"
 }
 ```
 

@@ -173,7 +173,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001380.json:
+archive/issue_events_003277.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -181,7 +181,7 @@ archive/issue_events_001380.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1240#event-1380"
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-3277"
 }
 ```
 
@@ -202,6 +202,23 @@ archive/issue_comments_007740.json:
 ```
 
 Merged in 2.9.1 alpha2
+
+
+
+---
+
+archive/issue_events_003278.json:
+```json
+{
+    "actor": "https://github.com/zimmermann6",
+    "created_at": "2010-03-04T13:54:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-3278"
+}
+```
 
 
 
@@ -261,7 +278,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_001381.json:
+archive/issue_events_003279.json:
 ```json
 {
     "actor": "https://github.com/zimmermann6",
@@ -269,7 +286,7 @@ archive/issue_events_001381.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1240#event-1381"
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-3279"
 }
 ```
 
@@ -346,7 +363,7 @@ Changing assignee from mabshoff to mvngu.
 
 ---
 
-archive/issue_events_001382.json:
+archive/issue_events_003280.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -354,7 +371,7 @@ archive/issue_events_001382.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1240#event-1382"
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-3280"
 }
 ```
 
@@ -393,6 +410,40 @@ archive/issue_comments_007747.json:
 ```
 
 Please do not reopen tickets that are already closed. Open another ticket for the specific issue related to this ticket and concerning Sage 4.3.3. Then reference this ticket from the newly opened ticket. The issue of the current ticket concerns Sage 2.9.1 and it has already been fixed for that release.
+
+
+
+---
+
+archive/issue_events_003281.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-04T16:43:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-3281"
+}
+```
+
+
+
+---
+
+archive/issue_events_003282.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-04T16:43:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-3282"
+}
+```
 
 
 

@@ -1318,7 +1318,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006230.json:
+archive/issue_events_014020.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -1326,7 +1326,7 @@ archive/issue_events_006230.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5975#event-6230"
+    "url": "https://github.com/sagemath/sagetest/issues/5975#event-14020"
 }
 ```
 
@@ -1401,3 +1401,20 @@ view(g, pdflatex=True)
 
 
 Mostly this patch puts in place the infrastructure to make many of the features of the the tkz-graph latex package available.  Only one option (tkz_style) is actually implemented at the moment - more will follow.
+
+
+
+---
+
+archive/issue_events_014021.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-19T13:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5975",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5975#event-14021"
+}
+```

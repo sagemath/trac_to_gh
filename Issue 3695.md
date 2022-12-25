@@ -49,7 +49,7 @@ Looks good. It is also safe to apply to sage-3.0.6 even since it contains no new
 
 ---
 
-archive/issue_events_003917.json:
+archive/issue_events_008469.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -57,7 +57,7 @@ archive/issue_events_003917.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3695#event-3917"
+    "url": "https://github.com/sagemath/sagetest/issues/3695#event-8469"
 }
 ```
 

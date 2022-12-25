@@ -675,7 +675,7 @@ $ head -n 3 kirkby/bsd.math+7379+9187-ptestlong.log | hd
 
 ---
 
-archive/issue_events_009637.json:
+archive/issue_events_023521.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -683,7 +683,7 @@ archive/issue_events_009637.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9486",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9486#event-9637"
+    "url": "https://github.com/sagemath/sagetest/issues/9486#event-23521"
 }
 ```
 
@@ -710,6 +710,23 @@ Replying to [comment:7 drkirkby]:
 >  * Library patch at #7379 (only the file trac-7379-decorator-defaults.patch)
 
 Based on this, I'm going to close this ticket, since #9187 is about to be merged. If you like, you can open a separate ticket about the Sage-Sage interface randomly failing doctests, but that has nothing to do with ecl.
+
+
+
+---
+
+archive/issue_events_023522.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-13T16:27:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9486",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9486#event-23522"
+}
+```
 
 
 

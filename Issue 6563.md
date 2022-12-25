@@ -136,7 +136,7 @@ builds OK on the machine t2 running Solaris. (It also compiles on Linux.)
 
 ---
 
-archive/issue_events_006800.json:
+archive/issue_events_015480.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -144,7 +144,7 @@ archive/issue_events_006800.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6563",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6563#event-6800"
+    "url": "https://github.com/sagemath/sagetest/issues/6563#event-15480"
 }
 ```
 

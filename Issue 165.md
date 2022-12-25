@@ -273,7 +273,7 @@ I applied the patch from Peter Johnson, which implements weakref support.
 
 ---
 
-archive/issue_events_000171.json:
+archive/issue_events_000305.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -281,7 +281,7 @@ archive/issue_events_000171.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/165",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/165#event-171"
+    "url": "https://github.com/sagemath/sagetest/issues/165#event-305"
 }
 ```
 

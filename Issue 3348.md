@@ -101,7 +101,7 @@ Vector space of dimension 3 over Symbolic Ring
 
 ---
 
-archive/issue_events_003566.json:
+archive/issue_events_007497.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -109,6 +109,23 @@ archive/issue_events_003566.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3348",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3348#event-3566"
+    "url": "https://github.com/sagemath/sagetest/issues/3348#event-7497"
+}
+```
+
+
+
+---
+
+archive/issue_events_007498.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-04T22:55:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3348",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3348#event-7498"
 }
 ```

@@ -277,6 +277,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_005552.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-12T05:06:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2355",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2355#event-5552"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015807.json:
 ```json
 {
@@ -667,6 +684,74 @@ All tests pass on 2.10.3 here. 2.10.4rc0 obviously broke something so I'll wait 
 
 ---
 
+archive/issue_events_005553.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-17T03:17:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2355",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2355#event-5553"
+}
+```
+
+
+
+---
+
+archive/issue_events_005554.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-17T03:17:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2355",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2355#event-5554"
+}
+```
+
+
+
+---
+
+archive/issue_events_005555.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-18T05:35:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2355",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2355#event-5555"
+}
+```
+
+
+
+---
+
+archive/issue_events_005556.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-18T05:35:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2355",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2355#event-5556"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015820.json:
 ```json
 {
@@ -932,7 +1017,7 @@ Merged in Sage 2.11.alpha2
 
 ---
 
-archive/issue_events_002532.json:
+archive/issue_events_005557.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -940,7 +1025,7 @@ archive/issue_events_002532.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2355#event-2532"
+    "url": "https://github.com/sagemath/sagetest/issues/2355#event-5557"
 }
 ```
 

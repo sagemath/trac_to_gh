@@ -82,6 +82,91 @@ Would it make sense to except not only `TypeError`, but also `AttributeError` (f
 
 ---
 
+archive/issue_events_017909.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7554",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7554#event-17909"
+}
+```
+
+
+
+---
+
+archive/issue_events_017910.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7554",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7554#event-17910"
+}
+```
+
+
+
+---
+
+archive/issue_events_017911.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7554",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7554#event-17911"
+}
+```
+
+
+
+---
+
+archive/issue_events_017912.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7554",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7554#event-17912"
+}
+```
+
+
+
+---
+
+archive/issue_events_017913.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7554",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7554#event-17913"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064092.json:
 ```json
 {
@@ -193,7 +278,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007784.json:
+archive/issue_events_017914.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -201,7 +286,7 @@ archive/issue_events_007784.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7554",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7554#event-7784"
+    "url": "https://github.com/sagemath/sagetest/issues/7554#event-17914"
 }
 ```
 

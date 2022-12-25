@@ -103,7 +103,7 @@ I *really* like the examples.
 
 ---
 
-archive/issue_events_004252.json:
+archive/issue_events_009196.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -111,7 +111,7 @@ archive/issue_events_004252.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4022#event-4252"
+    "url": "https://github.com/sagemath/sagetest/issues/4022#event-9196"
 }
 ```
 

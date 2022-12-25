@@ -83,7 +83,7 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_events_000594.json:
+archive/issue_events_001467.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -91,7 +91,7 @@ archive/issue_events_000594.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/553#event-594"
+    "url": "https://github.com/sagemath/sagetest/issues/553#event-1467"
 }
 ```
 
@@ -153,7 +153,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000595.json:
+archive/issue_events_001468.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -161,7 +161,7 @@ archive/issue_events_000595.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/553#event-595"
+    "url": "https://github.com/sagemath/sagetest/issues/553#event-1468"
 }
 ```
 
@@ -207,6 +207,23 @@ archive/issue_comments_002845.json:
 ```
 
 Changing type from defect to enhancement.
+
+
+
+---
+
+archive/issue_events_001469.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-20T14:04:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/553#event-1469"
+}
+```
 
 
 
@@ -353,7 +370,7 @@ Merged in 2.9.rc0.
 
 ---
 
-archive/issue_events_000596.json:
+archive/issue_events_001470.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -361,6 +378,6 @@ archive/issue_events_000596.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/553#event-596"
+    "url": "https://github.com/sagemath/sagetest/issues/553#event-1470"
 }
 ```

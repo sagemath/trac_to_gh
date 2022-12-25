@@ -43,6 +43,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5718
 
 ---
 
+archive/issue_events_013422.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-09T19:34:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5718",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5718#event-13422"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044599.json:
 ```json
 {
@@ -119,7 +136,7 @@ Looks good to me.  Merged in 4.0.1.rc1.
 
 ---
 
-archive/issue_events_005962.json:
+archive/issue_events_013423.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -127,6 +144,6 @@ archive/issue_events_005962.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5718",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5718#event-5962"
+    "url": "https://github.com/sagemath/sagetest/issues/5718#event-13423"
 }
 ```

@@ -44,7 +44,7 @@ Duplicate of #2094
 
 ---
 
-archive/issue_events_002252.json:
+archive/issue_events_005011.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -52,7 +52,7 @@ archive/issue_events_002252.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2092",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2092#event-2252"
+    "url": "https://github.com/sagemath/sagetest/issues/2092#event-5011"
 }
 ```
 

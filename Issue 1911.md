@@ -78,7 +78,7 @@ Several comments, but positive review with the additional patch:
 
 ---
 
-archive/issue_events_002067.json:
+archive/issue_events_004601.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -86,7 +86,7 @@ archive/issue_events_002067.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1911",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1911#event-2067"
+    "url": "https://github.com/sagemath/sagetest/issues/1911#event-4601"
 }
 ```
 

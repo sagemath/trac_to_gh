@@ -48,6 +48,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3284
 
 ---
 
+archive/issue_events_007381.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-23T18:15:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3284",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3284#event-7381"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022676.json:
 ```json
 {
@@ -280,6 +297,40 @@ Michael
 
 ---
 
+archive/issue_events_007382.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T02:13:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3284",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3284#event-7382"
+}
+```
+
+
+
+---
+
+archive/issue_events_007383.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T02:13:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3284",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3284#event-7383"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022688.json:
 ```json
 {
@@ -316,7 +367,7 @@ Merged in Sage 3.0.4.alpha1
 
 ---
 
-archive/issue_events_003503.json:
+archive/issue_events_007384.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -324,6 +375,6 @@ archive/issue_events_003503.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3284",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3284#event-3503"
+    "url": "https://github.com/sagemath/sagetest/issues/3284#event-7384"
 }
 ```

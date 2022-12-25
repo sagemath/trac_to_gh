@@ -128,7 +128,7 @@ I noticed that it only works with Fortran 77 code. Not a bug, really, but Fortra
 
 ---
 
-archive/issue_events_006166.json:
+archive/issue_events_013866.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -136,7 +136,7 @@ archive/issue_events_006166.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5912",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5912#event-6166"
+    "url": "https://github.com/sagemath/sagetest/issues/5912#event-13866"
 }
 ```
 

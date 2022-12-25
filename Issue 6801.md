@@ -180,6 +180,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_016028.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
+    "created_at": "2011-05-25T19:21:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#event-16028"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055906.json:
 ```json
 {
@@ -216,7 +233,7 @@ I think this can now be regarded as a duplicate of #9705 and thus closed.
 
 ---
 
-archive/issue_events_007036.json:
+archive/issue_events_016029.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -224,7 +241,7 @@ archive/issue_events_007036.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6801",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6801#event-7036"
+    "url": "https://github.com/sagemath/sagetest/issues/6801#event-16029"
 }
 ```
 

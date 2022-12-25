@@ -606,7 +606,7 @@ Too late for sage-3.4.1, but we'll still merge it ;-)
 
 ---
 
-archive/issue_events_007975.json:
+archive/issue_events_018565.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -614,7 +614,7 @@ archive/issue_events_007975.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7761#event-7975"
+    "url": "https://github.com/sagemath/sagetest/issues/7761#event-18565"
 }
 ```
 
@@ -658,7 +658,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007976.json:
+archive/issue_events_018566.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -666,7 +666,7 @@ archive/issue_events_007976.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7761#event-7976"
+    "url": "https://github.com/sagemath/sagetest/issues/7761#event-18566"
 }
 ```
 
@@ -949,6 +949,23 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_018567.json:
+```json
+{
+    "actor": "https://github.com/jaapspies",
+    "created_at": "2010-02-23T14:33:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#event-18567"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066737.json:
 ```json
 {
@@ -1142,7 +1159,7 @@ Merged [python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/py
 
 ---
 
-archive/issue_events_007977.json:
+archive/issue_events_018568.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1150,6 +1167,6 @@ archive/issue_events_007977.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7761#event-7977"
+    "url": "https://github.com/sagemath/sagetest/issues/7761#event-18568"
 }
 ```

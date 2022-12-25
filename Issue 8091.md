@@ -125,7 +125,7 @@ Jaap
 
 ---
 
-archive/issue_events_008299.json:
+archive/issue_events_019370.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -133,7 +133,24 @@ archive/issue_events_008299.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8091",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8091#event-8299"
+    "url": "https://github.com/sagemath/sagetest/issues/8091#event-19370"
+}
+```
+
+
+
+---
+
+archive/issue_events_019371.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-08-12T14:30:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8091",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8091#event-19371"
 }
 ```
 

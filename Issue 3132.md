@@ -31,6 +31,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3132
 
 ---
 
+archive/issue_events_007083.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-08T13:30:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3132",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3132#event-7083"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021706.json:
 ```json
 {
@@ -125,7 +142,7 @@ Apply only the second patch.
 
 ---
 
-archive/issue_events_003348.json:
+archive/issue_events_007084.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -133,7 +150,7 @@ archive/issue_events_003348.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3132",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3132#event-3348"
+    "url": "https://github.com/sagemath/sagetest/issues/3132#event-7084"
 }
 ```
 
@@ -180,3 +197,37 @@ please post hg patches and not diffs in the future, i.e. hg export instead of hg
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007085.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T06:49:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3132",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3132#event-7085"
+}
+```
+
+
+
+---
+
+archive/issue_events_007086.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T06:49:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3132",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3132#event-7086"
+}
+```

@@ -344,6 +344,23 @@ Some variants of these patches seem to be in 4.0.rc0. This bug should be closed.
 
 ---
 
+archive/issue_events_013026.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-05-24T16:38:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5546",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5546#event-13026"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043067.json:
 ```json
 {
@@ -362,7 +379,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005792.json:
+archive/issue_events_013027.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -370,7 +387,7 @@ archive/issue_events_005792.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5546#event-5792"
+    "url": "https://github.com/sagemath/sagetest/issues/5546#event-13027"
 }
 ```
 

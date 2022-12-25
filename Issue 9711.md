@@ -171,6 +171,23 @@ Or, as Tim suggests, if not, we could indeed close this.  It's unfortunate Willi
 
 ---
 
+archive/issue_events_024289.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-06-11T16:52:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#event-24289"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094492.json:
 ```json
 {
@@ -262,7 +279,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_009843.json:
+archive/issue_events_024290.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -270,7 +287,7 @@ archive/issue_events_009843.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9711#event-9843"
+    "url": "https://github.com/sagemath/sagetest/issues/9711#event-24290"
 }
 ```
 

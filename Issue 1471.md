@@ -105,7 +105,7 @@ Michael, your spkgs fixed the problem for me.
 
 ---
 
-archive/issue_events_001622.json:
+archive/issue_events_003742.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -113,7 +113,7 @@ archive/issue_events_001622.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1471",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1471#event-1622"
+    "url": "https://github.com/sagemath/sagetest/issues/1471#event-3742"
 }
 ```
 

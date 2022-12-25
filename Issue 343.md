@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/343
 
 ---
 
+archive/issue_events_000807.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:30:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/343",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/343#event-807"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001669.json:
 ```json
 {
@@ -47,7 +64,41 @@ hmm... just curious, is this still issue? I cannot reproduce it any more (window
 
 ---
 
-archive/issue_events_000367.json:
+archive/issue_events_000808.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T13:53:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/343",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/343#event-808"
+}
+```
+
+
+
+---
+
+archive/issue_events_000809.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T13:53:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/343",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/343#event-809"
+}
+```
+
+
+
+---
+
+archive/issue_events_000810.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -55,7 +106,7 @@ archive/issue_events_000367.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/343",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/343#event-367"
+    "url": "https://github.com/sagemath/sagetest/issues/343#event-810"
 }
 ```
 

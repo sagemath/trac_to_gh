@@ -38,6 +38,91 @@ Issue created by migration from https://trac.sagemath.org/ticket/705
 
 ---
 
+archive/issue_events_001881.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T13:45:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/705",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/705#event-1881"
+}
+```
+
+
+
+---
+
+archive/issue_events_001882.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-20T19:13:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/705",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/705#event-1882"
+}
+```
+
+
+
+---
+
+archive/issue_events_001883.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-20T19:13:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/705",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/705#event-1883"
+}
+```
+
+
+
+---
+
+archive/issue_events_001884.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:08:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/705",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/705#event-1884"
+}
+```
+
+
+
+---
+
+archive/issue_events_001885.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:08:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/705",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/705#event-1885"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003694.json:
 ```json
 {
@@ -168,7 +253,41 @@ three functions that allow plotting 2d surfaces and 3d isosurfaces.
 
 ---
 
-archive/issue_events_000777.json:
+archive/issue_events_001886.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:11:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/705",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/705#event-1886"
+}
+```
+
+
+
+---
+
+archive/issue_events_001887.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:11:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/705",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/705#event-1887"
+}
+```
+
+
+
+---
+
+archive/issue_events_001888.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -176,7 +295,7 @@ archive/issue_events_000777.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/705",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/705#event-777"
+    "url": "https://github.com/sagemath/sagetest/issues/705#event-1888"
 }
 ```
 

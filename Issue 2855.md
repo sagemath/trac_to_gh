@@ -58,7 +58,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_003047.json:
+archive/issue_events_006537.json:
 ```json
 {
     "actor": "https://github.com/dwbump",
@@ -66,6 +66,6 @@ archive/issue_events_003047.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2855",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2855#event-3047"
+    "url": "https://github.com/sagemath/sagetest/issues/2855#event-6537"
 }
 ```

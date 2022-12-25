@@ -76,6 +76,91 @@ Notice that we don't even have the 5.0 documentation in the 5.0 installation!
 
 ---
 
+archive/issue_events_012968.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12968"
+}
+```
+
+
+
+---
+
+archive/issue_events_012969.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12969"
+}
+```
+
+
+
+---
+
+archive/issue_events_012970.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12970"
+}
+```
+
+
+
+---
+
+archive/issue_events_012971.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12971"
+}
+```
+
+
+
+---
+
+archive/issue_events_012972.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12972"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042931.json:
 ```json
 {
@@ -89,6 +174,40 @@ archive/issue_comments_042931.json:
 ```
 
 Reported "upstream" [here](https://github.com/sagemath/sagenb/issues/206).
+
+
+
+---
+
+archive/issue_events_012973.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12973"
+}
+```
+
+
+
+---
+
+archive/issue_events_012974.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12974"
+}
+```
 
 
 
@@ -130,6 +249,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_012975.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-07-02T13:51:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12975"
+}
+```
+
+
+
+---
+
+archive/issue_events_012976.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-07-02T13:51:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5532",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12976"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042934.json:
 ```json
 {
@@ -166,7 +319,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_005780.json:
+archive/issue_events_012977.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -174,7 +327,7 @@ archive/issue_events_005780.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5532#event-5780"
+    "url": "https://github.com/sagemath/sagetest/issues/5532#event-12977"
 }
 ```
 

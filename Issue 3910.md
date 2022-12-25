@@ -93,7 +93,7 @@ I recommend that this passes.
 
 ---
 
-archive/issue_events_004137.json:
+archive/issue_events_008971.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -101,7 +101,7 @@ archive/issue_events_004137.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3910",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3910#event-4137"
+    "url": "https://github.com/sagemath/sagetest/issues/3910#event-8971"
 }
 ```
 

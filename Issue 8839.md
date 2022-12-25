@@ -127,6 +127,23 @@ Changing priority from major to critical.
 
 ---
 
+archive/issue_events_021571.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2015-02-12T15:14:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8839",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8839#event-21571"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081141.json:
 ```json
 {
@@ -199,7 +216,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009004.json:
+archive/issue_events_021572.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -207,6 +224,6 @@ archive/issue_events_009004.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8839#event-9004"
+    "url": "https://github.com/sagemath/sagetest/issues/8839#event-21572"
 }
 ```

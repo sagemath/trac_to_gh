@@ -102,6 +102,23 @@ The attached patch fixes the issue by making sure that the defining polynomials 
 
 ---
 
+archive/issue_events_012243.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-02-14T13:24:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5269",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5269#event-12243"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040372.json:
 ```json
 {
@@ -122,7 +139,7 @@ Patch looks good and doctests pass.
 
 ---
 
-archive/issue_events_005525.json:
+archive/issue_events_012244.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,7 +147,7 @@ archive/issue_events_005525.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5269",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5269#event-5525"
+    "url": "https://github.com/sagemath/sagetest/issues/5269#event-12244"
 }
 ```
 

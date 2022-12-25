@@ -302,7 +302,7 @@ Great work!
 
 ---
 
-archive/issue_events_008662.json:
+archive/issue_events_020360.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -310,7 +310,7 @@ archive/issue_events_008662.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8479",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8479#event-8662"
+    "url": "https://github.com/sagemath/sagetest/issues/8479#event-20360"
 }
 ```
 

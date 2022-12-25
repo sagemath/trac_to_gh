@@ -170,7 +170,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002801.json:
+archive/issue_events_006087.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -178,6 +178,6 @@ archive/issue_events_002801.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2611",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2611#event-2801"
+    "url": "https://github.com/sagemath/sagetest/issues/2611#event-6087"
 }
 ```

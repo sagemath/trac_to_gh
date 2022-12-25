@@ -120,6 +120,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_014467.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T18:27:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6148",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6148#event-14467"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048978.json:
 ```json
 {
@@ -192,7 +209,7 @@ I also read the patch and tried things and it looks fine to me.
 
 ---
 
-archive/issue_events_006397.json:
+archive/issue_events_014468.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -200,7 +217,7 @@ archive/issue_events_006397.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6148",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6148#event-6397"
+    "url": "https://github.com/sagemath/sagetest/issues/6148#event-14468"
 }
 ```
 

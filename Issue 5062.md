@@ -64,6 +64,57 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_011669.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5062",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5062#event-11669"
+}
+```
+
+
+
+---
+
+archive/issue_events_011670.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-19T12:12:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5062",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5062#event-11670"
+}
+```
+
+
+
+---
+
+archive/issue_events_011671.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-19T12:12:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5062",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5062#event-11671"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038493.json:
 ```json
 {
@@ -154,7 +205,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_005308.json:
+archive/issue_events_011672.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -162,6 +213,6 @@ archive/issue_events_005308.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5062",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5062#event-5308"
+    "url": "https://github.com/sagemath/sagetest/issues/5062#event-11672"
 }
 ```

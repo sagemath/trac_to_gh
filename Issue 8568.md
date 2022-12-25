@@ -184,6 +184,23 @@ Attachment [trac_8568-diff_conversion.patch](tarball://root/attachments/some-uui
 
 ---
 
+archive/issue_events_020669.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-05-27T10:45:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8568",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8568#event-20669"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077474.json:
 ```json
 {
@@ -378,7 +395,7 @@ Sorry, Burcin, truthfully I hadn't even noticed that!  I was just trying to make
 
 ---
 
-archive/issue_events_008747.json:
+archive/issue_events_020670.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -386,7 +403,7 @@ archive/issue_events_008747.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#event-8747"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#event-20670"
 }
 ```
 
@@ -448,7 +465,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_008748.json:
+archive/issue_events_020671.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -456,7 +473,7 @@ archive/issue_events_008748.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#event-8748"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#event-20671"
 }
 ```
 
@@ -688,7 +705,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008749.json:
+archive/issue_events_020672.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -696,6 +713,6 @@ archive/issue_events_008749.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#event-8749"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#event-20672"
 }
 ```

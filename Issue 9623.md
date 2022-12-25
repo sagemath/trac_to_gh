@@ -574,6 +574,57 @@ Unless someone is doing it sooner, I'll run --testall --long tonight.
 
 ---
 
+archive/issue_events_023981.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jthurber",
+    "created_at": "2011-01-13T23:09:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9623",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9623#event-23981"
+}
+```
+
+
+
+---
+
+archive/issue_events_023982.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2011-01-13T23:11:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9623",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9623#event-23982"
+}
+```
+
+
+
+---
+
+archive/issue_events_023983.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2011-01-13T23:11:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9623",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9623#event-23983"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093089.json:
 ```json
 {
@@ -1056,6 +1107,40 @@ Note that changing the year was only a trivial change, I made the headers compli
 
 ---
 
+archive/issue_events_023984.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-25T18:17:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9623",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9623#event-23984"
+}
+```
+
+
+
+---
+
+archive/issue_events_023985.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-25T18:17:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9623",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9623#event-23985"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093111.json:
 ```json
 {
@@ -1186,7 +1271,7 @@ I assume that is positive review of Jeroen's changes, and I don't think such a t
 
 ---
 
-archive/issue_events_009764.json:
+archive/issue_events_023986.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1194,7 +1279,7 @@ archive/issue_events_009764.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9623#event-9764"
+    "url": "https://github.com/sagemath/sagetest/issues/9623#event-23986"
 }
 ```
 

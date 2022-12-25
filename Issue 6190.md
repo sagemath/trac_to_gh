@@ -51,6 +51,23 @@ Here's a patch.
 
 ---
 
+archive/issue_events_014530.json:
+```json
+{
+    "actor": "https://github.com/rbeezer",
+    "created_at": "2009-06-03T00:13:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6190",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6190#event-14530"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049354.json:
 ```json
 {
@@ -113,7 +130,7 @@ Merged in 4.0.1.rc0.
 
 ---
 
-archive/issue_events_006438.json:
+archive/issue_events_014531.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -121,6 +138,6 @@ archive/issue_events_006438.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6190",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6190#event-6438"
+    "url": "https://github.com/sagemath/sagetest/issues/6190#event-14531"
 }
 ```

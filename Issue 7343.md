@@ -705,6 +705,23 @@ For 4.2.1, it may also be worthwhile to include one or more of these bug fixes: 
 
 ---
 
+archive/issue_events_017382.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T19:50:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7343",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7343#event-17382"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061362.json:
 ```json
 {
@@ -723,7 +740,7 @@ I've merged this into sagenb-0.4.2 (sage-4.2.1)
 
 ---
 
-archive/issue_events_007567.json:
+archive/issue_events_017383.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -731,7 +748,7 @@ archive/issue_events_007567.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7343#event-7567"
+    "url": "https://github.com/sagemath/sagetest/issues/7343#event-17383"
 }
 ```
 

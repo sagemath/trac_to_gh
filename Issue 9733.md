@@ -745,6 +745,23 @@ Merge just this package:
 
 ---
 
+archive/issue_events_024360.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-13T07:39:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#event-24360"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094993.json:
 ```json
 {
@@ -959,7 +976,7 @@ First responde: the option `--without-bison` is not a valid option of Singular's
 
 ---
 
-archive/issue_events_009863.json:
+archive/issue_events_024361.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -967,7 +984,7 @@ archive/issue_events_009863.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9733#event-9863"
+    "url": "https://github.com/sagemath/sagetest/issues/9733#event-24361"
 }
 ```
 
@@ -1071,7 +1088,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_009864.json:
+archive/issue_events_024362.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1079,7 +1096,7 @@ archive/issue_events_009864.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9733#event-9864"
+    "url": "https://github.com/sagemath/sagetest/issues/9733#event-24362"
 }
 ```
 
@@ -1442,7 +1459,7 @@ Hope you don't spend the weekend reading the build logs... ;-)
 
 ---
 
-archive/issue_events_009865.json:
+archive/issue_events_024363.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1450,7 +1467,7 @@ archive/issue_events_009865.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9733#event-9865"
+    "url": "https://github.com/sagemath/sagetest/issues/9733#event-24363"
 }
 ```
 

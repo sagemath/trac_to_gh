@@ -126,7 +126,7 @@ I guess this should be closed as a duplicate of #9051
 
 ---
 
-archive/issue_events_008102.json:
+archive/issue_events_018861.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -134,7 +134,7 @@ archive/issue_events_008102.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7887",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7887#event-8102"
+    "url": "https://github.com/sagemath/sagetest/issues/7887#event-18861"
 }
 ```
 
@@ -155,6 +155,23 @@ archive/issue_comments_068465.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_018862.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2010-10-20T15:53:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7887",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7887#event-18862"
+}
+```
 
 
 

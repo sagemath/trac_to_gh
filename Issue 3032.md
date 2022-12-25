@@ -50,7 +50,7 @@ Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3032/9607.pat
 
 ---
 
-archive/issue_events_003239.json:
+archive/issue_events_006880.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -58,7 +58,7 @@ archive/issue_events_003239.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3032",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3032#event-3239"
+    "url": "https://github.com/sagemath/sagetest/issues/3032#event-6880"
 }
 ```
 
@@ -97,3 +97,20 @@ archive/issue_comments_020833.json:
 ```
 
 Merged in Sage 3.0.1.alpha1
+
+
+
+---
+
+archive/issue_events_006881.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-26T21:21:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3032",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3032#event-6881"
+}
+```

@@ -165,6 +165,23 @@ What are you talking about?  sage-sage is an incomprehensible disaster :-)
 
 ---
 
+archive/issue_events_005466.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:16:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2320",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2320#event-5466"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015401.json:
 ```json
 {
@@ -183,7 +200,7 @@ Patch looks good to me. Positive review. I assume I need to apply #2322 also to 
 
 ---
 
-archive/issue_events_002496.json:
+archive/issue_events_005467.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -191,7 +208,7 @@ archive/issue_events_002496.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2320#event-2496"
+    "url": "https://github.com/sagemath/sagetest/issues/2320#event-5467"
 }
 ```
 

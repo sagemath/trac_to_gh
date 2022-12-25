@@ -119,7 +119,7 @@ to me (it also fixes the extra 's' in CallableSymbolicExpressions which I did no
 
 ---
 
-archive/issue_events_002465.json:
+archive/issue_events_005411.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -127,7 +127,7 @@ archive/issue_events_002465.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2290#event-2465"
+    "url": "https://github.com/sagemath/sagetest/issues/2290#event-5411"
 }
 ```
 

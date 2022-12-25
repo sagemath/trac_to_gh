@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/707
 
 ---
 
+archive/issue_events_001891.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-23T10:32:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/707",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/707#event-1891"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003704.json:
 ```json
 {

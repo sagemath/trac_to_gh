@@ -51,6 +51,23 @@ renamed patch file to include bug #
 
 ---
 
+archive/issue_events_007905.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-06-20T04:35:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3475",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3475#event-7905"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024437.json:
 ```json
 {
@@ -177,7 +194,41 @@ Merged in Sage 3.0.4.alpha2
 
 ---
 
-archive/issue_events_003695.json:
+archive/issue_events_007906.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-03T05:03:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3475",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3475#event-7906"
+}
+```
+
+
+
+---
+
+archive/issue_events_007907.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-03T05:03:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3475",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3475#event-7907"
+}
+```
+
+
+
+---
+
+archive/issue_events_007908.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -185,6 +236,6 @@ archive/issue_events_003695.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3475",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3475#event-3695"
+    "url": "https://github.com/sagemath/sagetest/issues/3475#event-7908"
 }
 ```

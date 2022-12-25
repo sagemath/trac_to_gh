@@ -110,6 +110,23 @@ This fixes the bug and the code is fine, but in the docstring I have a minor qui
 
 ---
 
+archive/issue_events_007454.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-22T10:51:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3321",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3321#event-7454"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022982.json:
 ```json
 {
@@ -153,7 +170,7 @@ Merged in Sage 3.3.alpha1
 
 ---
 
-archive/issue_events_003539.json:
+archive/issue_events_007455.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -161,7 +178,7 @@ archive/issue_events_003539.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3321",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3321#event-3539"
+    "url": "https://github.com/sagemath/sagetest/issues/3321#event-7455"
 }
 ```
 

@@ -122,6 +122,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_019178.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/Bouillaguet",
+    "created_at": "2013-01-27T08:14:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8005",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8005#event-19178"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069833.json:
 ```json
 {
@@ -195,7 +212,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_008220.json:
+archive/issue_events_019179.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -203,7 +220,7 @@ archive/issue_events_008220.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8005",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8005#event-8220"
+    "url": "https://github.com/sagemath/sagetest/issues/8005#event-19179"
 }
 ```
 
@@ -251,6 +268,40 @@ New commits:
 
 ---
 
+archive/issue_events_019180.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2014-10-28T13:27:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8005",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8005#event-19180"
+}
+```
+
+
+
+---
+
+archive/issue_events_019181.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2014-10-28T13:27:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8005",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8005#event-19181"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069838.json:
 ```json
 {
@@ -264,3 +315,37 @@ archive/issue_comments_069838.json:
 ```
 
 Aaaannd I can't reopen the ticket. Sorry for the noise.
+
+
+
+---
+
+archive/issue_events_019182.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2014-10-28T14:18:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8005",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8005#event-19182"
+}
+```
+
+
+
+---
+
+archive/issue_events_019183.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2014-10-28T14:18:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8005",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8005#event-19183"
+}
+```

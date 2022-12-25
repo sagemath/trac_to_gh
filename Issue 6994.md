@@ -188,6 +188,23 @@ See #7022 for a port to OS X 10.6.
 
 ---
 
+archive/issue_events_016417.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-15T09:41:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6994",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6994#event-16417"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057746.json:
 ```json
 {
@@ -206,7 +223,7 @@ I think that this should be closed now that #7022 is in.
 
 ---
 
-archive/issue_events_007218.json:
+archive/issue_events_016418.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -214,7 +231,7 @@ archive/issue_events_007218.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6994",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6994#event-7218"
+    "url": "https://github.com/sagemath/sagetest/issues/6994#event-16418"
 }
 ```
 

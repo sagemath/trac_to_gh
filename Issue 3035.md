@@ -215,7 +215,7 @@ This seems to have "magically" fixed itself for me after 3.0.1.alpha1.  After co
 
 ---
 
-archive/issue_events_003242.json:
+archive/issue_events_006884.json:
 ```json
 {
     "actor": "https://github.com/garyfurnish",
@@ -223,7 +223,7 @@ archive/issue_events_003242.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3035#event-3242"
+    "url": "https://github.com/sagemath/sagetest/issues/3035#event-6884"
 }
 ```
 

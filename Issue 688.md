@@ -73,6 +73,23 @@ Did this ever work?  Is this really a feature request?
 
 ---
 
+archive/issue_events_001837.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T02:05:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/688#event-1837"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003568.json:
 ```json
 {
@@ -163,7 +180,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000755.json:
+archive/issue_events_001838.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -171,7 +188,75 @@ archive/issue_events_000755.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/688#event-755"
+    "url": "https://github.com/sagemath/sagetest/issues/688#event-1838"
+}
+```
+
+
+
+---
+
+archive/issue_events_001839.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-20T21:49:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/688#event-1839"
+}
+```
+
+
+
+---
+
+archive/issue_events_001840.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-20T21:49:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/688#event-1840"
+}
+```
+
+
+
+---
+
+archive/issue_events_001841.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-20T21:52:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/688#event-1841"
+}
+```
+
+
+
+---
+
+archive/issue_events_001842.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-20T21:52:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/688#event-1842"
 }
 ```
 
@@ -211,3 +296,37 @@ archive/issue_comments_003574.json:
 ```
 
 That comment was meant for a different ticket. Sorry.
+
+
+
+---
+
+archive/issue_events_001843.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-20T21:52:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/688#event-1843"
+}
+```
+
+
+
+---
+
+archive/issue_events_001844.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-20T21:52:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/688#event-1844"
+}
+```

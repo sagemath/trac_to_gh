@@ -116,6 +116,23 @@ Pretty straight-forward. All tests pass! Positive review.
 
 ---
 
+archive/issue_events_021032.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-19T11:32:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8673",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8673#event-21032"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078802.json:
 ```json
 {
@@ -134,7 +151,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008847.json:
+archive/issue_events_021033.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -142,6 +159,6 @@ archive/issue_events_008847.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8673",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8673#event-8847"
+    "url": "https://github.com/sagemath/sagetest/issues/8673#event-21033"
 }
 ```

@@ -66,7 +66,7 @@ part 2 of 2  -- this adds full doctests.
 
 ---
 
-archive/issue_events_003672.json:
+archive/issue_events_007825.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -74,7 +74,24 @@ archive/issue_events_003672.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3453#event-3672"
+    "url": "https://github.com/sagemath/sagetest/issues/3453#event-7825"
+}
+```
+
+
+
+---
+
+archive/issue_events_007826.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T09:59:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3453",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3453#event-7826"
 }
 ```
 

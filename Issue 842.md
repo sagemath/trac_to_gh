@@ -140,6 +140,23 @@ Part of my patch reverts changeset 15:e085dde558b2 in the spkg repository; this 
 
 ---
 
+archive/issue_events_002373.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-10T04:53:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/842",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/842#event-2373"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005197.json:
 ```json
 {
@@ -259,7 +276,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000955.json:
+archive/issue_events_002374.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -267,6 +284,6 @@ archive/issue_events_000955.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/842#event-955"
+    "url": "https://github.com/sagemath/sagetest/issues/842#event-2374"
 }
 ```

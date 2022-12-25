@@ -131,7 +131,7 @@ While not an expert on p-adic height computations (few people are, David H among
 
 ---
 
-archive/issue_events_002158.json:
+archive/issue_events_004834.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -139,7 +139,7 @@ archive/issue_events_002158.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2004",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2004#event-2158"
+    "url": "https://github.com/sagemath/sagetest/issues/2004#event-4834"
 }
 ```
 

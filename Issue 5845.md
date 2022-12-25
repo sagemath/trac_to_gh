@@ -74,6 +74,23 @@ Attachment [trac_5845.patch](tarball://root/attachments/some-uuid/ticket5845/tra
 
 ---
 
+archive/issue_events_013747.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T07:59:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5845",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5845#event-13747"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045887.json:
 ```json
 {
@@ -206,7 +223,7 @@ Good.
 
 ---
 
-archive/issue_events_006097.json:
+archive/issue_events_013748.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -214,7 +231,7 @@ archive/issue_events_006097.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5845#event-6097"
+    "url": "https://github.com/sagemath/sagetest/issues/5845#event-13748"
 }
 ```
 

@@ -70,7 +70,7 @@ William's patches in #2073 already fix this and much much more.  So close this t
 
 ---
 
-archive/issue_events_002200.json:
+archive/issue_events_004906.json:
 ```json
 {
     "actor": "https://github.com/aghitza",
@@ -78,7 +78,7 @@ archive/issue_events_002200.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2042",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2042#event-2200"
+    "url": "https://github.com/sagemath/sagetest/issues/2042#event-4906"
 }
 ```
 

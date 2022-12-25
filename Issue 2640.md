@@ -77,7 +77,7 @@ I think http://www.sagemath.org/lists.html looks good.
 
 ---
 
-archive/issue_events_002831.json:
+archive/issue_events_006191.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -85,7 +85,7 @@ archive/issue_events_002831.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2640",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2640#event-2831"
+    "url": "https://github.com/sagemath/sagetest/issues/2640#event-6191"
 }
 ```
 

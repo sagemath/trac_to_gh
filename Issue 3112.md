@@ -645,7 +645,7 @@ Michael
 
 ---
 
-archive/issue_events_003330.json:
+archive/issue_events_007028.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -653,7 +653,7 @@ archive/issue_events_003330.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3112#event-3330"
+    "url": "https://github.com/sagemath/sagetest/issues/3112#event-7028"
 }
 ```
 
@@ -692,3 +692,20 @@ archive/issue_comments_021504.json:
 ```
 
 Merged in Sage 3.0.2.rc0
+
+
+
+---
+
+archive/issue_events_007029.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-22T23:19:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3112",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3112#event-7029"
+}
+```

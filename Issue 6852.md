@@ -94,7 +94,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6852
 
 ---
 
-archive/issue_events_007085.json:
+archive/issue_events_016123.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -102,7 +102,7 @@ archive/issue_events_007085.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6852",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6852#event-7085"
+    "url": "https://github.com/sagemath/sagetest/issues/6852#event-16123"
 }
 ```
 
@@ -123,3 +123,20 @@ archive/issue_comments_056397.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_016124.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-20T13:54:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6852",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6852#event-16124"
+}
+```

@@ -227,7 +227,7 @@ Ticket #6532 incorporates the patch on this ticket, so no need to merge the patc
 
 ---
 
-archive/issue_events_008048.json:
+archive/issue_events_018734.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -235,6 +235,6 @@ archive/issue_events_008048.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7833",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7833#event-8048"
+    "url": "https://github.com/sagemath/sagetest/issues/7833#event-18734"
 }
 ```

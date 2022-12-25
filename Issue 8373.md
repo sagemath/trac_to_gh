@@ -177,6 +177,23 @@ I would propose adding the option `modulus="primitive"` to solve this ticket.
 
 ---
 
+archive/issue_events_020076.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-06-26T14:56:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8373",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8373#event-20076"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074736.json:
 ```json
 {
@@ -253,6 +270,40 @@ And sufficient for you to consider this issue fixed?
 
 > But a problem with the modified description is that the discussion in comments 1 and 2 is now out of context.
 Sure, but that's not really a problem, right?
+
+
+
+---
+
+archive/issue_events_020077.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8373",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8373#event-20077"
+}
+```
+
+
+
+---
+
+archive/issue_events_020078.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8373",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8373#event-20078"
+}
+```
 
 
 
@@ -532,7 +583,7 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_008560.json:
+archive/issue_events_020079.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -540,7 +591,7 @@ archive/issue_events_008560.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8373#event-8560"
+    "url": "https://github.com/sagemath/sagetest/issues/8373#event-20079"
 }
 ```
 

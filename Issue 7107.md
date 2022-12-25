@@ -174,7 +174,7 @@ Another followup - I changed the script back to include spkg-check, sage -f'ed t
 
 ---
 
-archive/issue_events_007329.json:
+archive/issue_events_016804.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -182,7 +182,7 @@ archive/issue_events_007329.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7107",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7107#event-7329"
+    "url": "https://github.com/sagemath/sagetest/issues/7107#event-16804"
 }
 ```
 
@@ -203,3 +203,20 @@ archive/issue_comments_058737.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_016805.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-14T16:12:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7107",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7107#event-16805"
+}
+```

@@ -121,7 +121,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/113
 
 ---
 
-archive/issue_events_000119.json:
+archive/issue_events_000225.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -129,7 +129,7 @@ archive/issue_events_000119.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/113",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/113#event-119"
+    "url": "https://github.com/sagemath/sagetest/issues/113#event-225"
 }
 ```
 

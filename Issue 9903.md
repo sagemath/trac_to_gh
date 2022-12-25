@@ -160,7 +160,7 @@ Works for me with sage-5.3.rc0...
 
 ---
 
-archive/issue_events_010031.json:
+archive/issue_events_024951.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -168,7 +168,7 @@ archive/issue_events_010031.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9903",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9903#event-10031"
+    "url": "https://github.com/sagemath/sagetest/issues/9903#event-24951"
 }
 ```
 
@@ -189,3 +189,20 @@ archive/issue_comments_098299.json:
 ```
 
 Resolution: worksforme
+
+
+
+---
+
+archive/issue_events_024952.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-23T18:46:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9903",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9903#event-24952"
+}
+```

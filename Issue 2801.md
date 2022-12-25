@@ -64,6 +64,23 @@ Changing component from Cygwin to notebook.
 
 ---
 
+archive/issue_events_006457.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2012-05-28T07:23:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2801",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2801#event-6457"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019188.json:
 ```json
 {
@@ -118,7 +135,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002992.json:
+archive/issue_events_006458.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -126,7 +143,7 @@ archive/issue_events_002992.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2801",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2801#event-2992"
+    "url": "https://github.com/sagemath/sagetest/issues/2801#event-6458"
 }
 ```
 

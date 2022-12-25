@@ -246,7 +246,7 @@ Looks good to me: patch applies fine to 4.0.rc1, all doctests in the quatalg dir
 
 ---
 
-archive/issue_events_005361.json:
+archive/issue_events_011831.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -254,7 +254,7 @@ archive/issue_events_005361.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5114#event-5361"
+    "url": "https://github.com/sagemath/sagetest/issues/5114#event-11831"
 }
 ```
 

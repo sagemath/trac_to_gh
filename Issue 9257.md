@@ -113,7 +113,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_009417.json:
+archive/issue_events_022800.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -121,7 +121,7 @@ archive/issue_events_009417.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9257#event-9417"
+    "url": "https://github.com/sagemath/sagetest/issues/9257#event-22800"
 }
 ```
 
@@ -142,6 +142,23 @@ archive/issue_comments_086977.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_022801.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-21T10:10:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9257",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9257#event-22801"
+}
+```
 
 
 

@@ -64,7 +64,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_003858.json:
+archive/issue_events_008350.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +72,7 @@ archive/issue_events_003858.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3639",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3639#event-3858"
+    "url": "https://github.com/sagemath/sagetest/issues/3639#event-8350"
 }
 ```
 
@@ -97,3 +97,20 @@ Closed as a dupe of #4760.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_008351.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-11T15:46:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3639",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3639#event-8351"
+}
+```

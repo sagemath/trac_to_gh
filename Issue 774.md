@@ -582,7 +582,24 @@ Attachment [#774.patch](tarball://root/attachments/some-uuid/ticket774/#774.patc
 
 ---
 
-archive/issue_events_000877.json:
+archive/issue_events_002132.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:57:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/774",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/774#event-2132"
+}
+```
+
+
+
+---
+
+archive/issue_events_002133.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -590,7 +607,7 @@ archive/issue_events_000877.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/774",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/774#event-877"
+    "url": "https://github.com/sagemath/sagetest/issues/774#event-2133"
 }
 ```
 
@@ -611,3 +628,37 @@ archive/issue_comments_004610.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002134.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:11:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/774",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/774#event-2134"
+}
+```
+
+
+
+---
+
+archive/issue_events_002135.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:11:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/774",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/774#event-2135"
+}
+```

@@ -80,6 +80,23 @@ I'll run all the tests with it here in a bit.
 
 ---
 
+archive/issue_events_017562.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T17:42:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7421",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7421#event-17562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062339.json:
 ```json
 {
@@ -184,6 +201,40 @@ I'm going to move this to 4.3 where it's more relevant.
 
 ---
 
+archive/issue_events_017563.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-13T04:48:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7421",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7421#event-17563"
+}
+```
+
+
+
+---
+
+archive/issue_events_017564.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-13T04:48:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7421",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7421#event-17564"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062344.json:
 ```json
 {
@@ -220,7 +271,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007645.json:
+archive/issue_events_017565.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -228,7 +279,7 @@ archive/issue_events_007645.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7421#event-7645"
+    "url": "https://github.com/sagemath/sagetest/issues/7421#event-17565"
 }
 ```
 

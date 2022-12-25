@@ -121,6 +121,23 @@ Michael
 
 ---
 
+archive/issue_events_004468.json:
+```json
+{
+    "actor": "https://github.com/ohanar",
+    "created_at": "2012-06-18T02:45:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1842",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1842#event-4468"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011635.json:
 ```json
 {
@@ -175,7 +192,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_002001.json:
+archive/issue_events_004469.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -183,6 +200,6 @@ archive/issue_events_002001.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1842",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1842#event-2001"
+    "url": "https://github.com/sagemath/sagetest/issues/1842#event-4469"
 }
 ```

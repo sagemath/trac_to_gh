@@ -59,6 +59,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/730
 
 ---
 
+archive/issue_events_001976.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T18:50:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/730",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/730#event-1976"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004272.json:
 ```json
 {
@@ -238,6 +255,40 @@ The above patch breaks a doctest.  A determinant has the opposite sign, which wo
 
 ---
 
+archive/issue_events_001977.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:57:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/730",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/730#event-1977"
+}
+```
+
+
+
+---
+
+archive/issue_events_001978.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:57:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/730",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/730#event-1978"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004275.json:
 ```json
 {
@@ -256,7 +307,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000815.json:
+archive/issue_events_001979.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -264,6 +315,40 @@ archive/issue_events_000815.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/730#event-815"
+    "url": "https://github.com/sagemath/sagetest/issues/730#event-1979"
+}
+```
+
+
+
+---
+
+archive/issue_events_001980.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:11:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/730",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/730#event-1980"
+}
+```
+
+
+
+---
+
+archive/issue_events_001981.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:11:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/730",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/730#event-1981"
 }
 ```

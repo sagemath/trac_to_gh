@@ -238,7 +238,7 @@ Release manager: Apply just this patch.
 
 ---
 
-archive/issue_events_008783.json:
+archive/issue_events_020818.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -246,7 +246,7 @@ archive/issue_events_008783.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#event-8783"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#event-20818"
 }
 ```
 
@@ -287,3 +287,20 @@ archive/issue_comments_077916.json:
 Attachment [trac_8612_multimodular_echelon.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612_multimodular_echelon.patch) by @williamstein created at 2010-03-29 22:06:58
 
 Merged into sage-4.3.5
+
+
+
+---
+
+archive/issue_events_020819.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-30T12:10:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "milestone": "sage-4.3.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#event-20819"
+}
+```

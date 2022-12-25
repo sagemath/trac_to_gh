@@ -796,7 +796,7 @@ I have one minor gripe: there are one or two cases where the new Conic classes i
 
 ---
 
-archive/issue_events_000810.json:
+archive/issue_events_001968.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -804,7 +804,7 @@ archive/issue_events_000810.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/727#event-810"
+    "url": "https://github.com/sagemath/sagetest/issues/727#event-1968"
 }
 ```
 

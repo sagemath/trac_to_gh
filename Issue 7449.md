@@ -219,6 +219,23 @@ Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/
 
 ---
 
+archive/issue_events_017664.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-16T17:26:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7449",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7449#event-17664"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062632.json:
 ```json
 {
@@ -286,7 +303,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007676.json:
+archive/issue_events_017665.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -294,6 +311,6 @@ archive/issue_events_007676.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#event-7676"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#event-17665"
 }
 ```

@@ -91,6 +91,23 @@ Attachment [zero_submodule](tarball://root/attachments/some-uuid/ticket1124/zero
 
 ---
 
+archive/issue_events_003002.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-07T18:18:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1124",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1124#event-3002"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006770.json:
 ```json
 {
@@ -127,6 +144,40 @@ Attachment [doctest](tarball://root/attachments/some-uuid/ticket1124/doctest) by
 
 ---
 
+archive/issue_events_003003.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:56:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1124",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1124#event-3003"
+}
+```
+
+
+
+---
+
+archive/issue_events_003004.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:56:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1124",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1124#event-3004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006772.json:
 ```json
 {
@@ -145,7 +196,7 @@ archive/issue_comments_006772.json:
 
 ---
 
-archive/issue_events_001250.json:
+archive/issue_events_003005.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -153,7 +204,7 @@ archive/issue_events_001250.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1124",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1124#event-1250"
+    "url": "https://github.com/sagemath/sagetest/issues/1124#event-3005"
 }
 ```
 

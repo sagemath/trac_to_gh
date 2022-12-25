@@ -321,6 +321,23 @@ Dave
 
 ---
 
+archive/issue_events_021352.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T04:07:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#event-21352"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080114.json:
 ```json
 {
@@ -420,7 +437,7 @@ Dave
 
 ---
 
-archive/issue_events_008936.json:
+archive/issue_events_021353.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -428,7 +445,7 @@ archive/issue_events_008936.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8768#event-8936"
+    "url": "https://github.com/sagemath/sagetest/issues/8768#event-21353"
 }
 ```
 
@@ -479,6 +496,40 @@ Correction, this is not SPARC, but x86. In which case, IMHO, gcc should be confi
 
 
 the problem has gone. So this remains invalid.
+
+
+
+---
+
+archive/issue_events_021354.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-31T21:54:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#event-21354"
+}
+```
+
+
+
+---
+
+archive/issue_events_021355.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-31T21:54:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#event-21355"
+}
+```
 
 
 

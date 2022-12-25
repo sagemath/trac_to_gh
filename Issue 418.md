@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/418
 
 ---
 
+archive/issue_events_001021.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:43:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/418",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-1021"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002051.json:
 ```json
 {
@@ -299,6 +316,40 @@ archive/issue_comments_002064.json:
 ```
 
 Changing keywords from "" to "SAT".
+
+
+
+---
+
+archive/issue_events_001022.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2012-06-15T16:18:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/418",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-1022"
+}
+```
+
+
+
+---
+
+archive/issue_events_001023.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2012-06-15T16:18:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/418",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-1023"
+}
+```
 
 
 
@@ -861,6 +912,40 @@ Okay, I'm testing the repo.  **Please don't change it** anymore (unless of cours
 
 ---
 
+archive/issue_events_001024.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-31T17:43:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/418",
+    "milestone": "sage-5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-1024"
+}
+```
+
+
+
+---
+
+archive/issue_events_001025.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-31T17:43:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/418",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-1025"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002092.json:
 ```json
 {
@@ -879,7 +964,41 @@ There is a problem with `sage/sat/solvers/cryptominisat/solverconf_helper.cpp` n
 
 ---
 
-archive/issue_events_000445.json:
+archive/issue_events_001026.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-06T13:14:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/418",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-1026"
+}
+```
+
+
+
+---
+
+archive/issue_events_001027.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-06T13:14:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/418",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-1027"
+}
+```
+
+
+
+---
+
+archive/issue_events_001028.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -887,7 +1006,7 @@ archive/issue_events_000445.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/418",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/418#event-445"
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-1028"
 }
 ```
 

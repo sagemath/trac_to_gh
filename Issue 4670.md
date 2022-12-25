@@ -47,6 +47,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4670
 
 ---
 
+archive/issue_events_010695.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-02T01:40:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4670",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4670#event-10695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035106.json:
 ```json
 {
@@ -198,7 +215,7 @@ Only the relevant lines from Kevin's patch
 
 ---
 
-archive/issue_events_004918.json:
+archive/issue_events_010696.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -206,7 +223,7 @@ archive/issue_events_004918.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4670",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4670#event-4918"
+    "url": "https://github.com/sagemath/sagetest/issues/4670#event-10696"
 }
 ```
 

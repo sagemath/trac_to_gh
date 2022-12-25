@@ -191,7 +191,7 @@ I don't want it.
 
 ---
 
-archive/issue_events_003289.json:
+archive/issue_events_006950.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -199,7 +199,7 @@ archive/issue_events_003289.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3075",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3075#event-3289"
+    "url": "https://github.com/sagemath/sagetest/issues/3075#event-6950"
 }
 ```
 
@@ -220,3 +220,20 @@ archive/issue_comments_021182.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_006951.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T13:03:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3075",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3075#event-6951"
+}
+```

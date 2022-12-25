@@ -311,6 +311,23 @@ However what I'm thinking as a solution is that any parent in the category of `R
 
 ---
 
+archive/issue_events_020118.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#event-20118"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074991.json:
 ```json
 {
@@ -333,6 +350,40 @@ And I'm honestly at lost as to how to use the category framework with fundamenta
 In our case, it would make sense (despite the issue with matrix rings) to move the definition of `__getitem__` that deals with polynomials rings and the like from `sage.structure.Rings` to `sage.category.rings.Rings.ParentMethods`. But many common rings do not descend from `Rings().parent_class`, so one would need a wrapper in one direction or the other. Since `Rings.ParentMethods` is supposedly the recommended place to add generic stuff for rings in the long run, it would be natural to move the implementation there and provide a compatibility wrapper in `Ring`. Except that `Ring` comes before `Rings.ParentMethods` in the MRO of (most?) rings that use both...
 
 (On the top of that, there is a hack in `Parent.__getitem__` that one needs to be careful not to break...)
+
+
+
+---
+
+archive/issue_events_020119.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#event-20119"
+}
+```
+
+
+
+---
+
+archive/issue_events_020120.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#event-20120"
+}
+```
 
 
 
@@ -660,7 +711,7 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_events_008574.json:
+archive/issue_events_020121.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -668,7 +719,7 @@ archive/issue_events_008574.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8389#event-8574"
+    "url": "https://github.com/sagemath/sagetest/issues/8389#event-20121"
 }
 ```
 

@@ -71,7 +71,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009571.json:
+archive/issue_events_023250.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/rkirov",
@@ -79,7 +79,7 @@ archive/issue_events_009571.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9415",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9415#event-9571"
+    "url": "https://github.com/sagemath/sagetest/issues/9415#event-23250"
 }
 ```
 
@@ -100,3 +100,20 @@ archive/issue_comments_089599.json:
 ```
 
 culprit is in #10583
+
+
+
+---
+
+archive/issue_events_023251.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2011-01-11T09:20:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9415",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9415#event-23251"
+}
+```

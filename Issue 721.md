@@ -51,6 +51,23 @@ please apply #635 before doing this!
 
 ---
 
+archive/issue_events_001945.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T02:30:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1945"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004181.json:
 ```json
 {
@@ -107,7 +124,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000802.json:
+archive/issue_events_001946.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -115,7 +132,7 @@ archive/issue_events_000802.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/721#event-802"
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1946"
 }
 ```
 
@@ -136,6 +153,40 @@ archive/issue_comments_004184.json:
 ```
 
 Actually, the patch I just posted is completely broken.  Re-opening the ticket!
+
+
+
+---
+
+archive/issue_events_001947.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-02T04:08:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1947"
+}
+```
+
+
+
+---
+
+archive/issue_events_001948.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-02T04:08:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1948"
+}
+```
 
 
 
@@ -177,7 +228,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000803.json:
+archive/issue_events_001949.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -185,7 +236,7 @@ archive/issue_events_000803.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/721#event-803"
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1949"
 }
 ```
 
@@ -206,6 +257,40 @@ archive/issue_comments_004187.json:
 ```
 
 Do not apply any of the above patches yet!!!!
+
+
+
+---
+
+archive/issue_events_001950.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T17:54:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1950"
+}
+```
+
+
+
+---
+
+archive/issue_events_001951.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T17:54:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1951"
+}
+```
 
 
 
@@ -257,6 +342,40 @@ Michael
 
 ---
 
+archive/issue_events_001952.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-13T03:11:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1952"
+}
+```
+
+
+
+---
+
+archive/issue_events_001953.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-13T03:11:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1953"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004190.json:
 ```json
 {
@@ -275,7 +394,7 @@ Bundled against 2.8.6, with additional material (added ntl ZZ_pE and ZZ_pEX)
 
 ---
 
-archive/issue_events_000804.json:
+archive/issue_events_001954.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -283,7 +402,7 @@ archive/issue_events_000804.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/721#event-804"
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1954"
 }
 ```
 
@@ -322,3 +441,37 @@ archive/issue_comments_004192.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001955.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-20T19:18:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1955"
+}
+```
+
+
+
+---
+
+archive/issue_events_001956.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-20T19:18:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-1956"
+}
+```

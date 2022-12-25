@@ -65,6 +65,23 @@ About the new patch, I meant a new patch that only removes the option on systems
 
 ---
 
+archive/issue_events_009249.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-03T18:10:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4049",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4049#event-9249"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029138.json:
 ```json
 {
@@ -160,7 +177,7 @@ Michael
 
 ---
 
-archive/issue_events_004281.json:
+archive/issue_events_009250.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -168,7 +185,7 @@ archive/issue_events_004281.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4049",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4049#event-4281"
+    "url": "https://github.com/sagemath/sagetest/issues/4049#event-9250"
 }
 ```
 

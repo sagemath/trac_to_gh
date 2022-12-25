@@ -48,6 +48,23 @@ This is a dup of #6865
 
 ---
 
+archive/issue_events_016326.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-17T20:49:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6940",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6940#event-16326"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057276.json:
 ```json
 {
@@ -84,7 +101,7 @@ Closing this as a duplicate of #6865.
 
 ---
 
-archive/issue_events_007165.json:
+archive/issue_events_016327.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -92,6 +109,6 @@ archive/issue_events_007165.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6940",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6940#event-7165"
+    "url": "https://github.com/sagemath/sagetest/issues/6940#event-16327"
 }
 ```

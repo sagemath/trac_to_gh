@@ -129,6 +129,23 @@ Charpoly method is good too. Apply both patches.
 
 ---
 
+archive/issue_events_008340.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-11T17:46:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3634",
+    "milestone": "sage-3.0.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3634#event-8340"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025655.json:
 ```json
 {
@@ -151,7 +168,7 @@ Michael
 
 ---
 
-archive/issue_events_003853.json:
+archive/issue_events_008341.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -159,7 +176,7 @@ archive/issue_events_003853.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3634",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3634#event-3853"
+    "url": "https://github.com/sagemath/sagetest/issues/3634#event-8341"
 }
 ```
 

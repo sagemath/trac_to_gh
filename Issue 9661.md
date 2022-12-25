@@ -175,7 +175,24 @@ It's exactly as you say, new_gen() calls _sig_off.
 
 ---
 
-archive/issue_events_009796.json:
+archive/issue_events_024099.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-03T07:07:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9661",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9661#event-24099"
+}
+```
+
+
+
+---
+
+archive/issue_events_024100.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -183,7 +200,7 @@ archive/issue_events_009796.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9661#event-9796"
+    "url": "https://github.com/sagemath/sagetest/issues/9661#event-24100"
 }
 ```
 

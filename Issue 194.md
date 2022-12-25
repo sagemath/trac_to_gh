@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/194
 
 ---
 
-archive/issue_events_000203.json:
+archive/issue_events_000381.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -47,7 +47,7 @@ archive/issue_events_000203.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/194",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/194#event-203"
+    "url": "https://github.com/sagemath/sagetest/issues/194#event-381"
 }
 ```
 
@@ -86,3 +86,20 @@ archive/issue_comments_000885.json:
 ```
 
 Fixed by re-enabling sig handling behavior.
+
+
+
+---
+
+archive/issue_events_000382.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-25T19:10:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/194",
+    "milestone": "sage-1.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/194#event-382"
+}
+```

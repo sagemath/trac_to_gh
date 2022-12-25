@@ -54,7 +54,7 @@ Changing assignee from boothby to @williamstein.
 
 ---
 
-archive/issue_events_000376.json:
+archive/issue_events_000834.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -62,7 +62,7 @@ archive/issue_events_000376.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/353",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/353#event-376"
+    "url": "https://github.com/sagemath/sagetest/issues/353#event-834"
 }
 ```
 

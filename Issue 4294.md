@@ -47,7 +47,7 @@ This will work once #12415 is finished (it works now on my machine).
 
 ---
 
-archive/issue_events_004537.json:
+archive/issue_events_009700.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -55,7 +55,24 @@ archive/issue_events_004537.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4294",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4294#event-4537"
+    "url": "https://github.com/sagemath/sagetest/issues/4294#event-9700"
+}
+```
+
+
+
+---
+
+archive/issue_events_009701.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-22T21:35:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4294",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4294#event-9701"
 }
 ```
 

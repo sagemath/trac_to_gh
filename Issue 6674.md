@@ -459,7 +459,7 @@ Nothing wrong to report. Positive review !
 
 ---
 
-archive/issue_events_006910.json:
+archive/issue_events_015747.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -467,7 +467,7 @@ archive/issue_events_006910.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6674",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6674#event-6910"
+    "url": "https://github.com/sagemath/sagetest/issues/6674#event-15747"
 }
 ```
 

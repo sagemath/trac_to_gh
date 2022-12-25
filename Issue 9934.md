@@ -131,6 +131,125 @@ There are plenty of examples in the directory `sage/functions/`, just look for c
 
 ---
 
+archive/issue_events_025054.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25054"
+}
+```
+
+
+
+---
+
+archive/issue_events_025055.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25055"
+}
+```
+
+
+
+---
+
+archive/issue_events_025056.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25056"
+}
+```
+
+
+
+---
+
+archive/issue_events_025057.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25057"
+}
+```
+
+
+
+---
+
+archive/issue_events_025058.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25058"
+}
+```
+
+
+
+---
+
+archive/issue_events_025059.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25059"
+}
+```
+
+
+
+---
+
+archive/issue_events_025060.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25060"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098750.json:
 ```json
 {
@@ -149,6 +268,40 @@ I would suspect that this has been discussed at length in the past years.
 I'm bringing this up because I'm in need of periodic piecewise functions (#21215). Using a suitable symbolic mod would be one way. 
 On Mathematica, using their 3-argument Mod function seems to be the standard way for defining periodic piecewise functions - see for example here: http://community.wolfram.com/groups/-/m/t/156025
 We could to the same (one possible route).
+
+
+
+---
+
+archive/issue_events_025061.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2016-08-10T20:50:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25061"
+}
+```
+
+
+
+---
+
+archive/issue_events_025062.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2016-08-10T20:50:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "milestone": "sage-7.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#event-25062"
+}
+```
 
 
 

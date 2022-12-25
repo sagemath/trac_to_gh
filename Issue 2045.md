@@ -101,7 +101,7 @@ Or maybe we could even just put up a blank plot, but somehow print out a warning
 
 ---
 
-archive/issue_events_002203.json:
+archive/issue_events_004918.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -109,7 +109,7 @@ archive/issue_events_002203.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2045",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2045#event-2203"
+    "url": "https://github.com/sagemath/sagetest/issues/2045#event-4918"
 }
 ```
 

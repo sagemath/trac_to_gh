@@ -170,7 +170,7 @@ looks good
 
 ---
 
-archive/issue_events_004044.json:
+archive/issue_events_008762.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -178,7 +178,24 @@ archive/issue_events_004044.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3820",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3820#event-4044"
+    "url": "https://github.com/sagemath/sagetest/issues/3820#event-8762"
+}
+```
+
+
+
+---
+
+archive/issue_events_008763.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-25T08:35:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#event-8763"
 }
 ```
 

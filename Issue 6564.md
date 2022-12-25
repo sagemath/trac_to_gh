@@ -335,6 +335,23 @@ Dave
 
 ---
 
+archive/issue_events_015481.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2009-08-11T07:45:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6564",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6564#event-15481"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053439.json:
 ```json
 {
@@ -623,7 +640,7 @@ Oh... I didn't apply the patch at #6699. No wonder I got the doctest failures.
 
 ---
 
-archive/issue_events_006801.json:
+archive/issue_events_015482.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -631,7 +648,7 @@ archive/issue_events_006801.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6564",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6564#event-6801"
+    "url": "https://github.com/sagemath/sagetest/issues/6564#event-15482"
 }
 ```
 

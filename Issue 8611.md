@@ -135,6 +135,23 @@ A few doctests don't pass, including one troubling one that seems to indicate th
 
 ---
 
+archive/issue_events_020816.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-03-26T03:57:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8611",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8611#event-20816"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077880.json:
 ```json
 {
@@ -1074,7 +1091,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008782.json:
+archive/issue_events_020817.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1082,7 +1099,7 @@ archive/issue_events_008782.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8611#event-8782"
+    "url": "https://github.com/sagemath/sagetest/issues/8611#event-20817"
 }
 ```
 

@@ -105,7 +105,7 @@ This seems fine, and still installs well - SPKG updated, hg fine, passes the (tw
 
 ---
 
-archive/issue_events_007914.json:
+archive/issue_events_018392.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -113,7 +113,7 @@ archive/issue_events_007914.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7697",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7697#event-7914"
+    "url": "https://github.com/sagemath/sagetest/issues/7697#event-18392"
 }
 ```
 

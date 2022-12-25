@@ -100,6 +100,23 @@ works for me
 
 ---
 
+archive/issue_events_007827.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-06-24T07:08:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3454",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3454#event-7827"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024308.json:
 ```json
 {
@@ -136,7 +153,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003673.json:
+archive/issue_events_007828.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -144,6 +161,40 @@ archive/issue_events_003673.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3454",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3454#event-3673"
+    "url": "https://github.com/sagemath/sagetest/issues/3454#event-7828"
+}
+```
+
+
+
+---
+
+archive/issue_events_007829.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T05:57:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3454",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3454#event-7829"
+}
+```
+
+
+
+---
+
+archive/issue_events_007830.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T05:57:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3454",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3454#event-7830"
 }
 ```

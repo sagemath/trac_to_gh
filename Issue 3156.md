@@ -100,6 +100,23 @@ Yes, it should be closed.  To "delete" a published worksheet, simply "unpublishi
 
 ---
 
+archive/issue_events_007133.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T17:29:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3156",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3156#event-7133"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021856.json:
 ```json
 {
@@ -140,7 +157,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003376.json:
+archive/issue_events_007134.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -148,6 +165,6 @@ archive/issue_events_003376.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3156",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3156#event-3376"
+    "url": "https://github.com/sagemath/sagetest/issues/3156#event-7134"
 }
 ```

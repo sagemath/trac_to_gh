@@ -58,6 +58,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1221
 
 ---
 
+archive/issue_events_003237.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-21T16:11:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1221",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1221#event-3237"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007570.json:
 ```json
 {
@@ -484,7 +501,7 @@ I'm closing this as fixed. See comment:8 for more info.
 
 ---
 
-archive/issue_events_001359.json:
+archive/issue_events_003238.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -492,6 +509,40 @@ archive/issue_events_001359.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1221#event-1359"
+    "url": "https://github.com/sagemath/sagetest/issues/1221#event-3238"
+}
+```
+
+
+
+---
+
+archive/issue_events_003239.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-09-08T12:29:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1221",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1221#event-3239"
+}
+```
+
+
+
+---
+
+archive/issue_events_003240.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-09-08T12:29:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1221",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1221#event-3240"
 }
 ```

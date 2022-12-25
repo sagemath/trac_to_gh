@@ -66,6 +66,23 @@ This is a duplicate of #8164, which has more comments.  I'm putting its example 
 
 ---
 
+archive/issue_events_016218.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-10-28T17:58:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6894",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6894#event-16218"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056845.json:
 ```json
 {
@@ -84,7 +101,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007123.json:
+archive/issue_events_016219.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -92,7 +109,7 @@ archive/issue_events_007123.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6894",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6894#event-7123"
+    "url": "https://github.com/sagemath/sagetest/issues/6894#event-16219"
 }
 ```
 

@@ -92,6 +92,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_008139.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-07T00:16:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3551",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3551#event-8139"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025070.json:
 ```json
 {
@@ -128,7 +145,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003769.json:
+archive/issue_events_008140.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -136,6 +153,6 @@ archive/issue_events_003769.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3551",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3551#event-3769"
+    "url": "https://github.com/sagemath/sagetest/issues/3551#event-8140"
 }
 ```

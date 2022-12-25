@@ -229,7 +229,7 @@ Merged sage-3764_1.patch-sage-3764_7.patch in Sage 3.1.alpha1
 
 ---
 
-archive/issue_events_003986.json:
+archive/issue_events_008632.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -237,7 +237,7 @@ archive/issue_events_003986.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3764#event-3986"
+    "url": "https://github.com/sagemath/sagetest/issues/3764#event-8632"
 }
 ```
 

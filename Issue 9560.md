@@ -79,6 +79,23 @@ Changing status from new to needs_info.
 
 ---
 
+archive/issue_events_023805.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-07-24T21:03:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9560",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9560#event-23805"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092004.json:
 ```json
 {
@@ -218,7 +235,7 @@ Anyway, positive review.  It would have been nice to have an example with `False
 
 ---
 
-archive/issue_events_009705.json:
+archive/issue_events_023806.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -226,7 +243,7 @@ archive/issue_events_009705.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9560#event-9705"
+    "url": "https://github.com/sagemath/sagetest/issues/9560#event-23806"
 }
 ```
 

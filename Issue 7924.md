@@ -139,7 +139,7 @@ Works with sagenb-0.6.
 
 ---
 
-archive/issue_events_008140.json:
+archive/issue_events_018984.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -147,7 +147,7 @@ archive/issue_events_008140.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7924#event-8140"
+    "url": "https://github.com/sagemath/sagetest/issues/7924#event-18984"
 }
 ```
 
@@ -168,3 +168,20 @@ archive/issue_comments_068856.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_018985.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:15:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7924",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7924#event-18985"
+}
+```

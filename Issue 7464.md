@@ -178,7 +178,7 @@ William
 
 ---
 
-archive/issue_events_007690.json:
+archive/issue_events_017694.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -186,7 +186,7 @@ archive/issue_events_007690.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7464#event-7690"
+    "url": "https://github.com/sagemath/sagetest/issues/7464#event-17694"
 }
 ```
 

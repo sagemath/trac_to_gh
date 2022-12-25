@@ -47,6 +47,23 @@ The attached patch requires http://sage.math.washington.edu/home/malb/pkgs/libfp
 
 ---
 
+archive/issue_events_002554.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-21T16:20:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/929",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/929#event-2554"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005664.json:
 ```json
 {
@@ -127,7 +144,7 @@ This is applied to 2.8.9.alpha0 and thus fixed.
 
 ---
 
-archive/issue_events_001048.json:
+archive/issue_events_002555.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -135,7 +152,7 @@ archive/issue_events_001048.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/929",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/929#event-1048"
+    "url": "https://github.com/sagemath/sagetest/issues/929#event-2555"
 }
 ```
 

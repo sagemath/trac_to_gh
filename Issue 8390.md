@@ -247,6 +247,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_020122.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-04-07T14:07:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8390",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8390#event-20122"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075012.json:
 ```json
 {
@@ -285,7 +302,7 @@ Merged trac-8390.patch in 4.4.alpha0
 
 ---
 
-archive/issue_events_008575.json:
+archive/issue_events_020123.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -293,7 +310,7 @@ archive/issue_events_008575.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8390#event-8575"
+    "url": "https://github.com/sagemath/sagetest/issues/8390#event-20123"
 }
 ```
 

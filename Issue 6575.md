@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6575
 
 ---
 
-archive/issue_events_006812.json:
+archive/issue_events_015513.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -69,7 +69,7 @@ archive/issue_events_006812.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6575",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6575#event-6812"
+    "url": "https://github.com/sagemath/sagetest/issues/6575#event-15513"
 }
 ```
 
@@ -108,3 +108,20 @@ archive/issue_comments_053586.json:
 ```
 
 I'm closing this, since we've removed `Worksheet.do_sage_extensions_preparsing` and no longer use `Worksheet.hunt_file` (cf. #7483).  We can open a separate ticket to trim obsolete code from `worksheet.py`.
+
+
+
+---
+
+archive/issue_events_015514.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-26T00:26:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6575",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6575#event-15514"
+}
+```

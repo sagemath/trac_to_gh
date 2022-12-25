@@ -102,7 +102,7 @@ Merged in 2.8.15.alpha2.
 
 ---
 
-archive/issue_events_001495.json:
+archive/issue_events_003500.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,6 +110,6 @@ archive/issue_events_001495.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1353",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1353#event-1495"
+    "url": "https://github.com/sagemath/sagetest/issues/1353#event-3500"
 }
 ```

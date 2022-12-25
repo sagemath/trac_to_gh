@@ -102,6 +102,57 @@ Apply after #3471.
 
 ---
 
+archive/issue_events_007707.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-06-22T20:54:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3419",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3419#event-7707"
+}
+```
+
+
+
+---
+
+archive/issue_events_007708.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-06-23T02:56:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3419",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3419#event-7708"
+}
+```
+
+
+
+---
+
+archive/issue_events_007709.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-06-23T02:56:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3419",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3419#event-7709"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024022.json:
 ```json
 {
@@ -120,7 +171,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003635.json:
+archive/issue_events_007710.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,7 +179,7 @@ archive/issue_events_003635.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3419",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3419#event-3635"
+    "url": "https://github.com/sagemath/sagetest/issues/3419#event-7710"
 }
 ```
 

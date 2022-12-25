@@ -252,7 +252,7 @@ Apply [attachment:trac_8345-doctest.patch].
 
 ---
 
-archive/issue_events_008535.json:
+archive/issue_events_019998.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -260,7 +260,7 @@ archive/issue_events_008535.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8345#event-8535"
+    "url": "https://github.com/sagemath/sagetest/issues/8345#event-19998"
 }
 ```
 

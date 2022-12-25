@@ -517,7 +517,24 @@ Paul
 
 ---
 
-archive/issue_events_006683.json:
+archive/issue_events_015193.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-01-15T10:41:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6442",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6442#event-15193"
+}
+```
+
+
+
+---
+
+archive/issue_events_015194.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -525,7 +542,7 @@ archive/issue_events_006683.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6442#event-6683"
+    "url": "https://github.com/sagemath/sagetest/issues/6442#event-15194"
 }
 ```
 

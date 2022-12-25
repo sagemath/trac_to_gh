@@ -48,6 +48,23 @@ Actually, looking closer, I see that matplotlib already has code to set a defaul
 
 ---
 
+archive/issue_events_002537.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-12-19T15:42:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/924",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/924#event-2537"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005643.json:
 ```json
 {
@@ -164,7 +181,7 @@ merged in 2.9.1 alpha3
 
 ---
 
-archive/issue_events_001044.json:
+archive/issue_events_002538.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -172,7 +189,7 @@ archive/issue_events_001044.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/924#event-1044"
+    "url": "https://github.com/sagemath/sagetest/issues/924#event-2538"
 }
 ```
 

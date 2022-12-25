@@ -629,7 +629,7 @@ Yep. Fixed by merging the spkg from #905 in Sage 3.0.2.alpha0
 
 ---
 
-archive/issue_events_001408.json:
+archive/issue_events_003330.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -637,6 +637,6 @@ archive/issue_events_001408.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1264",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1264#event-1408"
+    "url": "https://github.com/sagemath/sagetest/issues/1264#event-3330"
 }
 ```

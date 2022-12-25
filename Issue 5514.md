@@ -501,3 +501,122 @@ archive/issue_comments_042786.json:
 I've done some work on this issue, including implementing code to store the uv coordinates for every vertex in a separate array, and it SEEMS to work. Everything is in trac5514-new.patch, which I've rebased for Sage 4.0.rc0. HOWEVER, I was just looking through the IndexFaceSet code and I realized that _separate_creases() and _clean_point_list() both rejigger the list of vertices. I added an array to ParametricSurface called _coords, where self._coords[i] is supposed to store the uv coordinates for the vertex self.vs[i]. But after an operation like the two I just mentioned, self.vs[i] could have moved to a completely different index. I don't understand exactly what _separate_creases() does, but it looks like it could even add NEW vertices to the IndexFaceSet. How would we clip these new vertices based on uv coordinates?
 
 Maybe there is some way to get around these issues, but I think we could eliminate this problem by removing the specialized version of clip() in ParametricSurface. So if you call clip() on a ParametricSurface object, you will only be able to use the xy and xyz variants of the region function. You would still be able to use the uv or xyzuv variants by passing the region function to the constructor of ParametricSurface, since in that case we could do all the clipping inside triangulate(), before _clean_point_list() and _separate_creases() are potentially called (by our code, or by client code, or by the viewing code). I should hope that in the vast majority of use cases this will be acceptable.
+
+
+
+---
+
+archive/issue_events_012924.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5514",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5514#event-12924"
+}
+```
+
+
+
+---
+
+archive/issue_events_012925.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5514",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5514#event-12925"
+}
+```
+
+
+
+---
+
+archive/issue_events_012926.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5514",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5514#event-12926"
+}
+```
+
+
+
+---
+
+archive/issue_events_012927.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5514",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5514#event-12927"
+}
+```
+
+
+
+---
+
+archive/issue_events_012928.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5514",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5514#event-12928"
+}
+```
+
+
+
+---
+
+archive/issue_events_012929.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5514",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5514#event-12929"
+}
+```
+
+
+
+---
+
+archive/issue_events_012930.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5514",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5514#event-12930"
+}
+```

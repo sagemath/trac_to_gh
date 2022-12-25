@@ -274,6 +274,23 @@ this patch gets doctest coverage to 100%
 
 ---
 
+archive/issue_events_007532.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-01T06:28:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3356",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3356#event-7532"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023295.json:
 ```json
 {
@@ -393,7 +410,7 @@ Michael
 
 ---
 
-archive/issue_events_003573.json:
+archive/issue_events_007533.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -401,7 +418,7 @@ archive/issue_events_003573.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3356#event-3573"
+    "url": "https://github.com/sagemath/sagetest/issues/3356#event-7533"
 }
 ```
 

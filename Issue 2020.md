@@ -52,6 +52,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2020
 
 ---
 
+archive/issue_events_004858.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-24T09:22:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2020",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2020#event-4858"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013005.json:
 ```json
 {
@@ -165,7 +182,7 @@ Merged in Sage 3.3.alpha2
 
 ---
 
-archive/issue_events_002174.json:
+archive/issue_events_004859.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -173,6 +190,6 @@ archive/issue_events_002174.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2020",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2020#event-2174"
+    "url": "https://github.com/sagemath/sagetest/issues/2020#event-4859"
 }
 ```

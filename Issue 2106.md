@@ -53,7 +53,24 @@ duplicate of #4302.
 
 ---
 
-archive/issue_events_002266.json:
+archive/issue_events_005052.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2008-11-01T22:18:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2106",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2106#event-5052"
+}
+```
+
+
+
+---
+
+archive/issue_events_005053.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -61,7 +78,7 @@ archive/issue_events_002266.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2106",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2106#event-2266"
+    "url": "https://github.com/sagemath/sagetest/issues/2106#event-5053"
 }
 ```
 

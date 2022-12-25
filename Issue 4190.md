@@ -419,7 +419,7 @@ As far as I can see this is ready to go in.
 
 ---
 
-archive/issue_events_004429.json:
+archive/issue_events_009505.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -427,7 +427,24 @@ archive/issue_events_004429.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4190#event-4429"
+    "url": "https://github.com/sagemath/sagetest/issues/4190#event-9505"
+}
+```
+
+
+
+---
+
+archive/issue_events_009506.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T18:48:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#event-9506"
 }
 ```
 

@@ -31,6 +31,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/879
 
 ---
 
+archive/issue_events_002451.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:22:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/879",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/879#event-2451"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005424.json:
 ```json
 {
@@ -161,6 +178,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_002452.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2011-12-01T02:56:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/879",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/879#event-2452"
+}
+```
+
+
+
+---
+
+archive/issue_events_002453.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2011-12-01T02:56:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/879",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/879#event-2453"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005431.json:
 ```json
 {
@@ -216,7 +267,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_000993.json:
+archive/issue_events_002454.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -224,6 +275,6 @@ archive/issue_events_000993.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/879#event-993"
+    "url": "https://github.com/sagemath/sagetest/issues/879#event-2454"
 }
 ```

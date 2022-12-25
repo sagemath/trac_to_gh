@@ -34,6 +34,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5294
 
 ---
 
+archive/issue_events_012308.json:
+```json
+{
+    "actor": "https://github.com/AndrewAtLarge",
+    "created_at": "2012-10-19T00:45:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5294",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5294#event-12308"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040615.json:
 ```json
 {
@@ -783,6 +800,40 @@ Just to confirm: all tests pass on 5.6.beta3
 
 ---
 
+archive/issue_events_012309.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-12T08:56:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5294",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5294#event-12309"
+}
+```
+
+
+
+---
+
+archive/issue_events_012310.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-12T08:56:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5294",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5294#event-12310"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040643.json:
 ```json
 {
@@ -972,7 +1023,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005550.json:
+archive/issue_events_012311.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -980,6 +1031,6 @@ archive/issue_events_005550.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5294#event-5550"
+    "url": "https://github.com/sagemath/sagetest/issues/5294#event-12311"
 }
 ```

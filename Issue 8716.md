@@ -65,6 +65,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_021161.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-12-06T10:46:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8716",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8716#event-21161"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079420.json:
 ```json
 {
@@ -253,7 +270,7 @@ Apply trac_8716-gamma_h_modforms.patch, trac_8716-docfix.patch
 
 ---
 
-archive/issue_events_008886.json:
+archive/issue_events_021162.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -261,7 +278,7 @@ archive/issue_events_008886.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8716#event-8886"
+    "url": "https://github.com/sagemath/sagetest/issues/8716#event-21162"
 }
 ```
 

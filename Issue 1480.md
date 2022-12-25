@@ -130,7 +130,7 @@ Attachment [trac-148-part2.patch](tarball://root/attachments/some-uuid/ticket148
 
 ---
 
-archive/issue_events_001632.json:
+archive/issue_events_003762.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -138,7 +138,7 @@ archive/issue_events_001632.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1480",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1480#event-1632"
+    "url": "https://github.com/sagemath/sagetest/issues/1480#event-3762"
 }
 ```
 

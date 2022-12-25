@@ -581,7 +581,7 @@ Merged [trac_8118_rebased.patch](http://trac.sagemath.org/sage_trac/attachment/t
 
 ---
 
-archive/issue_events_008326.json:
+archive/issue_events_019435.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -589,6 +589,6 @@ archive/issue_events_008326.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8118#event-8326"
+    "url": "https://github.com/sagemath/sagetest/issues/8118#event-19435"
 }
 ```

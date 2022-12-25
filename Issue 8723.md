@@ -44,6 +44,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8723
 
 ---
 
+archive/issue_events_021171.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8723",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8723#event-21171"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079527.json:
 ```json
 {
@@ -75,6 +92,40 @@ archive/issue_comments_079528.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_021172.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-20T14:32:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8723",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8723#event-21172"
+}
+```
+
+
+
+---
+
+archive/issue_events_021173.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-20T14:32:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8723",
+    "milestone": "sage-6.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8723#event-21173"
+}
+```
 
 
 
@@ -446,6 +497,40 @@ though I cannot see any sign of it here on trac.
 
 ---
 
+archive/issue_events_021174.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2013-12-17T18:39:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8723",
+    "milestone": "sage-6.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8723#event-21174"
+}
+```
+
+
+
+---
+
+archive/issue_events_021175.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2013-12-17T18:39:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8723",
+    "milestone": "sage-6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8723#event-21175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079543.json:
 ```json
 {
@@ -687,7 +772,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008893.json:
+archive/issue_events_021176.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -695,7 +780,7 @@ archive/issue_events_008893.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8723#event-8893"
+    "url": "https://github.com/sagemath/sagetest/issues/8723#event-21176"
 }
 ```
 

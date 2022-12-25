@@ -52,7 +52,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006082.json:
+archive/issue_events_013703.json:
 ```json
 {
     "actor": "https://github.com/dwbump",
@@ -60,7 +60,24 @@ archive/issue_events_006082.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5832",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5832#event-6082"
+    "url": "https://github.com/sagemath/sagetest/issues/5832#event-13703"
+}
+```
+
+
+
+---
+
+archive/issue_events_013704.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-20T06:02:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5832",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5832#event-13704"
 }
 ```
 

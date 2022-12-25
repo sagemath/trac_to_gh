@@ -79,7 +79,7 @@ I'm guessing #5712 is the one that fixed it. This should probably be marked as f
 
 ---
 
-archive/issue_events_006033.json:
+archive/issue_events_013576.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -87,7 +87,24 @@ archive/issue_events_006033.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5786",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5786#event-6033"
+    "url": "https://github.com/sagemath/sagetest/issues/5786#event-13576"
+}
+```
+
+
+
+---
+
+archive/issue_events_013577.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:11:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5786",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5786#event-13577"
 }
 ```
 
@@ -144,3 +161,37 @@ archive/issue_comments_045206.json:
 ```
 
 Resolution changed from duplicate to fixed
+
+
+
+---
+
+archive/issue_events_013578.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:37:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5786",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5786#event-13578"
+}
+```
+
+
+
+---
+
+archive/issue_events_013579.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T03:37:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5786",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5786#event-13579"
+}
+```

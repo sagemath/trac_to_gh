@@ -121,7 +121,7 @@ Merged `multinomial_docstrings.2.patch`.
 
 ---
 
-archive/issue_events_007078.json:
+archive/issue_events_016111.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -129,6 +129,6 @@ archive/issue_events_007078.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6845",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6845#event-7078"
+    "url": "https://github.com/sagemath/sagetest/issues/6845#event-16111"
 }
 ```

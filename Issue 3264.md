@@ -52,6 +52,23 @@ This would be quite helpful for getting SAGE into Debian (since the polybori-0.4
 
 ---
 
+archive/issue_events_007350.json:
+```json
+{
+    "actor": "https://github.com/timabbott",
+    "created_at": "2008-07-11T01:40:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3264",
+    "milestone": "sage-3.0.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3264#event-7350"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022539.json:
 ```json
 {
@@ -756,7 +773,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003483.json:
+archive/issue_events_007351.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -764,6 +781,6 @@ archive/issue_events_003483.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#event-3483"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#event-7351"
 }
 ```

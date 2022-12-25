@@ -64,6 +64,23 @@ Changing component from basic arithmetic to documentation.
 
 ---
 
+archive/issue_events_000046.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T12:58:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/26#event-46"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000189.json:
 ```json
 {
@@ -106,6 +123,40 @@ sage: search_doc(eigenvectors)
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000047.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:19:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/26#event-47"
+}
+```
+
+
+
+---
+
+archive/issue_events_000048.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:19:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/26#event-48"
+}
+```
 
 
 
@@ -213,7 +264,7 @@ tut/node44.html:sage: eigA = A.eigenvectors()
 
 ---
 
-archive/issue_events_000025.json:
+archive/issue_events_000049.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -221,7 +272,7 @@ archive/issue_events_000025.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/26",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/26#event-25"
+    "url": "https://github.com/sagemath/sagetest/issues/26#event-49"
 }
 ```
 
@@ -242,3 +293,20 @@ archive/issue_comments_000193.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_000050.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-23T01:32:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/26#event-50"
+}
+```

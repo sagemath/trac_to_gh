@@ -99,6 +99,23 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_015116.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2011-05-25T20:17:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#event-15116"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051417.json:
 ```json
 {
@@ -235,6 +252,40 @@ archive/issue_comments_051423.json:
 
 ---
 
+archive/issue_events_015117.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2013-03-28T23:27:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#event-15117"
+}
+```
+
+
+
+---
+
+archive/issue_events_015118.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2013-03-28T23:27:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#event-15118"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051424.json:
 ```json
 {
@@ -253,7 +304,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_006659.json:
+archive/issue_events_015119.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -261,6 +312,6 @@ archive/issue_events_006659.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6415",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6415#event-6659"
+    "url": "https://github.com/sagemath/sagetest/issues/6415#event-15119"
 }
 ```

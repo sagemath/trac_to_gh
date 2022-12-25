@@ -115,7 +115,7 @@ I provide a partial fix for the issues mentioned above. The patch does not fix a
 
 ---
 
-archive/issue_events_003018.json:
+archive/issue_events_006505.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -123,7 +123,7 @@ archive/issue_events_003018.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2828",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2828#event-3018"
+    "url": "https://github.com/sagemath/sagetest/issues/2828#event-6505"
 }
 ```
 

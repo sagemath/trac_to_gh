@@ -99,7 +99,7 @@ Changing assignee from @aghitza to @burcin.
 
 ---
 
-archive/issue_events_007617.json:
+archive/issue_events_017488.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -107,7 +107,7 @@ archive/issue_events_007617.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7394",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7394#event-7617"
+    "url": "https://github.com/sagemath/sagetest/issues/7394#event-17488"
 }
 ```
 
@@ -128,6 +128,23 @@ archive/issue_comments_062068.json:
 ```
 
 This is a duplicate of #7264. The patch attached to that ticket contains this example as a doctest as well.
+
+
+
+---
+
+archive/issue_events_017489.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-11-22T18:02:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7394",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7394#event-17489"
+}
+```
 
 
 

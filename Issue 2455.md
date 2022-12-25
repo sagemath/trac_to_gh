@@ -105,6 +105,23 @@ apply against code repository
 
 ---
 
+archive/issue_events_005789.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:18:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2455",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2455#event-5789"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016583.json:
 ```json
 {
@@ -293,7 +310,7 @@ mpoly-ideal-gfan.patch, and it's also good.  All doctests in sage/rings pass.
 
 ---
 
-archive/issue_events_002632.json:
+archive/issue_events_005790.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -301,7 +318,7 @@ archive/issue_events_002632.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2455#event-2632"
+    "url": "https://github.com/sagemath/sagetest/issues/2455#event-5790"
 }
 ```
 

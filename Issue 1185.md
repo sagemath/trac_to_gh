@@ -86,6 +86,23 @@ This was an email posted to the sage-devel mailing list on 11/05/07. Consult thr
 
 ---
 
+archive/issue_events_003167.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:13:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1185",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1185#event-3167"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007294.json:
 ```json
 {
@@ -159,7 +176,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001317.json:
+archive/issue_events_003168.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -167,7 +184,7 @@ archive/issue_events_001317.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1185",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1185#event-1317"
+    "url": "https://github.com/sagemath/sagetest/issues/1185#event-3168"
 }
 ```
 

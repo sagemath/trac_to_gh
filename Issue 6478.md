@@ -67,7 +67,7 @@ Looks good. Positive review.
 
 ---
 
-archive/issue_events_006715.json:
+archive/issue_events_015296.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -75,7 +75,7 @@ archive/issue_events_006715.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6478",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6478#event-6715"
+    "url": "https://github.com/sagemath/sagetest/issues/6478#event-15296"
 }
 ```
 

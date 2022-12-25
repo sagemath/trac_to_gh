@@ -243,6 +243,23 @@ Attachment [linear-sta.dif](tarball://root/attachments/some-uuid/ticket9899/line
 
 ---
 
+archive/issue_events_024936.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9898",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9898#event-24936"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098247.json:
 ```json
 {
@@ -274,6 +291,40 @@ archive/issue_comments_098248.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_024937.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-10-03T10:23:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9898",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9898#event-24937"
+}
+```
+
+
+
+---
+
+archive/issue_events_024938.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-10-03T10:23:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9898",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9898#event-24938"
+}
+```
 
 
 
@@ -315,7 +366,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_010027.json:
+archive/issue_events_024939.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -323,6 +374,6 @@ archive/issue_events_010027.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9898",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9898#event-10027"
+    "url": "https://github.com/sagemath/sagetest/issues/9898#event-24939"
 }
 ```

@@ -122,6 +122,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_003328.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-09-16T07:43:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1263",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1263#event-3328"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007902.json:
 ```json
 {
@@ -158,7 +175,7 @@ If this is a sage-duplicate/invalid/wontfix, then I believe that this ticket can
 
 ---
 
-archive/issue_events_001407.json:
+archive/issue_events_003329.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -166,7 +183,7 @@ archive/issue_events_001407.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1263",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1263#event-1407"
+    "url": "https://github.com/sagemath/sagetest/issues/1263#event-3329"
 }
 ```
 

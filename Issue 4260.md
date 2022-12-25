@@ -994,7 +994,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004499.json:
+archive/issue_events_009619.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1002,7 +1002,7 @@ archive/issue_events_004499.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4499"
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-9619"
 }
 ```
 
@@ -1185,7 +1185,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_004500.json:
+archive/issue_events_009620.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1193,7 +1193,7 @@ archive/issue_events_004500.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4500"
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-9620"
 }
 ```
 
@@ -1333,6 +1333,23 @@ Yes, see private email.
 
 ---
 
+archive/issue_events_009621.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-08T17:18:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4260",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-9621"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030985.json:
 ```json
 {
@@ -1436,7 +1453,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004501.json:
+archive/issue_events_009622.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1444,7 +1461,7 @@ archive/issue_events_004501.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4501"
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-9622"
 }
 ```
 
@@ -1635,7 +1652,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_004502.json:
+archive/issue_events_009623.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1643,7 +1660,7 @@ archive/issue_events_004502.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4502"
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-9623"
 }
 ```
 
@@ -2003,7 +2020,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_004503.json:
+archive/issue_events_009624.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2011,7 +2028,7 @@ archive/issue_events_004503.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4503"
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-9624"
 }
 ```
 

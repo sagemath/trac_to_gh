@@ -52,7 +52,7 @@ Also, isn't there an LGPLv3 issue with gmp-4.2.2?
 
 ---
 
-archive/issue_events_003438.json:
+archive/issue_events_007247.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -60,7 +60,7 @@ archive/issue_events_003438.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3219",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3219#event-3438"
+    "url": "https://github.com/sagemath/sagetest/issues/3219#event-7247"
 }
 ```
 
@@ -85,6 +85,23 @@ There is an LGPL V3 issue, but we are willing to live with that until MPIR is re
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007248.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-23T02:01:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3219",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3219#event-7248"
+}
+```
 
 
 

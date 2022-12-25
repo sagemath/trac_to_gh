@@ -119,6 +119,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_017594.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-11-12T14:00:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7428",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7428#event-17594"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062396.json:
 ```json
 {
@@ -132,6 +149,40 @@ archive/issue_comments_062396.json:
 ```
 
 Feel free to bump the milestone back to 4.3.
+
+
+
+---
+
+archive/issue_events_017595.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-13T04:32:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7428",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7428#event-17595"
+}
+```
+
+
+
+---
+
+archive/issue_events_017596.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-13T04:32:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7428",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7428#event-17596"
+}
+```
 
 
 
@@ -155,6 +206,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_017597.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-11-13T19:46:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7428",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7428#event-17597"
+}
+```
+
+
+
+---
+
+archive/issue_events_017598.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-11-13T19:46:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7428",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7428#event-17598"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062398.json:
 ```json
 {
@@ -173,7 +258,7 @@ Patch and test work. Positive review.
 
 ---
 
-archive/issue_events_007652.json:
+archive/issue_events_017599.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -181,7 +266,7 @@ archive/issue_events_007652.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#event-7652"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#event-17599"
 }
 ```
 

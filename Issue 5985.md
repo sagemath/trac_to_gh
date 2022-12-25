@@ -32,6 +32,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5985
 
 ---
 
+archive/issue_events_014041.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2009-05-05T07:12:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5985",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5985#event-14041"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047458.json:
 ```json
 {
@@ -368,6 +385,40 @@ Changing priority from major to critical.
 
 ---
 
+archive/issue_events_014042.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2009-10-11T08:44:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5985",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5985#event-14042"
+}
+```
+
+
+
+---
+
+archive/issue_events_014043.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2009-10-11T08:44:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5985",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5985#event-14043"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047472.json:
 ```json
 {
@@ -472,7 +523,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006240.json:
+archive/issue_events_014044.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -480,7 +531,7 @@ archive/issue_events_006240.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5985#event-6240"
+    "url": "https://github.com/sagemath/sagetest/issues/5985#event-14044"
 }
 ```
 

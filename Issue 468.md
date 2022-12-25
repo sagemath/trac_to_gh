@@ -146,7 +146,58 @@ Changing component from algebraic geometry to basic arithmetic.
 
 ---
 
-archive/issue_events_000497.json:
+archive/issue_events_001172.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/bober",
+    "created_at": "2007-08-29T16:14:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/468",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/468#event-1172"
+}
+```
+
+
+
+---
+
+archive/issue_events_001173.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-12T23:15:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/468",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/468#event-1173"
+}
+```
+
+
+
+---
+
+archive/issue_events_001174.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-12T23:15:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/468",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/468#event-1174"
+}
+```
+
+
+
+---
+
+archive/issue_events_001175.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -154,7 +205,7 @@ archive/issue_events_000497.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/468",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/468#event-497"
+    "url": "https://github.com/sagemath/sagetest/issues/468#event-1175"
 }
 ```
 

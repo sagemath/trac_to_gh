@@ -118,7 +118,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_009924.json:
+archive/issue_events_024604.json:
 ```json
 {
     "actor": "https://github.com/rhinton",
@@ -126,7 +126,7 @@ archive/issue_events_009924.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9800",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9800#event-9924"
+    "url": "https://github.com/sagemath/sagetest/issues/9800#event-24604"
 }
 ```
 
@@ -151,3 +151,20 @@ Nathann Cohen promised a rewrite of this documentation soon.  See
 http://groups.google.com/group/sage-devel/browse_thread/thread/330baaf798e51a01
 
 for details.
+
+
+
+---
+
+archive/issue_events_024605.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-08-28T18:11:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9800",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9800#event-24605"
+}
+```

@@ -129,7 +129,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006807.json:
+archive/issue_events_015507.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -137,6 +137,23 @@ archive/issue_events_006807.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6570",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6570#event-6807"
+    "url": "https://github.com/sagemath/sagetest/issues/6570#event-15507"
+}
+```
+
+
+
+---
+
+archive/issue_events_015508.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-07-21T07:02:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6570",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6570#event-15508"
 }
 ```

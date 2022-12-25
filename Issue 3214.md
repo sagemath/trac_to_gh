@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3214
 
 ---
 
-archive/issue_events_003431.json:
+archive/issue_events_007229.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -56,7 +56,7 @@ archive/issue_events_003431.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#event-3431"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7229"
 }
 ```
 
@@ -77,6 +77,23 @@ archive/issue_comments_022195.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007230.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-27T06:12:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7230"
+}
+```
 
 
 
@@ -172,7 +189,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003432.json:
+archive/issue_events_007231.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -180,7 +197,7 @@ archive/issue_events_003432.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#event-3432"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7231"
 }
 ```
 
@@ -243,6 +260,40 @@ archive/issue_comments_022202.json:
 It is indeed not coercion-related.  The computation of the gcd is done in a loop, from which one exits as soon as a gcd of 1 is obtained (ignoring the rest of the elements).  In the case of elements with denominators (such as rational numbers or rational functions) this gives rise to the wrong answers reported above.
 
 The attached trivial patch fixes this so that correct answers are returned.
+
+
+
+---
+
+archive/issue_events_007232.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-28T15:35:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7232"
+}
+```
+
+
+
+---
+
+archive/issue_events_007233.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-28T15:35:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7233"
+}
+```
 
 
 
@@ -391,6 +442,40 @@ There is one doctest failure that I don't know how to deal with, in the symbolic
 
 ---
 
+archive/issue_events_007234.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T02:29:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7234"
+}
+```
+
+
+
+---
+
+archive/issue_events_007235.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T02:29:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7235"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022210.json:
 ```json
 {
@@ -516,7 +601,41 @@ Thanks a lot, Burcin.
 
 ---
 
-archive/issue_events_003433.json:
+archive/issue_events_007236.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-02-08T22:09:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7236"
+}
+```
+
+
+
+---
+
+archive/issue_events_007237.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-02-08T22:09:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7237"
+}
+```
+
+
+
+---
+
+archive/issue_events_007238.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -524,7 +643,7 @@ archive/issue_events_003433.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#event-3433"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-7238"
 }
 ```
 

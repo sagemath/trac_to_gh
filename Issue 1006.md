@@ -66,6 +66,23 @@ When this is fixed, inst/inst.tex should be updated; I just changed that file to
 
 ---
 
+archive/issue_events_002765.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-18T09:58:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1006",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1006#event-2765"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006131.json:
 ```json
 {
@@ -158,7 +175,7 @@ Michael
 
 ---
 
-archive/issue_events_001130.json:
+archive/issue_events_002766.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -166,7 +183,7 @@ archive/issue_events_001130.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#event-1130"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#event-2766"
 }
 ```
 
@@ -193,6 +210,40 @@ So I am closing this "meta" ticket - it took way too long to fix this.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002767.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-08T03:14:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1006",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1006#event-2767"
+}
+```
+
+
+
+---
+
+archive/issue_events_002768.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-08T03:14:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1006",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1006#event-2768"
+}
+```
 
 
 

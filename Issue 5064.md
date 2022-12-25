@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5064
 
 ---
 
+archive/issue_events_011675.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2009-01-23T02:16:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#event-11675"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038500.json:
 ```json
 {
@@ -199,6 +216,40 @@ On closer explanation from boothby, I feel I can give this a positive review.
 
 ---
 
+archive/issue_events_011676.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T16:28:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#event-11676"
+}
+```
+
+
+
+---
+
+archive/issue_events_011677.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T16:28:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#event-11677"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038509.json:
 ```json
 {
@@ -235,7 +286,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005310.json:
+archive/issue_events_011678.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -243,6 +294,6 @@ archive/issue_events_005310.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5064",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5064#event-5310"
+    "url": "https://github.com/sagemath/sagetest/issues/5064#event-11678"
 }
 ```

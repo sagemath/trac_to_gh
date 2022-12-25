@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/298
 
 ---
 
+archive/issue_events_000689.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:40:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/298",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/298#event-689"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001409.json:
 ```json
 {
@@ -221,7 +238,41 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_000315.json:
+archive/issue_events_000690.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-10-10T12:28:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/298",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/298#event-690"
+}
+```
+
+
+
+---
+
+archive/issue_events_000691.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-10-10T12:28:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/298",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/298#event-691"
+}
+```
+
+
+
+---
+
+archive/issue_events_000692.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -229,7 +280,7 @@ archive/issue_events_000315.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/298#event-315"
+    "url": "https://github.com/sagemath/sagetest/issues/298#event-692"
 }
 ```
 

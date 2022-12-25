@@ -56,6 +56,23 @@ Attachment [trac_9846_parallel_help.patch](tarball://root/attachments/some-uuid/
 
 ---
 
+archive/issue_events_024781.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2011-01-07T10:09:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9845",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9845#event-24781"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097009.json:
 ```json
 {
@@ -110,7 +127,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009972.json:
+archive/issue_events_024782.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -118,7 +135,7 @@ archive/issue_events_009972.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9845",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9845#event-9972"
+    "url": "https://github.com/sagemath/sagetest/issues/9845#event-24782"
 }
 ```
 

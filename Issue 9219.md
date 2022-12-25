@@ -140,7 +140,7 @@ Looks fine except for two double colons where they shouldn't be and one indentin
 
 ---
 
-archive/issue_events_009375.json:
+archive/issue_events_022704.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -148,7 +148,7 @@ archive/issue_events_009375.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9219#event-9375"
+    "url": "https://github.com/sagemath/sagetest/issues/9219#event-22704"
 }
 ```
 

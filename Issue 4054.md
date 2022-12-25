@@ -64,6 +64,23 @@ Changing assignee from tbd to @rlmill.
 
 ---
 
+archive/issue_events_009257.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-04T00:12:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4054",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4054#event-9257"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029164.json:
 ```json
 {
@@ -164,7 +181,7 @@ Merged in Sage 3.1.2.rc0
 
 ---
 
-archive/issue_events_004286.json:
+archive/issue_events_009258.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -172,6 +189,6 @@ archive/issue_events_004286.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4054",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4054#event-4286"
+    "url": "https://github.com/sagemath/sagetest/issues/4054#event-9258"
 }
 ```

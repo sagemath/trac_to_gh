@@ -125,6 +125,23 @@ Note also there are several other open tickets about the various simplify functi
 
 ---
 
+archive/issue_events_006228.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-05-11T18:15:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2662",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2662#event-6228"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018289.json:
 ```json
 {

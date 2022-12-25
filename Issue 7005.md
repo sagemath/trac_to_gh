@@ -168,6 +168,23 @@ The current spkg singular-3-1-0-4-20100214.spkg builds fine more me on Cygwin.  
 
 ---
 
+archive/issue_events_016434.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-04-27T17:37:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7005",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7005#event-16434"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057830.json:
 ```json
 {
@@ -186,7 +203,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007229.json:
+archive/issue_events_016435.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -194,6 +211,6 @@ archive/issue_events_007229.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7005#event-7229"
+    "url": "https://github.com/sagemath/sagetest/issues/7005#event-16435"
 }
 ```

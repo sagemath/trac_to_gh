@@ -418,6 +418,23 @@ Florent
 
 ---
 
+archive/issue_events_017542.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-11-09T15:21:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#event-17542"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062286.json:
 ```json
 {
@@ -482,7 +499,7 @@ Cheers,
 
 ---
 
-archive/issue_events_007640.json:
+archive/issue_events_017543.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -490,7 +507,7 @@ archive/issue_events_007640.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7415",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7415#event-7640"
+    "url": "https://github.com/sagemath/sagetest/issues/7415#event-17543"
 }
 ```
 
@@ -511,3 +528,37 @@ archive/issue_comments_062289.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_017544.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-22T05:37:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#event-17544"
+}
+```
+
+
+
+---
+
+archive/issue_events_017545.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-22T05:37:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#event-17545"
+}
+```

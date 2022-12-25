@@ -171,7 +171,7 @@ Merged 2842.patch in Sage 3.0.alpha3
 
 ---
 
-archive/issue_events_003032.json:
+archive/issue_events_006521.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -179,7 +179,7 @@ archive/issue_events_003032.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2842",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2842#event-3032"
+    "url": "https://github.com/sagemath/sagetest/issues/2842#event-6521"
 }
 ```
 

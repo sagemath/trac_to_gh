@@ -263,7 +263,7 @@ Note that the patch applies to the scripts repo.
 
 ---
 
-archive/issue_events_004891.json:
+archive/issue_events_010605.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -271,7 +271,7 @@ archive/issue_events_004891.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4644#event-4891"
+    "url": "https://github.com/sagemath/sagetest/issues/4644#event-10605"
 }
 ```
 
@@ -310,3 +310,20 @@ archive/issue_comments_034896.json:
 ```
 
 merged into sage-4.1.2.
+
+
+
+---
+
+archive/issue_events_010606.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-11-21T00:26:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4644",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4644#event-10606"
+}
+```

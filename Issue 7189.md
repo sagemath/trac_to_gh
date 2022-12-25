@@ -45,6 +45,23 @@ Close as invalid. I made a mistake with this ticket.
 
 ---
 
+archive/issue_events_017021.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-12T02:02:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7189",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7189#event-17021"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059440.json:
 ```json
 {
@@ -63,7 +80,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007408.json:
+archive/issue_events_017022.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -71,6 +88,6 @@ archive/issue_events_007408.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7189",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7189#event-7408"
+    "url": "https://github.com/sagemath/sagetest/issues/7189#event-17022"
 }
 ```

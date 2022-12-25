@@ -94,6 +94,23 @@ However, it's still a nice stopgap approach.  The documentation is missing, thou
 
 ---
 
+archive/issue_events_012022.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-06T23:03:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5194",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5194#event-12022"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039736.json:
 ```json
 {
@@ -190,7 +207,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_005448.json:
+archive/issue_events_012023.json:
 ```json
 {
     "actor": "https://github.com/johnperry-math",
@@ -198,7 +215,7 @@ archive/issue_events_005448.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5194#event-5448"
+    "url": "https://github.com/sagemath/sagetest/issues/5194#event-12023"
 }
 ```
 
@@ -316,7 +333,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_005449.json:
+archive/issue_events_012024.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -324,7 +341,7 @@ archive/issue_events_005449.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5194#event-5449"
+    "url": "https://github.com/sagemath/sagetest/issues/5194#event-12024"
 }
 ```
 
@@ -356,6 +373,40 @@ i.e. a change in escaping. This looks fine to me, but I will apply the patches a
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_012025.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-09T11:15:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5194",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5194#event-12025"
+}
+```
+
+
+
+---
+
+archive/issue_events_012026.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-09T11:15:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5194",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5194#event-12026"
+}
+```
 
 
 
@@ -409,7 +460,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005450.json:
+archive/issue_events_012027.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -417,7 +468,7 @@ archive/issue_events_005450.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5194#event-5450"
+    "url": "https://github.com/sagemath/sagetest/issues/5194#event-12027"
 }
 ```
 

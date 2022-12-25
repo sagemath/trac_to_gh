@@ -45,6 +45,23 @@ This is a duplicate of #1916. Please close this if the other is closed.
 
 ---
 
+archive/issue_events_003737.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-04-17T07:46:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1468",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1468#event-3737"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009420.json:
 ```json
 {
@@ -99,7 +116,7 @@ closing positively reviewed duplicates
 
 ---
 
-archive/issue_events_001619.json:
+archive/issue_events_003738.json:
 ```json
 {
     "actor": "https://github.com/videlec",
@@ -107,7 +124,7 @@ archive/issue_events_001619.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1468",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1468#event-1619"
+    "url": "https://github.com/sagemath/sagetest/issues/1468#event-3738"
 }
 ```
 

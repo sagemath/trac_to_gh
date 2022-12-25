@@ -174,6 +174,23 @@ This ticket should be closed.
 
 ---
 
+archive/issue_events_014420.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2011-11-09T06:43:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6124",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6124#event-14420"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048843.json:
 ```json
 {
@@ -210,7 +227,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006374.json:
+archive/issue_events_014421.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -218,6 +235,6 @@ archive/issue_events_006374.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#event-6374"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#event-14421"
 }
 ```

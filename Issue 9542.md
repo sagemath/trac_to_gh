@@ -48,6 +48,57 @@ speeds up multiplication by a factor of *20* for many benchmarks... but causes a
 
 ---
 
+archive/issue_events_023733.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9542",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9542#event-23733"
+}
+```
+
+
+
+---
+
+archive/issue_events_023734.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9542",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9542#event-23734"
+}
+```
+
+
+
+---
+
+archive/issue_events_023735.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9542",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9542#event-23735"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091796.json:
 ```json
 {
@@ -159,7 +210,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_009691.json:
+archive/issue_events_023736.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -167,6 +218,6 @@ archive/issue_events_009691.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9542",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9542#event-9691"
+    "url": "https://github.com/sagemath/sagetest/issues/9542#event-23736"
 }
 ```

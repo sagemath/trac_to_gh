@@ -107,6 +107,23 @@ Changing assignee from @aghitza to jason, ncohen, rlm.
 
 ---
 
+archive/issue_events_022230.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2010-05-28T04:00:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9073",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9073#event-22230"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084043.json:
 ```json
 {
@@ -265,7 +282,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009224.json:
+archive/issue_events_022231.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -273,7 +290,7 @@ archive/issue_events_009224.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9073",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9073#event-9224"
+    "url": "https://github.com/sagemath/sagetest/issues/9073#event-22231"
 }
 ```
 

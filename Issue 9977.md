@@ -67,6 +67,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_025205.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2011-03-28T18:01:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9977",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9977#event-25205"
+}
+```
+
+
+
+---
+
 archive/issue_comments_100128.json:
 ```json
 {
@@ -395,7 +412,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_010104.json:
+archive/issue_events_025206.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -403,7 +420,7 @@ archive/issue_events_010104.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9977",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9977#event-10104"
+    "url": "https://github.com/sagemath/sagetest/issues/9977#event-25206"
 }
 ```
 

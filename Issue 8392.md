@@ -1005,6 +1005,23 @@ Fixed. Errors were due to references being in a function that had an alias.
 
 ---
 
+archive/issue_events_020126.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-28T08:24:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8392",
+    "milestone": "sage-5.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8392#event-20126"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075070.json:
 ```json
 {
@@ -1115,7 +1132,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008577.json:
+archive/issue_events_020127.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1123,7 +1140,7 @@ archive/issue_events_008577.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8392#event-8577"
+    "url": "https://github.com/sagemath/sagetest/issues/8392#event-20127"
 }
 ```
 

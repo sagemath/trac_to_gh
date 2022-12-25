@@ -227,6 +227,23 @@ Michael
 
 ---
 
+archive/issue_events_008933.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-30T19:33:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#event-8933"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027827.json:
 ```json
 {
@@ -372,6 +389,40 @@ This is really old and we are now adding a new gcc spkg, so this ticket should b
 
 ---
 
+archive/issue_events_008934.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/bober",
+    "created_at": "2012-03-21T00:02:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#event-8934"
+}
+```
+
+
+
+---
+
+archive/issue_events_008935.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/bober",
+    "created_at": "2012-03-21T00:02:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#event-8935"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027834.json:
 ```json
 {
@@ -408,7 +459,7 @@ I agree: this should be closed.
 
 ---
 
-archive/issue_events_004125.json:
+archive/issue_events_008936.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -416,7 +467,7 @@ archive/issue_events_004125.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3898",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3898#event-4125"
+    "url": "https://github.com/sagemath/sagetest/issues/3898#event-8936"
 }
 ```
 

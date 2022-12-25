@@ -85,6 +85,23 @@ Where's the best place to add a doctest?
 
 ---
 
+archive/issue_events_012368.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-23T12:21:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5312",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5312#event-12368"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040836.json:
 ```json
 {
@@ -103,7 +120,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_005567.json:
+archive/issue_events_012369.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -111,7 +128,7 @@ archive/issue_events_005567.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5312",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5312#event-5567"
+    "url": "https://github.com/sagemath/sagetest/issues/5312#event-12369"
 }
 ```
 

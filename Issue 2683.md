@@ -103,7 +103,7 @@ Applies cleanly to 2.11.alpha1, passes doctests in `sage/combinat.` Looks good!
 
 ---
 
-archive/issue_events_002875.json:
+archive/issue_events_006258.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -111,7 +111,7 @@ archive/issue_events_002875.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2683",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2683#event-2875"
+    "url": "https://github.com/sagemath/sagetest/issues/2683#event-6258"
 }
 ```
 

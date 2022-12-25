@@ -51,6 +51,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3134
 
 ---
 
+archive/issue_events_007088.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-09T06:29:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3134",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3134#event-7088"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021724.json:
 ```json
 {
@@ -207,7 +224,7 @@ Merged trac_3134-2.patch in Sage 3.2.2.alpha0
 
 ---
 
-archive/issue_events_003350.json:
+archive/issue_events_007089.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -215,6 +232,6 @@ archive/issue_events_003350.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3134",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3134#event-3350"
+    "url": "https://github.com/sagemath/sagetest/issues/3134#event-7089"
 }
 ```

@@ -45,6 +45,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1097
 
 ---
 
+archive/issue_events_002947.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-05T03:03:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1097",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1097#event-2947"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006615.json:
 ```json
 {
@@ -62,6 +79,40 @@ This is still a problem with 2.9.1.1.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002948.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-26T02:59:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1097",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1097#event-2948"
+}
+```
+
+
+
+---
+
+archive/issue_events_002949.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-26T02:59:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1097",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1097#event-2949"
+}
+```
 
 
 
@@ -101,7 +152,7 @@ Michael
 
 ---
 
-archive/issue_events_001223.json:
+archive/issue_events_002950.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -109,7 +160,7 @@ archive/issue_events_001223.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1097",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1097#event-1223"
+    "url": "https://github.com/sagemath/sagetest/issues/1097#event-2950"
 }
 ```
 

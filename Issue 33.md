@@ -121,7 +121,7 @@ Changing component from user interface to notebook.
 
 ---
 
-archive/issue_events_000032.json:
+archive/issue_events_000064.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -129,7 +129,7 @@ archive/issue_events_000032.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/33",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/33#event-32"
+    "url": "https://github.com/sagemath/sagetest/issues/33#event-64"
 }
 ```
 

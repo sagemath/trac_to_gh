@@ -303,7 +303,7 @@ Merged bkz.patch in Sage 3.0.6.alpha0
 
 ---
 
-archive/issue_events_003451.json:
+archive/issue_events_007272.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -311,7 +311,7 @@ archive/issue_events_003451.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3232#event-3451"
+    "url": "https://github.com/sagemath/sagetest/issues/3232#event-7272"
 }
 ```
 

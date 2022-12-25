@@ -64,6 +64,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/389
 
 ---
 
+archive/issue_events_000913.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:22:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/389",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/389#event-913"
+}
+```
+
+
+
+---
+
+archive/issue_events_000914.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T01:57:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/389",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/389#event-914"
+}
+```
+
+
+
+---
+
+archive/issue_events_000915.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T01:57:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/389",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/389#event-915"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001900.json:
 ```json
 {
@@ -105,6 +156,40 @@ To quote the bug report:
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000916.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-02T06:02:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/389",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/389#event-916"
+}
+```
+
+
+
+---
+
+archive/issue_events_000917.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-02T06:02:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/389",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/389#event-917"
+}
+```
 
 
 
@@ -168,7 +253,7 @@ applied to 2.8.11.rc2, spkg updated.
 
 ---
 
-archive/issue_events_000411.json:
+archive/issue_events_000918.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -176,6 +261,6 @@ archive/issue_events_000411.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/389",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/389#event-411"
+    "url": "https://github.com/sagemath/sagetest/issues/389#event-918"
 }
 ```

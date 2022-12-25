@@ -171,6 +171,125 @@ which I tediously worked out by hand around 20 years ago...
 
 ---
 
+archive/issue_events_021842.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21842"
+}
+```
+
+
+
+---
+
+archive/issue_events_021843.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21843"
+}
+```
+
+
+
+---
+
+archive/issue_events_021844.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21844"
+}
+```
+
+
+
+---
+
+archive/issue_events_021845.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21845"
+}
+```
+
+
+
+---
+
+archive/issue_events_021846.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21846"
+}
+```
+
+
+
+---
+
+archive/issue_events_021847.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21847"
+}
+```
+
+
+
+---
+
+archive/issue_events_021848.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21848"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082226.json:
 ```json
 {
@@ -213,3 +332,37 @@ to potential silent wrong results.
 
 Since I checked about one third of open tickets, I estimate
 that currently there are about 80-100 known bugs which silently lead to wrong results.
+
+
+
+---
+
+archive/issue_events_021849.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2019-01-03T15:11:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21849"
+}
+```
+
+
+
+---
+
+archive/issue_events_021850.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2019-01-03T15:11:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8945",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8945#event-21850"
+}
+```

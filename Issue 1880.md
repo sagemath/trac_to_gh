@@ -61,7 +61,7 @@ Attachment [Sage-2.10.1.alpha0-fix-doctest-1880.patch](tarball://root/attachment
 
 ---
 
-archive/issue_events_002038.json:
+archive/issue_events_004532.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -69,7 +69,7 @@ archive/issue_events_002038.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1880",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1880#event-2038"
+    "url": "https://github.com/sagemath/sagetest/issues/1880#event-4532"
 }
 ```
 

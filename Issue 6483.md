@@ -226,6 +226,57 @@ Can someone invalidate this ticket?  I apparently don't have permissions to clos
 
 ---
 
+archive/issue_events_015304.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2009-07-19T07:20:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6483",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6483#event-15304"
+}
+```
+
+
+
+---
+
+archive/issue_events_015305.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-01T05:49:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6483",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6483#event-15305"
+}
+```
+
+
+
+---
+
+archive/issue_events_015306.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-01T05:49:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6483",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6483#event-15306"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052322.json:
 ```json
 {
@@ -244,7 +295,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006719.json:
+archive/issue_events_015307.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -252,7 +303,7 @@ archive/issue_events_006719.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#event-6719"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#event-15307"
 }
 ```
 

@@ -130,6 +130,23 @@ Changing priority from critical to blocker.
 
 ---
 
+archive/issue_events_010579.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-27T19:23:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4639",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4639#event-10579"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034828.json:
 ```json
 {
@@ -226,6 +243,40 @@ sage: get_memory_usage()
 
 ---
 
+archive/issue_events_010580.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-28T21:35:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4639",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4639#event-10580"
+}
+```
+
+
+
+---
+
+archive/issue_events_010581.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-28T21:35:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4639",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4639#event-10581"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034831.json:
 ```json
 {
@@ -243,6 +294,40 @@ This ticket might also cause #4631.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_010582.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-02T05:21:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4639",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4639#event-10582"
+}
+```
+
+
+
+---
+
+archive/issue_events_010583.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-02T05:21:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4639",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4639#event-10583"
+}
+```
 
 
 
@@ -790,6 +875,40 @@ This is the bug that will never die... I'll keep looking at that last case.
 
 ---
 
+archive/issue_events_010584.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-15T18:43:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4639",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4639#event-10584"
+}
+```
+
+
+
+---
+
+archive/issue_events_010585.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-15T18:43:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4639",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4639#event-10585"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034851.json:
 ```json
 {
@@ -976,7 +1095,7 @@ Michael
 
 ---
 
-archive/issue_events_004886.json:
+archive/issue_events_010586.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -984,7 +1103,7 @@ archive/issue_events_004886.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4639#event-4886"
+    "url": "https://github.com/sagemath/sagetest/issues/4639#event-10586"
 }
 ```
 

@@ -2010,6 +2010,23 @@ Works great now!
 
 ---
 
+archive/issue_events_025189.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:05:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9971",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9971#event-25189"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099896.json:
 ```json
 {
@@ -2030,7 +2047,7 @@ Apply trac_9972_add_cone_embedding.patch, trac_9972_improve_element_constructors
 
 ---
 
-archive/issue_events_010099.json:
+archive/issue_events_025190.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2038,7 +2055,7 @@ archive/issue_events_010099.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9971#event-10099"
+    "url": "https://github.com/sagemath/sagetest/issues/9971#event-25190"
 }
 ```
 

@@ -237,7 +237,7 @@ I have not reviewed this yet, only looked at the patch code, but will do.
 
 ---
 
-archive/issue_events_005332.json:
+archive/issue_events_011743.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -245,7 +245,7 @@ archive/issue_events_005332.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5088",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5088#event-5332"
+    "url": "https://github.com/sagemath/sagetest/issues/5088#event-11743"
 }
 ```
 

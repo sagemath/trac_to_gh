@@ -72,7 +72,7 @@ Positive review.
 
 ---
 
-archive/issue_events_004205.json:
+archive/issue_events_009110.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -80,7 +80,7 @@ archive/issue_events_004205.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3975",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3975#event-4205"
+    "url": "https://github.com/sagemath/sagetest/issues/3975#event-9110"
 }
 ```
 

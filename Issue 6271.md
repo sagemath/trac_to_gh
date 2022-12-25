@@ -68,7 +68,7 @@ There is such a flag.  It's SAGE_CHECK.  See http://trac.sagemath.org/sage_trac/
 
 ---
 
-archive/issue_events_006515.json:
+archive/issue_events_014678.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -76,7 +76,7 @@ archive/issue_events_006515.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6271",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6271#event-6515"
+    "url": "https://github.com/sagemath/sagetest/issues/6271#event-14678"
 }
 ```
 

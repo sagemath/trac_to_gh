@@ -422,7 +422,7 @@ I'm going to merge 0.7.5.3 into alpha1 since it seems like the issue is more wit
 
 ---
 
-archive/issue_events_008620.json:
+archive/issue_events_020228.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -430,7 +430,7 @@ archive/issue_events_008620.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8435#event-8620"
+    "url": "https://github.com/sagemath/sagetest/issues/8435#event-20228"
 }
 ```
 

@@ -50,6 +50,23 @@ Attachment [11113.patch](tarball://root/attachments/some-uuid/ticket4859/11113.p
 
 ---
 
+archive/issue_events_011173.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-23T17:21:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#event-11173"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036756.json:
 ```json
 {
@@ -179,6 +196,40 @@ With the above issues addressed, this code should go into sage.
 
 ---
 
+archive/issue_events_011174.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-20T07:40:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#event-11174"
+}
+```
+
+
+
+---
+
+archive/issue_events_011175.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-20T07:40:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#event-11175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036759.json:
 ```json
 {
@@ -277,7 +328,7 @@ Michael
 
 ---
 
-archive/issue_events_005102.json:
+archive/issue_events_011176.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -285,6 +336,6 @@ archive/issue_events_005102.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4859#event-5102"
+    "url": "https://github.com/sagemath/sagetest/issues/4859#event-11176"
 }
 ```

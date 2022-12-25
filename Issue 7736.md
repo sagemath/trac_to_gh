@@ -69,6 +69,23 @@ William
 
 ---
 
+archive/issue_events_018495.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-18T23:11:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7736",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7736#event-18495"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066357.json:
 ```json
 {
@@ -303,7 +320,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007948.json:
+archive/issue_events_018496.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -311,7 +328,41 @@ archive/issue_events_007948.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7736#event-7948"
+    "url": "https://github.com/sagemath/sagetest/issues/7736#event-18496"
+}
+```
+
+
+
+---
+
+archive/issue_events_018497.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-10T10:49:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7736",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7736#event-18497"
+}
+```
+
+
+
+---
+
+archive/issue_events_018498.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-10T10:49:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7736",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7736#event-18498"
 }
 ```
 

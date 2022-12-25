@@ -49,7 +49,7 @@ This works, looks good, and also works with #5636.
 
 ---
 
-archive/issue_events_005879.json:
+archive/issue_events_013259.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -57,7 +57,7 @@ archive/issue_events_005879.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5638",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5638#event-5879"
+    "url": "https://github.com/sagemath/sagetest/issues/5638#event-13259"
 }
 ```
 

@@ -314,6 +314,23 @@ This is pretty weird and subtle...  Change to enhancement...
 
 ---
 
+archive/issue_events_000317.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:15:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/172",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/172#event-317"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000787.json:
 ```json
 {
@@ -360,7 +377,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000180.json:
+archive/issue_events_000318.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -368,7 +385,7 @@ archive/issue_events_000180.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/172",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/172#event-180"
+    "url": "https://github.com/sagemath/sagetest/issues/172#event-318"
 }
 ```
 
@@ -393,3 +410,20 @@ Yes, invalid it is.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000319.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-24T17:07:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/172",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/172#event-319"
+}
+```

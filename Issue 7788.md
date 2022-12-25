@@ -233,7 +233,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008004.json:
+archive/issue_events_018629.json:
 ```json
 {
     "actor": "https://github.com/rishikesha",
@@ -241,7 +241,7 @@ archive/issue_events_008004.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7788#event-8004"
+    "url": "https://github.com/sagemath/sagetest/issues/7788#event-18629"
 }
 ```
 
@@ -262,3 +262,20 @@ archive/issue_comments_067107.json:
 ```
 
 Resolution changed from fixed to duplicate
+
+
+
+---
+
+archive/issue_events_018630.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-07-11T03:34:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7788",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7788#event-18630"
+}
+```

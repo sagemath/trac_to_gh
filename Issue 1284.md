@@ -69,6 +69,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1284
 
 ---
 
+archive/issue_events_003370.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-14T04:12:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1284",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1284#event-3370"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008025.json:
 ```json
 {
@@ -353,6 +370,40 @@ I know it's still missing some documentation, I just want to see if there is mor
 
 ---
 
+archive/issue_events_003371.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
+    "created_at": "2008-05-12T08:22:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1284",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1284#event-3371"
+}
+```
+
+
+
+---
+
+archive/issue_events_003372.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
+    "created_at": "2008-05-12T08:22:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1284",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1284#event-3372"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008036.json:
 ```json
 {
@@ -594,6 +645,40 @@ On the above thread, it is nearly unanimous that `G<=H` should mean "Is G a subg
 
 ---
 
+archive/issue_events_003373.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-25T19:24:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1284",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1284#event-3373"
+}
+```
+
+
+
+---
+
+archive/issue_events_003374.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-25T19:24:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1284",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1284#event-3374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008045.json:
 ```json
 {
@@ -716,7 +801,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001427.json:
+archive/issue_events_003375.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -724,7 +809,7 @@ archive/issue_events_001427.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1284",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1284#event-1427"
+    "url": "https://github.com/sagemath/sagetest/issues/1284#event-3375"
 }
 ```
 

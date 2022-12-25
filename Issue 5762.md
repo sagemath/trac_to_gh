@@ -46,7 +46,7 @@ This is a duplicate of #5761 - Trac gave me a bunch of errors as I tried to make
 
 ---
 
-archive/issue_events_006009.json:
+archive/issue_events_013507.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -54,7 +54,24 @@ archive/issue_events_006009.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5762",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5762#event-6009"
+    "url": "https://github.com/sagemath/sagetest/issues/5762#event-13507"
+}
+```
+
+
+
+---
+
+archive/issue_events_013508.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-11T23:03:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5762",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5762#event-13508"
 }
 ```
 

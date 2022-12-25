@@ -50,7 +50,7 @@ Woops, sorry.
 
 ---
 
-archive/issue_events_006303.json:
+archive/issue_events_014203.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -58,7 +58,7 @@ archive/issue_events_006303.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6048",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6048#event-6303"
+    "url": "https://github.com/sagemath/sagetest/issues/6048#event-14203"
 }
 ```
 

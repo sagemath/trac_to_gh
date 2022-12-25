@@ -90,6 +90,57 @@ Michael
 
 ---
 
+archive/issue_events_009625.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-13T09:45:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4261",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4261#event-9625"
+}
+```
+
+
+
+---
+
+archive/issue_events_009626.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-28T16:40:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4261",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4261#event-9626"
+}
+```
+
+
+
+---
+
+archive/issue_events_009627.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-28T16:40:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4261",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4261#event-9627"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031013.json:
 ```json
 {
@@ -251,6 +302,40 @@ Michael
 
 ---
 
+archive/issue_events_009628.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-30T09:00:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4261",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4261#event-9628"
+}
+```
+
+
+
+---
+
+archive/issue_events_009629.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-30T09:00:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4261",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4261#event-9629"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031018.json:
 ```json
 {
@@ -293,7 +378,7 @@ Merged in Sage 3.2.1.rc1
 
 ---
 
-archive/issue_events_004504.json:
+archive/issue_events_009630.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -301,7 +386,7 @@ archive/issue_events_004504.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4261",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4261#event-4504"
+    "url": "https://github.com/sagemath/sagetest/issues/4261#event-9630"
 }
 ```
 

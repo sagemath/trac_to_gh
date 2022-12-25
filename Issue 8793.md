@@ -235,6 +235,23 @@ dochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/
 
 ---
 
+archive/issue_events_021434.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-25T17:18:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8793",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8793#event-21434"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080412.json:
 ```json
 {
@@ -517,7 +534,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008958.json:
+archive/issue_events_021435.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -525,6 +542,6 @@ archive/issue_events_008958.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8793",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8793#event-8958"
+    "url": "https://github.com/sagemath/sagetest/issues/8793#event-21435"
 }
 ```

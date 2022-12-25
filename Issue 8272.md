@@ -72,6 +72,23 @@ This has long been resolved, so can be closed.
 
 ---
 
+archive/issue_events_019793.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-07-19T07:39:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8272",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8272#event-19793"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073099.json:
 ```json
 {
@@ -90,7 +107,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008471.json:
+archive/issue_events_019794.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -98,6 +115,6 @@ archive/issue_events_008471.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8272",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8272#event-8471"
+    "url": "https://github.com/sagemath/sagetest/issues/8272#event-19794"
 }
 ```

@@ -145,7 +145,7 @@ foo.html shows that firefox gives the same behavior.
 
 ---
 
-archive/issue_events_003999.json:
+archive/issue_events_008654.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/acleone",
@@ -153,7 +153,7 @@ archive/issue_events_003999.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3777",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3777#event-3999"
+    "url": "https://github.com/sagemath/sagetest/issues/3777#event-8654"
 }
 ```
 

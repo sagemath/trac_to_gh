@@ -101,7 +101,7 @@ The edit tab allows one to edit the worksheet.  The text tab gives output simila
 
 ---
 
-archive/issue_events_004242.json:
+archive/issue_events_009184.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -109,7 +109,7 @@ archive/issue_events_004242.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4012",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4012#event-4242"
+    "url": "https://github.com/sagemath/sagetest/issues/4012#event-9184"
 }
 ```
 
@@ -130,3 +130,20 @@ archive/issue_comments_028898.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_009185.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:56:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4012",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4012#event-9185"
+}
+```

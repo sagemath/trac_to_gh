@@ -303,6 +303,23 @@ Michael
 
 ---
 
+archive/issue_events_013562.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-15T06:58:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5778",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5778#event-13562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045109.json:
 ```json
 {
@@ -451,6 +468,40 @@ David is also working on subsequent patches to add more doctests and his eventua
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013563.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2009-04-22T10:27:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5778",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5778#event-13563"
+}
+```
+
+
+
+---
+
+archive/issue_events_013564.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2009-04-22T10:27:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5778",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5778#event-13564"
+}
+```
 
 
 
@@ -1485,7 +1536,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006025.json:
+archive/issue_events_013565.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1493,7 +1544,7 @@ archive/issue_events_006025.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5778#event-6025"
+    "url": "https://github.com/sagemath/sagetest/issues/5778#event-13565"
 }
 ```
 

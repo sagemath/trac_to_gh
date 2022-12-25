@@ -33,6 +33,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5286
 
 ---
 
+archive/issue_events_012285.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-01T02:25:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5286",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5286#event-12285"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040545.json:
 ```json
 {
@@ -111,7 +128,41 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_005541.json:
+archive/issue_events_012286.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T20:24:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5286",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5286#event-12286"
+}
+```
+
+
+
+---
+
+archive/issue_events_012287.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-05-28T20:24:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5286",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5286#event-12287"
+}
+```
+
+
+
+---
+
+archive/issue_events_012288.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -119,7 +170,7 @@ archive/issue_events_005541.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5286#event-5541"
+    "url": "https://github.com/sagemath/sagetest/issues/5286#event-12288"
 }
 ```
 

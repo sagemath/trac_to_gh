@@ -81,7 +81,7 @@ Anyway, I guess this ticket can be closed or be used to improve the documentatio
 
 ---
 
-archive/issue_events_007471.json:
+archive/issue_events_017162.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -89,7 +89,7 @@ archive/issue_events_007471.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7250",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7250#event-7471"
+    "url": "https://github.com/sagemath/sagetest/issues/7250#event-17162"
 }
 ```
 
@@ -128,3 +128,20 @@ archive/issue_comments_060118.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_017163.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-23T15:41:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7250",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7250#event-17163"
+}
+```

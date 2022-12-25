@@ -80,6 +80,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_019269.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-01-27T22:02:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8044",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8044#event-19269"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070178.json:
 ```json
 {
@@ -442,7 +459,7 @@ All tests pass on a clean install, so most probably my previous failure was due 
 
 ---
 
-archive/issue_events_008254.json:
+archive/issue_events_019270.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -450,7 +467,7 @@ archive/issue_events_008254.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8044#event-8254"
+    "url": "https://github.com/sagemath/sagetest/issues/8044#event-19270"
 }
 ```
 

@@ -192,6 +192,23 @@ Positive review.
 
 ---
 
+archive/issue_events_010290.json:
+```json
+{
+    "actor": "https://github.com/seblabbe",
+    "created_at": "2009-01-24T16:59:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4524",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4524#event-10290"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033514.json:
 ```json
 {
@@ -210,7 +227,7 @@ I think it can be merged in sage 3.3.
 
 ---
 
-archive/issue_events_004768.json:
+archive/issue_events_010291.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -218,7 +235,7 @@ archive/issue_events_004768.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4524#event-4768"
+    "url": "https://github.com/sagemath/sagetest/issues/4524#event-10291"
 }
 ```
 

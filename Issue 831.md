@@ -46,7 +46,7 @@ Attachment [hg-export-tip.patch](tarball://root/attachments/some-uuid/ticket831/
 
 ---
 
-archive/issue_events_000944.json:
+archive/issue_events_002341.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -54,7 +54,7 @@ archive/issue_events_000944.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/831",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/831#event-944"
+    "url": "https://github.com/sagemath/sagetest/issues/831#event-2341"
 }
 ```
 

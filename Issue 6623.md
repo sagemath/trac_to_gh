@@ -95,6 +95,23 @@ Is this leak still alive? I can't reproduce on sagenb 4.7.2 or linux 4.8.alpha1/
 
 ---
 
+archive/issue_events_015635.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-23T15:02:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6623",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6623#event-15635"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054162.json:
 ```json
 {
@@ -113,7 +130,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006863.json:
+archive/issue_events_015636.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -121,7 +138,7 @@ archive/issue_events_006863.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6623",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6623#event-6863"
+    "url": "https://github.com/sagemath/sagetest/issues/6623#event-15636"
 }
 ```
 

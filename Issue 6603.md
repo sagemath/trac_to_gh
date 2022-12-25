@@ -334,6 +334,23 @@ Changing this to "positive review" as an optional package.
 
 ---
 
+archive/issue_events_015581.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2009-08-14T19:14:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6603",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6603#event-15581"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053960.json:
 ```json
 {
@@ -382,7 +399,7 @@ http://www.sagemath.org/packages/optional/cbc-2.3.spkg
 
 ---
 
-archive/issue_events_006842.json:
+archive/issue_events_015582.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -390,7 +407,7 @@ archive/issue_events_006842.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6603",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6603#event-6842"
+    "url": "https://github.com/sagemath/sagetest/issues/6603#event-15582"
 }
 ```
 

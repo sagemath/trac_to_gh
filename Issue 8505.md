@@ -411,7 +411,7 @@ Yep, #8311 touched the same code, but it was trivial to merge. I'm remarking thi
 
 ---
 
-archive/issue_events_008685.json:
+archive/issue_events_020428.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -419,7 +419,7 @@ archive/issue_events_008685.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8505#event-8685"
+    "url": "https://github.com/sagemath/sagetest/issues/8505#event-20428"
 }
 ```
 

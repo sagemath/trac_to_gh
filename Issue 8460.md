@@ -62,7 +62,7 @@ This happens to be part of #8430 and the fix from #8324 is part of #8435.
 
 ---
 
-archive/issue_events_008644.json:
+archive/issue_events_020308.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -70,7 +70,7 @@ archive/issue_events_008644.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8460",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8460#event-8644"
+    "url": "https://github.com/sagemath/sagetest/issues/8460#event-20308"
 }
 ```
 
@@ -91,3 +91,20 @@ archive/issue_comments_076042.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_020309.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-03-09T06:41:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8460",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8460#event-20309"
+}
+```

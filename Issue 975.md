@@ -85,6 +85,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_002695.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:11:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/975#event-2695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005928.json:
 ```json
 {
@@ -231,6 +248,40 @@ archive/issue_comments_005930.json:
 ```
 
 Attachment [update-environment.patch](tarball://root/attachments/some-uuid/ticket975/update-environment.patch) by @jasongrout created at 2007-12-12 00:22:33
+
+
+
+---
+
+archive/issue_events_002696.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2007-12-12T00:28:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/975#event-2696"
+}
+```
+
+
+
+---
+
+archive/issue_events_002697.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2007-12-12T00:28:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/975#event-2697"
+}
+```
 
 
 
@@ -404,7 +455,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001096.json:
+archive/issue_events_002698.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -412,7 +463,7 @@ archive/issue_events_001096.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/975#event-1096"
+    "url": "https://github.com/sagemath/sagetest/issues/975#event-2698"
 }
 ```
 

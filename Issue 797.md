@@ -48,6 +48,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/797
 
 ---
 
+archive/issue_events_002206.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-03T01:40:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/797",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-2206"
+}
+```
+
+
+
+---
+
+archive/issue_events_002207.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T05:55:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/797",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-2207"
+}
+```
+
+
+
+---
+
+archive/issue_events_002208.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-29T05:55:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/797",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-2208"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004773.json:
 ```json
 {
@@ -73,7 +124,7 @@ sage: timeit('[1..10]')
 
 ---
 
-archive/issue_events_000906.json:
+archive/issue_events_002209.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -81,7 +132,7 @@ archive/issue_events_000906.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/797",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/797#event-906"
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-2209"
 }
 ```
 
@@ -163,7 +214,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000907.json:
+archive/issue_events_002210.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -171,7 +222,7 @@ archive/issue_events_000907.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/797",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/797#event-907"
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-2210"
 }
 ```
 
@@ -761,7 +812,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_000908.json:
+archive/issue_events_002211.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -769,7 +820,7 @@ archive/issue_events_000908.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/797",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/797#event-908"
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-2211"
 }
 ```
 

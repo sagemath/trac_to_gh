@@ -393,6 +393,23 @@ The special status of `fderivative` in Pynac (not a function) may be the reason,
 
 ---
 
+archive/issue_events_015298.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-02-24T10:47:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6480",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6480#event-15298"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052300.json:
 ```json
 {

@@ -125,6 +125,23 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_019301.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-01T00:41:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8057",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8057#event-19301"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070378.json:
 ```json
 {
@@ -143,7 +160,7 @@ Merged [boehm_gc-7.1.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/bo
 
 ---
 
-archive/issue_events_008266.json:
+archive/issue_events_019302.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -151,6 +168,6 @@ archive/issue_events_008266.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8057",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8057#event-8266"
+    "url": "https://github.com/sagemath/sagetest/issues/8057#event-19302"
 }
 ```

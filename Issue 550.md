@@ -49,7 +49,7 @@ adds bernoulli_mod_p_single function
 
 ---
 
-archive/issue_events_000591.json:
+archive/issue_events_001462.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
@@ -57,7 +57,7 @@ archive/issue_events_000591.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/550",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/550#event-591"
+    "url": "https://github.com/sagemath/sagetest/issues/550#event-1462"
 }
 ```
 

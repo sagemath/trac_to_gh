@@ -87,6 +87,23 @@ Changing status from new to needs_info.
 
 ---
 
+archive/issue_events_019452.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8122",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8122#event-19452"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071284.json:
 ```json
 {
@@ -123,6 +140,40 @@ Duplicate of #10719.
 
 ---
 
+archive/issue_events_019453.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-29T23:33:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8122",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8122#event-19453"
+}
+```
+
+
+
+---
+
+archive/issue_events_019454.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-29T23:33:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8122",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8122#event-19454"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071286.json:
 ```json
 {
@@ -141,7 +192,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008330.json:
+archive/issue_events_019455.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -149,6 +200,6 @@ archive/issue_events_008330.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8122",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8122#event-8330"
+    "url": "https://github.com/sagemath/sagetest/issues/8122#event-19455"
 }
 ```

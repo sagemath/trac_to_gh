@@ -51,6 +51,23 @@ Are there any other programs we can run in this way which are not on that list? 
 
 ---
 
+archive/issue_events_024789.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-08-19T13:31:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9847",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9847#event-24789"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097037.json:
 ```json
 {
@@ -97,6 +114,40 @@ In fact, it even shows up in `./sage -help`.
 
 ---
 
+archive/issue_events_024790.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-08-19T13:34:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9847",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9847#event-24790"
+}
+```
+
+
+
+---
+
+archive/issue_events_024791.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-08-19T13:34:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9847",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9847#event-24791"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097039.json:
 ```json
 {
@@ -133,7 +184,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009976.json:
+archive/issue_events_024792.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -141,7 +192,7 @@ archive/issue_events_009976.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9847",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9847#event-9976"
+    "url": "https://github.com/sagemath/sagetest/issues/9847#event-24792"
 }
 ```
 

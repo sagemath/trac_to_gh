@@ -139,7 +139,7 @@ Yes, you are correct. This is a duplicate. I'm marking it as a duplicate.
 
 ---
 
-archive/issue_events_008298.json:
+archive/issue_events_019368.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -147,7 +147,7 @@ archive/issue_events_008298.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8090",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8090#event-8298"
+    "url": "https://github.com/sagemath/sagetest/issues/8090#event-19368"
 }
 ```
 
@@ -168,3 +168,20 @@ archive/issue_comments_070781.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_019369.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-29T07:34:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8090",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8090#event-19369"
+}
+```

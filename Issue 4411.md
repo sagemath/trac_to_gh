@@ -424,6 +424,23 @@ I just posted a new spkg to #10607, since the old one wasn't building on my OS X
 
 ---
 
+archive/issue_events_009962.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2012-10-23T19:34:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4411",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4411#event-9962"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032382.json:
 ```json
 {
@@ -618,6 +635,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_009963.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-12-21T15:11:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4411",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4411#event-9963"
+}
+```
+
+
+
+---
+
+archive/issue_events_009964.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-12-21T15:11:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4411",
+    "milestone": "sage-5.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4411#event-9964"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032391.json:
 ```json
 {
@@ -654,7 +705,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004656.json:
+archive/issue_events_009965.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -662,6 +713,6 @@ archive/issue_events_004656.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4411#event-4656"
+    "url": "https://github.com/sagemath/sagetest/issues/4411#event-9965"
 }
 ```

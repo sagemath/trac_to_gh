@@ -73,7 +73,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005586.json:
+archive/issue_events_012435.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -81,7 +81,7 @@ archive/issue_events_005586.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#event-5586"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#event-12435"
 }
 ```
 
@@ -165,7 +165,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_005587.json:
+archive/issue_events_012436.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -173,7 +173,7 @@ archive/issue_events_005587.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#event-5587"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#event-12436"
 }
 ```
 
@@ -194,6 +194,23 @@ archive/issue_comments_041005.json:
 ```
 
 I need to learn how to use trac.
+
+
+
+---
+
+archive/issue_events_012437.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-26T11:50:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5333",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5333#event-12437"
+}
+```
 
 
 
@@ -226,7 +243,7 @@ Michael
 
 ---
 
-archive/issue_events_005588.json:
+archive/issue_events_012438.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -234,7 +251,7 @@ archive/issue_events_005588.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#event-5588"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#event-12438"
 }
 ```
 

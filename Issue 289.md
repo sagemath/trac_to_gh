@@ -53,6 +53,57 @@ Michael
 
 ---
 
+archive/issue_events_000652.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T22:56:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/289",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/289#event-652"
+}
+```
+
+
+
+---
+
+archive/issue_events_000653.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-29T23:57:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/289",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/289#event-653"
+}
+```
+
+
+
+---
+
+archive/issue_events_000654.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-29T23:57:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/289",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/289#event-654"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001359.json:
 ```json
 {
@@ -71,7 +122,7 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_events_000306.json:
+archive/issue_events_000655.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -79,7 +130,7 @@ archive/issue_events_000306.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/289",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/289#event-306"
+    "url": "https://github.com/sagemath/sagetest/issues/289#event-655"
 }
 ```
 

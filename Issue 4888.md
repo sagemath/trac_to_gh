@@ -124,6 +124,23 @@ Michael
 
 ---
 
+archive/issue_events_011272.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-04T19:37:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4888",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4888#event-11272"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036979.json:
 ```json
 {
@@ -143,6 +160,40 @@ Positive review for the fix suggested by rlm. I have attached the patch with a d
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_011273.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-18T05:53:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4888",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4888#event-11273"
+}
+```
+
+
+
+---
+
+archive/issue_events_011274.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-18T05:53:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4888",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4888#event-11274"
+}
+```
 
 
 
@@ -184,7 +235,7 @@ Merged in Sage 3.3.alpha0
 
 ---
 
-archive/issue_events_005132.json:
+archive/issue_events_011275.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -192,6 +243,6 @@ archive/issue_events_005132.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4888",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4888#event-5132"
+    "url": "https://github.com/sagemath/sagetest/issues/4888#event-11275"
 }
 ```

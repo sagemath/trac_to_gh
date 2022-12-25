@@ -117,7 +117,24 @@ Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_events_001142.json:
+archive/issue_events_002788.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-28T13:40:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1018",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1018#event-2788"
+}
+```
+
+
+
+---
+
+archive/issue_events_002789.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -125,7 +142,7 @@ archive/issue_events_001142.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1018",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1018#event-1142"
+    "url": "https://github.com/sagemath/sagetest/issues/1018#event-2789"
 }
 ```
 

@@ -105,7 +105,7 @@ Looks good to me.  I added a patch which does a few tiny cleanups.  Apply both p
 
 ---
 
-archive/issue_events_004211.json:
+archive/issue_events_009119.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -113,7 +113,7 @@ archive/issue_events_004211.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3981#event-4211"
+    "url": "https://github.com/sagemath/sagetest/issues/3981#event-9119"
 }
 ```
 

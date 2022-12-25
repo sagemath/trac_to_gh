@@ -54,6 +54,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/261
 
 ---
 
+archive/issue_events_000570.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:43:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/261",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/261#event-570"
+}
+```
+
+
+
+---
+
+archive/issue_events_000571.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-07T03:53:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/261",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/261#event-571"
+}
+```
+
+
+
+---
+
+archive/issue_events_000572.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-07T03:53:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/261",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/261#event-572"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001228.json:
 ```json
 {
@@ -280,7 +331,7 @@ Merged both patches in 4.4.alpha0.
 
 ---
 
-archive/issue_events_000276.json:
+archive/issue_events_000573.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -288,6 +339,6 @@ archive/issue_events_000276.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/261#event-276"
+    "url": "https://github.com/sagemath/sagetest/issues/261#event-573"
 }
 ```

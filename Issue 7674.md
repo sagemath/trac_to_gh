@@ -66,6 +66,23 @@ Attachment [trac_7674.patch](tarball://root/attachments/some-uuid/ticket7674/tra
 
 ---
 
+archive/issue_events_018293.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2009-12-13T10:52:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7674",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7674#event-18293"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065666.json:
 ```json
 {
@@ -102,7 +119,7 @@ Well done ! Positive review :-)
 
 ---
 
-archive/issue_events_007893.json:
+archive/issue_events_018294.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -110,7 +127,7 @@ archive/issue_events_007893.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7674",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7674#event-7893"
+    "url": "https://github.com/sagemath/sagetest/issues/7674#event-18294"
 }
 ```
 
@@ -131,3 +148,37 @@ archive/issue_comments_065668.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018295.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-14T16:40:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7674",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7674#event-18295"
+}
+```
+
+
+
+---
+
+archive/issue_events_018296.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-14T16:40:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7674",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7674#event-18296"
+}
+```

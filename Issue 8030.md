@@ -94,6 +94,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_019237.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/nborie",
+    "created_at": "2010-01-23T20:23:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8030",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8030#event-19237"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070020.json:
 ```json
 {
@@ -358,7 +375,7 @@ Rob
 
 ---
 
-archive/issue_events_008241.json:
+archive/issue_events_019238.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -366,7 +383,7 @@ archive/issue_events_008241.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8030#event-8241"
+    "url": "https://github.com/sagemath/sagetest/issues/8030#event-19238"
 }
 ```
 

@@ -135,7 +135,7 @@ positive review as explained in irc.
 
 ---
 
-archive/issue_events_003748.json:
+archive/issue_events_008061.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -143,7 +143,7 @@ archive/issue_events_003748.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3529",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3529#event-3748"
+    "url": "https://github.com/sagemath/sagetest/issues/3529#event-8061"
 }
 ```
 

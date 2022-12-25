@@ -135,7 +135,7 @@ Attachment [trac5620_digraph_plotting.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_events_005862.json:
+archive/issue_events_013226.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -143,7 +143,7 @@ archive/issue_events_005862.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5620",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5620#event-5862"
+    "url": "https://github.com/sagemath/sagetest/issues/5620#event-13226"
 }
 ```
 

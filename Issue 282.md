@@ -104,6 +104,23 @@ This ticket means that the method matrix() which is described as: "The matrix of
 
 ---
 
+archive/issue_events_000634.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-09-18T12:43:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/282",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/282#event-634"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001340.json:
 ```json
 {
@@ -158,6 +175,40 @@ Changing status from assigned to new.
 
 ---
 
+archive/issue_events_000635.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-21T22:40:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/282",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/282#event-635"
+}
+```
+
+
+
+---
+
+archive/issue_events_000636.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-21T22:40:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/282",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/282#event-636"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001343.json:
 ```json
 {
@@ -176,7 +227,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_000299.json:
+archive/issue_events_000637.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -184,7 +235,7 @@ archive/issue_events_000299.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/282#event-299"
+    "url": "https://github.com/sagemath/sagetest/issues/282#event-637"
 }
 ```
 

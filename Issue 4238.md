@@ -84,6 +84,23 @@ The one question I have is if we should have a new global function for this beha
 
 ---
 
+archive/issue_events_009584.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-03T00:01:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4238",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4238#event-9584"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030743.json:
 ```json
 {
@@ -224,7 +241,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004475.json:
+archive/issue_events_009585.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -232,6 +249,6 @@ archive/issue_events_004475.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4238",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4238#event-4475"
+    "url": "https://github.com/sagemath/sagetest/issues/4238#event-9585"
 }
 ```

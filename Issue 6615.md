@@ -74,6 +74,23 @@ All the colors were wrong and nobody noticed !! :-)
 
 ---
 
+archive/issue_events_015617.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2009-08-14T19:14:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6615",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6615#event-15617"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054062.json:
 ```json
 {
@@ -279,7 +296,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_006855.json:
+archive/issue_events_015618.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -287,7 +304,7 @@ archive/issue_events_006855.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6615#event-6855"
+    "url": "https://github.com/sagemath/sagetest/issues/6615#event-15618"
 }
 ```
 

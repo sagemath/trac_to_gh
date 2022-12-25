@@ -1499,6 +1499,23 @@ Michael
 
 ---
 
+archive/issue_events_007474.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-10T08:02:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3337",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3337#event-7474"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023120.json:
 ```json
 {
@@ -1610,6 +1627,40 @@ So change int to integer.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007475.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-10T12:01:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3337",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3337#event-7475"
+}
+```
+
+
+
+---
+
+archive/issue_events_007476.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-10T12:01:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3337",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3337#event-7476"
+}
+```
 
 
 
@@ -2188,7 +2239,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003555.json:
+archive/issue_events_007477.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -2196,7 +2247,7 @@ archive/issue_events_003555.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3337#event-3555"
+    "url": "https://github.com/sagemath/sagetest/issues/3337#event-7477"
 }
 ```
 
@@ -2231,6 +2282,40 @@ Mike: note that there is a patch to const.tex that fixes one doctest.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007478.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T01:43:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3337",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3337#event-7478"
+}
+```
+
+
+
+---
+
+archive/issue_events_007479.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T01:43:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3337",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3337#event-7479"
+}
+```
 
 
 

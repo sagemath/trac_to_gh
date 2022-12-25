@@ -566,6 +566,23 @@ Niles: feel free to make a last check up!
 
 ---
 
+archive/issue_events_020749.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-10-15T13:56:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8589",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8589#event-20749"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077673.json:
 ```json
 {
@@ -715,7 +732,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008766.json:
+archive/issue_events_020750.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -723,7 +740,7 @@ archive/issue_events_008766.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8589#event-8766"
+    "url": "https://github.com/sagemath/sagetest/issues/8589#event-20750"
 }
 ```
 

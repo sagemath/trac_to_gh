@@ -100,6 +100,23 @@ Apparently this might be addressed by a solution to #9906.
 
 ---
 
+archive/issue_events_024783.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-08-05T10:13:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9846",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9846#event-24783"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097016.json:
 ```json
 {
@@ -279,7 +296,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009973.json:
+archive/issue_events_024784.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -287,7 +304,7 @@ archive/issue_events_009973.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9846#event-9973"
+    "url": "https://github.com/sagemath/sagetest/issues/9846#event-24784"
 }
 ```
 
@@ -313,6 +330,40 @@ Resolution changed from duplicate to
 
 ---
 
+archive/issue_events_024785.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-04T13:37:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9846",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9846#event-24785"
+}
+```
+
+
+
+---
+
+archive/issue_events_024786.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-04T13:37:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9846",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9846#event-24786"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097025.json:
 ```json
 {
@@ -331,7 +382,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009974.json:
+archive/issue_events_024787.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -339,7 +390,7 @@ archive/issue_events_009974.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9846#event-9974"
+    "url": "https://github.com/sagemath/sagetest/issues/9846#event-24787"
 }
 ```
 
@@ -515,7 +566,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009975.json:
+archive/issue_events_024788.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -523,7 +574,7 @@ archive/issue_events_009975.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9846#event-9975"
+    "url": "https://github.com/sagemath/sagetest/issues/9846#event-24788"
 }
 ```
 

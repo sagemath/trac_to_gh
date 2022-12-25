@@ -120,7 +120,7 @@ should be enough to free everything.
 
 ---
 
-archive/issue_events_000499.json:
+archive/issue_events_001178.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,7 +128,24 @@ archive/issue_events_000499.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/470",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/470#event-499"
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-1178"
+}
+```
+
+
+
+---
+
+archive/issue_events_001179.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-12T01:56:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/470",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-1179"
 }
 ```
 
@@ -176,6 +193,40 @@ Michael
 
 ---
 
+archive/issue_events_001180.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-13T20:09:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/470",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-1180"
+}
+```
+
+
+
+---
+
+archive/issue_events_001181.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-13T20:09:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/470",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-1181"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002337.json:
 ```json
 {
@@ -212,7 +263,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000500.json:
+archive/issue_events_001182.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -220,7 +271,7 @@ archive/issue_events_000500.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/470",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/470#event-500"
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-1182"
 }
 ```
 
@@ -267,7 +318,7 @@ Michael
 
 ---
 
-archive/issue_events_000501.json:
+archive/issue_events_001183.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -275,7 +326,7 @@ archive/issue_events_000501.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/470",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/470#event-501"
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-1183"
 }
 ```
 
@@ -318,3 +369,37 @@ Well, there are some cases where the dealloc doesn't work, so close this for now
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001184.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T11:54:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/470",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-1184"
+}
+```
+
+
+
+---
+
+archive/issue_events_001185.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T11:54:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/470",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-1185"
+}
+```

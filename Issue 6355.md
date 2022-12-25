@@ -377,6 +377,23 @@ It comes from a tar command run in the wrong directory.... fixed ;-)
 
 ---
 
+archive/issue_events_014950.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-21T20:32:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6355",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6355#event-14950"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050725.json:
 ```json
 {
@@ -421,7 +438,7 @@ As far as I understand, this new SPKG doesn't depend on #5793. So I'm merging th
 
 ---
 
-archive/issue_events_006601.json:
+archive/issue_events_014951.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -429,7 +446,7 @@ archive/issue_events_006601.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6355",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6355#event-6601"
+    "url": "https://github.com/sagemath/sagetest/issues/6355#event-14951"
 }
 ```
 
@@ -491,7 +508,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006602.json:
+archive/issue_events_014952.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -499,7 +516,7 @@ archive/issue_events_006602.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6355",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6355#event-6602"
+    "url": "https://github.com/sagemath/sagetest/issues/6355#event-14952"
 }
 ```
 
@@ -561,7 +578,7 @@ The code/doctest related to cliquer is to be found in #5793 : almost all the fun
 
 ---
 
-archive/issue_events_006603.json:
+archive/issue_events_014953.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -569,7 +586,7 @@ archive/issue_events_006603.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6355",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6355#event-6603"
+    "url": "https://github.com/sagemath/sagetest/issues/6355#event-14953"
 }
 ```
 

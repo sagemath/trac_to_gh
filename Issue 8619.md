@@ -83,6 +83,23 @@ John Bussoletti
 
 ---
 
+archive/issue_events_020852.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8619",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8619#event-20852"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077981.json:
 ```json
 {
@@ -114,6 +131,40 @@ archive/issue_comments_077982.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_020853.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-29T11:23:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8619",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8619#event-20853"
+}
+```
+
+
+
+---
+
+archive/issue_events_020854.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-29T11:23:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8619",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8619#event-20854"
+}
+```
 
 
 
@@ -155,7 +206,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_008790.json:
+archive/issue_events_020855.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -163,6 +214,6 @@ archive/issue_events_008790.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8619",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8619#event-8790"
+    "url": "https://github.com/sagemath/sagetest/issues/8619#event-20855"
 }
 ```

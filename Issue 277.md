@@ -70,6 +70,23 @@ which gives a better algorithm for computing group orders
 
 ---
 
+archive/issue_events_000620.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:52:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/277",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/277#event-620"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001312.json:
 ```json
 {
@@ -282,7 +299,7 @@ Merged both patches in Sage 2.10.3.rc2
 
 ---
 
-archive/issue_events_000294.json:
+archive/issue_events_000621.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -290,6 +307,40 @@ archive/issue_events_000294.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/277#event-294"
+    "url": "https://github.com/sagemath/sagetest/issues/277#event-621"
+}
+```
+
+
+
+---
+
+archive/issue_events_000622.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-05T00:59:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/277",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/277#event-622"
+}
+```
+
+
+
+---
+
+archive/issue_events_000623.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-05T00:59:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/277",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/277#event-623"
 }
 ```

@@ -92,6 +92,23 @@ And also #10.
 
 ---
 
+archive/issue_events_003631.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-29T17:43:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1408",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1408#event-3631"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009062.json:
 ```json
 {
@@ -110,7 +127,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001556.json:
+archive/issue_events_003632.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -118,7 +135,7 @@ archive/issue_events_001556.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1408",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1408#event-1556"
+    "url": "https://github.com/sagemath/sagetest/issues/1408#event-3632"
 }
 ```
 

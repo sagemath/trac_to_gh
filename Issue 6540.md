@@ -70,7 +70,7 @@ As a side note, I think there are too many syntax choices for creating edges, wh
 
 ---
 
-archive/issue_events_006776.json:
+archive/issue_events_015429.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -78,7 +78,7 @@ archive/issue_events_006776.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6540",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6540#event-6776"
+    "url": "https://github.com/sagemath/sagetest/issues/6540#event-15429"
 }
 ```
 

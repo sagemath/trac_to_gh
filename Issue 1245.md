@@ -61,6 +61,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1245
 
 ---
 
+archive/issue_events_003291.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-20T03:02:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1245",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1245#event-3291"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007777.json:
 ```json
 {
@@ -177,7 +194,7 @@ I'm stuck with this bug, I don't know where to look. Robert, can you take a look
 
 ---
 
-archive/issue_events_001387.json:
+archive/issue_events_003292.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -185,7 +202,7 @@ archive/issue_events_001387.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1245",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1245#event-1387"
+    "url": "https://github.com/sagemath/sagetest/issues/1245#event-3292"
 }
 ```
 
@@ -235,3 +252,37 @@ archive/issue_comments_007784.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_003293.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-11-14T09:41:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1245",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1245#event-3293"
+}
+```
+
+
+
+---
+
+archive/issue_events_003294.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-11-14T09:41:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1245",
+    "milestone": "sage-3.1.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1245#event-3294"
+}
+```

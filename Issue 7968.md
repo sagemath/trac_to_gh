@@ -117,6 +117,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_019069.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-01-17T22:41:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7968",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7968#event-19069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069399.json:
 ```json
 {
@@ -153,7 +170,7 @@ Yep, this looks good. As William pointed out to me when I asked, the issue is ju
 
 ---
 
-archive/issue_events_008183.json:
+archive/issue_events_019070.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -161,7 +178,7 @@ archive/issue_events_008183.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7968#event-8183"
+    "url": "https://github.com/sagemath/sagetest/issues/7968#event-19070"
 }
 ```
 

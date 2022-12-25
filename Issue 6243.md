@@ -294,7 +294,7 @@ All doctests pass in my merge tree. So I'm changing #6404, #6401, #6377 and #624
 
 ---
 
-archive/issue_events_006488.json:
+archive/issue_events_014625.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -302,7 +302,7 @@ archive/issue_events_006488.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6243#event-6488"
+    "url": "https://github.com/sagemath/sagetest/issues/6243#event-14625"
 }
 ```
 

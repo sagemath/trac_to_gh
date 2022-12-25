@@ -194,7 +194,7 @@ Changing keywords from "" to "quadratic forms".
 
 ---
 
-archive/issue_events_009508.json:
+archive/issue_events_023085.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -202,7 +202,7 @@ archive/issue_events_009508.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9355#event-9508"
+    "url": "https://github.com/sagemath/sagetest/issues/9355#event-23085"
 }
 ```
 

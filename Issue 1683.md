@@ -111,7 +111,7 @@ I suggest that we can close this ticket now with the new doctest system.
 
 ---
 
-archive/issue_events_001842.json:
+archive/issue_events_004134.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -119,7 +119,7 @@ archive/issue_events_001842.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1683",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1683#event-1842"
+    "url": "https://github.com/sagemath/sagetest/issues/1683#event-4134"
 }
 ```
 

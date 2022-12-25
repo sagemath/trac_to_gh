@@ -50,6 +50,23 @@ Depends on #4134 and #2407
 
 ---
 
+archive/issue_events_009417.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-16T22:01:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#event-9417"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029930.json:
 ```json
 {
@@ -798,7 +815,7 @@ rebased against mvngu's 4.1.2.alpha0 merge tree
 
 ---
 
-archive/issue_events_004373.json:
+archive/issue_events_009418.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -806,7 +823,7 @@ archive/issue_events_004373.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4135#event-4373"
+    "url": "https://github.com/sagemath/sagetest/issues/4135#event-9418"
 }
 ```
 

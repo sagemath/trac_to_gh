@@ -285,7 +285,7 @@ Note that this is Ryan's first contribution (along with #9199 and #7154)
 
 ---
 
-archive/issue_events_009003.json:
+archive/issue_events_021570.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -293,7 +293,7 @@ archive/issue_events_009003.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8838#event-9003"
+    "url": "https://github.com/sagemath/sagetest/issues/8838#event-21570"
 }
 ```
 

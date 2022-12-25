@@ -66,6 +66,23 @@ archive/issue_comments_024425.json:
 
 ---
 
+archive/issue_events_007878.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-06-23T02:56:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3471",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3471#event-7878"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024426.json:
 ```json
 {
@@ -84,7 +101,7 @@ Merged in Sage 3.0.4.alpha0
 
 ---
 
-archive/issue_events_003692.json:
+archive/issue_events_007879.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -92,7 +109,7 @@ archive/issue_events_003692.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3471",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3471#event-3692"
+    "url": "https://github.com/sagemath/sagetest/issues/3471#event-7879"
 }
 ```
 

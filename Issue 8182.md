@@ -59,6 +59,23 @@ Given that [Camino itself says it has come to an end](http://caminobrowser.org/)
 
 ---
 
+archive/issue_events_019587.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-12-10T21:44:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8182",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8182#event-19587"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071991.json:
 ```json
 {
@@ -131,7 +148,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_008385.json:
+archive/issue_events_019588.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -139,6 +156,6 @@ archive/issue_events_008385.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8182",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8182#event-8385"
+    "url": "https://github.com/sagemath/sagetest/issues/8182#event-19588"
 }
 ```

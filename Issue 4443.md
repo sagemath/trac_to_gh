@@ -580,7 +580,7 @@ All doctests in sage/rings and sage/libs/pari pass.
 
 ---
 
-archive/issue_events_004689.json:
+archive/issue_events_010035.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -588,7 +588,7 @@ archive/issue_events_004689.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#event-4689"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#event-10035"
 }
 ```
 
@@ -631,3 +631,20 @@ archive/issue_comments_032633.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_010036.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-08T05:17:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4443",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4443#event-10036"
+}
+```

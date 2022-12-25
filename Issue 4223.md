@@ -594,6 +594,23 @@ Attachment [trac_4223.patch](tarball://root/attachments/some-uuid/ticket4223/tra
 
 ---
 
+archive/issue_events_009562.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-12T16:25:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4223",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4223#event-9562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030633.json:
 ```json
 {
@@ -640,7 +657,7 @@ Michael
 
 ---
 
-archive/issue_events_004460.json:
+archive/issue_events_009563.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -648,7 +665,7 @@ archive/issue_events_004460.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4223",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4223#event-4460"
+    "url": "https://github.com/sagemath/sagetest/issues/4223#event-9563"
 }
 ```
 

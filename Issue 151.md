@@ -423,7 +423,24 @@ is unknown ever !?
 
 ---
 
-archive/issue_events_000157.json:
+archive/issue_events_000281.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:56:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/151",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/151#event-281"
+}
+```
+
+
+
+---
+
+archive/issue_events_000282.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -431,7 +448,7 @@ archive/issue_events_000157.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/151#event-157"
+    "url": "https://github.com/sagemath/sagetest/issues/151#event-282"
 }
 ```
 

@@ -113,6 +113,23 @@ I think you should set this as an enhancement then work with the release manager
 
 ---
 
+archive/issue_events_017429.json:
+```json
+{
+    "actor": "https://github.com/nathanncohen",
+    "created_at": "2009-12-17T16:24:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7369",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7369#event-17429"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061640.json:
 ```json
 {
@@ -149,7 +166,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007591.json:
+archive/issue_events_017430.json:
 ```json
 {
     "actor": "https://github.com/nathanncohen",
@@ -157,6 +174,6 @@ archive/issue_events_007591.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7369#event-7591"
+    "url": "https://github.com/sagemath/sagetest/issues/7369#event-17430"
 }
 ```

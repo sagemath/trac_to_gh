@@ -67,6 +67,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_002608.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2013-05-24T17:59:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/945",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/945#event-2608"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005757.json:
 ```json
 {
@@ -153,7 +170,7 @@ For duplicate tickets, there is no author since there is no patch to be merged.
 
 ---
 
-archive/issue_events_001065.json:
+archive/issue_events_002609.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -161,7 +178,7 @@ archive/issue_events_001065.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/945",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/945#event-1065"
+    "url": "https://github.com/sagemath/sagetest/issues/945#event-2609"
 }
 ```
 

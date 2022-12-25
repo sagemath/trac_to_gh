@@ -159,6 +159,23 @@ Looks good.
 
 ---
 
+archive/issue_events_023507.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-11T06:02:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9481",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9481#event-23507"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090875.json:
 ```json
 {
@@ -305,7 +322,7 @@ All documentation now builds without error or warning, so positive review for [a
 
 ---
 
-archive/issue_events_009633.json:
+archive/issue_events_023508.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -313,7 +330,7 @@ archive/issue_events_009633.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9481#event-9633"
+    "url": "https://github.com/sagemath/sagetest/issues/9481#event-23508"
 }
 ```
 

@@ -87,6 +87,23 @@ I think this is fixed by my patch to #2340.  If cswiercz can confirm that, this 
 
 ---
 
+archive/issue_events_005662.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:11:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2401",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2401#event-5662"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016183.json:
 ```json
 {
@@ -105,7 +122,7 @@ This patch is indeed covered by #2340. I confirm Cremona's comment above. This p
 
 ---
 
-archive/issue_events_002577.json:
+archive/issue_events_005663.json:
 ```json
 {
     "actor": "https://github.com/cswiercz",
@@ -113,7 +130,7 @@ archive/issue_events_002577.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2401",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2401#event-2577"
+    "url": "https://github.com/sagemath/sagetest/issues/2401#event-5663"
 }
 ```
 

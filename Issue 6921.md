@@ -67,7 +67,7 @@ I can't test the exact setup, but in all cases using sage-native-execute is a go
 
 ---
 
-archive/issue_events_007148.json:
+archive/issue_events_016253.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -75,7 +75,7 @@ archive/issue_events_007148.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6921",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6921#event-7148"
+    "url": "https://github.com/sagemath/sagetest/issues/6921#event-16253"
 }
 ```
 
@@ -96,6 +96,23 @@ archive/issue_comments_057027.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_016254.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-23T06:36:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6921",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6921#event-16254"
+}
+```
 
 
 

@@ -65,6 +65,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/7589
 
 ---
 
+archive/issue_events_018006.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18006"
+}
+```
+
+
+
+---
+
+archive/issue_events_018007.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18007"
+}
+```
+
+
+
+---
+
+archive/issue_events_018008.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18008"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064580.json:
 ```json
 {
@@ -139,6 +190,74 @@ Changing keywords from "" to "coercion, cyclotomic".
 
 ---
 
+archive/issue_events_018009.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18009"
+}
+```
+
+
+
+---
+
+archive/issue_events_018010.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18010"
+}
+```
+
+
+
+---
+
+archive/issue_events_018011.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18011"
+}
+```
+
+
+
+---
+
+archive/issue_events_018012.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064582.json:
 ```json
 {
@@ -152,6 +271,40 @@ archive/issue_comments_064582.json:
 ```
 
 see also the somehow related #20746
+
+
+
+---
+
+archive/issue_events_018013.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2016-08-31T15:41:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18013"
+}
+```
+
+
+
+---
+
+archive/issue_events_018014.json:
+```json
+{
+    "actor": "https://github.com/videlec",
+    "created_at": "2016-08-31T15:41:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-7.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18014"
+}
+```
 
 
 
@@ -208,6 +361,40 @@ archive/issue_comments_064585.json:
 ```
 
 Changing keywords from "coercion, cyclotomic" to "coercion, cyclotomic, coxeter".
+
+
+
+---
+
+archive/issue_events_018015.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-04-30T16:55:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-7.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18015"
+}
+```
+
+
+
+---
+
+archive/issue_events_018016.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-04-30T16:55:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7589",
+    "milestone": "sage-8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18016"
+}
+```
 
 
 
@@ -313,7 +500,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007814.json:
+archive/issue_events_018017.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -321,6 +508,6 @@ archive/issue_events_007814.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7589#event-7814"
+    "url": "https://github.com/sagemath/sagetest/issues/7589#event-18017"
 }
 ```

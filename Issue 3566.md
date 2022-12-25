@@ -67,7 +67,24 @@ Looks good to me.
 
 ---
 
-archive/issue_events_003784.json:
+archive/issue_events_008158.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-06T20:07:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3566",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3566#event-8158"
+}
+```
+
+
+
+---
+
+archive/issue_events_008159.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -75,7 +92,7 @@ archive/issue_events_003784.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3566",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3566#event-3784"
+    "url": "https://github.com/sagemath/sagetest/issues/3566#event-8159"
 }
 ```
 

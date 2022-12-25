@@ -125,7 +125,7 @@ Merged in 2.9.1 alpha2
 
 ---
 
-archive/issue_events_001717.json:
+archive/issue_events_003912.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -133,6 +133,6 @@ archive/issue_events_001717.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1563",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1563#event-1717"
+    "url": "https://github.com/sagemath/sagetest/issues/1563#event-3912"
 }
 ```

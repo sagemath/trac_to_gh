@@ -450,7 +450,7 @@ It looks like this will never happen.
 
 ---
 
-archive/issue_events_002975.json:
+archive/issue_events_006429.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -458,7 +458,7 @@ archive/issue_events_002975.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2785#event-2975"
+    "url": "https://github.com/sagemath/sagetest/issues/2785#event-6429"
 }
 ```
 
@@ -479,3 +479,20 @@ archive/issue_comments_019097.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_006430.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:55:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2785",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2785#event-6430"
+}
+```

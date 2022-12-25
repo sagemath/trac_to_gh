@@ -68,7 +68,7 @@ applied to 2.8.11.rc1 - via with new python-2.5.1.p8.spkg
 
 ---
 
-archive/issue_events_001184.json:
+archive/issue_events_002871.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -76,6 +76,6 @@ archive/issue_events_001184.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1061",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1061#event-1184"
+    "url": "https://github.com/sagemath/sagetest/issues/1061#event-2871"
 }
 ```

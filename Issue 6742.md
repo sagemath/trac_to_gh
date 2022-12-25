@@ -107,7 +107,7 @@ Looks good to me.  Yep, this should also be done for the javascript code that is
 
 ---
 
-archive/issue_events_006974.json:
+archive/issue_events_015905.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -115,7 +115,24 @@ archive/issue_events_006974.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6742",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6742#event-6974"
+    "url": "https://github.com/sagemath/sagetest/issues/6742#event-15905"
+}
+```
+
+
+
+---
+
+archive/issue_events_015906.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-02T05:15:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6742",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6742#event-15906"
 }
 ```
 

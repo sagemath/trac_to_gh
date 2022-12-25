@@ -229,6 +229,57 @@ Last patch fixes this.
 
 ---
 
+archive/issue_events_001291.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/abergeron",
+    "created_at": "2008-12-24T04:57:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/508",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/508#event-1291"
+}
+```
+
+
+
+---
+
+archive/issue_events_001292.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-24T11:51:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/508",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/508#event-1292"
+}
+```
+
+
+
+---
+
+archive/issue_events_001293.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-24T11:51:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/508",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/508#event-1293"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002541.json:
 ```json
 {
@@ -285,6 +336,40 @@ I adjusted the milestone because this patch does not interfere with the sphinxif
 
 ---
 
+archive/issue_events_001294.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-01-18T23:52:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/508",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/508#event-1294"
+}
+```
+
+
+
+---
+
+archive/issue_events_001295.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-01-18T23:52:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/508",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/508#event-1295"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002544.json:
 ```json
 {
@@ -321,7 +406,7 @@ Merged in Sage 3.3.alpha0
 
 ---
 
-archive/issue_events_000543.json:
+archive/issue_events_001296.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -329,6 +414,6 @@ archive/issue_events_000543.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/508#event-543"
+    "url": "https://github.com/sagemath/sagetest/issues/508#event-1296"
 }
 ```

@@ -376,7 +376,7 @@ With apologies to zimmerma and Laurent Imbert for stealing their thunder, I atta
 
 ---
 
-archive/issue_events_002337.json:
+archive/issue_events_005188.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -384,7 +384,7 @@ archive/issue_events_002337.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2170#event-2337"
+    "url": "https://github.com/sagemath/sagetest/issues/2170#event-5188"
 }
 ```
 

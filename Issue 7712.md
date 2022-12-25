@@ -165,6 +165,23 @@ Normally, both calls should return an object of type "Real Interval Field", isn'
 
 ---
 
+archive/issue_events_018430.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:08:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7712",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7712#event-18430"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066114.json:
 ```json
 {
@@ -525,6 +542,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_018431.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2012-12-15T16:37:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7712",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7712#event-18431"
+}
+```
+
+
+
+---
+
+archive/issue_events_018432.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2012-12-15T16:37:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7712",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7712#event-18432"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066128.json:
 ```json
 {
@@ -543,7 +594,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007929.json:
+archive/issue_events_018433.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -551,6 +602,6 @@ archive/issue_events_007929.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#event-7929"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#event-18433"
 }
 ```

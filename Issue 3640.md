@@ -190,7 +190,7 @@ I agree: it is better than the present situation.  If I have time I will try to 
 
 ---
 
-archive/issue_events_003859.json:
+archive/issue_events_008352.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -198,7 +198,7 @@ archive/issue_events_003859.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3640",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3640#event-3859"
+    "url": "https://github.com/sagemath/sagetest/issues/3640#event-8352"
 }
 ```
 
@@ -241,3 +241,20 @@ Merged in Sage 3.2.3.final and uploaded to the optional spkg repo.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_008353.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-26T17:09:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3640",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3640#event-8353"
+}
+```

@@ -80,6 +80,57 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001089.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T12:43:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/443",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/443#event-1089"
+}
+```
+
+
+
+---
+
+archive/issue_events_001090.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-29T21:16:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/443",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/443#event-1090"
+}
+```
+
+
+
+---
+
+archive/issue_events_001091.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-29T21:16:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/443",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/443#event-1091"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002206.json:
 ```json
 {
@@ -120,7 +171,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000470.json:
+archive/issue_events_001092.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -128,6 +179,6 @@ archive/issue_events_000470.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/443",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/443#event-470"
+    "url": "https://github.com/sagemath/sagetest/issues/443#event-1092"
 }
 ```

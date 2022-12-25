@@ -68,7 +68,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_002535.json:
+archive/issue_events_005562.json:
 ```json
 {
     "actor": "https://github.com/roed314",
@@ -76,7 +76,7 @@ archive/issue_events_002535.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2358",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2358#event-2535"
+    "url": "https://github.com/sagemath/sagetest/issues/2358#event-5562"
 }
 ```
 
@@ -97,3 +97,20 @@ archive/issue_comments_015866.json:
 ```
 
 This was previously fixed.  See sage.categories.map.Map.__call__
+
+
+
+---
+
+archive/issue_events_005563.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T15:33:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2358",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2358#event-5563"
+}
+```

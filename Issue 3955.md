@@ -364,6 +364,23 @@ Setting to positive-review.
 
 ---
 
+archive/issue_events_009079.json:
+```json
+{
+    "actor": "https://github.com/tkluck",
+    "created_at": "2012-12-23T21:01:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3955",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3955#event-9079"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028345.json:
 ```json
 {
@@ -395,6 +412,40 @@ archive/issue_comments_028346.json:
 ```
 
 Why the milestone change?
+
+
+
+---
+
+archive/issue_events_009080.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-12-23T21:04:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3955",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3955#event-9080"
+}
+```
+
+
+
+---
+
+archive/issue_events_009081.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-12-23T21:04:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3955",
+    "milestone": "sage-5.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3955#event-9081"
+}
+```
 
 
 
@@ -482,7 +533,7 @@ In the future, make sure the "apply" instructions in the ticket description rema
 
 ---
 
-archive/issue_events_004183.json:
+archive/issue_events_009082.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -490,7 +541,7 @@ archive/issue_events_004183.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#event-4183"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#event-9082"
 }
 ```
 

@@ -267,7 +267,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009137.json:
+archive/issue_events_021981.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -275,7 +275,24 @@ archive/issue_events_009137.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8984",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8984#event-9137"
+    "url": "https://github.com/sagemath/sagetest/issues/8984#event-21981"
+}
+```
+
+
+
+---
+
+archive/issue_events_021982.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-09T04:37:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8984",
+    "milestone": "sage-4.4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8984#event-21982"
 }
 ```
 
@@ -337,7 +354,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009138.json:
+archive/issue_events_021983.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -345,7 +362,7 @@ archive/issue_events_009138.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8984",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8984#event-9138"
+    "url": "https://github.com/sagemath/sagetest/issues/8984#event-21983"
 }
 ```
 
@@ -493,7 +510,7 @@ sage-4.5 is in feature freeze mode. Nothing but essential fixes will be merged u
 
 ---
 
-archive/issue_events_009139.json:
+archive/issue_events_021984.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -501,7 +518,7 @@ archive/issue_events_009139.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8984",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8984#event-9139"
+    "url": "https://github.com/sagemath/sagetest/issues/8984#event-21984"
 }
 ```
 

@@ -303,6 +303,23 @@ Interesting. On the Arch VM where I was seeing the same problem, increasing the 
 
 ---
 
+archive/issue_events_024831.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-07T22:29:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24831"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097295.json:
 ```json
 {
@@ -552,6 +569,40 @@ I wonder if `read_nonblocking()` is the right thing to do... (One can use signal
 
 ---
 
+archive/issue_events_024832.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-07T12:12:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24832"
+}
+```
+
+
+
+---
+
+archive/issue_events_024833.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-07T12:12:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24833"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097301.json:
 ```json
 {
@@ -583,6 +634,176 @@ archive/issue_comments_097302.json:
 ```
 
 Changing assignee from mvngu to @williamstein.
+
+
+
+---
+
+archive/issue_events_024834.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24834"
+}
+```
+
+
+
+---
+
+archive/issue_events_024835.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24835"
+}
+```
+
+
+
+---
+
+archive/issue_events_024836.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24836"
+}
+```
+
+
+
+---
+
+archive/issue_events_024837.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24837"
+}
+```
+
+
+
+---
+
+archive/issue_events_024838.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24838"
+}
+```
+
+
+
+---
+
+archive/issue_events_024839.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24839"
+}
+```
+
+
+
+---
+
+archive/issue_events_024840.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24840"
+}
+```
+
+
+
+---
+
+archive/issue_events_024841.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24841"
+}
+```
+
+
+
+---
+
+archive/issue_events_024842.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-07T18:55:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24842"
+}
+```
+
+
+
+---
+
+archive/issue_events_024843.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-07T18:55:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9864",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24843"
+}
+```
 
 
 
@@ -642,7 +863,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009994.json:
+archive/issue_events_024844.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -650,7 +871,7 @@ archive/issue_events_009994.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9864#event-9994"
+    "url": "https://github.com/sagemath/sagetest/issues/9864#event-24844"
 }
 ```
 

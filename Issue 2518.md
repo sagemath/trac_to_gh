@@ -156,7 +156,7 @@ Since this hasn't been reported in around 8 months, I think this should be close
 
 ---
 
-archive/issue_events_002699.json:
+archive/issue_events_005913.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -164,7 +164,7 @@ archive/issue_events_002699.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2518",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2518#event-2699"
+    "url": "https://github.com/sagemath/sagetest/issues/2518#event-5913"
 }
 ```
 
@@ -185,6 +185,23 @@ archive/issue_comments_017145.json:
 ```
 
 Resolution changed from fixed to invalid
+
+
+
+---
+
+archive/issue_events_005914.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-01-19T07:17:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2518",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2518#event-5914"
+}
+```
 
 
 

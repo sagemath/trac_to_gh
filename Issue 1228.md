@@ -118,7 +118,7 @@ Fixed the doctest directly :)
 
 ---
 
-archive/issue_events_001366.json:
+archive/issue_events_003248.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -126,7 +126,7 @@ archive/issue_events_001366.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1228",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1228#event-1366"
+    "url": "https://github.com/sagemath/sagetest/issues/1228#event-3248"
 }
 ```
 

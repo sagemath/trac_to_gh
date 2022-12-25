@@ -82,7 +82,7 @@ this is no longer a problem.
 
 ---
 
-archive/issue_events_000289.json:
+archive/issue_events_000608.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -90,7 +90,7 @@ archive/issue_events_000289.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/272",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/272#event-289"
+    "url": "https://github.com/sagemath/sagetest/issues/272#event-608"
 }
 ```
 
@@ -111,3 +111,20 @@ archive/issue_comments_001293.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000609.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T09:09:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/272",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/272#event-609"
+}
+```

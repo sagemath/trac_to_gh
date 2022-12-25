@@ -66,7 +66,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009506.json:
+archive/issue_events_023081.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/retry",
@@ -74,7 +74,7 @@ archive/issue_events_009506.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9353",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9353#event-9506"
+    "url": "https://github.com/sagemath/sagetest/issues/9353#event-23081"
 }
 ```
 
@@ -95,6 +95,23 @@ archive/issue_comments_088649.json:
 ```
 
 This is a duplicate of which ticket?
+
+
+
+---
+
+archive/issue_events_023082.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-29T09:05:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9353",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9353#event-23082"
+}
+```
 
 
 

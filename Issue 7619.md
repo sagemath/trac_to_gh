@@ -258,7 +258,7 @@ Merged [trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch](http://trac.sage
 
 ---
 
-archive/issue_events_007844.json:
+archive/issue_events_018107.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -266,7 +266,7 @@ archive/issue_events_007844.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7619#event-7844"
+    "url": "https://github.com/sagemath/sagetest/issues/7619#event-18107"
 }
 ```
 

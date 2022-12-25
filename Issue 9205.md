@@ -173,7 +173,7 @@ Replying to [comment:2 cremona]:
 
 ---
 
-archive/issue_events_009359.json:
+archive/issue_events_022673.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -181,7 +181,7 @@ archive/issue_events_009359.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9205",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9205#event-9359"
+    "url": "https://github.com/sagemath/sagetest/issues/9205#event-22673"
 }
 ```
 
@@ -202,3 +202,20 @@ archive/issue_comments_086027.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_022674.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-20T18:05:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#event-22674"
+}
+```

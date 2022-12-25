@@ -200,6 +200,23 @@ This should be trivial to fix by changing implicit_plot to call fast_float.  In 
 
 ---
 
+archive/issue_events_004507.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:58:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1862",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1862#event-4507"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011765.json:
 ```json
 {
@@ -256,7 +273,7 @@ Merged 1862.patch in Sage 2.10.4.rc0
 
 ---
 
-archive/issue_events_002020.json:
+archive/issue_events_004508.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -264,6 +281,6 @@ archive/issue_events_002020.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1862",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1862#event-2020"
+    "url": "https://github.com/sagemath/sagetest/issues/1862#event-4508"
 }
 ```

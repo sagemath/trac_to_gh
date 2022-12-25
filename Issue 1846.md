@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1846
 
 ---
 
-archive/issue_events_002005.json:
+archive/issue_events_004474.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -53,7 +53,7 @@ archive/issue_events_002005.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1846",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1846#event-2005"
+    "url": "https://github.com/sagemath/sagetest/issues/1846#event-4474"
 }
 ```
 
@@ -123,3 +123,37 @@ log(x^(-1)+1).taylor(x,0,5)
 -log(x) + x - x^2/2 + x^3/3 - x^4/4 + x^5/5
 ```
 
+
+
+
+---
+
+archive/issue_events_004475.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-19T14:42:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1846",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1846#event-4475"
+}
+```
+
+
+
+---
+
+archive/issue_events_004476.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-19T15:44:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1846",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1846#event-4476"
+}
+```

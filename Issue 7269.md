@@ -1038,6 +1038,23 @@ Input cell tweaks.  Include jQuery just once.  Replaces previous.
 
 ---
 
+archive/issue_events_017193.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-12-30T08:23:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7269",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7269#event-17193"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060343.json:
 ```json
 {
@@ -1284,7 +1301,7 @@ Of course, this assumes #7650 is reviewed.
 
 ---
 
-archive/issue_events_007490.json:
+archive/issue_events_017194.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -1292,7 +1309,7 @@ archive/issue_events_007490.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7269#event-7490"
+    "url": "https://github.com/sagemath/sagetest/issues/7269#event-17194"
 }
 ```
 

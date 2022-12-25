@@ -64,7 +64,7 @@ This is a very good idea indeed.  The patch looks fine to me though it would als
 
 ---
 
-archive/issue_events_003369.json:
+archive/issue_events_007125.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -72,7 +72,7 @@ archive/issue_events_003369.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3153",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3153#event-3369"
+    "url": "https://github.com/sagemath/sagetest/issues/3153#event-7125"
 }
 ```
 

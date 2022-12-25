@@ -224,6 +224,23 @@ Use `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch
 
 ---
 
+archive/issue_events_017712.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-11-22T19:09:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#event-17712"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062854.json:
 ```json
 {
@@ -459,7 +476,7 @@ On the grounds that this is an improvement on some systems and I hope isn't any 
 
 ---
 
-archive/issue_events_007699.json:
+archive/issue_events_017713.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -467,7 +484,7 @@ archive/issue_events_007699.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7473#event-7699"
+    "url": "https://github.com/sagemath/sagetest/issues/7473#event-17713"
 }
 ```
 
@@ -565,7 +582,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007700.json:
+archive/issue_events_017714.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -573,7 +590,7 @@ archive/issue_events_007700.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7473#event-7700"
+    "url": "https://github.com/sagemath/sagetest/issues/7473#event-17714"
 }
 ```
 
@@ -671,7 +688,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007701.json:
+archive/issue_events_017715.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -679,6 +696,6 @@ archive/issue_events_007701.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7473#event-7701"
+    "url": "https://github.com/sagemath/sagetest/issues/7473#event-17715"
 }
 ```

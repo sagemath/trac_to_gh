@@ -175,7 +175,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008040.json:
+archive/issue_events_018721.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -183,7 +183,7 @@ archive/issue_events_008040.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7825",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7825#event-8040"
+    "url": "https://github.com/sagemath/sagetest/issues/7825#event-18721"
 }
 ```
 
@@ -240,3 +240,20 @@ archive/issue_comments_067623.json:
 ```
 
 I note the date in SPKG.txt was 2009 and not 2010. I'm just about to update this again, due to the SAGE64 issues (#7133), so I'll correct that then.
+
+
+
+---
+
+archive/issue_events_018722.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-07T00:39:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7825",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7825#event-18722"
+}
+```

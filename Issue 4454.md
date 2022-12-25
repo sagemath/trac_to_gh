@@ -142,7 +142,7 @@ Have you verified that this is not taken care of by #5106?
 
 ---
 
-archive/issue_events_004700.json:
+archive/issue_events_010054.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -150,7 +150,7 @@ archive/issue_events_004700.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4454",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4454#event-4700"
+    "url": "https://github.com/sagemath/sagetest/issues/4454#event-10054"
 }
 ```
 
@@ -201,3 +201,20 @@ archive/issue_comments_032803.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_010055.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-04T23:35:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4454",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4454#event-10055"
+}
+```

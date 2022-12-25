@@ -153,7 +153,7 @@ Nathann
 
 ---
 
-archive/issue_events_007799.json:
+archive/issue_events_017955.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -161,7 +161,7 @@ archive/issue_events_007799.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7572#event-7799"
+    "url": "https://github.com/sagemath/sagetest/issues/7572#event-17955"
 }
 ```
 
@@ -200,3 +200,20 @@ archive/issue_comments_064340.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_017956.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-01T18:34:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7572",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7572#event-17956"
+}
+```

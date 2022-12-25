@@ -324,7 +324,7 @@ Thanks for catching those two lines Sébastien. Positive review.
 
 ---
 
-archive/issue_events_007131.json:
+archive/issue_events_016229.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -332,7 +332,7 @@ archive/issue_events_007131.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6903",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6903#event-7131"
+    "url": "https://github.com/sagemath/sagetest/issues/6903#event-16229"
 }
 ```
 
@@ -376,3 +376,20 @@ Merged patches in this order:
 2. `trac_6903_reviewer_patch_1.patch`
 3. `trac_6903_reviewer_patch_2.patch`
 4. `trac_6903_review_3-sl.patch`
+
+
+
+---
+
+archive/issue_events_016230.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-18T02:57:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6903",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6903#event-16230"
+}
+```

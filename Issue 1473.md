@@ -63,6 +63,57 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
+archive/issue_events_003745.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-12T18:42:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1473",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1473#event-3745"
+}
+```
+
+
+
+---
+
+archive/issue_events_003746.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-12-13T23:17:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1473",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1473#event-3746"
+}
+```
+
+
+
+---
+
+archive/issue_events_003747.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-12-13T23:17:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1473",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1473#event-3747"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009454.json:
 ```json
 {
@@ -76,6 +127,40 @@ archive/issue_comments_009454.json:
 ```
 
 Attachment [extcode-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/extcode-3d-cmd.hg) by @robertwb created at 2007-12-14 06:27:28
+
+
+
+---
+
+archive/issue_events_003748.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-12-14T06:28:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1473",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1473#event-3748"
+}
+```
+
+
+
+---
+
+archive/issue_events_003749.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-12-14T06:28:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1473",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1473#event-3749"
+}
+```
 
 
 
@@ -157,7 +242,7 @@ Gluegen is supposed to take care of all of that (for applets it does) but maybe 
 
 ---
 
-archive/issue_events_001624.json:
+archive/issue_events_003750.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -165,7 +250,7 @@ archive/issue_events_001624.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1473#event-1624"
+    "url": "https://github.com/sagemath/sagetest/issues/1473#event-3750"
 }
 ```
 

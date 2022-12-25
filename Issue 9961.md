@@ -156,6 +156,23 @@ It looks good to me.
 
 ---
 
+archive/issue_events_025133.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-09T19:03:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9961",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9961#event-25133"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099605.json:
 ```json
 {
@@ -675,6 +692,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_025134.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-15T14:54:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9961",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9961#event-25134"
+}
+```
+
+
+
+---
+
+archive/issue_events_025135.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-15T14:54:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9961",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9961#event-25135"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099632.json:
 ```json
 {
@@ -693,7 +744,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010089.json:
+archive/issue_events_025136.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -701,6 +752,6 @@ archive/issue_events_010089.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9961#event-10089"
+    "url": "https://github.com/sagemath/sagetest/issues/9961#event-25136"
 }
 ```

@@ -2910,6 +2910,23 @@ Can you try the new spkg + patch? I think I tracked down the bug ;-)
 
 ---
 
+archive/issue_events_015051.json:
+```json
+{
+    "actor": "https://github.com/miguelmarco",
+    "created_at": "2012-09-10T09:24:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15051"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051182.json:
 ```json
 {
@@ -3727,6 +3744,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_015052.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-24T06:48:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15052"
+}
+```
+
+
+
+---
+
+archive/issue_events_015053.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-24T06:48:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15053"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051211.json:
 ```json
 {
@@ -4454,6 +4505,40 @@ So it sounds like a good idea to reserve a big amount of physical RAM, doesn't i
 
 ---
 
+archive/issue_events_015054.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-13T10:15:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15054"
+}
+```
+
+
+
+---
+
+archive/issue_events_015055.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-13T10:15:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15055"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051238.json:
 ```json
 {
@@ -4767,6 +4852,40 @@ Will be done in #13588
 
 ---
 
+archive/issue_events_015056.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-12-21T23:03:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15056"
+}
+```
+
+
+
+---
+
+archive/issue_events_015057.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-12-21T23:03:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15057"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051249.json:
 ```json
 {
@@ -4943,6 +5062,40 @@ The libgap source repository is of course at the state of #13588. I've forward-p
 
 ---
 
+archive/issue_events_015058.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2012-12-26T13:06:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15058"
+}
+```
+
+
+
+---
+
+archive/issue_events_015059.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2012-12-26T13:06:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15059"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051256.json:
 ```json
 {
@@ -4981,7 +5134,7 @@ Yes, I've moved the patches from here to #13588 to make Jeroen's life easier.
 
 ---
 
-archive/issue_events_006638.json:
+archive/issue_events_015060.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4989,7 +5142,7 @@ archive/issue_events_006638.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6391#event-6638"
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-15060"
 }
 ```
 

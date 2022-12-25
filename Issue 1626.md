@@ -104,6 +104,23 @@ Thanks,
 
 ---
 
+archive/issue_events_004034.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-26T00:08:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1626",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1626#event-4034"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010333.json:
 ```json
 {
@@ -329,7 +346,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001785.json:
+archive/issue_events_004035.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -337,6 +354,6 @@ archive/issue_events_001785.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1626",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1626#event-1785"
+    "url": "https://github.com/sagemath/sagetest/issues/1626#event-4035"
 }
 ```

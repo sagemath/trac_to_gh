@@ -139,6 +139,23 @@ Replying to [comment:4 drkirkby]:
 
 ---
 
+archive/issue_events_019774.json:
+```json
+{
+    "actor": "https://github.com/jbandlow",
+    "created_at": "2010-02-22T20:38:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8259",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8259#event-19774"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072970.json:
 ```json
 {
@@ -395,7 +412,7 @@ Thanks! I haven't rerun the tests, but the review patch looks good to me.
 
 ---
 
-archive/issue_events_008458.json:
+archive/issue_events_019775.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -403,7 +420,7 @@ archive/issue_events_008458.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8259#event-8458"
+    "url": "https://github.com/sagemath/sagetest/issues/8259#event-19775"
 }
 ```
 

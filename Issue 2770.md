@@ -365,7 +365,7 @@ This is a slightly rebased version of Arnaud Bergeron's patch
 
 ---
 
-archive/issue_events_002958.json:
+archive/issue_events_006405.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -373,7 +373,7 @@ archive/issue_events_002958.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2770",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2770#event-2958"
+    "url": "https://github.com/sagemath/sagetest/issues/2770#event-6405"
 }
 ```
 
@@ -394,6 +394,23 @@ archive/issue_comments_019004.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006406.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T02:00:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2770",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2770#event-6406"
+}
+```
 
 
 

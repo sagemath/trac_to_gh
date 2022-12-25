@@ -106,6 +106,23 @@ The difference between us and gp is that `if (err_catch_stack)` evaluates to tru
 
 ---
 
+archive/issue_events_007717.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-11-02T12:57:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3423",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3423#event-7717"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024043.json:
 ```json
 {
@@ -124,7 +141,7 @@ Duplicate of #9640.
 
 ---
 
-archive/issue_events_003639.json:
+archive/issue_events_007718.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -132,7 +149,7 @@ archive/issue_events_003639.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3423",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3423#event-3639"
+    "url": "https://github.com/sagemath/sagetest/issues/3423#event-7718"
 }
 ```
 

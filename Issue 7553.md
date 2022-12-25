@@ -259,7 +259,7 @@ A new `README.txt` is attached. It is based on #7565. The file `readme.patch` sh
 
 ---
 
-archive/issue_events_007783.json:
+archive/issue_events_017908.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -267,7 +267,7 @@ archive/issue_events_007783.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7553",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7553#event-7783"
+    "url": "https://github.com/sagemath/sagetest/issues/7553#event-17908"
 }
 ```
 

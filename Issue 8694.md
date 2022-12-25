@@ -226,7 +226,7 @@ Updated patch looks fine. (But haven't yet applied/tested it.)
 
 ---
 
-archive/issue_events_008866.json:
+archive/issue_events_021097.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -234,7 +234,7 @@ archive/issue_events_008866.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8694#event-8866"
+    "url": "https://github.com/sagemath/sagetest/issues/8694#event-21097"
 }
 ```
 

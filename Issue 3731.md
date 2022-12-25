@@ -95,6 +95,23 @@ I'm not sure why there are two patches here; when submitting the second one, I m
 
 ---
 
+archive/issue_events_008541.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2008-07-29T20:41:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3731",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3731#event-8541"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026435.json:
 ```json
 {
@@ -149,7 +166,41 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003955.json:
+archive/issue_events_008542.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-11T07:42:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3731",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3731#event-8542"
+}
+```
+
+
+
+---
+
+archive/issue_events_008543.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-11T07:42:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3731",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3731#event-8543"
+}
+```
+
+
+
+---
+
+archive/issue_events_008544.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -157,6 +208,6 @@ archive/issue_events_003955.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3731",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3731#event-3955"
+    "url": "https://github.com/sagemath/sagetest/issues/3731#event-8544"
 }
 ```

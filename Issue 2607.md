@@ -1545,6 +1545,23 @@ Looks good and all tests pass.
 
 ---
 
+archive/issue_events_006075.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-25T15:34:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2607",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2607#event-6075"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017853.json:
 ```json
 {
@@ -1689,6 +1706,74 @@ archive/issue_comments_017860.json:
 
 ---
 
+archive/issue_events_006076.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-01T18:51:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2607",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2607#event-6076"
+}
+```
+
+
+
+---
+
+archive/issue_events_006077.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-01T18:51:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2607",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2607#event-6077"
+}
+```
+
+
+
+---
+
+archive/issue_events_006078.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/aginiewicz",
+    "created_at": "2012-07-08T12:19:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2607",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2607#event-6078"
+}
+```
+
+
+
+---
+
+archive/issue_events_006079.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/aginiewicz",
+    "created_at": "2012-07-08T12:19:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2607",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2607#event-6079"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017861.json:
 ```json
 {
@@ -1707,7 +1792,41 @@ As I understand that ticket moved to sage-pending together with #13109 because i
 
 ---
 
-archive/issue_events_002797.json:
+archive/issue_events_006080.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-16T16:41:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2607",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2607#event-6080"
+}
+```
+
+
+
+---
+
+archive/issue_events_006081.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-07-16T16:41:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2607",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2607#event-6081"
+}
+```
+
+
+
+---
+
+archive/issue_events_006082.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1715,7 +1834,7 @@ archive/issue_events_002797.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#event-2797"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#event-6082"
 }
 ```
 

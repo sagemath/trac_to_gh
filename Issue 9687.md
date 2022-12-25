@@ -123,7 +123,7 @@ The patch applies cleanly to 4.5.1 and the html documentation looks fine.
 
 ---
 
-archive/issue_events_009819.json:
+archive/issue_events_024181.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -131,7 +131,7 @@ archive/issue_events_009819.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9687",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9687#event-9819"
+    "url": "https://github.com/sagemath/sagetest/issues/9687#event-24181"
 }
 ```
 

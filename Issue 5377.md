@@ -40,6 +40,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5377
 
 ---
 
+archive/issue_events_012529.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T08:04:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5377",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5377#event-12529"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041324.json:
 ```json
 {
@@ -76,7 +93,7 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
-archive/issue_events_005632.json:
+archive/issue_events_012530.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -84,7 +101,41 @@ archive/issue_events_005632.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5377",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5377#event-5632"
+    "url": "https://github.com/sagemath/sagetest/issues/5377#event-12530"
+}
+```
+
+
+
+---
+
+archive/issue_events_012531.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-09T10:47:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5377",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5377#event-12531"
+}
+```
+
+
+
+---
+
+archive/issue_events_012532.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-09T10:47:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5377",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5377#event-12532"
 }
 ```
 

@@ -103,6 +103,23 @@ Changing keywords from "doctest" to "doctest, latex".
 
 ---
 
+archive/issue_events_008974.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-07-25T10:08:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3912",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3912#event-8974"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027924.json:
 ```json
 {
@@ -213,7 +230,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004139.json:
+archive/issue_events_008975.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -221,6 +238,6 @@ archive/issue_events_004139.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3912#event-4139"
+    "url": "https://github.com/sagemath/sagetest/issues/3912#event-8975"
 }
 ```

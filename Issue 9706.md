@@ -650,6 +650,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_024259.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2010-08-19T23:57:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9706",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9706#event-24259"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094320.json:
 ```json
 {
@@ -666,6 +683,40 @@ Some of the old doctests fail.
 But it is not my fault, it seem's that it is a bug in the SymbolicFunction class.
 
 see: http://trac.sagemath.org/sage_trac/ticket/9769
+
+
+
+---
+
+archive/issue_events_024260.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2010-08-20T00:17:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9706",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9706#event-24260"
+}
+```
+
+
+
+---
+
+archive/issue_events_024261.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2010-08-20T00:17:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9706",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9706#event-24261"
+}
+```
 
 
 
@@ -1068,6 +1119,40 @@ Attachment [orthogonal_polys.9.py](tarball://root/attachments/some-uuid/ticket97
 
 ---
 
+archive/issue_events_024262.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2010-10-03T00:49:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9706",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9706#event-24262"
+}
+```
+
+
+
+---
+
+archive/issue_events_024263.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2010-10-03T00:49:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9706",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9706#event-24263"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094333.json:
 ```json
 {
@@ -1332,6 +1417,40 @@ I give up at this point. It seems that there are similar issues in the rest of t
 After you clean up the code according to the comments above, perhaps a native English speaker like Karl-Dieter or Minh can help with the documentation.
 
 Thanks again for all your work.
+
+
+
+---
+
+archive/issue_events_024264.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9706",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9706#event-24264"
+}
+```
+
+
+
+---
+
+archive/issue_events_024265.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9706",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9706#event-24265"
+}
+```
 
 
 
@@ -4233,7 +4352,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009839.json:
+archive/issue_events_024266.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -4241,6 +4360,6 @@ archive/issue_events_009839.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#event-9839"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#event-24266"
 }
 ```

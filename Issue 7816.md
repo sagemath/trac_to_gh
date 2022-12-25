@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7816
 
 ---
 
-archive/issue_events_008029.json:
+archive/issue_events_018708.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -68,7 +68,7 @@ archive/issue_events_008029.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7816",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7816#event-8029"
+    "url": "https://github.com/sagemath/sagetest/issues/7816#event-18708"
 }
 ```
 
@@ -107,3 +107,20 @@ archive/issue_comments_067514.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_018709.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-04T02:05:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7816",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7816#event-18709"
+}
+```

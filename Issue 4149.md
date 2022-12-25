@@ -341,7 +341,7 @@ I bet someone is looking forward to seeing how many things fail when all the is_
 
 ---
 
-archive/issue_events_004387.json:
+archive/issue_events_009440.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -349,7 +349,7 @@ archive/issue_events_004387.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4149",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4149#event-4387"
+    "url": "https://github.com/sagemath/sagetest/issues/4149#event-9440"
 }
 ```
 

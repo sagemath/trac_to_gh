@@ -270,7 +270,24 @@ But we need a lot more doctests for just about all of these - see #11514.
 
 ---
 
-archive/issue_events_009237.json:
+archive/issue_events_022248.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-18T09:27:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9080",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9080#event-22248"
+}
+```
+
+
+
+---
+
+archive/issue_events_022249.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -278,7 +295,7 @@ archive/issue_events_009237.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9080",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9080#event-9237"
+    "url": "https://github.com/sagemath/sagetest/issues/9080#event-22249"
 }
 ```
 

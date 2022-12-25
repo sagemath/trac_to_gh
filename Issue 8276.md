@@ -833,7 +833,7 @@ rossk: I guess it's fair to say, that you also contributed to this review, so pl
 
 ---
 
-archive/issue_events_008475.json:
+archive/issue_events_019799.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -841,7 +841,7 @@ archive/issue_events_008475.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8276#event-8475"
+    "url": "https://github.com/sagemath/sagetest/issues/8276#event-19799"
 }
 ```
 

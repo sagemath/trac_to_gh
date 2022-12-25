@@ -82,7 +82,7 @@ I consider this invalid since nobody uses Edit mode anymore for tex editing, now
 
 ---
 
-archive/issue_events_004026.json:
+archive/issue_events_008735.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -90,6 +90,23 @@ archive/issue_events_004026.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3804",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3804#event-4026"
+    "url": "https://github.com/sagemath/sagetest/issues/3804#event-8735"
+}
+```
+
+
+
+---
+
+archive/issue_events_008736.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-11-20T00:17:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3804",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3804#event-8736"
 }
 ```

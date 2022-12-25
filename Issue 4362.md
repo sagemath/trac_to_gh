@@ -101,6 +101,23 @@ Second of Dan's patches from #4355
 
 ---
 
+archive/issue_events_009866.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-24T11:42:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#event-9866"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031984.json:
 ```json
 {
@@ -169,7 +186,7 @@ for which the original code was broke.
 
 ---
 
-archive/issue_events_004607.json:
+archive/issue_events_009867.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -177,7 +194,7 @@ archive/issue_events_004607.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4362",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4362#event-4607"
+    "url": "https://github.com/sagemath/sagetest/issues/4362#event-9867"
 }
 ```
 
@@ -198,6 +215,40 @@ archive/issue_comments_031987.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009868.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-07T16:13:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#event-9868"
+}
+```
+
+
+
+---
+
+archive/issue_events_009869.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-07T16:13:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#event-9869"
+}
+```
 
 
 

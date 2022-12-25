@@ -120,7 +120,7 @@ The code is definitely much better style and correctness-wise after the patch.
 
 ---
 
-archive/issue_events_003793.json:
+archive/issue_events_008191.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,7 +128,7 @@ archive/issue_events_003793.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3576",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3576#event-3793"
+    "url": "https://github.com/sagemath/sagetest/issues/3576#event-8191"
 }
 ```
 

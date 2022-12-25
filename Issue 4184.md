@@ -102,7 +102,24 @@ This is done at #4267
 
 ---
 
-archive/issue_events_004423.json:
+archive/issue_events_009495.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-19T08:08:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4184",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4184#event-9495"
+}
+```
+
+
+
+---
+
+archive/issue_events_009496.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,7 +127,7 @@ archive/issue_events_004423.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4184",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4184#event-4423"
+    "url": "https://github.com/sagemath/sagetest/issues/4184#event-9496"
 }
 ```
 

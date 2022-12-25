@@ -264,7 +264,7 @@ I'm marking this as "positive review", to bring it to the attention of the relea
 
 ---
 
-archive/issue_events_008600.json:
+archive/issue_events_020165.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -272,7 +272,7 @@ archive/issue_events_008600.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8415#event-8600"
+    "url": "https://github.com/sagemath/sagetest/issues/8415#event-20165"
 }
 ```
 

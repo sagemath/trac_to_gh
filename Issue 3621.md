@@ -377,6 +377,23 @@ For whitespace errors, see the file /Users/was/s/tmp/.doctest_stock.py
 
 ---
 
+archive/issue_events_008311.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-29T18:29:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#event-8311"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025521.json:
 ```json
 {
@@ -1038,7 +1055,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003840.json:
+archive/issue_events_008312.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1046,6 +1063,6 @@ archive/issue_events_003840.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3621#event-3840"
+    "url": "https://github.com/sagemath/sagetest/issues/3621#event-8312"
 }
 ```

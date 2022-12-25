@@ -184,6 +184,23 @@ I learnt: In that case, one should give a ticket a positive review and choose th
 
 ---
 
+archive/issue_events_020820.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2011-04-10T15:09:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#event-20820"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077923.json:
 ```json
 {
@@ -220,7 +237,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008784.json:
+archive/issue_events_020821.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -228,6 +245,6 @@ archive/issue_events_008784.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8613",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8613#event-8784"
+    "url": "https://github.com/sagemath/sagetest/issues/8613#event-20821"
 }
 ```

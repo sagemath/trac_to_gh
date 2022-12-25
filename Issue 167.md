@@ -63,6 +63,23 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_000307.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-22T19:49:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/167",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/167#event-307"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000747.json:
 ```json
 {
@@ -105,7 +122,7 @@ Michael
 
 ---
 
-archive/issue_events_000173.json:
+archive/issue_events_000308.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -113,6 +130,6 @@ archive/issue_events_000173.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/167",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/167#event-173"
+    "url": "https://github.com/sagemath/sagetest/issues/167#event-308"
 }
 ```

@@ -75,6 +75,23 @@ I've refereed this -- it has some typos, and bad design, but this is fixed in ha
 
 ---
 
+archive/issue_events_003308.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-24T18:43:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1254",
+    "milestone": "sage-2.8.14",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1254#event-3308"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007820.json:
 ```json
 {
@@ -111,7 +128,7 @@ Merged in 2.8.14.rc2.
 
 ---
 
-archive/issue_events_001396.json:
+archive/issue_events_003309.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -119,6 +136,6 @@ archive/issue_events_001396.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1254",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1254#event-1396"
+    "url": "https://github.com/sagemath/sagetest/issues/1254#event-3309"
 }
 ```

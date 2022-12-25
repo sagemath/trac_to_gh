@@ -117,6 +117,23 @@ Wall time: 14.53 s
 
 ---
 
+archive/issue_events_016358.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6959",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6959#event-16358"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057456.json:
 ```json
 {
@@ -153,6 +170,74 @@ there are three failing doctest (sage 5.12.beta4)
 
 ---
 
+archive/issue_events_016359.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6959",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6959#event-16359"
+}
+```
+
+
+
+---
+
+archive/issue_events_016360.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6959",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6959#event-16360"
+}
+```
+
+
+
+---
+
+archive/issue_events_016361.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6959",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6959#event-16361"
+}
+```
+
+
+
+---
+
+archive/issue_events_016362.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6959",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6959#event-16362"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057458.json:
 ```json
 {
@@ -184,6 +269,40 @@ archive/issue_comments_057459.json:
 ```
 
 The 3 failing doctests looks to me like a problem with galois ambiguity (i.e. an algebraic number a1 is replaced by its conjugate -a1). Maybe one can just replace them by the results ?
+
+
+
+---
+
+archive/issue_events_016363.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6959",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6959#event-16363"
+}
+```
+
+
+
+---
+
+archive/issue_events_016364.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6959",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6959#event-16364"
+}
+```
 
 
 

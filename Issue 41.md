@@ -199,7 +199,7 @@ From Ifti
 
 ---
 
-archive/issue_events_000040.json:
+archive/issue_events_000088.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -207,7 +207,24 @@ archive/issue_events_000040.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/41",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/41#event-40"
+    "url": "https://github.com/sagemath/sagetest/issues/41#event-88"
+}
+```
+
+
+
+---
+
+archive/issue_events_000089.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-25T20:04:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "milestone": "sage-1.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/41#event-89"
 }
 ```
 

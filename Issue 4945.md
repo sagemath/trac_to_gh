@@ -182,7 +182,7 @@ Patch looks good.
 
 ---
 
-archive/issue_events_005187.json:
+archive/issue_events_011420.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -190,7 +190,7 @@ archive/issue_events_005187.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4945#event-5187"
+    "url": "https://github.com/sagemath/sagetest/issues/4945#event-11420"
 }
 ```
 
@@ -229,3 +229,20 @@ archive/issue_comments_037470.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_011421.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T02:17:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4945",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4945#event-11421"
+}
+```

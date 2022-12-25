@@ -146,7 +146,7 @@ Fair point(s).  One reason for getting better (usually) bounds for *rational* po
 
 ---
 
-archive/issue_events_007487.json:
+archive/issue_events_017189.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -154,7 +154,7 @@ archive/issue_events_007487.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7266#event-7487"
+    "url": "https://github.com/sagemath/sagetest/issues/7266#event-17189"
 }
 ```
 

@@ -259,6 +259,23 @@ Cheers,
 
 ---
 
+archive/issue_events_019506.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/brunellus",
+    "created_at": "2012-01-08T20:25:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#event-19506"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071510.json:
 ```json
 {
@@ -331,7 +348,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008353.json:
+archive/issue_events_019507.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -339,6 +356,6 @@ archive/issue_events_008353.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8148#event-8353"
+    "url": "https://github.com/sagemath/sagetest/issues/8148#event-19507"
 }
 ```

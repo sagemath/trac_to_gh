@@ -61,6 +61,23 @@ change doctest to just test length, add a new doctest that should only return on
 
 ---
 
+archive/issue_events_016764.json:
+```json
+{
+    "actor": "https://github.com/dandrake",
+    "created_at": "2009-10-01T02:49:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7087",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7087#event-16764"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058469.json:
 ```json
 {
@@ -135,7 +152,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_007309.json:
+archive/issue_events_016765.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -143,7 +160,7 @@ archive/issue_events_007309.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7087",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7087#event-7309"
+    "url": "https://github.com/sagemath/sagetest/issues/7087#event-16765"
 }
 ```
 

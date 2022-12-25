@@ -158,7 +158,7 @@ Works great and looks good to me. Resolves the problems too (now 0 is returned 2
 
 ---
 
-archive/issue_events_002146.json:
+archive/issue_events_004796.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -166,7 +166,7 @@ archive/issue_events_002146.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1990",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1990#event-2146"
+    "url": "https://github.com/sagemath/sagetest/issues/1990#event-4796"
 }
 ```
 
@@ -205,3 +205,20 @@ archive/issue_comments_012861.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_004797.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-29T23:08:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1990",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1990#event-4797"
+}
+```

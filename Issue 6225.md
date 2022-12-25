@@ -82,7 +82,7 @@ Attachment [irc_help.diff](tarball://root/attachments/some-uuid/ticket6225/irc_h
 
 ---
 
-archive/issue_events_006472.json:
+archive/issue_events_014600.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -90,7 +90,7 @@ archive/issue_events_006472.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6225",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6225#event-6472"
+    "url": "https://github.com/sagemath/sagetest/issues/6225#event-14600"
 }
 ```
 

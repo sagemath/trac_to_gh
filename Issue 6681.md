@@ -795,6 +795,23 @@ That's what the updated cliquer package is doing. It removes the need for using 
 
 ---
 
+archive/issue_events_015763.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-02T17:44:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6681",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6681#event-15763"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054840.json:
 ```json
 {
@@ -891,7 +908,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006916.json:
+archive/issue_events_015764.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -899,6 +916,6 @@ archive/issue_events_006916.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6681#event-6916"
+    "url": "https://github.com/sagemath/sagetest/issues/6681#event-15764"
 }
 ```

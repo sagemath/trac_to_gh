@@ -311,7 +311,7 @@ Merged [trac_7950-zero_variable_factor.take2.patch](http://trac.sagemath.org/sag
 
 ---
 
-archive/issue_events_008166.json:
+archive/issue_events_019027.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -319,6 +319,6 @@ archive/issue_events_008166.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7950#event-8166"
+    "url": "https://github.com/sagemath/sagetest/issues/7950#event-19027"
 }
 ```

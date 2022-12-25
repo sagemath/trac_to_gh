@@ -145,7 +145,7 @@ merged into sagenb-0.4.2 (sage-4.2.1)
 
 ---
 
-archive/issue_events_007610.json:
+archive/issue_events_017465.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -153,7 +153,24 @@ archive/issue_events_007610.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7385#event-7610"
+    "url": "https://github.com/sagemath/sagetest/issues/7385#event-17465"
+}
+```
+
+
+
+---
+
+archive/issue_events_017466.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T22:15:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7385",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7385#event-17466"
 }
 ```
 

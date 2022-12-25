@@ -201,7 +201,7 @@ I'm currently working on this, and hope to close this ticket soon :-)
 
 ---
 
-archive/issue_events_000967.json:
+archive/issue_events_002398.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -209,7 +209,24 @@ archive/issue_events_000967.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/855#event-967"
+    "url": "https://github.com/sagemath/sagetest/issues/855#event-2398"
+}
+```
+
+
+
+---
+
+archive/issue_events_002399.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-18T06:02:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/855",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/855#event-2399"
 }
 ```
 

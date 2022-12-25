@@ -52,6 +52,23 @@ I can't reproduce this.  Invalid?
 
 ---
 
+archive/issue_events_004512.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-03-16T19:04:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1865",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1865#event-4512"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011783.json:
 ```json
 {
@@ -126,7 +143,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002023.json:
+archive/issue_events_004513.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -134,6 +151,6 @@ archive/issue_events_002023.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1865",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1865#event-2023"
+    "url": "https://github.com/sagemath/sagetest/issues/1865#event-4513"
 }
 ```

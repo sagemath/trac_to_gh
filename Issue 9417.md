@@ -201,7 +201,24 @@ Looks good to me!
 
 ---
 
-archive/issue_events_009572.json:
+archive/issue_events_023252.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2011-04-17T21:34:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#event-23252"
+}
+```
+
+
+
+---
+
+archive/issue_events_023253.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -209,7 +226,7 @@ archive/issue_events_009572.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#event-9572"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#event-23253"
 }
 ```
 

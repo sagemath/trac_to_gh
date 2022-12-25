@@ -132,7 +132,7 @@ By the way, the patch here appears to be for a different ticket.
 
 ---
 
-archive/issue_events_004674.json:
+archive/issue_events_010017.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -140,6 +140,23 @@ archive/issue_events_004674.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4430",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4430#event-4674"
+    "url": "https://github.com/sagemath/sagetest/issues/4430#event-10017"
+}
+```
+
+
+
+---
+
+archive/issue_events_010018.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-26T00:26:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4430",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4430#event-10018"
 }
 ```

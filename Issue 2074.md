@@ -83,6 +83,23 @@ Attachment [2074-permgroup_element_fix.patch](tarball://root/attachments/some-uu
 
 ---
 
+archive/issue_events_004980.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-06T16:57:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2074",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2074#event-4980"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013386.json:
 ```json
 {
@@ -103,7 +120,7 @@ Apply the second patch -- positive review.
 
 ---
 
-archive/issue_events_002235.json:
+archive/issue_events_004981.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -111,7 +128,7 @@ archive/issue_events_002235.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2074",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2074#event-2235"
+    "url": "https://github.com/sagemath/sagetest/issues/2074#event-4981"
 }
 ```
 

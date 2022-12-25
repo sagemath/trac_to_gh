@@ -37,6 +37,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1680
 
 ---
 
+archive/issue_events_004128.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-13T18:56:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1680",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1680#event-4128"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010627.json:
 ```json
 {
@@ -183,7 +200,41 @@ Yep, this has been fixed.
 
 ---
 
-archive/issue_events_001839.json:
+archive/issue_events_004129.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-07T04:03:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1680",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1680#event-4129"
+}
+```
+
+
+
+---
+
+archive/issue_events_004130.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-07T04:03:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1680",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1680#event-4130"
+}
+```
+
+
+
+---
+
+archive/issue_events_004131.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -191,7 +242,7 @@ archive/issue_events_001839.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1680#event-1839"
+    "url": "https://github.com/sagemath/sagetest/issues/1680#event-4131"
 }
 ```
 

@@ -250,6 +250,23 @@ Sort out the solve function.
 
 ---
 
+archive/issue_events_023001.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2010-07-06T20:06:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9334",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9334#event-23001"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087945.json:
 ```json
 {
@@ -1605,6 +1622,57 @@ Changing status from needs_work to positive_review.
 
 ---
 
+archive/issue_events_023002.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-04T07:35:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9334",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9334#event-23002"
+}
+```
+
+
+
+---
+
+archive/issue_events_023003.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-22T16:49:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9334",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9334#event-23003"
+}
+```
+
+
+
+---
+
+archive/issue_events_023004.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-03T09:10:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9334",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9334#event-23004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088000.json:
 ```json
 {
@@ -1623,7 +1691,24 @@ Milestone sage-4.7.3 deleted
 
 ---
 
-archive/issue_events_009488.json:
+archive/issue_events_023005.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-07T10:11:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9334",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9334#event-23005"
+}
+```
+
+
+
+---
+
+archive/issue_events_023006.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1631,7 +1716,7 @@ archive/issue_events_009488.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#event-9488"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#event-23006"
 }
 ```
 

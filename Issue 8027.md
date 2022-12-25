@@ -104,6 +104,23 @@ the website/wiki component is for the actual sage website and wiki. i file this 
 
 ---
 
+archive/issue_events_019232.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-22T08:45:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8027",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8027#event-19232"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069999.json:
 ```json
 {
@@ -176,7 +193,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008238.json:
+archive/issue_events_019233.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -184,6 +201,6 @@ archive/issue_events_008238.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8027",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8027#event-8238"
+    "url": "https://github.com/sagemath/sagetest/issues/8027#event-19233"
 }
 ```

@@ -897,7 +897,7 @@ It turns out that I merged #4217, not #3154, into SageNB 0.7.  I didn't notice t
 
 ---
 
-archive/issue_events_008260.json:
+archive/issue_events_019284.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -905,7 +905,7 @@ archive/issue_events_008260.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8051#event-8260"
+    "url": "https://github.com/sagemath/sagetest/issues/8051#event-19284"
 }
 ```
 
@@ -926,3 +926,20 @@ archive/issue_comments_070314.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_019285.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-10T09:36:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#event-19285"
+}
+```

@@ -352,6 +352,23 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_019375.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-12-18T20:25:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8094",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8094#event-19375"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070821.json:
 ```json
 {
@@ -782,7 +799,7 @@ Attached rebased versions of two patches because of fuzz 2.
 
 ---
 
-archive/issue_events_008302.json:
+archive/issue_events_019376.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -790,7 +807,7 @@ archive/issue_events_008302.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8094#event-8302"
+    "url": "https://github.com/sagemath/sagetest/issues/8094#event-19376"
 }
 ```
 

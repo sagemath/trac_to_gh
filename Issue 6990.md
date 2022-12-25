@@ -258,6 +258,23 @@ The changes from Jason's spkg include:
 
 ---
 
+archive/issue_events_016409.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-02T17:45:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6990",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6990#event-16409"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057716.json:
 ```json
 {
@@ -294,7 +311,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007214.json:
+archive/issue_events_016410.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -302,6 +319,6 @@ archive/issue_events_007214.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6990#event-7214"
+    "url": "https://github.com/sagemath/sagetest/issues/6990#event-16410"
 }
 ```

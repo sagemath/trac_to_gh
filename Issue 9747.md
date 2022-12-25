@@ -227,7 +227,24 @@ Excellent -- positive review. Apply all three patches.
 
 ---
 
-archive/issue_events_009880.json:
+archive/issue_events_024416.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-16T13:40:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9747",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9747#event-24416"
+}
+```
+
+
+
+---
+
+archive/issue_events_024417.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -235,7 +252,7 @@ archive/issue_events_009880.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9747",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9747#event-9880"
+    "url": "https://github.com/sagemath/sagetest/issues/9747#event-24417"
 }
 ```
 

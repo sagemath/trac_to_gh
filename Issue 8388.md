@@ -348,6 +348,23 @@ apply trac_8388_pickling_path.v2.patch
 
 ---
 
+archive/issue_events_020114.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8388",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8388#event-20114"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074976.json:
 ```json
 {
@@ -420,7 +437,41 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008573.json:
+archive/issue_events_020115.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-10-01T07:19:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8388",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8388#event-20115"
+}
+```
+
+
+
+---
+
+archive/issue_events_020116.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-10-01T07:19:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8388",
+    "milestone": "sage-5.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8388#event-20116"
+}
+```
+
+
+
+---
+
+archive/issue_events_020117.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -428,7 +479,7 @@ archive/issue_events_008573.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8388#event-8573"
+    "url": "https://github.com/sagemath/sagetest/issues/8388#event-20117"
 }
 ```
 

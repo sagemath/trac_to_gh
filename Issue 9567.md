@@ -132,6 +132,23 @@ ImportError: No module named nx.generators.degree_seq
 
 ---
 
+archive/issue_events_023822.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-21T23:26:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#event-23822"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092209.json:
 ```json
 {
@@ -859,7 +876,7 @@ Nathann
 
 ---
 
-archive/issue_events_009714.json:
+archive/issue_events_023823.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -867,7 +884,7 @@ archive/issue_events_009714.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9567#event-9714"
+    "url": "https://github.com/sagemath/sagetest/issues/9567#event-23823"
 }
 ```
 

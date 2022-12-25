@@ -41,6 +41,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1645
 
 ---
 
+archive/issue_events_004071.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-31T13:13:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1645",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1645#event-4071"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010437.json:
 ```json
 {
@@ -58,6 +75,40 @@ Attachment [trac-1645.patch](tarball://root/attachments/some-uuid/ticket1645/tra
 This actually has nothing to do with erf really -- it's that converting a real interval to Maxima (or any other system) should raise a TypeError, but doesn't.   
 
 Of course, erf could be implemented for intervals, but that's not done yet; that would be an enhancement not a bug.
+
+
+
+---
+
+archive/issue_events_004072.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2008-01-15T03:21:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1645",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1645#event-4072"
+}
+```
+
+
+
+---
+
+archive/issue_events_004073.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2008-01-15T03:21:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1645",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1645#event-4073"
+}
+```
 
 
 
@@ -99,7 +150,7 @@ Looks good to me; and this patch was already applied in 2.9.2.
 
 ---
 
-archive/issue_events_001805.json:
+archive/issue_events_004074.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -107,6 +158,6 @@ archive/issue_events_001805.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1645",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1645#event-1805"
+    "url": "https://github.com/sagemath/sagetest/issues/1645#event-4074"
 }
 ```

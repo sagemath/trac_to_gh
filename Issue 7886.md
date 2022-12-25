@@ -957,7 +957,7 @@ Apply trac_7886_conjugacy_classes_combined.patch trac_7886-conjugacy_classes-rev
 
 ---
 
-archive/issue_events_008101.json:
+archive/issue_events_018860.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -965,7 +965,7 @@ archive/issue_events_008101.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7886#event-8101"
+    "url": "https://github.com/sagemath/sagetest/issues/7886#event-18860"
 }
 ```
 

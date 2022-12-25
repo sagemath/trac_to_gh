@@ -150,6 +150,23 @@ Michael
 
 ---
 
+archive/issue_events_009875.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-26T21:24:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4366",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4366#event-9875"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032011.json:
 ```json
 {
@@ -506,7 +523,7 @@ Merged 4366-coercion-traceback-fixed.patch in Sage 3.2.alpha2
 
 ---
 
-archive/issue_events_004611.json:
+archive/issue_events_009876.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -514,6 +531,6 @@ archive/issue_events_004611.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#event-4611"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#event-9876"
 }
 ```

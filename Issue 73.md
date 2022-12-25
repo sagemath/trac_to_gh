@@ -119,7 +119,7 @@ diff -r 97f9271f8637 sage/all.py
 
 ---
 
-archive/issue_events_000073.json:
+archive/issue_events_000161.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -127,6 +127,6 @@ archive/issue_events_000073.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/73",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/73#event-73"
+    "url": "https://github.com/sagemath/sagetest/issues/73#event-161"
 }
 ```

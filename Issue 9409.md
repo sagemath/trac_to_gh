@@ -197,6 +197,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_023238.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-10-03T16:40:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9409",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9409#event-23238"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089533.json:
 ```json
 {
@@ -269,7 +286,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_009565.json:
+archive/issue_events_023239.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -277,6 +294,40 @@ archive/issue_events_009565.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9409#event-9565"
+    "url": "https://github.com/sagemath/sagetest/issues/9409#event-23239"
+}
+```
+
+
+
+---
+
+archive/issue_events_023240.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-04T01:28:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9409",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9409#event-23240"
+}
+```
+
+
+
+---
+
+archive/issue_events_023241.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-04T01:28:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9409",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9409#event-23241"
 }
 ```

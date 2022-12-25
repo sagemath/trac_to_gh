@@ -78,7 +78,24 @@ All tests pass.  Looks good to me.
 
 ---
 
-archive/issue_events_006315.json:
+archive/issue_events_014225.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T17:57:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6060",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6060#event-14225"
+}
+```
+
+
+
+---
+
+archive/issue_events_014226.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -86,7 +103,7 @@ archive/issue_events_006315.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6060",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6060#event-6315"
+    "url": "https://github.com/sagemath/sagetest/issues/6060#event-14226"
 }
 ```
 

@@ -185,7 +185,24 @@ Close as fixed by #7514.
 
 ---
 
-archive/issue_events_001968.json:
+archive/issue_events_004416.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-01T01:41:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1811",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1811#event-4416"
+}
+```
+
+
+
+---
+
+archive/issue_events_004417.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -193,7 +210,7 @@ archive/issue_events_001968.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1811#event-1968"
+    "url": "https://github.com/sagemath/sagetest/issues/1811#event-4417"
 }
 ```
 

@@ -47,6 +47,23 @@ It would be much easier if there were an example with this bug report.  As is, i
 
 ---
 
+archive/issue_events_000131.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:16:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/65",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/65#event-131"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000336.json:
 ```json
 {
@@ -65,7 +82,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000066.json:
+archive/issue_events_000132.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +90,24 @@ archive/issue_events_000066.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/65",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/65#event-66"
+    "url": "https://github.com/sagemath/sagetest/issues/65#event-132"
+}
+```
+
+
+
+---
+
+archive/issue_events_000133.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T02:27:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/65",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/65#event-133"
 }
 ```
 

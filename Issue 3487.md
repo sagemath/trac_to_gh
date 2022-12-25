@@ -61,6 +61,23 @@ so, sage -branch could simply spit out clone and branch... but "sage -b" is an i
 
 ---
 
+archive/issue_events_007939.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-21T01:18:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3487",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3487#event-7939"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024526.json:
 ```json
 {
@@ -74,6 +91,108 @@ archive/issue_comments_024526.json:
 ```
 
 Changing type from defect to enhancement.
+
+
+
+---
+
+archive/issue_events_007940.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3487",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3487#event-7940"
+}
+```
+
+
+
+---
+
+archive/issue_events_007941.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3487",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3487#event-7941"
+}
+```
+
+
+
+---
+
+archive/issue_events_007942.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3487",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3487#event-7942"
+}
+```
+
+
+
+---
+
+archive/issue_events_007943.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3487",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3487#event-7943"
+}
+```
+
+
+
+---
+
+archive/issue_events_007944.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-03-14T19:32:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3487",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3487#event-7944"
+}
+```
+
+
+
+---
+
+archive/issue_events_007945.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-03-14T19:32:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3487",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3487#event-7945"
+}
+```
 
 
 
@@ -151,7 +270,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_003707.json:
+archive/issue_events_007946.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -159,6 +278,6 @@ archive/issue_events_003707.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3487",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3487#event-3707"
+    "url": "https://github.com/sagemath/sagetest/issues/3487#event-7946"
 }
 ```

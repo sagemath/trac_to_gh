@@ -40,6 +40,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1399
 
 ---
 
+archive/issue_events_003611.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T23:23:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1399",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1399#event-3611"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008988.json:
 ```json
 {
@@ -202,6 +219,40 @@ If the change to integer.pyx isn't accepted, then the change to ideal.py needs t
 
 ---
 
+archive/issue_events_003612.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-16T00:07:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1399",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1399#event-3612"
+}
+```
+
+
+
+---
+
+archive/issue_events_003613.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-12-16T00:07:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1399",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1399#event-3613"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008995.json:
 ```json
 {
@@ -339,7 +390,7 @@ Apply the last three patches in order.
 
 ---
 
-archive/issue_events_001543.json:
+archive/issue_events_003614.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -347,7 +398,7 @@ archive/issue_events_001543.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1399#event-1543"
+    "url": "https://github.com/sagemath/sagetest/issues/1399#event-3614"
 }
 ```
 

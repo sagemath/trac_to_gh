@@ -120,7 +120,7 @@ now informs the user about that command. Positive review.
 
 ---
 
-archive/issue_events_005786.json:
+archive/issue_events_013002.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -128,7 +128,7 @@ archive/issue_events_005786.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5539",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5539#event-5786"
+    "url": "https://github.com/sagemath/sagetest/issues/5539#event-13002"
 }
 ```
 

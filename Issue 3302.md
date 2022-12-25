@@ -64,7 +64,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003520.json:
+archive/issue_events_007421.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -72,7 +72,7 @@ archive/issue_events_003520.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3302",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3302#event-3520"
+    "url": "https://github.com/sagemath/sagetest/issues/3302#event-7421"
 }
 ```
 
@@ -93,3 +93,20 @@ archive/issue_comments_022797.json:
 ```
 
 GNUTLS is no longer part of Sage.
+
+
+
+---
+
+archive/issue_events_007422.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-05T09:16:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3302",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3302#event-7422"
+}
+```

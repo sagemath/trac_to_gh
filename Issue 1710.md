@@ -45,6 +45,23 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
+archive/issue_events_004171.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2008-01-13T11:36:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1710",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1710#event-4171"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010813.json:
 ```json
 {
@@ -117,7 +134,7 @@ Pow, got it!
 
 ---
 
-archive/issue_events_001869.json:
+archive/issue_events_004172.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -125,6 +142,6 @@ archive/issue_events_001869.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1710",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1710#event-1869"
+    "url": "https://github.com/sagemath/sagetest/issues/1710#event-4172"
 }
 ```

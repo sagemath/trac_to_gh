@@ -102,6 +102,23 @@ Currently (in sage-4.3.3) it gives many hundred lines:
 
 ---
 
+archive/issue_events_020230.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:56:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#event-20230"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075615.json:
 ```json
 {
@@ -236,6 +253,40 @@ Changing priority from blocker to critical.
 
 ---
 
+archive/issue_events_020231.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:21:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#event-20231"
+}
+```
+
+
+
+---
+
+archive/issue_events_020232.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:21:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#event-20232"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075621.json:
 ```json
 {
@@ -262,7 +313,7 @@ find . -not \( \( -type f -perm 0644 \) -or \( -type f -perm 0755 \) -or \( -typ
 
 ---
 
-archive/issue_events_008622.json:
+archive/issue_events_020233.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -270,7 +321,7 @@ archive/issue_events_008622.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8437#event-8622"
+    "url": "https://github.com/sagemath/sagetest/issues/8437#event-20233"
 }
 ```
 
@@ -291,3 +342,37 @@ archive/issue_comments_075622.json:
 ```
 
 Resolution: worksforme
+
+
+
+---
+
+archive/issue_events_020234.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-05T09:47:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#event-20234"
+}
+```
+
+
+
+---
+
+archive/issue_events_020235.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-05T09:47:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#event-20235"
+}
+```

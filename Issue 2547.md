@@ -65,7 +65,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_002728.json:
+archive/issue_events_005963.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +73,7 @@ archive/issue_events_002728.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2547#event-2728"
+    "url": "https://github.com/sagemath/sagetest/issues/2547#event-5963"
 }
 ```
 
@@ -153,7 +153,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002729.json:
+archive/issue_events_005964.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -161,7 +161,7 @@ archive/issue_events_002729.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2547#event-2729"
+    "url": "https://github.com/sagemath/sagetest/issues/2547#event-5964"
 }
 ```
 
@@ -241,6 +241,23 @@ archive/issue_comments_017355.json:
 ```
 
 Changing component from group_theory to calculus.
+
+
+
+---
+
+archive/issue_events_005965.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-16T21:34:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2547",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2547#event-5965"
+}
+```
 
 
 
@@ -392,7 +409,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002730.json:
+archive/issue_events_005966.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -400,6 +417,6 @@ archive/issue_events_002730.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2547#event-2730"
+    "url": "https://github.com/sagemath/sagetest/issues/2547#event-5966"
 }
 ```

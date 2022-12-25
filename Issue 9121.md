@@ -119,6 +119,23 @@ I think you should have a look at it and mark one of them a duplicate.
 
 ---
 
+archive/issue_events_022389.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T15:26:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9121",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9121#event-22389"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084698.json:
 ```json
 {
@@ -252,7 +269,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009277.json:
+archive/issue_events_022390.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -260,6 +277,6 @@ archive/issue_events_009277.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9121",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9121#event-9277"
+    "url": "https://github.com/sagemath/sagetest/issues/9121#event-22390"
 }
 ```

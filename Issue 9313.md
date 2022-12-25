@@ -123,6 +123,23 @@ Looks fine. Doctests check out.
 
 ---
 
+archive/issue_events_022955.json:
+```json
+{
+    "actor": "https://github.com/categorie",
+    "created_at": "2010-06-30T04:02:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9313",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9313#event-22955"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087606.json:
 ```json
 {
@@ -161,7 +178,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009470.json:
+archive/issue_events_022956.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -169,6 +186,6 @@ archive/issue_events_009470.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9313",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9313#event-9470"
+    "url": "https://github.com/sagemath/sagetest/issues/9313#event-22956"
 }
 ```

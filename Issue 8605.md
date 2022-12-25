@@ -103,6 +103,23 @@ merging this should close #8489.
 
 ---
 
+archive/issue_events_020803.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-04-16T15:48:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8605",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8605#event-20803"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077832.json:
 ```json
 {
@@ -139,7 +156,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008777.json:
+archive/issue_events_020804.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -147,6 +164,6 @@ archive/issue_events_008777.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8605",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8605#event-8777"
+    "url": "https://github.com/sagemath/sagetest/issues/8605#event-20804"
 }
 ```

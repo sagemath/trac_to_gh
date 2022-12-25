@@ -282,7 +282,7 @@ New patch is cumulative, its the only one that needs to be applied.
 
 ---
 
-archive/issue_events_006742.json:
+archive/issue_events_015357.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -290,7 +290,7 @@ archive/issue_events_006742.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6504",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6504#event-6742"
+    "url": "https://github.com/sagemath/sagetest/issues/6504#event-15357"
 }
 ```
 

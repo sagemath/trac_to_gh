@@ -136,7 +136,7 @@ Merged in 4.0.1.rc0.
 
 ---
 
-archive/issue_events_006440.json:
+archive/issue_events_014533.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -144,6 +144,6 @@ archive/issue_events_006440.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6192",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6192#event-6440"
+    "url": "https://github.com/sagemath/sagetest/issues/6192#event-14533"
 }
 ```

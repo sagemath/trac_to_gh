@@ -189,6 +189,23 @@ I should point out that I only love CSS, but am (also) not by any means an exper
 
 ---
 
+archive/issue_events_017516.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T23:57:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17516"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062191.json:
 ```json
 {
@@ -251,7 +268,143 @@ A [related] possibility: Use [tablesorter](http://tablesorter.com/docs/) to sort
 
 ---
 
-archive/issue_events_007629.json:
+archive/issue_events_017517.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17517"
+}
+```
+
+
+
+---
+
+archive/issue_events_017518.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17518"
+}
+```
+
+
+
+---
+
+archive/issue_events_017519.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17519"
+}
+```
+
+
+
+---
+
+archive/issue_events_017520.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17520"
+}
+```
+
+
+
+---
+
+archive/issue_events_017521.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17521"
+}
+```
+
+
+
+---
+
+archive/issue_events_017522.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17522"
+}
+```
+
+
+
+---
+
+archive/issue_events_017523.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17523"
+}
+```
+
+
+
+---
+
+archive/issue_events_017524.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17524"
+}
+```
+
+
+
+---
+
+archive/issue_events_017525.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -259,7 +412,7 @@ archive/issue_events_007629.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7404",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7404#event-7629"
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-17525"
 }
 ```
 

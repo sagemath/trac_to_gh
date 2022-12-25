@@ -67,6 +67,23 @@ Huh, this is cool!  Although Jeroen and other release managers have been pretty 
 
 ---
 
+archive/issue_events_015413.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-16T07:58:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6535",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6535#event-15413"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053179.json:
 ```json
 {
@@ -85,7 +102,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006771.json:
+archive/issue_events_015414.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -93,7 +110,7 @@ archive/issue_events_006771.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6535",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6535#event-6771"
+    "url": "https://github.com/sagemath/sagetest/issues/6535#event-15414"
 }
 ```
 

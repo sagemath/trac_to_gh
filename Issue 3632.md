@@ -56,6 +56,23 @@ Attachment [trac.3632.patch](tarball://root/attachments/some-uuid/ticket3632/tra
 
 ---
 
+archive/issue_events_008336.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-10T13:13:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3632",
+    "milestone": "sage-3.0.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3632#event-8336"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025639.json:
 ```json
 {
@@ -170,7 +187,7 @@ Merged in Sage 3.0.6.alpha0
 
 ---
 
-archive/issue_events_003851.json:
+archive/issue_events_008337.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -178,6 +195,6 @@ archive/issue_events_003851.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3632",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3632#event-3851"
+    "url": "https://github.com/sagemath/sagetest/issues/3632#event-8337"
 }
 ```

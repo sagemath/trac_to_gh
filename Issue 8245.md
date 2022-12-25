@@ -214,7 +214,7 @@ Ah, so it's historical in that sense.  Thanks for the clarification.
 
 ---
 
-archive/issue_events_008446.json:
+archive/issue_events_019719.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -222,7 +222,7 @@ archive/issue_events_008446.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8245#event-8446"
+    "url": "https://github.com/sagemath/sagetest/issues/8245#event-19719"
 }
 ```
 

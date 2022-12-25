@@ -55,7 +55,7 @@ This is trac #81.
 
 ---
 
-archive/issue_events_000135.json:
+archive/issue_events_000250.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -63,7 +63,7 @@ archive/issue_events_000135.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/129",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/129#event-135"
+    "url": "https://github.com/sagemath/sagetest/issues/129#event-250"
 }
 ```
 

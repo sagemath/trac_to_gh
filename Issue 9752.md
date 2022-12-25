@@ -78,7 +78,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009884.json:
+archive/issue_events_024429.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -86,7 +86,7 @@ archive/issue_events_009884.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9752",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9752#event-9884"
+    "url": "https://github.com/sagemath/sagetest/issues/9752#event-24429"
 }
 ```
 
@@ -107,3 +107,20 @@ archive/issue_comments_095342.json:
 ```
 
 I'm closing this as a dup of #6132.
+
+
+
+---
+
+archive/issue_events_024430.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-21T08:33:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9752",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9752#event-24430"
+}
+```

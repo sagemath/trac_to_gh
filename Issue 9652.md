@@ -1051,7 +1051,24 @@ Please remember to update the "Author(s)" and "Reviewer(s)" fields.
 
 ---
 
-archive/issue_events_009788.json:
+archive/issue_events_024062.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-15T11:06:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9652",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9652#event-24062"
+}
+```
+
+
+
+---
+
+archive/issue_events_024063.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1059,7 +1076,7 @@ archive/issue_events_009788.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9652#event-9788"
+    "url": "https://github.com/sagemath/sagetest/issues/9652#event-24063"
 }
 ```
 

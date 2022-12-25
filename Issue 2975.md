@@ -94,7 +94,7 @@ Works for me on 64-bit Linux.
 
 ---
 
-archive/issue_events_003180.json:
+archive/issue_events_006795.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -102,7 +102,7 @@ archive/issue_events_003180.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2975",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2975#event-3180"
+    "url": "https://github.com/sagemath/sagetest/issues/2975#event-6795"
 }
 ```
 

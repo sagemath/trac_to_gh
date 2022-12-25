@@ -70,6 +70,57 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_000699.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:31:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/301",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/301#event-699"
+}
+```
+
+
+
+---
+
+archive/issue_events_000700.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-11-20T14:01:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/301",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/301#event-700"
+}
+```
+
+
+
+---
+
+archive/issue_events_000701.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-11-20T14:01:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/301",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/301#event-701"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001429.json:
 ```json
 {
@@ -142,7 +193,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_000318.json:
+archive/issue_events_000702.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -150,6 +201,6 @@ archive/issue_events_000318.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/301",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/301#event-318"
+    "url": "https://github.com/sagemath/sagetest/issues/301#event-702"
 }
 ```

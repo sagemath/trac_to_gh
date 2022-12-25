@@ -114,7 +114,7 @@ Also, make very clear that the credit for this update goes to Bill Allombert!!
 
 ---
 
-archive/issue_events_001931.json:
+archive/issue_events_004333.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -122,7 +122,7 @@ archive/issue_events_001931.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1774",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1774#event-1931"
+    "url": "https://github.com/sagemath/sagetest/issues/1774#event-4333"
 }
 ```
 

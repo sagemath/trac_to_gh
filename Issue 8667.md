@@ -474,7 +474,7 @@ MErged into optional package repo.
 
 ---
 
-archive/issue_events_008841.json:
+archive/issue_events_021011.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -482,7 +482,7 @@ archive/issue_events_008841.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8667",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8667#event-8841"
+    "url": "https://github.com/sagemath/sagetest/issues/8667#event-21011"
 }
 ```
 

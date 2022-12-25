@@ -78,6 +78,23 @@ Damn!  Use line breaks to separate ideas!  I'll bulletize them.  For free!  Stri
 
 ---
 
+archive/issue_events_000505.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:32:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/245",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/245#event-505"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001080.json:
 ```json
 {
@@ -100,7 +117,7 @@ Michael
 
 ---
 
-archive/issue_events_000259.json:
+archive/issue_events_000506.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -108,7 +125,7 @@ archive/issue_events_000259.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/245",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/245#event-259"
+    "url": "https://github.com/sagemath/sagetest/issues/245#event-506"
 }
 ```
 
@@ -147,3 +164,37 @@ archive/issue_comments_001082.json:
 ```
 
 This is too vague and most of it is done already.
+
+
+
+---
+
+archive/issue_events_000507.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-11T08:48:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/245",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/245#event-507"
+}
+```
+
+
+
+---
+
+archive/issue_events_000508.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-11T08:48:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/245",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/245#event-508"
+}
+```

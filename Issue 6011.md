@@ -150,7 +150,7 @@ The patch adds some trivial inconsistencies in how "two-dimensional" and "three-
 
 ---
 
-archive/issue_events_006266.json:
+archive/issue_events_014118.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -158,7 +158,7 @@ archive/issue_events_006266.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6011",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6011#event-6266"
+    "url": "https://github.com/sagemath/sagetest/issues/6011#event-14118"
 }
 ```
 

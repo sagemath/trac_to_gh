@@ -51,6 +51,23 @@ correcting the behaviour of short_weierstrass_model in characteristic 3
 
 ---
 
+archive/issue_events_009106.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-28T12:03:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3973",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3973#event-9106"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028488.json:
 ```json
 {
@@ -144,7 +161,7 @@ Applies cleanly to 3.1.1, and all doctests in elliptic_curves pass.  I think thi
 
 ---
 
-archive/issue_events_004203.json:
+archive/issue_events_009107.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -152,7 +169,7 @@ archive/issue_events_004203.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3973",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3973#event-4203"
+    "url": "https://github.com/sagemath/sagetest/issues/3973#event-9107"
 }
 ```
 

@@ -62,7 +62,7 @@ We could make an action on Integers by ints.
 
 ---
 
-archive/issue_events_006447.json:
+archive/issue_events_014541.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -70,7 +70,7 @@ archive/issue_events_006447.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6199#event-6447"
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-14541"
 }
 ```
 
@@ -111,6 +111,23 @@ archive/issue_comments_049411.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_014542.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2010-01-21T00:22:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6199",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-14542"
+}
+```
 
 
 
@@ -264,7 +281,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_006448.json:
+archive/issue_events_014543.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -272,7 +289,7 @@ archive/issue_events_006448.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6199#event-6448"
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-14543"
 }
 ```
 
@@ -458,6 +475,40 @@ Fredrik:
 That's a really good use-case. That said, I guess I don't understand why GMP/MPIR don't use unboxed immediate integers for small values, but given that I haven't played with the guts of the code, they probably know better than I do. It would be nice in your case, though -- you could have both `counter_type` and `value_type` be `Integer`. (Well, you might run into some issues when you only used small values, but in principle, anyway.)
 
 I'm curious: is this code going to be used as part of the "core" of mpmath, or will you just write the code so it takes advantage of Sage whenever it's available? (My impression was that you liked mpmath being pure Python.)
+
+
+
+---
+
+archive/issue_events_014544.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2010-01-22T18:15:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6199",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-14544"
+}
+```
+
+
+
+---
+
+archive/issue_events_014545.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2010-01-22T18:15:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6199",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-14545"
+}
+```
 
 
 
@@ -805,7 +856,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_006449.json:
+archive/issue_events_014546.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -813,7 +864,7 @@ archive/issue_events_006449.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6199#event-6449"
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-14546"
 }
 ```
 

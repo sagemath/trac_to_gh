@@ -136,7 +136,7 @@ Looks good to me.  Apply both patches.
 
 ---
 
-archive/issue_events_003874.json:
+archive/issue_events_008377.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -144,7 +144,7 @@ archive/issue_events_003874.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3655",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3655#event-3874"
+    "url": "https://github.com/sagemath/sagetest/issues/3655#event-8377"
 }
 ```
 

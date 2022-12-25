@@ -222,6 +222,23 @@ Total time for all tests: 60.8 seconds
 
 ---
 
+archive/issue_events_015989.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-03-19T23:16:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6788",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6788#event-15989"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055848.json:
 ```json
 {
@@ -240,7 +257,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007023.json:
+archive/issue_events_015990.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -248,6 +265,6 @@ archive/issue_events_007023.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6788#event-7023"
+    "url": "https://github.com/sagemath/sagetest/issues/6788#event-15990"
 }
 ```

@@ -34,6 +34,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/629
 
 ---
 
+archive/issue_events_001676.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-13T15:04:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/629",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/629#event-1676"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003223.json:
 ```json
 {
@@ -369,6 +386,23 @@ should fix it for both PPC and IA64.
 
 ---
 
+archive/issue_events_001677.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-20T23:59:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/629",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/629#event-1677"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003229.json:
 ```json
 {
@@ -387,7 +421,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000687.json:
+archive/issue_events_001678.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -395,6 +429,6 @@ archive/issue_events_000687.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/629",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/629#event-687"
+    "url": "https://github.com/sagemath/sagetest/issues/629#event-1678"
 }
 ```

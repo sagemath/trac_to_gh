@@ -313,7 +313,7 @@ Merged "trac_8579-category-magmas-nt.patch" in 4.4.alpha0
 
 ---
 
-archive/issue_events_008757.json:
+archive/issue_events_020714.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -321,7 +321,7 @@ archive/issue_events_008757.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8579#event-8757"
+    "url": "https://github.com/sagemath/sagetest/issues/8579#event-20714"
 }
 ```
 

@@ -60,6 +60,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3091
 
 ---
 
+archive/issue_events_006978.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-03T12:30:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3091",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3091#event-6978"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021294.json:
 ```json
 {
@@ -134,7 +151,41 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_events_003305.json:
+archive/issue_events_006979.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-01-16T20:18:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3091",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3091#event-6979"
+}
+```
+
+
+
+---
+
+archive/issue_events_006980.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-01-16T20:18:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3091",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3091#event-6980"
+}
+```
+
+
+
+---
+
+archive/issue_events_006981.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -142,7 +193,7 @@ archive/issue_events_003305.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3091",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3091#event-3305"
+    "url": "https://github.com/sagemath/sagetest/issues/3091#event-6981"
 }
 ```
 

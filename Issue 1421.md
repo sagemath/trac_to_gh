@@ -101,7 +101,7 @@ Attachment [1421-pt2.patch](tarball://root/attachments/some-uuid/ticket1421/1421
 
 ---
 
-archive/issue_events_001569.json:
+archive/issue_events_003654.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -109,7 +109,7 @@ archive/issue_events_001569.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1421#event-1569"
+    "url": "https://github.com/sagemath/sagetest/issues/1421#event-3654"
 }
 ```
 

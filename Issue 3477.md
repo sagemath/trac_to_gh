@@ -54,6 +54,57 @@ Changing priority from major to critical.
 
 ---
 
+archive/issue_events_007911.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-27T04:11:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3477",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3477#event-7911"
+}
+```
+
+
+
+---
+
+archive/issue_events_007912.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-07T06:31:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3477",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3477#event-7912"
+}
+```
+
+
+
+---
+
+archive/issue_events_007913.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-07T06:31:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3477",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3477#event-7913"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024461.json:
 ```json
 {
@@ -72,7 +123,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003697.json:
+archive/issue_events_007914.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -80,7 +131,7 @@ archive/issue_events_003697.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3477",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3477#event-3697"
+    "url": "https://github.com/sagemath/sagetest/issues/3477#event-7914"
 }
 ```
 

@@ -215,7 +215,24 @@ but I think we can close this ticket.
 
 ---
 
-archive/issue_events_002187.json:
+archive/issue_events_004874.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-22T16:04:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2031",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2031#event-4874"
+}
+```
+
+
+
+---
+
+archive/issue_events_004875.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -223,7 +240,7 @@ archive/issue_events_002187.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2031",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2031#event-2187"
+    "url": "https://github.com/sagemath/sagetest/issues/2031#event-4875"
 }
 ```
 

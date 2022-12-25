@@ -171,6 +171,23 @@ Only my patch needs review.
 
 ---
 
+archive/issue_events_018111.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2009-12-15T13:27:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7622",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7622#event-18111"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065018.json:
 ```json
 {
@@ -231,7 +248,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007847.json:
+archive/issue_events_018112.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -239,6 +256,6 @@ archive/issue_events_007847.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7622#event-7847"
+    "url": "https://github.com/sagemath/sagetest/issues/7622#event-18112"
 }
 ```

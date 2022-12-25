@@ -55,6 +55,125 @@ This seems to be fixed now. `kill [pid]` kills the notebook as well. SIG_KILL do
 
 ---
 
+archive/issue_events_014988.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6369",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-14988"
+}
+```
+
+
+
+---
+
+archive/issue_events_014989.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6369",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-14989"
+}
+```
+
+
+
+---
+
+archive/issue_events_014990.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6369",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-14990"
+}
+```
+
+
+
+---
+
+archive/issue_events_014991.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6369",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-14991"
+}
+```
+
+
+
+---
+
+archive/issue_events_014992.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6369",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-14992"
+}
+```
+
+
+
+---
+
+archive/issue_events_014993.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6369",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-14993"
+}
+```
+
+
+
+---
+
+archive/issue_events_014994.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6369",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-14994"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050846.json:
 ```json
 {
@@ -109,7 +228,7 @@ Closing deprecated notebook tickets
 
 ---
 
-archive/issue_events_006618.json:
+archive/issue_events_014995.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -117,6 +236,6 @@ archive/issue_events_006618.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6369",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6369#event-6618"
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-14995"
 }
 ```

@@ -166,7 +166,7 @@ I hope you can address #12348 though next.  At least the trivial change of ind t
 
 ---
 
-archive/issue_events_006806.json:
+archive/issue_events_015506.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -174,7 +174,7 @@ archive/issue_events_006806.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6569",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6569#event-6806"
+    "url": "https://github.com/sagemath/sagetest/issues/6569#event-15506"
 }
 ```
 

@@ -96,7 +96,7 @@ Attachment [univariate_poly_quo_rem_zero.patch](tarball://root/attachments/some-
 
 ---
 
-archive/issue_events_003643.json:
+archive/issue_events_007739.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -104,7 +104,7 @@ archive/issue_events_003643.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3428#event-3643"
+    "url": "https://github.com/sagemath/sagetest/issues/3428#event-7739"
 }
 ```
 
@@ -184,7 +184,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003644.json:
+archive/issue_events_007740.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -192,7 +192,7 @@ archive/issue_events_003644.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3428#event-3644"
+    "url": "https://github.com/sagemath/sagetest/issues/3428#event-7740"
 }
 ```
 
@@ -256,7 +256,7 @@ apply after Burcin's patch
 
 ---
 
-archive/issue_events_003645.json:
+archive/issue_events_007741.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -264,7 +264,7 @@ archive/issue_events_003645.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3428#event-3645"
+    "url": "https://github.com/sagemath/sagetest/issues/3428#event-7741"
 }
 ```
 
@@ -305,3 +305,20 @@ archive/issue_comments_024114.json:
 Attachment [trac-3428-doctest.patch](tarball://root/attachments/some-uuid/ticket3428/trac-3428-doctest.patch) by mabshoff created at 2008-06-23 10:00:53
 
 Merged in Sage 3.0.4.alpha0
+
+
+
+---
+
+archive/issue_events_007742.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T10:00:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3428",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3428#event-7742"
+}
+```

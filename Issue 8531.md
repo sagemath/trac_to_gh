@@ -71,6 +71,125 @@ Issue created by migration from https://trac.sagemath.org/ticket/8531
 
 ---
 
+archive/issue_events_020531.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20531"
+}
+```
+
+
+
+---
+
+archive/issue_events_020532.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20532"
+}
+```
+
+
+
+---
+
+archive/issue_events_020533.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20533"
+}
+```
+
+
+
+---
+
+archive/issue_events_020534.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20534"
+}
+```
+
+
+
+---
+
+archive/issue_events_020535.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20535"
+}
+```
+
+
+
+---
+
+archive/issue_events_020536.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20536"
+}
+```
+
+
+
+---
+
+archive/issue_events_020537.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20537"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076977.json:
 ```json
 {
@@ -84,6 +203,40 @@ archive/issue_comments_076977.json:
 ```
 
 solaris tickets should be closed as outdated
+
+
+
+---
+
+archive/issue_events_020538.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-19T18:07:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20538"
+}
+```
+
+
+
+---
+
+archive/issue_events_020539.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-19T18:07:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8531",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20539"
+}
+```
 
 
 
@@ -107,7 +260,7 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_events_008710.json:
+archive/issue_events_020540.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -115,7 +268,7 @@ archive/issue_events_008710.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8531",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8531#event-8710"
+    "url": "https://github.com/sagemath/sagetest/issues/8531#event-20540"
 }
 ```
 

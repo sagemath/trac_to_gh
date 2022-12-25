@@ -47,6 +47,23 @@ obsolete ?
 
 ---
 
+archive/issue_events_022879.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2020-06-29T07:40:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9284",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9284#event-22879"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087312.json:
 ```json
 {
@@ -160,7 +177,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009445.json:
+archive/issue_events_022880.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -168,6 +185,6 @@ archive/issue_events_009445.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9284",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9284#event-9445"
+    "url": "https://github.com/sagemath/sagetest/issues/9284#event-22880"
 }
 ```

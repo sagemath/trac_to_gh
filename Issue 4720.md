@@ -180,7 +180,7 @@ rebased version of John's patch
 
 ---
 
-archive/issue_events_004965.json:
+archive/issue_events_010784.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -188,7 +188,7 @@ archive/issue_events_004965.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4720",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4720#event-4965"
+    "url": "https://github.com/sagemath/sagetest/issues/4720#event-10784"
 }
 ```
 

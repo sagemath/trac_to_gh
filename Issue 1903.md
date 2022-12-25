@@ -109,7 +109,7 @@ I am changing it to "resolved as fixed";  hope that's ok.
 
 ---
 
-archive/issue_events_002060.json:
+archive/issue_events_004584.json:
 ```json
 {
     "actor": "https://github.com/JohnCremona",
@@ -117,7 +117,7 @@ archive/issue_events_002060.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1903",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1903#event-2060"
+    "url": "https://github.com/sagemath/sagetest/issues/1903#event-4584"
 }
 ```
 

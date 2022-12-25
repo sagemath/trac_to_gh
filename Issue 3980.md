@@ -329,7 +329,7 @@ and an empty plot.  It would be nice to speed up that failure if you know an eas
 
 ---
 
-archive/issue_events_004210.json:
+archive/issue_events_009117.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -337,7 +337,7 @@ archive/issue_events_004210.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3980#event-4210"
+    "url": "https://github.com/sagemath/sagetest/issues/3980#event-9117"
 }
 ```
 
@@ -376,3 +376,20 @@ archive/issue_comments_028576.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009118.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-01T10:32:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#event-9118"
+}
+```

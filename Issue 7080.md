@@ -60,6 +60,23 @@ Attachment [trac_7080.patch](tarball://root/attachments/some-uuid/ticket7080/tra
 
 ---
 
+archive/issue_events_016744.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-02T17:45:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7080",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7080#event-16744"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058431.json:
 ```json
 {
@@ -78,7 +95,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007302.json:
+archive/issue_events_016745.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -86,6 +103,40 @@ archive/issue_events_007302.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7080",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7080#event-7302"
+    "url": "https://github.com/sagemath/sagetest/issues/7080#event-16745"
+}
+```
+
+
+
+---
+
+archive/issue_events_016746.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-14T16:12:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7080",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7080#event-16746"
+}
+```
+
+
+
+---
+
+archive/issue_events_016747.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-14T16:12:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7080",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7080#event-16747"
 }
 ```

@@ -67,6 +67,57 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001409.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-01T22:47:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/537",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/537#event-1409"
+}
+```
+
+
+
+---
+
+archive/issue_events_001410.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/537",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/537#event-1410"
+}
+```
+
+
+
+---
+
+archive/issue_events_001411.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:47:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/537",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/537#event-1411"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002723.json:
 ```json
 {
@@ -149,7 +200,7 @@ I'm closing this one, for pretty much the same reasons as #536. It's too bad we 
 
 ---
 
-archive/issue_events_000576.json:
+archive/issue_events_001412.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -157,6 +208,40 @@ archive/issue_events_000576.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/537",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/537#event-576"
+    "url": "https://github.com/sagemath/sagetest/issues/537#event-1412"
+}
+```
+
+
+
+---
+
+archive/issue_events_001413.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-20T10:42:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/537",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/537#event-1413"
+}
+```
+
+
+
+---
+
+archive/issue_events_001414.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-20T10:42:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/537",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/537#event-1414"
 }
 ```

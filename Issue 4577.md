@@ -70,7 +70,7 @@ Apply both patches.
 
 ---
 
-archive/issue_events_004824.json:
+archive/issue_events_010418.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -78,7 +78,7 @@ archive/issue_events_004824.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4577",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4577#event-4824"
+    "url": "https://github.com/sagemath/sagetest/issues/4577#event-10418"
 }
 ```
 

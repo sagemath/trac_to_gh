@@ -65,7 +65,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_004939.json:
+archive/issue_events_010743.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -73,7 +73,7 @@ archive/issue_events_004939.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4694",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4694#event-4939"
+    "url": "https://github.com/sagemath/sagetest/issues/4694#event-10743"
 }
 ```
 
@@ -100,3 +100,20 @@ this is a dupe of #4672. There is a patch over there that needs one doctest fixe
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_010744.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-04T10:35:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4694",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4694#event-10744"
+}
+```

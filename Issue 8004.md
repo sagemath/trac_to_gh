@@ -222,7 +222,7 @@ in the queue for 4.3.3.alpha0.
 
 ---
 
-archive/issue_events_008219.json:
+archive/issue_events_019177.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -230,7 +230,7 @@ archive/issue_events_008219.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8004",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8004#event-8219"
+    "url": "https://github.com/sagemath/sagetest/issues/8004#event-19177"
 }
 ```
 

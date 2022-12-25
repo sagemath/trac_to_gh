@@ -255,6 +255,23 @@ It doesn't give a traceback for some reason, though it is clearly wrong.
 
 ---
 
+archive/issue_events_005243.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-15T02:28:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#event-5243"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014383.json:
 ```json
 {
@@ -389,7 +406,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002361.json:
+archive/issue_events_005244.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -397,7 +414,7 @@ archive/issue_events_002361.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2195",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2195#event-2361"
+    "url": "https://github.com/sagemath/sagetest/issues/2195#event-5244"
 }
 ```
 

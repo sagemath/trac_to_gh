@@ -49,6 +49,57 @@ See also #4759
 
 ---
 
+archive/issue_events_011092.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4833",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4833#event-11092"
+}
+```
+
+
+
+---
+
+archive/issue_events_011093.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-01-09T09:36:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4833",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4833#event-11093"
+}
+```
+
+
+
+---
+
+archive/issue_events_011094.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-01-09T09:36:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4833",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4833#event-11094"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036558.json:
 ```json
 {
@@ -121,7 +172,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_005079.json:
+archive/issue_events_011095.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -129,6 +180,6 @@ archive/issue_events_005079.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4833",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4833#event-5079"
+    "url": "https://github.com/sagemath/sagetest/issues/4833#event-11095"
 }
 ```

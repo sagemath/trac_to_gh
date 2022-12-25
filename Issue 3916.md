@@ -150,7 +150,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004143.json:
+archive/issue_events_008980.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -158,7 +158,7 @@ archive/issue_events_004143.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3916#event-4143"
+    "url": "https://github.com/sagemath/sagetest/issues/3916#event-8980"
 }
 ```
 
@@ -197,6 +197,23 @@ archive/issue_comments_027963.json:
 ```
 
 Resolution changed from fixed to invalid
+
+
+
+---
+
+archive/issue_events_008981.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-09T22:29:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3916",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3916#event-8981"
+}
+```
 
 
 

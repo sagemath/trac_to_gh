@@ -74,7 +74,7 @@ Attachment [trac-3864.patch](tarball://root/attachments/some-uuid/ticket3864/tra
 
 ---
 
-archive/issue_events_004085.json:
+archive/issue_events_008866.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -82,7 +82,7 @@ archive/issue_events_004085.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3864",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3864#event-4085"
+    "url": "https://github.com/sagemath/sagetest/issues/3864#event-8866"
 }
 ```
 

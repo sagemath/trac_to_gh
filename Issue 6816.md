@@ -128,6 +128,23 @@ In fact, ANY sage integration attempted with the syntax provided by the originat
 
 ---
 
+archive/issue_events_016059.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2009-10-05T15:45:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#event-16059"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056103.json:
 ```json
 {
@@ -141,6 +158,23 @@ archive/issue_comments_056103.json:
 ```
 
 I don't consider this ticket invalid. The fact that Sage totally hangs without an error is bad.  Independent of implementing #1221 and #2787, we could easily and quickly improve the type checking of the input to integrate.
+
+
+
+---
+
+archive/issue_events_016060.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-05T15:52:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#event-16060"
+}
+```
 
 
 
@@ -321,7 +355,7 @@ To release manager: please close this as a duplicate of #7327, where a patch inc
 
 ---
 
-archive/issue_events_007050.json:
+archive/issue_events_016061.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -329,7 +363,24 @@ archive/issue_events_007050.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6816#event-7050"
+    "url": "https://github.com/sagemath/sagetest/issues/6816#event-16061"
+}
+```
+
+
+
+---
+
+archive/issue_events_016062.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-06T05:53:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#event-16062"
 }
 ```
 

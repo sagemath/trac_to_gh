@@ -31,6 +31,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7231
 
 ---
 
+archive/issue_events_017122.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-02-16T10:12:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7231",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7231#event-17122"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059868.json:
 ```json
 {

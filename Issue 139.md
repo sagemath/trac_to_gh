@@ -86,6 +86,23 @@ c changes, then a isn't rebuilt.
 
 ---
 
+archive/issue_events_000264.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:15:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/139#event-264"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000648.json:
 ```json
 {
@@ -104,7 +121,7 @@ Is this still a valid ticket? We do check dependencies now, right?
 
 ---
 
-archive/issue_events_000145.json:
+archive/issue_events_000265.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -112,7 +129,41 @@ archive/issue_events_000145.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/139",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/139#event-145"
+    "url": "https://github.com/sagemath/sagetest/issues/139#event-265"
+}
+```
+
+
+
+---
+
+archive/issue_events_000266.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-02-27T12:21:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/139#event-266"
+}
+```
+
+
+
+---
+
+archive/issue_events_000267.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-02-27T12:21:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/139#event-267"
 }
 ```
 

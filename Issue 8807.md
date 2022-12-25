@@ -467,6 +467,23 @@ One remark concerning doctests. The genuinely new code (induced morphisms) is do
 
 ---
 
+archive/issue_events_021484.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2010-07-21T08:32:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8807",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8807#event-21484"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080683.json:
 ```json
 {
@@ -888,6 +905,40 @@ Release manager: after merging this patch, please also do the one at #10318 whic
 
 ---
 
+archive/issue_events_021485.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-26T22:13:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8807",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8807#event-21485"
+}
+```
+
+
+
+---
+
+archive/issue_events_021486.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-26T22:13:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8807",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8807#event-21486"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080702.json:
 ```json
 {
@@ -908,7 +959,7 @@ Apply trac-8807_induced_morphisms.patch
 
 ---
 
-archive/issue_events_008972.json:
+archive/issue_events_021487.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -916,7 +967,7 @@ archive/issue_events_008972.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#event-8972"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#event-21487"
 }
 ```
 

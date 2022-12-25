@@ -49,6 +49,23 @@ See #7943 and #8191 for recent changes to `makefile`, `spkg/install`, and `spkg/
 
 ---
 
+archive/issue_events_019868.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-02-25T17:27:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8306",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8306#event-19868"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073476.json:
 ```json
 {
@@ -2217,7 +2234,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008503.json:
+archive/issue_events_019869.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -2225,7 +2242,7 @@ archive/issue_events_008503.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8306#event-8503"
+    "url": "https://github.com/sagemath/sagetest/issues/8306#event-19869"
 }
 ```
 

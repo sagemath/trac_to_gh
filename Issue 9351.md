@@ -321,7 +321,7 @@ Because I would like the example.tex file to be very complete, and serve as a ni
 
 ---
 
-archive/issue_events_009504.json:
+archive/issue_events_023078.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -329,7 +329,7 @@ archive/issue_events_009504.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9351#event-9504"
+    "url": "https://github.com/sagemath/sagetest/issues/9351#event-23078"
 }
 ```
 

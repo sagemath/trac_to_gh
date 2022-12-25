@@ -330,7 +330,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006607.json:
+archive/issue_events_014967.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -338,7 +338,7 @@ archive/issue_events_006607.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6359#event-6607"
+    "url": "https://github.com/sagemath/sagetest/issues/6359#event-14967"
 }
 ```
 
@@ -364,7 +364,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006608.json:
+archive/issue_events_014968.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -372,7 +372,7 @@ archive/issue_events_006608.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6359#event-6608"
+    "url": "https://github.com/sagemath/sagetest/issues/6359#event-14968"
 }
 ```
 
@@ -458,7 +458,7 @@ I meant to say, for example, ..., and is used by `Modules/_ssl.c` in Python 2.6.
 
 ---
 
-archive/issue_events_006609.json:
+archive/issue_events_014969.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -466,7 +466,7 @@ archive/issue_events_006609.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6359#event-6609"
+    "url": "https://github.com/sagemath/sagetest/issues/6359#event-14969"
 }
 ```
 

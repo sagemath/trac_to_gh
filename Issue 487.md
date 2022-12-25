@@ -111,7 +111,7 @@ the problem for me.
 
 ---
 
-archive/issue_events_000518.json:
+archive/issue_events_001248.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -119,7 +119,7 @@ archive/issue_events_000518.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/487",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/487#event-518"
+    "url": "https://github.com/sagemath/sagetest/issues/487#event-1248"
 }
 ```
 
@@ -159,3 +159,20 @@ archive/issue_comments_002422.json:
 
 The actual fix was a bit more complicated than described above, though the above was very helpful.
 This is definitely fixed in sage > 2.8.3.5.
+
+
+
+---
+
+archive/issue_events_001249.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-06T12:59:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/487",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/487#event-1249"
+}
+```

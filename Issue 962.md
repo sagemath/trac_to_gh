@@ -79,6 +79,23 @@ Changing assignee from cwitty to @mwhansen.
 
 ---
 
+archive/issue_events_002660.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-24T20:18:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/962",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/962#event-2660"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005842.json:
 ```json
 {
@@ -92,6 +109,40 @@ archive/issue_comments_005842.json:
 ```
 
 Changing status from new to assigned.
+
+
+
+---
+
+archive/issue_events_002661.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-28T19:00:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/962",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/962#event-2661"
+}
+```
+
+
+
+---
+
+archive/issue_events_002662.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-28T19:00:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/962",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/962#event-2662"
+}
+```
 
 
 
@@ -180,6 +231,40 @@ archive/issue_comments_005846.json:
 ```
 
 Actually, I think that all of the last three examples should give 53 (that is, leading zeroes shouldn't affect the precision).  I think that matches the rules for significant figures I learned in grade school...
+
+
+
+---
+
+archive/issue_events_002663.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:53:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/962",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/962#event-2663"
+}
+```
+
+
+
+---
+
+archive/issue_events_002664.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T11:53:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/962",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/962#event-2664"
+}
+```
 
 
 
@@ -388,7 +473,7 @@ Merged in 2.8.15.alpha2.
 
 ---
 
-archive/issue_events_001084.json:
+archive/issue_events_002665.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -396,7 +481,7 @@ archive/issue_events_001084.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/962#event-1084"
+    "url": "https://github.com/sagemath/sagetest/issues/962#event-2665"
 }
 ```
 

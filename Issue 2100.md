@@ -1949,6 +1949,23 @@ Correct - or to be more precise, warnings that do not cause the doctest to fail.
 
 ---
 
+archive/issue_events_005039.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-18T09:38:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2100",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2100#event-5039"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013647.json:
 ```json
 {
@@ -2194,7 +2211,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002260.json:
+archive/issue_events_005040.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2202,6 +2219,6 @@ archive/issue_events_002260.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2100#event-2260"
+    "url": "https://github.com/sagemath/sagetest/issues/2100#event-5040"
 }
 ```

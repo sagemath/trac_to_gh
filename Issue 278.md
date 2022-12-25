@@ -48,7 +48,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000295.json:
+archive/issue_events_000624.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -56,7 +56,7 @@ archive/issue_events_000295.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/278",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/278#event-295"
+    "url": "https://github.com/sagemath/sagetest/issues/278#event-624"
 }
 ```
 
@@ -77,3 +77,20 @@ archive/issue_comments_001323.json:
 ```
 
 Addressed by the fix to Trac #276.
+
+
+
+---
+
+archive/issue_events_000625.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-02-25T16:07:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/278",
+    "milestone": "sage-2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/278#event-625"
+}
+```

@@ -84,7 +84,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_007320.json:
+archive/issue_events_016784.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -92,7 +92,7 @@ archive/issue_events_007320.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7098",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7098#event-7320"
+    "url": "https://github.com/sagemath/sagetest/issues/7098#event-16784"
 }
 ```
 

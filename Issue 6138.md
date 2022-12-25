@@ -144,7 +144,7 @@ Updated patch fixes two missing doctests (apply only this one)
 
 ---
 
-archive/issue_events_006387.json:
+archive/issue_events_014455.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -152,7 +152,7 @@ archive/issue_events_006387.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6138#event-6387"
+    "url": "https://github.com/sagemath/sagetest/issues/6138#event-14455"
 }
 ```
 

@@ -195,6 +195,23 @@ With Mike's patch, caching disabled:
 
 ---
 
+archive/issue_events_013427.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-11T00:31:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5721",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5721#event-13427"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044615.json:
 ```json
 {
@@ -468,6 +485,40 @@ Michael
 
 ---
 
+archive/issue_events_013428.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-16T09:35:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5721",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5721#event-13428"
+}
+```
+
+
+
+---
+
+archive/issue_events_013429.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-16T09:35:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5721",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5721#event-13429"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044625.json:
 ```json
 {
@@ -486,7 +537,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005965.json:
+archive/issue_events_013430.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -494,6 +545,6 @@ archive/issue_events_005965.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5721#event-5965"
+    "url": "https://github.com/sagemath/sagetest/issues/5721#event-13430"
 }
 ```

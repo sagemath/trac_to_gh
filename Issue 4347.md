@@ -279,7 +279,7 @@ Great stuff!
 
 ---
 
-archive/issue_events_004593.json:
+archive/issue_events_009828.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -287,7 +287,24 @@ archive/issue_events_004593.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4347#event-4593"
+    "url": "https://github.com/sagemath/sagetest/issues/4347#event-9828"
+}
+```
+
+
+
+---
+
+archive/issue_events_009829.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-27T01:41:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#event-9829"
 }
 ```
 

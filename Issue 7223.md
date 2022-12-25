@@ -99,6 +99,23 @@ This has been included in #10165 and probably could be closed now.
 
 ---
 
+archive/issue_events_017108.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-08-10T15:23:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7223",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7223#event-17108"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059801.json:
 ```json
 {
@@ -135,7 +152,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007445.json:
+archive/issue_events_017109.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -143,7 +160,7 @@ archive/issue_events_007445.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7223",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7223#event-7445"
+    "url": "https://github.com/sagemath/sagetest/issues/7223#event-17109"
 }
 ```
 

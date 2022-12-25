@@ -47,6 +47,23 @@ It is thus clearly an issue with dependence in make or osomething like that.
 
 ---
 
+archive/issue_events_001076.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T11:22:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/437",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/437#event-1076"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002181.json:
 ```json
 {
@@ -87,7 +104,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000464.json:
+archive/issue_events_001077.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -95,6 +112,6 @@ archive/issue_events_000464.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/437",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/437#event-464"
+    "url": "https://github.com/sagemath/sagetest/issues/437#event-1077"
 }
 ```

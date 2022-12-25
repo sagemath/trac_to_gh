@@ -150,6 +150,23 @@ Changing priority from minor to blocker.
 
 ---
 
+archive/issue_events_005601.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-02T22:36:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2371",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2371#event-5601"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015963.json:
 ```json
 {
@@ -194,6 +211,40 @@ Simon King. Would that be okay?
 
 ---
 
+archive/issue_events_005602.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-11T01:45:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2371",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2371#event-5602"
+}
+```
+
+
+
+---
+
+archive/issue_events_005603.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-11T01:45:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2371",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2371#event-5603"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015965.json:
 ```json
 {
@@ -212,7 +263,7 @@ I assume that there errors have not changed from rc0 to rc3?
 
 ---
 
-archive/issue_events_002548.json:
+archive/issue_events_005604.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -220,7 +271,7 @@ archive/issue_events_002548.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2371",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2371#event-2548"
+    "url": "https://github.com/sagemath/sagetest/issues/2371#event-5604"
 }
 ```
 

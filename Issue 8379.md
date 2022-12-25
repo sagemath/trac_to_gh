@@ -89,6 +89,23 @@ The provided patch also correct a bug in the computation of the algebraic immuni
 
 ---
 
+archive/issue_events_020086.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
+    "created_at": "2010-03-10T12:06:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8379",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8379#event-20086"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074799.json:
 ```json
 {
@@ -257,7 +274,7 @@ Patch looks good, applies cleanly, doctests pass on sage.math
 
 ---
 
-archive/issue_events_008566.json:
+archive/issue_events_020087.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -265,7 +282,7 @@ archive/issue_events_008566.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8379#event-8566"
+    "url": "https://github.com/sagemath/sagetest/issues/8379#event-20087"
 }
 ```
 

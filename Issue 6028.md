@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/6028
 
 ---
 
+archive/issue_events_014159.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T06:52:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6028",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6028#event-14159"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047906.json:
 ```json
 {
@@ -265,7 +282,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006283.json:
+archive/issue_events_014160.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -273,6 +290,40 @@ archive/issue_events_006283.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6028",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6028#event-6283"
+    "url": "https://github.com/sagemath/sagetest/issues/6028#event-14160"
+}
+```
+
+
+
+---
+
+archive/issue_events_014161.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-08T14:24:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6028",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6028#event-14161"
+}
+```
+
+
+
+---
+
+archive/issue_events_014162.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-08T14:24:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6028",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6028#event-14162"
 }
 ```

@@ -65,7 +65,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005934.json:
+archive/issue_events_013381.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -73,7 +73,7 @@ archive/issue_events_005934.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5692",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5692#event-5934"
+    "url": "https://github.com/sagemath/sagetest/issues/5692#event-13381"
 }
 ```
 
@@ -98,3 +98,20 @@ Merged in Sage 3.4.1.rc1. I did the exact same patch :)
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_013382.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-06T18:36:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5692",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5692#event-13382"
+}
+```

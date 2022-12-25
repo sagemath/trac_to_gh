@@ -76,6 +76,57 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001499.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:46:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/561",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/561#event-1499"
+}
+```
+
+
+
+---
+
+archive/issue_events_001500.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T23:01:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/561",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/561#event-1500"
+}
+```
+
+
+
+---
+
+archive/issue_events_001501.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-14T23:01:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/561",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/561#event-1501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002896.json:
 ```json
 {
@@ -118,7 +169,7 @@ burcin's fix extracted from the patch for #559
 
 ---
 
-archive/issue_events_000607.json:
+archive/issue_events_001502.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -126,7 +177,7 @@ archive/issue_events_000607.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/561",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/561#event-607"
+    "url": "https://github.com/sagemath/sagetest/issues/561#event-1502"
 }
 ```
 

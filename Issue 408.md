@@ -110,6 +110,23 @@ or improve the refresh() javascript function so it also works with safari.
 
 ---
 
+archive/issue_events_000982.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:24:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/408",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/408#event-982"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002002.json:
 ```json
 {
@@ -124,6 +141,23 @@ archive/issue_comments_002002.json:
 
 This is really an enhancement -- i.e., this dynamic stuff needs to be implemented for that screen (without
 using refresh).
+
+
+
+---
+
+archive/issue_events_000983.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T08:33:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/408",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/408#event-983"
+}
+```
 
 
 
@@ -205,7 +239,7 @@ I fixed this.  It is no longer a problem.
 
 ---
 
-archive/issue_events_000434.json:
+archive/issue_events_000984.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -213,6 +247,23 @@ archive/issue_events_000434.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/408",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/408#event-434"
+    "url": "https://github.com/sagemath/sagetest/issues/408#event-984"
+}
+```
+
+
+
+---
+
+archive/issue_events_000985.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-11T08:47:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/408",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/408#event-985"
 }
 ```

@@ -179,7 +179,7 @@ Remember to fill in the "Author(s)" and "Reviewer(s)" fields.  We use these to g
 
 ---
 
-archive/issue_events_009991.json:
+archive/issue_events_024823.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -187,7 +187,7 @@ archive/issue_events_009991.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9861",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9861#event-9991"
+    "url": "https://github.com/sagemath/sagetest/issues/9861#event-24823"
 }
 ```
 
@@ -208,3 +208,20 @@ archive/issue_comments_097212.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_024824.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-16T04:50:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9861",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9861#event-24824"
+}
+```

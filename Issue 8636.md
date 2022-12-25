@@ -105,7 +105,7 @@ Merged spkg from #8638 in 4.4.alpha0.
 
 ---
 
-archive/issue_events_008805.json:
+archive/issue_events_020905.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -113,7 +113,7 @@ archive/issue_events_008805.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8636",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8636#event-8805"
+    "url": "https://github.com/sagemath/sagetest/issues/8636#event-20905"
 }
 ```
 

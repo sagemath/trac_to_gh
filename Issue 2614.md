@@ -276,7 +276,7 @@ The patch applies cleanly now. Merged in Sage 2.11.alpha2
 
 ---
 
-archive/issue_events_002804.json:
+archive/issue_events_006090.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -284,7 +284,7 @@ archive/issue_events_002804.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2614",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2614#event-2804"
+    "url": "https://github.com/sagemath/sagetest/issues/2614#event-6090"
 }
 ```
 

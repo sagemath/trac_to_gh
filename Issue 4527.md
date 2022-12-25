@@ -68,6 +68,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4527
 
 ---
 
+archive/issue_events_010297.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-14T20:22:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#event-10297"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033547.json:
 ```json
 {
@@ -234,6 +251,40 @@ Attachment [sage-4527.patch](tarball://root/attachments/some-uuid/ticket4527/sag
 
 ---
 
+archive/issue_events_010298.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T07:22:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#event-10298"
+}
+```
+
+
+
+---
+
+archive/issue_events_010299.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T07:22:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#event-10299"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033553.json:
 ```json
 {
@@ -316,7 +367,7 @@ Looks good. I added a doctest based on Soroosh's original example in the extra p
 
 ---
 
-archive/issue_events_004771.json:
+archive/issue_events_010300.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -324,7 +375,7 @@ archive/issue_events_004771.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4527",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4527#event-4771"
+    "url": "https://github.com/sagemath/sagetest/issues/4527#event-10300"
 }
 ```
 

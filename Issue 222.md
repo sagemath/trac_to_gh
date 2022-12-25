@@ -80,7 +80,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000235.json:
+archive/issue_events_000453.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -88,7 +88,7 @@ archive/issue_events_000235.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/222",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/222#event-235"
+    "url": "https://github.com/sagemath/sagetest/issues/222#event-453"
 }
 ```
 
@@ -109,3 +109,20 @@ archive/issue_comments_000990.json:
 ```
 
 Attachment [trac222.patch](tarball://root/attachments/some-uuid/ticket222/trac222.patch) by mabshoff created at 2007-10-22 00:03:54
+
+
+
+---
+
+archive/issue_events_000454.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-22T00:03:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/222",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/222#event-454"
+}
+```

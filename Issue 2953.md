@@ -113,7 +113,7 @@ This works on a wide range of architectures where I tested it, and of course the
 
 ---
 
-archive/issue_events_003159.json:
+archive/issue_events_006751.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -121,7 +121,7 @@ archive/issue_events_003159.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2953",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2953#event-3159"
+    "url": "https://github.com/sagemath/sagetest/issues/2953#event-6751"
 }
 ```
 

@@ -330,6 +330,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_020861.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-05-05T07:19:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8622",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8622#event-20861"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078037.json:
 ```json
 {
@@ -366,7 +383,7 @@ ok
 
 ---
 
-archive/issue_events_008793.json:
+archive/issue_events_020862.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -374,7 +391,7 @@ archive/issue_events_008793.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8622#event-8793"
+    "url": "https://github.com/sagemath/sagetest/issues/8622#event-20862"
 }
 ```
 

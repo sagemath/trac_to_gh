@@ -160,7 +160,7 @@ Oops!  Positive review.
 
 ---
 
-archive/issue_events_008058.json:
+archive/issue_events_018754.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -168,7 +168,7 @@ archive/issue_events_008058.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7843#event-8058"
+    "url": "https://github.com/sagemath/sagetest/issues/7843#event-18754"
 }
 ```
 

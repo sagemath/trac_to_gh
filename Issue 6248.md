@@ -64,7 +64,7 @@ Done.
 
 ---
 
-archive/issue_events_006493.json:
+archive/issue_events_014635.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -72,6 +72,23 @@ archive/issue_events_006493.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6248",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6248#event-6493"
+    "url": "https://github.com/sagemath/sagetest/issues/6248#event-14635"
+}
+```
+
+
+
+---
+
+archive/issue_events_014636.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-19T13:16:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6248",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6248#event-14636"
 }
 ```

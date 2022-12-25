@@ -76,6 +76,23 @@ Changing type from defect to task.
 
 ---
 
+archive/issue_events_006460.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-06-14T20:31:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2803",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2803#event-6460"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019201.json:
 ```json
 {
@@ -154,7 +171,7 @@ Neither is 128.208.160.198, sagenb.org, so I think we're set.
 
 ---
 
-archive/issue_events_002994.json:
+archive/issue_events_006461.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -162,7 +179,7 @@ archive/issue_events_002994.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2803#event-2994"
+    "url": "https://github.com/sagemath/sagetest/issues/2803#event-6461"
 }
 ```
 

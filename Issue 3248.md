@@ -150,7 +150,7 @@ Changing keywords from "" to "editor_wstein".
 
 ---
 
-archive/issue_events_003467.json:
+archive/issue_events_007292.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -158,7 +158,7 @@ archive/issue_events_003467.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3248",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3248#event-3467"
+    "url": "https://github.com/sagemath/sagetest/issues/3248#event-7292"
 }
 ```
 
@@ -197,3 +197,20 @@ archive/issue_comments_022435.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_007293.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-18T01:54:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3248",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3248#event-7293"
+}
+```

@@ -137,6 +137,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_022983.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-06T11:53:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9327",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9327#event-22983"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087846.json:
 ```json
 {
@@ -193,7 +210,7 @@ Another ticket would be deleting the verbose output in the server logs anytime s
 
 ---
 
-archive/issue_events_009482.json:
+archive/issue_events_022984.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -201,7 +218,7 @@ archive/issue_events_009482.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9327#event-9482"
+    "url": "https://github.com/sagemath/sagetest/issues/9327#event-22984"
 }
 ```
 

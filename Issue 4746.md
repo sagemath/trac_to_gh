@@ -95,6 +95,23 @@ what if we added a tolerance option, which it would use in comparing the endpoin
 
 ---
 
+archive/issue_events_010843.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-12-10T00:41:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4746",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4746#event-10843"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035838.json:
 ```json
 {
@@ -307,7 +324,7 @@ Code looks good, all doctests pass.  Positive review.  Apply 4746-srange-rebased
 
 ---
 
-archive/issue_events_004988.json:
+archive/issue_events_010844.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -315,7 +332,7 @@ archive/issue_events_004988.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4746#event-4988"
+    "url": "https://github.com/sagemath/sagetest/issues/4746#event-10844"
 }
 ```
 
@@ -358,3 +375,37 @@ archive/issue_comments_035846.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_010845.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-20T07:37:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4746",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4746#event-10845"
+}
+```
+
+
+
+---
+
+archive/issue_events_010846.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-20T07:37:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4746",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4746#event-10846"
+}
+```

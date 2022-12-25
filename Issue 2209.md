@@ -58,6 +58,23 @@ Please test!
 
 ---
 
+archive/issue_events_005271.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:07:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2209",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2209#event-5271"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014557.json:
 ```json
 {
@@ -129,6 +146,40 @@ Note that there have been many small fixes to the GAP.spkg, so the fixes have to
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005272.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-09T18:46:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2209",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2209#event-5272"
+}
+```
+
+
+
+---
+
+archive/issue_events_005273.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-09T18:46:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2209",
+    "milestone": "sage-3.0.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2209#event-5273"
+}
+```
 
 
 
@@ -223,7 +274,7 @@ Merged in Sage 3.1.2.alpha2
 
 ---
 
-archive/issue_events_002379.json:
+archive/issue_events_005274.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -231,7 +282,7 @@ archive/issue_events_002379.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2209",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2209#event-2379"
+    "url": "https://github.com/sagemath/sagetest/issues/2209#event-5274"
 }
 ```
 

@@ -53,6 +53,23 @@ generator for generalized Petersen graphs
 
 ---
 
+archive/issue_events_017117.json:
+```json
+{
+    "actor": "https://github.com/haaninjo",
+    "created_at": "2009-10-15T15:33:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7228",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7228#event-17117"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059843.json:
 ```json
 {
@@ -189,7 +206,7 @@ Positive review !
 
 ---
 
-archive/issue_events_007450.json:
+archive/issue_events_017118.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -197,7 +214,7 @@ archive/issue_events_007450.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7228",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7228#event-7450"
+    "url": "https://github.com/sagemath/sagetest/issues/7228#event-17118"
 }
 ```
 

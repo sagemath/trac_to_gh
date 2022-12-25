@@ -102,7 +102,7 @@ crystal into subcrystals for any Levi subgroup.
 
 ---
 
-archive/issue_events_007072.json:
+archive/issue_events_016103.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -110,7 +110,7 @@ archive/issue_events_007072.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6839#event-7072"
+    "url": "https://github.com/sagemath/sagetest/issues/6839#event-16103"
 }
 ```
 
@@ -160,6 +160,23 @@ The following docstring causes warnings when building the reference manual:
 ```
 
 See #6901 for a follow-up to this ticket.
+
+
+
+---
+
+archive/issue_events_016104.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-07T17:25:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6839",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6839#event-16104"
+}
+```
 
 
 

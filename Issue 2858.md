@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2858
 
 ---
 
-archive/issue_events_003050.json:
+archive/issue_events_006540.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -63,7 +63,7 @@ archive/issue_events_003050.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2858#event-3050"
+    "url": "https://github.com/sagemath/sagetest/issues/2858#event-6540"
 }
 ```
 
@@ -149,7 +149,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003051.json:
+archive/issue_events_006541.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -157,7 +157,7 @@ archive/issue_events_003051.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2858#event-3051"
+    "url": "https://github.com/sagemath/sagetest/issues/2858#event-6541"
 }
 ```
 
@@ -180,6 +180,23 @@ archive/issue_comments_019565.json:
 To my understanding, the issue in #1877 was the specifying of the same variable in two different ranges.  This issue is different: when I use "-u", I get an error, but when I use an expression that is equivalent to "-u", I don't get an error.  In either case, I'm not specifying two of the same variable for the ranges.
 
 I think these issues are different.  They may be symptoms of the same thing, but I doubt it.
+
+
+
+---
+
+archive/issue_events_006542.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-04-09T01:30:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2858",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2858#event-6542"
+}
+```
 
 
 
@@ -393,7 +410,41 @@ Merged both patches in Sage 3.3.alpha3
 
 ---
 
-archive/issue_events_003052.json:
+archive/issue_events_006543.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-28T14:11:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2858",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2858#event-6543"
+}
+```
+
+
+
+---
+
+archive/issue_events_006544.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-28T14:11:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2858",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2858#event-6544"
+}
+```
+
+
+
+---
+
+archive/issue_events_006545.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -401,6 +452,6 @@ archive/issue_events_003052.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2858#event-3052"
+    "url": "https://github.com/sagemath/sagetest/issues/2858#event-6545"
 }
 ```

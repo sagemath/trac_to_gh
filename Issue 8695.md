@@ -48,6 +48,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8695
 
 ---
 
+archive/issue_events_021098.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2010-04-16T15:19:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8695",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8695#event-21098"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079078.json:
 ```json
 {
@@ -385,7 +402,7 @@ Merged "trac_8695-uniquerep_missing__ne__-fh.patch" into 4.4.alpha1.
 
 ---
 
-archive/issue_events_008867.json:
+archive/issue_events_021099.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -393,6 +410,6 @@ archive/issue_events_008867.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8695#event-8867"
+    "url": "https://github.com/sagemath/sagetest/issues/8695#event-21099"
 }
 ```

@@ -463,6 +463,23 @@ added a small patch to fix doctest, and return a NotImplementedError explaining 
 
 ---
 
+archive/issue_events_011770.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
+    "created_at": "2009-02-11T12:27:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5098",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5098#event-11770"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038828.json:
 ```json
 {
@@ -692,6 +709,40 @@ Michael
 
 ---
 
+archive/issue_events_011771.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T05:00:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5098",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5098#event-11771"
+}
+```
+
+
+
+---
+
+archive/issue_events_011772.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-16T05:00:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5098",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5098#event-11772"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038836.json:
 ```json
 {
@@ -885,7 +936,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005344.json:
+archive/issue_events_011773.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -893,6 +944,40 @@ archive/issue_events_005344.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5098#event-5344"
+    "url": "https://github.com/sagemath/sagetest/issues/5098#event-11773"
+}
+```
+
+
+
+---
+
+archive/issue_events_011774.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:26:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5098",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5098#event-11774"
+}
+```
+
+
+
+---
+
+archive/issue_events_011775.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:26:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5098",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5098#event-11775"
 }
 ```

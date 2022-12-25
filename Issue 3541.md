@@ -83,6 +83,23 @@ Changing assignee from @rlmill to ekirkman.
 
 ---
 
+archive/issue_events_008092.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-17T11:55:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3541",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3541#event-8092"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024978.json:
 ```json
 {
@@ -194,6 +211,40 @@ This is going into 3.3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_008093.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T02:59:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3541",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3541#event-8093"
+}
+```
+
+
+
+---
+
+archive/issue_events_008094.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-14T02:59:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3541",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3541#event-8094"
+}
+```
 
 
 
@@ -336,7 +387,7 @@ Attachment [trac_3541-reviewer-doctest.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_events_003761.json:
+archive/issue_events_008095.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -344,7 +395,7 @@ archive/issue_events_003761.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3541#event-3761"
+    "url": "https://github.com/sagemath/sagetest/issues/3541#event-8095"
 }
 ```
 

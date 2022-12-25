@@ -143,6 +143,23 @@ Mike, can you close this one??  (See Rob's comment above.)
 
 ---
 
+archive/issue_events_016907.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-01-03T05:21:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7151",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7151#event-16907"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059140.json:
 ```json
 {
@@ -161,7 +178,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007371.json:
+archive/issue_events_016908.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -169,7 +186,7 @@ archive/issue_events_007371.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#event-7371"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#event-16908"
 }
 ```
 

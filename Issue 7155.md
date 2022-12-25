@@ -78,7 +78,7 @@ This is now a duplicate of #7325, which already has a first patch, so I am closi
 
 ---
 
-archive/issue_events_007375.json:
+archive/issue_events_016912.json:
 ```json
 {
     "actor": "https://github.com/kcrisman",
@@ -86,7 +86,7 @@ archive/issue_events_007375.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7155",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7155#event-7375"
+    "url": "https://github.com/sagemath/sagetest/issues/7155#event-16912"
 }
 ```
 
@@ -128,3 +128,20 @@ Replying to [comment:1 kcrisman]:
 > This is now a duplicate of #7325, which already has a first patch, so I am closing this ticket.
 
 kcrisman, please don't close tickets. That's the job of the release manager.  See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.
+
+
+
+---
+
+archive/issue_events_016913.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-10-28T12:39:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7155",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7155#event-16913"
+}
+```

@@ -248,7 +248,7 @@ New patch up implementing the interval method.
 
 ---
 
-archive/issue_events_001432.json:
+archive/issue_events_003386.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -256,7 +256,7 @@ archive/issue_events_001432.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1289#event-1432"
+    "url": "https://github.com/sagemath/sagetest/issues/1289#event-3386"
 }
 ```
 
@@ -295,3 +295,20 @@ archive/issue_comments_008078.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_003387.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-18T01:48:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1289",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1289#event-3387"
+}
+```

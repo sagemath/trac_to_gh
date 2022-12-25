@@ -65,7 +65,7 @@ From the documentation of PolynomialRing:
 
 ---
 
-archive/issue_events_009666.json:
+archive/issue_events_023635.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -73,7 +73,7 @@ archive/issue_events_009666.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9517",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9517#event-9666"
+    "url": "https://github.com/sagemath/sagetest/issues/9517#event-23635"
 }
 ```
 
@@ -94,3 +94,20 @@ archive/issue_comments_091346.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_023636.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-17T02:31:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9517",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9517#event-23636"
+}
+```

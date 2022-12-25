@@ -64,6 +64,23 @@ This seems to be a duplicate of #6382.
 
 ---
 
+archive/issue_events_015035.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2009-06-27T07:53:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6383",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6383#event-15035"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050998.json:
 ```json
 {
@@ -82,7 +99,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006631.json:
+archive/issue_events_015036.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -90,6 +107,6 @@ archive/issue_events_006631.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6383",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6383#event-6631"
+    "url": "https://github.com/sagemath/sagetest/issues/6383#event-15036"
 }
 ```

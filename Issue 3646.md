@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3646
 
 ---
 
+archive/issue_events_008361.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-07-12T03:29:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3646",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3646#event-8361"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025721.json:
 ```json
 {
@@ -318,7 +335,7 @@ The patch `trac_3646-rebased-v2.patch` is the same as `trac_3646-rebased.patch`.
 
 ---
 
-archive/issue_events_003865.json:
+archive/issue_events_008362.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -326,7 +343,7 @@ archive/issue_events_003865.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3646#event-3865"
+    "url": "https://github.com/sagemath/sagetest/issues/3646#event-8362"
 }
 ```
 
@@ -421,6 +438,40 @@ archive/issue_comments_025740.json:
 Attachment [trac_3646-sagenb_paren_match.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-sagenb_paren_match.patch) by @qed777 created at 2009-10-15 18:50:41
 
 [attachment:trac_3646-sagenb_paren_match.patch Patch] rebased against SageNB's #7196.
+
+
+
+---
+
+archive/issue_events_008363.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-17T05:15:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3646",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3646#event-8363"
+}
+```
+
+
+
+---
+
+archive/issue_events_008364.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-17T05:15:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3646",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3646#event-8364"
+}
+```
 
 
 

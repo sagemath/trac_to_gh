@@ -42,6 +42,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4317
 
 ---
 
+archive/issue_events_009753.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T06:11:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4317",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4317#event-9753"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031531.json:
 ```json
 {
@@ -103,6 +120,74 @@ install.log:Jinja 1.2 is already the active version in easy-install.pth
 install.log:Pygments 0.11.1 is already the active version in easy-install.pth
 ```
 
+
+
+
+---
+
+archive/issue_events_009754.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T10:29:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4317",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4317#event-9754"
+}
+```
+
+
+
+---
+
+archive/issue_events_009755.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T10:29:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4317",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4317#event-9755"
+}
+```
+
+
+
+---
+
+archive/issue_events_009756.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-11-18T06:45:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4317",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4317#event-9756"
+}
+```
+
+
+
+---
+
+archive/issue_events_009757.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-11-18T06:45:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4317",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4317#event-9757"
+}
+```
 
 
 
@@ -184,6 +269,40 @@ Michael
 
 ---
 
+archive/issue_events_009758.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-29T10:20:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4317",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4317#event-9758"
+}
+```
+
+
+
+---
+
+archive/issue_events_009759.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-29T10:20:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4317",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4317#event-9759"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031537.json:
 ```json
 {
@@ -260,7 +379,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004560.json:
+archive/issue_events_009760.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -268,6 +387,6 @@ archive/issue_events_004560.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4317",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4317#event-4560"
+    "url": "https://github.com/sagemath/sagetest/issues/4317#event-9760"
 }
 ```

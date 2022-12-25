@@ -80,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7934
 
 ---
 
-archive/issue_events_008150.json:
+archive/issue_events_018996.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -88,7 +88,7 @@ archive/issue_events_008150.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7934",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7934#event-8150"
+    "url": "https://github.com/sagemath/sagetest/issues/7934#event-18996"
 }
 ```
 
@@ -127,3 +127,20 @@ archive/issue_comments_069022.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_018997.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-30T08:41:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7934",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7934#event-18997"
+}
+```

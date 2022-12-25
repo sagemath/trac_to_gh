@@ -87,7 +87,24 @@ To Minh (if it's not October 1 where you are): please close.
 
 ---
 
-archive/issue_events_007297.json:
+archive/issue_events_016733.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-30T15:01:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7075",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7075#event-16733"
+}
+```
+
+
+
+---
+
+archive/issue_events_016734.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -95,7 +112,7 @@ archive/issue_events_007297.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7075",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7075#event-7297"
+    "url": "https://github.com/sagemath/sagetest/issues/7075#event-16734"
 }
 ```
 

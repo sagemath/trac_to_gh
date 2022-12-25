@@ -1442,6 +1442,23 @@ I opend a few follow up tickets:
 
 ---
 
+archive/issue_events_002282.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-06-23T08:59:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/812",
+    "milestone": "sage-7.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/812#event-2282"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004965.json:
 ```json
 {
@@ -2456,7 +2473,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000924.json:
+archive/issue_events_002283.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -2464,6 +2481,6 @@ archive/issue_events_000924.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/812#event-924"
+    "url": "https://github.com/sagemath/sagetest/issues/812#event-2283"
 }
 ```

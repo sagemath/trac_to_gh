@@ -108,6 +108,23 @@ first patch, with coverage reaching 67%
 
 ---
 
+archive/issue_events_019866.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8305",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8305#event-19866"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073465.json:
 ```json
 {
@@ -274,7 +291,7 @@ Fill in the reviewer name...
 
 ---
 
-archive/issue_events_008502.json:
+archive/issue_events_019867.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -282,7 +299,7 @@ archive/issue_events_008502.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8305#event-8502"
+    "url": "https://github.com/sagemath/sagetest/issues/8305#event-19867"
 }
 ```
 

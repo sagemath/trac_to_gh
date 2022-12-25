@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/255
 
 ---
 
-archive/issue_events_000269.json:
+archive/issue_events_000542.json:
 ```json
 {
     "actor": "https://github.com/roed314",
@@ -41,7 +41,7 @@ archive/issue_events_000269.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/255",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/255#event-269"
+    "url": "https://github.com/sagemath/sagetest/issues/255#event-542"
 }
 ```
 

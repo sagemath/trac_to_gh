@@ -420,6 +420,23 @@ many fixes and doctests for quadratic forms code
 
 ---
 
+archive/issue_events_010100.json:
+```json
+{
+    "actor": "https://github.com/tornaria",
+    "created_at": "2009-02-23T03:45:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#event-10100"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032953.json:
 ```json
 {
@@ -591,7 +608,7 @@ Michael
 
 ---
 
-archive/issue_events_004720.json:
+archive/issue_events_010101.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -599,7 +616,7 @@ archive/issue_events_004720.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4470#event-4720"
+    "url": "https://github.com/sagemath/sagetest/issues/4470#event-10101"
 }
 ```
 

@@ -117,7 +117,7 @@ Attachment [global_proof2.hg](tarball://root/attachments/some-uuid/ticket704/glo
 
 ---
 
-archive/issue_events_000776.json:
+archive/issue_events_001880.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -125,6 +125,6 @@ archive/issue_events_000776.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/704",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/704#event-776"
+    "url": "https://github.com/sagemath/sagetest/issues/704#event-1880"
 }
 ```

@@ -145,6 +145,23 @@ This still needs work, since the files `sage/functions/other.py` and `sage/rings
 
 ---
 
+archive/issue_events_024020.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-10-11T15:20:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9634",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9634#event-24020"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093216.json:
 ```json
 {
@@ -245,6 +262,74 @@ archive/issue_comments_093220.json:
 for the bot:
 
 apply trac_9634-symbolic_binomial.take2.patch​
+
+
+
+---
+
+archive/issue_events_024021.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9634",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9634#event-24021"
+}
+```
+
+
+
+---
+
+archive/issue_events_024022.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9634",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9634#event-24022"
+}
+```
+
+
+
+---
+
+archive/issue_events_024023.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9634",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9634#event-24023"
+}
+```
+
+
+
+---
+
+archive/issue_events_024024.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9634",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9634#event-24024"
+}
+```
 
 
 
@@ -590,7 +675,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009773.json:
+archive/issue_events_024025.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -598,7 +683,7 @@ archive/issue_events_009773.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9634#event-9773"
+    "url": "https://github.com/sagemath/sagetest/issues/9634#event-24025"
 }
 ```
 

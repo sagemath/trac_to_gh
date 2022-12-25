@@ -281,7 +281,7 @@ now at: scripts_2054.patch
 
 ---
 
-archive/issue_events_002215.json:
+archive/issue_events_004936.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -289,7 +289,7 @@ archive/issue_events_002215.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2054",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2054#event-2215"
+    "url": "https://github.com/sagemath/sagetest/issues/2054#event-4936"
 }
 ```
 

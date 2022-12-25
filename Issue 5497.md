@@ -89,7 +89,24 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005750.json:
+archive/issue_events_012862.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-15T13:48:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5497",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5497#event-12862"
+}
+```
+
+
+
+---
+
+archive/issue_events_012863.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -97,6 +114,6 @@ archive/issue_events_005750.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5497",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5497#event-5750"
+    "url": "https://github.com/sagemath/sagetest/issues/5497#event-12863"
 }
 ```

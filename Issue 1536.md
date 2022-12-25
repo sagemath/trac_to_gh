@@ -99,7 +99,7 @@ Looks good to me.  Positive review.
 
 ---
 
-archive/issue_events_001690.json:
+archive/issue_events_003879.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -107,7 +107,7 @@ archive/issue_events_001690.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1536",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1536#event-1690"
+    "url": "https://github.com/sagemath/sagetest/issues/1536#event-3879"
 }
 ```
 

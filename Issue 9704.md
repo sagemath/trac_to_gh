@@ -351,6 +351,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_024249.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-15T15:30:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24249"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094254.json:
 ```json
 {
@@ -382,6 +399,23 @@ archive/issue_comments_094255.json:
 ```
 
 Thanks for asking on sage-devel.  I'm still in favor of it, since (as a linear algebra person and a math teacher) I'd rather have trace have mathematical meaning instead of programming meaning, and it is a natural complement to having a top-level det function.  My vote wasn't counted on sage-devel yet, so add another +1.
+
+
+
+---
+
+archive/issue_events_024250.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-10T08:40:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24250"
+}
+```
 
 
 
@@ -551,6 +585,23 @@ Changing status from needs_info to needs_review.
 
 ---
 
+archive/issue_events_024251.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2016-04-27T14:16:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24251"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094265.json:
 ```json
 {
@@ -623,6 +674,40 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
+archive/issue_events_024252.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2017-08-04T07:46:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24252"
+}
+```
+
+
+
+---
+
+archive/issue_events_024253.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2017-08-04T07:46:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24253"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094269.json:
 ```json
 {
@@ -679,6 +764,40 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_024254.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-03-11T17:11:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24254"
+}
+```
+
+
+
+---
+
+archive/issue_events_024255.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-03-11T17:11:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24255"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094272.json:
 ```json
 {
@@ -710,6 +829,40 @@ archive/issue_comments_094273.json:
 ```
 
 Changing status from needs_work to needs_review.
+
+
+
+---
+
+archive/issue_events_024256.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2019-05-07T05:44:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24256"
+}
+```
+
+
+
+---
+
+archive/issue_events_024257.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2019-05-07T05:44:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9704",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9704#event-24257"
+}
+```
 
 
 

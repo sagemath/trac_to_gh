@@ -234,6 +234,23 @@ Dave
 
 ---
 
+archive/issue_events_023661.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-07T12:10:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9523",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9523#event-23661"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091394.json:
 ```json
 {
@@ -2210,7 +2227,7 @@ As far as readline is concerned, I think the current state is a definite improve
 
 ---
 
-archive/issue_events_009672.json:
+archive/issue_events_023662.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2218,7 +2235,7 @@ archive/issue_events_009672.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9523#event-9672"
+    "url": "https://github.com/sagemath/sagetest/issues/9523#event-23662"
 }
 ```
 

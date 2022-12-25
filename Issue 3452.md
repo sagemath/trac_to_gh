@@ -119,6 +119,23 @@ sweet!
 
 ---
 
+archive/issue_events_007821.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
+    "created_at": "2008-06-24T07:09:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#event-7821"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024298.json:
 ```json
 {
@@ -137,7 +154,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003671.json:
+archive/issue_events_007822.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -145,7 +162,7 @@ archive/issue_events_003671.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3452",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3452#event-3671"
+    "url": "https://github.com/sagemath/sagetest/issues/3452#event-7822"
 }
 ```
 
@@ -166,3 +183,37 @@ archive/issue_comments_024299.json:
 ```
 
 Merged both patches in Sage 3.0.4.alpha1
+
+
+
+---
+
+archive/issue_events_007823.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T05:49:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#event-7823"
+}
+```
+
+
+
+---
+
+archive/issue_events_007824.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T05:49:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#event-7824"
+}
+```

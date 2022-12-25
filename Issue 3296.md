@@ -60,6 +60,23 @@ Michael
 
 ---
 
+archive/issue_events_007402.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-25T02:36:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3296",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3296#event-7402"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022752.json:
 ```json
 {
@@ -102,7 +119,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_003515.json:
+archive/issue_events_007403.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,7 +127,7 @@ archive/issue_events_003515.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3296",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3296#event-3515"
+    "url": "https://github.com/sagemath/sagetest/issues/3296#event-7403"
 }
 ```
 
@@ -135,6 +152,23 @@ archive/issue_comments_022754.json:
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007404.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-31T01:27:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3296",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3296#event-7404"
+}
+```
 
 
 

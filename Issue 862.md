@@ -114,7 +114,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_000974.json:
+archive/issue_events_002415.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -122,7 +122,7 @@ archive/issue_events_000974.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/862",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/862#event-974"
+    "url": "https://github.com/sagemath/sagetest/issues/862#event-2415"
 }
 ```
 

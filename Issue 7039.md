@@ -72,6 +72,125 @@ At ticket #12433, I ask about writing an autotools build system for zn_poly and 
 
 ---
 
+archive/issue_events_016553.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16553"
+}
+```
+
+
+
+---
+
+archive/issue_events_016554.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16554"
+}
+```
+
+
+
+---
+
+archive/issue_events_016555.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16555"
+}
+```
+
+
+
+---
+
+archive/issue_events_016556.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16556"
+}
+```
+
+
+
+---
+
+archive/issue_events_016557.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16557"
+}
+```
+
+
+
+---
+
+archive/issue_events_016558.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16558"
+}
+```
+
+
+
+---
+
+archive/issue_events_016559.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16559"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058166.json:
 ```json
 {
@@ -126,6 +245,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_016560.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-08T13:02:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16560"
+}
+```
+
+
+
+---
+
+archive/issue_events_016561.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-08T13:02:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7039",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16561"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058169.json:
 ```json
 {
@@ -144,7 +297,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007260.json:
+archive/issue_events_016562.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -152,7 +305,7 @@ archive/issue_events_007260.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7039",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7039#event-7260"
+    "url": "https://github.com/sagemath/sagetest/issues/7039#event-16562"
 }
 ```
 

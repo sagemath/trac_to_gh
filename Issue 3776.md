@@ -136,7 +136,7 @@ Great work!
 
 ---
 
-archive/issue_events_003998.json:
+archive/issue_events_008653.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -144,7 +144,7 @@ archive/issue_events_003998.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3776",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3776#event-3998"
+    "url": "https://github.com/sagemath/sagetest/issues/3776#event-8653"
 }
 ```
 

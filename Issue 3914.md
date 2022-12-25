@@ -266,7 +266,7 @@ Has been fixed by trac #385
 
 ---
 
-archive/issue_events_004141.json:
+archive/issue_events_008977.json:
 ```json
 {
     "actor": "https://github.com/robert-marik",
@@ -274,7 +274,24 @@ archive/issue_events_004141.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3914",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3914#event-4141"
+    "url": "https://github.com/sagemath/sagetest/issues/3914#event-8977"
+}
+```
+
+
+
+---
+
+archive/issue_events_008978.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-26T02:56:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#event-8978"
 }
 ```
 

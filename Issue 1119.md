@@ -96,6 +96,23 @@ The attached patch fixes this (probably in a too naive way).
 
 ---
 
+archive/issue_events_002991.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-11T23:39:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1119",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1119#event-2991"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006743.json:
 ```json
 {
@@ -174,7 +191,7 @@ Merged in 2.9.rc0.
 
 ---
 
-archive/issue_events_001245.json:
+archive/issue_events_002992.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -182,7 +199,7 @@ archive/issue_events_001245.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1119",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1119#event-1245"
+    "url": "https://github.com/sagemath/sagetest/issues/1119#event-2992"
 }
 ```
 

@@ -96,6 +96,23 @@ is still wrong. There are better ways of going about this but at least it doesn'
 
 ---
 
+archive/issue_events_012300.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2009-02-17T08:14:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#event-12300"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040591.json:
 ```json
 {
@@ -260,7 +277,7 @@ I should have added a test, but as I mentioned I don't think this resolves the r
 
 ---
 
-archive/issue_events_005546.json:
+archive/issue_events_012301.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -268,7 +285,7 @@ archive/issue_events_005546.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5292#event-5546"
+    "url": "https://github.com/sagemath/sagetest/issues/5292#event-12301"
 }
 ```
 

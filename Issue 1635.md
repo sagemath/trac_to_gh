@@ -139,7 +139,7 @@ Merged in 2.9.2.alpha0
 
 ---
 
-archive/issue_events_001794.json:
+archive/issue_events_004046.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -147,7 +147,7 @@ archive/issue_events_001794.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1635",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1635#event-1794"
+    "url": "https://github.com/sagemath/sagetest/issues/1635#event-4046"
 }
 ```
 

@@ -103,7 +103,7 @@ Positive review.
 
 ---
 
-archive/issue_events_006071.json:
+archive/issue_events_013684.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -111,7 +111,7 @@ archive/issue_events_006071.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5821",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5821#event-6071"
+    "url": "https://github.com/sagemath/sagetest/issues/5821#event-13684"
 }
 ```
 
@@ -154,3 +154,20 @@ archive/issue_comments_045663.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_013685.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T07:58:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5821",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5821#event-13685"
+}
+```

@@ -127,7 +127,7 @@ Changing component from porting to AIX or HP-UX ports.
 
 ---
 
-archive/issue_events_007741.json:
+archive/issue_events_017804.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -135,7 +135,7 @@ archive/issue_events_007741.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7511",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7511#event-7741"
+    "url": "https://github.com/sagemath/sagetest/issues/7511#event-17804"
 }
 ```
 
@@ -156,6 +156,23 @@ archive/issue_comments_063464.json:
 ```
 
 GNUTLS is no longer part of Sage.
+
+
+
+---
+
+archive/issue_events_017805.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-05T09:12:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7511",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7511#event-17805"
+}
+```
 
 
 

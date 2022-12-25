@@ -49,6 +49,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/960
 
 ---
 
+archive/issue_events_002650.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T13:59:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/960",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/960#event-2650"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005832.json:
 ```json
 {
@@ -141,6 +158,40 @@ sage: b.prec()
 
 ---
 
+archive/issue_events_002651.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:10:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/960",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/960#event-2651"
+}
+```
+
+
+
+---
+
+archive/issue_events_002652.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:10:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/960",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/960#event-2652"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005835.json:
 ```json
 {
@@ -177,7 +228,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001082.json:
+archive/issue_events_002653.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -185,6 +236,6 @@ archive/issue_events_001082.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/960",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/960#event-1082"
+    "url": "https://github.com/sagemath/sagetest/issues/960#event-2653"
 }
 ```

@@ -296,7 +296,7 @@ There are three patches to be applied here, in this order:
 
 ---
 
-archive/issue_events_002065.json:
+archive/issue_events_004591.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -304,7 +304,7 @@ archive/issue_events_002065.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#event-2065"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#event-4591"
 }
 ```
 

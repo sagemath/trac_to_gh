@@ -76,7 +76,7 @@ Attachment [926.diff](tarball://root/attachments/some-uuid/ticket926/926.diff) b
 
 ---
 
-archive/issue_events_001046.json:
+archive/issue_events_002543.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -84,7 +84,7 @@ archive/issue_events_001046.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/926",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/926#event-1046"
+    "url": "https://github.com/sagemath/sagetest/issues/926#event-2543"
 }
 ```
 

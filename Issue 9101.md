@@ -164,7 +164,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009258.json:
+archive/issue_events_022329.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -172,7 +172,58 @@ archive/issue_events_009258.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9101#event-9258"
+    "url": "https://github.com/sagemath/sagetest/issues/9101#event-22329"
+}
+```
+
+
+
+---
+
+archive/issue_events_022330.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-07-14T11:58:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9101",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9101#event-22330"
+}
+```
+
+
+
+---
+
+archive/issue_events_022331.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-07-15T14:24:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9101",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9101#event-22331"
+}
+```
+
+
+
+---
+
+archive/issue_events_022332.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-07-15T14:24:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9101",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9101#event-22332"
 }
 ```
 
@@ -238,7 +289,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009259.json:
+archive/issue_events_022333.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -246,7 +297,7 @@ archive/issue_events_009259.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9101#event-9259"
+    "url": "https://github.com/sagemath/sagetest/issues/9101#event-22333"
 }
 ```
 
@@ -295,6 +346,40 @@ Dave
 
 ---
 
+archive/issue_events_022334.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-09-01T00:05:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9101",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9101#event-22334"
+}
+```
+
+
+
+---
+
+archive/issue_events_022335.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-09-01T00:05:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9101",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9101#event-22335"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084431.json:
 ```json
 {
@@ -313,7 +398,7 @@ I'm closing this since #9508 was closed.
 
 ---
 
-archive/issue_events_009260.json:
+archive/issue_events_022336.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -321,7 +406,7 @@ archive/issue_events_009260.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9101#event-9260"
+    "url": "https://github.com/sagemath/sagetest/issues/9101#event-22336"
 }
 ```
 

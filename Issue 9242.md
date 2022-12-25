@@ -226,6 +226,23 @@ Great.  I'm happy with this; the category fix can be on a new ticket.
 
 ---
 
+archive/issue_events_022759.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-22T04:36:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9242",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9242#event-22759"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086784.json:
 ```json
 {
@@ -244,7 +261,7 @@ Milestone sage-4.4.5 deleted
 
 ---
 
-archive/issue_events_009403.json:
+archive/issue_events_022760.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -252,7 +269,7 @@ archive/issue_events_009403.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9242#event-9403"
+    "url": "https://github.com/sagemath/sagetest/issues/9242#event-22760"
 }
 ```
 

@@ -315,6 +315,23 @@ Attachment [sage-copyright.patch](tarball://root/attachments/some-uuid/ticket219
 
 ---
 
+archive/issue_events_005252.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:04:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2199",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2199#event-5252"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014429.json:
 ```json
 {
@@ -634,7 +651,7 @@ Changing assignee from @timabbott to mabshoff.
 
 ---
 
-archive/issue_events_002365.json:
+archive/issue_events_005253.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -642,7 +659,7 @@ archive/issue_events_002365.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2199#event-2365"
+    "url": "https://github.com/sagemath/sagetest/issues/2199#event-5253"
 }
 ```
 

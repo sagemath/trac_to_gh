@@ -112,6 +112,23 @@ It looks like Jeroen took care of this in the last sympow bump, #11920.
 
 ---
 
+archive/issue_events_016675.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2012-02-10T06:06:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7066",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7066#event-16675"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058335.json:
 ```json
 {
@@ -184,7 +201,7 @@ yup, that appears to be the case
 
 ---
 
-archive/issue_events_007286.json:
+archive/issue_events_016676.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -192,7 +209,7 @@ archive/issue_events_007286.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7066",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7066#event-7286"
+    "url": "https://github.com/sagemath/sagetest/issues/7066#event-16676"
 }
 ```
 

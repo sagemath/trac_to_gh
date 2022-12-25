@@ -44,6 +44,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/79
 
 ---
 
+archive/issue_events_000169.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T03:08:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/79",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/79#event-169"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000393.json:
 ```json
 {
@@ -84,7 +101,7 @@ Josh did this with integrating in scipy, etc.
 
 ---
 
-archive/issue_events_000079.json:
+archive/issue_events_000170.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -92,7 +109,24 @@ archive/issue_events_000079.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/79",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/79#event-79"
+    "url": "https://github.com/sagemath/sagetest/issues/79#event-170"
+}
+```
+
+
+
+---
+
+archive/issue_events_000171.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-20T13:48:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/79",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/79#event-171"
 }
 ```
 

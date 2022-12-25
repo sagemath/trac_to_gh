@@ -65,6 +65,23 @@ apply patch after #5362
 
 ---
 
+archive/issue_events_012516.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
+    "created_at": "2009-02-25T11:00:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5370",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5370#event-12516"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041278.json:
 ```json
 {
@@ -103,7 +120,7 @@ Apply only trac-5370-copy-matrix_double_dense.2.patch
 
 ---
 
-archive/issue_events_005625.json:
+archive/issue_events_012517.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -111,7 +128,7 @@ archive/issue_events_005625.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5370",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5370#event-5625"
+    "url": "https://github.com/sagemath/sagetest/issues/5370#event-12517"
 }
 ```
 
@@ -154,3 +171,37 @@ Merged trac-5370-copy-matrix_double_dense.2.patch only in Sage 3.4.rc0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_012518.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-28T17:10:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5370",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5370#event-12518"
+}
+```
+
+
+
+---
+
+archive/issue_events_012519.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-28T17:10:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5370",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5370#event-12519"
+}
+```

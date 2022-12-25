@@ -57,6 +57,23 @@ This passes doctests, and is a simple change that makes sense to me.
 
 ---
 
+archive/issue_events_013290.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-15T00:55:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5654",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5654#event-13290"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044137.json:
 ```json
 {
@@ -75,7 +92,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005897.json:
+archive/issue_events_013291.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -83,7 +100,7 @@ archive/issue_events_005897.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5654",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5654#event-5897"
+    "url": "https://github.com/sagemath/sagetest/issues/5654#event-13291"
 }
 ```
 

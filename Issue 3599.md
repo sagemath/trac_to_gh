@@ -52,6 +52,23 @@ Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
+archive/issue_events_008243.json:
+```json
+{
+    "actor": "https://github.com/itolkov",
+    "created_at": "2008-07-18T00:06:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3599",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3599#event-8243"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025375.json:
 ```json
 {
@@ -192,7 +209,41 @@ Here's the png again.
 
 ---
 
-archive/issue_events_003818.json:
+archive/issue_events_008244.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-31T21:51:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3599",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3599#event-8244"
+}
+```
+
+
+
+---
+
+archive/issue_events_008245.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-31T21:51:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3599",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3599#event-8245"
+}
+```
+
+
+
+---
+
+archive/issue_events_008246.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -200,7 +251,7 @@ archive/issue_events_003818.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#event-3818"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#event-8246"
 }
 ```
 

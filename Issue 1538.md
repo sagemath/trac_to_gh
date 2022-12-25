@@ -102,6 +102,23 @@ Changing component from distribution to build.
 
 ---
 
+archive/issue_events_003881.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#event-3881"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009796.json:
 ```json
 {
@@ -133,6 +150,40 @@ archive/issue_comments_009797.json:
 ```
 
 This is solved by the git workflow because everything is now updated **before** the build, not **during** the build.
+
+
+
+---
+
+archive/issue_events_003882.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-19T12:17:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#event-3882"
+}
+```
+
+
+
+---
+
+archive/issue_events_003883.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-19T12:17:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#event-3883"
+}
+```
 
 
 
@@ -174,7 +225,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_001692.json:
+archive/issue_events_003884.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -182,7 +233,7 @@ archive/issue_events_001692.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1538#event-1692"
+    "url": "https://github.com/sagemath/sagetest/issues/1538#event-3884"
 }
 ```
 

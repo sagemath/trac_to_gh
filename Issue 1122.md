@@ -159,6 +159,23 @@ Attachment [libsinggiv.patch](tarball://root/attachments/some-uuid/ticket1122/li
 
 ---
 
+archive/issue_events_002997.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-11T23:38:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1122",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1122#event-2997"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006763.json:
 ```json
 {
@@ -195,7 +212,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001248.json:
+archive/issue_events_002998.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -203,7 +220,7 @@ archive/issue_events_001248.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1122",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1122#event-1248"
+    "url": "https://github.com/sagemath/sagetest/issues/1122#event-2998"
 }
 ```
 

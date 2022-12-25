@@ -172,7 +172,7 @@ argh!  I'm always forgetting that.  I'll try to do it soon (in the next two week
 
 ---
 
-archive/issue_events_007213.json:
+archive/issue_events_016408.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -180,7 +180,7 @@ archive/issue_events_007213.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6989",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6989#event-7213"
+    "url": "https://github.com/sagemath/sagetest/issues/6989#event-16408"
 }
 ```
 

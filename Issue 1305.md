@@ -76,6 +76,23 @@ Also from Chris Godsil (hrm, with :
 
 ---
 
+archive/issue_events_003414.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-12-02T10:15:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1305",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1305#event-3414"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008188.json:
 ```json
 {
@@ -112,7 +129,7 @@ I think we can close this ticket as it is very vague.  Additionally, there is no
 
 ---
 
-archive/issue_events_001447.json:
+archive/issue_events_003415.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -120,6 +137,6 @@ archive/issue_events_001447.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1305",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1305#event-1447"
+    "url": "https://github.com/sagemath/sagetest/issues/1305#event-3415"
 }
 ```

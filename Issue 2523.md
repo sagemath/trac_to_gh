@@ -213,7 +213,7 @@ Added a small patch fixing the typos ncalexan pointed out. Also, I'm closing #29
 
 ---
 
-archive/issue_events_002704.json:
+archive/issue_events_005923.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -221,7 +221,7 @@ archive/issue_events_002704.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2523#event-2704"
+    "url": "https://github.com/sagemath/sagetest/issues/2523#event-5923"
 }
 ```
 

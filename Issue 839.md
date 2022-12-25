@@ -49,6 +49,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_002366.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-12T23:19:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/839",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/839#event-2366"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005165.json:
 ```json
 {
@@ -365,6 +382,40 @@ i've repaired it. i think this should work now. (concerning the patch ;)
 
 ---
 
+archive/issue_events_002367.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-18T20:25:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/839",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/839#event-2367"
+}
+```
+
+
+
+---
+
+archive/issue_events_002368.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-18T20:25:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/839",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/839#event-2368"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005179.json:
 ```json
 {
@@ -489,7 +540,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000952.json:
+archive/issue_events_002369.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -497,7 +548,7 @@ archive/issue_events_000952.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/839#event-952"
+    "url": "https://github.com/sagemath/sagetest/issues/839#event-2369"
 }
 ```
 

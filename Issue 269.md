@@ -52,6 +52,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_000589.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-06T13:58:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-589"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001258.json:
 ```json
 {
@@ -125,6 +142,142 @@ Oh, and quo_rem should be here too -- #383
 
 ---
 
+archive/issue_events_000590.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-590"
+}
+```
+
+
+
+---
+
+archive/issue_events_000591.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-591"
+}
+```
+
+
+
+---
+
+archive/issue_events_000592.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-592"
+}
+```
+
+
+
+---
+
+archive/issue_events_000593.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-593"
+}
+```
+
+
+
+---
+
+archive/issue_events_000594.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-594"
+}
+```
+
+
+
+---
+
+archive/issue_events_000595.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-595"
+}
+```
+
+
+
+---
+
+archive/issue_events_000596.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-596"
+}
+```
+
+
+
+---
+
+archive/issue_events_000597.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-597"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001261.json:
 ```json
 {
@@ -138,6 +291,40 @@ archive/issue_comments_001261.json:
 ```
 
 Changing component from basic arithmetic to coercion.
+
+
+
+---
+
+archive/issue_events_000598.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-01-19T17:40:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-598"
+}
+```
+
+
+
+---
+
+archive/issue_events_000599.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-01-19T17:40:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-599"
+}
+```
 
 
 
@@ -307,6 +494,40 @@ archive/issue_comments_001269.json:
 ```
 
 Changing status from needs_work to needs_review.
+
+
+
+---
+
+archive/issue_events_000600.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-05-31T15:56:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-600"
+}
+```
+
+
+
+---
+
+archive/issue_events_000601.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-05-31T15:56:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/269",
+    "milestone": "sage-7.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-601"
+}
+```
 
 
 
@@ -528,7 +749,7 @@ Thanks!
 
 ---
 
-archive/issue_events_000284.json:
+archive/issue_events_000602.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -536,7 +757,7 @@ archive/issue_events_000284.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/269",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/269#event-284"
+    "url": "https://github.com/sagemath/sagetest/issues/269#event-602"
 }
 ```
 

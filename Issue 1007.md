@@ -60,6 +60,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1007
 
 ---
 
+archive/issue_events_002769.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-27T02:40:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1007",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1007#event-2769"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006137.json:
 ```json
 {
@@ -73,6 +90,40 @@ archive/issue_comments_006137.json:
 ```
 
 Attachment [cyclo-1007.patch](tarball://root/attachments/some-uuid/ticket1007/cyclo-1007.patch) by @robertwb created at 2007-10-27 10:48:20
+
+
+
+---
+
+archive/issue_events_002770.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-10-27T10:56:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1007",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1007#event-2770"
+}
+```
+
+
+
+---
+
+archive/issue_events_002771.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-10-27T10:56:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1007",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1007#event-2771"
+}
+```
 
 
 
@@ -139,6 +190,40 @@ CPU time: 0.01 s,  Wall time: 0.01 s
 
 ---
 
+archive/issue_events_002772.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-10-27T10:57:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1007",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1007#event-2772"
+}
+```
+
+
+
+---
+
+archive/issue_events_002773.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-10-27T10:57:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1007",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1007#event-2773"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006140.json:
 ```json
 {
@@ -157,7 +242,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001131.json:
+archive/issue_events_002774.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -165,6 +250,6 @@ archive/issue_events_001131.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1007",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1007#event-1131"
+    "url": "https://github.com/sagemath/sagetest/issues/1007#event-2774"
 }
 ```

@@ -85,6 +85,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/772
 
 ---
 
+archive/issue_events_002124.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2007-10-03T00:28:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/772",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/772#event-2124"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004566.json:
 ```json
 {
@@ -222,6 +239,40 @@ archive/issue_comments_004570.json:
 ```
 
 Attachment [qepcad.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad.spkg) by @jasongrout created at 2008-01-10 07:36:52
+
+
+
+---
+
+archive/issue_events_002125.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-01-10T07:36:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/772",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/772#event-2125"
+}
+```
+
+
+
+---
+
+archive/issue_events_002126.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-01-10T07:36:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/772",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/772#event-2126"
+}
+```
 
 
 
@@ -964,7 +1015,7 @@ Merged in Sage 3.1.2.alpha2
 
 ---
 
-archive/issue_events_000875.json:
+archive/issue_events_002127.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -972,7 +1023,7 @@ archive/issue_events_000875.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/772#event-875"
+    "url": "https://github.com/sagemath/sagetest/issues/772#event-2127"
 }
 ```
 

@@ -97,7 +97,24 @@ I will produce a revised ecl .spkg file, as per trac #6564
 
 ---
 
-archive/issue_events_006954.json:
+archive/issue_events_015863.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-11T08:03:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6719",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6719#event-15863"
+}
+```
+
+
+
+---
+
+archive/issue_events_015864.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -105,7 +122,7 @@ archive/issue_events_006954.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6719",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6719#event-6954"
+    "url": "https://github.com/sagemath/sagetest/issues/6719#event-15864"
 }
 ```
 

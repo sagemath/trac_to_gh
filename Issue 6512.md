@@ -71,6 +71,23 @@ The patch removes a redundant link to jsMath.  Sphinx should now include referen
 
 ---
 
+archive/issue_events_015367.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-07-11T16:30:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6512",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6512#event-15367"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052956.json:
 ```json
 {
@@ -107,7 +124,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006750.json:
+archive/issue_events_015368.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -115,7 +132,7 @@ archive/issue_events_006750.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6512",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6512#event-6750"
+    "url": "https://github.com/sagemath/sagetest/issues/6512#event-15368"
 }
 ```
 

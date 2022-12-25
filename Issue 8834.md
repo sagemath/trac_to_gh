@@ -367,7 +367,7 @@ Making the specified doctests optional mean we're postponing a fix for the failu
 
 ---
 
-archive/issue_events_008999.json:
+archive/issue_events_021565.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -375,7 +375,24 @@ archive/issue_events_008999.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8834#event-8999"
+    "url": "https://github.com/sagemath/sagetest/issues/8834#event-21565"
+}
+```
+
+
+
+---
+
+archive/issue_events_021566.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-02T23:49:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8834",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8834#event-21566"
 }
 ```
 

@@ -166,7 +166,24 @@ sage: timeit x.nth_root(10000000)
 
 ---
 
-archive/issue_events_000311.json:
+archive/issue_events_000670.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-08T05:24:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/294",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/294#event-670"
+}
+```
+
+
+
+---
+
+archive/issue_events_000671.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -174,7 +191,7 @@ archive/issue_events_000311.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/294",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/294#event-311"
+    "url": "https://github.com/sagemath/sagetest/issues/294#event-671"
 }
 ```
 

@@ -253,6 +253,23 @@ Total time for all tests: 8.0 seconds
 
 ---
 
+archive/issue_events_010917.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-17T14:51:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#event-10917"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036143.json:
 ```json
 {
@@ -435,7 +452,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005020.json:
+archive/issue_events_010918.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -443,7 +460,7 @@ archive/issue_events_005020.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4778",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4778#event-5020"
+    "url": "https://github.com/sagemath/sagetest/issues/4778#event-10918"
 }
 ```
 

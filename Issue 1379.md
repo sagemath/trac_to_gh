@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1379
 
 ---
 
+archive/issue_events_003561.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-03T10:35:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1379",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1379#event-3561"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008821.json:
 ```json
 {
@@ -100,6 +117,23 @@ Michael
 
 ---
 
+archive/issue_events_003562.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-15T23:10:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1379",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1379#event-3562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008824.json:
 ```json
 {
@@ -118,7 +152,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_001524.json:
+archive/issue_events_003563.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -126,7 +160,7 @@ archive/issue_events_001524.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1379",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1379#event-1524"
+    "url": "https://github.com/sagemath/sagetest/issues/1379#event-3563"
 }
 ```
 

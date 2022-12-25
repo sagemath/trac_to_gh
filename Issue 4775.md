@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4775
 
 ---
 
+archive/issue_events_010910.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-12-13T01:22:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4775",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4775#event-10910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036121.json:
 ```json
 {
@@ -64,7 +81,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_005017.json:
+archive/issue_events_010911.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,7 +89,7 @@ archive/issue_events_005017.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4775",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4775#event-5017"
+    "url": "https://github.com/sagemath/sagetest/issues/4775#event-10911"
 }
 ```
 
@@ -111,3 +128,37 @@ archive/issue_comments_036124.json:
 ```
 
 Dsage has been deprecated.
+
+
+
+---
+
+archive/issue_events_010912.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T09:59:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4775",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4775#event-10912"
+}
+```
+
+
+
+---
+
+archive/issue_events_010913.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T09:59:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4775",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4775#event-10913"
+}
+```

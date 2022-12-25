@@ -246,7 +246,7 @@ Sorry that should read #8218.
 
 ---
 
-archive/issue_events_008525.json:
+archive/issue_events_019948.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -254,7 +254,7 @@ archive/issue_events_008525.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8332#event-8525"
+    "url": "https://github.com/sagemath/sagetest/issues/8332#event-19948"
 }
 ```
 

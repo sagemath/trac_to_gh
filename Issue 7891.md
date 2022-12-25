@@ -77,3 +77,20 @@ archive/issue_comments_068529.json:
 ```
 
 Setting spkg proposals that have not seen recent activity to "sage-wishlist".
+
+
+
+---
+
+archive/issue_events_018867.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-19T18:16:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7891",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7891#event-18867"
+}
+```

@@ -173,6 +173,23 @@ Wall time: 0.00 s
 
 ---
 
+archive/issue_events_002418.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/864",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/864#event-2418"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005317.json:
 ```json
 {
@@ -419,7 +436,7 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_events_000976.json:
+archive/issue_events_002419.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -427,7 +444,7 @@ archive/issue_events_000976.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/864#event-976"
+    "url": "https://github.com/sagemath/sagetest/issues/864#event-2419"
 }
 ```
 

@@ -48,7 +48,7 @@ based on Sage 4.1.1.rc2
 
 ---
 
-archive/issue_events_006932.json:
+archive/issue_events_015788.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -56,7 +56,7 @@ archive/issue_events_006932.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6697",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6697#event-6932"
+    "url": "https://github.com/sagemath/sagetest/issues/6697#event-15788"
 }
 ```
 

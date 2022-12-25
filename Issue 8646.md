@@ -89,6 +89,23 @@ Running Windows 7 (64bit), too. Using the recent version of Virtualbox (4.3.8) i
 
 ---
 
+archive/issue_events_020930.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-03-08T21:54:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8646",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8646#event-20930"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078323.json:
 ```json
 {
@@ -143,7 +160,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008819.json:
+archive/issue_events_020931.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -151,6 +168,6 @@ archive/issue_events_008819.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8646",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8646#event-8819"
+    "url": "https://github.com/sagemath/sagetest/issues/8646#event-20931"
 }
 ```

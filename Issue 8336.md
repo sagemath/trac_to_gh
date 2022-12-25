@@ -365,7 +365,7 @@ Thanks Paul.  The patch I sent is incomplete because it breaks doctests for the 
 
 ---
 
-archive/issue_events_008529.json:
+archive/issue_events_019960.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -373,7 +373,7 @@ archive/issue_events_008529.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8336#event-8529"
+    "url": "https://github.com/sagemath/sagetest/issues/8336#event-19960"
 }
 ```
 
@@ -425,6 +425,23 @@ sage: z, type(z)
 (3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)
 ```
 
+
+
+
+---
+
+archive/issue_events_019961.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2011-12-18T15:43:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8336",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8336#event-19961"
+}
+```
 
 
 

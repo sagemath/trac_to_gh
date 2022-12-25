@@ -157,6 +157,23 @@ Eh eh, maybe my strategy is going to work :-)
 
 ---
 
+archive/issue_events_017761.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-22T21:35:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7493",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7493#event-17761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063186.json:
 ```json
 {
@@ -193,7 +210,7 @@ This is essentially all implemented in #12415.
 
 ---
 
-archive/issue_events_007722.json:
+archive/issue_events_017762.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -201,6 +218,6 @@ archive/issue_events_007722.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7493",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7493#event-7722"
+    "url": "https://github.com/sagemath/sagetest/issues/7493#event-17762"
 }
 ```

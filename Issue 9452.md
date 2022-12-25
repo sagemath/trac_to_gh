@@ -103,6 +103,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_023374.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-24T10:00:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9452",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9452#event-23374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090431.json:
 ```json
 {
@@ -139,7 +156,41 @@ This patch is undoing a mysterious "fix" from a long time ago, which was require
 
 ---
 
-archive/issue_events_009608.json:
+archive/issue_events_023375.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-08T09:16:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9452",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9452#event-23375"
+}
+```
+
+
+
+---
+
+archive/issue_events_023376.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-08T09:16:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9452",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9452#event-23376"
+}
+```
+
+
+
+---
+
+archive/issue_events_023377.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -147,7 +198,7 @@ archive/issue_events_009608.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9452#event-9608"
+    "url": "https://github.com/sagemath/sagetest/issues/9452#event-23377"
 }
 ```
 

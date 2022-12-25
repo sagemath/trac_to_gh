@@ -257,7 +257,7 @@ They are ready to be tested for integration.
 
 ---
 
-archive/issue_events_002424.json:
+archive/issue_events_005342.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -265,7 +265,7 @@ archive/issue_events_002424.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2254",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2254#event-2424"
+    "url": "https://github.com/sagemath/sagetest/issues/2254#event-5342"
 }
 ```
 

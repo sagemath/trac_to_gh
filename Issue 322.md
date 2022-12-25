@@ -50,7 +50,7 @@ applications, so you know about it.  Hmm.
 
 ---
 
-archive/issue_events_000342.json:
+archive/issue_events_000749.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -58,7 +58,7 @@ archive/issue_events_000342.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/322",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/322#event-342"
+    "url": "https://github.com/sagemath/sagetest/issues/322#event-749"
 }
 ```
 
@@ -102,7 +102,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000343.json:
+archive/issue_events_000750.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
@@ -110,7 +110,7 @@ archive/issue_events_000343.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/322",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/322#event-343"
+    "url": "https://github.com/sagemath/sagetest/issues/322#event-750"
 }
 ```
 
@@ -154,6 +154,23 @@ Resolution changed from invalid to
 
 ---
 
+archive/issue_events_000751.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:51:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/322#event-751"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001527.json:
 ```json
 {
@@ -190,7 +207,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000344.json:
+archive/issue_events_000752.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -198,7 +215,7 @@ archive/issue_events_000344.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/322",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/322#event-344"
+    "url": "https://github.com/sagemath/sagetest/issues/322#event-752"
 }
 ```
 

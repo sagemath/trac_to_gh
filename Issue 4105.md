@@ -249,6 +249,23 @@ Works for me as well in `5.5.rc0`.
 
 ---
 
+archive/issue_events_009355.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2012-12-10T19:35:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#event-9355"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029673.json:
 ```json
 {
@@ -321,7 +338,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_004342.json:
+archive/issue_events_009356.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -329,6 +346,6 @@ archive/issue_events_004342.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4105#event-4342"
+    "url": "https://github.com/sagemath/sagetest/issues/4105#event-9356"
 }
 ```

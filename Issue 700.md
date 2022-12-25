@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/700
 
 ---
 
-archive/issue_events_000766.json:
+archive/issue_events_001865.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -61,7 +61,7 @@ archive/issue_events_000766.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/700#event-766"
+    "url": "https://github.com/sagemath/sagetest/issues/700#event-1865"
 }
 ```
 
@@ -123,7 +123,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000767.json:
+archive/issue_events_001866.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -131,7 +131,7 @@ archive/issue_events_000767.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/700#event-767"
+    "url": "https://github.com/sagemath/sagetest/issues/700#event-1866"
 }
 ```
 
@@ -169,6 +169,23 @@ sage: import cvxopt.umfpack
 
 ```
 
+
+
+
+---
+
+archive/issue_events_001867.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T02:23:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/700",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/700#event-1867"
+}
+```
 
 
 
@@ -227,7 +244,41 @@ Michael
 
 ---
 
-archive/issue_events_000768.json:
+archive/issue_events_001868.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-19T18:40:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/700",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/700#event-1868"
+}
+```
+
+
+
+---
+
+archive/issue_events_001869.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-19T18:40:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/700",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/700#event-1869"
+}
+```
+
+
+
+---
+
+archive/issue_events_001870.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -235,7 +286,7 @@ archive/issue_events_000768.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/700#event-768"
+    "url": "https://github.com/sagemath/sagetest/issues/700#event-1870"
 }
 ```
 

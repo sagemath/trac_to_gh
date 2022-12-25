@@ -34,6 +34,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1472
 
 ---
 
+archive/issue_events_003743.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-12T18:42:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1472",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1472#event-3743"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009448.json:
 ```json
 {
@@ -88,7 +105,7 @@ The optional spkg has been added to sagemath.org.
 
 ---
 
-archive/issue_events_001623.json:
+archive/issue_events_003744.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -96,7 +113,7 @@ archive/issue_events_001623.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1472",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1472#event-1623"
+    "url": "https://github.com/sagemath/sagetest/issues/1472#event-3744"
 }
 ```
 

@@ -142,7 +142,7 @@ Merged `trac_6531-restify_generic_ring-rebase.patch`. See #6850 for a follow-up 
 
 ---
 
-archive/issue_events_006767.json:
+archive/issue_events_015405.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -150,6 +150,6 @@ archive/issue_events_006767.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6531",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6531#event-6767"
+    "url": "https://github.com/sagemath/sagetest/issues/6531#event-15405"
 }
 ```

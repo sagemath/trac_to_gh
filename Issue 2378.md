@@ -71,6 +71,23 @@ Changing assignee from mabshoff to @rlmill.
 
 ---
 
+archive/issue_events_005615.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-03-03T18:08:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2378",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2378#event-5615"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016008.json:
 ```json
 {
@@ -125,6 +142,40 @@ Changing assignee from @rlmill to @jasongrout.
 
 ---
 
+archive/issue_events_005616.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-09-10T03:14:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2378",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2378#event-5616"
+}
+```
+
+
+
+---
+
+archive/issue_events_005617.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2008-09-10T03:14:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2378",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2378#event-5617"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016011.json:
 ```json
 {
@@ -152,6 +203,40 @@ g=graphs.DodecahedralGraph()
 highlight(g,[1,2],[(1,2),(2,6)],layout="spring")
 ```
 
+
+
+
+---
+
+archive/issue_events_005618.json:
+```json
+{
+    "actor": "https://github.com/jfraymond",
+    "created_at": "2022-04-20T10:12:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2378",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2378#event-5618"
+}
+```
+
+
+
+---
+
+archive/issue_events_005619.json:
+```json
+{
+    "actor": "https://github.com/jfraymond",
+    "created_at": "2022-04-20T10:12:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2378",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2378#event-5619"
+}
+```
 
 
 
@@ -249,7 +334,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002555.json:
+archive/issue_events_005620.json:
 ```json
 {
     "actor": "https://github.com/mkoeppe",
@@ -257,7 +342,7 @@ archive/issue_events_002555.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2378#event-2555"
+    "url": "https://github.com/sagemath/sagetest/issues/2378#event-5620"
 }
 ```
 

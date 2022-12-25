@@ -149,7 +149,7 @@ Michael
 
 ---
 
-archive/issue_events_005334.json:
+archive/issue_events_011745.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -157,7 +157,7 @@ archive/issue_events_005334.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#event-5334"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#event-11745"
 }
 ```
 
@@ -223,7 +223,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_005335.json:
+archive/issue_events_011746.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -231,7 +231,7 @@ archive/issue_events_005335.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#event-5335"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#event-11746"
 }
 ```
 
@@ -275,7 +275,7 @@ Actually, I just remembered that I removed the patch which silenced deprecation 
 
 ---
 
-archive/issue_events_005336.json:
+archive/issue_events_011747.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -283,7 +283,7 @@ archive/issue_events_005336.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#event-5336"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#event-11747"
 }
 ```
 

@@ -911,6 +911,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_015929.json:
+```json
+{
+    "actor": "https://github.com/nbruin",
+    "created_at": "2021-09-23T17:21:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6756",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6756#event-15929"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055520.json:
 ```json
 {

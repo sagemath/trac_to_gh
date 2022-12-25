@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8812
 
 ---
 
-archive/issue_events_008977.json:
+archive/issue_events_021496.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/acleone",
@@ -66,7 +66,7 @@ archive/issue_events_008977.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8812",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8812#event-8977"
+    "url": "https://github.com/sagemath/sagetest/issues/8812#event-21496"
 }
 ```
 
@@ -105,3 +105,20 @@ archive/issue_comments_080763.json:
 ```
 
 Already a patch up at #8724
+
+
+
+---
+
+archive/issue_events_021497.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-29T14:52:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8812",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8812#event-21497"
+}
+```

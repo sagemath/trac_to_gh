@@ -1079,6 +1079,57 @@ An *unrelated* test failed on one of the patchbots, but I think this is just a g
 
 ---
 
+archive/issue_events_021715.json:
+```json
+{
+    "actor": "https://github.com/saliola",
+    "created_at": "2012-08-24T16:16:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8899",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8899#event-21715"
+}
+```
+
+
+
+---
+
+archive/issue_events_021716.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-24T20:37:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8899",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8899#event-21716"
+}
+```
+
+
+
+---
+
+archive/issue_events_021717.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-24T20:37:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8899",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8899#event-21717"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081768.json:
 ```json
 {
@@ -1253,7 +1304,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009054.json:
+archive/issue_events_021718.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1261,7 +1312,7 @@ archive/issue_events_009054.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8899#event-9054"
+    "url": "https://github.com/sagemath/sagetest/issues/8899#event-21718"
 }
 ```
 
@@ -1322,7 +1373,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009055.json:
+archive/issue_events_021719.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1330,7 +1381,7 @@ archive/issue_events_009055.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8899#event-9055"
+    "url": "https://github.com/sagemath/sagetest/issues/8899#event-21719"
 }
 ```
 
@@ -1445,7 +1496,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009056.json:
+archive/issue_events_021720.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1453,7 +1504,7 @@ archive/issue_events_009056.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8899#event-9056"
+    "url": "https://github.com/sagemath/sagetest/issues/8899#event-21720"
 }
 ```
 

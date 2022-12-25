@@ -101,7 +101,24 @@ There obviously need to be way more and much better doctests in the elliptic cur
 
 ---
 
-archive/issue_events_000155.json:
+archive/issue_events_000278.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:56:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/149",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/149#event-278"
+}
+```
+
+
+
+---
+
+archive/issue_events_000279.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -109,7 +126,7 @@ archive/issue_events_000155.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/149",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/149#event-155"
+    "url": "https://github.com/sagemath/sagetest/issues/149#event-279"
 }
 ```
 

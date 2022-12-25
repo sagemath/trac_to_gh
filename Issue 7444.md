@@ -107,6 +107,23 @@ Notes:
 
 ---
 
+archive/issue_events_017655.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-13T04:33:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7444",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7444#event-17655"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062559.json:
 ```json
 {
@@ -122,6 +139,40 @@ archive/issue_comments_062559.json:
 Patch works. Positive review.
 
 The error is due to the lack of the javascript libraries on the Log page. This is now #7455.
+
+
+
+---
+
+archive/issue_events_017656.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-11-13T20:28:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7444",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7444#event-17656"
+}
+```
+
+
+
+---
+
+archive/issue_events_017657.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-11-13T20:28:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7444",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7444#event-17657"
+}
+```
 
 
 
@@ -163,7 +214,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007671.json:
+archive/issue_events_017658.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -171,6 +222,6 @@ archive/issue_events_007671.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7444#event-7671"
+    "url": "https://github.com/sagemath/sagetest/issues/7444#event-17658"
 }
 ```

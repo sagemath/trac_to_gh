@@ -67,7 +67,24 @@ I've added this in my patch to #2432 .
 
 ---
 
-archive/issue_events_002604.json:
+archive/issue_events_005731.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:20:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2427",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2427#event-5731"
+}
+```
+
+
+
+---
+
+archive/issue_events_005732.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -75,7 +92,7 @@ archive/issue_events_002604.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2427",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2427#event-2604"
+    "url": "https://github.com/sagemath/sagetest/issues/2427#event-5732"
 }
 ```
 

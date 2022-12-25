@@ -301,6 +301,23 @@ This should have been merged long ago.
 
 ---
 
+archive/issue_events_004621.json:
+```json
+{
+    "actor": "https://github.com/ppurka",
+    "created_at": "2012-11-16T09:16:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#event-4621"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012147.json:
 ```json
 {
@@ -314,6 +331,40 @@ archive/issue_comments_012147.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_004622.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-11-27T03:10:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "milestone": "sage-5.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#event-4622"
+}
+```
+
+
+
+---
+
+archive/issue_events_004623.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-11-27T03:10:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "milestone": "sage-5.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#event-4623"
+}
+```
 
 
 
@@ -337,7 +388,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002076.json:
+archive/issue_events_004624.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -345,6 +396,6 @@ archive/issue_events_002076.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1920#event-2076"
+    "url": "https://github.com/sagemath/sagetest/issues/1920#event-4624"
 }
 ```

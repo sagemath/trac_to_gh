@@ -336,6 +336,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8088
 
 ---
 
+archive/issue_events_019360.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-28T13:06:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8088",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8088#event-19360"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070758.json:
 ```json
 {
@@ -577,6 +594,40 @@ Is this bug report still valid?
 
 ---
 
+archive/issue_events_019361.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-09T21:49:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8088",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8088#event-19361"
+}
+```
+
+
+
+---
+
+archive/issue_events_019362.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-09T21:49:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8088",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8088#event-19362"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070764.json:
 ```json
 {
@@ -615,7 +666,7 @@ Dave
 
 ---
 
-archive/issue_events_008294.json:
+archive/issue_events_019363.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -623,7 +674,7 @@ archive/issue_events_008294.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#event-8294"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#event-19363"
 }
 ```
 

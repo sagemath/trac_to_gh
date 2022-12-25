@@ -299,7 +299,7 @@ merged into sage-4.3
 
 ---
 
-archive/issue_events_004072.json:
+archive/issue_events_008811.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -307,6 +307,6 @@ archive/issue_events_004072.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3849#event-4072"
+    "url": "https://github.com/sagemath/sagetest/issues/3849#event-8811"
 }
 ```

@@ -27,7 +27,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9328
 
 ---
 
-archive/issue_events_009483.json:
+archive/issue_events_022985.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -35,7 +35,24 @@ archive/issue_events_009483.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9328",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9328#event-9483"
+    "url": "https://github.com/sagemath/sagetest/issues/9328#event-22985"
+}
+```
+
+
+
+---
+
+archive/issue_events_022986.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2010-06-25T09:00:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9328",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9328#event-22986"
 }
 ```
 

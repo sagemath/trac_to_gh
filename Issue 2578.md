@@ -227,6 +227,23 @@ it could be optimized by using horner's rule
 
 ---
 
+archive/issue_events_006029.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:46:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2578",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2578#event-6029"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017600.json:
 ```json
 {
@@ -245,7 +262,7 @@ Merged in Sage 3.3.alpha1
 
 ---
 
-archive/issue_events_002763.json:
+archive/issue_events_006030.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -253,7 +270,7 @@ archive/issue_events_002763.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#event-2763"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#event-6030"
 }
 ```
 

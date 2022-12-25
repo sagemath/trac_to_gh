@@ -107,6 +107,91 @@ Changing keywords from "" to "editor_mhansen".
 
 ---
 
+archive/issue_events_008081.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8081"
+}
+```
+
+
+
+---
+
+archive/issue_events_008082.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8082"
+}
+```
+
+
+
+---
+
+archive/issue_events_008083.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8083"
+}
+```
+
+
+
+---
+
+archive/issue_events_008084.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8084"
+}
+```
+
+
+
+---
+
+archive/issue_events_008085.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8085"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024952.json:
 ```json
 {
@@ -120,6 +205,40 @@ archive/issue_comments_024952.json:
 ```
 
 New commits:
+
+
+
+---
+
+archive/issue_events_008086.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8086"
+}
+```
+
+
+
+---
+
+archive/issue_events_008087.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8087"
+}
+```
 
 
 
@@ -174,6 +293,40 @@ archive/issue_comments_024955.json:
 ```
 
 Changing keywords from "editor_mhansen" to "Ruby".
+
+
+
+---
+
+archive/issue_events_008088.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-04-19T09:42:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8088"
+}
+```
+
+
+
+---
+
+archive/issue_events_008089.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-04-19T09:42:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3538",
+    "milestone": "sage-6.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3538#event-8089"
+}
+```
 
 
 

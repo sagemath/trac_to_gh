@@ -96,6 +96,23 @@ This should be closed as a duplicate of #11592. The patch attached to that ticke
 
 ---
 
+archive/issue_events_021704.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2011-07-20T17:42:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8895",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8895#event-21704"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081649.json:
 ```json
 {
@@ -176,7 +193,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_009052.json:
+archive/issue_events_021705.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -184,6 +201,6 @@ archive/issue_events_009052.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8895",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8895#event-9052"
+    "url": "https://github.com/sagemath/sagetest/issues/8895#event-21705"
 }
 ```

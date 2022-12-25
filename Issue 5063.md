@@ -29,7 +29,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5063
 
 ---
 
-archive/issue_events_005309.json:
+archive/issue_events_011673.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -37,7 +37,7 @@ archive/issue_events_005309.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5063",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5063#event-5309"
+    "url": "https://github.com/sagemath/sagetest/issues/5063#event-11673"
 }
 ```
 
@@ -78,3 +78,20 @@ archive/issue_comments_038499.json:
 Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5063/plot.patch) by @mwhansen created at 2010-01-18 22:39:52
 
 I'm going to mark this as invalid.
+
+
+
+---
+
+archive/issue_events_011674.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-01-18T22:39:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5063",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5063#event-11674"
+}
+```

@@ -187,7 +187,7 @@ It seems okay compared to 0.7.4, but it sure would be nice to fix #8231...
 
 ---
 
-archive/issue_events_008397.json:
+archive/issue_events_019601.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -195,7 +195,7 @@ archive/issue_events_008397.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8194",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8194#event-8397"
+    "url": "https://github.com/sagemath/sagetest/issues/8194#event-19601"
 }
 ```
 

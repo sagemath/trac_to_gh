@@ -255,7 +255,7 @@ If someone really wants to add them, then they can repoen this ticket.
 
 ---
 
-archive/issue_events_002046.json:
+archive/issue_events_004546.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -263,7 +263,7 @@ archive/issue_events_002046.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1888",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1888#event-2046"
+    "url": "https://github.com/sagemath/sagetest/issues/1888#event-4546"
 }
 ```
 
@@ -284,3 +284,20 @@ archive/issue_comments_011935.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_004547.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-19T18:25:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1888",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1888#event-4547"
+}
+```

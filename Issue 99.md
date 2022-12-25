@@ -209,7 +209,7 @@ concrete example that illustrates the behavior you observed?
 
 ---
 
-archive/issue_events_000101.json:
+archive/issue_events_000198.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -217,7 +217,7 @@ archive/issue_events_000101.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/99",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/99#event-101"
+    "url": "https://github.com/sagemath/sagetest/issues/99#event-198"
 }
 ```
 

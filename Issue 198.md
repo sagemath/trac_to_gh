@@ -33,6 +33,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/198
 
 ---
 
+archive/issue_events_000388.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:40:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/198",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/198#event-388"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000894.json:
 ```json
 {
@@ -50,6 +67,40 @@ This ticket seems like a high priority item. It is a little stale and William ou
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000389.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T13:50:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/198",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/198#event-389"
+}
+```
+
+
+
+---
+
+archive/issue_events_000390.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T13:50:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/198",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/198#event-390"
+}
+```
 
 
 
@@ -91,7 +142,7 @@ This will be replaced by many smaller tickets.
 
 ---
 
-archive/issue_events_000207.json:
+archive/issue_events_000391.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -99,6 +150,23 @@ archive/issue_events_000207.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/198",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/198#event-207"
+    "url": "https://github.com/sagemath/sagetest/issues/198#event-391"
+}
+```
+
+
+
+---
+
+archive/issue_events_000392.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-24T02:54:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/198",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/198#event-392"
 }
 ```

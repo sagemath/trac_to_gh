@@ -65,6 +65,23 @@ Changing component from algebraic geometry to basic arithmetic.
 
 ---
 
+archive/issue_events_002194.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-04T19:49:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/791",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/791#event-2194"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004742.json:
 ```json
 {
@@ -121,6 +138,40 @@ Looks good.  I have rebased the patch against 3.3.alpha2, since it got entangled
 
 ---
 
+archive/issue_events_002195.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-01-27T06:04:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/791",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/791#event-2195"
+}
+```
+
+
+
+---
+
+archive/issue_events_002196.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-01-27T06:04:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/791",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/791#event-2196"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004745.json:
 ```json
 {
@@ -157,7 +208,7 @@ Merged in Sage 3.3.alpha3
 
 ---
 
-archive/issue_events_000900.json:
+archive/issue_events_002197.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -165,6 +216,6 @@ archive/issue_events_000900.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/791",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/791#event-900"
+    "url": "https://github.com/sagemath/sagetest/issues/791#event-2197"
 }
 ```

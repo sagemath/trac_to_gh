@@ -326,7 +326,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_004709.json:
+archive/issue_events_010076.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -334,7 +334,24 @@ archive/issue_events_004709.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4461",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4461#event-4709"
+    "url": "https://github.com/sagemath/sagetest/issues/4461#event-10076"
+}
+```
+
+
+
+---
+
+archive/issue_events_010077.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-12T16:48:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4461",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4461#event-10077"
 }
 ```
 

@@ -138,6 +138,23 @@ So this ticket can be closed.
 
 ---
 
+archive/issue_events_007481.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-06-28T16:32:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3339",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3339#event-7481"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023144.json:
 ```json
 {
@@ -192,7 +209,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_003557.json:
+archive/issue_events_007482.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -200,6 +217,6 @@ archive/issue_events_003557.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3339",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3339#event-3557"
+    "url": "https://github.com/sagemath/sagetest/issues/3339#event-7482"
 }
 ```

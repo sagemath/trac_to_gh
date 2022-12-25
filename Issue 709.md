@@ -65,7 +65,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000780.json:
+archive/issue_events_001894.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +73,7 @@ archive/issue_events_000780.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/709",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/709#event-780"
+    "url": "https://github.com/sagemath/sagetest/issues/709#event-1894"
 }
 ```
 
@@ -99,7 +99,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000781.json:
+archive/issue_events_001895.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -107,7 +107,7 @@ archive/issue_events_000781.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/709",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/709#event-781"
+    "url": "https://github.com/sagemath/sagetest/issues/709#event-1895"
 }
 ```
 
@@ -133,6 +133,23 @@ I've included this but put a nodoctest in the file until trac #700 is resolved.
 
 ---
 
+archive/issue_events_001896.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T02:23:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/709#event-1896"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003714.json:
 ```json
 {
@@ -146,6 +163,40 @@ archive/issue_comments_003714.json:
 ```
 
 Resolution changed from fixed to 
+
+
+
+---
+
+archive/issue_events_001897.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T13:45:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/709#event-1897"
+}
+```
+
+
+
+---
+
+archive/issue_events_001898.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T13:45:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/709#event-1898"
+}
+```
 
 
 
@@ -169,7 +220,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000782.json:
+archive/issue_events_001899.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -177,6 +228,6 @@ archive/issue_events_000782.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/709",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/709#event-782"
+    "url": "https://github.com/sagemath/sagetest/issues/709#event-1899"
 }
 ```

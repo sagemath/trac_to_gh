@@ -4094,6 +4094,23 @@ Building, installing and testing succeeded on SuSE 11 Enterprise amd64 and OS X 
 
 ---
 
+archive/issue_events_010331.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-18T20:16:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4539",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4539#event-10331"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033935.json:
 ```json
 {
@@ -4249,6 +4266,40 @@ archive/issue_comments_033942.json:
 
 ---
 
+archive/issue_events_010332.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-09T23:57:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4539",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4539#event-10332"
+}
+```
+
+
+
+---
+
+archive/issue_events_010333.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-09T23:57:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4539",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4539#event-10333"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033943.json:
 ```json
 {
@@ -4267,7 +4318,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004784.json:
+archive/issue_events_010334.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4275,6 +4326,6 @@ archive/issue_events_004784.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4539#event-4784"
+    "url": "https://github.com/sagemath/sagetest/issues/4539#event-10334"
 }
 ```

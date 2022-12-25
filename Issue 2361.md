@@ -125,7 +125,24 @@ This should definately get changed.
 
 ---
 
-archive/issue_events_002538.json:
+archive/issue_events_005569.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-21T16:37:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2361",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2361#event-5569"
+}
+```
+
+
+
+---
+
+archive/issue_events_005570.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -133,7 +150,7 @@ archive/issue_events_002538.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2361",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2361#event-2538"
+    "url": "https://github.com/sagemath/sagetest/issues/2361#event-5570"
 }
 ```
 
@@ -174,3 +191,37 @@ archive/issue_comments_015889.json:
 This was fixed with #5413.
 
 Substitution is symbolic expressions now requires stating the variables explicitly.
+
+
+
+---
+
+archive/issue_events_005571.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-04-16T11:02:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2361",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2361#event-5571"
+}
+```
+
+
+
+---
+
+archive/issue_events_005572.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-04-16T11:02:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2361",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2361#event-5572"
+}
+```

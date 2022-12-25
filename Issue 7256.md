@@ -49,7 +49,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007477.json:
+archive/issue_events_017175.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
@@ -57,7 +57,7 @@ archive/issue_events_007477.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7256",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7256#event-7477"
+    "url": "https://github.com/sagemath/sagetest/issues/7256#event-17175"
 }
 ```
 

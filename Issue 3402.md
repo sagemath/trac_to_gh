@@ -120,7 +120,7 @@ The patch is obviously correct and I've also tested it.
 
 ---
 
-archive/issue_events_003618.json:
+archive/issue_events_007674.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,7 +128,7 @@ archive/issue_events_003618.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3402",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3402#event-3618"
+    "url": "https://github.com/sagemath/sagetest/issues/3402#event-7674"
 }
 ```
 
@@ -167,3 +167,20 @@ archive/issue_comments_023825.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007675.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-16T04:30:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3402",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3402#event-7675"
+}
+```

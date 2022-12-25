@@ -736,7 +736,7 @@ Merged trac_1337-workaround.patch in Sage 2.10.3.rc3. The fix is a workaround, t
 
 ---
 
-archive/issue_events_001477.json:
+archive/issue_events_003473.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -744,6 +744,6 @@ archive/issue_events_001477.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1337#event-1477"
+    "url": "https://github.com/sagemath/sagetest/issues/1337#event-3473"
 }
 ```

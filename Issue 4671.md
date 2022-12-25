@@ -211,6 +211,23 @@ I've put up a new patch which imports twisted.persisted.styles, but still make s
 
 ---
 
+archive/issue_events_010697.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-21T11:02:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4671",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4671#event-10697"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035121.json:
 ```json
 {
@@ -273,7 +290,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004919.json:
+archive/issue_events_010698.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -281,7 +298,7 @@ archive/issue_events_004919.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4671#event-4919"
+    "url": "https://github.com/sagemath/sagetest/issues/4671#event-10698"
 }
 ```
 

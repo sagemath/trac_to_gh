@@ -69,7 +69,24 @@ On second thought, it was stupid of me to open this ticket. So marked as duplica
 
 ---
 
-archive/issue_events_007055.json:
+archive/issue_events_016067.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-25T00:17:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6821",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6821#event-16067"
+}
+```
+
+
+
+---
+
+archive/issue_events_016068.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -77,7 +94,7 @@ archive/issue_events_007055.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6821",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6821#event-7055"
+    "url": "https://github.com/sagemath/sagetest/issues/6821#event-16068"
 }
 ```
 

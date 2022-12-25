@@ -54,6 +54,23 @@ Changing component from Cygwin to build.
 
 ---
 
+archive/issue_events_005794.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-10T14:59:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2459",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2459#event-5794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016615.json:
 ```json
 {
@@ -85,6 +102,40 @@ archive/issue_comments_016616.json:
 ```
 
 I've attached a patch that fixes this typo. `real_double_vector` (the module to be built in line 430) built fine and passed all doctests.
+
+
+
+---
+
+archive/issue_events_005795.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-14T05:45:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2459",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2459#event-5795"
+}
+```
+
+
+
+---
+
+archive/issue_events_005796.json:
+```json
+{
+    "actor": "https://github.com/dfdeshom",
+    "created_at": "2008-03-14T05:45:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2459",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2459#event-5796"
+}
+```
 
 
 
@@ -126,7 +177,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002636.json:
+archive/issue_events_005797.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -134,7 +185,7 @@ archive/issue_events_002636.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2459",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2459#event-2636"
+    "url": "https://github.com/sagemath/sagetest/issues/2459#event-5797"
 }
 ```
 

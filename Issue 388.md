@@ -100,6 +100,23 @@ Michael
 
 ---
 
+archive/issue_events_000909.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-28T11:47:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/388#event-909"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001896.json:
 ```json
 {
@@ -144,6 +161,40 @@ Changing assignee from @williamstein to @craigcitro.
 
 ---
 
+archive/issue_events_000910.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2007-09-01T07:42:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/388#event-910"
+}
+```
+
+
+
+---
+
+archive/issue_events_000911.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2007-09-01T07:42:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/388#event-911"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001898.json:
 ```json
 {
@@ -182,7 +233,7 @@ looks good to me.
 
 ---
 
-archive/issue_events_000410.json:
+archive/issue_events_000912.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -190,6 +241,6 @@ archive/issue_events_000410.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/388",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/388#event-410"
+    "url": "https://github.com/sagemath/sagetest/issues/388#event-912"
 }
 ```

@@ -666,7 +666,7 @@ Please update the Author and Reviewer fields, if they're wrong.
 
 ---
 
-archive/issue_events_008151.json:
+archive/issue_events_018998.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -674,7 +674,7 @@ archive/issue_events_008151.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7935#event-8151"
+    "url": "https://github.com/sagemath/sagetest/issues/7935#event-18998"
 }
 ```
 

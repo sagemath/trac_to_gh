@@ -38,6 +38,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/9132
 
 ---
 
+archive/issue_events_022439.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9132",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9132#event-22439"
+}
+```
+
+
+
+---
+
+archive/issue_events_022440.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9132",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9132#event-22440"
+}
+```
+
+
+
+---
+
+archive/issue_events_022441.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9132",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9132#event-22441"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084983.json:
 ```json
 {
@@ -69,6 +120,40 @@ archive/issue_comments_084984.json:
 ```
 
 we have switched to git, this is obsolete
+
+
+
+---
+
+archive/issue_events_022442.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-03-14T19:30:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9132",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9132#event-22442"
+}
+```
+
+
+
+---
+
+archive/issue_events_022443.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-03-14T19:30:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9132",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9132#event-22443"
+}
+```
 
 
 
@@ -111,7 +196,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009290.json:
+archive/issue_events_022444.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -119,7 +204,7 @@ archive/issue_events_009290.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9132",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9132#event-9290"
+    "url": "https://github.com/sagemath/sagetest/issues/9132#event-22444"
 }
 ```
 

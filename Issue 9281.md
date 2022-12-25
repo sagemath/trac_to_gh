@@ -317,6 +317,23 @@ I'd suggest:
 
 ---
 
+archive/issue_events_022863.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-07-17T12:15:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#event-22863"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087296.json:
 ```json
 {
@@ -451,7 +468,7 @@ ok, agreed.
 
 ---
 
-archive/issue_events_009442.json:
+archive/issue_events_022864.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -459,6 +476,6 @@ archive/issue_events_009442.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9281#event-9442"
+    "url": "https://github.com/sagemath/sagetest/issues/9281#event-22864"
 }
 ```

@@ -88,7 +88,7 @@ Closed because I don't build sage on the machine that led to this problem anymor
 
 ---
 
-archive/issue_events_001854.json:
+archive/issue_events_004148.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -96,7 +96,7 @@ archive/issue_events_001854.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1695",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1695#event-1854"
+    "url": "https://github.com/sagemath/sagetest/issues/1695#event-4148"
 }
 ```
 

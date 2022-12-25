@@ -213,7 +213,7 @@ This ticket may be closed if trac_5794-revised.patch is merged. See #5794.
 
 ---
 
-archive/issue_events_006081.json:
+archive/issue_events_013701.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -221,7 +221,7 @@ archive/issue_events_006081.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5831#event-6081"
+    "url": "https://github.com/sagemath/sagetest/issues/5831#event-13701"
 }
 ```
 
@@ -242,6 +242,23 @@ archive/issue_comments_045753.json:
 ```
 
 Closing this ticket as a duplicate of #5794.
+
+
+
+---
+
+archive/issue_events_013702.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-26T21:18:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#event-13702"
+}
+```
 
 
 

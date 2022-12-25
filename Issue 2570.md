@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2570
 
 ---
 
+archive/issue_events_006010.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-01T17:54:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2570",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2570#event-6010"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017523.json:
 ```json
 {
@@ -82,6 +99,40 @@ we have switched to git, this is obsolete
 
 ---
 
+archive/issue_events_006011.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-03-14T19:31:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2570",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2570#event-6011"
+}
+```
+
+
+
+---
+
+archive/issue_events_006012.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2014-03-14T19:31:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2570",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2570#event-6012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017526.json:
 ```json
 {
@@ -100,7 +151,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002753.json:
+archive/issue_events_006013.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -108,7 +159,7 @@ archive/issue_events_002753.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2570",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2570#event-2753"
+    "url": "https://github.com/sagemath/sagetest/issues/2570#event-6013"
 }
 ```
 

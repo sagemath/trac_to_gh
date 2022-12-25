@@ -124,7 +124,24 @@ merged into sage-4.2.
 
 ---
 
-archive/issue_events_007274.json:
+archive/issue_events_016629.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-25T06:48:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7054",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7054#event-16629"
+}
+```
+
+
+
+---
+
+archive/issue_events_016630.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -132,7 +149,7 @@ archive/issue_events_007274.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7054",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7054#event-7274"
+    "url": "https://github.com/sagemath/sagetest/issues/7054#event-16630"
 }
 ```
 

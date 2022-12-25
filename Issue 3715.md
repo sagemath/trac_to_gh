@@ -50,6 +50,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3715
 
 ---
 
+archive/issue_events_008503.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-29T16:00:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3715",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3715#event-8503"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026308.json:
 ```json
 {
@@ -130,7 +147,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_003935.json:
+archive/issue_events_008504.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -138,7 +155,7 @@ archive/issue_events_003935.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3715",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3715#event-3935"
+    "url": "https://github.com/sagemath/sagetest/issues/3715#event-8504"
 }
 ```
 

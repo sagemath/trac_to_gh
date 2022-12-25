@@ -162,7 +162,7 @@ replaced patch addresses my concern.
 
 ---
 
-archive/issue_events_002633.json:
+archive/issue_events_005791.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -170,7 +170,7 @@ archive/issue_events_002633.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2456",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2456#event-2633"
+    "url": "https://github.com/sagemath/sagetest/issues/2456#event-5791"
 }
 ```
 

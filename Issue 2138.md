@@ -89,7 +89,7 @@ I think this was fixed as part of another ticket? Anyway, I think I removed the 
 
 ---
 
-archive/issue_events_002300.json:
+archive/issue_events_005116.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -97,7 +97,7 @@ archive/issue_events_002300.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2138",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2138#event-2300"
+    "url": "https://github.com/sagemath/sagetest/issues/2138#event-5116"
 }
 ```
 

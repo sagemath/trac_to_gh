@@ -136,7 +136,7 @@ Merged "8504-ab_gp-exponent.patch" in 4.4.alpha0.
 
 ---
 
-archive/issue_events_008684.json:
+archive/issue_events_020427.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -144,6 +144,6 @@ archive/issue_events_008684.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8504",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8504#event-8684"
+    "url": "https://github.com/sagemath/sagetest/issues/8504#event-20427"
 }
 ```

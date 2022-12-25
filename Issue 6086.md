@@ -70,7 +70,7 @@ Passes doctests and fixes bug.  Good job!
 
 ---
 
-archive/issue_events_006339.json:
+archive/issue_events_014298.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -78,7 +78,7 @@ archive/issue_events_006339.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6086",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6086#event-6339"
+    "url": "https://github.com/sagemath/sagetest/issues/6086#event-14298"
 }
 ```
 
@@ -99,6 +99,23 @@ archive/issue_comments_048402.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_014299.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T20:24:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6086",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6086#event-14299"
+}
+```
 
 
 

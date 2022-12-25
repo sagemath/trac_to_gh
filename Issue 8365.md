@@ -138,7 +138,7 @@ Looks like I forgot one line in polynomial_rings.rst, indeed (sorry for that). T
 
 ---
 
-archive/issue_events_008553.json:
+archive/issue_events_020044.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -146,7 +146,7 @@ archive/issue_events_008553.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8365",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8365#event-8553"
+    "url": "https://github.com/sagemath/sagetest/issues/8365#event-20044"
 }
 ```
 

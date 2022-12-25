@@ -82,7 +82,7 @@ Changing assignee from boothby to @williamstein.
 
 ---
 
-archive/issue_events_000733.json:
+archive/issue_events_001780.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -90,7 +90,7 @@ archive/issue_events_000733.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/665",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/665#event-733"
+    "url": "https://github.com/sagemath/sagetest/issues/665#event-1780"
 }
 ```
 

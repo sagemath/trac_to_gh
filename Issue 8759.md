@@ -158,6 +158,23 @@ Agreed.  If there is truly a need for this, should be opened on https://github.c
 
 ---
 
+archive/issue_events_021305.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-12-11T15:26:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8759",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8759#event-21305"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080020.json:
 ```json
 {
@@ -194,7 +211,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008927.json:
+archive/issue_events_021306.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -202,6 +219,6 @@ archive/issue_events_008927.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8759",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8759#event-8927"
+    "url": "https://github.com/sagemath/sagetest/issues/8759#event-21306"
 }
 ```

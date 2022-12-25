@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7708
 
 ---
 
+archive/issue_events_018408.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:07:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7708",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7708#event-18408"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066038.json:
 ```json
 {
@@ -254,7 +271,7 @@ version 0.29 now in experimental and I removed the obsolete old optional spkg. t
 
 ---
 
-archive/issue_events_007925.json:
+archive/issue_events_018409.json:
 ```json
 {
     "actor": "https://github.com/haraldschilly",
@@ -262,6 +279,6 @@ archive/issue_events_007925.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7708#event-7925"
+    "url": "https://github.com/sagemath/sagetest/issues/7708#event-18409"
 }
 ```

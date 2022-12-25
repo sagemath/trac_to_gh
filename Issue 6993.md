@@ -227,7 +227,7 @@ To release manager: apply .p0 package first, then the tickets listed above in re
 
 ---
 
-archive/issue_events_007217.json:
+archive/issue_events_016416.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -235,7 +235,7 @@ archive/issue_events_007217.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6993",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6993#event-7217"
+    "url": "https://github.com/sagemath/sagetest/issues/6993#event-16416"
 }
 ```
 

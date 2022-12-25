@@ -104,6 +104,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_023746.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2011-01-12T03:58:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9546",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9546#event-23746"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091866.json:
 ```json
 {
@@ -316,7 +333,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009695.json:
+archive/issue_events_023747.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -324,6 +341,6 @@ archive/issue_events_009695.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9546#event-9695"
+    "url": "https://github.com/sagemath/sagetest/issues/9546#event-23747"
 }
 ```

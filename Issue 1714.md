@@ -146,7 +146,7 @@ Merged sage0_keywords.2.patch in Sage 2.10.2.alpha0
 
 ---
 
-archive/issue_events_001873.json:
+archive/issue_events_004176.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -154,7 +154,7 @@ archive/issue_events_001873.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1714",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1714#event-1873"
+    "url": "https://github.com/sagemath/sagetest/issues/1714#event-4176"
 }
 ```
 

@@ -404,7 +404,7 @@ Oh damn.  Thanks, Nick.
 
 ---
 
-archive/issue_events_006444.json:
+archive/issue_events_014537.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -412,7 +412,7 @@ archive/issue_events_006444.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#event-6444"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#event-14537"
 }
 ```
 
@@ -451,3 +451,20 @@ archive/issue_comments_049397.json:
 ```
 
 The milestone for this ticket should be 4.1. I can't change it, since I don't have admin privileges on trac.
+
+
+
+---
+
+archive/issue_events_014538.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-12T18:55:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6196",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6196#event-14538"
+}
+```

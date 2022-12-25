@@ -95,6 +95,23 @@ The proposed patch won't fix the issue for AMD cpu in #5186; a similar fix may b
 
 ---
 
+archive/issue_events_012933.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-15T16:28:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5516",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5516#event-12933"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042793.json:
 ```json
 {
@@ -193,7 +210,41 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005766.json:
+archive/issue_events_012934.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-19T01:01:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5516",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5516#event-12934"
+}
+```
+
+
+
+---
+
+archive/issue_events_012935.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-19T01:01:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5516",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5516#event-12935"
+}
+```
+
+
+
+---
+
+archive/issue_events_012936.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -201,6 +252,6 @@ archive/issue_events_005766.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5516",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5516#event-5766"
+    "url": "https://github.com/sagemath/sagetest/issues/5516#event-12936"
 }
 ```

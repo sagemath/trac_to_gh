@@ -60,6 +60,23 @@ And here's a W3C page on character encodings: http://www.w3.org/International/O-
 
 ---
 
+archive/issue_events_012064.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-10T06:48:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5211",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5211#event-12064"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039845.json:
 ```json
 {
@@ -175,6 +192,40 @@ Michael
 
 ---
 
+archive/issue_events_012065.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-10T07:00:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5211",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5211#event-12065"
+}
+```
+
+
+
+---
+
+archive/issue_events_012066.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-10T07:00:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5211",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5211#event-12066"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039850.json:
 ```json
 {
@@ -247,7 +298,7 @@ Since #4547 was what Dan needed, I can give this a positive review.
 
 ---
 
-archive/issue_events_005466.json:
+archive/issue_events_012067.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -255,7 +306,7 @@ archive/issue_events_005466.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5211#event-5466"
+    "url": "https://github.com/sagemath/sagetest/issues/5211#event-12067"
 }
 ```
 
@@ -298,3 +349,37 @@ archive/issue_comments_039855.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_012068.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-23T21:36:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5211",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5211#event-12068"
+}
+```
+
+
+
+---
+
+archive/issue_events_012069.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-23T21:36:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5211",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5211#event-12069"
+}
+```

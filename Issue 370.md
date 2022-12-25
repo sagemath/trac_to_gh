@@ -40,6 +40,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/370
 
 ---
 
+archive/issue_events_000859.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T02:18:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/370",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/370#event-859"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001770.json:
 ```json
 {
@@ -123,7 +140,7 @@ Unless the request is specified, I'm all for closing it.
 
 ---
 
-archive/issue_events_000392.json:
+archive/issue_events_000860.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -131,6 +148,6 @@ archive/issue_events_000392.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/370",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/370#event-392"
+    "url": "https://github.com/sagemath/sagetest/issues/370#event-860"
 }
 ```

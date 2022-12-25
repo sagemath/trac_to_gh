@@ -124,6 +124,23 @@ Also, if you feel like the patch is to the point that it needs review, please ch
 
 ---
 
+archive/issue_events_024058.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2010-07-31T18:30:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9650",
+    "milestone": "sage-4.5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9650#event-24058"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093422.json:
 ```json
 {
@@ -1179,7 +1196,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009786.json:
+archive/issue_events_024059.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1187,6 +1204,6 @@ archive/issue_events_009786.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9650#event-9786"
+    "url": "https://github.com/sagemath/sagetest/issues/9650#event-24059"
 }
 ```

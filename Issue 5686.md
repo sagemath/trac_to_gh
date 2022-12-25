@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5686
 
 ---
 
+archive/issue_events_013370.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-04T23:08:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5686",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5686#event-13370"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044385.json:
 ```json
 {
@@ -183,7 +200,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005928.json:
+archive/issue_events_013371.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -191,7 +208,7 @@ archive/issue_events_005928.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5686",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5686#event-5928"
+    "url": "https://github.com/sagemath/sagetest/issues/5686#event-13371"
 }
 ```
 
@@ -212,3 +229,37 @@ archive/issue_comments_044392.json:
 ```
 
 I posted the spkg.
+
+
+
+---
+
+archive/issue_events_013372.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:40:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5686",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5686#event-13372"
+}
+```
+
+
+
+---
+
+archive/issue_events_013373.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:40:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5686",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5686#event-13373"
+}
+```

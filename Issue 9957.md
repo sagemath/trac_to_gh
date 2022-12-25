@@ -4295,6 +4295,23 @@ The spkg needs to be rebased to #11447.
 
 ---
 
+archive/issue_events_025124.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-03T21:24:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9957",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9957#event-25124"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099296.json:
 ```json
 {
@@ -4735,6 +4752,40 @@ archive/issue_comments_099303.json:
 ```
 
 Another minor comment: please use UTF8 in `SPKG.txt`.  Currently, "François" is encoded as latin1.
+
+
+
+---
+
+archive/issue_events_025125.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-05T22:11:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9957",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9957#event-25125"
+}
+```
+
+
+
+---
+
+archive/issue_events_025126.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-05T22:11:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9957",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9957#event-25126"
+}
+```
 
 
 
@@ -8542,7 +8593,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010085.json:
+archive/issue_events_025127.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -8550,7 +8601,7 @@ archive/issue_events_010085.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9957#event-10085"
+    "url": "https://github.com/sagemath/sagetest/issues/9957#event-25127"
 }
 ```
 

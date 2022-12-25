@@ -414,6 +414,57 @@ But I'd say that's an issue for another ticket.
 
 ---
 
+archive/issue_events_023565.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9494",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9494#event-23565"
+}
+```
+
+
+
+---
+
+archive/issue_events_023566.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9494",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9494#event-23566"
+}
+```
+
+
+
+---
+
+archive/issue_events_023567.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9494",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9494#event-23567"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091014.json:
 ```json
 {
@@ -506,7 +557,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009643.json:
+archive/issue_events_023568.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -514,7 +565,7 @@ archive/issue_events_009643.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9494",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9494#event-9643"
+    "url": "https://github.com/sagemath/sagetest/issues/9494#event-23568"
 }
 ```
 

@@ -101,7 +101,24 @@ Seems like a simple enhancement.  I didn't test this extensively but since nothi
 
 ---
 
-archive/issue_events_009280.json:
+archive/issue_events_022403.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-11T17:28:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9124",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9124#event-22403"
+}
+```
+
+
+
+---
+
+archive/issue_events_022404.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -109,7 +126,7 @@ archive/issue_events_009280.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9124",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9124#event-9280"
+    "url": "https://github.com/sagemath/sagetest/issues/9124#event-22404"
 }
 ```
 

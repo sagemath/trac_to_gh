@@ -95,6 +95,23 @@ Changing component from algebra to basic arithmetic.
 
 ---
 
+archive/issue_events_018727.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-05-29T07:07:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7829",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7829#event-18727"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067676.json:
 ```json
 {
@@ -236,7 +253,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008044.json:
+archive/issue_events_018728.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -244,6 +261,6 @@ archive/issue_events_008044.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#event-8044"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#event-18728"
 }
 ```

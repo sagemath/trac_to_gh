@@ -75,6 +75,23 @@ Changing assignee from somebody to dmharvey.
 
 ---
 
+archive/issue_events_000053.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:17:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/29",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/29#event-53"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000203.json:
 ```json
 {
@@ -108,6 +125,40 @@ archive/issue_comments_000204.json:
 This is essentially completed by #1130.
 
 I think asking for len(E) is not right, in any case -- len(E.points()) makes some sense, and #1130 makes that work.
+
+
+
+---
+
+archive/issue_events_000054.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-16T21:50:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/29",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/29#event-54"
+}
+```
+
+
+
+---
+
+archive/issue_events_000055.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-16T21:50:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/29",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/29#event-55"
+}
+```
 
 
 
@@ -153,7 +204,7 @@ Michael
 
 ---
 
-archive/issue_events_000028.json:
+archive/issue_events_000056.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -161,6 +212,6 @@ archive/issue_events_000028.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/29",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/29#event-28"
+    "url": "https://github.com/sagemath/sagetest/issues/29#event-56"
 }
 ```

@@ -60,7 +60,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000268.json:
+archive/issue_events_000540.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -68,7 +68,7 @@ archive/issue_events_000268.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/254",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/254#event-268"
+    "url": "https://github.com/sagemath/sagetest/issues/254#event-540"
 }
 ```
 
@@ -89,3 +89,20 @@ archive/issue_comments_001142.json:
 ```
 
 David Roe fixed this with his new p-adic polynomials class.
+
+
+
+---
+
+archive/issue_events_000541.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:21:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/254",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/254#event-541"
+}
+```

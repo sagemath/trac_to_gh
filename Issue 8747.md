@@ -183,7 +183,7 @@ Except maybe on sage.misc.sagedoc, but that's most likely a glitch from building
 
 ---
 
-archive/issue_events_008916.json:
+archive/issue_events_021261.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -191,7 +191,7 @@ archive/issue_events_008916.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8747#event-8916"
+    "url": "https://github.com/sagemath/sagetest/issues/8747#event-21261"
 }
 ```
 

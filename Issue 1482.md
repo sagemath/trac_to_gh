@@ -48,6 +48,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1482
 
 ---
 
+archive/issue_events_003774.json:
+```json
+{
+    "actor": "https://github.com/nbruin",
+    "created_at": "2007-12-12T20:37:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1482",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1482#event-3774"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009511.json:
 ```json
 {
@@ -82,6 +99,40 @@ Here is some mpn-level code which produces different answers under GMP 4.2.1 and
 Vanilla GMP 4.2.1 prints -1, patched GMP prints 1.
 
 I plan to fix this as follows. I think it would be good for Sage to guarantee minimality. I'm going to make the xgcd function call mpz_gcdext, then check for the "obvious" non-minimality issues and make corrections for those, and finally fall back on a (slower) but guaranteed algorithm if that doesn't work. Hopefully the latter should never actually be called, since it will need to divide by something somewhere.
+
+
+
+---
+
+archive/issue_events_003775.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
+    "created_at": "2007-12-22T15:35:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1482",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1482#event-3775"
+}
+```
+
+
+
+---
+
+archive/issue_events_003776.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
+    "created_at": "2007-12-22T15:35:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1482",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1482#event-3776"
+}
+```
 
 
 
@@ -255,7 +306,7 @@ Merged in 2.9.2.rc1.
 
 ---
 
-archive/issue_events_001635.json:
+archive/issue_events_003777.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -263,6 +314,6 @@ archive/issue_events_001635.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1482",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1482#event-1635"
+    "url": "https://github.com/sagemath/sagetest/issues/1482#event-3777"
 }
 ```

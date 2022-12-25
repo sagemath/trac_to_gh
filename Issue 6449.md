@@ -158,6 +158,23 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_015203.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2010-06-27T04:58:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6449",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6449#event-15203"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051742.json:
 ```json
 {
@@ -1336,7 +1353,7 @@ I have therefore left the tag as "positive review" and hope that mhansen is now 
 
 ---
 
-archive/issue_events_006690.json:
+archive/issue_events_015204.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1344,7 +1361,7 @@ archive/issue_events_006690.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#event-6690"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#event-15204"
 }
 ```
 

@@ -113,7 +113,7 @@ Merged in Sage 2.10.2.rc0
 
 ---
 
-archive/issue_events_002400.json:
+archive/issue_events_005311.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -121,7 +121,7 @@ archive/issue_events_002400.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2230",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2230#event-2400"
+    "url": "https://github.com/sagemath/sagetest/issues/2230#event-5311"
 }
 ```
 

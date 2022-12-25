@@ -316,6 +316,23 @@ This one patch (sagelib_6595.patch) makes it so at least c_lib builds fine using
 
 ---
 
+archive/issue_events_015547.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-23T01:24:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6595",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6595#event-15547"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053874.json:
 ```json
 {
@@ -460,7 +477,7 @@ Dave
 
 ---
 
-archive/issue_events_006832.json:
+archive/issue_events_015548.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -468,7 +485,7 @@ archive/issue_events_006832.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6595#event-6832"
+    "url": "https://github.com/sagemath/sagetest/issues/6595#event-15548"
 }
 ```
 
@@ -563,7 +580,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_006833.json:
+archive/issue_events_015549.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -571,7 +588,7 @@ archive/issue_events_006833.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6595#event-6833"
+    "url": "https://github.com/sagemath/sagetest/issues/6595#event-15549"
 }
 ```
 
@@ -668,6 +685,40 @@ I'm happy to give your fix a positive review if you want to change it from 'need
 
 
 Dave
+
+
+
+---
+
+archive/issue_events_015550.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-25T10:02:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6595",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6595#event-15550"
+}
+```
+
+
+
+---
+
+archive/issue_events_015551.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-25T10:02:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6595",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6595#event-15551"
+}
+```
 
 
 
@@ -773,7 +824,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_006834.json:
+archive/issue_events_015552.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -781,7 +832,7 @@ archive/issue_events_006834.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6595#event-6834"
+    "url": "https://github.com/sagemath/sagetest/issues/6595#event-15552"
 }
 ```
 

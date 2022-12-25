@@ -186,7 +186,7 @@ Fine!  Patch applies fine to 4.4.4.alpha1.
 
 ---
 
-archive/issue_events_009220.json:
+archive/issue_events_022224.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -194,7 +194,7 @@ archive/issue_events_009220.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9069",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9069#event-9220"
+    "url": "https://github.com/sagemath/sagetest/issues/9069#event-22224"
 }
 ```
 

@@ -84,7 +84,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006949.json:
+archive/issue_events_015855.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -92,6 +92,6 @@ archive/issue_events_006949.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6714",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6714#event-6949"
+    "url": "https://github.com/sagemath/sagetest/issues/6714#event-15855"
 }
 ```

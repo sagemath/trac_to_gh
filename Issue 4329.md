@@ -129,7 +129,7 @@ Affirmative
 
 ---
 
-archive/issue_events_004576.json:
+archive/issue_events_009793.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -137,7 +137,7 @@ archive/issue_events_004576.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4329",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4329#event-4576"
+    "url": "https://github.com/sagemath/sagetest/issues/4329#event-9793"
 }
 ```
 
@@ -158,6 +158,23 @@ archive/issue_comments_031692.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009794.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-15T09:53:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4329",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4329#event-9794"
+}
+```
 
 
 

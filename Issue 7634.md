@@ -537,7 +537,7 @@ Attachment [trac_7634-fix-pickle.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_events_007860.json:
+archive/issue_events_018153.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -545,6 +545,6 @@ archive/issue_events_007860.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7634#event-7860"
+    "url": "https://github.com/sagemath/sagetest/issues/7634#event-18153"
 }
 ```

@@ -82,6 +82,23 @@ Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket2470/tut.patch
 
 ---
 
+archive/issue_events_005822.json:
+```json
+{
+    "actor": "https://github.com/yqiang",
+    "created_at": "2008-03-22T00:00:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2470",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2470#event-5822"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016695.json:
 ```json
 {
@@ -122,7 +139,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002649.json:
+archive/issue_events_005823.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,7 +147,7 @@ archive/issue_events_002649.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2470",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2470#event-2649"
+    "url": "https://github.com/sagemath/sagetest/issues/2470#event-5823"
 }
 ```
 

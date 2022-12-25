@@ -308,6 +308,23 @@ Out[12]= z
 
 ---
 
+archive/issue_events_023594.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9505",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9505#event-23594"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091164.json:
 ```json
 {
@@ -344,6 +361,40 @@ archive/issue_comments_091165.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_023595.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9505",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9505#event-23595"
+}
+```
+
+
+
+---
+
+archive/issue_events_023596.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9505",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9505#event-23596"
+}
+```
 
 
 
@@ -573,7 +624,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009652.json:
+archive/issue_events_023597.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -581,6 +632,6 @@ archive/issue_events_009652.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9505#event-9652"
+    "url": "https://github.com/sagemath/sagetest/issues/9505#event-23597"
 }
 ```

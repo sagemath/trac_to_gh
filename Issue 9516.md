@@ -117,7 +117,7 @@ This ticket seems the same as #9002...
 
 ---
 
-archive/issue_events_009665.json:
+archive/issue_events_023633.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -125,7 +125,7 @@ archive/issue_events_009665.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9516",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9516#event-9665"
+    "url": "https://github.com/sagemath/sagetest/issues/9516#event-23633"
 }
 ```
 
@@ -164,3 +164,20 @@ archive/issue_comments_091344.json:
 ```
 
 The patches here and at #9002 are identical, but Karl-Dieter beat out William by two months, so I'm closing this ticket and will merge #9002.
+
+
+
+---
+
+archive/issue_events_023634.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-22T05:32:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9516",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9516#event-23634"
+}
+```

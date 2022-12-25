@@ -61,6 +61,23 @@ except probly not that specific to my system.
 
 ---
 
+archive/issue_events_009069.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-25T07:06:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3947",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3947#event-9069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028276.json:
 ```json
 {
@@ -195,7 +212,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004175.json:
+archive/issue_events_009070.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -203,6 +220,6 @@ archive/issue_events_004175.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3947",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3947#event-4175"
+    "url": "https://github.com/sagemath/sagetest/issues/3947#event-9070"
 }
 ```

@@ -68,6 +68,23 @@ Changing keywords from "" to "number field ideal order".
 
 ---
 
+archive/issue_events_014680.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2009-06-13T19:44:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#event-14680"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050010.json:
 ```json
 {
@@ -334,7 +351,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006517.json:
+archive/issue_events_014681.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -342,6 +359,6 @@ archive/issue_events_006517.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6273#event-6517"
+    "url": "https://github.com/sagemath/sagetest/issues/6273#event-14681"
 }
 ```

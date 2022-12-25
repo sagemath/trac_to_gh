@@ -171,6 +171,23 @@ Michael
 
 ---
 
+archive/issue_events_002067.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T14:10:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/758",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/758#event-2067"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004484.json:
 ```json
 {
@@ -207,7 +224,7 @@ This patch seems to be 'in' already. Closing therefor and sending e-mail to auth
 
 ---
 
-archive/issue_events_000853.json:
+archive/issue_events_002068.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -215,6 +232,6 @@ archive/issue_events_000853.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/758#event-853"
+    "url": "https://github.com/sagemath/sagetest/issues/758#event-2068"
 }
 ```

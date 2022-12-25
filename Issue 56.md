@@ -152,6 +152,23 @@ CPU times: user 0.47 s, sys: 0.03 s, total: 0.50 s
 
 ---
 
+archive/issue_events_000109.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T03:03:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/56",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/56#event-109"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000298.json:
 ```json
 {
@@ -286,7 +303,7 @@ timeit('bar()')
 
 ---
 
-archive/issue_events_000055.json:
+archive/issue_events_000110.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -294,7 +311,7 @@ archive/issue_events_000055.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/56#event-55"
+    "url": "https://github.com/sagemath/sagetest/issues/56#event-110"
 }
 ```
 
@@ -315,3 +332,37 @@ archive/issue_comments_000300.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000111.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-16T19:04:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/56",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/56#event-111"
+}
+```
+
+
+
+---
+
+archive/issue_events_000112.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-16T19:04:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/56",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/56#event-112"
+}
+```

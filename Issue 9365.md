@@ -95,7 +95,7 @@ This has been fixed by the fortran spkg updates in sage-4.5.alpha1.
 
 ---
 
-archive/issue_events_009518.json:
+archive/issue_events_023101.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -103,7 +103,7 @@ archive/issue_events_009518.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9365",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9365#event-9518"
+    "url": "https://github.com/sagemath/sagetest/issues/9365#event-23101"
 }
 ```
 

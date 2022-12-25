@@ -59,6 +59,23 @@ I think the file weyl_characters.py should be converted to Cython. The single mo
 
 ---
 
+archive/issue_events_010084.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-09T00:30:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4464",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4464#event-10084"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032904.json:
 ```json
 {
@@ -86,6 +103,74 @@ Michael
 
 ---
 
+archive/issue_events_010085.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-11-18T06:45:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4464",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4464#event-10085"
+}
+```
+
+
+
+---
+
+archive/issue_events_010086.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-11-18T06:45:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4464",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4464#event-10086"
+}
+```
+
+
+
+---
+
+archive/issue_events_010087.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-18T22:40:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4464",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4464#event-10087"
+}
+```
+
+
+
+---
+
+archive/issue_events_010088.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-18T22:40:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4464",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4464#event-10088"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032905.json:
 ```json
 {
@@ -108,7 +193,7 @@ Michael
 
 ---
 
-archive/issue_events_004712.json:
+archive/issue_events_010089.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -116,7 +201,7 @@ archive/issue_events_004712.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4464",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4464#event-4712"
+    "url": "https://github.com/sagemath/sagetest/issues/4464#event-10089"
 }
 ```
 

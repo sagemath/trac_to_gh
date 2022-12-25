@@ -67,6 +67,23 @@ Changing component from algebra to symbolics.
 
 ---
 
+archive/issue_events_015141.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-07-11T11:28:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#event-15141"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051486.json:
 ```json
 {
@@ -241,7 +258,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_006667.json:
+archive/issue_events_015142.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -249,7 +266,7 @@ archive/issue_events_006667.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6424",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6424#event-6667"
+    "url": "https://github.com/sagemath/sagetest/issues/6424#event-15142"
 }
 ```
 

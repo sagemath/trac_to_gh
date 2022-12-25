@@ -54,6 +54,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7095
 
 ---
 
+archive/issue_events_016776.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-02T17:45:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7095",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7095#event-16776"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058512.json:
 ```json
 {
@@ -429,6 +446,40 @@ Dave
 
 ---
 
+archive/issue_events_016777.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-14T01:58:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7095",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7095#event-16777"
+}
+```
+
+
+
+---
+
+archive/issue_events_016778.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-14T01:58:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7095",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7095#event-16778"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058525.json:
 ```json
 {
@@ -597,6 +648,40 @@ archive/issue_comments_058530.json:
 ```
 
 I'm declaring a total feature freeze on sage-4.3.  Also, this is clearly not a blocker for making a release so I changed it to critical.
+
+
+
+---
+
+archive/issue_events_016779.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:07:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7095",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7095#event-16779"
+}
+```
+
+
+
+---
+
+archive/issue_events_016780.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:07:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7095",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7095#event-16780"
+}
+```
 
 
 
@@ -2167,7 +2252,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007317.json:
+archive/issue_events_016781.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -2175,6 +2260,6 @@ archive/issue_events_007317.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7095#event-7317"
+    "url": "https://github.com/sagemath/sagetest/issues/7095#event-16781"
 }
 ```

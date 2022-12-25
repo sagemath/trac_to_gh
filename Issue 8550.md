@@ -184,7 +184,24 @@ thanks
 
 ---
 
-archive/issue_events_008733.json:
+archive/issue_events_020598.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2017-12-01T07:36:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8550",
+    "milestone": "sage-8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8550#event-20598"
+}
+```
+
+
+
+---
+
+archive/issue_events_020599.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -192,7 +209,7 @@ archive/issue_events_008733.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8550#event-8733"
+    "url": "https://github.com/sagemath/sagetest/issues/8550#event-20599"
 }
 ```
 

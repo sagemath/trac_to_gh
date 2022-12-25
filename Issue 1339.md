@@ -146,7 +146,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_001479.json:
+archive/issue_events_003478.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -154,7 +154,7 @@ archive/issue_events_001479.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1339",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1339#event-1479"
+    "url": "https://github.com/sagemath/sagetest/issues/1339#event-3478"
 }
 ```
 
@@ -197,3 +197,20 @@ This has been fixed by the deprecation of quaddouble via #3762 by Robert Bradsha
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003479.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-08T03:12:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1339",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1339#event-3479"
+}
+```

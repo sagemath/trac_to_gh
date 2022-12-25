@@ -194,7 +194,7 @@ Looks good to me.  Michael says that the values in the doctest agree with those 
 
 ---
 
-archive/issue_events_006218.json:
+archive/issue_events_013986.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -202,7 +202,7 @@ archive/issue_events_006218.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5963",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5963#event-6218"
+    "url": "https://github.com/sagemath/sagetest/issues/5963#event-13986"
 }
 ```
 

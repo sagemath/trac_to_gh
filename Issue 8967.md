@@ -69,6 +69,23 @@ Attachment [trac_8967.patch](tarball://root/attachments/some-uuid/ticket8967/tra
 
 ---
 
+archive/issue_events_021899.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-15T02:58:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8967",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8967#event-21899"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082509.json:
 ```json
 {
@@ -232,7 +249,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009117.json:
+archive/issue_events_021900.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -240,6 +257,6 @@ archive/issue_events_009117.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#event-9117"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#event-21900"
 }
 ```

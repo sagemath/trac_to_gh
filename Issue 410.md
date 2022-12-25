@@ -100,6 +100,23 @@ Attachment [cpp_nuances.patch](tarball://root/attachments/some-uuid/ticket410/cp
 
 ---
 
+archive/issue_events_000987.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T12:58:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/410",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/410#event-987"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002013.json:
 ```json
 {
@@ -118,7 +135,7 @@ I took the liberties of marking this fixed since it has been in the documentatio
 
 ---
 
-archive/issue_events_000436.json:
+archive/issue_events_000988.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/jbmohler",
@@ -126,7 +143,7 @@ archive/issue_events_000436.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/410",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/410#event-436"
+    "url": "https://github.com/sagemath/sagetest/issues/410#event-988"
 }
 ```
 
@@ -147,3 +164,37 @@ archive/issue_comments_002014.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000989.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-20T19:16:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/410",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/410#event-989"
+}
+```
+
+
+
+---
+
+archive/issue_events_000990.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-20T19:16:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/410",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/410#event-990"
+}
+```

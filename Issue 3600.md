@@ -540,7 +540,7 @@ I think we are going to have trouble getting this rebased and merged, given it d
 
 ---
 
-archive/issue_events_003819.json:
+archive/issue_events_008247.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -548,7 +548,7 @@ archive/issue_events_003819.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3600#event-3819"
+    "url": "https://github.com/sagemath/sagetest/issues/3600#event-8247"
 }
 ```
 
@@ -587,3 +587,20 @@ archive/issue_comments_025401.json:
 ```
 
 Based on the code at #4745, I think we can close this as invalid.  There are a few things that might be worth pulling out of here.
+
+
+
+---
+
+archive/issue_events_008248.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-12-11T14:57:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3600",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3600#event-8248"
+}
+```

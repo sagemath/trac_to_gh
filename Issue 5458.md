@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5458
 
 ---
 
-archive/issue_events_005713.json:
+archive/issue_events_012754.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -47,7 +47,7 @@ archive/issue_events_005713.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5458",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5458#event-5713"
+    "url": "https://github.com/sagemath/sagetest/issues/5458#event-12754"
 }
 ```
 
@@ -68,6 +68,23 @@ archive/issue_comments_042305.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_012755.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-23T14:30:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5458",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5458#event-12755"
+}
+```
 
 
 

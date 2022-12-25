@@ -59,6 +59,23 @@ Michael
 
 ---
 
+archive/issue_events_013592.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-16T05:47:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#event-13592"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045280.json:
 ```json
 {
@@ -78,7 +95,7 @@ http://trac.sagemath.org/sage_trac/ticket/6355
 
 ---
 
-archive/issue_events_006040.json:
+archive/issue_events_013593.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -86,7 +103,7 @@ archive/issue_events_006040.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5793#event-6040"
+    "url": "https://github.com/sagemath/sagetest/issues/5793#event-13593"
 }
 ```
 
@@ -188,7 +205,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006041.json:
+archive/issue_events_013594.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -196,7 +213,7 @@ archive/issue_events_006041.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5793#event-6041"
+    "url": "https://github.com/sagemath/sagetest/issues/5793#event-13594"
 }
 ```
 
@@ -1314,7 +1331,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006042.json:
+archive/issue_events_013595.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1322,6 +1339,6 @@ archive/issue_events_006042.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5793#event-6042"
+    "url": "https://github.com/sagemath/sagetest/issues/5793#event-13595"
 }
 ```

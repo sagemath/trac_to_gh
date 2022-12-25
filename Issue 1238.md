@@ -60,6 +60,23 @@ Attachment [a(2).hg](tarball://root/attachments/some-uuid/ticket1238/a(2).hg) by
 
 ---
 
+archive/issue_events_003273.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-24T10:51:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1238",
+    "milestone": "sage-2.8.14",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1238#event-3273"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007718.json:
 ```json
 {
@@ -100,7 +117,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001378.json:
+archive/issue_events_003274.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -108,6 +125,6 @@ archive/issue_events_001378.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1238",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1238#event-1378"
+    "url": "https://github.com/sagemath/sagetest/issues/1238#event-3274"
 }
 ```

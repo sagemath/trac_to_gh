@@ -58,6 +58,23 @@ Changing keywords from "" to "Puiseux".
 
 ---
 
+archive/issue_events_022888.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-03-16T16:18:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9289",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9289#event-22888"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087347.json:
 ```json
 {
@@ -89,6 +106,40 @@ archive/issue_comments_087348.json:
 ```
 
 Never mind. I thought this was a duplicate.
+
+
+
+---
+
+archive/issue_events_022889.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-03-16T16:20:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9289",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9289#event-22889"
+}
+```
+
+
+
+---
+
+archive/issue_events_022890.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-03-16T16:20:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9289",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9289#event-22890"
+}
+```
 
 
 

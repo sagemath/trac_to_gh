@@ -237,7 +237,7 @@ To close this ticket, I think we need a quick update to README.txt to indicate w
 
 ---
 
-archive/issue_events_009006.json:
+archive/issue_events_021575.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -245,7 +245,24 @@ archive/issue_events_009006.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8841",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8841#event-9006"
+    "url": "https://github.com/sagemath/sagetest/issues/8841#event-21575"
+}
+```
+
+
+
+---
+
+archive/issue_events_021576.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-09T00:48:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8841",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8841#event-21576"
 }
 ```
 

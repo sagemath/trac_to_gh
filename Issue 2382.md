@@ -157,7 +157,7 @@ Merged trac_2382.3.patch in Sage 2.10.3.rc2
 
 ---
 
-archive/issue_events_002558.json:
+archive/issue_events_005631.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -165,6 +165,6 @@ archive/issue_events_002558.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2382",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2382#event-2558"
+    "url": "https://github.com/sagemath/sagetest/issues/2382#event-5631"
 }
 ```

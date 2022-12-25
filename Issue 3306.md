@@ -260,7 +260,24 @@ Changing keywords from "editor_mabshoff" to "".
 
 ---
 
-archive/issue_events_003524.json:
+archive/issue_events_007426.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-03-11T15:39:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#event-7426"
+}
+```
+
+
+
+---
+
+archive/issue_events_007427.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -268,7 +285,7 @@ archive/issue_events_003524.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3306#event-3524"
+    "url": "https://github.com/sagemath/sagetest/issues/3306#event-7427"
 }
 ```
 

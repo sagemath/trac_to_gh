@@ -509,6 +509,23 @@ We can add VERSION.txt to .hgignore; I think that should do it.
 
 ---
 
+archive/issue_events_023322.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-09-29T22:09:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9434",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9434#event-23322"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090115.json:
 ```json
 {
@@ -1231,7 +1248,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009589.json:
+archive/issue_events_023323.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1239,7 +1256,7 @@ archive/issue_events_009589.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9434#event-9589"
+    "url": "https://github.com/sagemath/sagetest/issues/9434#event-23323"
 }
 ```
 
@@ -1421,7 +1438,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009590.json:
+archive/issue_events_023324.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1429,7 +1446,7 @@ archive/issue_events_009590.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9434#event-9590"
+    "url": "https://github.com/sagemath/sagetest/issues/9434#event-23324"
 }
 ```
 
@@ -1948,7 +1965,7 @@ Looks good to me ("merged" changed to rc0 because there is an additional patch).
 
 ---
 
-archive/issue_events_009591.json:
+archive/issue_events_023325.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1956,7 +1973,7 @@ archive/issue_events_009591.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9434#event-9591"
+    "url": "https://github.com/sagemath/sagetest/issues/9434#event-23325"
 }
 ```
 

@@ -227,7 +227,7 @@ Attachment [sage-3586.patch](tarball://root/attachments/some-uuid/ticket3586/sag
 
 ---
 
-archive/issue_events_003803.json:
+archive/issue_events_008207.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -235,7 +235,7 @@ archive/issue_events_003803.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3586",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3586#event-3803"
+    "url": "https://github.com/sagemath/sagetest/issues/3586#event-8207"
 }
 ```
 

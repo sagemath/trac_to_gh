@@ -66,6 +66,23 @@ Is there still an existing problem, or has it disappeared/been solved?
 
 ---
 
+archive/issue_events_023063.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9348",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9348#event-23063"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088598.json:
 ```json
 {
@@ -79,6 +96,40 @@ archive/issue_comments_088598.json:
 ```
 
 Changing status from needs_info to positive_review.
+
+
+
+---
+
+archive/issue_events_023064.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-10-03T10:22:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9348",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9348#event-23064"
+}
+```
+
+
+
+---
+
+archive/issue_events_023065.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-10-03T10:22:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9348",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9348#event-23065"
+}
+```
 
 
 
@@ -102,7 +153,7 @@ Nobody seems to care...
 
 ---
 
-archive/issue_events_009501.json:
+archive/issue_events_023066.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -110,7 +161,7 @@ archive/issue_events_009501.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9348",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9348#event-9501"
+    "url": "https://github.com/sagemath/sagetest/issues/9348#event-23066"
 }
 ```
 

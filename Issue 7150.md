@@ -93,6 +93,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_016903.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
+    "created_at": "2009-10-08T07:43:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7150",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7150#event-16903"
+}
+```
+
+
+
+---
+
+archive/issue_events_016904.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-10T19:03:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7150",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7150#event-16904"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059131.json:
 ```json
 {
@@ -147,7 +181,24 @@ Yep, I think we can close this.
 
 ---
 
-archive/issue_events_007370.json:
+archive/issue_events_016905.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-16T05:00:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7150",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7150#event-16905"
+}
+```
+
+
+
+---
+
+archive/issue_events_016906.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -155,6 +206,6 @@ archive/issue_events_007370.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7150",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7150#event-7370"
+    "url": "https://github.com/sagemath/sagetest/issues/7150#event-16906"
 }
 ```

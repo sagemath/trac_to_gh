@@ -60,6 +60,125 @@ would it not be a nice and simple fix to just change the button from "invite col
 
 ---
 
+archive/issue_events_024974.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24974"
+}
+```
+
+
+
+---
+
+archive/issue_events_024975.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24975"
+}
+```
+
+
+
+---
+
+archive/issue_events_024976.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24976"
+}
+```
+
+
+
+---
+
+archive/issue_events_024977.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24977"
+}
+```
+
+
+
+---
+
+archive/issue_events_024978.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24978"
+}
+```
+
+
+
+---
+
+archive/issue_events_024979.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24979"
+}
+```
+
+
+
+---
+
+archive/issue_events_024980.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24980"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098395.json:
 ```json
 {
@@ -73,6 +192,40 @@ archive/issue_comments_098395.json:
 ```
 
 Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.
+
+
+
+---
+
+archive/issue_events_024981.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-18T00:36:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24981"
+}
+```
+
+
+
+---
+
+archive/issue_events_024982.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-18T00:36:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9908",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24982"
+}
+```
 
 
 
@@ -114,7 +267,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_010035.json:
+archive/issue_events_024983.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -122,6 +275,6 @@ archive/issue_events_010035.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9908",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9908#event-10035"
+    "url": "https://github.com/sagemath/sagetest/issues/9908#event-24983"
 }
 ```

@@ -183,6 +183,23 @@ Looks good to me.
 
 ---
 
+archive/issue_events_014528.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-16T08:15:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6189",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6189#event-14528"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049352.json:
 ```json
 {
@@ -201,7 +218,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006437.json:
+archive/issue_events_014529.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -209,6 +226,6 @@ archive/issue_events_006437.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6189",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6189#event-6437"
+    "url": "https://github.com/sagemath/sagetest/issues/6189#event-14529"
 }
 ```

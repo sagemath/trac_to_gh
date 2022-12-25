@@ -556,7 +556,7 @@ Positive review. (I'm quite sure malb will confirm)
 
 ---
 
-archive/issue_events_009108.json:
+archive/issue_events_021873.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -564,7 +564,7 @@ archive/issue_events_009108.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8955#event-9108"
+    "url": "https://github.com/sagemath/sagetest/issues/8955#event-21873"
 }
 ```
 

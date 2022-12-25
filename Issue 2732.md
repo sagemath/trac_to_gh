@@ -112,7 +112,7 @@ Closing this, since we've dropped support for a Debian package.
 
 ---
 
-archive/issue_events_002920.json:
+archive/issue_events_006359.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -120,7 +120,7 @@ archive/issue_events_002920.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2732",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2732#event-2920"
+    "url": "https://github.com/sagemath/sagetest/issues/2732#event-6359"
 }
 ```
 
@@ -141,3 +141,20 @@ archive/issue_comments_018768.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_006360.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-04-19T10:10:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2732",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2732#event-6360"
+}
+```

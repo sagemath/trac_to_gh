@@ -51,6 +51,23 @@ Changing component from build to porting: AIX or HP-UX.
 
 ---
 
+archive/issue_events_017004.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-08T14:42:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7183",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7183#event-17004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059372.json:
 ```json
 {
@@ -105,7 +122,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007402.json:
+archive/issue_events_017005.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -113,7 +130,7 @@ archive/issue_events_007402.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7183",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7183#event-7402"
+    "url": "https://github.com/sagemath/sagetest/issues/7183#event-17005"
 }
 ```
 

@@ -146,7 +146,7 @@ Merged trac_3996-rebase.patch in Sage 3.1.2.alpha3
 
 ---
 
-archive/issue_events_004225.json:
+archive/issue_events_009155.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -154,7 +154,7 @@ archive/issue_events_004225.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3996",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3996#event-4225"
+    "url": "https://github.com/sagemath/sagetest/issues/3996#event-9155"
 }
 ```
 

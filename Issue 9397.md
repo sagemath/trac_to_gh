@@ -472,6 +472,23 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_023178.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-09-13T08:58:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#event-23178"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089374.json:
 ```json
 {
@@ -490,7 +507,7 @@ This problem was fixed by #8059  which was merged in sage 4.5.3.alpha1.
 
 ---
 
-archive/issue_events_009554.json:
+archive/issue_events_023179.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -498,6 +515,6 @@ archive/issue_events_009554.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9397",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9397#event-9554"
+    "url": "https://github.com/sagemath/sagetest/issues/9397#event-23179"
 }
 ```

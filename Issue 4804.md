@@ -92,6 +92,23 @@ Changing assignee from @burcin to @mwhansen.
 
 ---
 
+archive/issue_events_010989.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-12-15T20:13:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4804",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4804#event-10989"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036342.json:
 ```json
 {
@@ -248,6 +265,40 @@ This seems to work.  I'm not sure that I agree that partial derivatives look bet
 
 ---
 
+archive/issue_events_010990.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T01:21:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4804",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4804#event-10990"
+}
+```
+
+
+
+---
+
+archive/issue_events_010991.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T01:21:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4804",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4804#event-10991"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036349.json:
 ```json
 {
@@ -284,7 +335,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005046.json:
+archive/issue_events_010992.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -292,6 +343,6 @@ archive/issue_events_005046.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4804",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4804#event-5046"
+    "url": "https://github.com/sagemath/sagetest/issues/4804#event-10992"
 }
 ```

@@ -123,7 +123,7 @@ Thanks for checking into this guys.  It turns out there were a copy of gettext i
 
 ---
 
-archive/issue_events_007466.json:
+archive/issue_events_017157.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -131,6 +131,6 @@ archive/issue_events_007466.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7247",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7247#event-7466"
+    "url": "https://github.com/sagemath/sagetest/issues/7247#event-17157"
 }
 ```

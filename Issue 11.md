@@ -87,7 +87,7 @@ calling into maxima.
 
 ---
 
-archive/issue_events_000011.json:
+archive/issue_events_000020.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -95,6 +95,6 @@ archive/issue_events_000011.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/11",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/11#event-11"
+    "url": "https://github.com/sagemath/sagetest/issues/11#event-20"
 }
 ```

@@ -886,6 +886,23 @@ PS: it seems the "stopgaps" were deleted, but I don't know which value it was...
 
 ---
 
+archive/issue_events_022423.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#event-22423"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084889.json:
 ```json
 {
@@ -924,6 +941,40 @@ sage: while True:
 ```
 
 Paul
+
+
+
+---
+
+archive/issue_events_022424.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#event-22424"
+}
+```
+
+
+
+---
+
+archive/issue_events_022425.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#event-22425"
+}
+```
 
 
 
@@ -1305,6 +1356,40 @@ Will be fixed by the pynac update at #14780
 
 ---
 
+archive/issue_events_022426.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2014-03-20T14:06:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#event-22426"
+}
+```
+
+
+
+---
+
+archive/issue_events_022427.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2014-03-20T14:06:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#event-22427"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084904.json:
 ```json
 {
@@ -1377,6 +1462,40 @@ archive/issue_comments_084907.json:
 ```
 
 Changing status from positive_review to needs_review.
+
+
+
+---
+
+archive/issue_events_022428.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2014-03-22T14:39:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#event-22428"
+}
+```
+
+
+
+---
+
+archive/issue_events_022429.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2014-03-22T14:39:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#event-22429"
+}
+```
 
 
 
@@ -1494,7 +1613,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009287.json:
+archive/issue_events_022430.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1502,6 +1621,6 @@ archive/issue_events_009287.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9129",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9129#event-9287"
+    "url": "https://github.com/sagemath/sagetest/issues/9129#event-22430"
 }
 ```

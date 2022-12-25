@@ -262,6 +262,23 @@ Actually, the "is 1" was intentional, as I wasn't thinking of taking that path i
 
 ---
 
+archive/issue_events_018514.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-09-25T10:49:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7741",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7741#event-18514"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066423.json:
 ```json
 {
@@ -316,7 +333,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007953.json:
+archive/issue_events_018515.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -324,6 +341,6 @@ archive/issue_events_007953.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7741",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7741#event-7953"
+    "url": "https://github.com/sagemath/sagetest/issues/7741#event-18515"
 }
 ```

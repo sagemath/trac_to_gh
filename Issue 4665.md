@@ -33,6 +33,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4665
 
 ---
 
+archive/issue_events_010659.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-02T05:21:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4665",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4665#event-10659"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035048.json:
 ```json
 {
@@ -46,6 +63,40 @@ archive/issue_comments_035048.json:
 ```
 
 Attachment [trac_4665.patch](tarball://root/attachments/some-uuid/ticket4665/trac_4665.patch) by @williamstein created at 2009-01-24 06:51:38
+
+
+
+---
+
+archive/issue_events_010660.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-24T06:52:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4665",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4665#event-10660"
+}
+```
+
+
+
+---
+
+archive/issue_events_010661.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-24T06:52:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4665",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4665#event-10661"
+}
+```
 
 
 
@@ -109,7 +160,7 @@ Merged in Sage 3.3.alpha2
 
 ---
 
-archive/issue_events_004913.json:
+archive/issue_events_010662.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -117,6 +168,6 @@ archive/issue_events_004913.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4665",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4665#event-4913"
+    "url": "https://github.com/sagemath/sagetest/issues/4665#event-10662"
 }
 ```

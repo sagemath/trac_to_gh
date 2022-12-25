@@ -117,7 +117,7 @@ The patch looks great. I would suggest making an option that would just return S
 
 ---
 
-archive/issue_events_001575.json:
+archive/issue_events_003672.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -125,7 +125,7 @@ archive/issue_events_001575.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1428#event-1575"
+    "url": "https://github.com/sagemath/sagetest/issues/1428#event-3672"
 }
 ```
 

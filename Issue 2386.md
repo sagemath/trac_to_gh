@@ -55,7 +55,7 @@ Discuss!
 
 ---
 
-archive/issue_events_002562.json:
+archive/issue_events_005636.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -63,7 +63,7 @@ archive/issue_events_002562.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2386",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2386#event-2562"
+    "url": "https://github.com/sagemath/sagetest/issues/2386#event-5636"
 }
 ```
 
@@ -102,3 +102,20 @@ archive/issue_comments_016074.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_005637.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-05-06T17:35:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2386",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2386#event-5637"
+}
+```

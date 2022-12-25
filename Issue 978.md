@@ -129,7 +129,7 @@ applied to 2.8.9.alpha1
 
 ---
 
-archive/issue_events_001099.json:
+archive/issue_events_002705.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -137,6 +137,6 @@ archive/issue_events_001099.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/978",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/978#event-1099"
+    "url": "https://github.com/sagemath/sagetest/issues/978#event-2705"
 }
 ```

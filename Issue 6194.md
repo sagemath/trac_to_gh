@@ -52,7 +52,7 @@ fix to sage.symbolic.pynac.py_mod
 
 ---
 
-archive/issue_events_006442.json:
+archive/issue_events_014535.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -60,7 +60,7 @@ archive/issue_events_006442.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6194",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6194#event-6442"
+    "url": "https://github.com/sagemath/sagetest/issues/6194#event-14535"
 }
 ```
 

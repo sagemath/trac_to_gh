@@ -63,6 +63,23 @@ Changing component from commutative algebra to packages.
 
 ---
 
+archive/issue_events_004462.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:01:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1839",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1839#event-4462"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011613.json:
 ```json
 {
@@ -302,6 +319,40 @@ I consider my having read over it as a review and my little integration patch as
 
 ---
 
+archive/issue_events_004463.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-08T00:32:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1839",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1839#event-4463"
+}
+```
+
+
+
+---
+
+archive/issue_events_004464.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-08T00:32:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1839",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1839#event-4464"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011623.json:
 ```json
 {
@@ -324,7 +375,7 @@ Michael
 
 ---
 
-archive/issue_events_001998.json:
+archive/issue_events_004465.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -332,7 +383,7 @@ archive/issue_events_001998.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1839#event-1998"
+    "url": "https://github.com/sagemath/sagetest/issues/1839#event-4465"
 }
 ```
 

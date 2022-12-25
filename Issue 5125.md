@@ -168,7 +168,7 @@ The attached patch fixes the issue for me. I've added a second patch which docum
 
 ---
 
-archive/issue_events_005374.json:
+archive/issue_events_011859.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -176,7 +176,7 @@ archive/issue_events_005374.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5125#event-5374"
+    "url": "https://github.com/sagemath/sagetest/issues/5125#event-11859"
 }
 ```
 

@@ -156,7 +156,7 @@ It seems that problem has gone away with Sage 4.3.1.
 
 ---
 
-archive/issue_events_005811.json:
+archive/issue_events_013092.json:
 ```json
 {
     "actor": "https://github.com/zimmermann6",
@@ -164,7 +164,7 @@ archive/issue_events_005811.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5565",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5565#event-5811"
+    "url": "https://github.com/sagemath/sagetest/issues/5565#event-13092"
 }
 ```
 
@@ -185,6 +185,23 @@ archive/issue_comments_043246.json:
 ```
 
 Make sure you understand the procedure for closing tickets. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for more information.
+
+
+
+---
+
+archive/issue_events_013093.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-05T21:11:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5565",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5565#event-13093"
+}
+```
 
 
 

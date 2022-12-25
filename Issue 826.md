@@ -46,6 +46,23 @@ the patch!
 
 ---
 
+archive/issue_events_002329.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-04T19:30:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/826",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/826#event-2329"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005106.json:
 ```json
 {
@@ -64,7 +81,7 @@ Attachment [symbolic_coercion.hg](tarball://root/attachments/some-uuid/ticket826
 
 ---
 
-archive/issue_events_000937.json:
+archive/issue_events_002330.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,7 +89,7 @@ archive/issue_events_000937.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/826",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/826#event-937"
+    "url": "https://github.com/sagemath/sagetest/issues/826#event-2330"
 }
 ```
 

@@ -75,7 +75,24 @@ sage: x = PolynomialRing(Integers(100),'x').gen()
 
 ---
 
-archive/issue_events_000044.json:
+archive/issue_events_000096.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:55:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/45",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/45#event-96"
+}
+```
+
+
+
+---
+
+archive/issue_events_000097.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -83,7 +100,7 @@ archive/issue_events_000044.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/45",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/45#event-44"
+    "url": "https://github.com/sagemath/sagetest/issues/45#event-97"
 }
 ```
 

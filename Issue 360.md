@@ -390,6 +390,23 @@ thanks
 
 ---
 
+archive/issue_events_000845.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-04-04T18:35:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/360",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/360#event-845"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001745.json:
 ```json
 {
@@ -426,7 +443,7 @@ closing positively reviewed duplicates
 
 ---
 
-archive/issue_events_000382.json:
+archive/issue_events_000846.json:
 ```json
 {
     "actor": "https://github.com/videlec",
@@ -434,7 +451,7 @@ archive/issue_events_000382.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/360#event-382"
+    "url": "https://github.com/sagemath/sagetest/issues/360#event-846"
 }
 ```
 

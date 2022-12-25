@@ -160,7 +160,7 @@ AFAIK it's supposed to be in the optional repository, but there were issues with
 
 ---
 
-archive/issue_events_006092.json:
+archive/issue_events_013738.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -168,7 +168,7 @@ archive/issue_events_006092.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5840#event-6092"
+    "url": "https://github.com/sagemath/sagetest/issues/5840#event-13738"
 }
 ```
 

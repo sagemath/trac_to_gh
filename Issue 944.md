@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/944
 
 ---
 
-archive/issue_events_001064.json:
+archive/issue_events_002606.json:
 ```json
 {
     "actor": "https://github.com/garyfurnish",
@@ -53,7 +53,7 @@ archive/issue_events_001064.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/944",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/944#event-1064"
+    "url": "https://github.com/sagemath/sagetest/issues/944#event-2606"
 }
 ```
 
@@ -92,3 +92,20 @@ archive/issue_comments_005755.json:
 ```
 
 Fixed in sage-ptest
+
+
+
+---
+
+archive/issue_events_002607.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-21T14:18:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/944",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/944#event-2607"
+}
+```

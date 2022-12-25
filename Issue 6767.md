@@ -83,7 +83,7 @@ Applied OK against Sage 4.1.1. Passed all doctests. The change looks reasonable.
 
 ---
 
-archive/issue_events_006999.json:
+archive/issue_events_015946.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -91,7 +91,7 @@ archive/issue_events_006999.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6767",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6767#event-6999"
+    "url": "https://github.com/sagemath/sagetest/issues/6767#event-15946"
 }
 ```
 

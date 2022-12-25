@@ -61,6 +61,23 @@ Michael
 
 ---
 
+archive/issue_events_002646.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T13:59:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/959",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/959#event-2646"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005825.json:
 ```json
 {
@@ -110,6 +127,40 @@ archive/issue_comments_005827.json:
 ```
 
 We can't just turn it off because they don't have an option for that for their configure script. Also, fiddling with that script is tricky because it is created from a configure.in newer autoconfs don't understand. I'll report this upstream.
+
+
+
+---
+
+archive/issue_events_002647.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:10:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/959",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/959#event-2647"
+}
+```
+
+
+
+---
+
+archive/issue_events_002648.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:10:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/959",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/959#event-2648"
+}
+```
 
 
 
@@ -179,7 +230,7 @@ applied to 2.8.11.alpha0: this should have been fixed via the new Singular.spkg 
 
 ---
 
-archive/issue_events_001081.json:
+archive/issue_events_002649.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -187,7 +238,7 @@ archive/issue_events_001081.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/959",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/959#event-1081"
+    "url": "https://github.com/sagemath/sagetest/issues/959#event-2649"
 }
 ```
 

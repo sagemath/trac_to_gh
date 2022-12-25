@@ -121,7 +121,24 @@ Since ticket #4492 has been merged, this can now be closed too. Jeroen, could yo
 
 ---
 
-archive/issue_events_002606.json:
+archive/issue_events_005735.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-16T10:36:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2429",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2429#event-5735"
+}
+```
+
+
+
+---
+
+archive/issue_events_005736.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -129,7 +146,7 @@ archive/issue_events_002606.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2429#event-2606"
+    "url": "https://github.com/sagemath/sagetest/issues/2429#event-5736"
 }
 ```
 

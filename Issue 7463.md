@@ -109,7 +109,7 @@ I couldn't resist to review this right on the spot. What should I say? I even te
 
 ---
 
-archive/issue_events_007689.json:
+archive/issue_events_017693.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -117,7 +117,7 @@ archive/issue_events_007689.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7463",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7463#event-7689"
+    "url": "https://github.com/sagemath/sagetest/issues/7463#event-17693"
 }
 ```
 

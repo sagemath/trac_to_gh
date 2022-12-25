@@ -171,6 +171,23 @@ Perhaps this patch is already in a more recent version of maxima?
 
 ---
 
+archive/issue_events_023717.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-09-26T00:07:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9538",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9538#event-23717"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091748.json:
 ```json
 {
@@ -733,7 +750,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009690.json:
+archive/issue_events_023718.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -741,7 +758,7 @@ archive/issue_events_009690.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9538#event-9690"
+    "url": "https://github.com/sagemath/sagetest/issues/9538#event-23718"
 }
 ```
 

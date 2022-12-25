@@ -86,7 +86,7 @@ fixed by patch:
 
 ---
 
-archive/issue_events_000660.json:
+archive/issue_events_001602.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -94,7 +94,7 @@ archive/issue_events_000660.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/602",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/602#event-660"
+    "url": "https://github.com/sagemath/sagetest/issues/602#event-1602"
 }
 ```
 

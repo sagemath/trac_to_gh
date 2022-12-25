@@ -285,6 +285,23 @@ Attachment [lazy_attributes-4371-nt.2.patch](tarball://root/attachments/some-uui
 
 ---
 
+archive/issue_events_009888.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-02-13T23:33:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4371",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4371#event-9888"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032076.json:
 ```json
 {
@@ -352,7 +369,7 @@ Michael
 
 ---
 
-archive/issue_events_004616.json:
+archive/issue_events_009889.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -360,7 +377,7 @@ archive/issue_events_004616.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4371#event-4616"
+    "url": "https://github.com/sagemath/sagetest/issues/4371#event-9889"
 }
 ```
 

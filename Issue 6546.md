@@ -43,6 +43,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/6546
 
 ---
 
+archive/issue_events_015435.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15435"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053280.json:
 ```json
 {
@@ -56,6 +73,74 @@ archive/issue_comments_053280.json:
 ```
 
 It would seem this has gone backwards.  Now `.plot()` complains about not understanding `thickness`.  Drawing a (graphics primitive) `line` understands `thickness`.  So it should be a matter of making `thickness` a valid option of a graph plot and passing it to `matplotlib` in `graphs/graph_plot.py` when drawing (straight) edges.  Maybe curved edges would be just as easy?
+
+
+
+---
+
+archive/issue_events_015436.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15436"
+}
+```
+
+
+
+---
+
+archive/issue_events_015437.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15437"
+}
+```
+
+
+
+---
+
+archive/issue_events_015438.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15438"
+}
+```
+
+
+
+---
+
+archive/issue_events_015439.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15439"
+}
+```
 
 
 
@@ -76,6 +161,74 @@ archive/issue_comments_053281.json:
 A preliminary patch is attached. Just wanted to get an implementation out there, so that others can look at it or enhance it.
 ----
 New commits:
+
+
+
+---
+
+archive/issue_events_015440.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15440"
+}
+```
+
+
+
+---
+
+archive/issue_events_015441.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15441"
+}
+```
+
+
+
+---
+
+archive/issue_events_015442.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2018-04-20T15:35:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15442"
+}
+```
+
+
+
+---
+
+archive/issue_events_015443.json:
+```json
+{
+    "actor": "https://github.com/slel",
+    "created_at": "2018-04-20T15:35:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6546",
+    "milestone": "sage-8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6546#event-15443"
+}
+```
 
 
 

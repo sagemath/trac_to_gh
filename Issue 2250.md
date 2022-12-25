@@ -182,7 +182,7 @@ Total time for all tests: 14.4 seconds
 
 ---
 
-archive/issue_events_002420.json:
+archive/issue_events_005338.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -190,7 +190,7 @@ archive/issue_events_002420.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2250",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2250#event-2420"
+    "url": "https://github.com/sagemath/sagetest/issues/2250#event-5338"
 }
 ```
 

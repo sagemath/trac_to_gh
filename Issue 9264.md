@@ -334,7 +334,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009422.json:
+archive/issue_events_022822.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -342,7 +342,7 @@ archive/issue_events_009422.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9264#event-9422"
+    "url": "https://github.com/sagemath/sagetest/issues/9264#event-22822"
 }
 ```
 
@@ -386,7 +386,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009423.json:
+archive/issue_events_022823.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -394,7 +394,7 @@ archive/issue_events_009423.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9264#event-9423"
+    "url": "https://github.com/sagemath/sagetest/issues/9264#event-22823"
 }
 ```
 
@@ -688,7 +688,24 @@ Could be the first time I ever use `sage -info ...` (which ought to dump `SPKG.t
 
 ---
 
-archive/issue_events_009424.json:
+archive/issue_events_022824.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-28T20:40:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9264",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9264#event-22824"
+}
+```
+
+
+
+---
+
+archive/issue_events_022825.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -696,7 +713,7 @@ archive/issue_events_009424.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9264#event-9424"
+    "url": "https://github.com/sagemath/sagetest/issues/9264#event-22825"
 }
 ```
 

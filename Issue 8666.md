@@ -135,7 +135,7 @@ This is a duplicate of #8541. Since this already has a patch with positive revie
 
 ---
 
-archive/issue_events_008840.json:
+archive/issue_events_021010.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -143,7 +143,7 @@ archive/issue_events_008840.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8666",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8666#event-8840"
+    "url": "https://github.com/sagemath/sagetest/issues/8666#event-21010"
 }
 ```
 

@@ -49,6 +49,23 @@ I've exposed (wrapped) mpmath's `bell()` in #10170.
 
 ---
 
+archive/issue_events_018704.json:
+```json
+{
+    "actor": "https://github.com/tscrim",
+    "created_at": "2013-03-28T21:39:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7812",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7812#event-18704"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067482.json:
 ```json
 {
@@ -85,7 +102,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008026.json:
+archive/issue_events_018705.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -93,7 +110,7 @@ archive/issue_events_008026.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7812",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7812#event-8026"
+    "url": "https://github.com/sagemath/sagetest/issues/7812#event-18705"
 }
 ```
 

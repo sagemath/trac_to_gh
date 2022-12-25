@@ -205,7 +205,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004299.json:
+archive/issue_events_009277.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -213,7 +213,7 @@ archive/issue_events_004299.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4065#event-4299"
+    "url": "https://github.com/sagemath/sagetest/issues/4065#event-9277"
 }
 ```
 
@@ -312,7 +312,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004300.json:
+archive/issue_events_009278.json:
 ```json
 {
     "actor": "https://github.com/jicama",
@@ -320,7 +320,24 @@ archive/issue_events_004300.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4065#event-4300"
+    "url": "https://github.com/sagemath/sagetest/issues/4065#event-9278"
+}
+```
+
+
+
+---
+
+archive/issue_events_009279.json:
+```json
+{
+    "actor": "https://github.com/jicama",
+    "created_at": "2008-09-09T20:58:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#event-9279"
 }
 ```
 
@@ -382,7 +399,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_004301.json:
+archive/issue_events_009280.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -390,7 +407,7 @@ archive/issue_events_004301.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4065#event-4301"
+    "url": "https://github.com/sagemath/sagetest/issues/4065#event-9280"
 }
 ```
 
@@ -415,3 +432,37 @@ The problem here is likely a clisp linked against either the system or a MacPort
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_009281.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-31T19:30:10Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#event-9281"
+}
+```
+
+
+
+---
+
+archive/issue_events_009282.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-31T19:30:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#event-9282"
+}
+```

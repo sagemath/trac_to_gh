@@ -397,7 +397,7 @@ I just updated the path to replace MATH by math :-)
 
 ---
 
-archive/issue_events_007818.json:
+archive/issue_events_018022.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -405,7 +405,7 @@ archive/issue_events_007818.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7593#event-7818"
+    "url": "https://github.com/sagemath/sagetest/issues/7593#event-18022"
 }
 ```
 
@@ -426,3 +426,20 @@ archive/issue_comments_064637.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018023.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:44:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#event-18023"
+}
+```

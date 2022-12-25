@@ -60,6 +60,23 @@ Fixed layout.
 
 ---
 
+archive/issue_events_015154.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-11-15T13:14:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#event-15154"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051523.json:
 ```json
 {
@@ -259,6 +276,40 @@ I added a new patch (to be applied instead of the old one) that also handles neg
 
 ---
 
+archive/issue_events_015155.json:
+```json
+{
+    "actor": "https://github.com/wjp",
+    "created_at": "2010-01-21T00:32:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#event-15155"
+}
+```
+
+
+
+---
+
+archive/issue_events_015156.json:
+```json
+{
+    "actor": "https://github.com/wjp",
+    "created_at": "2010-01-21T00:32:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#event-15156"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051532.json:
 ```json
 {
@@ -331,7 +382,7 @@ Merged [6428_ETuple_overflow.patch](http://trac.sagemath.org/sage_trac/attachmen
 
 ---
 
-archive/issue_events_006670.json:
+archive/issue_events_015157.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -339,6 +390,6 @@ archive/issue_events_006670.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6428#event-6670"
+    "url": "https://github.com/sagemath/sagetest/issues/6428#event-15157"
 }
 ```

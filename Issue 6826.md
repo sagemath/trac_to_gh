@@ -127,7 +127,7 @@ It still works for me too, but this should probably be fixed for consistencies s
 
 ---
 
-archive/issue_events_007060.json:
+archive/issue_events_016078.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -135,7 +135,7 @@ archive/issue_events_007060.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6826",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6826#event-7060"
+    "url": "https://github.com/sagemath/sagetest/issues/6826#event-16078"
 }
 ```
 

@@ -200,7 +200,7 @@ I still feel safer putting it in there (for instance, if we switch to using Maxi
 
 ---
 
-archive/issue_events_007709.json:
+archive/issue_events_017731.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -208,7 +208,7 @@ archive/issue_events_007709.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7479",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7479#event-7709"
+    "url": "https://github.com/sagemath/sagetest/issues/7479#event-17731"
 }
 ```
 

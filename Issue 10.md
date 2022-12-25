@@ -122,6 +122,23 @@ Changing assignee from somebody to @williamstein.
 
 ---
 
+archive/issue_events_000012.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T08:01:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-12"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000034.json:
 ```json
 {
@@ -180,6 +197,40 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_000013.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-09T18:14:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-13"
+}
+```
+
+
+
+---
+
+archive/issue_events_000014.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-09T18:14:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-14"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000037.json:
 ```json
 {
@@ -197,6 +248,40 @@ There are too many problems at the moment, i.e. mostly that the configure script
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000015.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-13T03:56:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-15"
+}
+```
+
+
+
+---
+
+archive/issue_events_000016.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-13T03:56:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-16"
+}
+```
 
 
 
@@ -540,6 +625,40 @@ Changing component from packages to experimental package.
 
 ---
 
+archive/issue_events_000017.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-21T20:27:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-17"
+}
+```
+
+
+
+---
+
+archive/issue_events_000018.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-21T20:27:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "milestone": "sage-3.0.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-18"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000054.json:
 ```json
 {
@@ -558,7 +677,7 @@ Finally merged in Sage 3.0.6.rc0 :)
 
 ---
 
-archive/issue_events_000010.json:
+archive/issue_events_000019.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -566,7 +685,7 @@ archive/issue_events_000010.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/10#event-10"
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-19"
 }
 ```
 

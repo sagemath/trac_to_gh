@@ -334,7 +334,7 @@ Patch looks good, doctests pass.
 
 ---
 
-archive/issue_events_008429.json:
+archive/issue_events_019688.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -342,7 +342,7 @@ archive/issue_events_008429.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8228",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8228#event-8429"
+    "url": "https://github.com/sagemath/sagetest/issues/8228#event-19688"
 }
 ```
 

@@ -66,6 +66,23 @@ Attachment [phc.patch](tarball://root/attachments/some-uuid/ticket399/phc.patch)
 
 ---
 
+archive/issue_events_000957.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T12:59:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/399",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-957"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001955.json:
 ```json
 {
@@ -102,7 +119,7 @@ The PHCpack developers are working on a slicker interface than mine, so my inter
 
 ---
 
-archive/issue_events_000423.json:
+archive/issue_events_000958.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
@@ -110,7 +127,7 @@ archive/issue_events_000423.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/399",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/399#event-423"
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-958"
 }
 ```
 
@@ -136,7 +153,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000424.json:
+archive/issue_events_000959.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -144,7 +161,7 @@ archive/issue_events_000424.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/399",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/399#event-424"
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-959"
 }
 ```
 
@@ -189,6 +206,40 @@ working on a Python/SAGE interface for nearly a year now...
 
 ---
 
+archive/issue_events_000960.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T13:47:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/399",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-960"
+}
+```
+
+
+
+---
+
+archive/issue_events_000961.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T13:47:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/399",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-961"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001960.json:
 ```json
 {
@@ -207,7 +258,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000425.json:
+archive/issue_events_000962.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -215,6 +266,6 @@ archive/issue_events_000425.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/399",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/399#event-425"
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-962"
 }
 ```

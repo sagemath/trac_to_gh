@@ -5842,6 +5842,23 @@ Changing status from positive_review to needs_work.
 
 ---
 
+archive/issue_events_017439.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-01T12:27:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7377",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7377#event-17439"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061873.json:
 ```json
 {
@@ -6345,7 +6362,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007599.json:
+archive/issue_events_017440.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -6353,7 +6370,7 @@ archive/issue_events_007599.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7377#event-7599"
+    "url": "https://github.com/sagemath/sagetest/issues/7377#event-17440"
 }
 ```
 
@@ -6415,7 +6432,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007600.json:
+archive/issue_events_017441.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -6423,7 +6440,41 @@ archive/issue_events_007600.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7377#event-7600"
+    "url": "https://github.com/sagemath/sagetest/issues/7377#event-17441"
+}
+```
+
+
+
+---
+
+archive/issue_events_017442.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-14T18:28:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7377",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7377#event-17442"
+}
+```
+
+
+
+---
+
+archive/issue_events_017443.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-14T18:28:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7377",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7377#event-17443"
 }
 ```
 
@@ -6895,7 +6946,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007601.json:
+archive/issue_events_017444.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -6903,6 +6954,6 @@ archive/issue_events_007601.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7377#event-7601"
+    "url": "https://github.com/sagemath/sagetest/issues/7377#event-17444"
 }
 ```

@@ -66,6 +66,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/329
 
 ---
 
+archive/issue_events_000761.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-24T23:07:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001550.json:
 ```json
 {
@@ -277,6 +294,40 @@ That will give the same result on any platform, and will always be called cksum.
 Note the 'sum' command can not be used, as that is implementation dependant. But you can be sure cksum will exist on any half-reasonable operating system and that the output will be portable across all platforms. 
 
 Dave
+
+
+
+---
+
+archive/issue_events_000762.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-02-22T04:28:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-762"
+}
+```
+
+
+
+---
+
+archive/issue_events_000763.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-02-22T04:28:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-763"
+}
+```
 
 
 
@@ -523,6 +574,40 @@ I found a way to avoid shell redirection altogether in that instance.
 I like the advice "stop piping cats" :)  Although for simple things, I like using cat and a pipe, since I can easily visualize the data moving from left to right.
 
 With the above changes, testing all the spkgs in 4.3.4.alpha0 now takes about 4:33 on my computer.
+
+
+
+---
+
+archive/issue_events_000764.json:
+```json
+{
+    "actor": "https://github.com/dandrake",
+    "created_at": "2010-03-09T07:24:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-764"
+}
+```
+
+
+
+---
+
+archive/issue_events_000765.json:
+```json
+{
+    "actor": "https://github.com/dandrake",
+    "created_at": "2010-03-09T07:24:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-765"
+}
+```
 
 
 
@@ -1962,6 +2047,40 @@ I implemented this for the new git layout: https://github.com/sagemath/sage/pull
 
 ---
 
+archive/issue_events_000766.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2013-04-11T07:51:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-766"
+}
+```
+
+
+
+---
+
+archive/issue_events_000767.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2013-04-11T07:51:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-6.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-767"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001615.json:
 ```json
 {
@@ -2070,7 +2189,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000353.json:
+archive/issue_events_000768.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -2078,7 +2197,41 @@ archive/issue_events_000353.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/329",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/329#event-353"
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-768"
+}
+```
+
+
+
+---
+
+archive/issue_events_000769.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2013-12-16T17:00:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-6.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-769"
+}
+```
+
+
+
+---
+
+archive/issue_events_000770.json:
+```json
+{
+    "actor": "https://github.com/vbraun",
+    "created_at": "2013-12-16T17:00:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-770"
 }
 ```
 

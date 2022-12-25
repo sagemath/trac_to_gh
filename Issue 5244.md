@@ -72,6 +72,23 @@ Patch proposal for is_unit is SR
 
 ---
 
+archive/issue_events_012173.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-02-13T16:02:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#event-12173"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040127.json:
 ```json
 {
@@ -85,6 +102,40 @@ archive/issue_comments_040127.json:
 ```
 
 The attached patch propose a solution.
+
+
+
+---
+
+archive/issue_events_012174.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-13T17:34:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#event-12174"
+}
+```
+
+
+
+---
+
+archive/issue_events_012175.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-13T17:34:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#event-12175"
+}
+```
 
 
 
@@ -125,6 +176,40 @@ archive/issue_comments_040129.json:
 ```
 
 Changing status from new to assigned.
+
+
+
+---
+
+archive/issue_events_012176.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-02-13T18:53:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#event-12176"
+}
+```
+
+
+
+---
+
+archive/issue_events_012177.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2009-02-13T18:53:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#event-12177"
+}
+```
 
 
 
@@ -175,7 +260,7 @@ Patch reads good, since in SR really everything != 0 is a unit.
 
 ---
 
-archive/issue_events_005500.json:
+archive/issue_events_012178.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -183,7 +268,7 @@ archive/issue_events_005500.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5244",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5244#event-5500"
+    "url": "https://github.com/sagemath/sagetest/issues/5244#event-12178"
 }
 ```
 

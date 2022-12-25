@@ -241,7 +241,7 @@ Reviewed the attached patch 8812.patch with positive review. The patches are to 
 
 ---
 
-archive/issue_events_002517.json:
+archive/issue_events_005524.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -249,7 +249,7 @@ archive/issue_events_002517.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2340",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2340#event-2517"
+    "url": "https://github.com/sagemath/sagetest/issues/2340#event-5524"
 }
 ```
 

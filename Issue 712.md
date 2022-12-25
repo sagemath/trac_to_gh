@@ -152,6 +152,23 @@ To reenable the Lisp debugger set *debugger-hook* to nil.
 
 ---
 
+archive/issue_events_001902.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-20T18:52:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/712",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/712#event-1902"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003721.json:
 ```json
 {
@@ -188,7 +205,41 @@ Attachment [j](tarball://root/attachments/some-uuid/ticket712/j) by mabshoff cre
 
 ---
 
-archive/issue_events_000785.json:
+archive/issue_events_001903.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:30:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/712",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/712#event-1903"
+}
+```
+
+
+
+---
+
+archive/issue_events_001904.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:30:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/712",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/712#event-1904"
+}
+```
+
+
+
+---
+
+archive/issue_events_001905.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -196,7 +247,7 @@ archive/issue_events_000785.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/712",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/712#event-785"
+    "url": "https://github.com/sagemath/sagetest/issues/712#event-1905"
 }
 ```
 

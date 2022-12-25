@@ -167,6 +167,23 @@ Attachment [trac_4734.patch](tarball://root/attachments/some-uuid/ticket4734/tra
 
 ---
 
+archive/issue_events_010815.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-01-24T15:50:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#event-10815"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035668.json:
 ```json
 {
@@ -247,7 +264,7 @@ Michael
 
 ---
 
-archive/issue_events_004978.json:
+archive/issue_events_010816.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -255,6 +272,6 @@ archive/issue_events_004978.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4734",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4734#event-4978"
+    "url": "https://github.com/sagemath/sagetest/issues/4734#event-10816"
 }
 ```

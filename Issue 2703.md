@@ -54,6 +54,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2703
 
 ---
 
+archive/issue_events_006315.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-28T18:06:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2703",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2703#event-6315"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018604.json:
 ```json
 {
@@ -108,7 +125,7 @@ This looks like a near duplicate of #2768, where it was decided that this functi
 
 ---
 
-archive/issue_events_002893.json:
+archive/issue_events_006316.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -116,7 +133,24 @@ archive/issue_events_002893.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2703",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2703#event-2893"
+    "url": "https://github.com/sagemath/sagetest/issues/2703#event-6316"
+}
+```
+
+
+
+---
+
+archive/issue_events_006317.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-02T10:18:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2703",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2703#event-6317"
 }
 ```
 

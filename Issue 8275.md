@@ -101,7 +101,7 @@ Merged [ecl-10.2.1.spkg](http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.s
 
 ---
 
-archive/issue_events_008474.json:
+archive/issue_events_019798.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -109,7 +109,7 @@ archive/issue_events_008474.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8275",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8275#event-8474"
+    "url": "https://github.com/sagemath/sagetest/issues/8275#event-19798"
 }
 ```
 

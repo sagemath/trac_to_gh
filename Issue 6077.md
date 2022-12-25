@@ -172,7 +172,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006331.json:
+archive/issue_events_014266.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -180,7 +180,7 @@ archive/issue_events_006331.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6077",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6077#event-6331"
+    "url": "https://github.com/sagemath/sagetest/issues/6077#event-14266"
 }
 ```
 
@@ -205,3 +205,20 @@ Merged 6077_v2.patch only in Sage 4.0.rc0. In case that was not intended please 
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_014267.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-21T01:41:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#event-14267"
+}
+```

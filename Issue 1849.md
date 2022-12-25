@@ -299,6 +299,23 @@ I propose that we resolve this as "fixed" now #6449 has gone in.
 
 ---
 
+archive/issue_events_004488.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-12T09:45:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1849",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1849#event-4488"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011675.json:
 ```json
 {
@@ -353,7 +370,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_002007.json:
+archive/issue_events_004489.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -361,6 +378,6 @@ archive/issue_events_002007.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1849",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1849#event-2007"
+    "url": "https://github.com/sagemath/sagetest/issues/1849#event-4489"
 }
 ```

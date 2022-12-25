@@ -84,7 +84,7 @@ All doctests pass, the code looks reasonable, the documentation fixes are nice. 
 
 ---
 
-archive/issue_events_005834.json:
+archive/issue_events_013162.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -92,7 +92,7 @@ archive/issue_events_005834.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5589",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5589#event-5834"
+    "url": "https://github.com/sagemath/sagetest/issues/5589#event-13162"
 }
 ```
 

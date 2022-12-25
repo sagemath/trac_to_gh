@@ -28,6 +28,125 @@ Issue created by migration from https://trac.sagemath.org/ticket/8689
 
 ---
 
+archive/issue_events_021068.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21068"
+}
+```
+
+
+
+---
+
+archive/issue_events_021069.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21069"
+}
+```
+
+
+
+---
+
+archive/issue_events_021070.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21070"
+}
+```
+
+
+
+---
+
+archive/issue_events_021071.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21071"
+}
+```
+
+
+
+---
+
+archive/issue_events_021072.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21072"
+}
+```
+
+
+
+---
+
+archive/issue_events_021073.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21073"
+}
+```
+
+
+
+---
+
+archive/issue_events_021074.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21074"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079035.json:
 ```json
 {
@@ -41,6 +160,40 @@ archive/issue_comments_079035.json:
 ```
 
 William, what the heck does this mean?  Can we get direct access to a cell's contents in the browser?  In a cell?
+
+
+
+---
+
+archive/issue_events_021075.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-09-17T02:43:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21075"
+}
+```
+
+
+
+---
+
+archive/issue_events_021076.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-09-17T02:43:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21076"
+}
+```
 
 
 
@@ -100,7 +253,7 @@ obsolete. I will close later if nobody objects
 
 ---
 
-archive/issue_events_008863.json:
+archive/issue_events_021077.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -108,7 +261,7 @@ archive/issue_events_008863.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8689",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8689#event-8863"
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-21077"
 }
 ```
 

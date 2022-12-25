@@ -383,7 +383,7 @@ Looks good to me.  William's patch also fixes a few other unrelated documentatio
 
 ---
 
-archive/issue_events_003337.json:
+archive/issue_events_007052.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -391,7 +391,7 @@ archive/issue_events_003337.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3121#event-3337"
+    "url": "https://github.com/sagemath/sagetest/issues/3121#event-7052"
 }
 ```
 

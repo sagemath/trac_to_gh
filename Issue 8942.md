@@ -122,7 +122,7 @@ This can be closed. Thanks a lot !
 
 ---
 
-archive/issue_events_009094.json:
+archive/issue_events_021836.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/casamayou",
@@ -130,7 +130,7 @@ archive/issue_events_009094.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#event-9094"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#event-21836"
 }
 ```
 
@@ -156,7 +156,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009095.json:
+archive/issue_events_021837.json:
 ```json
 {
     "actor": "https://github.com/kcrisman",
@@ -164,7 +164,7 @@ archive/issue_events_009095.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#event-9095"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#event-21837"
 }
 ```
 
@@ -339,7 +339,7 @@ see #9480
 
 ---
 
-archive/issue_events_009096.json:
+archive/issue_events_021838.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -347,7 +347,7 @@ archive/issue_events_009096.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#event-9096"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#event-21838"
 }
 ```
 

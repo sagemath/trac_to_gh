@@ -1050,6 +1050,23 @@ Do I need to apply
 
 ---
 
+archive/issue_events_023487.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-07T02:47:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9475",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9475#event-23487"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090782.json:
 ```json
 {
@@ -1675,7 +1692,7 @@ The newly uploaded patch contains only the desired changes.
 
 ---
 
-archive/issue_events_009627.json:
+archive/issue_events_023488.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -1683,7 +1700,7 @@ archive/issue_events_009627.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9475#event-9627"
+    "url": "https://github.com/sagemath/sagetest/issues/9475#event-23488"
 }
 ```
 

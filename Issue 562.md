@@ -134,6 +134,23 @@ Michael
 
 ---
 
+archive/issue_events_001503.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:46:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/562",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/562#event-1503"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002902.json:
 ```json
 {
@@ -152,7 +169,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_000608.json:
+archive/issue_events_001504.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -160,7 +177,7 @@ archive/issue_events_000608.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/562",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/562#event-608"
+    "url": "https://github.com/sagemath/sagetest/issues/562#event-1504"
 }
 ```
 
@@ -185,3 +202,20 @@ Am am an idiot, because I just opened a duplicate of the same problem at #619. S
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001505.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-14T03:23:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/562",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/562#event-1505"
+}
+```

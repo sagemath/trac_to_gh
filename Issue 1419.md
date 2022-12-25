@@ -141,7 +141,7 @@ We're now using jmol for everything.
 
 ---
 
-archive/issue_events_001567.json:
+archive/issue_events_003650.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -149,7 +149,7 @@ archive/issue_events_001567.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1419",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1419#event-1567"
+    "url": "https://github.com/sagemath/sagetest/issues/1419#event-3650"
 }
 ```
 
@@ -170,3 +170,20 @@ archive/issue_comments_009135.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_003651.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-19T04:56:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1419",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1419#event-3651"
+}
+```

@@ -164,6 +164,23 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
+archive/issue_events_002530.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-24T00:44:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/920",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/920#event-2530"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005625.json:
 ```json
 {
@@ -210,7 +227,7 @@ applied to 2.8.9.alpha1
 
 ---
 
-archive/issue_events_001040.json:
+archive/issue_events_002531.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -218,7 +235,7 @@ archive/issue_events_001040.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/920#event-1040"
+    "url": "https://github.com/sagemath/sagetest/issues/920#event-2531"
 }
 ```
 

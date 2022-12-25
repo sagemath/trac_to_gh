@@ -68,6 +68,23 @@ The patch applies, builds, and passes all tests.  However, a follow-up patch sho
 
 ---
 
+archive/issue_events_005935.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-17T00:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2532",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2532#event-5935"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017229.json:
 ```json
 {
@@ -166,7 +183,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002713.json:
+archive/issue_events_005936.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -174,6 +191,6 @@ archive/issue_events_002713.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2532",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2532#event-2713"
+    "url": "https://github.com/sagemath/sagetest/issues/2532#event-5936"
 }
 ```

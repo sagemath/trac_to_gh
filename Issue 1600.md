@@ -45,6 +45,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1600
 
 ---
 
+archive/issue_events_003980.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-27T04:07:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1600",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1600#event-3980"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010143.json:
 ```json
 {
@@ -135,7 +152,7 @@ patch looks good, does what it is supposed to do, is documented. I say apply.
 
 ---
 
-archive/issue_events_001758.json:
+archive/issue_events_003981.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -143,7 +160,7 @@ archive/issue_events_001758.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1600",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1600#event-1758"
+    "url": "https://github.com/sagemath/sagetest/issues/1600#event-3981"
 }
 ```
 

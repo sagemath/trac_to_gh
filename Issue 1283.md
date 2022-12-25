@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1283
 
 ---
 
+archive/issue_events_003366.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-26T21:01:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1283",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1283#event-3366"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008020.json:
 ```json
 {
@@ -84,6 +101,40 @@ See also http://wiki.sagemath.org/days7/coercion/todo
 
 ---
 
+archive/issue_events_003367.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2008-03-04T22:24:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1283",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1283#event-3367"
+}
+```
+
+
+
+---
+
+archive/issue_events_003368.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2008-03-04T22:24:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1283",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1283#event-3368"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008023.json:
 ```json
 {
@@ -102,7 +153,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001426.json:
+archive/issue_events_003369.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -110,7 +161,7 @@ archive/issue_events_001426.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1283",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1283#event-1426"
+    "url": "https://github.com/sagemath/sagetest/issues/1283#event-3369"
 }
 ```
 

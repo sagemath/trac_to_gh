@@ -350,6 +350,23 @@ old P^3,B=10
 
 ---
 
+archive/issue_events_004223.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-13T01:08:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1745",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1745#event-4223"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010993.json:
 ```json
 {
@@ -412,7 +429,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001903.json:
+archive/issue_events_004224.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -420,7 +437,7 @@ archive/issue_events_001903.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1745",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1745#event-1903"
+    "url": "https://github.com/sagemath/sagetest/issues/1745#event-4224"
 }
 ```
 

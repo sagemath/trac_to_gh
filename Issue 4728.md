@@ -261,7 +261,7 @@ positive review.  I've posted a small patch for the docs to correct the problem 
 
 ---
 
-archive/issue_events_004972.json:
+archive/issue_events_010805.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -269,7 +269,7 @@ archive/issue_events_004972.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4728",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4728#event-4972"
+    "url": "https://github.com/sagemath/sagetest/issues/4728#event-10805"
 }
 ```
 
@@ -312,3 +312,20 @@ Merged both patches in Sage 3.3.alpha3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_010806.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-29T00:26:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4728",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4728#event-10806"
+}
+```

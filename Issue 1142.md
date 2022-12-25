@@ -90,7 +90,7 @@ sage: m.group(int(0))
 
 ---
 
-archive/issue_events_001269.json:
+archive/issue_events_003059.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -98,7 +98,7 @@ archive/issue_events_001269.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1142",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1142#event-1269"
+    "url": "https://github.com/sagemath/sagetest/issues/1142#event-3059"
 }
 ```
 

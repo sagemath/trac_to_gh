@@ -193,7 +193,7 @@ I agree with mabshoff's remark above that we shouldn't add fxsr, even though it 
 
 ---
 
-archive/issue_events_006252.json:
+archive/issue_events_014089.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -201,7 +201,7 @@ archive/issue_events_006252.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5998",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5998#event-6252"
+    "url": "https://github.com/sagemath/sagetest/issues/5998#event-14089"
 }
 ```
 
@@ -222,3 +222,20 @@ archive/issue_comments_047635.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_014090.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-17T11:58:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5998",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5998#event-14090"
+}
+```

@@ -140,7 +140,7 @@ Is this ticket still valid?
 
 ---
 
-archive/issue_events_000502.json:
+archive/issue_events_001186.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -148,7 +148,7 @@ archive/issue_events_000502.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/471",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/471#event-502"
+    "url": "https://github.com/sagemath/sagetest/issues/471#event-1186"
 }
 ```
 
@@ -191,3 +191,20 @@ archive/issue_comments_002348.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001187.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-21T05:22:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/471#event-1187"
+}
+```

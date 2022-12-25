@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4890
 
 ---
 
+archive/issue_events_011277.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-30T10:52:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4890",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4890#event-11277"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037002.json:
 ```json
 {
@@ -301,7 +318,7 @@ I'm closing this as invalid based on the discussion.  The fix should be to remov
 
 ---
 
-archive/issue_events_005134.json:
+archive/issue_events_011278.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -309,6 +326,40 @@ archive/issue_events_005134.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4890#event-5134"
+    "url": "https://github.com/sagemath/sagetest/issues/4890#event-11278"
+}
+```
+
+
+
+---
+
+archive/issue_events_011279.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-23T22:16:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4890",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4890#event-11279"
+}
+```
+
+
+
+---
+
+archive/issue_events_011280.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-23T22:16:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4890",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4890#event-11280"
 }
 ```

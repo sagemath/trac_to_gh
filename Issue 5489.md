@@ -379,7 +379,24 @@ I have made some small changes that I suggested, in a new patch. The bot is gree
 
 ---
 
-archive/issue_events_005742.json:
+archive/issue_events_012841.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-08-27T11:09:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5489",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5489#event-12841"
+}
+```
+
+
+
+---
+
+archive/issue_events_012842.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -387,7 +404,7 @@ archive/issue_events_005742.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5489#event-5742"
+    "url": "https://github.com/sagemath/sagetest/issues/5489#event-12842"
 }
 ```
 

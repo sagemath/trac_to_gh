@@ -128,6 +128,125 @@ Why is the first plot way worse than the second?
 
 ---
 
+archive/issue_events_024299.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24299"
+}
+```
+
+
+
+---
+
+archive/issue_events_024300.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24300"
+}
+```
+
+
+
+---
+
+archive/issue_events_024301.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24301"
+}
+```
+
+
+
+---
+
+archive/issue_events_024302.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24302"
+}
+```
+
+
+
+---
+
+archive/issue_events_024303.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24303"
+}
+```
+
+
+
+---
+
+archive/issue_events_024304.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24304"
+}
+```
+
+
+
+---
+
+archive/issue_events_024305.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24305"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094640.json:
 ```json
 {
@@ -141,6 +260,40 @@ archive/issue_comments_094640.json:
 ```
 
 no problem, I would say
+
+
+
+---
+
+archive/issue_events_024306.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-01-02T11:03:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24306"
+}
+```
+
+
+
+---
+
+archive/issue_events_024307.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-01-02T11:03:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24307"
+}
+```
 
 
 
@@ -218,7 +371,7 @@ ok, then let us set this to positive
 
 ---
 
-archive/issue_events_009850.json:
+archive/issue_events_024308.json:
 ```json
 {
     "actor": "https://github.com/videlec",
@@ -226,7 +379,7 @@ archive/issue_events_009850.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9716#event-9850"
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-24308"
 }
 ```
 

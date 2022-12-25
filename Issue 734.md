@@ -56,6 +56,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/734
 
 ---
 
+archive/issue_events_001998.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T21:10:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/734",
+    "milestone": "sage-2.8.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/734#event-1998"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004289.json:
 ```json
 {
@@ -149,7 +166,7 @@ I had to fix another related problem:
 
 ---
 
-archive/issue_events_000821.json:
+archive/issue_events_001999.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -157,6 +174,6 @@ archive/issue_events_000821.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/734",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/734#event-821"
+    "url": "https://github.com/sagemath/sagetest/issues/734#event-1999"
 }
 ```

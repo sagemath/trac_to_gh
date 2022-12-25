@@ -202,6 +202,57 @@ I think the idea is to include the test-suite checking **and** add the fixes nee
 
 ---
 
+archive/issue_events_019123.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19123"
+}
+```
+
+
+
+---
+
+archive/issue_events_019124.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19124"
+}
+```
+
+
+
+---
+
+archive/issue_events_019125.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19125"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069660.json:
 ```json
 {
@@ -221,6 +272,74 @@ sage -t src/sage/matrix/matrix_generic_dense.pyx  # 1 doctest failed
 sage -t src/sage/matrix/matrix_dense.pyx  # 1 doctest failed
 ```
 
+
+
+
+---
+
+archive/issue_events_019126.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19126"
+}
+```
+
+
+
+---
+
+archive/issue_events_019127.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19127"
+}
+```
+
+
+
+---
+
+archive/issue_events_019128.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19128"
+}
+```
+
+
+
+---
+
+archive/issue_events_019129.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19129"
+}
+```
 
 
 
@@ -316,6 +435,40 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
+archive/issue_events_019130.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2022-05-20T11:59:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19130"
+}
+```
+
+
+
+---
+
+archive/issue_events_019131.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2022-05-20T11:59:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7989",
+    "milestone": "sage-9.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19131"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069666.json:
 ```json
 {
@@ -388,7 +541,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008204.json:
+archive/issue_events_019132.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -396,7 +549,7 @@ archive/issue_events_008204.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7989#event-8204"
+    "url": "https://github.com/sagemath/sagetest/issues/7989#event-19132"
 }
 ```
 

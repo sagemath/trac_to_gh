@@ -68,6 +68,23 @@ Fixed the lifting issue, ready for review.
 
 ---
 
+archive/issue_events_014196.json:
+```json
+{
+    "actor": "https://github.com/ncalexan",
+    "created_at": "2009-06-06T20:26:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6045",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6045#event-14196"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048053.json:
 ```json
 {
@@ -81,6 +98,40 @@ archive/issue_comments_048053.json:
 ```
 
 This code isn't ready for primetime, even with the lifting issue fixed, because increasing the precision until algdep succeeds is a recipe for disaster.  Maybe a bound on the number of precision increases?
+
+
+
+---
+
+archive/issue_events_014197.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-06T22:33:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6045",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6045#event-14197"
+}
+```
+
+
+
+---
+
+archive/issue_events_014198.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-06T22:33:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6045",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6045#event-14198"
+}
+```
 
 
 
@@ -819,7 +870,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006300.json:
+archive/issue_events_014199.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -827,7 +878,7 @@ archive/issue_events_006300.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6045",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6045#event-6300"
+    "url": "https://github.com/sagemath/sagetest/issues/6045#event-14199"
 }
 ```
 

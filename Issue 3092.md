@@ -69,7 +69,7 @@ Michael
 
 ---
 
-archive/issue_events_003306.json:
+archive/issue_events_006982.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -77,7 +77,7 @@ archive/issue_events_003306.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#event-3306"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#event-6982"
 }
 ```
 
@@ -157,7 +157,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003307.json:
+archive/issue_events_006983.json:
 ```json
 {
     "actor": "https://github.com/timabbott",
@@ -165,7 +165,7 @@ archive/issue_events_003307.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#event-3307"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#event-6983"
 }
 ```
 
@@ -249,7 +249,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003308.json:
+archive/issue_events_006984.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -257,6 +257,6 @@ archive/issue_events_003308.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#event-3308"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#event-6984"
 }
 ```

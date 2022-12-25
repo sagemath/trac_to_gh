@@ -93,6 +93,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_003134.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-30T23:38:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1168",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1168#event-3134"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007140.json:
 ```json
 {
@@ -111,7 +128,7 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_events_001300.json:
+archive/issue_events_003135.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -119,7 +136,7 @@ archive/issue_events_001300.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1168",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1168#event-1300"
+    "url": "https://github.com/sagemath/sagetest/issues/1168#event-3135"
 }
 ```
 

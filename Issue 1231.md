@@ -60,6 +60,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1231
 
 ---
 
+archive/issue_events_003251.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-21T04:55:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1231",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1231#event-3251"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007635.json:
 ```json
 {
@@ -519,7 +536,7 @@ Merged 1231.patch only in 2.8.15.rc0.
 
 ---
 
-archive/issue_events_001369.json:
+archive/issue_events_003252.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -527,7 +544,7 @@ archive/issue_events_001369.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1231#event-1369"
+    "url": "https://github.com/sagemath/sagetest/issues/1231#event-3252"
 }
 ```
 

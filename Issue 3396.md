@@ -72,7 +72,24 @@ apply this after the other patch
 
 ---
 
-archive/issue_events_003613.json:
+archive/issue_events_007659.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-15T20:07:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3396",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3396#event-7659"
+}
+```
+
+
+
+---
+
+archive/issue_events_007660.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -80,7 +97,7 @@ archive/issue_events_003613.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3396",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3396#event-3613"
+    "url": "https://github.com/sagemath/sagetest/issues/3396#event-7660"
 }
 ```
 

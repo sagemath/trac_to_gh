@@ -76,6 +76,23 @@ Changing status from new to needs_info.
 
 ---
 
+archive/issue_events_023998.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-07-08T16:35:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9626",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9626#event-23998"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093138.json:
 ```json
 {
@@ -168,7 +185,7 @@ so this can indeed be closed.
 
 ---
 
-archive/issue_events_009766.json:
+archive/issue_events_023999.json:
 ```json
 {
     "actor": "https://github.com/slel",
@@ -176,6 +193,6 @@ archive/issue_events_009766.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9626",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9626#event-9766"
+    "url": "https://github.com/sagemath/sagetest/issues/9626#event-23999"
 }
 ```

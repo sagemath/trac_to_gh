@@ -310,6 +310,23 @@ I improved the description on top of the patch, including a comment about this.
 
 ---
 
+archive/issue_events_018969.json:
+```json
+{
+    "actor": "https://github.com/nthiery",
+    "created_at": "2010-01-19T18:17:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7921",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7921#event-18969"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068805.json:
 ```json
 {
@@ -453,7 +470,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008135.json:
+archive/issue_events_018970.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -461,7 +478,7 @@ archive/issue_events_008135.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7921#event-8135"
+    "url": "https://github.com/sagemath/sagetest/issues/7921#event-18970"
 }
 ```
 

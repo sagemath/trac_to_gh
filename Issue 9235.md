@@ -535,7 +535,24 @@ Apply 9235_doctest_homset.patch trac_9235-doctest_homset-review-ts.patch
 
 ---
 
-archive/issue_events_009397.json:
+archive/issue_events_022734.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-17T19:08:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9235",
+    "milestone": "sage-5.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9235#event-22734"
+}
+```
+
+
+
+---
+
+archive/issue_events_022735.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -543,7 +560,7 @@ archive/issue_events_009397.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9235#event-9397"
+    "url": "https://github.com/sagemath/sagetest/issues/9235#event-22735"
 }
 ```
 

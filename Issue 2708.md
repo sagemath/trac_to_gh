@@ -102,7 +102,7 @@ Looks good, applies to 2.11.alpha1 + #2683, passes doctests.
 
 ---
 
-archive/issue_events_002897.json:
+archive/issue_events_006329.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -110,7 +110,7 @@ archive/issue_events_002897.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2708",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2708#event-2897"
+    "url": "https://github.com/sagemath/sagetest/issues/2708#event-6329"
 }
 ```
 

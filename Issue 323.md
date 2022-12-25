@@ -63,7 +63,7 @@ This bug is too imprecise to be of any use, especially since I build SAGE regula
 
 ---
 
-archive/issue_events_000345.json:
+archive/issue_events_000753.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -71,6 +71,6 @@ archive/issue_events_000345.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/323",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/323#event-345"
+    "url": "https://github.com/sagemath/sagetest/issues/323#event-753"
 }
 ```

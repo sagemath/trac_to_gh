@@ -86,6 +86,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/385
 
 ---
 
+archive/issue_events_000895.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:25:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/385",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/385#event-895"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001875.json:
 ```json
 {
@@ -289,7 +306,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_000407.json:
+archive/issue_events_000896.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -297,7 +314,7 @@ archive/issue_events_000407.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/385",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/385#event-407"
+    "url": "https://github.com/sagemath/sagetest/issues/385#event-896"
 }
 ```
 

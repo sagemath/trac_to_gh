@@ -109,7 +109,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001896.json:
+archive/issue_events_004216.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -117,7 +117,7 @@ archive/issue_events_001896.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1738",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1738#event-1896"
+    "url": "https://github.com/sagemath/sagetest/issues/1738#event-4216"
 }
 ```
 

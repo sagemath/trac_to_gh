@@ -59,6 +59,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/181
 
 ---
 
+archive/issue_events_000343.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:57:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-343"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000828.json:
 ```json
 {
@@ -106,6 +123,23 @@ output is actually being produced.
 
 ---
 
+archive/issue_events_000344.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-22T05:01:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-344"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000830.json:
 ```json
 {
@@ -119,3 +153,122 @@ archive/issue_comments_000830.json:
 ```
 
 Just pointing out to those looking at this that the examples directory no longer exists.  However, the request still makes sense.
+
+
+
+---
+
+archive/issue_events_000345.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-345"
+}
+```
+
+
+
+---
+
+archive/issue_events_000346.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-346"
+}
+```
+
+
+
+---
+
+archive/issue_events_000347.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-347"
+}
+```
+
+
+
+---
+
+archive/issue_events_000348.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-348"
+}
+```
+
+
+
+---
+
+archive/issue_events_000349.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-349"
+}
+```
+
+
+
+---
+
+archive/issue_events_000350.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-350"
+}
+```
+
+
+
+---
+
+archive/issue_events_000351.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/181#event-351"
+}
+```

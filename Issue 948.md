@@ -102,6 +102,23 @@ I am retagging this as 2.8.10 which means applying the patch attached to this ti
 
 ---
 
+archive/issue_events_002619.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-25T15:32:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/948",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/948#event-2619"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005770.json:
 ```json
 {
@@ -176,7 +193,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_001068.json:
+archive/issue_events_002620.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -184,7 +201,7 @@ archive/issue_events_001068.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/948#event-1068"
+    "url": "https://github.com/sagemath/sagetest/issues/948#event-2620"
 }
 ```
 

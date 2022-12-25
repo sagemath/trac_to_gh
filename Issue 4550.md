@@ -214,7 +214,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_004795.json:
+archive/issue_events_010365.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -222,6 +222,23 @@ archive/issue_events_004795.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4550",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4550#event-4795"
+    "url": "https://github.com/sagemath/sagetest/issues/4550#event-10365"
+}
+```
+
+
+
+---
+
+archive/issue_events_010366.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-09T22:28:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4550",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4550#event-10366"
 }
 ```

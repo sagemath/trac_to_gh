@@ -129,7 +129,7 @@ I'll dig deeper.
 
 ---
 
-archive/issue_events_001609.json:
+archive/issue_events_003719.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -137,7 +137,7 @@ archive/issue_events_001609.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1458",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1458#event-1609"
+    "url": "https://github.com/sagemath/sagetest/issues/1458#event-3719"
 }
 ```
 
@@ -176,3 +176,20 @@ archive/issue_comments_009375.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_003720.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:54:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1458",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1458#event-3720"
+}
+```

@@ -134,6 +134,23 @@ Since it's no longer an exception it's now a feature request.
 
 ---
 
+archive/issue_events_000492.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-21T12:04:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/236",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/236#event-492"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001041.json:
 ```json
 {
@@ -185,7 +202,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000251.json:
+archive/issue_events_000493.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -193,6 +210,40 @@ archive/issue_events_000251.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/236",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/236#event-251"
+    "url": "https://github.com/sagemath/sagetest/issues/236#event-493"
+}
+```
+
+
+
+---
+
+archive/issue_events_000494.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-07T02:42:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/236",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/236#event-494"
+}
+```
+
+
+
+---
+
+archive/issue_events_000495.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-07T02:42:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/236",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/236#event-495"
 }
 ```

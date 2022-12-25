@@ -343,6 +343,23 @@ Based on 3.2.alpha0
 
 ---
 
+archive/issue_events_006302.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2008-11-01T03:23:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#event-6302"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018535.json:
 ```json
 {
@@ -392,6 +409,40 @@ archive/issue_comments_018536.json:
 ```
 
 Okay, fair enough.  My philosophy was to improve what was there - all the examples you gave were errors before, too - but I agree that having a very robust function is the best goal long term.  However, it may take a little longer to get there.  Thanks for the careful reading of the code to find these (so far) non-examples; if we can get all of them it will make integrate very intuitive indeed.
+
+
+
+---
+
+archive/issue_events_006303.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2008-11-04T02:43:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#event-6303"
+}
+```
+
+
+
+---
+
+archive/issue_events_006304.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2008-11-04T02:43:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#event-6304"
+}
+```
 
 
 
@@ -533,6 +584,40 @@ archive/issue_comments_018541.json:
 ```
 
 Changing summary - would be good to get this in before bitrot sets in, but wanted robertwb's final followup review on my last tiny change, or to reject that but to open a new ticket for the other thing.  Or whoever else is interested in this ticket could do that; since I made a change I don't feel comfortable doing the last positive review.
+
+
+
+---
+
+archive/issue_events_006305.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2009-01-15T02:25:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#event-6305"
+}
+```
+
+
+
+---
+
+archive/issue_events_006306.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2009-01-15T02:25:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#event-6306"
+}
+```
 
 
 
@@ -858,7 +943,7 @@ Merged trac_2697.patch in Sage 3.3.alpha2
 
 ---
 
-archive/issue_events_002887.json:
+archive/issue_events_006307.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -866,6 +951,6 @@ archive/issue_events_002887.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2697#event-2887"
+    "url": "https://github.com/sagemath/sagetest/issues/2697#event-6307"
 }
 ```

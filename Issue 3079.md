@@ -56,6 +56,23 @@ Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3079/
 
 ---
 
+archive/issue_events_006955.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-02T11:59:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3079",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3079#event-6955"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021194.json:
 ```json
 {
@@ -114,7 +131,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_003293.json:
+archive/issue_events_006956.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -122,6 +139,23 @@ archive/issue_events_003293.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3079",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3079#event-3293"
+    "url": "https://github.com/sagemath/sagetest/issues/3079#event-6956"
+}
+```
+
+
+
+---
+
+archive/issue_events_006957.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-11T05:25:57Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3079",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3079#event-6957"
 }
 ```

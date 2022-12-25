@@ -107,6 +107,23 @@ Attachment [trac_4805.patch](tarball://root/attachments/some-uuid/ticket4805/tra
 
 ---
 
+archive/issue_events_010993.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2009-01-18T17:29:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4805",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4805#event-10993"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036352.json:
 ```json
 {
@@ -231,6 +248,40 @@ can you make the easy changes that Roed requested and then open another ticket f
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_010994.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-02T06:09:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4805",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4805#event-10994"
+}
+```
+
+
+
+---
+
+archive/issue_events_010995.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-02T06:09:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4805",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4805#event-10995"
+}
+```
 
 
 
@@ -417,7 +468,7 @@ Michael
 
 ---
 
-archive/issue_events_005047.json:
+archive/issue_events_010996.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -425,6 +476,6 @@ archive/issue_events_005047.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4805",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4805#event-5047"
+    "url": "https://github.com/sagemath/sagetest/issues/4805#event-10996"
 }
 ```

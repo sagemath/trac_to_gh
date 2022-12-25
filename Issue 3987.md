@@ -28,7 +28,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3987
 
 ---
 
-archive/issue_events_004216.json:
+archive/issue_events_009137.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -36,7 +36,7 @@ archive/issue_events_004216.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3987",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3987#event-4216"
+    "url": "https://github.com/sagemath/sagetest/issues/3987#event-9137"
 }
 ```
 

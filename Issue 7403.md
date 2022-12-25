@@ -254,7 +254,7 @@ Changing assignee from @mwhansen to @hivert.
 
 ---
 
-archive/issue_events_007628.json:
+archive/issue_events_017515.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -262,7 +262,7 @@ archive/issue_events_007628.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7403#event-7628"
+    "url": "https://github.com/sagemath/sagetest/issues/7403#event-17515"
 }
 ```
 

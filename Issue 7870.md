@@ -1330,7 +1330,7 @@ Works now without magma.
 
 ---
 
-archive/issue_events_008085.json:
+archive/issue_events_018822.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1338,6 +1338,6 @@ archive/issue_events_008085.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7870#event-8085"
+    "url": "https://github.com/sagemath/sagetest/issues/7870#event-18822"
 }
 ```

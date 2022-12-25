@@ -348,7 +348,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009654.json:
+archive/issue_events_023599.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -356,6 +356,6 @@ archive/issue_events_009654.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#event-9654"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#event-23599"
 }
 ```

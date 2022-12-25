@@ -175,6 +175,23 @@ I think the existing package is called `cliquer-1.2.p3`.  Should we make the new
 
 ---
 
+archive/issue_events_017319.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-02-10T19:49:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#event-17319"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060921.json:
 ```json
 {
@@ -285,7 +302,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007531.json:
+archive/issue_events_017320.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -293,6 +310,6 @@ archive/issue_events_007531.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7308#event-7531"
+    "url": "https://github.com/sagemath/sagetest/issues/7308#event-17320"
 }
 ```

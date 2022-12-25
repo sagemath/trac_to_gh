@@ -68,6 +68,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_016084.json:
+```json
+{
+    "actor": "https://github.com/a-andre",
+    "created_at": "2014-08-18T21:59:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6833",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6833#event-16084"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056250.json:
 ```json
 {
@@ -81,6 +98,40 @@ archive/issue_comments_056250.json:
 ```
 
 Changing status from needs_review to needs_work.
+
+
+
+---
+
+archive/issue_events_016085.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-08-27T15:37:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6833",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6833#event-16085"
+}
+```
+
+
+
+---
+
+archive/issue_events_016086.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-08-27T15:37:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6833",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6833#event-16086"
+}
+```
 
 
 
@@ -132,7 +183,7 @@ Naturally not all of these would be implemented here, but any that aren't could 
 
 ---
 
-archive/issue_events_007066.json:
+archive/issue_events_016087.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -140,7 +191,7 @@ archive/issue_events_007066.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6833",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6833#event-7066"
+    "url": "https://github.com/sagemath/sagetest/issues/6833#event-16087"
 }
 ```
 

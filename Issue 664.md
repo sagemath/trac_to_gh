@@ -45,7 +45,7 @@ done.
 
 ---
 
-archive/issue_events_000732.json:
+archive/issue_events_001779.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -53,7 +53,7 @@ archive/issue_events_000732.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/664",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/664#event-732"
+    "url": "https://github.com/sagemath/sagetest/issues/664#event-1779"
 }
 ```
 

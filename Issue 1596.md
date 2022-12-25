@@ -86,6 +86,23 @@ Changing component from algebraic geometry to user interface.
 
 ---
 
+archive/issue_events_003971.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-24T21:09:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1596",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1596#event-3971"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010133.json:
 ```json
 {
@@ -126,7 +143,7 @@ Looks good to me. Merged in Sage 2.9.2.rc1.
 
 ---
 
-archive/issue_events_001754.json:
+archive/issue_events_003972.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -134,7 +151,7 @@ archive/issue_events_001754.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1596",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1596#event-1754"
+    "url": "https://github.com/sagemath/sagetest/issues/1596#event-3972"
 }
 ```
 

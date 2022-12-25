@@ -68,7 +68,7 @@ But please *don't* include it, because Sage tests didn't run for me. I need to i
 
 ---
 
-archive/issue_events_001792.json:
+archive/issue_events_004043.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -76,7 +76,7 @@ archive/issue_events_001792.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1633",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1633#event-1792"
+    "url": "https://github.com/sagemath/sagetest/issues/1633#event-4043"
 }
 ```
 

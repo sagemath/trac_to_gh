@@ -65,6 +65,23 @@ Works for me
 
 ---
 
+archive/issue_events_007259.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T12:57:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3228",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3228#event-7259"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022288.json:
 ```json
 {
@@ -83,7 +100,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003447.json:
+archive/issue_events_007260.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -91,7 +108,7 @@ archive/issue_events_003447.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3228",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3228#event-3447"
+    "url": "https://github.com/sagemath/sagetest/issues/3228#event-7260"
 }
 ```
 

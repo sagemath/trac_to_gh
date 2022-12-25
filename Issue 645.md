@@ -44,6 +44,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/645
 
 ---
 
+archive/issue_events_001719.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-11-30T23:24:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/645",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/645#event-1719"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003333.json:
 ```json
 {
@@ -118,7 +135,7 @@ Looks good to me, and doctests still pass in sage/calculus/*.
 
 ---
 
-archive/issue_events_000709.json:
+archive/issue_events_001720.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -126,7 +143,7 @@ archive/issue_events_000709.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/645#event-709"
+    "url": "https://github.com/sagemath/sagetest/issues/645#event-1720"
 }
 ```
 

@@ -390,7 +390,7 @@ This is fixed by #6699.
 
 ---
 
-archive/issue_events_007027.json:
+archive/issue_events_015997.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -398,6 +398,6 @@ archive/issue_events_007027.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6792",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6792#event-7027"
+    "url": "https://github.com/sagemath/sagetest/issues/6792#event-15997"
 }
 ```

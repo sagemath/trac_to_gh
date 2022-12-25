@@ -115,6 +115,159 @@ I think all `$CC` issues were fixed by #9379 and #10681. Can you test on Solaris
 
 ---
 
+archive/issue_events_016690.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16690"
+}
+```
+
+
+
+---
+
+archive/issue_events_016691.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16691"
+}
+```
+
+
+
+---
+
+archive/issue_events_016692.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16692"
+}
+```
+
+
+
+---
+
+archive/issue_events_016693.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16693"
+}
+```
+
+
+
+---
+
+archive/issue_events_016694.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16694"
+}
+```
+
+
+
+---
+
+archive/issue_events_016695.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16695"
+}
+```
+
+
+
+---
+
+archive/issue_events_016696.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16696"
+}
+```
+
+
+
+---
+
+archive/issue_events_016697.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-07-08T16:51:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16697"
+}
+```
+
+
+
+---
+
+archive/issue_events_016698.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-07-08T16:51:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7069",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16698"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058366.json:
 ```json
 {
@@ -151,7 +304,7 @@ Outdated, should be closed
 
 ---
 
-archive/issue_events_007291.json:
+archive/issue_events_016699.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -159,7 +312,7 @@ archive/issue_events_007291.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7069#event-7291"
+    "url": "https://github.com/sagemath/sagetest/issues/7069#event-16699"
 }
 ```
 

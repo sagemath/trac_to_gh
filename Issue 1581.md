@@ -127,7 +127,7 @@ This has already been resolved included in Sage.
 
 ---
 
-archive/issue_events_001737.json:
+archive/issue_events_003945.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -135,7 +135,7 @@ archive/issue_events_001737.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1581",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1581#event-1737"
+    "url": "https://github.com/sagemath/sagetest/issues/1581#event-3945"
 }
 ```
 

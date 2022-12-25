@@ -48,7 +48,7 @@ I've already adressed this at #7889
 
 ---
 
-archive/issue_events_007431.json:
+archive/issue_events_017076.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/olazo",
@@ -56,7 +56,7 @@ archive/issue_events_007431.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#event-7431"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#event-17076"
 }
 ```
 
@@ -95,6 +95,23 @@ archive/issue_comments_059726.json:
 ```
 
 Make sure you understand the guidelines on closing tickets. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developers' Guide for more information.
+
+
+
+---
+
+archive/issue_events_017077.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-01T03:32:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7210",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7210#event-17077"
+}
+```
 
 
 
@@ -154,7 +171,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007432.json:
+archive/issue_events_017078.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/olazo",
@@ -162,7 +179,7 @@ archive/issue_events_007432.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#event-7432"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#event-17078"
 }
 ```
 
@@ -170,7 +187,7 @@ archive/issue_events_007432.json:
 
 ---
 
-archive/issue_events_007433.json:
+archive/issue_events_017079.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -178,7 +195,7 @@ archive/issue_events_007433.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#event-7433"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#event-17079"
 }
 ```
 

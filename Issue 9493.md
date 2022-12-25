@@ -453,6 +453,57 @@ Hence the `install-sh` fix above should still be valid (and useful) ...
 
 ---
 
+archive/issue_events_023559.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9493",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9493#event-23559"
+}
+```
+
+
+
+---
+
+archive/issue_events_023560.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9493",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9493#event-23560"
+}
+```
+
+
+
+---
+
+archive/issue_events_023561.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9493",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9493#event-23561"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090984.json:
 ```json
 {
@@ -642,6 +693,40 @@ Once there is someone clearly identified we could just bump the request to get t
 
 ---
 
+archive/issue_events_023562.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9493",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9493#event-23562"
+}
+```
+
+
+
+---
+
+archive/issue_events_023563.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9493",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9493#event-23563"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090994.json:
 ```json
 {
@@ -678,7 +763,7 @@ The changes look good to me, and the new version of the package built without pr
 
 ---
 
-archive/issue_events_009642.json:
+archive/issue_events_023564.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -686,7 +771,7 @@ archive/issue_events_009642.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9493#event-9642"
+    "url": "https://github.com/sagemath/sagetest/issues/9493#event-23564"
 }
 ```
 

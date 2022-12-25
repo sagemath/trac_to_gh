@@ -99,6 +99,23 @@ Subsumed by #17336.
 
 ---
 
+archive/issue_events_017092.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-11-13T17:35:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7215",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7215#event-17092"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059752.json:
 ```json
 {
@@ -135,7 +152,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_007437.json:
+archive/issue_events_017093.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -143,6 +160,6 @@ archive/issue_events_007437.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7215",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7215#event-7437"
+    "url": "https://github.com/sagemath/sagetest/issues/7215#event-17093"
 }
 ```

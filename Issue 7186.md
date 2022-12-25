@@ -458,7 +458,7 @@ instead of what I had.  I've made this fix.
 
 ---
 
-archive/issue_events_007405.json:
+archive/issue_events_017009.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -466,7 +466,7 @@ archive/issue_events_007405.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7186",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7186#event-7405"
+    "url": "https://github.com/sagemath/sagetest/issues/7186#event-17009"
 }
 ```
 

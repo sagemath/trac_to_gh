@@ -355,6 +355,23 @@ Nowadays the goal of the script can be achieved easily on the OS level using too
 
 ---
 
+archive/issue_events_018872.json:
+```json
+{
+    "actor": "https://github.com/kwankyu",
+    "created_at": "2016-03-23T04:44:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7893",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7893#event-18872"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068551.json:
 ```json
 {
@@ -391,7 +408,7 @@ ok, then let us close that.
 
 ---
 
-archive/issue_events_008106.json:
+archive/issue_events_018873.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -399,7 +416,7 @@ archive/issue_events_008106.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7893#event-8106"
+    "url": "https://github.com/sagemath/sagetest/issues/7893#event-18873"
 }
 ```
 

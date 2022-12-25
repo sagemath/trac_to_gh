@@ -519,6 +519,57 @@ Reminder: Rebase vs. #7269.
 
 ---
 
+archive/issue_events_010772.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-10-25T09:42:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#event-10772"
+}
+```
+
+
+
+---
+
+archive/issue_events_010773.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-11-20T00:22:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#event-10773"
+}
+```
+
+
+
+---
+
+archive/issue_events_010774.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-11-20T00:22:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#event-10774"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035490.json:
 ```json
 {
@@ -740,7 +791,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004959.json:
+archive/issue_events_010775.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -748,6 +799,6 @@ archive/issue_events_004959.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4714#event-4959"
+    "url": "https://github.com/sagemath/sagetest/issues/4714#event-10775"
 }
 ```

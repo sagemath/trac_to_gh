@@ -90,7 +90,7 @@ Applies fine to 4.1.alpha1 and does what it says.  I like the second doctest.  U
 
 ---
 
-archive/issue_events_006226.json:
+archive/issue_events_014016.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -98,7 +98,7 @@ archive/issue_events_006226.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5971",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5971#event-6226"
+    "url": "https://github.com/sagemath/sagetest/issues/5971#event-14016"
 }
 ```
 

@@ -45,6 +45,23 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_006416.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-04-16T11:25:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2778",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2778#event-6416"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019045.json:
 ```json
 {
@@ -72,7 +89,7 @@ This is a duplicate of #2744.
 
 ---
 
-archive/issue_events_002966.json:
+archive/issue_events_006417.json:
 ```json
 {
     "actor": "https://github.com/burcin",
@@ -80,6 +97,6 @@ archive/issue_events_002966.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2778",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2778#event-2966"
+    "url": "https://github.com/sagemath/sagetest/issues/2778#event-6417"
 }
 ```

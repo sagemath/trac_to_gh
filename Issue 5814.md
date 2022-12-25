@@ -122,6 +122,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_013643.json:
+```json
+{
+    "actor": "https://github.com/kini",
+    "created_at": "2012-08-10T09:17:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5814",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-13643"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045573.json:
 ```json
 {
@@ -142,7 +159,7 @@ I'm marking this ticket as invalid.
 
 ---
 
-archive/issue_events_006063.json:
+archive/issue_events_013644.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -150,7 +167,7 @@ archive/issue_events_006063.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5814#event-6063"
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-13644"
 }
 ```
 
@@ -191,6 +208,40 @@ archive/issue_comments_045575.json:
 Attachment [trac_5814_enable_prun_in_notebook.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_enable_prun_in_notebook.patch) by @tkluck created at 2012-09-05 12:58:16
 
 It turns out that this does need to be tackled in the sage library itself. It is possible to add a `prun` object there, which will be automatically used without having to do any special handling in the notebook. I've closed my pull request for the notebook and am reopening this ticket.
+
+
+
+---
+
+archive/issue_events_013645.json:
+```json
+{
+    "actor": "https://github.com/tkluck",
+    "created_at": "2012-09-05T12:58:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5814",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-13645"
+}
+```
+
+
+
+---
+
+archive/issue_events_013646.json:
+```json
+{
+    "actor": "https://github.com/tkluck",
+    "created_at": "2012-09-05T12:58:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5814",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-13646"
+}
+```
 
 
 
@@ -250,7 +301,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_006064.json:
+archive/issue_events_013647.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -258,7 +309,7 @@ archive/issue_events_006064.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5814#event-6064"
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-13647"
 }
 ```
 
@@ -434,6 +485,40 @@ It's probably outside the scope of this ticket, but the *really* useful thing wo
 Writing such a browser might be a nice exercise for a student who is interested in interface programming. I bet there are good profiler browsers around to get inspiration from.
 
 A tool I haven't used yet but looks like a decent effort is [runsnakerun](https://pypi.python.org/pypi/RunSnakeRun). Duplicating that effort for the sage notebook might not seem like such a smart idea. Perhaps we can make the tool more easily accessible from sage? Given that it uses wxPython that might not be so very easily done ... I ended up installing it using OS tools, meaning that I *have* to write the profile data to a file and analyse it separately.
+
+
+
+---
+
+archive/issue_events_013648.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-04-03T09:13:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5814",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-13648"
+}
+```
+
+
+
+---
+
+archive/issue_events_013649.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-04-03T09:13:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5814",
+    "milestone": "sage-5.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-13649"
+}
+```
 
 
 
@@ -668,7 +753,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006065.json:
+archive/issue_events_013650.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -676,7 +761,7 @@ archive/issue_events_006065.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5814#event-6065"
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-13650"
 }
 ```
 

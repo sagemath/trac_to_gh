@@ -69,7 +69,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_004289.json:
+archive/issue_events_009262.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -77,7 +77,7 @@ archive/issue_events_004289.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4057#event-4289"
+    "url": "https://github.com/sagemath/sagetest/issues/4057#event-9262"
 }
 ```
 
@@ -113,6 +113,23 @@ Michael
 
 ---
 
+archive/issue_events_009263.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-04T03:25:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4057",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4057#event-9263"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029178.json:
 ```json
 {
@@ -131,7 +148,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004290.json:
+archive/issue_events_009264.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -139,7 +156,7 @@ archive/issue_events_004290.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4057#event-4290"
+    "url": "https://github.com/sagemath/sagetest/issues/4057#event-9264"
 }
 ```
 
@@ -351,6 +368,40 @@ Looks good, but needs to *only* delete the underline in embedded mode.  I've att
 
 ---
 
+archive/issue_events_009265.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-28T21:52:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4057",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4057#event-9265"
+}
+```
+
+
+
+---
+
+archive/issue_events_009266.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-28T21:52:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4057",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4057#event-9266"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029190.json:
 ```json
 {
@@ -369,7 +420,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004291.json:
+archive/issue_events_009267.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -377,7 +428,7 @@ archive/issue_events_004291.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4057#event-4291"
+    "url": "https://github.com/sagemath/sagetest/issues/4057#event-9267"
 }
 ```
 

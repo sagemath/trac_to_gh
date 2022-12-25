@@ -84,6 +84,23 @@ Changing keywords from "" to "editor_mabshoff".
 
 ---
 
+archive/issue_events_007743.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-06-15T21:56:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3429",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-7743"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024118.json:
 ```json
 {
@@ -101,6 +118,40 @@ The spkg builds fine for me on OSX and Linux x86-64 and doctests fine. Positive 
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_007744.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T03:44:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3429",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-7744"
+}
+```
+
+
+
+---
+
+archive/issue_events_007745.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T03:44:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3429",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-7745"
+}
+```
 
 
 
@@ -142,7 +193,7 @@ Merged in Sage 3.0.4.alpha1
 
 ---
 
-archive/issue_events_003646.json:
+archive/issue_events_007746.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -150,7 +201,7 @@ archive/issue_events_003646.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3429#event-3646"
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-7746"
 }
 ```
 
@@ -272,7 +323,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003647.json:
+archive/issue_events_007747.json:
 ```json
 {
     "actor": "https://github.com/ClementPernet",
@@ -280,7 +331,7 @@ archive/issue_events_003647.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3429#event-3647"
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-7747"
 }
 ```
 
@@ -310,7 +361,7 @@ Michael
 
 ---
 
-archive/issue_events_003648.json:
+archive/issue_events_007748.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -318,7 +369,7 @@ archive/issue_events_003648.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3429#event-3648"
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-7748"
 }
 ```
 

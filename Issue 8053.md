@@ -155,7 +155,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008262.json:
+archive/issue_events_019287.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/rkirov",
@@ -163,7 +163,7 @@ archive/issue_events_008262.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8053",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8053#event-8262"
+    "url": "https://github.com/sagemath/sagetest/issues/8053#event-19287"
 }
 ```
 
@@ -184,3 +184,20 @@ archive/issue_comments_070331.json:
 ```
 
 merged with ticket 8222
+
+
+
+---
+
+archive/issue_events_019288.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-04-05T18:28:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8053",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8053#event-19288"
+}
+```

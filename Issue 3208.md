@@ -319,7 +319,7 @@ Attachment [3208.patch](tarball://root/attachments/some-uuid/ticket3208/3208.pat
 
 ---
 
-archive/issue_events_003426.json:
+archive/issue_events_007216.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -327,7 +327,7 @@ archive/issue_events_003426.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#event-3426"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#event-7216"
 }
 ```
 

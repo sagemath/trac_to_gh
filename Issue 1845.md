@@ -34,6 +34,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1845
 
 ---
 
+archive/issue_events_004472.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-20T03:28:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1845",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1845#event-4472"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011654.json:
 ```json
 {
@@ -92,7 +109,7 @@ Merged in Sage 2.10.1.rc1: the bundle and updated scipy_sandbox as well as cwitt
 
 ---
 
-archive/issue_events_002004.json:
+archive/issue_events_004473.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -100,7 +117,7 @@ archive/issue_events_002004.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1845",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1845#event-2004"
+    "url": "https://github.com/sagemath/sagetest/issues/1845#event-4473"
 }
 ```
 

@@ -42,6 +42,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5820
 
 ---
 
+archive/issue_events_013682.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-04-25T09:46:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#event-13682"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045651.json:
 ```json
 {
@@ -152,7 +169,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_006070.json:
+archive/issue_events_013683.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -160,7 +177,7 @@ archive/issue_events_006070.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5820",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5820#event-6070"
+    "url": "https://github.com/sagemath/sagetest/issues/5820#event-13683"
 }
 ```
 

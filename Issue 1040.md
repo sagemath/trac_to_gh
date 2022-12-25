@@ -92,6 +92,23 @@ sage: preparse('K.<a> = QQ[]')
 
 ---
 
+archive/issue_events_002833.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:16:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1040",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1040#event-2833"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006323.json:
 ```json
 {
@@ -146,7 +163,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001165.json:
+archive/issue_events_002834.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -154,6 +171,6 @@ archive/issue_events_001165.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1040",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1040#event-1165"
+    "url": "https://github.com/sagemath/sagetest/issues/1040#event-2834"
 }
 ```

@@ -71,7 +71,7 @@ I also need sage-valgrind.
 
 ---
 
-archive/issue_events_000493.json:
+archive/issue_events_001163.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -79,7 +79,7 @@ archive/issue_events_000493.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/464",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/464#event-493"
+    "url": "https://github.com/sagemath/sagetest/issues/464#event-1163"
 }
 ```
 

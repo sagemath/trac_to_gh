@@ -325,7 +325,7 @@ In particular, a SageNB-rebased patch for #5447 will also touch `sagenb/data/sag
 
 ---
 
-archive/issue_events_006699.json:
+archive/issue_events_015246.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -333,7 +333,7 @@ archive/issue_events_006699.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6459#event-6699"
+    "url": "https://github.com/sagemath/sagetest/issues/6459#event-15246"
 }
 ```
 

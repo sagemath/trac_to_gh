@@ -66,6 +66,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3103
 
 ---
 
+archive/issue_events_007011.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-05T10:52:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3103",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3103#event-7011"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021389.json:
 ```json
 {
@@ -332,7 +349,41 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_003319.json:
+archive/issue_events_007012.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-22T07:39:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3103",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3103#event-7012"
+}
+```
+
+
+
+---
+
+archive/issue_events_007013.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-22T07:39:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3103",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3103#event-7013"
+}
+```
+
+
+
+---
+
+archive/issue_events_007014.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -340,7 +391,7 @@ archive/issue_events_003319.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3103#event-3319"
+    "url": "https://github.com/sagemath/sagetest/issues/3103#event-7014"
 }
 ```
 

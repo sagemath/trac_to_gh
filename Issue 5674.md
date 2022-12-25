@@ -80,7 +80,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005917.json:
+archive/issue_events_013346.json:
 ```json
 {
     "actor": "https://github.com/JohnCremona",
@@ -88,7 +88,7 @@ archive/issue_events_005917.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5674",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5674#event-5917"
+    "url": "https://github.com/sagemath/sagetest/issues/5674#event-13346"
 }
 ```
 

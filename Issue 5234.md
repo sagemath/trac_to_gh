@@ -325,7 +325,7 @@ This seems to be 100% reproducable on my system, but I don't see the logic behin
 
 ---
 
-archive/issue_events_005490.json:
+archive/issue_events_012136.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -333,7 +333,7 @@ archive/issue_events_005490.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5234",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5234#event-5490"
+    "url": "https://github.com/sagemath/sagetest/issues/5234#event-12136"
 }
 ```
 
@@ -354,6 +354,23 @@ archive/issue_comments_040033.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_012137.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-01T02:21:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5234",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5234#event-12137"
+}
+```
 
 
 

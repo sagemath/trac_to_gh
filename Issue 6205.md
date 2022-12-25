@@ -69,7 +69,7 @@ So since there were no methods in that class before, and 1 now, does that mean t
 
 ---
 
-archive/issue_events_006454.json:
+archive/issue_events_014559.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -77,7 +77,7 @@ archive/issue_events_006454.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6205",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6205#event-6454"
+    "url": "https://github.com/sagemath/sagetest/issues/6205#event-14559"
 }
 ```
 

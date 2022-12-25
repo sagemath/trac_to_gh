@@ -99,7 +99,7 @@ Looks good to me.  I put up trac_4020.patch which fixes one minor typo.  Only ap
 
 ---
 
-archive/issue_events_004250.json:
+archive/issue_events_009194.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -107,7 +107,7 @@ archive/issue_events_004250.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4020#event-4250"
+    "url": "https://github.com/sagemath/sagetest/issues/4020#event-9194"
 }
 ```
 

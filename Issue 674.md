@@ -77,6 +77,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001795.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-15T06:48:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/674",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/674#event-1795"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003480.json:
 ```json
 {
@@ -207,7 +224,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_000742.json:
+archive/issue_events_001796.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -215,7 +232,41 @@ archive/issue_events_000742.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/674",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/674#event-742"
+    "url": "https://github.com/sagemath/sagetest/issues/674#event-1796"
+}
+```
+
+
+
+---
+
+archive/issue_events_001797.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-08-26T20:35:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/674",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/674#event-1797"
+}
+```
+
+
+
+---
+
+archive/issue_events_001798.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-08-26T20:35:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/674",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/674#event-1798"
 }
 ```
 

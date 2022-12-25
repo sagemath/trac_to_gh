@@ -130,6 +130,23 @@ Wilfried
 
 ---
 
+archive/issue_events_014305.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-20T11:27:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6090",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6090#event-14305"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048441.json:
 ```json
 {
@@ -148,7 +165,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006343.json:
+archive/issue_events_014306.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -156,7 +173,7 @@ archive/issue_events_006343.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6090",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6090#event-6343"
+    "url": "https://github.com/sagemath/sagetest/issues/6090#event-14306"
 }
 ```
 

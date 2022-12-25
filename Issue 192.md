@@ -97,6 +97,23 @@ This will be fixed automatically by fixing trac #196.
 
 ---
 
+archive/issue_events_000378.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:57:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/192",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/192#event-378"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000880.json:
 ```json
 {
@@ -133,7 +150,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000201.json:
+archive/issue_events_000379.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -141,6 +158,6 @@ archive/issue_events_000201.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/192",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/192#event-201"
+    "url": "https://github.com/sagemath/sagetest/issues/192#event-379"
 }
 ```

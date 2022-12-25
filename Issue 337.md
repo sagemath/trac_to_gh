@@ -98,7 +98,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000361.json:
+archive/issue_events_000792.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -106,6 +106,23 @@ archive/issue_events_000361.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/337",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/337#event-361"
+    "url": "https://github.com/sagemath/sagetest/issues/337#event-792"
+}
+```
+
+
+
+---
+
+archive/issue_events_000793.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:21:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/337",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/337#event-793"
 }
 ```

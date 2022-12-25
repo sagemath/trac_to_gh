@@ -76,6 +76,23 @@ I think it can be assumed that "soon" will never happen, given that 7 years have
 
 ---
 
+archive/issue_events_012577.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-04-26T09:52:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5399",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5399#event-12577"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041612.json:
 ```json
 {
@@ -112,7 +129,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005656.json:
+archive/issue_events_012578.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -120,6 +137,6 @@ archive/issue_events_005656.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5399",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5399#event-5656"
+    "url": "https://github.com/sagemath/sagetest/issues/5399#event-12578"
 }
 ```

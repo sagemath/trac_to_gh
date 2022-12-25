@@ -309,7 +309,7 @@ If someone doesn't agree, feel free to open it back up or email to have a discus
 
 ---
 
-archive/issue_events_002184.json:
+archive/issue_events_004871.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -317,7 +317,7 @@ archive/issue_events_002184.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2028#event-2184"
+    "url": "https://github.com/sagemath/sagetest/issues/2028#event-4871"
 }
 ```
 

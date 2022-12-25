@@ -51,7 +51,24 @@ This isn't critical for 4.0.
 
 ---
 
-archive/issue_events_006281.json:
+archive/issue_events_014153.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T06:53:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6026",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6026#event-14153"
+}
+```
+
+
+
+---
+
+archive/issue_events_014154.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -59,7 +76,41 @@ archive/issue_events_006281.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6026",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6026#event-6281"
+    "url": "https://github.com/sagemath/sagetest/issues/6026#event-14154"
+}
+```
+
+
+
+---
+
+archive/issue_events_014155.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-08T14:22:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6026",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6026#event-14155"
+}
+```
+
+
+
+---
+
+archive/issue_events_014156.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-02-08T14:22:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6026",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6026#event-14156"
 }
 ```
 

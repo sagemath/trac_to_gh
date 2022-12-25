@@ -263,6 +263,23 @@ In light of the recent message [here](http://groups.google.com/group/sage-suppor
 
 ---
 
+archive/issue_events_017042.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T17:40:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7193",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7193#event-17042"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059530.json:
 ```json
 {
@@ -455,7 +472,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007412.json:
+archive/issue_events_017043.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -463,6 +480,40 @@ archive/issue_events_007412.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7193",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7193#event-7412"
+    "url": "https://github.com/sagemath/sagetest/issues/7193#event-17043"
+}
+```
+
+
+
+---
+
+archive/issue_events_017044.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-22T05:40:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7193",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7193#event-17044"
+}
+```
+
+
+
+---
+
+archive/issue_events_017045.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-22T05:40:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7193",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7193#event-17045"
 }
 ```

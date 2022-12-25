@@ -640,7 +640,24 @@ Okay, I think that this is finally in shape.  Thanks for the back and forth on t
 
 ---
 
-archive/issue_events_007725.json:
+archive/issue_events_017765.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-06-26T15:05:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7496",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7496#event-17765"
+}
+```
+
+
+
+---
+
+archive/issue_events_017766.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -648,7 +665,7 @@ archive/issue_events_007725.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7496#event-7725"
+    "url": "https://github.com/sagemath/sagetest/issues/7496#event-17766"
 }
 ```
 

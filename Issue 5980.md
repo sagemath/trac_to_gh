@@ -73,7 +73,24 @@ Issue created by migration from https://trac.sagemath.org/ticket/5980
 
 ---
 
-archive/issue_events_006235.json:
+archive/issue_events_014031.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-04T16:49:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5980",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5980#event-14031"
+}
+```
+
+
+
+---
+
+archive/issue_events_014032.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -81,7 +98,7 @@ archive/issue_events_006235.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5980",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5980#event-6235"
+    "url": "https://github.com/sagemath/sagetest/issues/5980#event-14032"
 }
 ```
 

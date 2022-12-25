@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/753
 
 ---
 
+archive/issue_events_002050.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-26T21:19:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/753",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/753#event-2050"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004433.json:
 ```json
 {
@@ -60,6 +77,40 @@ archive/issue_comments_004434.json:
 ```
 
 Changing assignee from @williamstein to @mwhansen.
+
+
+
+---
+
+archive/issue_events_002051.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-18T10:04:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/753",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/753#event-2051"
+}
+```
+
+
+
+---
+
+archive/issue_events_002052.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-18T10:04:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/753",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/753#event-2052"
+}
+```
 
 
 
@@ -270,7 +321,7 @@ Merged all three patches in Sage 2.10.3.rc1
 
 ---
 
-archive/issue_events_000846.json:
+archive/issue_events_002053.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -278,7 +329,7 @@ archive/issue_events_000846.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/753#event-846"
+    "url": "https://github.com/sagemath/sagetest/issues/753#event-2053"
 }
 ```
 

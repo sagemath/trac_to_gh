@@ -73,6 +73,23 @@ OverflowError: value too large to convert to int
 
 ---
 
+archive/issue_events_007713.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2008-06-14T00:20:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3421",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3421#event-7713"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024031.json:
 ```json
 {
@@ -129,7 +146,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_003637.json:
+archive/issue_events_007714.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -137,7 +154,7 @@ archive/issue_events_003637.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3421",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3421#event-3637"
+    "url": "https://github.com/sagemath/sagetest/issues/3421#event-7714"
 }
 ```
 

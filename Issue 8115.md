@@ -405,7 +405,7 @@ Merged [cddlib-094f.p4.spkg](http://www.stp.dias.ie/~vbraun/cddlib-094f.p4.spkg)
 
 ---
 
-archive/issue_events_008321.json:
+archive/issue_events_019429.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -413,7 +413,7 @@ archive/issue_events_008321.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8115#event-8321"
+    "url": "https://github.com/sagemath/sagetest/issues/8115#event-19429"
 }
 ```
 
@@ -511,7 +511,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_008322.json:
+archive/issue_events_019430.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -519,7 +519,7 @@ archive/issue_events_008322.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8115#event-8322"
+    "url": "https://github.com/sagemath/sagetest/issues/8115#event-19430"
 }
 ```
 
@@ -995,7 +995,7 @@ The package [cddlib-094f.p4.spkg](http://www.stp.dias.ie/~vbraun/cddlib-094f.p4.
 
 ---
 
-archive/issue_events_008323.json:
+archive/issue_events_019431.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1003,7 +1003,7 @@ archive/issue_events_008323.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8115#event-8323"
+    "url": "https://github.com/sagemath/sagetest/issues/8115#event-19431"
 }
 ```
 

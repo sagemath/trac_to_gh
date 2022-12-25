@@ -114,7 +114,7 @@ It is not platform dependent: it is not deterministic ;)
 
 ---
 
-archive/issue_events_002048.json:
+archive/issue_events_004549.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -122,7 +122,7 @@ archive/issue_events_002048.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1890",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1890#event-2048"
+    "url": "https://github.com/sagemath/sagetest/issues/1890#event-4549"
 }
 ```
 

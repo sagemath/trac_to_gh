@@ -67,6 +67,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9819
 
 ---
 
+archive/issue_events_024690.json:
+```json
+{
+    "actor": "https://github.com/lftabera",
+    "created_at": "2010-08-27T11:13:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9818",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9818#event-24690"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096657.json:
 ```json
 {
@@ -121,6 +138,40 @@ Replying to [comment:3 mstreng]:
 I wouldn't say that it is a different proposal. #10771 treats the case of fields that happen to be the fraction field of a unique factorization domain. In this case, one can do better than to return either 0 or 1.
 
 However, #10771 does not consider the case of fields that are no fraction fields, or are fraction fields of rings that do not provide lcm and gcd. I suggest that for that purpose, one should implement gcd and lcd as element methods of the category of `Fields()`. That would also solve the problem that `IntegerMod_int` does not derive from `FieldElement`.
+
+
+
+---
+
+archive/issue_events_024691.json:
+```json
+{
+    "actor": "https://github.com/mstreng",
+    "created_at": "2012-01-12T12:05:07Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9818",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9818#event-24691"
+}
+```
+
+
+
+---
+
+archive/issue_events_024692.json:
+```json
+{
+    "actor": "https://github.com/mstreng",
+    "created_at": "2012-01-12T12:05:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9818",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9818#event-24692"
+}
+```
 
 
 
@@ -234,7 +285,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009941.json:
+archive/issue_events_024693.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -242,6 +293,6 @@ archive/issue_events_009941.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9818#event-9941"
+    "url": "https://github.com/sagemath/sagetest/issues/9818#event-24693"
 }
 ```

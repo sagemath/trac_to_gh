@@ -153,6 +153,23 @@ Changing status from needs_work to needs_info.
 
 ---
 
+archive/issue_events_018839.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2010-02-23T14:54:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7880",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7880#event-18839"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068372.json:
 ```json
 {
@@ -184,6 +201,40 @@ archive/issue_comments_068373.json:
 ```
 
 Changing status from needs_info to needs_review.
+
+
+
+---
+
+archive/issue_events_018840.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2010-02-23T14:54:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7880",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7880#event-18840"
+}
+```
+
+
+
+---
+
+archive/issue_events_018841.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2010-02-23T14:54:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7880",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7880#event-18841"
+}
+```
 
 
 
@@ -335,7 +386,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008095.json:
+archive/issue_events_018842.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -343,6 +394,6 @@ archive/issue_events_008095.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7880",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7880#event-8095"
+    "url": "https://github.com/sagemath/sagetest/issues/7880#event-18842"
 }
 ```

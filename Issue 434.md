@@ -56,7 +56,24 @@ Issue created by migration from https://trac.sagemath.org/ticket/434
 
 ---
 
-archive/issue_events_000461.json:
+archive/issue_events_001066.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-20T07:53:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/434",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/434#event-1066"
+}
+```
+
+
+
+---
+
+archive/issue_events_001067.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -64,7 +81,7 @@ archive/issue_events_000461.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/434",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/434#event-461"
+    "url": "https://github.com/sagemath/sagetest/issues/434#event-1067"
 }
 ```
 

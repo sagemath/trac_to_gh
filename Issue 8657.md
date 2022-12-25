@@ -54,7 +54,7 @@ Duplicate of #9189.  I'm not sure why I didn't see this one before.
 
 ---
 
-archive/issue_events_008829.json:
+archive/issue_events_020950.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -62,7 +62,7 @@ archive/issue_events_008829.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8657",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8657#event-8829"
+    "url": "https://github.com/sagemath/sagetest/issues/8657#event-20950"
 }
 ```
 
@@ -83,3 +83,20 @@ archive/issue_comments_078427.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_020951.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-09T19:05:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8657",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8657#event-20951"
+}
+```

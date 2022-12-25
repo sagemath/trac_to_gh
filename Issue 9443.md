@@ -442,7 +442,7 @@ Thanks!  The new patch applies cleanly to 4.5.3.alpha0.  I've attached V2, which
 
 ---
 
-archive/issue_events_009600.json:
+archive/issue_events_023352.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -450,7 +450,7 @@ archive/issue_events_009600.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9443#event-9600"
+    "url": "https://github.com/sagemath/sagetest/issues/9443#event-23352"
 }
 ```
 

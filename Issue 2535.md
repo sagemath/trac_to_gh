@@ -270,6 +270,23 @@ Final version of patch attached, with one or two small improvements over previou
 
 ---
 
+archive/issue_events_005939.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-24T19:30:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2535",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2535#event-5939"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017255.json:
 ```json
 {
@@ -288,7 +305,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002716.json:
+archive/issue_events_005940.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -296,7 +313,7 @@ archive/issue_events_002716.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#event-2716"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#event-5940"
 }
 ```
 

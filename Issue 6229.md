@@ -160,7 +160,7 @@ based on Sage 4.0.1.rc2
 
 ---
 
-archive/issue_events_006476.json:
+archive/issue_events_014605.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -168,7 +168,7 @@ archive/issue_events_006476.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6229",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6229#event-6476"
+    "url": "https://github.com/sagemath/sagetest/issues/6229#event-14605"
 }
 ```
 

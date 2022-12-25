@@ -876,7 +876,24 @@ Rob
 
 ---
 
-archive/issue_events_009225.json:
+archive/issue_events_022232.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-04T22:45:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9074",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9074#event-22232"
+}
+```
+
+
+
+---
+
+archive/issue_events_022233.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -884,7 +901,7 @@ archive/issue_events_009225.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9074#event-9225"
+    "url": "https://github.com/sagemath/sagetest/issues/9074#event-22233"
 }
 ```
 

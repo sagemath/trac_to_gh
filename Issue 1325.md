@@ -340,7 +340,24 @@ This should be fixed once #3405 is in.
 
 ---
 
-archive/issue_events_001465.json:
+archive/issue_events_003459.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-26T06:35:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1325",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1325#event-3459"
+}
+```
+
+
+
+---
+
+archive/issue_events_003460.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -348,7 +365,7 @@ archive/issue_events_001465.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1325",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1325#event-1465"
+    "url": "https://github.com/sagemath/sagetest/issues/1325#event-3460"
 }
 ```
 

@@ -118,7 +118,7 @@ spkg and patch merged in 2.9.1 rc0
 
 ---
 
-archive/issue_events_001687.json:
+archive/issue_events_003866.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -126,7 +126,7 @@ archive/issue_events_001687.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1533",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1533#event-1687"
+    "url": "https://github.com/sagemath/sagetest/issues/1533#event-3866"
 }
 ```
 

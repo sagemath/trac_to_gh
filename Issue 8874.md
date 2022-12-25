@@ -156,7 +156,24 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009032.json:
+archive/issue_events_021668.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-05-08T21:34:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8874",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8874#event-21668"
+}
+```
+
+
+
+---
+
+archive/issue_events_021669.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -164,6 +181,6 @@ archive/issue_events_009032.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8874",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8874#event-9032"
+    "url": "https://github.com/sagemath/sagetest/issues/8874#event-21669"
 }
 ```

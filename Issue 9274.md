@@ -203,6 +203,23 @@ With `SAGE_PARALLEL_SPKG_BUILD="yes"`: The long tests pass on bsd.math.  They al
 
 ---
 
+archive/issue_events_022846.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-06-30T03:14:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9274",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9274#event-22846"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087212.json:
 ```json
 {
@@ -276,6 +293,40 @@ archive/issue_comments_087214.json:
 ```
 
 Changing priority from minor to blocker.
+
+
+
+---
+
+archive/issue_events_022847.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-05T21:16:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9274",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9274#event-22847"
+}
+```
+
+
+
+---
+
+archive/issue_events_022848.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-07-05T21:16:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9274",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9274#event-22848"
+}
+```
 
 
 
@@ -437,7 +488,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009436.json:
+archive/issue_events_022849.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -445,7 +496,7 @@ archive/issue_events_009436.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9274#event-9436"
+    "url": "https://github.com/sagemath/sagetest/issues/9274#event-22849"
 }
 ```
 

@@ -249,6 +249,23 @@ Just a clarification:  The spkg above includes Genshi, which it installs before 
 
 ---
 
+archive/issue_events_016300.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-10-15T05:16:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6928",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6928#event-16300"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057159.json:
 ```json
 {
@@ -267,7 +284,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007152.json:
+archive/issue_events_016301.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -275,7 +292,7 @@ archive/issue_events_007152.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6928#event-7152"
+    "url": "https://github.com/sagemath/sagetest/issues/6928#event-16301"
 }
 ```
 

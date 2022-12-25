@@ -47,7 +47,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000319.json:
+archive/issue_events_000703.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -55,7 +55,7 @@ archive/issue_events_000319.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/302",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/302#event-319"
+    "url": "https://github.com/sagemath/sagetest/issues/302#event-703"
 }
 ```
 
@@ -152,7 +152,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000320.json:
+archive/issue_events_000704.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
@@ -160,7 +160,7 @@ archive/issue_events_000320.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/302",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/302#event-320"
+    "url": "https://github.com/sagemath/sagetest/issues/302#event-704"
 }
 ```
 
@@ -199,6 +199,23 @@ archive/issue_comments_001439.json:
 ```
 
 Changing priority from critical to minor.
+
+
+
+---
+
+archive/issue_events_000705.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-10T05:32:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/302",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/302#event-705"
+}
+```
 
 
 
@@ -266,7 +283,7 @@ For example on the TRAC server for Knoboo I've seen it report that the server is
 
 ---
 
-archive/issue_events_000321.json:
+archive/issue_events_000706.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -274,7 +291,7 @@ archive/issue_events_000321.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/302",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/302#event-321"
+    "url": "https://github.com/sagemath/sagetest/issues/302#event-706"
 }
 ```
 
@@ -313,3 +330,20 @@ archive/issue_comments_001444.json:
 ```
 
 Sounds reasonable to me. Invalidated.
+
+
+
+---
+
+archive/issue_events_000707.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-04T21:40:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/302",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/302#event-707"
+}
+```

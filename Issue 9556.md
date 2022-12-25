@@ -529,7 +529,7 @@ Attachment [trac_9556-dynamic_class_everywhere.patch](tarball://root/attachments
 
 ---
 
-archive/issue_events_009703.json:
+archive/issue_events_023784.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -537,7 +537,7 @@ archive/issue_events_009703.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9556#event-9703"
+    "url": "https://github.com/sagemath/sagetest/issues/9556#event-23784"
 }
 ```
 

@@ -783,6 +783,23 @@ Now it's perfect. Positive review.
 
 ---
 
+archive/issue_events_018170.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-17T14:12:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7644",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7644#event-18170"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065242.json:
 ```json
 {
@@ -1077,7 +1094,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007867.json:
+archive/issue_events_018171.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1085,6 +1102,6 @@ archive/issue_events_007867.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7644#event-7867"
+    "url": "https://github.com/sagemath/sagetest/issues/7644#event-18171"
 }
 ```

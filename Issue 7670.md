@@ -113,6 +113,125 @@ If Linux and Mac OS X, at least, both support SHA-512, I suggest we use it by de
 
 ---
 
+archive/issue_events_018275.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18275"
+}
+```
+
+
+
+---
+
+archive/issue_events_018276.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18276"
+}
+```
+
+
+
+---
+
+archive/issue_events_018277.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18277"
+}
+```
+
+
+
+---
+
+archive/issue_events_018278.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18278"
+}
+```
+
+
+
+---
+
+archive/issue_events_018279.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18279"
+}
+```
+
+
+
+---
+
+archive/issue_events_018280.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18280"
+}
+```
+
+
+
+---
+
+archive/issue_events_018281.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18281"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065628.json:
 ```json
 {
@@ -126,6 +245,40 @@ archive/issue_comments_065628.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_018282.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-09-17T02:15:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18282"
+}
+```
+
+
+
+---
+
+archive/issue_events_018283.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-09-17T02:15:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7670",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18283"
+}
+```
 
 
 
@@ -185,7 +338,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007889.json:
+archive/issue_events_018284.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -193,6 +346,6 @@ archive/issue_events_007889.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7670",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7670#event-7889"
+    "url": "https://github.com/sagemath/sagetest/issues/7670#event-18284"
 }
 ```

@@ -105,6 +105,23 @@ This is a partial fix (that won't work for SageObject in general, unless we enfo
 
 ---
 
+archive/issue_events_019436.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2010-03-12T09:59:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8119",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8119#event-19436"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071212.json:
 ```json
 {
@@ -382,6 +399,40 @@ archive/issue_comments_071224.json:
 ```
 
 I'm assuming the "apply" should be changed...
+
+
+
+---
+
+archive/issue_events_019437.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-21T19:36:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8119",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8119#event-19437"
+}
+```
+
+
+
+---
+
+archive/issue_events_019438.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-21T19:36:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8119",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8119#event-19438"
+}
+```
 
 
 
@@ -924,7 +975,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008327.json:
+archive/issue_events_019439.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -932,6 +983,6 @@ archive/issue_events_008327.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8119#event-8327"
+    "url": "https://github.com/sagemath/sagetest/issues/8119#event-19439"
 }
 ```

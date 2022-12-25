@@ -160,6 +160,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4817
 
 ---
 
+archive/issue_events_011038.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-17T10:00:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#event-11038"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036451.json:
 ```json
 {
@@ -177,6 +194,40 @@ This should probably wait until 3.3, but it would be great if we could get this 
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_011039.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T02:29:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#event-11039"
+}
+```
+
+
+
+---
+
+archive/issue_events_011040.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T02:29:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#event-11040"
+}
+```
 
 
 
@@ -399,7 +450,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005061.json:
+archive/issue_events_011041.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -407,6 +458,6 @@ archive/issue_events_005061.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4817",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4817#event-5061"
+    "url": "https://github.com/sagemath/sagetest/issues/4817#event-11041"
 }
 ```

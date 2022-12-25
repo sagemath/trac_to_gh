@@ -137,7 +137,7 @@ William -- Is this a problem with `sagenb.org`?
 
 ---
 
-archive/issue_events_006506.json:
+archive/issue_events_014658.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -145,7 +145,7 @@ archive/issue_events_006506.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6262",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6262#event-6506"
+    "url": "https://github.com/sagemath/sagetest/issues/6262#event-14658"
 }
 ```
 

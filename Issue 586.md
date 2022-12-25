@@ -64,7 +64,7 @@ fixed for sage-2.8.3.4
 
 ---
 
-archive/issue_events_000640.json:
+archive/issue_events_001559.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -72,7 +72,7 @@ archive/issue_events_000640.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/586",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/586#event-640"
+    "url": "https://github.com/sagemath/sagetest/issues/586#event-1559"
 }
 ```
 

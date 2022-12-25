@@ -275,6 +275,23 @@ Linux vinegar-pot 2.6.24.5 #1 SMP Sun Apr 20 05:23:49 UTC 2008 i686 GNU/Linux
 
 ---
 
+archive/issue_events_006974.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-03T12:30:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3090",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3090#event-6974"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021290.json:
 ```json
 {
@@ -353,7 +370,41 @@ I still cannot reproduce this in 4.0.1.rc1.  I'm going to mark this as invalid.
 
 ---
 
-archive/issue_events_003304.json:
+archive/issue_events_006975.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-04T23:03:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3090",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3090#event-6975"
+}
+```
+
+
+
+---
+
+archive/issue_events_006976.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-04T23:03:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3090",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3090#event-6976"
+}
+```
+
+
+
+---
+
+archive/issue_events_006977.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -361,6 +412,6 @@ archive/issue_events_003304.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3090",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3090#event-3304"
+    "url": "https://github.com/sagemath/sagetest/issues/3090#event-6977"
 }
 ```

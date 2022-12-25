@@ -258,7 +258,7 @@ It works and all doctests pass on the machine in question.  Plus Robertwb looked
 
 ---
 
-archive/issue_events_003802.json:
+archive/issue_events_008206.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -266,7 +266,7 @@ archive/issue_events_003802.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3585#event-3802"
+    "url": "https://github.com/sagemath/sagetest/issues/3585#event-8206"
 }
 ```
 

@@ -332,7 +332,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009462.json:
+archive/issue_events_022935.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -340,7 +340,7 @@ archive/issue_events_009462.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9304",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9304#event-9462"
+    "url": "https://github.com/sagemath/sagetest/issues/9304#event-22935"
 }
 ```
 
@@ -361,3 +361,20 @@ archive/issue_comments_087503.json:
 ```
 
 Merged alternative patch
+
+
+
+---
+
+archive/issue_events_022936.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-11-01T10:26:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9304",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9304#event-22936"
+}
+```

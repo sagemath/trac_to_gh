@@ -96,7 +96,7 @@ Attachment [trac_2087.patch](tarball://root/attachments/some-uuid/ticket2087/tra
 
 ---
 
-archive/issue_events_002248.json:
+archive/issue_events_004997.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -104,7 +104,7 @@ archive/issue_events_002248.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2087",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2087#event-2248"
+    "url": "https://github.com/sagemath/sagetest/issues/2087#event-4997"
 }
 ```
 

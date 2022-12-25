@@ -240,7 +240,7 @@ And here is the positive review!
 
 ---
 
-archive/issue_events_007754.json:
+archive/issue_events_017854.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -248,7 +248,7 @@ archive/issue_events_007754.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7526",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7526#event-7754"
+    "url": "https://github.com/sagemath/sagetest/issues/7526#event-17854"
 }
 ```
 
@@ -269,3 +269,20 @@ archive/issue_comments_063685.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_017855.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-09T00:22:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7526",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7526#event-17855"
+}
+```

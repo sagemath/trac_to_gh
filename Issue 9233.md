@@ -91,6 +91,23 @@ sage: sum((4/(8*n+1)-2/(8*n+4)-1/(8*n+5)-1/(16*n+12)-1/(16*n+14)), n, 0,oo)
 
 ---
 
+archive/issue_events_022731.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-06-14T00:21:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9233",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9233#event-22731"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086536.json:
 ```json
 {
@@ -109,7 +126,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009395.json:
+archive/issue_events_022732.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -117,6 +134,6 @@ archive/issue_events_009395.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9233",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9233#event-9395"
+    "url": "https://github.com/sagemath/sagetest/issues/9233#event-22732"
 }
 ```

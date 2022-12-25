@@ -125,7 +125,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_003112.json:
+archive/issue_events_006668.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -133,7 +133,7 @@ archive/issue_events_003112.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2910",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2910#event-3112"
+    "url": "https://github.com/sagemath/sagetest/issues/2910#event-6668"
 }
 ```
 
@@ -172,3 +172,20 @@ archive/issue_comments_020013.json:
 ```
 
 +1 to wontfix for me
+
+
+
+---
+
+archive/issue_events_006669.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:55:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2910",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2910#event-6669"
+}
+```

@@ -83,7 +83,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_003754.json:
+archive/issue_events_008068.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -91,7 +91,7 @@ archive/issue_events_003754.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3535",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3535#event-3754"
+    "url": "https://github.com/sagemath/sagetest/issues/3535#event-8068"
 }
 ```
 
@@ -115,3 +115,20 @@ archive/issue_comments_024906.json:
 > obvious to users with no experience with notebook-style interfaces. 
 
 Yes, but I don't think a new worksheet with tutorial stuff in it is the solution.   This has been discussed a lot before, and we decided to put an "evaluate" button in for such users, which helps a lot.  Once people get familiar with sage, they click "help" in the upper right, and then they quickly learn about shift-enter.
+
+
+
+---
+
+archive/issue_events_008069.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-08T23:45:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3535",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3535#event-8069"
+}
+```

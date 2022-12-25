@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/300
 
 ---
 
+archive/issue_events_000695.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T02:44:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/300",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/300#event-695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001425.json:
 ```json
 {
@@ -46,7 +63,7 @@ It never came up again, closing this for now.
 
 ---
 
-archive/issue_events_000317.json:
+archive/issue_events_000696.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -54,7 +71,7 @@ archive/issue_events_000317.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/300",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/300#event-317"
+    "url": "https://github.com/sagemath/sagetest/issues/300#event-696"
 }
 ```
 
@@ -75,3 +92,37 @@ archive/issue_comments_001426.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_000697.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-22T00:03:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/300",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/300#event-697"
+}
+```
+
+
+
+---
+
+archive/issue_events_000698.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-22T00:03:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/300",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/300#event-698"
+}
+```

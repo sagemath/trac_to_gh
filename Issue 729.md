@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/729
 
 ---
 
+archive/issue_events_001970.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-23T10:34:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/729",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/729#event-1970"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004264.json:
 ```json
 {
@@ -66,7 +83,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000812.json:
+archive/issue_events_001971.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -74,7 +91,7 @@ archive/issue_events_000812.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/729",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/729#event-812"
+    "url": "https://github.com/sagemath/sagetest/issues/729#event-1971"
 }
 ```
 
@@ -104,6 +121,40 @@ Michael
 
 ---
 
+archive/issue_events_001972.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-22T07:03:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/729",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/729#event-1972"
+}
+```
+
+
+
+---
+
+archive/issue_events_001973.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-22T07:03:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/729",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/729#event-1973"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004267.json:
 ```json
 {
@@ -122,7 +173,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000813.json:
+archive/issue_events_001974.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,7 +181,7 @@ archive/issue_events_000813.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/729",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/729#event-813"
+    "url": "https://github.com/sagemath/sagetest/issues/729#event-1974"
 }
 ```
 
@@ -192,7 +243,7 @@ This is duplicate because #749 takes care of it.
 
 ---
 
-archive/issue_events_000814.json:
+archive/issue_events_001975.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -200,7 +251,7 @@ archive/issue_events_000814.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/729",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/729#event-814"
+    "url": "https://github.com/sagemath/sagetest/issues/729#event-1975"
 }
 ```
 

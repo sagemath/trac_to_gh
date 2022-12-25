@@ -96,6 +96,23 @@ Attachment [9948_padic_pari_gp.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
+archive/issue_events_025095.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-20T16:07:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9947",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9947#event-25095"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099023.json:
 ```json
 {
@@ -109,6 +126,108 @@ archive/issue_comments_099023.json:
 ```
 
 Changing keywords from "" to "sd35".
+
+
+
+---
+
+archive/issue_events_025096.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9947",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9947#event-25096"
+}
+```
+
+
+
+---
+
+archive/issue_events_025097.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9947",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9947#event-25097"
+}
+```
+
+
+
+---
+
+archive/issue_events_025098.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9947",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9947#event-25098"
+}
+```
+
+
+
+---
+
+archive/issue_events_025099.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9947",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9947#event-25099"
+}
+```
+
+
+
+---
+
+archive/issue_events_025100.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2014-04-10T23:30:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9947",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9947#event-25100"
+}
+```
+
+
+
+---
+
+archive/issue_events_025101.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2014-04-10T23:30:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9947",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9947#event-25101"
+}
+```
 
 
 
@@ -195,7 +314,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_010076.json:
+archive/issue_events_025102.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -203,7 +322,7 @@ archive/issue_events_010076.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9947",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9947#event-10076"
+    "url": "https://github.com/sagemath/sagetest/issues/9947#event-25102"
 }
 ```
 

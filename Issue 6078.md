@@ -110,6 +110,23 @@ Changing component from algebra to quadratic forms.
 
 ---
 
+archive/issue_events_014268.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T06:53:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6078",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6078#event-14268"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048287.json:
 ```json
 {
@@ -164,7 +181,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006332.json:
+archive/issue_events_014269.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -172,6 +189,6 @@ archive/issue_events_006332.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6078",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6078#event-6332"
+    "url": "https://github.com/sagemath/sagetest/issues/6078#event-14269"
 }
 ```

@@ -58,7 +58,24 @@ Anyway, it seems as though the server is maybe returning 'd' when it shouldn't.
 
 ---
 
-archive/issue_events_000254.json:
+archive/issue_events_000499.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:23:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/240",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/240#event-499"
+}
+```
+
+
+
+---
+
+archive/issue_events_000500.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -66,7 +83,7 @@ archive/issue_events_000254.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/240#event-254"
+    "url": "https://github.com/sagemath/sagetest/issues/240#event-500"
 }
 ```
 

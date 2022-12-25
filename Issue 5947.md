@@ -59,6 +59,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5947
 
 ---
 
+archive/issue_events_013932.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-01T00:42:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5947",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5947#event-13932"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046960.json:
 ```json
 {
@@ -108,7 +125,7 @@ See fix at #5948.
 
 ---
 
-archive/issue_events_006203.json:
+archive/issue_events_013933.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -116,7 +133,7 @@ archive/issue_events_006203.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5947",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5947#event-6203"
+    "url": "https://github.com/sagemath/sagetest/issues/5947#event-13933"
 }
 ```
 
@@ -155,3 +172,37 @@ archive/issue_comments_046963.json:
 ```
 
 This was fixed by #5948.
+
+
+
+---
+
+archive/issue_events_013934.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-07T08:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5947",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5947#event-13934"
+}
+```
+
+
+
+---
+
+archive/issue_events_013935.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-07T08:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5947",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5947#event-13935"
+}
+```

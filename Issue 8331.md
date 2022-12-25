@@ -172,7 +172,7 @@ Ryan: remember to put a sensible commit message in your patch, together with the
 
 ---
 
-archive/issue_events_008524.json:
+archive/issue_events_019947.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -180,7 +180,7 @@ archive/issue_events_008524.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8331",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8331#event-8524"
+    "url": "https://github.com/sagemath/sagetest/issues/8331#event-19947"
 }
 ```
 

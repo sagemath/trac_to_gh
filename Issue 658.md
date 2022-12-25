@@ -79,6 +79,23 @@ crash messages.
 
 ---
 
+archive/issue_events_001767.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-03T12:34:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/658",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/658#event-1767"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003413.json:
 ```json
 {
@@ -97,7 +114,41 @@ The randstate framework essentially fixes this.  It doesn't print the seed on st
 
 ---
 
-archive/issue_events_000726.json:
+archive/issue_events_001768.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2008-08-23T20:54:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/658",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/658#event-1768"
+}
+```
+
+
+
+---
+
+archive/issue_events_001769.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2008-08-23T20:54:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/658",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/658#event-1769"
+}
+```
+
+
+
+---
+
+archive/issue_events_001770.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -105,7 +156,7 @@ archive/issue_events_000726.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/658",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/658#event-726"
+    "url": "https://github.com/sagemath/sagetest/issues/658#event-1770"
 }
 ```
 

@@ -51,6 +51,23 @@ Michael
 
 ---
 
+archive/issue_events_003994.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:00:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-3994"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010187.json:
 ```json
 {
@@ -105,7 +122,41 @@ Image fonts are already included in sagenb. Please close this.
 
 ---
 
-archive/issue_events_001766.json:
+archive/issue_events_003995.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-15T15:58:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-3995"
+}
+```
+
+
+
+---
+
+archive/issue_events_003996.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-15T15:58:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-3996"
+}
+```
+
+
+
+---
+
+archive/issue_events_003997.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -113,7 +164,7 @@ archive/issue_events_001766.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1608#event-1766"
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-3997"
 }
 ```
 
@@ -195,7 +246,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_001767.json:
+archive/issue_events_003998.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -203,7 +254,7 @@ archive/issue_events_001767.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1608#event-1767"
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-3998"
 }
 ```
 
@@ -254,6 +305,40 @@ No problem.   I should actually write code for this though :-)
 
 ---
 
+archive/issue_events_003999.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-11-17T10:36:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-3999"
+}
+```
+
+
+
+---
+
+archive/issue_events_004000.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-11-17T10:36:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-4000"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010196.json:
 ```json
 {
@@ -285,6 +370,40 @@ archive/issue_comments_010197.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_004001.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-12T20:38:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-4001"
+}
+```
+
+
+
+---
+
+archive/issue_events_004002.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-12T20:38:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-4002"
+}
+```
 
 
 
@@ -328,7 +447,24 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_events_001768.json:
+archive/issue_events_004003.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-12T21:26:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-4003"
+}
+```
+
+
+
+---
+
+archive/issue_events_004004.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -336,7 +472,7 @@ archive/issue_events_001768.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1608#event-1768"
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-4004"
 }
 ```
 

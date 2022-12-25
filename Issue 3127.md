@@ -186,7 +186,7 @@ Patch at #1284 fixes this.
 
 ---
 
-archive/issue_events_003343.json:
+archive/issue_events_007063.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -194,7 +194,7 @@ archive/issue_events_003343.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3127",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3127#event-3343"
+    "url": "https://github.com/sagemath/sagetest/issues/3127#event-7063"
 }
 ```
 

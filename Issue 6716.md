@@ -131,6 +131,23 @@ I'm changing the component from 'algebra' to 'solaris', as this seems to be spec
 
 ---
 
+archive/issue_events_015857.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2009-08-10T07:14:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6716",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6716#event-15857"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055021.json:
 ```json
 {
@@ -198,7 +215,41 @@ Changing component from solaris to algebra.
 
 ---
 
-archive/issue_events_006951.json:
+archive/issue_events_015858.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-11T08:02:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6716",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6716#event-15858"
+}
+```
+
+
+
+---
+
+archive/issue_events_015859.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-11T08:02:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6716",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6716#event-15859"
+}
+```
+
+
+
+---
+
+archive/issue_events_015860.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -206,7 +257,7 @@ archive/issue_events_006951.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6716",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6716#event-6951"
+    "url": "https://github.com/sagemath/sagetest/issues/6716#event-15860"
 }
 ```
 

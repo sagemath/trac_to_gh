@@ -74,7 +74,7 @@ Works for me.
 
 ---
 
-archive/issue_events_005322.json:
+archive/issue_events_011716.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -82,7 +82,7 @@ archive/issue_events_005322.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5078",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5078#event-5322"
+    "url": "https://github.com/sagemath/sagetest/issues/5078#event-11716"
 }
 ```
 

@@ -141,6 +141,23 @@ mhansen -- you're right, this problem only occurs when the filename is in a dire
 
 ---
 
+archive/issue_events_006708.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-18T20:32:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2934",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2934#event-6708"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020168.json:
 ```json
 {
@@ -198,7 +215,7 @@ Looks good to me and fixes the problem.
 
 ---
 
-archive/issue_events_003136.json:
+archive/issue_events_006709.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -206,7 +223,7 @@ archive/issue_events_003136.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2934",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2934#event-3136"
+    "url": "https://github.com/sagemath/sagetest/issues/2934#event-6709"
 }
 ```
 

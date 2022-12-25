@@ -75,6 +75,23 @@ Can you please put an example of using the control in the documentation for inte
 
 ---
 
+archive/issue_events_008343.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-21T22:29:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3636",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3636#event-8343"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025666.json:
 ```json
 {
@@ -151,7 +168,7 @@ Merged both patches in Sage 3.1.alpha0
 
 ---
 
-archive/issue_events_003855.json:
+archive/issue_events_008344.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -159,7 +176,7 @@ archive/issue_events_003855.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3636#event-3855"
+    "url": "https://github.com/sagemath/sagetest/issues/3636#event-8344"
 }
 ```
 
@@ -180,3 +197,37 @@ archive/issue_comments_025670.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008345.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-30T23:40:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3636",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3636#event-8345"
+}
+```
+
+
+
+---
+
+archive/issue_events_008346.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-30T23:40:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3636",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3636#event-8346"
+}
+```

@@ -161,7 +161,7 @@ Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/tes
 
 ---
 
-archive/issue_events_002938.json:
+archive/issue_events_006384.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -169,7 +169,7 @@ archive/issue_events_002938.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2752",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2752#event-2938"
+    "url": "https://github.com/sagemath/sagetest/issues/2752#event-6384"
 }
 ```
 

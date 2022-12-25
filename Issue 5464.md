@@ -70,7 +70,7 @@ Michael
 
 ---
 
-archive/issue_events_005718.json:
+archive/issue_events_012770.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -78,7 +78,24 @@ archive/issue_events_005718.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5464",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5464#event-5718"
+    "url": "https://github.com/sagemath/sagetest/issues/5464#event-12770"
+}
+```
+
+
+
+---
+
+archive/issue_events_012771.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-10T06:07:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5464",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5464#event-12771"
 }
 ```
 

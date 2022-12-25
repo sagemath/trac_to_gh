@@ -174,7 +174,7 @@ The real way to do this is to have a rank function which works by looking at the
 
 ---
 
-archive/issue_events_002426.json:
+archive/issue_events_005344.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -182,7 +182,7 @@ archive/issue_events_002426.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2256#event-2426"
+    "url": "https://github.com/sagemath/sagetest/issues/2256#event-5344"
 }
 ```
 

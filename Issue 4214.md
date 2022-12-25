@@ -140,6 +140,23 @@ The attached patch (based on 3.1.3.alpha2) implements solution 1 described above
 
 ---
 
+archive/issue_events_009545.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2008-10-09T02:33:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#event-9545"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030561.json:
 ```json
 {
@@ -398,7 +415,7 @@ Merged in Sage 3.1.3.rc0
 
 ---
 
-archive/issue_events_004451.json:
+archive/issue_events_009546.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -406,6 +423,6 @@ archive/issue_events_004451.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4214#event-4451"
+    "url": "https://github.com/sagemath/sagetest/issues/4214#event-9546"
 }
 ```

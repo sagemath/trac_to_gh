@@ -129,7 +129,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003706.json:
+archive/issue_events_007938.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -137,6 +137,6 @@ archive/issue_events_003706.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3486",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3486#event-3706"
+    "url": "https://github.com/sagemath/sagetest/issues/3486#event-7938"
 }
 ```

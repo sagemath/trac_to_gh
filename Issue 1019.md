@@ -57,6 +57,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1019
 
 ---
 
+archive/issue_events_002790.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:16:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#event-2790"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006226.json:
 ```json
 {
@@ -189,6 +206,40 @@ This can also be fixed by improving the Octave interface to have better error de
 
 ---
 
+archive/issue_events_002791.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T09:21:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#event-2791"
+}
+```
+
+
+
+---
+
+archive/issue_events_002792.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T09:21:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#event-2792"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006233.json:
 ```json
 {
@@ -243,7 +294,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001143.json:
+archive/issue_events_002793.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -251,6 +302,6 @@ archive/issue_events_001143.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1019",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1019#event-1143"
+    "url": "https://github.com/sagemath/sagetest/issues/1019#event-2793"
 }
 ```

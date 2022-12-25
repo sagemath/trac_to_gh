@@ -65,7 +65,7 @@ Attachment [is_subgraph.patch](tarball://root/attachments/some-uuid/ticket1551/i
 
 ---
 
-archive/issue_events_001705.json:
+archive/issue_events_003897.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -73,7 +73,7 @@ archive/issue_events_001705.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1551",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1551#event-1705"
+    "url": "https://github.com/sagemath/sagetest/issues/1551#event-3897"
 }
 ```
 

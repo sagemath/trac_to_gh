@@ -292,6 +292,23 @@ To release manager: please close this ticket.
 
 ---
 
+archive/issue_events_019787.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-06-26T03:34:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8269",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8269#event-19787"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073082.json:
 ```json
 {
@@ -346,7 +363,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008468.json:
+archive/issue_events_019788.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -354,6 +371,6 @@ archive/issue_events_008468.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8269",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8269#event-8468"
+    "url": "https://github.com/sagemath/sagetest/issues/8269#event-19788"
 }
 ```

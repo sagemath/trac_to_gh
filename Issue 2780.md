@@ -65,6 +65,23 @@ Changing component from basic arithmetic to factorization.
 
 ---
 
+archive/issue_events_006420.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-03T08:54:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2780",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2780#event-6420"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019056.json:
 ```json
 {
@@ -139,7 +156,7 @@ Merged in Sage 3.0.alpha4
 
 ---
 
-archive/issue_events_002968.json:
+archive/issue_events_006421.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -147,7 +164,7 @@ archive/issue_events_002968.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2780",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2780#event-2968"
+    "url": "https://github.com/sagemath/sagetest/issues/2780#event-6421"
 }
 ```
 

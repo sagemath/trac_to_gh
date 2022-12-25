@@ -216,6 +216,23 @@ Changing assignee from @mwhansen to boothby.
 
 ---
 
+archive/issue_events_003454.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2007-12-01T07:12:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#event-3454"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008427.json:
 ```json
 {
@@ -945,7 +962,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001462.json:
+archive/issue_events_003455.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -953,6 +970,6 @@ archive/issue_events_001462.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1322#event-1462"
+    "url": "https://github.com/sagemath/sagetest/issues/1322#event-3455"
 }
 ```

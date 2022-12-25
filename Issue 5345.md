@@ -318,6 +318,23 @@ Looks good.  Apply only trac-5345-transpose-matrix-dense.patch
 
 ---
 
+archive/issue_events_012470.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-28T21:03:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5345",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5345#event-12470"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041100.json:
 ```json
 {
@@ -336,7 +353,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005601.json:
+archive/issue_events_012471.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -344,7 +361,7 @@ archive/issue_events_005601.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5345#event-5601"
+    "url": "https://github.com/sagemath/sagetest/issues/5345#event-12471"
 }
 ```
 

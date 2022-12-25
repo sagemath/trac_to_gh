@@ -460,7 +460,24 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008306.json:
+archive/issue_events_019381.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2011-01-14T15:49:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8098",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8098#event-19381"
+}
+```
+
+
+
+---
+
+archive/issue_events_019382.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -468,6 +485,6 @@ archive/issue_events_008306.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8098#event-8306"
+    "url": "https://github.com/sagemath/sagetest/issues/8098#event-19382"
 }
 ```

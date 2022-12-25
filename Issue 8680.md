@@ -869,7 +869,7 @@ Please do the latter. I don't think sage-doctest gets changed all that often, so
 
 ---
 
-archive/issue_events_008854.json:
+archive/issue_events_021049.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -877,7 +877,7 @@ archive/issue_events_008854.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#event-8854"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#event-21049"
 }
 ```
 

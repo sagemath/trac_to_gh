@@ -175,6 +175,23 @@ Is there a reason the milestone is sage-5.0?
 
 ---
 
+archive/issue_events_023902.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2011-01-23T21:27:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9599",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9599#event-23902"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092733.json:
 ```json
 {
@@ -265,7 +282,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009743.json:
+archive/issue_events_023903.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -273,6 +290,6 @@ archive/issue_events_009743.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9599#event-9743"
+    "url": "https://github.com/sagemath/sagetest/issues/9599#event-23903"
 }
 ```

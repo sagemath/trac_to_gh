@@ -255,6 +255,23 @@ sage:
 
 ---
 
+archive/issue_events_011427.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
+    "created_at": "2011-05-20T14:01:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#event-11427"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037509.json:
 ```json
 {
@@ -719,6 +736,40 @@ Perhaps easier the other way around. (Note that I still haven't updated the patc
 
 ---
 
+archive/issue_events_011428.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-09-09T05:16:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#event-11428"
+}
+```
+
+
+
+---
+
+archive/issue_events_011429.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-09-09T05:16:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#event-11429"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037530.json:
 ```json
 {
@@ -811,6 +862,40 @@ archive/issue_comments_037534.json:
 ```
 
 I've rebased this to Sage 5.0.beta1.  It had a positive review already, so I'm leaving it that way.
+
+
+
+---
+
+archive/issue_events_011430.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2012-01-23T15:49:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#event-11430"
+}
+```
+
+
+
+---
+
+archive/issue_events_011431.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2012-01-23T15:49:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#event-11431"
+}
+```
 
 
 
@@ -1858,7 +1943,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005191.json:
+archive/issue_events_011432.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1866,7 +1951,7 @@ archive/issue_events_005191.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4949#event-5191"
+    "url": "https://github.com/sagemath/sagetest/issues/4949#event-11432"
 }
 ```
 

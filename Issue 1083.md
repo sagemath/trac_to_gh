@@ -109,6 +109,23 @@ sage: L(a)
 
 ---
 
+archive/issue_events_002927.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-26T02:50:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1083",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1083#event-2927"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006525.json:
 ```json
 {
@@ -277,7 +294,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001207.json:
+archive/issue_events_002928.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -285,7 +302,7 @@ archive/issue_events_001207.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1083",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1083#event-1207"
+    "url": "https://github.com/sagemath/sagetest/issues/1083#event-2928"
 }
 ```
 

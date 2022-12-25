@@ -297,6 +297,23 @@ OK, I have posted a new patch which replaces all the earlier ones and is based o
 
 ---
 
+archive/issue_events_010837.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-12T17:04:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#event-10837"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035768.json:
 ```json
 {
@@ -1111,7 +1128,7 @@ Michael
 
 ---
 
-archive/issue_events_004984.json:
+archive/issue_events_010838.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1119,7 +1136,7 @@ archive/issue_events_004984.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4741#event-4984"
+    "url": "https://github.com/sagemath/sagetest/issues/4741#event-10838"
 }
 ```
 

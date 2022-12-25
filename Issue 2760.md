@@ -46,6 +46,23 @@ Attachment [ntl-amd64.patch](tarball://root/attachments/some-uuid/ticket2760/ntl
 
 ---
 
+archive/issue_events_006394.json:
+```json
+{
+    "actor": "https://github.com/timabbott",
+    "created_at": "2008-04-01T21:28:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2760",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2760#event-6394"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018928.json:
 ```json
 {
@@ -68,7 +85,7 @@ Michael
 
 ---
 
-archive/issue_events_002948.json:
+archive/issue_events_006395.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -76,7 +93,7 @@ archive/issue_events_002948.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2760",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2760#event-2948"
+    "url": "https://github.com/sagemath/sagetest/issues/2760#event-6395"
 }
 ```
 

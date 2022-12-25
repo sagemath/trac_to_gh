@@ -138,7 +138,7 @@ This was implemented ages ago and so can be closed.
 
 ---
 
-archive/issue_events_000383.json:
+archive/issue_events_000847.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -146,7 +146,7 @@ archive/issue_events_000383.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/361",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/361#event-383"
+    "url": "https://github.com/sagemath/sagetest/issues/361#event-847"
 }
 ```
 
@@ -189,3 +189,20 @@ Fixed as per John Cremona's request.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000848.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-07T19:41:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/361",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/361#event-848"
+}
+```

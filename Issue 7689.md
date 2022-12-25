@@ -44,6 +44,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7689
 
 ---
 
+archive/issue_events_018366.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7689",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7689#event-18366"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065861.json:
 ```json
 {
@@ -75,6 +92,40 @@ archive/issue_comments_065862.json:
 ```
 
 Currently, `cd build; ./install scripts` doesn't work and it certainly isn't an "official" way to bootstrap anything.
+
+
+
+---
+
+archive/issue_events_018367.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-29T23:21:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7689",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7689#event-18367"
+}
+```
+
+
+
+---
+
+archive/issue_events_018368.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-29T23:21:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7689",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7689#event-18368"
+}
+```
 
 
 
@@ -116,7 +167,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007906.json:
+archive/issue_events_018369.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -124,6 +175,6 @@ archive/issue_events_007906.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7689",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7689#event-7906"
+    "url": "https://github.com/sagemath/sagetest/issues/7689#event-18369"
 }
 ```

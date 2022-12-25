@@ -51,6 +51,23 @@ Changing type from enhancement to defect.
 
 ---
 
+archive/issue_events_023359.json:
+```json
+{
+    "actor": "https://github.com/wjp",
+    "created_at": "2010-07-17T10:54:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9448",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9448#event-23359"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090389.json:
 ```json
 {
@@ -195,7 +212,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009605.json:
+archive/issue_events_023360.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -203,6 +220,6 @@ archive/issue_events_009605.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9448#event-9605"
+    "url": "https://github.com/sagemath/sagetest/issues/9448#event-23360"
 }
 ```

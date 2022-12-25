@@ -125,7 +125,7 @@ I apologize for the noise.  Does anyone know why this test might be "flaky"?
 
 ---
 
-archive/issue_events_010050.json:
+archive/issue_events_025025.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -133,7 +133,7 @@ archive/issue_events_010050.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9924#event-10050"
+    "url": "https://github.com/sagemath/sagetest/issues/9924#event-25025"
 }
 ```
 
@@ -267,7 +267,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_010051.json:
+archive/issue_events_025026.json:
 ```json
 {
     "actor": "https://github.com/dimpase",
@@ -275,7 +275,7 @@ archive/issue_events_010051.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9924#event-10051"
+    "url": "https://github.com/sagemath/sagetest/issues/9924#event-25026"
 }
 ```
 
@@ -572,7 +572,7 @@ Resolution changed from worksforme to fixed
 
 ---
 
-archive/issue_events_010052.json:
+archive/issue_events_025027.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -580,7 +580,7 @@ archive/issue_events_010052.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9924#event-10052"
+    "url": "https://github.com/sagemath/sagetest/issues/9924#event-25027"
 }
 ```
 

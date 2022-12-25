@@ -138,6 +138,23 @@ patch works for 4.3.4.rc0 and looks fine. i would just like to see a "TESTS::" h
 
 ---
 
+archive/issue_events_020611.json:
+```json
+{
+    "actor": "https://github.com/haraldschilly",
+    "created_at": "2010-03-17T17:41:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8553",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8553#event-20611"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077233.json:
 ```json
 {
@@ -912,6 +929,40 @@ Just for reference, see [this sage-support thread](http://groups.google.com/grou
 
 ---
 
+archive/issue_events_020612.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-05-18T16:04:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8553",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8553#event-20612"
+}
+```
+
+
+
+---
+
+archive/issue_events_020613.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-05-18T16:04:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8553",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8553#event-20613"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077266.json:
 ```json
 {
@@ -985,7 +1036,7 @@ In any case, this (somewhat surprisingly) still applies fine to 4.7.rc2!  And do
 
 ---
 
-archive/issue_events_008736.json:
+archive/issue_events_020614.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -993,7 +1044,7 @@ archive/issue_events_008736.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8553#event-8736"
+    "url": "https://github.com/sagemath/sagetest/issues/8553#event-20614"
 }
 ```
 

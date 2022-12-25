@@ -124,6 +124,57 @@ Looking a bit further into it, the actual pickles that trigger the problem are t
 
 ---
 
+archive/issue_events_013720.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13720"
+}
+```
+
+
+
+---
+
+archive/issue_events_013721.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13721"
+}
+```
+
+
+
+---
+
+archive/issue_events_013722.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13722"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045787.json:
 ```json
 {
@@ -145,6 +196,108 @@ sage: sage.structure.sage_object.unpickle_all(std)
 sage: sage.structure.sage_object.unpickle_all(std)
 ```
 
+
+
+
+---
+
+archive/issue_events_013723.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13723"
+}
+```
+
+
+
+---
+
+archive/issue_events_013724.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13724"
+}
+```
+
+
+
+---
+
+archive/issue_events_013725.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13725"
+}
+```
+
+
+
+---
+
+archive/issue_events_013726.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13726"
+}
+```
+
+
+
+---
+
+archive/issue_events_013727.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-08-11T06:07:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13727"
+}
+```
+
+
+
+---
+
+archive/issue_events_013728.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-08-11T06:07:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13728"
+}
+```
 
 
 
@@ -206,6 +359,40 @@ archive/issue_comments_045790.json:
 ```
 
 Wouldn't it make sense to add a doctest for this, to make sure that it stays fixed?
+
+
+
+---
+
+archive/issue_events_013729.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-08-11T15:26:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13729"
+}
+```
+
+
+
+---
+
+archive/issue_events_013730.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-08-11T15:26:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5838",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13730"
+}
+```
 
 
 
@@ -462,7 +649,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006088.json:
+archive/issue_events_013731.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -470,7 +657,7 @@ archive/issue_events_006088.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5838",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5838#event-6088"
+    "url": "https://github.com/sagemath/sagetest/issues/5838#event-13731"
 }
 ```
 

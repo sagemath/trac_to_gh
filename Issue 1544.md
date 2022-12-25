@@ -232,7 +232,7 @@ http://sage.math.washington.edu/home/wdj/patches/tut.tex
 
 ---
 
-archive/issue_events_001698.json:
+archive/issue_events_003890.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -240,7 +240,7 @@ archive/issue_events_001698.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1544",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1544#event-1698"
+    "url": "https://github.com/sagemath/sagetest/issues/1544#event-3890"
 }
 ```
 

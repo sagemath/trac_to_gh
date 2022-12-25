@@ -118,7 +118,7 @@ The only change from .p6 is:
 
 ---
 
-archive/issue_events_007230.json:
+archive/issue_events_016436.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -126,7 +126,7 @@ archive/issue_events_007230.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7006",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7006#event-7230"
+    "url": "https://github.com/sagemath/sagetest/issues/7006#event-16436"
 }
 ```
 

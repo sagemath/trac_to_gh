@@ -98,7 +98,7 @@ Attachment [sage-2.8.7.rc1-fix-small-memleaks-in_modn_sparse_lift.patch](tarball
 
 ---
 
-archive/issue_events_001023.json:
+archive/issue_events_002507.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -106,7 +106,7 @@ archive/issue_events_001023.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/907",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/907#event-1023"
+    "url": "https://github.com/sagemath/sagetest/issues/907#event-2507"
 }
 ```
 

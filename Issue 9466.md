@@ -296,6 +296,23 @@ The patch passed all the tests for sage 5.11 version.
 
 ---
 
+archive/issue_events_023455.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-29T11:06:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9466",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9466#event-23455"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090656.json:
 ```json
 {
@@ -314,7 +331,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009620.json:
+archive/issue_events_023456.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -322,6 +339,6 @@ archive/issue_events_009620.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9466#event-9620"
+    "url": "https://github.com/sagemath/sagetest/issues/9466#event-23456"
 }
 ```

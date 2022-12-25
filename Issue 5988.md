@@ -79,6 +79,40 @@ Michael
 
 ---
 
+archive/issue_events_014057.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-18T13:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#event-14057"
+}
+```
+
+
+
+---
+
+archive/issue_events_014058.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-01-25T15:06:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#event-14058"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047497.json:
 ```json
 {
@@ -114,6 +148,23 @@ archive/issue_comments_047498.json:
 ```
 
 Actually, this may still be a problem in WebKit browsers.
+
+
+
+---
+
+archive/issue_events_014059.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-12-10T18:57:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#event-14059"
+}
+```
 
 
 
@@ -191,7 +242,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_006243.json:
+archive/issue_events_014060.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -199,6 +250,6 @@ archive/issue_events_006243.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5988",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5988#event-6243"
+    "url": "https://github.com/sagemath/sagetest/issues/5988#event-14060"
 }
 ```

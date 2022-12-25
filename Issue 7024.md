@@ -176,6 +176,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_016478.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#event-16478"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058063.json:
 ```json
 {
@@ -189,6 +206,40 @@ archive/issue_comments_058063.json:
 ```
 
 Works with the newer FLINT 2.x
+
+
+
+---
+
+archive/issue_events_016479.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-11-23T10:36:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#event-16479"
+}
+```
+
+
+
+---
+
+archive/issue_events_016480.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-11-23T10:36:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#event-16480"
+}
+```
 
 
 
@@ -212,7 +263,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_007246.json:
+archive/issue_events_016481.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -220,6 +271,6 @@ archive/issue_events_007246.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7024",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7024#event-7246"
+    "url": "https://github.com/sagemath/sagetest/issues/7024#event-16481"
 }
 ```

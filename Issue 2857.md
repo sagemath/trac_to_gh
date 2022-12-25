@@ -103,7 +103,7 @@ Apply 2857.2.patch after #1763
 
 ---
 
-archive/issue_events_003049.json:
+archive/issue_events_006539.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -111,7 +111,7 @@ archive/issue_events_003049.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2857",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2857#event-3049"
+    "url": "https://github.com/sagemath/sagetest/issues/2857#event-6539"
 }
 ```
 

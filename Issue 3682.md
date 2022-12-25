@@ -50,6 +50,23 @@ Michael
 
 ---
 
+archive/issue_events_008436.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-21T08:02:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3682",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3682#event-8436"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026024.json:
 ```json
 {
@@ -122,7 +139,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003902.json:
+archive/issue_events_008437.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -130,7 +147,7 @@ archive/issue_events_003902.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3682",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3682#event-3902"
+    "url": "https://github.com/sagemath/sagetest/issues/3682#event-8437"
 }
 ```
 
@@ -151,3 +168,37 @@ archive/issue_comments_026028.json:
 ```
 
 i agree.  it's not a sage bug really.
+
+
+
+---
+
+archive/issue_events_008438.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-20T04:30:14Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3682",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3682#event-8438"
+}
+```
+
+
+
+---
+
+archive/issue_events_008439.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-20T04:30:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3682",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3682#event-8439"
+}
+```

@@ -223,7 +223,24 @@ This is more than a reviewer patch, so changing to author as well.  Positive rev
 
 ---
 
-archive/issue_events_008970.json:
+archive/issue_events_021480.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2010-05-03T14:38:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8805",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8805#event-21480"
+}
+```
+
+
+
+---
+
+archive/issue_events_021481.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -231,7 +248,7 @@ archive/issue_events_008970.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8805",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8805#event-8970"
+    "url": "https://github.com/sagemath/sagetest/issues/8805#event-21481"
 }
 ```
 

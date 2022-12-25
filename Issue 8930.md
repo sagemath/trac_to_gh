@@ -128,7 +128,7 @@ Simple patch; does what it claims, and what it claims is good; pass tests; posit
 
 ---
 
-archive/issue_events_009085.json:
+archive/issue_events_021800.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -136,7 +136,7 @@ archive/issue_events_009085.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8930#event-9085"
+    "url": "https://github.com/sagemath/sagetest/issues/8930#event-21800"
 }
 ```
 

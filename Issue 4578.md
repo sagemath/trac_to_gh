@@ -259,6 +259,23 @@ I'm happy with that change. As Martin has pointed out, the timing comparison wit
 
 ---
 
+archive/issue_events_010419.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-07-19T10:16:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4578",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4578#event-10419"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034264.json:
 ```json
 {
@@ -356,7 +373,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004825.json:
+archive/issue_events_010420.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -364,6 +381,6 @@ archive/issue_events_004825.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4578",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4578#event-4825"
+    "url": "https://github.com/sagemath/sagetest/issues/4578#event-10420"
 }
 ```

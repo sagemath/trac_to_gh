@@ -115,6 +115,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_024730.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/johanbosman",
+    "created_at": "2011-04-07T14:07:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9825",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9825#event-24730"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096758.json:
 ```json
 {
@@ -205,6 +222,40 @@ and that's fixed by Simon King's patch in #11900, so I've added a dependency the
 
 ---
 
+archive/issue_events_024731.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2012-01-02T14:21:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9825",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9825#event-24731"
+}
+```
+
+
+
+---
+
+archive/issue_events_024732.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2012-01-02T14:21:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9825",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9825#event-24732"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096762.json:
 ```json
 {
@@ -218,6 +269,40 @@ archive/issue_comments_096762.json:
 ```
 
 Nevermind that; the ERRORs still happen in 4.8.alpha6, but the doctests don't seem bothered.
+
+
+
+---
+
+archive/issue_events_024733.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2012-01-05T02:38:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9825",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9825#event-24733"
+}
+```
+
+
+
+---
+
+archive/issue_events_024734.json:
+```json
+{
+    "actor": "https://github.com/orlitzky",
+    "created_at": "2012-01-05T02:38:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9825",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9825#event-24734"
+}
+```
 
 
 
@@ -391,7 +476,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009948.json:
+archive/issue_events_024735.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -399,6 +484,6 @@ archive/issue_events_009948.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9825",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9825#event-9948"
+    "url": "https://github.com/sagemath/sagetest/issues/9825#event-24735"
 }
 ```

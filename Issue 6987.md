@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6987
 
 ---
 
-archive/issue_events_007211.json:
+archive/issue_events_016406.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -64,7 +64,7 @@ archive/issue_events_007211.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6987",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6987#event-7211"
+    "url": "https://github.com/sagemath/sagetest/issues/6987#event-16406"
 }
 ```
 

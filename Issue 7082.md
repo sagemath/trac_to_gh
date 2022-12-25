@@ -141,7 +141,7 @@ The changes in this patch have already been included.
 
 ---
 
-archive/issue_events_007304.json:
+archive/issue_events_016749.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -149,7 +149,24 @@ archive/issue_events_007304.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7082",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7082#event-7304"
+    "url": "https://github.com/sagemath/sagetest/issues/7082#event-16749"
+}
+```
+
+
+
+---
+
+archive/issue_events_016750.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-15T14:15:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7082",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7082#event-16750"
 }
 ```
 

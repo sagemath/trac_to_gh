@@ -272,6 +272,23 @@ Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h)
 
 ---
 
+archive/issue_events_000401.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:18:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/201",
+    "milestone": "sage-2.8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/201#event-401"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000905.json:
 ```json
 {
@@ -285,6 +302,40 @@ archive/issue_comments_000905.json:
 ```
 
 Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroots.cc) by @williamstein created at 2007-08-18 21:18:23
+
+
+
+---
+
+archive/issue_events_000402.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:20:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/201",
+    "milestone": "sage-2.8.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/201#event-402"
+}
+```
+
+
+
+---
+
+archive/issue_events_000403.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:20:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/201",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/201#event-403"
+}
+```
 
 
 
@@ -427,7 +478,7 @@ Michael
 
 ---
 
-archive/issue_events_000210.json:
+archive/issue_events_000404.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -435,7 +486,7 @@ archive/issue_events_000210.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/201#event-210"
+    "url": "https://github.com/sagemath/sagetest/issues/201#event-404"
 }
 ```
 

@@ -171,7 +171,7 @@ apply after spkg and patch above
 
 ---
 
-archive/issue_events_006389.json:
+archive/issue_events_014457.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -179,7 +179,7 @@ archive/issue_events_006389.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6140",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6140#event-6389"
+    "url": "https://github.com/sagemath/sagetest/issues/6140#event-14457"
 }
 ```
 

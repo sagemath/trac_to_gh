@@ -84,7 +84,7 @@ PS - testall passes with these two patches
 
 ---
 
-archive/issue_events_001985.json:
+archive/issue_events_004439.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -92,7 +92,7 @@ archive/issue_events_001985.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1826",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1826#event-1985"
+    "url": "https://github.com/sagemath/sagetest/issues/1826#event-4439"
 }
 ```
 

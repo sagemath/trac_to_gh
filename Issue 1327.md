@@ -110,7 +110,7 @@ Works on Solaris :)
 
 ---
 
-archive/issue_events_001467.json:
+archive/issue_events_003462.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -118,6 +118,6 @@ archive/issue_events_001467.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1327",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1327#event-1467"
+    "url": "https://github.com/sagemath/sagetest/issues/1327#event-3462"
 }
 ```

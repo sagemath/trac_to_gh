@@ -576,7 +576,7 @@ Dave
 
 ---
 
-archive/issue_events_009162.json:
+archive/issue_events_022041.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -584,7 +584,7 @@ archive/issue_events_009162.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#event-9162"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#event-22041"
 }
 ```
 

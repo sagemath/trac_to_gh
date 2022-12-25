@@ -432,7 +432,7 @@ Merged both patches.
 
 ---
 
-archive/issue_events_007232.json:
+archive/issue_events_016438.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -440,7 +440,7 @@ archive/issue_events_007232.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7008#event-7232"
+    "url": "https://github.com/sagemath/sagetest/issues/7008#event-16438"
 }
 ```
 

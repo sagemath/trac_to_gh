@@ -127,7 +127,7 @@ http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg
 
 ---
 
-archive/issue_events_009446.json:
+archive/issue_events_022881.json:
 ```json
 {
     "actor": "https://github.com/gvol",
@@ -135,7 +135,7 @@ archive/issue_events_009446.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9286#event-9446"
+    "url": "https://github.com/sagemath/sagetest/issues/9286#event-22881"
 }
 ```
 
@@ -235,7 +235,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009447.json:
+archive/issue_events_022882.json:
 ```json
 {
     "actor": "https://github.com/gvol",
@@ -243,7 +243,7 @@ archive/issue_events_009447.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9286#event-9447"
+    "url": "https://github.com/sagemath/sagetest/issues/9286#event-22882"
 }
 ```
 
@@ -323,7 +323,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009448.json:
+archive/issue_events_022883.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -331,6 +331,6 @@ archive/issue_events_009448.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9286#event-9448"
+    "url": "https://github.com/sagemath/sagetest/issues/9286#event-22883"
 }
 ```

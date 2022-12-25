@@ -83,7 +83,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3491
 
 ---
 
-archive/issue_events_003711.json:
+archive/issue_events_007958.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -91,7 +91,7 @@ archive/issue_events_003711.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3491",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3491#event-3711"
+    "url": "https://github.com/sagemath/sagetest/issues/3491#event-7958"
 }
 ```
 

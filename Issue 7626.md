@@ -78,7 +78,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_007853.json:
+archive/issue_events_018128.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -86,6 +86,23 @@ archive/issue_events_007853.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7626",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7626#event-7853"
+    "url": "https://github.com/sagemath/sagetest/issues/7626#event-18128"
+}
+```
+
+
+
+---
+
+archive/issue_events_018129.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-03-06T09:28:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7626",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7626#event-18129"
 }
 ```

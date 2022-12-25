@@ -148,7 +148,7 @@ Merged 2504-units_cache.2.patch in Sage 3.0.1.alpha1
 
 ---
 
-archive/issue_events_002685.json:
+archive/issue_events_005886.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -156,7 +156,7 @@ archive/issue_events_002685.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2504",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2504#event-2685"
+    "url": "https://github.com/sagemath/sagetest/issues/2504#event-5886"
 }
 ```
 

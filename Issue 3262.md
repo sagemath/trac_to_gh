@@ -215,7 +215,7 @@ Attachment [sage-3262-final.patch](tarball://root/attachments/some-uuid/ticket32
 
 ---
 
-archive/issue_events_003479.json:
+archive/issue_events_007342.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -223,7 +223,24 @@ archive/issue_events_003479.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3262",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3262#event-3479"
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-7342"
+}
+```
+
+
+
+---
+
+archive/issue_events_007343.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T11:06:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3262",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-7343"
 }
 ```
 
@@ -285,6 +302,40 @@ Resolution changed from fixed to
 
 ---
 
+archive/issue_events_007344.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-10T08:04:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3262",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-7344"
+}
+```
+
+
+
+---
+
+archive/issue_events_007345.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-10T08:04:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3262",
+    "milestone": "sage-3.0.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-7345"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022526.json:
 ```json
 {
@@ -325,7 +376,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003480.json:
+archive/issue_events_007346.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -333,7 +384,7 @@ archive/issue_events_003480.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3262",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3262#event-3480"
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-7346"
 }
 ```
 
@@ -445,7 +496,7 @@ Changing component from notebook to interact.
 
 ---
 
-archive/issue_events_003481.json:
+archive/issue_events_007347.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -453,7 +504,7 @@ archive/issue_events_003481.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3262",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3262#event-3481"
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-7347"
 }
 ```
 

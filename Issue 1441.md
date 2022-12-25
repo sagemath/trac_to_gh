@@ -40,6 +40,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1441
 
 ---
 
+archive/issue_events_003691.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-15T23:42:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1441",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1441#event-3691"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009274.json:
 ```json
 {
@@ -125,7 +142,7 @@ The translation x1 -> x_1 far outweight the potential ambiguity in my mind. Howe
 
 ---
 
-archive/issue_events_001588.json:
+archive/issue_events_003692.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -133,7 +150,7 @@ archive/issue_events_001588.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1441",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1441#event-1588"
+    "url": "https://github.com/sagemath/sagetest/issues/1441#event-3692"
 }
 ```
 
@@ -154,3 +171,20 @@ archive/issue_comments_009278.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_003693.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-20T00:04:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1441",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1441#event-3693"
+}
+```

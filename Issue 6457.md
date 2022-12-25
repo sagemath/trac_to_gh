@@ -103,7 +103,7 @@ These doctests don't convince me that the the results are correct, but I don't s
 
 ---
 
-archive/issue_events_006697.json:
+archive/issue_events_015244.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -111,7 +111,7 @@ archive/issue_events_006697.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6457",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6457#event-6697"
+    "url": "https://github.com/sagemath/sagetest/issues/6457#event-15244"
 }
 ```
 

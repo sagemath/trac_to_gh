@@ -220,7 +220,7 @@ All changes have been committed in the name of David Kirkby.
 
 ---
 
-archive/issue_events_006795.json:
+archive/issue_events_015470.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -228,7 +228,7 @@ archive/issue_events_006795.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6558",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6558#event-6795"
+    "url": "https://github.com/sagemath/sagetest/issues/6558#event-15470"
 }
 ```
 

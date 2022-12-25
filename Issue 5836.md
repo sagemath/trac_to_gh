@@ -132,7 +132,7 @@ Patch redone to correct the doctests.
 
 ---
 
-archive/issue_events_006086.json:
+archive/issue_events_013712.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -140,7 +140,24 @@ archive/issue_events_006086.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5836",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5836#event-6086"
+    "url": "https://github.com/sagemath/sagetest/issues/5836#event-13712"
+}
+```
+
+
+
+---
+
+archive/issue_events_013713.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-24T07:19:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5836",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5836#event-13713"
 }
 ```
 

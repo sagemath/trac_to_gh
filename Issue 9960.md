@@ -185,6 +185,23 @@ apply only this patch
 
 ---
 
+archive/issue_events_025131.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-09-21T21:06:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#event-25131"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099587.json:
 ```json
 {
@@ -480,7 +497,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010088.json:
+archive/issue_events_025132.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -488,6 +505,6 @@ archive/issue_events_010088.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9960#event-10088"
+    "url": "https://github.com/sagemath/sagetest/issues/9960#event-25132"
 }
 ```

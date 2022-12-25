@@ -191,6 +191,23 @@ Attachment [1296-fast-permgroup5.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
+archive/issue_events_003396.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-02T06:08:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#event-3396"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008122.json:
 ```json
 {
@@ -534,7 +551,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001438.json:
+archive/issue_events_003397.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -542,6 +559,6 @@ archive/issue_events_001438.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1296",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1296#event-1438"
+    "url": "https://github.com/sagemath/sagetest/issues/1296#event-3397"
 }
 ```

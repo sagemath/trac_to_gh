@@ -418,7 +418,7 @@ Sounds good.  Thanks for the information.  I'll add this to SageNB 0.8.4 at #100
 
 ---
 
-archive/issue_events_010046.json:
+archive/issue_events_025012.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -426,7 +426,7 @@ archive/issue_events_010046.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#event-10046"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#event-25012"
 }
 ```
 

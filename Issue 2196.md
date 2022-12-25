@@ -50,6 +50,23 @@ Attachment [8313.patch](tarball://root/attachments/some-uuid/ticket2196/8313.pat
 
 ---
 
+archive/issue_events_005245.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-17T19:11:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2196",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2196#event-5245"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014394.json:
 ```json
 {
@@ -204,7 +221,7 @@ Apply every patch.
 
 ---
 
-archive/issue_events_002362.json:
+archive/issue_events_005246.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -212,7 +229,7 @@ archive/issue_events_002362.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2196#event-2362"
+    "url": "https://github.com/sagemath/sagetest/issues/2196#event-5246"
 }
 ```
 

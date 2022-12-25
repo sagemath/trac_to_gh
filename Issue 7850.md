@@ -244,7 +244,7 @@ a proposal for a docstring
 
 ---
 
-archive/issue_events_008065.json:
+archive/issue_events_018764.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/olazo",
@@ -252,7 +252,7 @@ archive/issue_events_008065.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7850",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7850#event-8065"
+    "url": "https://github.com/sagemath/sagetest/issues/7850#event-18764"
 }
 ```
 
@@ -291,3 +291,20 @@ archive/issue_comments_067886.json:
 ```
 
 Attachment [docstring](tarball://root/attachments/some-uuid/ticket7850/docstring) by olazo created at 2010-01-24 19:35:42
+
+
+
+---
+
+archive/issue_events_018765.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-26T00:16:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#event-18765"
+}
+```

@@ -266,7 +266,7 @@ Exiting SAGE (CPU time 0m1.16s, Wall time 0m14.02s).
 
 ---
 
-archive/issue_events_002575.json:
+archive/issue_events_005659.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -274,7 +274,7 @@ archive/issue_events_002575.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2399",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2399#event-2575"
+    "url": "https://github.com/sagemath/sagetest/issues/2399#event-5659"
 }
 ```
 

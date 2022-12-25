@@ -168,7 +168,7 @@ The docstrings are not formatted nicely -- they should be wrapped at 78 chars.
 
 ---
 
-archive/issue_events_002310.json:
+archive/issue_events_005135.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -176,7 +176,7 @@ archive/issue_events_002310.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2146",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2146#event-2310"
+    "url": "https://github.com/sagemath/sagetest/issues/2146#event-5135"
 }
 ```
 

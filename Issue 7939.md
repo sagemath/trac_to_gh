@@ -1451,7 +1451,7 @@ Merged [singular-3-1-0-4-20100120.spkg](http://sage.math.washington.edu/home/mal
 
 ---
 
-archive/issue_events_008155.json:
+archive/issue_events_019003.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1459,7 +1459,7 @@ archive/issue_events_008155.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7939#event-8155"
+    "url": "https://github.com/sagemath/sagetest/issues/7939#event-19003"
 }
 ```
 

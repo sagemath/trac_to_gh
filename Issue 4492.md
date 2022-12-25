@@ -53,6 +53,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4492
 
 ---
 
+archive/issue_events_010172.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jbmohler",
+    "created_at": "2008-11-11T15:17:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4492",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4492#event-10172"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033114.json:
 ```json
 {
@@ -886,7 +903,7 @@ Sounds like the latest patch has been tested and everybody is OK with all of thi
 
 ---
 
-archive/issue_events_004738.json:
+archive/issue_events_010173.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -894,7 +911,7 @@ archive/issue_events_004738.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4492#event-4738"
+    "url": "https://github.com/sagemath/sagetest/issues/4492#event-10173"
 }
 ```
 

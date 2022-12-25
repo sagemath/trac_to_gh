@@ -148,7 +148,7 @@ All changes are committed in pjeremy's name.
 
 ---
 
-archive/issue_events_008039.json:
+archive/issue_events_018720.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -156,6 +156,6 @@ archive/issue_events_008039.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7824#event-8039"
+    "url": "https://github.com/sagemath/sagetest/issues/7824#event-18720"
 }
 ```

@@ -51,6 +51,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8997
 
 ---
 
+archive/issue_events_022021.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-05-20T00:19:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8997",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8997#event-22021"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083049.json:
 ```json
 {
@@ -435,6 +452,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_022022.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-24T10:16:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8997",
+    "milestone": "sage-4.4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8997#event-22022"
+}
+```
+
+
+
+---
+
+archive/issue_events_022023.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-24T10:16:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8997",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8997#event-22023"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083066.json:
 ```json
 {
@@ -602,7 +653,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009151.json:
+archive/issue_events_022024.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -610,6 +661,6 @@ archive/issue_events_009151.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8997#event-9151"
+    "url": "https://github.com/sagemath/sagetest/issues/8997#event-22024"
 }
 ```

@@ -242,7 +242,7 @@ The patch `trac_6631-reviewer.patch` fixes a typo introduced by `trac_6631-is_ly
 
 ---
 
-archive/issue_events_006870.json:
+archive/issue_events_015655.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -250,7 +250,7 @@ archive/issue_events_006870.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6631#event-6870"
+    "url": "https://github.com/sagemath/sagetest/issues/6631#event-15655"
 }
 ```
 

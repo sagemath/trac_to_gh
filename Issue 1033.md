@@ -31,6 +31,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1033
 
 ---
 
+archive/issue_events_002823.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-01T02:27:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1033",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1033#event-2823"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006296.json:
 ```json
 {
@@ -54,7 +71,7 @@ Anyway, this is now posted.
 
 ---
 
-archive/issue_events_001158.json:
+archive/issue_events_002824.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -62,7 +79,7 @@ archive/issue_events_001158.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1033",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1033#event-1158"
+    "url": "https://github.com/sagemath/sagetest/issues/1033#event-2824"
 }
 ```
 

@@ -470,6 +470,23 @@ By the way, we may need to rebase these for #8891.
 
 ---
 
+archive/issue_events_020910.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-06-12T09:43:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8641",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8641#event-20910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078240.json:
 ```json
 {
@@ -911,6 +928,40 @@ To release manager:  Apply just [attachment:trac_8641-doctest_exit_codes.3.patch
 
 ---
 
+archive/issue_events_020911.json:
+```json
+{
+    "actor": "https://github.com/wjp",
+    "created_at": "2010-07-17T10:52:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8641",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8641#event-20911"
+}
+```
+
+
+
+---
+
+archive/issue_events_020912.json:
+```json
+{
+    "actor": "https://github.com/wjp",
+    "created_at": "2010-07-17T10:52:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8641",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8641#event-20912"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078259.json:
 ```json
 {
@@ -947,7 +998,7 @@ Merged attachment:trac_8641-doctest_exit_codes.3.patch in 4.5.2.alpha1.
 
 ---
 
-archive/issue_events_008810.json:
+archive/issue_events_020913.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -955,6 +1006,6 @@ archive/issue_events_008810.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8641#event-8810"
+    "url": "https://github.com/sagemath/sagetest/issues/8641#event-20913"
 }
 ```

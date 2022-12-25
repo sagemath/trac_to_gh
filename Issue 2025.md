@@ -153,6 +153,23 @@ Note that this will be fixed when we switch over to Pynac as symbolic arithmetic
 
 ---
 
+archive/issue_events_004867.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-06-04T21:15:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2025",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2025#event-4867"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013072.json:
 ```json
 {
@@ -171,7 +188,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_002181.json:
+archive/issue_events_004868.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -179,7 +196,7 @@ archive/issue_events_002181.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2025",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2025#event-2181"
+    "url": "https://github.com/sagemath/sagetest/issues/2025#event-4868"
 }
 ```
 

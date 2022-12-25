@@ -172,6 +172,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_006019.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-15T19:03:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2575",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2575#event-6019"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017556.json:
 ```json
 {
@@ -214,7 +231,7 @@ Merged in Sage 3.0.3.rc0
 
 ---
 
-archive/issue_events_002758.json:
+archive/issue_events_006020.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -222,7 +239,7 @@ archive/issue_events_002758.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2575#event-2758"
+    "url": "https://github.com/sagemath/sagetest/issues/2575#event-6020"
 }
 ```
 
@@ -329,7 +346,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_002759.json:
+archive/issue_events_006021.json:
 ```json
 {
     "actor": "https://github.com/haraldschilly",
@@ -337,7 +354,41 @@ archive/issue_events_002759.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2575#event-2759"
+    "url": "https://github.com/sagemath/sagetest/issues/2575#event-6021"
+}
+```
+
+
+
+---
+
+archive/issue_events_006022.json:
+```json
+{
+    "actor": "https://github.com/haraldschilly",
+    "created_at": "2008-09-20T19:38:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2575",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2575#event-6022"
+}
+```
+
+
+
+---
+
+archive/issue_events_006023.json:
+```json
+{
+    "actor": "https://github.com/haraldschilly",
+    "created_at": "2008-09-20T19:38:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2575",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2575#event-6023"
 }
 ```
 
@@ -363,7 +414,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002760.json:
+archive/issue_events_006024.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -371,7 +422,41 @@ archive/issue_events_002760.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2575#event-2760"
+    "url": "https://github.com/sagemath/sagetest/issues/2575#event-6024"
+}
+```
+
+
+
+---
+
+archive/issue_events_006025.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-20T20:28:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2575",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2575#event-6025"
+}
+```
+
+
+
+---
+
+archive/issue_events_006026.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-20T20:28:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2575",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2575#event-6026"
 }
 ```
 

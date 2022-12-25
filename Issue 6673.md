@@ -103,6 +103,23 @@ For the file jsmath_sage.js, it looks like a modified version of easy/load.js, b
 
 ---
 
+archive/issue_events_015745.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2009-08-20T21:47:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6673",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6673#event-15745"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054729.json:
 ```json
 {
@@ -472,7 +489,7 @@ To the release manager: when merging this, please close #7204 also, since this r
 
 ---
 
-archive/issue_events_006909.json:
+archive/issue_events_015746.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -480,7 +497,7 @@ archive/issue_events_006909.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6673",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6673#event-6909"
+    "url": "https://github.com/sagemath/sagetest/issues/6673#event-15746"
 }
 ```
 

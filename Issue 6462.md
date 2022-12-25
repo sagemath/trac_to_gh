@@ -141,7 +141,7 @@ David, the patch `trac_6462-order_elt_pickle_bug.patch` doesn't contain your use
 
 ---
 
-archive/issue_events_006702.json:
+archive/issue_events_015251.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -149,7 +149,7 @@ archive/issue_events_006702.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6462",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6462#event-6702"
+    "url": "https://github.com/sagemath/sagetest/issues/6462#event-15251"
 }
 ```
 

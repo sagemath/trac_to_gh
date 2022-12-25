@@ -102,6 +102,23 @@ False
 
 ---
 
+archive/issue_events_005888.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-14T01:57:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2506",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2506#event-5888"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016942.json:
 ```json
 {
@@ -176,7 +193,7 @@ Merged in Sage 2.10.4.alpha0
 
 ---
 
-archive/issue_events_002687.json:
+archive/issue_events_005889.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -184,7 +201,7 @@ archive/issue_events_002687.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2506",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2506#event-2687"
+    "url": "https://github.com/sagemath/sagetest/issues/2506#event-5889"
 }
 ```
 

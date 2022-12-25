@@ -755,6 +755,23 @@ Patchbot, apply trac_7557-maxima_complex_number_conversion.2.patch and trac_7557
 
 ---
 
+archive/issue_events_017918.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-12T08:55:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7557",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7557#event-17918"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064180.json:
 ```json
 {
@@ -773,7 +790,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007787.json:
+archive/issue_events_017919.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -781,6 +798,6 @@ archive/issue_events_007787.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7557#event-7787"
+    "url": "https://github.com/sagemath/sagetest/issues/7557#event-17919"
 }
 ```

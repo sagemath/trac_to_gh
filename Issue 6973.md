@@ -132,6 +132,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_016381.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2015-10-08T18:24:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6973",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6973#event-16381"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057567.json:
 ```json
 {
@@ -202,6 +219,40 @@ archive/issue_comments_057570.json:
 ```
 
 At least I would like to have a digraph editor, just like we now have for undirected graphs. Maybe an option to it?
+
+
+
+---
+
+archive/issue_events_016382.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2018-08-14T17:33:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6973",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6973#event-16382"
+}
+```
+
+
+
+---
+
+archive/issue_events_016383.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2018-08-14T17:33:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6973",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6973#event-16383"
+}
+```
 
 
 

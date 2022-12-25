@@ -64,7 +64,7 @@ Duplicate of #1114
 
 ---
 
-archive/issue_events_001239.json:
+archive/issue_events_002980.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -72,7 +72,7 @@ archive/issue_events_001239.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1113",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1113#event-1239"
+    "url": "https://github.com/sagemath/sagetest/issues/1113#event-2980"
 }
 ```
 

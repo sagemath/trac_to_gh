@@ -112,6 +112,23 @@ sage: An error occurred while installing octave-3.0.0
 
 ---
 
+archive/issue_events_004005.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-27T06:44:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1609",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1609#event-4005"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010204.json:
 ```json
 {

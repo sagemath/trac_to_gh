@@ -67,6 +67,23 @@ The problem is still present in sage-6.1 (although the last command now returns 
 
 ---
 
+archive/issue_events_023663.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-02-02T11:36:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9524",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9524#event-23663"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091467.json:
 ```json
 {
@@ -456,7 +473,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009673.json:
+archive/issue_events_023664.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -464,7 +481,7 @@ archive/issue_events_009673.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9524",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9524#event-9673"
+    "url": "https://github.com/sagemath/sagetest/issues/9524#event-23664"
 }
 ```
 

@@ -89,6 +89,23 @@ This will be fixed in #13211. Let us close this one as obsolete.
 
 ---
 
+archive/issue_events_024850.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-09-25T12:22:23Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9866",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9866#event-24850"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097322.json:
 ```json
 {
@@ -125,7 +142,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009997.json:
+archive/issue_events_024851.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -133,7 +150,7 @@ archive/issue_events_009997.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9866",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9866#event-9997"
+    "url": "https://github.com/sagemath/sagetest/issues/9866#event-24851"
 }
 ```
 

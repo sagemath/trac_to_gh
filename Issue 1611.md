@@ -52,6 +52,23 @@ Michael Brickenstein wrote:
 
 ---
 
+archive/issue_events_004007.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2008-01-03T15:07:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1611",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1611#event-4007"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010220.json:
 ```json
 {
@@ -232,7 +249,7 @@ malloc work also for allocating zero bytes in M4RI, else it will crash
 
 ---
 
-archive/issue_events_001770.json:
+archive/issue_events_004008.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -240,7 +257,7 @@ archive/issue_events_001770.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1611",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1611#event-1770"
+    "url": "https://github.com/sagemath/sagetest/issues/1611#event-4008"
 }
 ```
 

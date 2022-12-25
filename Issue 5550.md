@@ -46,7 +46,24 @@ Ticket #6485 seems to be a duplicate of this one. I suggest we close this one an
 
 ---
 
-archive/issue_events_005795.json:
+archive/issue_events_013055.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2009-07-13T16:42:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5550",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5550#event-13055"
+}
+```
+
+
+
+---
+
+archive/issue_events_013056.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -54,7 +71,7 @@ archive/issue_events_005795.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5550",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5550#event-5795"
+    "url": "https://github.com/sagemath/sagetest/issues/5550#event-13056"
 }
 ```
 

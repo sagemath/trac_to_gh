@@ -129,7 +129,7 @@ Indeed. That's all I did.
 
 ---
 
-archive/issue_events_007544.json:
+archive/issue_events_017340.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -137,7 +137,7 @@ archive/issue_events_007544.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7322#event-7544"
+    "url": "https://github.com/sagemath/sagetest/issues/7322#event-17340"
 }
 ```
 
@@ -176,3 +176,20 @@ archive/issue_comments_061077.json:
 ```
 
 merged into sagenb-0.4.2 (sage-4.2.1)
+
+
+
+---
+
+archive/issue_events_017341.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T22:14:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7322",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7322#event-17341"
+}
+```

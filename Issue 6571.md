@@ -354,7 +354,7 @@ Sébastien's documentation changes are good.
 
 ---
 
-archive/issue_events_006808.json:
+archive/issue_events_015509.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -362,7 +362,7 @@ archive/issue_events_006808.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6571#event-6808"
+    "url": "https://github.com/sagemath/sagetest/issues/6571#event-15509"
 }
 ```
 

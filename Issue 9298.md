@@ -68,6 +68,23 @@ Dave
 
 ---
 
+archive/issue_events_022907.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/Bouillaguet",
+    "created_at": "2013-01-02T14:57:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9298",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9298#event-22907"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087453.json:
 ```json
 {
@@ -158,7 +175,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009456.json:
+archive/issue_events_022908.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -166,7 +183,7 @@ archive/issue_events_009456.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9298",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9298#event-9456"
+    "url": "https://github.com/sagemath/sagetest/issues/9298#event-22908"
 }
 ```
 

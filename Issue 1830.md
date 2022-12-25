@@ -71,6 +71,23 @@ Michael
 
 ---
 
+archive/issue_events_004445.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T08:32:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1830",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1830#event-4445"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011559.json:
 ```json
 {
@@ -89,7 +106,41 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_events_001989.json:
+archive/issue_events_004446.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-29T10:20:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1830",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1830#event-4446"
+}
+```
+
+
+
+---
+
+archive/issue_events_004447.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-29T10:20:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1830",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1830#event-4447"
+}
+```
+
+
+
+---
+
+archive/issue_events_004448.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -97,7 +148,7 @@ archive/issue_events_001989.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1830",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1830#event-1989"
+    "url": "https://github.com/sagemath/sagetest/issues/1830#event-4448"
 }
 ```
 

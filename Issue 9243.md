@@ -257,6 +257,23 @@ To release manager: Apply *both* patches to 4.5.alpha4 + #8641.
 
 ---
 
+archive/issue_events_022761.json:
+```json
+{
+    "actor": "https://github.com/wjp",
+    "created_at": "2010-07-17T10:52:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9243",
+    "milestone": "sage-4.5.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9243#event-22761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086797.json:
 ```json
 {
@@ -275,7 +292,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009404.json:
+archive/issue_events_022762.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -283,7 +300,7 @@ archive/issue_events_009404.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9243#event-9404"
+    "url": "https://github.com/sagemath/sagetest/issues/9243#event-22762"
 }
 ```
 

@@ -208,7 +208,7 @@ I agree. I intended to close this ticket once you (David) fixed up that code, bu
 
 ---
 
-archive/issue_events_004586.json:
+archive/issue_events_009815.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -216,6 +216,6 @@ archive/issue_events_004586.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4339",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4339#event-4586"
+    "url": "https://github.com/sagemath/sagetest/issues/4339#event-9815"
 }
 ```

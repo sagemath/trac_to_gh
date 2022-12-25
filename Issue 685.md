@@ -46,6 +46,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001821.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-18T09:39:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/685",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/685#event-1821"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003542.json:
 ```json
 {
@@ -65,6 +82,108 @@ isn't this implemented by now?
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001822.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/685",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/685#event-1822"
+}
+```
+
+
+
+---
+
+archive/issue_events_001823.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/685",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/685#event-1823"
+}
+```
+
+
+
+---
+
+archive/issue_events_001824.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/685",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/685#event-1824"
+}
+```
+
+
+
+---
+
+archive/issue_events_001825.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/685",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/685#event-1825"
+}
+```
+
+
+
+---
+
+archive/issue_events_001826.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2014-04-24T20:23:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/685",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/685#event-1826"
+}
+```
+
+
+
+---
+
+archive/issue_events_001827.json:
+```json
+{
+    "actor": "https://github.com/pjbruin",
+    "created_at": "2014-04-24T20:23:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/685",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/685#event-1827"
+}
+```
 
 
 
@@ -153,7 +272,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_000753.json:
+archive/issue_events_001828.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -161,7 +280,7 @@ archive/issue_events_000753.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/685",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/685#event-753"
+    "url": "https://github.com/sagemath/sagetest/issues/685#event-1828"
 }
 ```
 

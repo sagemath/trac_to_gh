@@ -71,7 +71,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001626.json:
+archive/issue_events_003753.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
@@ -79,7 +79,7 @@ archive/issue_events_001626.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1475",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1475#event-1626"
+    "url": "https://github.com/sagemath/sagetest/issues/1475#event-3753"
 }
 ```
 
@@ -183,7 +183,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001627.json:
+archive/issue_events_003754.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -191,7 +191,7 @@ archive/issue_events_001627.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1475",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1475#event-1627"
+    "url": "https://github.com/sagemath/sagetest/issues/1475#event-3754"
 }
 ```
 
@@ -259,7 +259,7 @@ Using Mercurial queues would allow you to make single patches as opposed to mult
 
 ---
 
-archive/issue_events_001628.json:
+archive/issue_events_003755.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -267,7 +267,7 @@ archive/issue_events_001628.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1475",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1475#event-1628"
+    "url": "https://github.com/sagemath/sagetest/issues/1475#event-3755"
 }
 ```
 

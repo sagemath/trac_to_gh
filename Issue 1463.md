@@ -75,7 +75,24 @@ I've done what this ticket says to do.  This ticket can be closed.
 
 ---
 
-archive/issue_events_001614.json:
+archive/issue_events_003726.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-12-12T00:59:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1463",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1463#event-3726"
+}
+```
+
+
+
+---
+
+archive/issue_events_003727.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -83,7 +100,7 @@ archive/issue_events_001614.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1463",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1463#event-1614"
+    "url": "https://github.com/sagemath/sagetest/issues/1463#event-3727"
 }
 ```
 

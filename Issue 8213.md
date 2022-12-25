@@ -66,7 +66,7 @@ Done. Please confirm this.
 
 ---
 
-archive/issue_events_008415.json:
+archive/issue_events_019647.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -74,7 +74,7 @@ archive/issue_events_008415.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8213",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8213#event-8415"
+    "url": "https://github.com/sagemath/sagetest/issues/8213#event-19647"
 }
 ```
 
@@ -113,3 +113,20 @@ archive/issue_comments_072312.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_019648.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-08T23:28:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8213",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8213#event-19648"
+}
+```

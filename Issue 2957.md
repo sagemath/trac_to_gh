@@ -53,6 +53,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2957
 
 ---
 
+archive/issue_events_006758.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-20T22:03:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#event-6758"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020356.json:
 ```json
 {
@@ -196,7 +213,41 @@ Burcin agrees that this is a positive review now.
 
 ---
 
-archive/issue_events_003163.json:
+archive/issue_events_006759.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-28T14:11:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#event-6759"
+}
+```
+
+
+
+---
+
+archive/issue_events_006760.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-28T14:11:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#event-6760"
+}
+```
+
+
+
+---
+
+archive/issue_events_006761.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -204,7 +255,7 @@ archive/issue_events_003163.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2957",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2957#event-3163"
+    "url": "https://github.com/sagemath/sagetest/issues/2957#event-6761"
 }
 ```
 

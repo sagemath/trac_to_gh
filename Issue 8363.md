@@ -374,7 +374,7 @@ I've opened another ticket, #8419, to resolve the issue which Jaap found - i.e. 
 
 ---
 
-archive/issue_events_008551.json:
+archive/issue_events_020042.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -382,7 +382,7 @@ archive/issue_events_008551.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8363",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8363#event-8551"
+    "url": "https://github.com/sagemath/sagetest/issues/8363#event-20042"
 }
 ```
 

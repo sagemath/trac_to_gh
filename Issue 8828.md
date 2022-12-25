@@ -101,6 +101,23 @@ Depends on #8535 and #8818 at least.
 
 ---
 
+archive/issue_events_021545.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8828",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8828#event-21545"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080933.json:
 ```json
 {
@@ -188,6 +205,40 @@ archive/issue_comments_080937.json:
 The two commits up to 307891b implement the original patch with one small additional rebasing edit.  This now passes all tests, but that is not saying a lot since there are very few doctests in the new code.
 
 My next job: add docstrings and doctests.
+
+
+
+---
+
+archive/issue_events_021546.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8828",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8828#event-21546"
+}
+```
+
+
+
+---
+
+archive/issue_events_021547.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8828",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8828#event-21547"
+}
+```
 
 
 
@@ -744,6 +795,40 @@ Thanks -- I will look at your patches carefully when I am back next week.
 
 ---
 
+archive/issue_events_021548.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8828",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8828#event-21548"
+}
+```
+
+
+
+---
+
+archive/issue_events_021549.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8828",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8828#event-21549"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080965.json:
 ```json
 {
@@ -1099,7 +1184,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008993.json:
+archive/issue_events_021550.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -1107,7 +1192,7 @@ archive/issue_events_008993.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8828#event-8993"
+    "url": "https://github.com/sagemath/sagetest/issues/8828#event-21550"
 }
 ```
 

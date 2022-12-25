@@ -32,6 +32,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4471
 
 ---
 
+archive/issue_events_010102.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-09T00:22:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4471",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4471#event-10102"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032961.json:
 ```json
 {
@@ -152,7 +169,7 @@ Hasn't some other ticket (or this one) already been merged to fix this?
 
 ---
 
-archive/issue_events_004721.json:
+archive/issue_events_010103.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -160,7 +177,7 @@ archive/issue_events_004721.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4471",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4471#event-4721"
+    "url": "https://github.com/sagemath/sagetest/issues/4471#event-10103"
 }
 ```
 

@@ -87,7 +87,7 @@ Yep, this is a great idea. There's no hg repository there, but I've added the ch
 
 ---
 
-archive/issue_events_006537.json:
+archive/issue_events_014722.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -95,6 +95,23 @@ archive/issue_events_006537.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6295",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6295#event-6537"
+    "url": "https://github.com/sagemath/sagetest/issues/6295#event-14722"
+}
+```
+
+
+
+---
+
+archive/issue_events_014723.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-06-19T13:17:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6295",
+    "milestone": "sage-4.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6295#event-14723"
 }
 ```

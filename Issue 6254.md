@@ -69,7 +69,7 @@ This is a duplicate of #6196.
 
 ---
 
-archive/issue_events_006498.json:
+archive/issue_events_014648.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -77,7 +77,24 @@ archive/issue_events_006498.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6254",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6254#event-6498"
+    "url": "https://github.com/sagemath/sagetest/issues/6254#event-14648"
+}
+```
+
+
+
+---
+
+archive/issue_events_014649.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-13T19:21:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6254",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6254#event-14649"
 }
 ```
 

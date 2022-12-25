@@ -193,6 +193,23 @@ I sent you the link by separate email to your gmail address.
 
 ---
 
+archive/issue_events_018520.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:06:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7743",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7743#event-18520"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066498.json:
 ```json
 {
@@ -342,7 +359,7 @@ merged just 13535.patch
 
 ---
 
-archive/issue_events_007955.json:
+archive/issue_events_018521.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -350,7 +367,7 @@ archive/issue_events_007955.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7743#event-7955"
+    "url": "https://github.com/sagemath/sagetest/issues/7743#event-18521"
 }
 ```
 

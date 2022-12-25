@@ -52,7 +52,7 @@ Michael
 
 ---
 
-archive/issue_events_000729.json:
+archive/issue_events_001773.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -60,7 +60,7 @@ archive/issue_events_000729.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/661",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/661#event-729"
+    "url": "https://github.com/sagemath/sagetest/issues/661#event-1773"
 }
 ```
 

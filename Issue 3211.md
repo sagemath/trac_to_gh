@@ -473,7 +473,7 @@ I realize this isn't ready for review yet, but at the very least we would want t
 
 ---
 
-archive/issue_events_003428.json:
+archive/issue_events_007226.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -481,7 +481,7 @@ archive/issue_events_003428.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3211#event-3428"
+    "url": "https://github.com/sagemath/sagetest/issues/3211#event-7226"
 }
 ```
 

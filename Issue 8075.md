@@ -112,6 +112,23 @@ I am going to close this since the specific things mentioned were done long ago,
 
 ---
 
+archive/issue_events_019341.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2021-02-02T15:17:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8075",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8075#event-19341"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070634.json:
 ```json
 {
@@ -184,7 +201,7 @@ ok, John, as you wish
 
 ---
 
-archive/issue_events_008281.json:
+archive/issue_events_019342.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -192,6 +209,6 @@ archive/issue_events_008281.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8075#event-8281"
+    "url": "https://github.com/sagemath/sagetest/issues/8075#event-19342"
 }
 ```

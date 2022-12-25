@@ -64,6 +64,23 @@ This fixes the problem for me.
 
 ---
 
+archive/issue_events_024527.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-06-14T17:10:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9784",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9784#event-24527"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095878.json:
 ```json
 {
@@ -208,7 +225,7 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_events_009914.json:
+archive/issue_events_024528.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -216,7 +233,7 @@ archive/issue_events_009914.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9784#event-9914"
+    "url": "https://github.com/sagemath/sagetest/issues/9784#event-24528"
 }
 ```
 

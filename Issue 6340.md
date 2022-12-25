@@ -418,7 +418,7 @@ Merged `trac_6340-var-ns.patch`.
 
 ---
 
-archive/issue_events_006584.json:
+archive/issue_events_014909.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -426,7 +426,7 @@ archive/issue_events_006584.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6340#event-6584"
+    "url": "https://github.com/sagemath/sagetest/issues/6340#event-14909"
 }
 ```
 

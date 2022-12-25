@@ -98,7 +98,7 @@ Applies ok, fixes the bug... ;-)
 
 ---
 
-archive/issue_events_007042.json:
+archive/issue_events_016037.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -106,7 +106,24 @@ archive/issue_events_007042.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6807",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6807#event-7042"
+    "url": "https://github.com/sagemath/sagetest/issues/6807#event-16037"
+}
+```
+
+
+
+---
+
+archive/issue_events_016038.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-25T22:25:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6807",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6807#event-16038"
 }
 ```
 

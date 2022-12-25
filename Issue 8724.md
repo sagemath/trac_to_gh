@@ -91,6 +91,23 @@ archive/issue_comments_079563.json:
 
 ---
 
+archive/issue_events_021177.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:39:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8724",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8724#event-21177"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079564.json:
 ```json
 {
@@ -163,6 +180,40 @@ Attachment [trac_8724-doctest-fix.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
+archive/issue_events_021178.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:24:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8724",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8724#event-21178"
+}
+```
+
+
+
+---
+
+archive/issue_events_021179.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:24:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8724",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8724#event-21179"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079568.json:
 ```json
 {
@@ -181,7 +232,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008894.json:
+archive/issue_events_021180.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -189,6 +240,6 @@ archive/issue_events_008894.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8724#event-8894"
+    "url": "https://github.com/sagemath/sagetest/issues/8724#event-21180"
 }
 ```

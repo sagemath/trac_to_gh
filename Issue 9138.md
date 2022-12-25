@@ -4222,7 +4222,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009296.json:
+archive/issue_events_022455.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -4230,7 +4230,7 @@ archive/issue_events_009296.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9138",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9138#event-9296"
+    "url": "https://github.com/sagemath/sagetest/issues/9138#event-22455"
 }
 ```
 
@@ -4295,7 +4295,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_009297.json:
+archive/issue_events_022456.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4303,7 +4303,7 @@ archive/issue_events_009297.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9138",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9138#event-9297"
+    "url": "https://github.com/sagemath/sagetest/issues/9138#event-22456"
 }
 ```
 
@@ -4462,6 +4462,23 @@ Since I have two ticket in sage-pending (#11575 and #4539) because of the de-mer
 
 ---
 
+archive/issue_events_022457.json:
+```json
+{
+    "actor": "https://github.com/alexanderdreyer",
+    "created_at": "2011-11-03T20:56:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9138",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9138#event-22457"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085180.json:
 ```json
 {
@@ -4478,6 +4495,40 @@ Replying to [comment:117 AlexanderDreyer]:
 > Since I have two ticket in sage-pending (#11575 and #4539) because of the de-merge: Will this be in 4.8.0?
 
 Depends on #11900.  In any case, #9138 and #11900 will be merged together.  If #11900 gets a positive review in a reasonable time, then they will be merged.  William Stein already mentioned he might review #11900, which would be a very good thing.
+
+
+
+---
+
+archive/issue_events_022458.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-07T10:25:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9138",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9138#event-22458"
+}
+```
+
+
+
+---
+
+archive/issue_events_022459.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-07T10:25:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9138",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9138#event-22459"
+}
+```
 
 
 
@@ -4558,6 +4609,40 @@ A note to the release manager: #11900 just got a positive review by Nicolas Thi√
 
 ---
 
+archive/issue_events_022460.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-09T20:13:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9138",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9138#event-22460"
+}
+```
+
+
+
+---
+
+archive/issue_events_022461.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-09T20:13:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9138",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9138#event-22461"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085184.json:
 ```json
 {
@@ -4596,7 +4681,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009298.json:
+archive/issue_events_022462.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -4604,6 +4689,6 @@ archive/issue_events_009298.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9138",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9138#event-9298"
+    "url": "https://github.com/sagemath/sagetest/issues/9138#event-22462"
 }
 ```

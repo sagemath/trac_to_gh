@@ -236,6 +236,23 @@ No, I think there was no 4.4 when i created it, that's all. It's really trivial 
 
 ---
 
+archive/issue_events_020786.json:
+```json
+{
+    "actor": "https://github.com/haraldschilly",
+    "created_at": "2010-04-15T08:57:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8600",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8600#event-20786"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077762.json:
 ```json
 {
@@ -272,7 +289,7 @@ Merged "fibonaccy-graph.patch" in 4.4.alpha0
 
 ---
 
-archive/issue_events_008772.json:
+archive/issue_events_020787.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -280,6 +297,6 @@ archive/issue_events_008772.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8600#event-8772"
+    "url": "https://github.com/sagemath/sagetest/issues/8600#event-20787"
 }
 ```

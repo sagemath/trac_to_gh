@@ -66,6 +66,23 @@ Changing assignee from mabshoff to @mwhansen.
 
 ---
 
+archive/issue_events_006516.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-04-07T07:15:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2839",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2839#event-6516"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019433.json:
 ```json
 {
@@ -182,7 +199,7 @@ Merged in Sage 3.0.alpha3
 
 ---
 
-archive/issue_events_003029.json:
+archive/issue_events_006517.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -190,7 +207,7 @@ archive/issue_events_003029.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2839#event-3029"
+    "url": "https://github.com/sagemath/sagetest/issues/2839#event-6517"
 }
 ```
 

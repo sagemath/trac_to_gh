@@ -474,7 +474,7 @@ P.S.: Attempting to build with Qt as the graphics back-end is still broken in so
 
 ---
 
-archive/issue_events_009989.json:
+archive/issue_events_024821.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -482,7 +482,7 @@ archive/issue_events_009989.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9859#event-9989"
+    "url": "https://github.com/sagemath/sagetest/issues/9859#event-24821"
 }
 ```
 

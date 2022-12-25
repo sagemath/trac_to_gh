@@ -174,7 +174,7 @@ Merged 3840-gfurnish-multivariate-conversion-from-0.patch in Sage 3.1.alpha2
 
 ---
 
-archive/issue_events_004063.json:
+archive/issue_events_008793.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -182,6 +182,6 @@ archive/issue_events_004063.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3840",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3840#event-4063"
+    "url": "https://github.com/sagemath/sagetest/issues/3840#event-8793"
 }
 ```

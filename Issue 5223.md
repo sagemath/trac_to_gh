@@ -151,6 +151,23 @@ Michael
 
 ---
 
+archive/issue_events_012098.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-20T07:42:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5223",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5223#event-12098"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039953.json:
 ```json
 {
@@ -164,6 +181,40 @@ archive/issue_comments_039953.json:
 ```
 
 Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.take2.patch) by @burcin created at 2009-03-15 13:38:45
+
+
+
+---
+
+archive/issue_events_012099.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-03-15T13:43:13Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5223",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5223#event-12099"
+}
+```
+
+
+
+---
+
+archive/issue_events_012100.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-03-15T13:43:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5223",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5223#event-12100"
+}
+```
 
 
 
@@ -265,7 +316,7 @@ Michael
 
 ---
 
-archive/issue_events_005480.json:
+archive/issue_events_012101.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -273,7 +324,7 @@ archive/issue_events_005480.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#event-5480"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#event-12101"
 }
 ```
 

@@ -79,7 +79,7 @@ diff -r 430c6cb23845 -r d5baafd9ca02 sage/rings/number_field/number_field.py
 
 ---
 
-archive/issue_events_000402.json:
+archive/issue_events_000876.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -87,7 +87,7 @@ archive/issue_events_000402.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/380",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/380#event-402"
+    "url": "https://github.com/sagemath/sagetest/issues/380#event-876"
 }
 ```
 

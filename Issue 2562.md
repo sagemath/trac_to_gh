@@ -443,7 +443,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_002745.json:
+archive/issue_events_005989.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -451,7 +451,7 @@ archive/issue_events_002745.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2562#event-2745"
+    "url": "https://github.com/sagemath/sagetest/issues/2562#event-5989"
 }
 ```
 

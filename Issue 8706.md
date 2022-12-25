@@ -101,7 +101,7 @@ Sorry this took 18 hours.  Patch looks fine, applied fine and deals with the pro
 
 ---
 
-archive/issue_events_008876.json:
+archive/issue_events_021137.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -109,7 +109,7 @@ archive/issue_events_008876.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8706",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8706#event-8876"
+    "url": "https://github.com/sagemath/sagetest/issues/8706#event-21137"
 }
 ```
 

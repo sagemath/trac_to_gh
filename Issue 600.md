@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/600
 
 ---
 
+archive/issue_events_001597.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-18T09:27:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/600",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/600#event-1597"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003087.json:
 ```json
 {
@@ -72,7 +89,7 @@ Michael
 
 ---
 
-archive/issue_events_000658.json:
+archive/issue_events_001598.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -80,7 +97,7 @@ archive/issue_events_000658.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/600",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/600#event-658"
+    "url": "https://github.com/sagemath/sagetest/issues/600#event-1598"
 }
 ```
 
@@ -101,6 +118,40 @@ archive/issue_comments_003089.json:
 ```
 
 I just ran this and measured memory usage under top and it was fine / hardly noticeable.  I'm going to mark this as invalid.
+
+
+
+---
+
+archive/issue_events_001599.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T14:37:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/600",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/600#event-1599"
+}
+```
+
+
+
+---
+
+archive/issue_events_001600.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T14:37:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/600",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/600#event-1600"
+}
+```
 
 
 

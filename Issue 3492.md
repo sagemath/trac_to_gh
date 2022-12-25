@@ -87,6 +87,23 @@ This is a nice patch. Some issues still to address:
 
 ---
 
+archive/issue_events_007959.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
+    "created_at": "2008-06-25T06:53:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3492",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3492#event-7959"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024546.json:
 ```json
 {
@@ -168,7 +185,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003712.json:
+archive/issue_events_007960.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -176,7 +193,7 @@ archive/issue_events_003712.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3492",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3492#event-3712"
+    "url": "https://github.com/sagemath/sagetest/issues/3492#event-7960"
 }
 ```
 

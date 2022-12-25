@@ -47,7 +47,7 @@ Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket45
 
 ---
 
-archive/issue_events_004778.json:
+archive/issue_events_010317.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -55,7 +55,24 @@ archive/issue_events_004778.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4532",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4532#event-4778"
+    "url": "https://github.com/sagemath/sagetest/issues/4532#event-10317"
+}
+```
+
+
+
+---
+
+archive/issue_events_010318.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-20T09:33:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4532",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4532#event-10318"
 }
 ```
 

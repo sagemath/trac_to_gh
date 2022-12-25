@@ -202,6 +202,23 @@ Changing priority from minor to critical.
 
 ---
 
+archive/issue_events_009595.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2009-02-06T08:58:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4245",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4245#event-9595"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030798.json:
 ```json
 {
@@ -364,7 +381,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004484.json:
+archive/issue_events_009596.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -372,7 +389,7 @@ archive/issue_events_004484.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4245#event-4484"
+    "url": "https://github.com/sagemath/sagetest/issues/4245#event-9596"
 }
 ```
 

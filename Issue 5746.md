@@ -111,6 +111,125 @@ Is this mathematically correct? In terms of categories of schemes, X/F has no K-
 
 ---
 
+archive/issue_events_013476.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13476"
+}
+```
+
+
+
+---
+
+archive/issue_events_013477.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13477"
+}
+```
+
+
+
+---
+
+archive/issue_events_013478.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13478"
+}
+```
+
+
+
+---
+
+archive/issue_events_013479.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13479"
+}
+```
+
+
+
+---
+
+archive/issue_events_013480.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13480"
+}
+```
+
+
+
+---
+
+archive/issue_events_013481.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13481"
+}
+```
+
+
+
+---
+
+archive/issue_events_013482.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13482"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044839.json:
 ```json
 {
@@ -124,6 +243,40 @@ archive/issue_comments_044839.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_013483.json:
+```json
+{
+    "actor": "https://github.com/koffie",
+    "created_at": "2017-09-08T04:52:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13483"
+}
+```
+
+
+
+---
+
+archive/issue_events_013484.json:
+```json
+{
+    "actor": "https://github.com/koffie",
+    "created_at": "2017-09-08T04:52:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13484"
+}
+```
 
 
 
@@ -189,7 +342,7 @@ Asking for points over a subfield of the field of definition is indeed not well 
 
 ---
 
-archive/issue_events_005993.json:
+archive/issue_events_013485.json:
 ```json
 {
     "actor": "https://github.com/koffie",
@@ -197,7 +350,7 @@ archive/issue_events_005993.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5746#event-5993"
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-13485"
 }
 ```
 

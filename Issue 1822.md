@@ -90,7 +90,7 @@ Merged in Sage 3.0.alpha2
 
 ---
 
-archive/issue_events_001979.json:
+archive/issue_events_004431.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -98,7 +98,7 @@ archive/issue_events_001979.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1822#event-1979"
+    "url": "https://github.com/sagemath/sagetest/issues/1822#event-4431"
 }
 ```
 
@@ -162,7 +162,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_001980.json:
+archive/issue_events_004432.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -170,7 +170,7 @@ archive/issue_events_001980.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1822#event-1980"
+    "url": "https://github.com/sagemath/sagetest/issues/1822#event-4432"
 }
 ```
 
@@ -214,7 +214,7 @@ I can confirm that 1822_problems.patch fixes the problems I reported in IRC. Pos
 
 ---
 
-archive/issue_events_001981.json:
+archive/issue_events_004433.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -222,7 +222,7 @@ archive/issue_events_001981.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1822#event-1981"
+    "url": "https://github.com/sagemath/sagetest/issues/1822#event-4433"
 }
 ```
 

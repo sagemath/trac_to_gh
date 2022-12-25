@@ -43,6 +43,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/128
 
 ---
 
+archive/issue_events_000246.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-05T15:05:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/128",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/128#event-246"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000574.json:
 ```json
 {
@@ -593,6 +610,40 @@ So... please someone put as 'positive review', then.  I've filled in the reviewe
 
 ---
 
+archive/issue_events_000247.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-01-29T20:28:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/128",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/128#event-247"
+}
+```
+
+
+
+---
+
+archive/issue_events_000248.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-01-29T20:28:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/128",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/128#event-248"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000596.json:
 ```json
 {
@@ -772,7 +823,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_000134.json:
+archive/issue_events_000249.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -780,6 +831,6 @@ archive/issue_events_000134.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/128",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/128#event-134"
+    "url": "https://github.com/sagemath/sagetest/issues/128#event-249"
 }
 ```

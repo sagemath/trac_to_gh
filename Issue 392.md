@@ -65,7 +65,24 @@ Changing keywords from "round, real, arithmetic" to "round, real, precision, ari
 
 ---
 
-archive/issue_events_000414.json:
+archive/issue_events_000935.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T22:06:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/392",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/392#event-935"
+}
+```
+
+
+
+---
+
+archive/issue_events_000936.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +90,7 @@ archive/issue_events_000414.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/392",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/392#event-414"
+    "url": "https://github.com/sagemath/sagetest/issues/392#event-936"
 }
 ```
 

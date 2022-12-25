@@ -108,7 +108,7 @@ Numpy is now a standard sage component.
 
 ---
 
-archive/issue_events_000150.json:
+archive/issue_events_000272.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -116,7 +116,7 @@ archive/issue_events_000150.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/144",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/144#event-150"
+    "url": "https://github.com/sagemath/sagetest/issues/144#event-272"
 }
 ```
 

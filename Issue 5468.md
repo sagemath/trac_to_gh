@@ -80,7 +80,7 @@ Closed as fixed by #3617.
 
 ---
 
-archive/issue_events_005722.json:
+archive/issue_events_012777.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -88,7 +88,7 @@ archive/issue_events_005722.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5468",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5468#event-5722"
+    "url": "https://github.com/sagemath/sagetest/issues/5468#event-12777"
 }
 ```
 

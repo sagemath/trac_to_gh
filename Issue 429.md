@@ -60,6 +60,23 @@ Oh, Complex numbers don't work, too.
 
 ---
 
+archive/issue_events_001046.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T00:59:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/429",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/429#event-1046"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002144.json:
 ```json
 {
@@ -96,7 +113,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000456.json:
+archive/issue_events_001047.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -104,6 +121,6 @@ archive/issue_events_000456.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/429",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/429#event-456"
+    "url": "https://github.com/sagemath/sagetest/issues/429#event-1047"
 }
 ```

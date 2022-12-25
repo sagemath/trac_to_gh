@@ -82,6 +82,23 @@ glib for libcsage is available at http://sage.math.washington.edu/home/gfurnish/
 
 ---
 
+archive/issue_events_005748.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-23T12:07:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2436",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2436#event-5748"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016450.json:
 ```json
 {
@@ -100,7 +117,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_002613.json:
+archive/issue_events_005749.json:
 ```json
 {
     "actor": "https://github.com/garyfurnish",
@@ -108,7 +125,7 @@ archive/issue_events_002613.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2436",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2436#event-2613"
+    "url": "https://github.com/sagemath/sagetest/issues/2436#event-5749"
 }
 ```
 
@@ -133,3 +150,20 @@ Again: Do not close ticket unless you know what you are doing: At the very minim
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005750.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-03T08:28:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2436",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2436#event-5750"
+}
+```

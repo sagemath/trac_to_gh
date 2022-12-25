@@ -38,6 +38,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/8079
 
 ---
 
+archive/issue_events_019346.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-26T14:53:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8079",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8079#event-19346"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070683.json:
 ```json
 {
@@ -166,7 +183,7 @@ Changing keywords from "" to "Developer's Guide patching spkg".
 
 ---
 
-archive/issue_events_008285.json:
+archive/issue_events_019347.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -174,7 +191,7 @@ archive/issue_events_008285.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8079",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8079#event-8285"
+    "url": "https://github.com/sagemath/sagetest/issues/8079#event-19347"
 }
 ```
 

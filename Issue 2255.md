@@ -69,7 +69,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_002425.json:
+archive/issue_events_005343.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -77,7 +77,7 @@ archive/issue_events_002425.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2255",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2255#event-2425"
+    "url": "https://github.com/sagemath/sagetest/issues/2255#event-5343"
 }
 ```
 

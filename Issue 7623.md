@@ -74,6 +74,125 @@ But since "uname -m" already gives you either "i386" or "PowerMacintosh", I fear
 
 ---
 
+archive/issue_events_018113.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18113"
+}
+```
+
+
+
+---
+
+archive/issue_events_018114.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18114"
+}
+```
+
+
+
+---
+
+archive/issue_events_018115.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18115"
+}
+```
+
+
+
+---
+
+archive/issue_events_018116.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18116"
+}
+```
+
+
+
+---
+
+archive/issue_events_018117.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18117"
+}
+```
+
+
+
+---
+
+archive/issue_events_018118.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18118"
+}
+```
+
+
+
+---
+
+archive/issue_events_018119.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18119"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065022.json:
 ```json
 {
@@ -87,6 +206,40 @@ archive/issue_comments_065022.json:
 ```
 
 I doubt that we still support old OS X PPC.
+
+
+
+---
+
+archive/issue_events_018120.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-04-11T09:54:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18120"
+}
+```
+
+
+
+---
+
+archive/issue_events_018121.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-04-11T09:54:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7623",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18121"
+}
+```
 
 
 
@@ -128,7 +281,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007848.json:
+archive/issue_events_018122.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -136,7 +289,7 @@ archive/issue_events_007848.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7623",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7623#event-7848"
+    "url": "https://github.com/sagemath/sagetest/issues/7623#event-18122"
 }
 ```
 

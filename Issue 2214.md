@@ -84,7 +84,7 @@ This bug has been fixed in 2.10.4, please close it.
 
 ---
 
-archive/issue_events_002384.json:
+archive/issue_events_005281.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -92,7 +92,7 @@ archive/issue_events_002384.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2214",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2214#event-2384"
+    "url": "https://github.com/sagemath/sagetest/issues/2214#event-5281"
 }
 ```
 
@@ -113,6 +113,23 @@ archive/issue_comments_014597.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_005282.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-24T16:49:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2214",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2214#event-5282"
+}
+```
 
 
 

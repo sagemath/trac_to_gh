@@ -132,6 +132,125 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_006660.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-6660"
+}
+```
+
+
+
+---
+
+archive/issue_events_006661.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-6661"
+}
+```
+
+
+
+---
+
+archive/issue_events_006662.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-6662"
+}
+```
+
+
+
+---
+
+archive/issue_events_006663.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-6663"
+}
+```
+
+
+
+---
+
+archive/issue_events_006664.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-6664"
+}
+```
+
+
+
+---
+
+archive/issue_events_006665.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-6665"
+}
+```
+
+
+
+---
+
+archive/issue_events_006666.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-6666"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020006.json:
 ```json
 {
@@ -152,7 +271,7 @@ Ah, but *does* it?  For me, it first prints out the (empty) lines every second, 
 
 ---
 
-archive/issue_events_003111.json:
+archive/issue_events_006667.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -160,7 +279,7 @@ archive/issue_events_003111.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2909",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2909#event-3111"
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-6667"
 }
 ```
 

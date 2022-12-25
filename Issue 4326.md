@@ -385,7 +385,7 @@ The new patch looks okay to me.
 
 ---
 
-archive/issue_events_004573.json:
+archive/issue_events_009789.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -393,7 +393,7 @@ archive/issue_events_004573.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4326#event-4573"
+    "url": "https://github.com/sagemath/sagetest/issues/4326#event-9789"
 }
 ```
 
@@ -414,3 +414,20 @@ archive/issue_comments_031648.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009790.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-11-20T00:12:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4326",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4326#event-9790"
+}
+```

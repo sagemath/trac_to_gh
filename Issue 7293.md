@@ -48,6 +48,125 @@ Changing component from numerical to linear programming.
 
 ---
 
+archive/issue_events_017247.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7293",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7293#event-17247"
+}
+```
+
+
+
+---
+
+archive/issue_events_017248.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7293",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7293#event-17248"
+}
+```
+
+
+
+---
+
+archive/issue_events_017249.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7293",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7293#event-17249"
+}
+```
+
+
+
+---
+
+archive/issue_events_017250.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7293",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7293#event-17250"
+}
+```
+
+
+
+---
+
+archive/issue_events_017251.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7293",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7293#event-17251"
+}
+```
+
+
+
+---
+
+archive/issue_events_017252.json:
+```json
+{
+    "actor": "https://github.com/dimpase",
+    "created_at": "2014-08-05T07:29:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7293",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7293#event-17252"
+}
+```
+
+
+
+---
+
+archive/issue_events_017253.json:
+```json
+{
+    "actor": "https://github.com/dimpase",
+    "created_at": "2014-08-05T07:29:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7293",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7293#event-17253"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060610.json:
 ```json
 {
@@ -102,7 +221,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007515.json:
+archive/issue_events_017254.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -110,7 +229,7 @@ archive/issue_events_007515.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7293",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7293#event-7515"
+    "url": "https://github.com/sagemath/sagetest/issues/7293#event-17254"
 }
 ```
 

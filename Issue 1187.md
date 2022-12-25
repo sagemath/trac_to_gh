@@ -47,6 +47,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1187
 
 ---
 
+archive/issue_events_003171.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-27T07:58:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#event-3171"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007306.json:
 ```json
 {
@@ -197,7 +214,7 @@ Looks like a great patch, adding functionality, fixing a bug and correcting some
 
 ---
 
-archive/issue_events_001319.json:
+archive/issue_events_003172.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -205,7 +222,7 @@ archive/issue_events_001319.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1187",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1187#event-1319"
+    "url": "https://github.com/sagemath/sagetest/issues/1187#event-3172"
 }
 ```
 

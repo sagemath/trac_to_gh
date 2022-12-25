@@ -131,6 +131,23 @@ In that case, Maxima is returning `hypergeometric([3/2],[5/2,3],-x^2/4)`.
 
 ---
 
+archive/issue_events_024966.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9907",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9907#event-24966"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098383.json:
 ```json
 {
@@ -144,6 +161,40 @@ archive/issue_comments_098383.json:
 ```
 
 See also http://ask.sagemath.org/question/3091 for another example.
+
+
+
+---
+
+archive/issue_events_024967.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9907",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9907#event-24967"
+}
+```
+
+
+
+---
+
+archive/issue_events_024968.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9907",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9907#event-24968"
+}
+```
 
 
 
@@ -180,6 +231,40 @@ archive/issue_comments_098385.json:
 ```
 
 And see [this sage-support thread](https://groups.google.com/forum/#!topic/sage-support/IgC78rcdO7c) for possibly another example.
+
+
+
+---
+
+archive/issue_events_024969.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9907",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9907#event-24969"
+}
+```
+
+
+
+---
+
+archive/issue_events_024970.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9907",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9907#event-24970"
+}
+```
 
 
 
@@ -353,6 +438,40 @@ Practically a duplicate of #2516
 
 ---
 
+archive/issue_events_024971.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-07-08T16:15:42Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9907",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9907#event-24971"
+}
+```
+
+
+
+---
+
+archive/issue_events_024972.json:
+```json
+{
+    "actor": "https://github.com/rwst",
+    "created_at": "2014-07-08T16:15:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9907",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9907#event-24972"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098393.json:
 ```json
 {
@@ -371,7 +490,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_010034.json:
+archive/issue_events_024973.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -379,6 +498,6 @@ archive/issue_events_010034.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9907#event-10034"
+    "url": "https://github.com/sagemath/sagetest/issues/9907#event-24973"
 }
 ```

@@ -104,6 +104,57 @@ Wall time: 39.24
 
 ---
 
+archive/issue_events_001244.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/bober",
+    "created_at": "2007-08-29T16:14:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/486",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/486#event-1244"
+}
+```
+
+
+
+---
+
+archive/issue_events_001245.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-12T23:16:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/486",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/486#event-1245"
+}
+```
+
+
+
+---
+
+archive/issue_events_001246.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-12T23:16:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/486",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/486#event-1246"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002417.json:
 ```json
 {
@@ -140,7 +191,7 @@ Attachment [partition_updates.hg](tarball://root/attachments/some-uuid/ticket486
 
 ---
 
-archive/issue_events_000517.json:
+archive/issue_events_001247.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -148,7 +199,7 @@ archive/issue_events_000517.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/486",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/486#event-517"
+    "url": "https://github.com/sagemath/sagetest/issues/486#event-1247"
 }
 ```
 

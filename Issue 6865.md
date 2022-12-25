@@ -48,6 +48,23 @@ Moved CSS in `css.py` to templates, and adjusted `twist.py` to use them.
 
 ---
 
+archive/issue_events_016155.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2009-09-02T16:20:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6865",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6865#event-16155"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056554.json:
 ```json
 {
@@ -365,7 +382,7 @@ Merged `trac_6865-templates-css.3.patch`.
 
 ---
 
-archive/issue_events_007097.json:
+archive/issue_events_016156.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -373,7 +390,7 @@ archive/issue_events_007097.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6865#event-7097"
+    "url": "https://github.com/sagemath/sagetest/issues/6865#event-16156"
 }
 ```
 

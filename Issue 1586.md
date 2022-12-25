@@ -101,7 +101,7 @@ http://sage.math.washington.edu/home/rlmill/release/merged-sage-2.9.1.rc0/fix_pr
 
 ---
 
-archive/issue_events_001742.json:
+archive/issue_events_003950.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -109,7 +109,7 @@ archive/issue_events_001742.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1586",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1586#event-1742"
+    "url": "https://github.com/sagemath/sagetest/issues/1586#event-3950"
 }
 ```
 

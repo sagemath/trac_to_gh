@@ -55,6 +55,23 @@ Changing keywords from "product primes 190" to "product primes 190 divisors".
 
 ---
 
+archive/issue_events_020695.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-02-02T11:15:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8573",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8573#event-20695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077514.json:
 ```json
 {
@@ -140,6 +157,40 @@ archive/issue_comments_077518.json:
 ```
 
 Changing keywords from "product primes 190 divisors" to "integer divisors".
+
+
+
+---
+
+archive/issue_events_020696.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-03T10:32:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8573",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8573#event-20696"
+}
+```
+
+
+
+---
+
+archive/issue_events_020697.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-03T10:32:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8573",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8573#event-20697"
+}
+```
 
 
 
@@ -368,7 +419,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008751.json:
+archive/issue_events_020698.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -376,6 +427,6 @@ archive/issue_events_008751.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8573",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8573#event-8751"
+    "url": "https://github.com/sagemath/sagetest/issues/8573#event-20698"
 }
 ```

@@ -93,6 +93,23 @@ Isn't this just a matter of defining what "basis" means?
 
 ---
 
+archive/issue_events_021096.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-08-30T10:55:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8693",
+    "milestone": "sage-6.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8693#event-21096"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079065.json:
 ```json
 {

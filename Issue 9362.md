@@ -340,6 +340,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_023094.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-01-15T10:40:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#event-23094"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088784.json:
 ```json
 {
@@ -479,7 +496,41 @@ Paul
 
 ---
 
-archive/issue_events_009515.json:
+archive/issue_events_023095.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-02-16T21:34:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#event-23095"
+}
+```
+
+
+
+---
+
+archive/issue_events_023096.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-02-16T21:34:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#event-23096"
+}
+```
+
+
+
+---
+
+archive/issue_events_023097.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -487,7 +538,7 @@ archive/issue_events_009515.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9362",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9362#event-9515"
+    "url": "https://github.com/sagemath/sagetest/issues/9362#event-23097"
 }
 ```
 

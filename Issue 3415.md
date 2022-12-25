@@ -232,7 +232,7 @@ So apply this safe package and close this.
 
 ---
 
-archive/issue_events_003631.json:
+archive/issue_events_007698.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -240,7 +240,7 @@ archive/issue_events_003631.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3415",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3415#event-3631"
+    "url": "https://github.com/sagemath/sagetest/issues/3415#event-7698"
 }
 ```
 
@@ -279,3 +279,20 @@ archive/issue_comments_023900.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007699.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-15T18:39:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3415",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3415#event-7699"
+}
+```

@@ -27,6 +27,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3502
 
 ---
 
+archive/issue_events_007979.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-09-11T09:17:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3502",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3502#event-7979"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024648.json:
 ```json
 {
@@ -103,6 +120,40 @@ Attachment [trac-3502-addl.patch](tarball://root/attachments/some-uuid/ticket350
 
 ---
 
+archive/issue_events_007980.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-09-12T06:54:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3502",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3502#event-7980"
+}
+```
+
+
+
+---
+
+archive/issue_events_007981.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2008-09-12T06:54:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3502",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3502#event-7981"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024652.json:
 ```json
 {
@@ -122,7 +173,7 @@ I read through the additional patch, applied it, doctested it, and I'm happy acr
 
 ---
 
-archive/issue_events_003722.json:
+archive/issue_events_007982.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -130,7 +181,7 @@ archive/issue_events_003722.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3502",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3502#event-3722"
+    "url": "https://github.com/sagemath/sagetest/issues/3502#event-7982"
 }
 ```
 

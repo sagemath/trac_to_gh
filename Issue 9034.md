@@ -290,7 +290,7 @@ Jaap
 
 ---
 
-archive/issue_events_009186.json:
+archive/issue_events_022120.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -298,7 +298,7 @@ archive/issue_events_009186.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9034",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9034#event-9186"
+    "url": "https://github.com/sagemath/sagetest/issues/9034#event-22120"
 }
 ```
 

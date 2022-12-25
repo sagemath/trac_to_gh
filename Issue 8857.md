@@ -74,6 +74,23 @@ but the second result is clearly wrong.
 
 ---
 
+archive/issue_events_021607.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21607"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081259.json:
 ```json
 {
@@ -135,6 +152,40 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_021608.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2013-12-12T14:41:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21608"
+}
+```
+
+
+
+---
+
+archive/issue_events_021609.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2013-12-12T14:41:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21609"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081262.json:
 ```json
 {
@@ -169,6 +220,40 @@ Replying to [comment:6 mjo]:
 > This should get a doctest, since it is a bug that was fixed, albeit not in this ticket.
 
 You are right.
+
+
+
+---
+
+archive/issue_events_021610.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2013-12-12T17:07:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21610"
+}
+```
+
+
+
+---
+
+archive/issue_events_021611.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2013-12-12T17:07:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21611"
+}
+```
 
 
 
@@ -347,3 +432,105 @@ From a user interface point of view, yes, I do. From a mathematical (or programm
 > and `R.<x,y> = FractionField(QQ['t'])[]`. So should we use this ticket as one to fix this as well since it essentially is the same bug?
 
 Yes, why not.
+
+
+
+---
+
+archive/issue_events_021612.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21612"
+}
+```
+
+
+
+---
+
+archive/issue_events_021613.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21613"
+}
+```
+
+
+
+---
+
+archive/issue_events_021614.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21614"
+}
+```
+
+
+
+---
+
+archive/issue_events_021615.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21615"
+}
+```
+
+
+
+---
+
+archive/issue_events_021616.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21616"
+}
+```
+
+
+
+---
+
+archive/issue_events_021617.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8857",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8857#event-21617"
+}
+```

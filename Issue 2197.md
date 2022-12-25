@@ -32,6 +32,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2197
 
 ---
 
+archive/issue_events_005247.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-17T19:45:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2197",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2197#event-5247"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014403.json:
 ```json
 {
@@ -50,7 +67,24 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_002363.json:
+archive/issue_events_005248.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-17T21:16:23Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2197",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2197#event-5248"
+}
+```
+
+
+
+---
+
+archive/issue_events_005249.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -58,7 +92,7 @@ archive/issue_events_002363.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2197",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2197#event-2363"
+    "url": "https://github.com/sagemath/sagetest/issues/2197#event-5249"
 }
 ```
 

@@ -256,6 +256,23 @@ One could also check that entries in SPKG.txt have something in each section. Bu
 
 ---
 
+archive/issue_events_023979.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-10-29T08:17:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9622",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9622#event-23979"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093059.json:
 ```json
 {
@@ -328,7 +345,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_009763.json:
+archive/issue_events_023980.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -336,6 +353,6 @@ archive/issue_events_009763.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9622",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9622#event-9763"
+    "url": "https://github.com/sagemath/sagetest/issues/9622#event-23980"
 }
 ```

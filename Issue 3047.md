@@ -63,7 +63,7 @@ This ticket should be deleted. I meant only to create trac 3046.
 
 ---
 
-archive/issue_events_003256.json:
+archive/issue_events_006902.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -71,7 +71,7 @@ archive/issue_events_003256.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3047",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3047#event-3256"
+    "url": "https://github.com/sagemath/sagetest/issues/3047#event-6902"
 }
 ```
 

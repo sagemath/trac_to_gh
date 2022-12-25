@@ -256,7 +256,7 @@ Merged [atlas-3.8.3.p11.spkg](http://sage.math.washington.edu/home/mvngu/spkg/st
 
 ---
 
-archive/issue_events_008042.json:
+archive/issue_events_018724.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -264,7 +264,7 @@ archive/issue_events_008042.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7827",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7827#event-8042"
+    "url": "https://github.com/sagemath/sagetest/issues/7827#event-18724"
 }
 ```
 

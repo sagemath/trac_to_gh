@@ -70,6 +70,23 @@ doctest
 
 ---
 
+archive/issue_events_020661.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-04-02T16:54:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8564",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8564#event-20661"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077409.json:
 ```json
 {
@@ -200,7 +217,7 @@ Ondrej
 
 ---
 
-archive/issue_events_008743.json:
+archive/issue_events_020662.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -208,7 +225,7 @@ archive/issue_events_008743.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8564#event-8743"
+    "url": "https://github.com/sagemath/sagetest/issues/8564#event-20662"
 }
 ```
 

@@ -44,6 +44,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/3668
 
 ---
 
+archive/issue_events_008397.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-14T23:03:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3668",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3668#event-8397"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025868.json:
 ```json
 {
@@ -339,6 +356,40 @@ Nathann
 
 ---
 
+archive/issue_events_008398.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-24T06:36:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3668",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3668#event-8398"
+}
+```
+
+
+
+---
+
+archive/issue_events_008399.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-07-24T06:36:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3668",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3668#event-8399"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025882.json:
 ```json
 {
@@ -357,7 +408,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003887.json:
+archive/issue_events_008400.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -365,6 +416,6 @@ archive/issue_events_003887.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3668#event-3887"
+    "url": "https://github.com/sagemath/sagetest/issues/3668#event-8400"
 }
 ```

@@ -81,7 +81,7 @@ Merged in 2.9.2.rc1 via some of the other jmol/3D plotting bundles.
 
 ---
 
-archive/issue_events_001750.json:
+archive/issue_events_003965.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -89,6 +89,6 @@ archive/issue_events_001750.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1592",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1592#event-1750"
+    "url": "https://github.com/sagemath/sagetest/issues/1592#event-3965"
 }
 ```

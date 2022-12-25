@@ -48,6 +48,23 @@ Attachment [trac_5671-part1.patch](tarball://root/attachments/some-uuid/ticket56
 
 ---
 
+archive/issue_events_013335.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-02T22:42:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5671",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5671#event-13335"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044274.json:
 ```json
 {
@@ -219,6 +236,74 @@ I vote for declaring this ticket a dupe.
 
 ---
 
+archive/issue_events_013336.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5671",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5671#event-13336"
+}
+```
+
+
+
+---
+
+archive/issue_events_013337.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5671",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5671#event-13337"
+}
+```
+
+
+
+---
+
+archive/issue_events_013338.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5671",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5671#event-13338"
+}
+```
+
+
+
+---
+
+archive/issue_events_013339.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5671",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5671#event-13339"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044280.json:
 ```json
 {
@@ -232,6 +317,40 @@ archive/issue_comments_044280.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_013340.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-14T15:29:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5671",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5671#event-13340"
+}
+```
+
+
+
+---
+
+archive/issue_events_013341.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2014-03-14T15:29:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5671",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5671#event-13341"
+}
+```
 
 
 
@@ -312,7 +431,7 @@ Which has been done :)  mmezz, just add your real name in the reviewers field.
 
 ---
 
-archive/issue_events_005914.json:
+archive/issue_events_013342.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -320,7 +439,7 @@ archive/issue_events_005914.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#event-5914"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#event-13342"
 }
 ```
 

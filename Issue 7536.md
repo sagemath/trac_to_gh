@@ -100,6 +100,23 @@ Attachment [trac_7536.patch](tarball://root/attachments/some-uuid/ticket7536/tra
 
 ---
 
+archive/issue_events_017872.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-15T17:32:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7536",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7536#event-17872"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063805.json:
 ```json
 {
@@ -118,7 +135,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007766.json:
+archive/issue_events_017873.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -126,6 +143,6 @@ archive/issue_events_007766.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7536",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7536#event-7766"
+    "url": "https://github.com/sagemath/sagetest/issues/7536#event-17873"
 }
 ```

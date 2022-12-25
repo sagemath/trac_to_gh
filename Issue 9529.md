@@ -256,6 +256,23 @@ I can not reproduce this, and this is six years old. I suppose this one can be c
 
 ---
 
+archive/issue_events_023676.json:
+```json
+{
+    "actor": "https://github.com/jm58660",
+    "created_at": "2016-07-16T04:40:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9529",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9529#event-23676"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091536.json:
 ```json
 {
@@ -364,7 +381,7 @@ Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all 
 
 ---
 
-archive/issue_events_009677.json:
+archive/issue_events_023677.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -372,7 +389,7 @@ archive/issue_events_009677.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9529#event-9677"
+    "url": "https://github.com/sagemath/sagetest/issues/9529#event-23677"
 }
 ```
 

@@ -164,6 +164,23 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_004541.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-23T09:27:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1884",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1884#event-4541"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011901.json:
 ```json
 {
@@ -455,7 +472,7 @@ Merged both patches in Sage 2.10.3.rc3
 
 ---
 
-archive/issue_events_002042.json:
+archive/issue_events_004542.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -463,6 +480,6 @@ archive/issue_events_002042.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1884#event-2042"
+    "url": "https://github.com/sagemath/sagetest/issues/1884#event-4542"
 }
 ```

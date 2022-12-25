@@ -64,7 +64,7 @@ Wall time: 0.01 s
 
 ---
 
-archive/issue_events_007204.json:
+archive/issue_events_016397.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -72,7 +72,7 @@ archive/issue_events_007204.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6980",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6980#event-7204"
+    "url": "https://github.com/sagemath/sagetest/issues/6980#event-16397"
 }
 ```
 

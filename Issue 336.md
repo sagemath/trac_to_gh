@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/336
 
 ---
 
+archive/issue_events_000788.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:51:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/336#event-788"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001645.json:
 ```json
 {
@@ -144,7 +161,41 @@ Positive review with doctestfix patch. I didn't really do 5 except I did look at
 
 ---
 
-archive/issue_events_000360.json:
+archive/issue_events_000789.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-11T07:25:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/336#event-789"
+}
+```
+
+
+
+---
+
+archive/issue_events_000790.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-05-11T07:25:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "milestone": "sage-3.0.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/336#event-790"
+}
+```
+
+
+
+---
+
+archive/issue_events_000791.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -152,7 +203,7 @@ archive/issue_events_000360.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/336",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/336#event-360"
+    "url": "https://github.com/sagemath/sagetest/issues/336#event-791"
 }
 ```
 

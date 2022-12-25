@@ -93,6 +93,23 @@ Attachment [kbessel_fixes.patch](tarball://root/attachments/some-uuid/ticket3426
 
 ---
 
+archive/issue_events_007729.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-14T23:36:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3426",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3426#event-7729"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024060.json:
 ```json
 {
@@ -178,6 +195,74 @@ archive/issue_comments_024064.json:
 ```
 
 I can say that I agree that this is 100% correct.
+
+
+
+---
+
+archive/issue_events_007730.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-06-16T05:55:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3426",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3426#event-7730"
+}
+```
+
+
+
+---
+
+archive/issue_events_007731.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-06-16T05:55:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3426",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3426#event-7731"
+}
+```
+
+
+
+---
+
+archive/issue_events_007732.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-16T06:42:01Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3426",
+    "milestone": "sage-3.0.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3426#event-7732"
+}
+```
+
+
+
+---
+
+archive/issue_events_007733.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-16T06:42:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3426",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3426#event-7733"
+}
+```
 
 
 
@@ -942,6 +1027,40 @@ Changing status from needs_work to positive_review.
 
 ---
 
+archive/issue_events_007734.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-02-08T17:34:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3426",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3426#event-7734"
+}
+```
+
+
+
+---
+
+archive/issue_events_007735.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-02-08T17:34:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3426",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3426#event-7735"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024098.json:
 ```json
 {
@@ -960,7 +1079,7 @@ Everything here is now in a doctest in #4102, including the stuff in the thread 
 
 ---
 
-archive/issue_events_003641.json:
+archive/issue_events_007736.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -968,7 +1087,7 @@ archive/issue_events_003641.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3426#event-3641"
+    "url": "https://github.com/sagemath/sagetest/issues/3426#event-7736"
 }
 ```
 

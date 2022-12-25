@@ -254,6 +254,23 @@ If anyone else can think of any sanity checks that need to be made, then these c
 
 ---
 
+archive/issue_events_016474.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-10-04T02:45:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7021",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7021#event-16474"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058025.json:
 ```json
 {
@@ -508,7 +525,7 @@ Dave
 
 ---
 
-archive/issue_events_007243.json:
+archive/issue_events_016475.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -516,7 +533,7 @@ archive/issue_events_007243.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7021",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7021#event-7243"
+    "url": "https://github.com/sagemath/sagetest/issues/7021#event-16475"
 }
 ```
 

@@ -96,7 +96,7 @@ I personally prefer long outputs of doctests to be all one line -- I find it mak
 
 ---
 
-archive/issue_events_002271.json:
+archive/issue_events_005060.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -104,7 +104,7 @@ archive/issue_events_002271.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2111",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2111#event-2271"
+    "url": "https://github.com/sagemath/sagetest/issues/2111#event-5060"
 }
 ```
 

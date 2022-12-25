@@ -113,6 +113,23 @@ Changing component from symbolics to misc.
 
 ---
 
+archive/issue_events_019905.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-04-05T12:38:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8317",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8317#event-19905"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073654.json:
 ```json
 {

@@ -244,7 +244,7 @@ Merged in Sage 3.3.alpha0
 
 ---
 
-archive/issue_events_005235.json:
+archive/issue_events_011550.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -252,6 +252,6 @@ archive/issue_events_005235.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4991",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4991#event-5235"
+    "url": "https://github.com/sagemath/sagetest/issues/4991#event-11550"
 }
 ```

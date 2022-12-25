@@ -145,6 +145,23 @@ This is a duplicate of #9393. There is a patch with a doctest attached to that t
 
 ---
 
+archive/issue_events_024010.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-01-16T09:39:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9630",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9630#event-24010"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093163.json:
 ```json
 {
@@ -199,7 +216,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_009769.json:
+archive/issue_events_024011.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -207,6 +224,6 @@ archive/issue_events_009769.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9630#event-9769"
+    "url": "https://github.com/sagemath/sagetest/issues/9630#event-24011"
 }
 ```

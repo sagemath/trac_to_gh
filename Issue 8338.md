@@ -150,6 +150,23 @@ The formulas are at http://en.wikipedia.org/wiki/Fourier_transform
 
 ---
 
+archive/issue_events_019966.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-04-05T12:42:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8338",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8338#event-19966"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074324.json:
 ```json
 {

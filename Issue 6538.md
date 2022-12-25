@@ -217,6 +217,23 @@ Changes look good and thanks for adding the doctests. You done some nice code cl
 
 ---
 
+archive/issue_events_015417.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-27T20:31:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6538",
+    "milestone": "sage-5.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6538#event-15417"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053198.json:
 ```json
 {
@@ -530,7 +547,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006774.json:
+archive/issue_events_015418.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -538,7 +555,7 @@ archive/issue_events_006774.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6538",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6538#event-6774"
+    "url": "https://github.com/sagemath/sagetest/issues/6538#event-15418"
 }
 ```
 

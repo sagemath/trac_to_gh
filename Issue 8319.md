@@ -110,6 +110,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_019907.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2010-02-24T21:02:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8319",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8319#event-19907"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073669.json:
 ```json
 {
@@ -146,7 +163,7 @@ Looks fine to me. All tests pass.
 
 ---
 
-archive/issue_events_008513.json:
+archive/issue_events_019908.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -154,7 +171,7 @@ archive/issue_events_008513.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8319",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8319#event-8513"
+    "url": "https://github.com/sagemath/sagetest/issues/8319#event-19908"
 }
 ```
 

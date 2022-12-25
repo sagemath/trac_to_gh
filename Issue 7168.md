@@ -55,6 +55,23 @@ You have #7166 listed above for sqlite, but the ticket concerns numpy.
 
 ---
 
+archive/issue_events_016956.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-03-30T00:42:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7168",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7168#event-16956"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059304.json:
 ```json
 {
@@ -109,7 +126,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007387.json:
+archive/issue_events_016957.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -117,7 +134,7 @@ archive/issue_events_007387.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7168",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7168#event-7387"
+    "url": "https://github.com/sagemath/sagetest/issues/7168#event-16957"
 }
 ```
 

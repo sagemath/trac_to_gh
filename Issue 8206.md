@@ -122,7 +122,7 @@ See also #1610 for more stuff on "hg record" and cherry picking.
 
 ---
 
-archive/issue_events_008408.json:
+archive/issue_events_019639.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -130,7 +130,7 @@ archive/issue_events_008408.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8206#event-8408"
+    "url": "https://github.com/sagemath/sagetest/issues/8206#event-19639"
 }
 ```
 

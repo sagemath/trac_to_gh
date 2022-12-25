@@ -113,6 +113,23 @@ Oops, I appear to have put the same comment twice!
 
 ---
 
+archive/issue_events_017617.json:
+```json
+{
+    "actor": "https://github.com/benjaminfjones",
+    "created_at": "2012-05-25T20:26:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7436",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7436#event-17617"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062463.json:
 ```json
 {
@@ -149,7 +166,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007661.json:
+archive/issue_events_017618.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -157,7 +174,7 @@ archive/issue_events_007661.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7436",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7436#event-7661"
+    "url": "https://github.com/sagemath/sagetest/issues/7436#event-17618"
 }
 ```
 

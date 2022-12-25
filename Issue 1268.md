@@ -129,7 +129,7 @@ Installs fine on Intel OS X 10.5.1.
 
 ---
 
-archive/issue_events_001412.json:
+archive/issue_events_003336.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -137,7 +137,7 @@ archive/issue_events_001412.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1268",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1268#event-1412"
+    "url": "https://github.com/sagemath/sagetest/issues/1268#event-3336"
 }
 ```
 

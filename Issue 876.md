@@ -45,6 +45,57 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
+archive/issue_events_002443.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-13T12:12:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/876#event-2443"
+}
+```
+
+
+
+---
+
+archive/issue_events_002444.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-05T22:25:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/876#event-2444"
+}
+```
+
+
+
+---
+
+archive/issue_events_002445.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-05T22:25:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/876#event-2445"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005401.json:
 ```json
 {
@@ -156,6 +207,40 @@ Also, I think I had to repackage braid recently because of some loading problems
 
 ---
 
+archive/issue_events_002446.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-07-07T03:01:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/876#event-2446"
+}
+```
+
+
+
+---
+
+archive/issue_events_002447.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-07-07T03:01:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/876#event-2447"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005405.json:
 ```json
 {
@@ -210,7 +295,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_000990.json:
+archive/issue_events_002448.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -218,7 +303,7 @@ archive/issue_events_000990.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/876#event-990"
+    "url": "https://github.com/sagemath/sagetest/issues/876#event-2448"
 }
 ```
 

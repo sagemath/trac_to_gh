@@ -133,6 +133,125 @@ PS: It seems to me that for changing gcd for univariate polynomials over the rat
 
 ---
 
+archive/issue_events_019412.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19412"
+}
+```
+
+
+
+---
+
+archive/issue_events_019413.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19413"
+}
+```
+
+
+
+---
+
+archive/issue_events_019414.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19414"
+}
+```
+
+
+
+---
+
+archive/issue_events_019415.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19415"
+}
+```
+
+
+
+---
+
+archive/issue_events_019416.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19416"
+}
+```
+
+
+
+---
+
+archive/issue_events_019417.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19417"
+}
+```
+
+
+
+---
+
+archive/issue_events_019418.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19418"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071082.json:
 ```json
 {
@@ -146,6 +265,40 @@ archive/issue_comments_071082.json:
 ```
 
 Possibly related: [this discussion](https://groups.google.com/forum/#!searchin/sage-devel/xgcd/sage-devel/JV8fCPUqTzo/FTGonGmYyCgJ).
+
+
+
+---
+
+archive/issue_events_019419.json:
+```json
+{
+    "actor": "https://github.com/kliem",
+    "created_at": "2020-05-27T19:04:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19419"
+}
+```
+
+
+
+---
+
+archive/issue_events_019420.json:
+```json
+{
+    "actor": "https://github.com/kliem",
+    "created_at": "2020-05-27T19:04:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19420"
+}
+```
 
 
 
@@ -182,6 +335,40 @@ archive/issue_comments_071084.json:
 ```
 
 Changing keywords from "" to "sd109".
+
+
+
+---
+
+archive/issue_events_019421.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2020-05-27T19:15:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19421"
+}
+```
+
+
+
+---
+
+archive/issue_events_019422.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2020-05-27T19:15:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-9.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19422"
+}
+```
 
 
 
@@ -295,6 +482,40 @@ Changing status from needs_info to needs_review.
 
 ---
 
+archive/issue_events_019423.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-14T14:14:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-9.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19423"
+}
+```
+
+
+
+---
+
+archive/issue_events_019424.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-06-14T14:14:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8111",
+    "milestone": "sage-9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19424"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071091.json:
 ```json
 {
@@ -331,7 +552,7 @@ Thank you.
 
 ---
 
-archive/issue_events_008317.json:
+archive/issue_events_019425.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -339,7 +560,7 @@ archive/issue_events_008317.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8111#event-8317"
+    "url": "https://github.com/sagemath/sagetest/issues/8111#event-19425"
 }
 ```
 

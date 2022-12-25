@@ -78,6 +78,23 @@ Changing assignee from tbd to mabshoff.
 
 ---
 
+archive/issue_events_009363.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-09-13T19:01:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4110",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4110#event-9363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029697.json:
 ```json
 {
@@ -257,7 +274,7 @@ Merged in Sage 3.1.2.rc3
 
 ---
 
-archive/issue_events_004347.json:
+archive/issue_events_009364.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -265,6 +282,40 @@ archive/issue_events_004347.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4110",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4110#event-4347"
+    "url": "https://github.com/sagemath/sagetest/issues/4110#event-9364"
+}
+```
+
+
+
+---
+
+archive/issue_events_009365.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-14T02:24:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4110",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4110#event-9365"
+}
+```
+
+
+
+---
+
+archive/issue_events_009366.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-14T02:24:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4110",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4110#event-9366"
 }
 ```

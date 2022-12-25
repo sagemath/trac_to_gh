@@ -94,6 +94,57 @@ I suggest closing this issue as wontfix now. Trac doesn't allow me close tickets
 
 ---
 
+archive/issue_events_013509.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-05-24T16:49:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5763",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5763#event-13509"
+}
+```
+
+
+
+---
+
+archive/issue_events_013510.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T06:57:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5763",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5763#event-13510"
+}
+```
+
+
+
+---
+
+archive/issue_events_013511.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-05-28T06:57:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5763",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5763#event-13511"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044963.json:
 ```json
 {
@@ -184,7 +235,7 @@ I think we can close this as invalid as all of the doctests in the patch currenl
 
 ---
 
-archive/issue_events_006010.json:
+archive/issue_events_013512.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -192,6 +243,40 @@ archive/issue_events_006010.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5763",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5763#event-6010"
+    "url": "https://github.com/sagemath/sagetest/issues/5763#event-13512"
+}
+```
+
+
+
+---
+
+archive/issue_events_013513.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-22T15:07:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5763",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5763#event-13513"
+}
+```
+
+
+
+---
+
+archive/issue_events_013514.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2013-07-22T15:07:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5763",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5763#event-13514"
 }
 ```

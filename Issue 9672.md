@@ -205,6 +205,57 @@ Should this be merged in Sage 4.6.1? (if yes, please set the Milestone)
 
 ---
 
+archive/issue_events_024132.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-11-12T11:56:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9672",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9672#event-24132"
+}
+```
+
+
+
+---
+
+archive/issue_events_024133.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:06:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9672",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9672#event-24133"
+}
+```
+
+
+
+---
+
+archive/issue_events_024134.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-11-20T10:06:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9672",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9672#event-24134"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093837.json:
 ```json
 {
@@ -223,7 +274,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009805.json:
+archive/issue_events_024135.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -231,6 +282,6 @@ archive/issue_events_009805.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9672#event-9805"
+    "url": "https://github.com/sagemath/sagetest/issues/9672#event-24135"
 }
 ```

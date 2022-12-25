@@ -33,6 +33,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2546
 
 ---
 
+archive/issue_events_005960.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-16T17:47:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2546",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2546#event-5960"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017341.json:
 ```json
 {
@@ -87,7 +104,7 @@ Invalid.  This is the sort of thing that needs to be discussed on sage-support o
 
 ---
 
-archive/issue_events_002727.json:
+archive/issue_events_005961.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -95,7 +112,7 @@ archive/issue_events_002727.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2546",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2546#event-2727"
+    "url": "https://github.com/sagemath/sagetest/issues/2546#event-5961"
 }
 ```
 
@@ -116,6 +133,23 @@ archive/issue_comments_017344.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_005962.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-16T20:54:02Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2546",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2546#event-5962"
+}
+```
 
 
 

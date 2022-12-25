@@ -57,6 +57,23 @@ Robert M
 
 ---
 
+archive/issue_events_002936.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-11-03T23:30:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#event-2936"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006574.json:
 ```json
 {
@@ -175,6 +192,40 @@ The subgraph_edges-updated.patch should be applied instead of the subgraph_edges
 
 ---
 
+archive/issue_events_002937.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2007-11-13T23:45:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#event-2937"
+}
+```
+
+
+
+---
+
+archive/issue_events_002938.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2007-11-13T23:45:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#event-2938"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006579.json:
 ```json
 {
@@ -193,7 +244,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_001215.json:
+archive/issue_events_002939.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -201,7 +252,7 @@ archive/issue_events_001215.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1089#event-1215"
+    "url": "https://github.com/sagemath/sagetest/issues/1089#event-2939"
 }
 ```
 

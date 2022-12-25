@@ -114,6 +114,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_005483.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-12T05:19:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#event-5483"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015473.json:
 ```json
 {
@@ -930,6 +947,40 @@ Also: it might be better to wait make this ticket depend on #10430 (so we don't 
 
 ---
 
+archive/issue_events_005484.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-09T08:50:17Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#event-5484"
+}
+```
+
+
+
+---
+
+archive/issue_events_005485.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-09T08:50:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#event-5485"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015506.json:
 ```json
 {
@@ -1206,6 +1257,40 @@ archive/issue_comments_015519.json:
 ```
 
 Changing status from needs_work to needs_review.
+
+
+
+---
+
+archive/issue_events_005486.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-10T16:27:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#event-5486"
+}
+```
+
+
+
+---
+
+archive/issue_events_005487.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-02-10T16:27:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#event-5487"
+}
+```
 
 
 
@@ -1675,7 +1760,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_002507.json:
+archive/issue_events_005488.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1683,7 +1768,7 @@ archive/issue_events_002507.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2329#event-2507"
+    "url": "https://github.com/sagemath/sagetest/issues/2329#event-5488"
 }
 ```
 

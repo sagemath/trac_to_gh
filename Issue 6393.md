@@ -80,6 +80,23 @@ Changing component from algebra to modular forms.
 
 ---
 
+archive/issue_events_015071.json:
+```json
+{
+    "actor": "https://github.com/wdjoyner",
+    "created_at": "2009-06-24T14:42:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6393",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6393#event-15071"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051271.json:
 ```json
 {
@@ -170,7 +187,7 @@ Just to let people know, this has been merged in sage-4.1.1-alpha0. I can't clos
 
 ---
 
-archive/issue_events_006640.json:
+archive/issue_events_015072.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -178,7 +195,7 @@ archive/issue_events_006640.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6393",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6393#event-6640"
+    "url": "https://github.com/sagemath/sagetest/issues/6393#event-15072"
 }
 ```
 

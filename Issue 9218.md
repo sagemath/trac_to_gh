@@ -173,7 +173,7 @@ Looks good!  Apply in the order `finance_doc`, `reviewer`, and `typo`.  Also add
 
 ---
 
-archive/issue_events_009374.json:
+archive/issue_events_022703.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -181,7 +181,7 @@ archive/issue_events_009374.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9218",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9218#event-9374"
+    "url": "https://github.com/sagemath/sagetest/issues/9218#event-22703"
 }
 ```
 

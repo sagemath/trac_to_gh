@@ -70,6 +70,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_020578.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
+    "created_at": "2011-01-25T18:54:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8538",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8538#event-20578"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077060.json:
 ```json
 {
@@ -88,7 +105,7 @@ Looks good to me.  I've updated the website to include this.
 
 ---
 
-archive/issue_events_008719.json:
+archive/issue_events_020579.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -96,7 +113,7 @@ archive/issue_events_008719.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8538",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8538#event-8719"
+    "url": "https://github.com/sagemath/sagetest/issues/8538#event-20579"
 }
 ```
 

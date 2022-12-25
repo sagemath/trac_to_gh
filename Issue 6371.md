@@ -692,6 +692,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_015004.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-09T10:26:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050887.json:
 ```json
 {
@@ -956,6 +973,142 @@ I'll see what I can do about restructuring the code. Thank you very much for you
 
 ---
 
+archive/issue_events_015005.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15005"
+}
+```
+
+
+
+---
+
+archive/issue_events_015006.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15006"
+}
+```
+
+
+
+---
+
+archive/issue_events_015007.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15007"
+}
+```
+
+
+
+---
+
+archive/issue_events_015008.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15008"
+}
+```
+
+
+
+---
+
+archive/issue_events_015009.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15009"
+}
+```
+
+
+
+---
+
+archive/issue_events_015010.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15010"
+}
+```
+
+
+
+---
+
+archive/issue_events_015011.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15011"
+}
+```
+
+
+
+---
+
+archive/issue_events_015012.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050896.json:
 ```json
 {
@@ -995,6 +1148,40 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
+archive/issue_events_015013.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-01-06T20:58:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15013"
+}
+```
+
+
+
+---
+
+archive/issue_events_015014.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-01-06T20:58:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-7.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15014"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050898.json:
 ```json
 {
@@ -1008,6 +1195,40 @@ archive/issue_comments_050898.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_015015.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-02-19T09:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-7.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15015"
+}
+```
+
+
+
+---
+
+archive/issue_events_015016.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2016-02-19T09:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6371",
+    "milestone": "sage-7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6371#event-15016"
+}
+```
 
 
 

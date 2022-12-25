@@ -181,7 +181,7 @@ abort: There is no Mercurial repository here (.hg not found)!
 
 ---
 
-archive/issue_events_006899.json:
+archive/issue_events_015722.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -189,7 +189,7 @@ archive/issue_events_006899.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6663",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6663#event-6899"
+    "url": "https://github.com/sagemath/sagetest/issues/6663#event-15722"
 }
 ```
 

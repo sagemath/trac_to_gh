@@ -69,6 +69,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/657
 
 ---
 
+archive/issue_events_001759.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-14T21:46:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/657",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/657#event-1759"
+}
+```
+
+
+
+---
+
+archive/issue_events_001760.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-24T01:48:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/657",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/657#event-1760"
+}
+```
+
+
+
+---
+
+archive/issue_events_001761.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-10-24T01:48:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/657",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/657#event-1761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003401.json:
 ```json
 {
@@ -194,7 +245,7 @@ archive/issue_comments_003404.json:
 
 ---
 
-archive/issue_events_000723.json:
+archive/issue_events_001762.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -202,7 +253,7 @@ archive/issue_events_000723.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/657#event-723"
+    "url": "https://github.com/sagemath/sagetest/issues/657#event-1762"
 }
 ```
 
@@ -264,6 +315,40 @@ This caused many doctests to fail, please re-apply against 2.8.9 once it is rele
 
 ---
 
+archive/issue_events_001763.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-24T21:49:41Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/657",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/657#event-1763"
+}
+```
+
+
+
+---
+
+archive/issue_events_001764.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-24T21:49:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/657",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/657#event-1764"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003408.json:
 ```json
 {
@@ -300,7 +385,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000724.json:
+archive/issue_events_001765.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -308,7 +393,7 @@ archive/issue_events_000724.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/657#event-724"
+    "url": "https://github.com/sagemath/sagetest/issues/657#event-1765"
 }
 ```
 
@@ -354,7 +439,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000725.json:
+archive/issue_events_001766.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -362,6 +447,6 @@ archive/issue_events_000725.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/657#event-725"
+    "url": "https://github.com/sagemath/sagetest/issues/657#event-1766"
 }
 ```

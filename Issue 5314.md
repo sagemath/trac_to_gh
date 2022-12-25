@@ -129,7 +129,7 @@ Looks good and passes tests for me.
 
 ---
 
-archive/issue_events_005568.json:
+archive/issue_events_012377.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -137,7 +137,24 @@ archive/issue_events_005568.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5314#event-5568"
+    "url": "https://github.com/sagemath/sagetest/issues/5314#event-12377"
+}
+```
+
+
+
+---
+
+archive/issue_events_012378.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-02-20T07:24:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5314",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5314#event-12378"
 }
 ```
 

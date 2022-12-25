@@ -62,7 +62,7 @@ What about `1 == None` or `1 != None`, should those throw errors as well? (They 
 
 ---
 
-archive/issue_events_004165.json:
+archive/issue_events_009039.json:
 ```json
 {
     "actor": "https://github.com/craigcitro",
@@ -70,7 +70,7 @@ archive/issue_events_004165.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3936",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3936#event-4165"
+    "url": "https://github.com/sagemath/sagetest/issues/3936#event-9039"
 }
 ```
 
@@ -111,3 +111,20 @@ archive/issue_comments_028150.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_009040.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:55:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3936",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3936#event-9040"
+}
+```

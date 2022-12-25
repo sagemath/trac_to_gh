@@ -121,6 +121,23 @@ See rings/morphism.pyx for an example of this that is # not tested right now.
 
 ---
 
+archive/issue_events_002633.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:07:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/955",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/955#event-2633"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005802.json:
 ```json
 {
@@ -197,7 +214,7 @@ The attached patch will be in 2.8.10.
 
 ---
 
-archive/issue_events_001075.json:
+archive/issue_events_002634.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -205,7 +222,7 @@ archive/issue_events_001075.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/955",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/955#event-1075"
+    "url": "https://github.com/sagemath/sagetest/issues/955#event-2634"
 }
 ```
 

@@ -73,7 +73,7 @@ mabshoff (since I know you get CC'd on all trac changes):  Since you got this ch
 
 ---
 
-archive/issue_events_000562.json:
+archive/issue_events_001345.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -81,7 +81,7 @@ archive/issue_events_000562.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/523",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/523#event-562"
+    "url": "https://github.com/sagemath/sagetest/issues/523#event-1345"
 }
 ```
 
@@ -102,6 +102,23 @@ archive/issue_comments_002646.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001346.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-27T02:29:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/523",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/523#event-1346"
+}
+```
 
 
 

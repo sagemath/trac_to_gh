@@ -104,7 +104,7 @@ Merged in Sage 3.0.4.alpha1
 
 ---
 
-archive/issue_events_003434.json:
+archive/issue_events_007239.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -112,6 +112,23 @@ archive/issue_events_003434.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3215",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3215#event-3434"
+    "url": "https://github.com/sagemath/sagetest/issues/3215#event-7239"
+}
+```
+
+
+
+---
+
+archive/issue_events_007240.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-25T09:19:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3215",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3215#event-7240"
 }
 ```

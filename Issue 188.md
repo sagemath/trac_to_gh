@@ -80,6 +80,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_000364.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-01-19T09:57:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/188",
+    "milestone": "sage-1.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/188#event-364"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000851.json:
 ```json
 {
@@ -163,7 +180,7 @@ diff -r 8faeaa5cc7cb -r 07471d5dfebf sage/rings/number_field/number_field_ideal.
 
 ---
 
-archive/issue_events_000195.json:
+archive/issue_events_000365.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -171,7 +188,7 @@ archive/issue_events_000195.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/188",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/188#event-195"
+    "url": "https://github.com/sagemath/sagetest/issues/188#event-365"
 }
 ```
 

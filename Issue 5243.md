@@ -421,7 +421,7 @@ Merged all 3 patches.
 
 ---
 
-archive/issue_events_005499.json:
+archive/issue_events_012172.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -429,7 +429,7 @@ archive/issue_events_005499.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5243#event-5499"
+    "url": "https://github.com/sagemath/sagetest/issues/5243#event-12172"
 }
 ```
 

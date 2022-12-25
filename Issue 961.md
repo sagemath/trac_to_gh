@@ -76,6 +76,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_002654.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:10:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/961",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/961#event-2654"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005838.json:
 ```json
 {
@@ -93,6 +110,40 @@ The same applies for -optional, -experimental and so on. This ought to be fixed 
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002655.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T06:24:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/961",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/961#event-2655"
+}
+```
+
+
+
+---
+
+archive/issue_events_002656.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T06:24:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/961",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/961#event-2656"
+}
+```
 
 
 
@@ -116,7 +167,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_001083.json:
+archive/issue_events_002657.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -124,6 +175,40 @@ archive/issue_events_001083.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/961",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/961#event-1083"
+    "url": "https://github.com/sagemath/sagetest/issues/961#event-2657"
+}
+```
+
+
+
+---
+
+archive/issue_events_002658.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-16T07:47:51Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/961",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/961#event-2658"
+}
+```
+
+
+
+---
+
+archive/issue_events_002659.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-05-16T07:47:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/961",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/961#event-2659"
 }
 ```

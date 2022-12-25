@@ -80,6 +80,57 @@ Changing assignee from @williamstein to @roed314.
 
 ---
 
+archive/issue_events_002284.json:
+```json
+{
+    "actor": "https://github.com/nbruin",
+    "created_at": "2007-10-03T20:58:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/813",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/813#event-2284"
+}
+```
+
+
+
+---
+
+archive/issue_events_002285.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T18:10:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/813",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/813#event-2285"
+}
+```
+
+
+
+---
+
+archive/issue_events_002286.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T18:10:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/813",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/813#event-2286"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005015.json:
 ```json
 {
@@ -93,6 +144,40 @@ archive/issue_comments_005015.json:
 ```
 
 I will work on this once Robert has added rdef'd functions to Sage (that way I don't have to redo the changes once this occurs)
+
+
+
+---
+
+archive/issue_events_002287.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2007-10-13T00:42:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/813",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/813#event-2287"
+}
+```
+
+
+
+---
+
+archive/issue_events_002288.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2007-10-13T00:42:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/813",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/813#event-2288"
+}
+```
 
 
 
@@ -806,7 +891,7 @@ Ok, I've deleted the 17 bytes...
 
 ---
 
-archive/issue_events_000925.json:
+archive/issue_events_002289.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -814,7 +899,7 @@ archive/issue_events_000925.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/813#event-925"
+    "url": "https://github.com/sagemath/sagetest/issues/813#event-2289"
 }
 ```
 

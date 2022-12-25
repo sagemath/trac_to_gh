@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/20
 
 ---
 
-archive/issue_events_000020.json:
+archive/issue_events_000029.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -64,7 +64,7 @@ archive/issue_events_000020.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/20",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/20#event-20"
+    "url": "https://github.com/sagemath/sagetest/issues/20#event-29"
 }
 ```
 

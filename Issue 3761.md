@@ -147,6 +147,57 @@ Michael
 
 ---
 
+archive/issue_events_008623.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-30T17:43:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3761",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3761#event-8623"
+}
+```
+
+
+
+---
+
+archive/issue_events_008624.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-26T18:17:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3761",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3761#event-8624"
+}
+```
+
+
+
+---
+
+archive/issue_events_008625.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-26T18:17:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3761",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3761#event-8625"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026667.json:
 ```json
 {
@@ -191,6 +242,40 @@ I know I'm nit-picking, but the second sentence is rather long. Leaving out the 
 +# On a system without /proc/cpuinfo, so don't bother. In
 ```
 
+
+
+
+---
+
+archive/issue_events_008626.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-09T17:54:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3761",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3761#event-8626"
+}
+```
+
+
+
+---
+
+archive/issue_events_008627.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-09T17:54:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3761",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3761#event-8627"
+}
+```
 
 
 
@@ -745,7 +830,7 @@ Merged scripts-3761-3.2.alpha3.patch and scripts-3761-PART2-bdist.patch in Sage 
 
 ---
 
-archive/issue_events_003983.json:
+archive/issue_events_008628.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -753,6 +838,6 @@ archive/issue_events_003983.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3761#event-3983"
+    "url": "https://github.com/sagemath/sagetest/issues/3761#event-8628"
 }
 ```

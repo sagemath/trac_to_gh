@@ -112,6 +112,23 @@ Download and try it out.
 
 ---
 
+archive/issue_events_001666.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2007-09-12T04:09:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/624",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/624#event-1666"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003198.json:
 ```json
 {
@@ -264,6 +281,40 @@ CPU time: 0.88 s,  Wall time: 0.88 s
 
 ---
 
+archive/issue_events_001667.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-19T18:53:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/624",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/624#event-1667"
+}
+```
+
+
+
+---
+
+archive/issue_events_001668.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-19T18:53:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/624",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/624#event-1668"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003201.json:
 ```json
 {
@@ -286,7 +337,7 @@ Michael
 
 ---
 
-archive/issue_events_000682.json:
+archive/issue_events_001669.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -294,7 +345,7 @@ archive/issue_events_000682.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/624#event-682"
+    "url": "https://github.com/sagemath/sagetest/issues/624#event-1669"
 }
 ```
 

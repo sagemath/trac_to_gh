@@ -260,7 +260,7 @@ Merged 3379.patch in Sage 3.0.4.alpha0
 
 ---
 
-archive/issue_events_003595.json:
+archive/issue_events_007621.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -268,6 +268,23 @@ archive/issue_events_003595.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3379#event-3595"
+    "url": "https://github.com/sagemath/sagetest/issues/3379#event-7621"
+}
+```
+
+
+
+---
+
+archive/issue_events_007622.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T12:24:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3379",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3379#event-7622"
 }
 ```

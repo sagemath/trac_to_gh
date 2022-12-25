@@ -144,6 +144,23 @@ Patch was based on 3.0.4
 
 ---
 
+archive/issue_events_008553.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-29T17:16:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3734",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3734#event-8553"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026454.json:
 ```json
 {
@@ -180,7 +197,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003957.json:
+archive/issue_events_008554.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -188,7 +205,41 @@ archive/issue_events_003957.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3734",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3734#event-3957"
+    "url": "https://github.com/sagemath/sagetest/issues/3734#event-8554"
+}
+```
+
+
+
+---
+
+archive/issue_events_008555.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-30T22:49:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3734",
+    "milestone": "sage-3.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3734#event-8555"
+}
+```
+
+
+
+---
+
+archive/issue_events_008556.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-30T22:49:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3734",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3734#event-8556"
 }
 ```
 

@@ -47,7 +47,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_001512.json:
+archive/issue_events_003543.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -55,6 +55,6 @@ archive/issue_events_001512.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1369",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1369#event-1512"
+    "url": "https://github.com/sagemath/sagetest/issues/1369#event-3543"
 }
 ```

@@ -400,7 +400,7 @@ These issues should be addressed in another enhancement ticket.
 
 ---
 
-archive/issue_events_005892.json:
+archive/issue_events_013284.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -408,7 +408,7 @@ archive/issue_events_005892.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5651#event-5892"
+    "url": "https://github.com/sagemath/sagetest/issues/5651#event-13284"
 }
 ```
 

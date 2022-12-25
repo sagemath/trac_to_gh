@@ -460,7 +460,7 @@ OK, I'll move my patch from here to #7535.  I'll also take a look at those other
 
 ---
 
-archive/issue_events_007760.json:
+archive/issue_events_017864.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -468,7 +468,7 @@ archive/issue_events_007760.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7532#event-7760"
+    "url": "https://github.com/sagemath/sagetest/issues/7532#event-17864"
 }
 ```
 
@@ -530,7 +530,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007761.json:
+archive/issue_events_017865.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -538,7 +538,7 @@ archive/issue_events_007761.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7532#event-7761"
+    "url": "https://github.com/sagemath/sagetest/issues/7532#event-17865"
 }
 ```
 
@@ -839,7 +839,7 @@ Thank you for pointing out the addendum, jhpalmieri.  Merged in this order:
 
 ---
 
-archive/issue_events_007762.json:
+archive/issue_events_017866.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -847,6 +847,6 @@ archive/issue_events_007762.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7532#event-7762"
+    "url": "https://github.com/sagemath/sagetest/issues/7532#event-17866"
 }
 ```

@@ -163,7 +163,7 @@ Mike, please apply only attachment:trac_7198-free_algebra_iterator.patch.
 
 ---
 
-archive/issue_events_007417.json:
+archive/issue_events_017051.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -171,7 +171,7 @@ archive/issue_events_007417.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7198#event-7417"
+    "url": "https://github.com/sagemath/sagetest/issues/7198#event-17051"
 }
 ```
 
@@ -235,7 +235,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007418.json:
+archive/issue_events_017052.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -243,7 +243,7 @@ archive/issue_events_007418.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7198#event-7418"
+    "url": "https://github.com/sagemath/sagetest/issues/7198#event-17052"
 }
 ```
 
@@ -332,7 +332,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007419.json:
+archive/issue_events_017053.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -340,6 +340,6 @@ archive/issue_events_007419.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7198#event-7419"
+    "url": "https://github.com/sagemath/sagetest/issues/7198#event-17053"
 }
 ```

@@ -342,6 +342,125 @@ Amazingly, this also installed fine on my Mac 10.7 without any problems!
 
 ---
 
+archive/issue_events_017629.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17629"
+}
+```
+
+
+
+---
+
+archive/issue_events_017630.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17630"
+}
+```
+
+
+
+---
+
+archive/issue_events_017631.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17631"
+}
+```
+
+
+
+---
+
+archive/issue_events_017632.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17632"
+}
+```
+
+
+
+---
+
+archive/issue_events_017633.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17633"
+}
+```
+
+
+
+---
+
+archive/issue_events_017634.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17634"
+}
+```
+
+
+
+---
+
+archive/issue_events_017635.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17635"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062483.json:
 ```json
 {
@@ -355,6 +474,40 @@ archive/issue_comments_062483.json:
 ```
 
 For what it is worth, it still builds on OS X 10.12.4 with sage.8.1.beta7.
+
+
+
+---
+
+archive/issue_events_017636.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-17T16:38:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17636"
+}
+```
+
+
+
+---
+
+archive/issue_events_017637.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-17T16:38:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7438",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17637"
+}
+```
 
 
 
@@ -396,7 +549,7 @@ Outdated spkg or build system ticket, should be closed
 
 ---
 
-archive/issue_events_007663.json:
+archive/issue_events_017638.json:
 ```json
 {
     "actor": "https://github.com/slel",
@@ -404,7 +557,7 @@ archive/issue_events_007663.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#event-7663"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#event-17638"
 }
 ```
 

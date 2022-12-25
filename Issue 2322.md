@@ -249,6 +249,23 @@ This is definitely ready to merge. -- RLM
 
 ---
 
+archive/issue_events_005469.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-03-12T04:53:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2322",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2322#event-5469"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015418.json:
 ```json
 {
@@ -285,7 +302,7 @@ Merged in Sage 2.10.4.alpha0 - I followed all five steps and did commit after st
 
 ---
 
-archive/issue_events_002498.json:
+archive/issue_events_005470.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -293,6 +310,6 @@ archive/issue_events_002498.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2322",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2322#event-2498"
+    "url": "https://github.com/sagemath/sagetest/issues/2322#event-5470"
 }
 ```

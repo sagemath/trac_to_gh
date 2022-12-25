@@ -1144,7 +1144,7 @@ Thanks again Nathann!
 
 ---
 
-archive/issue_events_007523.json:
+archive/issue_events_017285.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -1152,7 +1152,7 @@ archive/issue_events_007523.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#event-7523"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#event-17285"
 }
 ```
 

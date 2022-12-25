@@ -238,6 +238,57 @@ jack polynomials at t=-1; apparently, the scalar product is then non positive, w
 
 ---
 
+archive/issue_events_017558.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-11-11T17:41:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7420",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7420#event-17558"
+}
+```
+
+
+
+---
+
+archive/issue_events_017559.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-13T04:48:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7420",
+    "milestone": "sage-4.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7420#event-17559"
+}
+```
+
+
+
+---
+
+archive/issue_events_017560.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-11-13T04:48:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7420",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7420#event-17560"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062332.json:
 ```json
 {
@@ -310,7 +361,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007644.json:
+archive/issue_events_017561.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -318,7 +369,7 @@ archive/issue_events_007644.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7420",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7420#event-7644"
+    "url": "https://github.com/sagemath/sagetest/issues/7420#event-17561"
 }
 ```
 

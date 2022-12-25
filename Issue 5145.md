@@ -238,7 +238,7 @@ The code looks good; passes doctests in the affected file.
 
 ---
 
-archive/issue_events_005395.json:
+archive/issue_events_011923.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -246,7 +246,7 @@ archive/issue_events_005395.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5145#event-5395"
+    "url": "https://github.com/sagemath/sagetest/issues/5145#event-11923"
 }
 ```
 

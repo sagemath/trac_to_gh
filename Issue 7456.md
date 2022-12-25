@@ -142,7 +142,7 @@ See also [this thread](http://groups.google.com/group/sage-devel/browse_thread/t
 
 ---
 
-archive/issue_events_007682.json:
+archive/issue_events_017684.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -150,7 +150,7 @@ archive/issue_events_007682.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7456",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7456#event-7682"
+    "url": "https://github.com/sagemath/sagetest/issues/7456#event-17684"
 }
 ```
 

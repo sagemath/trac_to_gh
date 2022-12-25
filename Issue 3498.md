@@ -1198,6 +1198,23 @@ I think all comments have been addressed (finally! :).
 
 ---
 
+archive/issue_events_007974.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-09T18:14:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#event-7974"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024630.json:
 ```json
 {
@@ -1266,7 +1283,7 @@ Michael
 
 ---
 
-archive/issue_events_003718.json:
+archive/issue_events_007975.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1274,7 +1291,7 @@ archive/issue_events_003718.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3498#event-3718"
+    "url": "https://github.com/sagemath/sagetest/issues/3498#event-7975"
 }
 ```
 

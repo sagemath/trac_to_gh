@@ -340,7 +340,24 @@ Merged all four patches in Sage 3.0.4.alpha0
 
 ---
 
-archive/issue_events_003459.json:
+archive/issue_events_007281.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-06-23T12:59:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3240",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3240#event-7281"
+}
+```
+
+
+
+---
+
+archive/issue_events_007282.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -348,6 +365,6 @@ archive/issue_events_003459.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3240",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3240#event-3459"
+    "url": "https://github.com/sagemath/sagetest/issues/3240#event-7282"
 }
 ```

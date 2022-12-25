@@ -398,7 +398,7 @@ Same patch with fixed commit message
 
 ---
 
-archive/issue_events_008942.json:
+archive/issue_events_021383.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -406,7 +406,7 @@ archive/issue_events_008942.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8775#event-8942"
+    "url": "https://github.com/sagemath/sagetest/issues/8775#event-21383"
 }
 ```
 

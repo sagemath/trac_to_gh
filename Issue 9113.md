@@ -67,7 +67,7 @@ This is due to #8844.  We should replace the include of "-lpng" with a uname_spe
 
 ---
 
-archive/issue_events_009272.json:
+archive/issue_events_022359.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -75,7 +75,7 @@ archive/issue_events_009272.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9113",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9113#event-9272"
+    "url": "https://github.com/sagemath/sagetest/issues/9113#event-22359"
 }
 ```
 
@@ -114,3 +114,20 @@ archive/issue_comments_084658.json:
 ```
 
 I made a dupe of this: #9116
+
+
+
+---
+
+archive/issue_events_022360.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-03T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9113",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9113#event-22360"
+}
+```

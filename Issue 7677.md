@@ -52,6 +52,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7677
 
 ---
 
+archive/issue_events_018321.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-14T01:58:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7677",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7677#event-18321"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065734.json:
 ```json
 {
@@ -88,7 +105,7 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_events_007896.json:
+archive/issue_events_018322.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -96,7 +113,7 @@ archive/issue_events_007896.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7677",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7677#event-7896"
+    "url": "https://github.com/sagemath/sagetest/issues/7677#event-18322"
 }
 ```
 

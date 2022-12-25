@@ -87,7 +87,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004542.json:
+archive/issue_events_009708.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -95,7 +95,7 @@ archive/issue_events_004542.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4299",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4299#event-4542"
+    "url": "https://github.com/sagemath/sagetest/issues/4299#event-9708"
 }
 ```
 
@@ -118,3 +118,20 @@ archive/issue_comments_031381.json:
 Attachment [sage-4299.patch](tarball://root/attachments/some-uuid/ticket4299/sage-4299.patch) by @williamstein created at 2008-10-15 15:22:01
 
 this is fixed in 3.1.3  yeah!
+
+
+
+---
+
+archive/issue_events_009709.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-15T15:23:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4299",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4299#event-9709"
+}
+```

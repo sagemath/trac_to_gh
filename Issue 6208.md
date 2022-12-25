@@ -279,7 +279,7 @@ Merged in 4.0.1.rc1.
 
 ---
 
-archive/issue_events_006457.json:
+archive/issue_events_014562.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -287,7 +287,7 @@ archive/issue_events_006457.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6208",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6208#event-6457"
+    "url": "https://github.com/sagemath/sagetest/issues/6208#event-14562"
 }
 ```
 
@@ -326,3 +326,20 @@ archive/issue_comments_049510.json:
 ```
 
 Just correcting the milestone (since it was already merged).
+
+
+
+---
+
+archive/issue_events_014563.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2009-06-07T21:44:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6208",
+    "milestone": "sage-4.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6208#event-14563"
+}
+```

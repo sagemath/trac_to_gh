@@ -180,6 +180,23 @@ The spkg does have some OSX junk (.DS_Store, etc.)
 
 ---
 
+archive/issue_events_002777.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-03-14T14:22:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "milestone": "sage-2.10.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#event-2777"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006150.json:
 ```json
 {
@@ -694,7 +711,7 @@ This might be totally wrong, but we will see :)
 
 ---
 
-archive/issue_events_001134.json:
+archive/issue_events_002778.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -702,7 +719,7 @@ archive/issue_events_001134.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1010#event-1134"
+    "url": "https://github.com/sagemath/sagetest/issues/1010#event-2778"
 }
 ```
 

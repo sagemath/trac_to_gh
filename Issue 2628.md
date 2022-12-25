@@ -79,6 +79,23 @@ Attachment [literate_notebook.png](tarball://root/attachments/some-uuid/ticket26
 
 ---
 
+archive/issue_events_006133.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-21T16:34:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2628",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2628#event-6133"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018022.json:
 ```json
 {
@@ -207,7 +224,41 @@ I put a link on #66 back to this ticket.  I think we can close this now as being
 
 ---
 
-archive/issue_events_002819.json:
+archive/issue_events_006134.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T09:38:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2628",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2628#event-6134"
+}
+```
+
+
+
+---
+
+archive/issue_events_006135.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-22T09:38:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2628",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2628#event-6135"
+}
+```
+
+
+
+---
+
+archive/issue_events_006136.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -215,6 +266,6 @@ archive/issue_events_002819.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2628#event-2819"
+    "url": "https://github.com/sagemath/sagetest/issues/2628#event-6136"
 }
 ```

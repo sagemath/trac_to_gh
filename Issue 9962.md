@@ -120,7 +120,7 @@ Passes tests on 4.6.alpha1!
 
 ---
 
-archive/issue_events_010090.json:
+archive/issue_events_025137.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -128,7 +128,7 @@ archive/issue_events_010090.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9962",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9962#event-10090"
+    "url": "https://github.com/sagemath/sagetest/issues/9962#event-25137"
 }
 ```
 

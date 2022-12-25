@@ -73,6 +73,23 @@ are not only enhanced in a vital way but also considerably cleaned up docstring-
 
 ---
 
+archive/issue_events_011367.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-01T02:23:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#event-11367"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037364.json:
 ```json
 {
@@ -455,7 +472,7 @@ Thanks John -- I am quite happy with your adjustments.
 
 ---
 
-archive/issue_events_005176.json:
+archive/issue_events_011368.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -463,7 +480,41 @@ archive/issue_events_005176.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4933#event-5176"
+    "url": "https://github.com/sagemath/sagetest/issues/4933#event-11368"
+}
+```
+
+
+
+---
+
+archive/issue_events_011369.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-18T01:52:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#event-11369"
+}
+```
+
+
+
+---
+
+archive/issue_events_011370.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-18T01:52:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#event-11370"
 }
 ```
 

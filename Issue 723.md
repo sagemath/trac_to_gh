@@ -288,6 +288,23 @@ Wall time: 11.68
 
 ---
 
+archive/issue_events_001959.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-18T13:44:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/723",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/723#event-1959"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004203.json:
 ```json
 {
@@ -326,7 +343,7 @@ I *have* applied ntls-fp-lll.patch.  The patch that isn't clean is
 
 ---
 
-archive/issue_events_000806.json:
+archive/issue_events_001960.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -334,7 +351,7 @@ archive/issue_events_000806.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/723#event-806"
+    "url": "https://github.com/sagemath/sagetest/issues/723#event-1960"
 }
 ```
 

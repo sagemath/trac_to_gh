@@ -410,7 +410,7 @@ Positive review.
 
 ---
 
-archive/issue_events_009341.json:
+archive/issue_events_022587.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -418,7 +418,24 @@ archive/issue_events_009341.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9185#event-9341"
+    "url": "https://github.com/sagemath/sagetest/issues/9185#event-22587"
+}
+```
+
+
+
+---
+
+archive/issue_events_022588.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-06-25T15:46:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9185",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9185#event-22588"
 }
 ```
 

@@ -85,6 +85,23 @@ Milestone sage-4.4.5 deleted
 
 ---
 
+archive/issue_events_022858.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-22T04:36:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9279",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9279#event-22858"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087258.json:
 ```json
 {
@@ -103,7 +120,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009441.json:
+archive/issue_events_022859.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -111,7 +128,7 @@ archive/issue_events_009441.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9279",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9279#event-9441"
+    "url": "https://github.com/sagemath/sagetest/issues/9279#event-22859"
 }
 ```
 

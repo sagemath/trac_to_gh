@@ -49,6 +49,23 @@ Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2810/9384.pat
 
 ---
 
+archive/issue_events_006468.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-05T17:03:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2810",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2810#event-6468"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019243.json:
 ```json
 {
@@ -260,7 +277,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003001.json:
+archive/issue_events_006469.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -268,6 +285,6 @@ archive/issue_events_003001.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2810#event-3001"
+    "url": "https://github.com/sagemath/sagetest/issues/2810#event-6469"
 }
 ```

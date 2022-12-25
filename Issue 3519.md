@@ -142,6 +142,23 @@ Michael
 
 ---
 
+archive/issue_events_008023.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-07T06:31:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3519",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3519#event-8023"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024746.json:
 ```json
 {
@@ -178,7 +195,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003736.json:
+archive/issue_events_008024.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -186,7 +203,7 @@ archive/issue_events_003736.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3519",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3519#event-3736"
+    "url": "https://github.com/sagemath/sagetest/issues/3519#event-8024"
 }
 ```
 

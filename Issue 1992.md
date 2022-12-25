@@ -101,7 +101,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_002147.json:
+archive/issue_events_004805.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -109,6 +109,6 @@ archive/issue_events_002147.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1992",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1992#event-2147"
+    "url": "https://github.com/sagemath/sagetest/issues/1992#event-4805"
 }
 ```

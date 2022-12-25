@@ -247,7 +247,7 @@ Merged "trac_8484-wo-src.patch" into 4.4.alpha0.
 
 ---
 
-archive/issue_events_008666.json:
+archive/issue_events_020378.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -255,6 +255,6 @@ archive/issue_events_008666.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8484#event-8666"
+    "url": "https://github.com/sagemath/sagetest/issues/8484#event-20378"
 }
 ```

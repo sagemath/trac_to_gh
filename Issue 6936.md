@@ -359,7 +359,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007159.json:
+archive/issue_events_016318.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -367,7 +367,7 @@ archive/issue_events_007159.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6936#event-7159"
+    "url": "https://github.com/sagemath/sagetest/issues/6936#event-16318"
 }
 ```
 
@@ -424,7 +424,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007160.json:
+archive/issue_events_016319.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -432,7 +432,7 @@ archive/issue_events_007160.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6936#event-7160"
+    "url": "https://github.com/sagemath/sagetest/issues/6936#event-16319"
 }
 ```
 
@@ -590,7 +590,7 @@ The minpoly ticket is #7989.
 
 ---
 
-archive/issue_events_007161.json:
+archive/issue_events_016320.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -598,6 +598,6 @@ archive/issue_events_007161.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6936#event-7161"
+    "url": "https://github.com/sagemath/sagetest/issues/6936#event-16320"
 }
 ```

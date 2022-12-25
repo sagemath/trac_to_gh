@@ -122,6 +122,23 @@ No clue.  I was hoping an expert here would know.  This could be a problem in SA
 
 ---
 
+archive/issue_events_000158.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:52:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/72#event-158"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000376.json:
 ```json
 {
@@ -158,7 +175,24 @@ This is not a SAGE issue.
 
 ---
 
-archive/issue_events_000072.json:
+archive/issue_events_000159.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-14T02:58:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/72#event-159"
+}
+```
+
+
+
+---
+
+archive/issue_events_000160.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -166,6 +200,6 @@ archive/issue_events_000072.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/72",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/72#event-72"
+    "url": "https://github.com/sagemath/sagetest/issues/72#event-160"
 }
 ```

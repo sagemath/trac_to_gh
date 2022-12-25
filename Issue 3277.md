@@ -109,6 +109,23 @@ Changing keywords from "" to "assume".
 
 ---
 
+archive/issue_events_007370.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-07-06T00:59:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3277",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3277#event-7370"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022625.json:
 ```json
 {
@@ -224,7 +241,7 @@ Sorry, an Americanism - it means, "I don't believe this amazing thing that has h
 
 ---
 
-archive/issue_events_003496.json:
+archive/issue_events_007371.json:
 ```json
 {
     "actor": "https://github.com/slel",
@@ -232,7 +249,7 @@ archive/issue_events_003496.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3277#event-3496"
+    "url": "https://github.com/sagemath/sagetest/issues/3277#event-7371"
 }
 ```
 

@@ -52,6 +52,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/449
 
 ---
 
+archive/issue_events_001117.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-21T12:31:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/449",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/449#event-1117"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002230.json:
 ```json
 {
@@ -132,7 +149,7 @@ Fixed since #1626 has been merged in Sage 3.0.alpha5.
 
 ---
 
-archive/issue_events_000476.json:
+archive/issue_events_001118.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -140,7 +157,7 @@ archive/issue_events_000476.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/449",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/449#event-476"
+    "url": "https://github.com/sagemath/sagetest/issues/449#event-1118"
 }
 ```
 

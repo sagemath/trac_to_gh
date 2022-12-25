@@ -84,7 +84,7 @@ referee followup
 
 ---
 
-archive/issue_events_009010.json:
+archive/issue_events_021591.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -92,7 +92,7 @@ archive/issue_events_009010.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8845",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8845#event-9010"
+    "url": "https://github.com/sagemath/sagetest/issues/8845#event-21591"
 }
 ```
 

@@ -91,6 +91,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_018680.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T01:51:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7801",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7801#event-18680"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067382.json:
 ```json
 {
@@ -127,7 +144,7 @@ LGTM. Nice job.
 
 ---
 
-archive/issue_events_008016.json:
+archive/issue_events_018681.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -135,7 +152,7 @@ archive/issue_events_008016.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7801",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7801#event-8016"
+    "url": "https://github.com/sagemath/sagetest/issues/7801#event-18681"
 }
 ```
 
@@ -156,3 +173,37 @@ archive/issue_comments_067384.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_018682.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-01-19T05:21:40Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7801",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7801#event-18682"
+}
+```
+
+
+
+---
+
+archive/issue_events_018683.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-01-19T05:21:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7801",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7801#event-18683"
+}
+```

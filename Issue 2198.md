@@ -147,7 +147,24 @@ As there is a patch (and will be an spkg soon) for #6532, this should be closed.
 
 ---
 
-archive/issue_events_002364.json:
+archive/issue_events_005250.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-25T21:46:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2198",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2198#event-5250"
+}
+```
+
+
+
+---
+
+archive/issue_events_005251.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -155,7 +172,7 @@ archive/issue_events_002364.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2198",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2198#event-2364"
+    "url": "https://github.com/sagemath/sagetest/issues/2198#event-5251"
 }
 ```
 

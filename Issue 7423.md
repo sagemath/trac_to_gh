@@ -104,6 +104,125 @@ If this worked on both Linux and Mac, and some other edge cases worked like this
 
 ---
 
+archive/issue_events_017568.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17568"
+}
+```
+
+
+
+---
+
+archive/issue_events_017569.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17569"
+}
+```
+
+
+
+---
+
+archive/issue_events_017570.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17570"
+}
+```
+
+
+
+---
+
+archive/issue_events_017571.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17571"
+}
+```
+
+
+
+---
+
+archive/issue_events_017572.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17572"
+}
+```
+
+
+
+---
+
+archive/issue_events_017573.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17573"
+}
+```
+
+
+
+---
+
+archive/issue_events_017574.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17574"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062366.json:
 ```json
 {
@@ -119,6 +238,40 @@ archive/issue_comments_062366.json:
 As pointed out in comment:1, this problem went away ten years ago. I also verified now on MacOS and `CoCalc`. The PR adds a doctest, so we can close this old ticket if the patchbots agree.
 ----
 New commits:
+
+
+
+---
+
+archive/issue_events_017575.json:
+```json
+{
+    "actor": "https://github.com/DaveWitteMorris",
+    "created_at": "2021-01-11T01:25:18Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17575"
+}
+```
+
+
+
+---
+
+archive/issue_events_017576.json:
+```json
+{
+    "actor": "https://github.com/DaveWitteMorris",
+    "created_at": "2021-01-11T01:25:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "milestone": "sage-9.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17576"
+}
+```
 
 
 
@@ -196,7 +349,7 @@ LGTM.
 
 ---
 
-archive/issue_events_007647.json:
+archive/issue_events_017577.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -204,7 +357,7 @@ archive/issue_events_007647.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7423",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7423#event-7647"
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-17577"
 }
 ```
 

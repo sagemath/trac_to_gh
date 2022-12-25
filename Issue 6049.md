@@ -66,7 +66,7 @@ Code looks good, doctests pass.  Positive review.
 
 ---
 
-archive/issue_events_006304.json:
+archive/issue_events_014204.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -74,7 +74,7 @@ archive/issue_events_006304.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6049",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6049#event-6304"
+    "url": "https://github.com/sagemath/sagetest/issues/6049#event-14204"
 }
 ```
 

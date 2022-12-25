@@ -500,6 +500,23 @@ Michael
 
 ---
 
+archive/issue_events_005579.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T08:39:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#event-5579"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015923.json:
 ```json
 {
@@ -554,7 +571,7 @@ Merged 2364-new.patch in Sage 3.2.alpha2
 
 ---
 
-archive/issue_events_002541.json:
+archive/issue_events_005580.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -562,6 +579,6 @@ archive/issue_events_002541.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2364#event-2541"
+    "url": "https://github.com/sagemath/sagetest/issues/2364#event-5580"
 }
 ```

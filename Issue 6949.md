@@ -494,7 +494,7 @@ Merged [trac_6949-symbolic_min_max.take3.patch](http://trac.sagemath.org/sage_tr
 
 ---
 
-archive/issue_events_007173.json:
+archive/issue_events_016347.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -502,7 +502,7 @@ archive/issue_events_007173.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6949#event-7173"
+    "url": "https://github.com/sagemath/sagetest/issues/6949#event-16347"
 }
 ```
 

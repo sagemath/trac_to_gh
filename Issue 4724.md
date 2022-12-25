@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/4724
 
 ---
 
+archive/issue_events_010790.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-09T23:27:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4724",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4724#event-10790"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035589.json:
 ```json
 {
@@ -200,7 +217,7 @@ The code looks good to me and is nicely documented.  Positive review.
 
 ---
 
-archive/issue_events_004969.json:
+archive/issue_events_010791.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -208,7 +225,7 @@ archive/issue_events_004969.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4724#event-4969"
+    "url": "https://github.com/sagemath/sagetest/issues/4724#event-10791"
 }
 ```
 
@@ -229,6 +246,40 @@ archive/issue_comments_035598.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_010792.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-13T09:02:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4724",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4724#event-10792"
+}
+```
+
+
+
+---
+
+archive/issue_events_010793.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-13T09:02:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4724",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4724#event-10793"
+}
+```
 
 
 

@@ -68,7 +68,7 @@ I'm closing this since it's now in the r-2.6.1.p3.spkg.
 
 ---
 
-archive/issue_events_001574.json:
+archive/issue_events_003670.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -76,6 +76,23 @@ archive/issue_events_001574.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1427",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1427#event-1574"
+    "url": "https://github.com/sagemath/sagetest/issues/1427#event-3670"
+}
+```
+
+
+
+---
+
+archive/issue_events_003671.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-10T03:25:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1427",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1427#event-3671"
 }
 ```

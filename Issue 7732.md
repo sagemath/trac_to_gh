@@ -163,6 +163,23 @@ Looks safe and fine and works for me.
 
 ---
 
+archive/issue_events_018489.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-12-24T07:12:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7732",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7732#event-18489"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066323.json:
 ```json
 {
@@ -181,7 +198,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007944.json:
+archive/issue_events_018490.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -189,6 +206,6 @@ archive/issue_events_007944.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7732",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7732#event-7944"
+    "url": "https://github.com/sagemath/sagetest/issues/7732#event-18490"
 }
 ```

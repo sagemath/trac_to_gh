@@ -38,6 +38,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/224
 
 ---
 
+archive/issue_events_000456.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T21:23:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/224",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/224#event-456"
+}
+```
+
+
+
+---
+
+archive/issue_events_000457.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-29T02:05:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/224",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/224#event-457"
+}
+```
+
+
+
+---
+
+archive/issue_events_000458.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-29T02:05:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/224",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/224#event-458"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000995.json:
 ```json
 {
@@ -157,7 +208,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_000237.json:
+archive/issue_events_000459.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -165,7 +216,7 @@ archive/issue_events_000237.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/224#event-237"
+    "url": "https://github.com/sagemath/sagetest/issues/224#event-459"
 }
 ```
 
@@ -186,3 +237,37 @@ archive/issue_comments_000999.json:
 ```
 
 I think this is intentional as well.  I'm closing this as invalid.
+
+
+
+---
+
+archive/issue_events_000460.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-19T13:25:15Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/224",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/224#event-460"
+}
+```
+
+
+
+---
+
+archive/issue_events_000461.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-01-19T13:25:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/224",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/224#event-461"
+}
+```

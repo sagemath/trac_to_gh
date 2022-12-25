@@ -101,7 +101,24 @@ This is being done in http://trac.sagemath.org/sage_trac/ticket/5793
 
 ---
 
-archive/issue_events_001450.json:
+archive/issue_events_003420.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2009-07-27T16:38:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1310",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1310#event-3420"
+}
+```
+
+
+
+---
+
+archive/issue_events_003421.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -109,7 +126,7 @@ archive/issue_events_001450.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1310",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1310#event-1450"
+    "url": "https://github.com/sagemath/sagetest/issues/1310#event-3421"
 }
 ```
 

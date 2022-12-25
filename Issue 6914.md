@@ -107,7 +107,7 @@ Duplicate of #7442
 
 ---
 
-archive/issue_events_007141.json:
+archive/issue_events_016243.json:
 ```json
 {
     "actor": "https://github.com/jasongrout",
@@ -115,7 +115,7 @@ archive/issue_events_007141.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6914",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6914#event-7141"
+    "url": "https://github.com/sagemath/sagetest/issues/6914#event-16243"
 }
 ```
 
@@ -136,3 +136,20 @@ archive/issue_comments_056995.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_016244.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-20T10:44:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6914",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6914#event-16244"
+}
+```

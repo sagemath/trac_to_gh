@@ -94,7 +94,7 @@ e1p._cmp(e2p)
 
 ---
 
-archive/issue_events_000368.json:
+archive/issue_events_000811.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -102,7 +102,7 @@ archive/issue_events_000368.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/344",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/344#event-368"
+    "url": "https://github.com/sagemath/sagetest/issues/344#event-811"
 }
 ```
 

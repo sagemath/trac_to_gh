@@ -48,7 +48,7 @@ Japp, I'm marking this as duplicate since it is a duplicate of #2372 . Reviews f
 
 ---
 
-archive/issue_events_002669.json:
+archive/issue_events_005868.json:
 ```json
 {
     "actor": "https://github.com/dfdeshom",
@@ -56,7 +56,7 @@ archive/issue_events_002669.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2490",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2490#event-2669"
+    "url": "https://github.com/sagemath/sagetest/issues/2490#event-5868"
 }
 ```
 

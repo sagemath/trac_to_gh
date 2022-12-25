@@ -29,6 +29,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5343
 
 ---
 
+archive/issue_events_012464.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-23T08:04:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5343",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5343#event-12464"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041075.json:
 ```json
 {
@@ -47,7 +64,7 @@ This ticket can be closed now. There's no patch to merge. I can confirm that whe
 
 ---
 
-archive/issue_events_005599.json:
+archive/issue_events_012465.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -55,7 +72,7 @@ archive/issue_events_005599.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5343",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5343#event-5599"
+    "url": "https://github.com/sagemath/sagetest/issues/5343#event-12465"
 }
 ```
 

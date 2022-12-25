@@ -187,7 +187,24 @@ Michael
 
 ---
 
-archive/issue_events_000417.json:
+archive/issue_events_000940.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-08-23T12:50:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/395",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-940"
+}
+```
+
+
+
+---
+
+archive/issue_events_000941.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -195,7 +212,7 @@ archive/issue_events_000417.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/395",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/395#event-417"
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-941"
 }
 ```
 
@@ -279,6 +296,40 @@ Changing type from enhancement to defect.
 
 ---
 
+archive/issue_events_000942.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2007-09-11T16:48:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/395",
+    "milestone": "sage-2.8.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-942"
+}
+```
+
+
+
+---
+
+archive/issue_events_000943.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2007-09-11T16:48:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/395",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-943"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001931.json:
 ```json
 {
@@ -315,7 +366,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000418.json:
+archive/issue_events_000944.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
@@ -323,7 +374,7 @@ archive/issue_events_000418.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/395",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/395#event-418"
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-944"
 }
 ```
 
@@ -469,6 +520,40 @@ def flatten(in_list, ltypes=(list, tuple)):
 
 ---
 
+archive/issue_events_000945.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2007-09-11T20:33:24Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/395",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-945"
+}
+```
+
+
+
+---
+
+archive/issue_events_000946.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2007-09-11T20:33:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/395",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-946"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001937.json:
 ```json
 {
@@ -482,6 +567,40 @@ archive/issue_comments_001937.json:
 ```
 
 Changing type from defect to task.
+
+
+
+---
+
+archive/issue_events_000947.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-11T22:59:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/395",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-947"
+}
+```
+
+
+
+---
+
+archive/issue_events_000948.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-11T22:59:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/395",
+    "milestone": "sage-2.8.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-948"
+}
+```
 
 
 
@@ -505,7 +624,7 @@ applied for sage-2.8.4.2.
 
 ---
 
-archive/issue_events_000419.json:
+archive/issue_events_000949.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -513,7 +632,7 @@ archive/issue_events_000419.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/395",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/395#event-419"
+    "url": "https://github.com/sagemath/sagetest/issues/395#event-949"
 }
 ```
 

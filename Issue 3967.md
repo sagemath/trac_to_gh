@@ -49,6 +49,23 @@ Attachment [9865.patch](tarball://root/attachments/some-uuid/ticket3967/9865.pat
 
 ---
 
+archive/issue_events_009096.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-27T19:10:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#event-9096"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028438.json:
 ```json
 {
@@ -165,7 +182,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_004195.json:
+archive/issue_events_009097.json:
 ```json
 {
     "actor": "https://github.com/jvoight",
@@ -173,7 +190,7 @@ archive/issue_events_004195.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3967#event-4195"
+    "url": "https://github.com/sagemath/sagetest/issues/3967#event-9097"
 }
 ```
 
@@ -199,7 +216,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004196.json:
+archive/issue_events_009098.json:
 ```json
 {
     "actor": "https://github.com/jvoight",
@@ -207,7 +224,7 @@ archive/issue_events_004196.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3967#event-4196"
+    "url": "https://github.com/sagemath/sagetest/issues/3967#event-9098"
 }
 ```
 
@@ -355,7 +372,7 @@ Merged trac-3967-rebase.patch in Sage 3.1.3.alpha1
 
 ---
 
-archive/issue_events_004197.json:
+archive/issue_events_009099.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -363,7 +380,7 @@ archive/issue_events_004197.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3967#event-4197"
+    "url": "https://github.com/sagemath/sagetest/issues/3967#event-9099"
 }
 ```
 

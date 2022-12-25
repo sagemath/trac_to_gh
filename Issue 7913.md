@@ -162,6 +162,125 @@ sage: m = identity_matrix(1)
 
 ---
 
+archive/issue_events_018938.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18938"
+}
+```
+
+
+
+---
+
+archive/issue_events_018939.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18939"
+}
+```
+
+
+
+---
+
+archive/issue_events_018940.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18940"
+}
+```
+
+
+
+---
+
+archive/issue_events_018941.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18941"
+}
+```
+
+
+
+---
+
+archive/issue_events_018942.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18942"
+}
+```
+
+
+
+---
+
+archive/issue_events_018943.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18943"
+}
+```
+
+
+
+---
+
+archive/issue_events_018944.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18944"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068725.json:
 ```json
 {
@@ -211,6 +330,40 @@ archive/issue_comments_068727.json:
 ```
 
 This is ancient and the problems have all gone away.  I tagged it as invalid / donfix.
+
+
+
+---
+
+archive/issue_events_018945.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2016-10-27T15:31:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18945"
+}
+```
+
+
+
+---
+
+archive/issue_events_018946.json:
+```json
+{
+    "actor": "https://github.com/JohnCremona",
+    "created_at": "2016-10-27T15:31:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18946"
+}
+```
 
 
 
@@ -272,6 +425,40 @@ Changing component from user interface to cython.
 
 ---
 
+archive/issue_events_018947.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-03-22T10:24:48Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18947"
+}
+```
+
+
+
+---
+
+archive/issue_events_018948.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-03-22T10:24:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18948"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068730.json:
 ```json
 {
@@ -321,6 +508,40 @@ archive/issue_comments_068732.json:
 ```
 
 This is clearly a Cython upstream issue. There is no way to fix this within Sage.
+
+
+
+---
+
+archive/issue_events_018949.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-06-09T12:40:09Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-8.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18949"
+}
+```
+
+
+
+---
+
+archive/issue_events_018950.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2017-06-09T12:40:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18950"
+}
+```
 
 
 
@@ -380,7 +601,7 @@ Closing tickets in the sage-duplicate/invalid/wontfix module with positive_revie
 
 ---
 
-archive/issue_events_008128.json:
+archive/issue_events_018951.json:
 ```json
 {
     "actor": "https://github.com/embray",
@@ -388,6 +609,6 @@ archive/issue_events_008128.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7913#event-8128"
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-18951"
 }
 ```

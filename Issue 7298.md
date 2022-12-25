@@ -205,7 +205,7 @@ I've updated the Author(s) and Reviewer(s) fields with full names.  Please corre
 
 ---
 
-archive/issue_events_007519.json:
+archive/issue_events_017267.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -213,7 +213,7 @@ archive/issue_events_007519.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7298",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7298#event-7519"
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17267"
 }
 ```
 
@@ -278,7 +278,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_007520.json:
+archive/issue_events_017268.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -286,7 +286,7 @@ archive/issue_events_007520.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7298",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7298#event-7520"
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17268"
 }
 ```
 
@@ -1183,6 +1183,91 @@ But you are right that ffmpeg itself seems intended to be free.  The question (I
 
 ---
 
+archive/issue_events_017269.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17269"
+}
+```
+
+
+
+---
+
+archive/issue_events_017270.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17270"
+}
+```
+
+
+
+---
+
+archive/issue_events_017271.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17271"
+}
+```
+
+
+
+---
+
+archive/issue_events_017272.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17272"
+}
+```
+
+
+
+---
+
+archive/issue_events_017273.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17273"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060679.json:
 ```json
 {
@@ -1352,6 +1437,40 @@ archive/issue_comments_060687.json:
 ```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+
+---
+
+archive/issue_events_017274.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17274"
+}
+```
+
+
+
+---
+
+archive/issue_events_017275.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17275"
+}
+```
 
 
 
@@ -2141,7 +2260,7 @@ Thanks for the review. Now I can build on this for #16650.
 
 ---
 
-archive/issue_events_007521.json:
+archive/issue_events_017276.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -2149,6 +2268,6 @@ archive/issue_events_007521.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7298",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7298#event-7521"
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-17276"
 }
 ```

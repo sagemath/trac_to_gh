@@ -83,6 +83,23 @@ Yeah, this is developer error, IMO. "Sage: 1+1" is not recognized by the doctest
 
 ---
 
+archive/issue_events_015189.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2012-01-04T09:56:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6439",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6439#event-15189"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051594.json:
 ```json
 {
@@ -137,7 +154,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_006680.json:
+archive/issue_events_015190.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -145,6 +162,6 @@ archive/issue_events_006680.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6439",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6439#event-6680"
+    "url": "https://github.com/sagemath/sagetest/issues/6439#event-15190"
 }
 ```

@@ -310,6 +310,23 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_019936.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2011-01-19T15:54:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8327",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8327#event-19936"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073813.json:
 ```json
 {
@@ -516,6 +533,40 @@ archive/issue_comments_073823.json:
 ```
 
 Remove assignee @loefflerd.
+
+
+
+---
+
+archive/issue_events_019937.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/stumpc5",
+    "created_at": "2011-06-11T11:42:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8327",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8327#event-19937"
+}
+```
+
+
+
+---
+
+archive/issue_events_019938.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/stumpc5",
+    "created_at": "2011-06-11T11:42:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8327",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8327#event-19938"
+}
+```
 
 
 
@@ -5067,6 +5118,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_019939.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-10T21:26:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8327",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8327#event-19939"
+}
+```
+
+
+
+---
+
+archive/issue_events_019940.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-01-10T21:26:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8327",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8327#event-19940"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073990.json:
 ```json
 {
@@ -5100,6 +5185,40 @@ archive/issue_comments_073991.json:
 Replying to [comment:189 chapoton]:
 
 Thanks a lot, Fred, and also to the others for all the contributions!
+
+
+
+---
+
+archive/issue_events_019941.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/stumpc5",
+    "created_at": "2013-01-26T21:18:56Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8327",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8327#event-19941"
+}
+```
+
+
+
+---
+
+archive/issue_events_019942.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/stumpc5",
+    "created_at": "2013-01-26T21:18:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8327",
+    "milestone": "sage-5.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8327#event-19942"
+}
+```
 
 
 
@@ -5573,7 +5692,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008520.json:
+archive/issue_events_019943.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -5581,7 +5700,7 @@ archive/issue_events_008520.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8327#event-8520"
+    "url": "https://github.com/sagemath/sagetest/issues/8327#event-19943"
 }
 ```
 

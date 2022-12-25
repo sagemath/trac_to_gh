@@ -344,6 +344,23 @@ Merged [trac_8412-folded.patch](http://trac.sagemath.org/sage_trac/attachment/ti
 
 ---
 
+archive/issue_events_020161.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-03T13:54:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8412",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8412#event-20161"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075254.json:
 ```json
 {
@@ -362,7 +379,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008597.json:
+archive/issue_events_020162.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -370,6 +387,6 @@ archive/issue_events_008597.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8412",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8412#event-8597"
+    "url": "https://github.com/sagemath/sagetest/issues/8412#event-20162"
 }
 ```

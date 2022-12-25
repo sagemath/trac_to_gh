@@ -45,7 +45,7 @@ duplicate of #1886
 
 ---
 
-archive/issue_events_002043.json:
+archive/issue_events_004543.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -53,7 +53,7 @@ archive/issue_events_002043.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1885",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1885#event-2043"
+    "url": "https://github.com/sagemath/sagetest/issues/1885#event-4543"
 }
 ```
 

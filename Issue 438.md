@@ -47,6 +47,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/438
 
 ---
 
+archive/issue_events_001078.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-29T21:11:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/438",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/438#event-1078"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002183.json:
 ```json
 {
@@ -109,7 +126,7 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
-archive/issue_events_000465.json:
+archive/issue_events_001079.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -117,7 +134,7 @@ archive/issue_events_000465.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/438",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/438#event-465"
+    "url": "https://github.com/sagemath/sagetest/issues/438#event-1079"
 }
 ```
 

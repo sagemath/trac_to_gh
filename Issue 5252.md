@@ -116,6 +116,23 @@ NB The output at precision 500 for the new doctest looks odd on trac but is ok i
 
 ---
 
+archive/issue_events_012197.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-02-16T08:06:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5252",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5252#event-12197"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040225.json:
 ```json
 {
@@ -152,7 +169,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005508.json:
+archive/issue_events_012198.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -160,7 +177,7 @@ archive/issue_events_005508.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5252",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5252#event-5508"
+    "url": "https://github.com/sagemath/sagetest/issues/5252#event-12198"
 }
 ```
 

@@ -101,7 +101,7 @@ reviewed against sage-4.4.3
 
 ---
 
-archive/issue_events_009371.json:
+archive/issue_events_022700.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -109,7 +109,7 @@ archive/issue_events_009371.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9215",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9215#event-9371"
+    "url": "https://github.com/sagemath/sagetest/issues/9215#event-22700"
 }
 ```
 

@@ -84,7 +84,7 @@ Patch is up at #4353
 
 ---
 
-archive/issue_events_004409.json:
+archive/issue_events_009475.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -92,7 +92,7 @@ archive/issue_events_004409.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4172",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4172#event-4409"
+    "url": "https://github.com/sagemath/sagetest/issues/4172#event-9475"
 }
 ```
 

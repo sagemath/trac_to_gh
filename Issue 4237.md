@@ -727,6 +727,23 @@ Attachment [trac_4237_part3-neg_bugfix.patch](tarball://root/attachments/some-uu
 
 ---
 
+archive/issue_events_009582.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-17T07:32:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4237",
+    "milestone": "sage-3.2.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4237#event-9582"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030737.json:
 ```json
 {
@@ -785,7 +802,7 @@ Merged all three patches in Sage 3.2.2.rc1
 
 ---
 
-archive/issue_events_004474.json:
+archive/issue_events_009583.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -793,6 +810,6 @@ archive/issue_events_004474.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4237#event-4474"
+    "url": "https://github.com/sagemath/sagetest/issues/4237#event-9583"
 }
 ```

@@ -124,7 +124,7 @@ builds fine, tests pass in the right places...
 
 ---
 
-archive/issue_events_004446.json:
+archive/issue_events_009540.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -132,7 +132,7 @@ archive/issue_events_004446.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4209#event-4446"
+    "url": "https://github.com/sagemath/sagetest/issues/4209#event-9540"
 }
 ```
 

@@ -76,6 +76,23 @@ allocate -1 limbs won't run into unexpected trouble.
 
 ---
 
+archive/issue_events_002806.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-11-03T15:09:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1029",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1029#event-2806"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006266.json:
 ```json
 {
@@ -127,6 +144,40 @@ archive/issue_comments_006268.json:
 New flint spkg and bundle (to apply to sage-main) up at
 
 http://sage.math.washington.edu/home/robertwb/flint/
+
+
+
+---
+
+archive/issue_events_002807.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-15T15:47:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1029",
+    "milestone": "sage-2.8.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1029#event-2807"
+}
+```
+
+
+
+---
+
+archive/issue_events_002808.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-15T15:47:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1029",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1029#event-2808"
+}
+```
 
 
 
@@ -212,7 +263,7 @@ Merged in 2.8.13.alpha0.
 
 ---
 
-archive/issue_events_001153.json:
+archive/issue_events_002809.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -220,7 +271,7 @@ archive/issue_events_001153.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1029",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1029#event-1153"
+    "url": "https://github.com/sagemath/sagetest/issues/1029#event-2809"
 }
 ```
 

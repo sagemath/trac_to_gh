@@ -118,7 +118,7 @@ I think this ticket is a duplicate of #9735, #9689, and/or #9693.  Is that right
 
 ---
 
-archive/issue_events_009824.json:
+archive/issue_events_024213.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -126,7 +126,7 @@ archive/issue_events_009824.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9692",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9692#event-9824"
+    "url": "https://github.com/sagemath/sagetest/issues/9692#event-24213"
 }
 ```
 
@@ -167,3 +167,20 @@ archive/issue_comments_094050.json:
 Yes, it can. 
 
 I've no idea why the title says one ticket and the description another. But I think we are clear about what the issues are.
+
+
+
+---
+
+archive/issue_events_024214.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-08-16T22:09:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9692",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9692#event-24214"
+}
+```

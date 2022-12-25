@@ -107,6 +107,125 @@ Changing assignee from cwitty to tba.
 
 ---
 
+archive/issue_events_012211.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12211"
+}
+```
+
+
+
+---
+
+archive/issue_events_012212.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12212"
+}
+```
+
+
+
+---
+
+archive/issue_events_012213.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12213"
+}
+```
+
+
+
+---
+
+archive/issue_events_012214.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12214"
+}
+```
+
+
+
+---
+
+archive/issue_events_012215.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12215"
+}
+```
+
+
+
+---
+
+archive/issue_events_012216.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12216"
+}
+```
+
+
+
+---
+
+archive/issue_events_012217.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12217"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040295.json:
 ```json
 {
@@ -120,6 +239,40 @@ archive/issue_comments_040295.json:
 ```
 
 Changing status from new to needs_review.
+
+
+
+---
+
+archive/issue_events_012218.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-07T19:05:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12218"
+}
+```
+
+
+
+---
+
+archive/issue_events_012219.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2015-09-07T19:05:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5260",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12219"
+}
+```
 
 
 
@@ -161,7 +314,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_005516.json:
+archive/issue_events_012220.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -169,7 +322,7 @@ archive/issue_events_005516.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5260",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5260#event-5516"
+    "url": "https://github.com/sagemath/sagetest/issues/5260#event-12220"
 }
 ```
 

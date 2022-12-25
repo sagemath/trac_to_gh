@@ -65,6 +65,23 @@ Introduce Weak Reference to the cache of PolynomialRing
 
 ---
 
+archive/issue_events_014012.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-03T07:49:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5970",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5970#event-14012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047231.json:
 ```json
 {
@@ -1237,6 +1254,40 @@ And if it's a duplicate, it would be nice to add a pointer in the description to
 
 ---
 
+archive/issue_events_014013.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-23T11:10:43Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5970",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5970#event-14013"
+}
+```
+
+
+
+---
+
+archive/issue_events_014014.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-23T11:10:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5970",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5970#event-14014"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047269.json:
 ```json
 {
@@ -1255,7 +1306,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006225.json:
+archive/issue_events_014015.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1263,6 +1314,6 @@ archive/issue_events_006225.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#event-6225"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#event-14015"
 }
 ```

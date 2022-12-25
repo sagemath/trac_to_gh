@@ -94,6 +94,23 @@ Changing component from algebraic geometry to packages.
 
 ---
 
+archive/issue_events_001575.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-05T18:06:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/595",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/595#event-1575"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003054.json:
 ```json
 {
@@ -172,7 +189,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000649.json:
+archive/issue_events_001576.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -180,7 +197,7 @@ archive/issue_events_000649.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/595#event-649"
+    "url": "https://github.com/sagemath/sagetest/issues/595#event-1576"
 }
 ```
 
@@ -224,7 +241,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000650.json:
+archive/issue_events_001577.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -232,7 +249,7 @@ archive/issue_events_000650.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/595#event-650"
+    "url": "https://github.com/sagemath/sagetest/issues/595#event-1577"
 }
 ```
 
@@ -276,7 +293,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000651.json:
+archive/issue_events_001578.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -284,6 +301,6 @@ archive/issue_events_000651.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/595",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/595#event-651"
+    "url": "https://github.com/sagemath/sagetest/issues/595#event-1578"
 }
 ```

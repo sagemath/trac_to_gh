@@ -91,6 +91,125 @@ Issue created by migration from https://trac.sagemath.org/ticket/9386
 
 ---
 
+archive/issue_events_023151.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23151"
+}
+```
+
+
+
+---
+
+archive/issue_events_023152.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23152"
+}
+```
+
+
+
+---
+
+archive/issue_events_023153.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23153"
+}
+```
+
+
+
+---
+
+archive/issue_events_023154.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23154"
+}
+```
+
+
+
+---
+
+archive/issue_events_023155.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23155"
+}
+```
+
+
+
+---
+
+archive/issue_events_023156.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23156"
+}
+```
+
+
+
+---
+
+archive/issue_events_023157.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23157"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089161.json:
 ```json
 {
@@ -527,6 +646,40 @@ We could "save" all the `SAGE_` variables as well, to ensure that `sage-native-e
 
 ---
 
+archive/issue_events_023158.json:
+```json
+{
+    "actor": "https://github.com/nbruin",
+    "created_at": "2015-02-10T02:48:19Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23158"
+}
+```
+
+
+
+---
+
+archive/issue_events_023159.json:
+```json
+{
+    "actor": "https://github.com/nbruin",
+    "created_at": "2015-02-10T02:48:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23159"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089178.json:
 ```json
 {
@@ -796,6 +949,40 @@ Changing component from packages: standard to scripts.
 
 ---
 
+archive/issue_events_023160.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2015-05-09T08:10:50Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23160"
+}
+```
+
+
+
+---
+
+archive/issue_events_023161.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2015-05-09T08:10:50Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23161"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089188.json:
 ```json
 {
@@ -1044,3 +1231,37 @@ archive/issue_comments_089196.json:
 ```
 
 The added `sage-system-python` script at #18438 should be good enough for that ticket, we could also just run with that until `sage-native-execute` works.
+
+
+
+---
+
+archive/issue_events_023162.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-08-07T13:15:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-6.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23162"
+}
+```
+
+
+
+---
+
+archive/issue_events_023163.json:
+```json
+{
+    "actor": "https://github.com/embray",
+    "created_at": "2019-08-07T13:15:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9386",
+    "milestone": "sage-pending",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9386#event-23163"
+}
+```

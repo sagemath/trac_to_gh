@@ -30,6 +30,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1938
 
 ---
 
+archive/issue_events_004653.json:
+```json
+{
+    "actor": "https://github.com/robertwb",
+    "created_at": "2008-01-26T12:11:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1938",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-4653"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012258.json:
 ```json
 {
@@ -405,6 +422,40 @@ do apply this
 
 ---
 
+archive/issue_events_004654.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-30T03:05:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1938",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-4654"
+}
+```
+
+
+
+---
+
+archive/issue_events_004655.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-30T03:05:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1938",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-4655"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012272.json:
 ```json
 {
@@ -420,6 +471,40 @@ archive/issue_comments_012272.json:
 Attachment [trac-1938-fix_some_docstrings.patch](tarball://root/attachments/some-uuid/ticket1938/trac-1938-fix_some_docstrings.patch) by @williamstein created at 2008-01-30 03:05:00
 
 You're right -- I didn't "sage -br" after the merge.  I redid the last patch, with a few fixes to typos and the writing in the paragraph, but without changing any doctests.
+
+
+
+---
+
+archive/issue_events_004656.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-30T03:05:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1938",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-4656"
+}
+```
+
+
+
+---
+
+archive/issue_events_004657.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-30T03:05:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1938",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-4657"
+}
+```
 
 
 
@@ -497,7 +582,41 @@ Merged 1938-fast-float-fixes.hg and trac-1938-fix_some_docstrings.patch in Sage 
 
 ---
 
-archive/issue_events_002094.json:
+archive/issue_events_004658.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-30T09:21:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1938",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-4658"
+}
+```
+
+
+
+---
+
+archive/issue_events_004659.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-01-30T09:21:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1938",
+    "milestone": "sage-2.10.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-4659"
+}
+```
+
+
+
+---
+
+archive/issue_events_004660.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -505,6 +624,6 @@ archive/issue_events_002094.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1938#event-2094"
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-4660"
 }
 ```

@@ -163,7 +163,7 @@ Anyway, I say merge, and I'm eager to see the rest of the tensor product stuff.
 
 ---
 
-archive/issue_events_002472.json:
+archive/issue_events_005419.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -171,7 +171,7 @@ archive/issue_events_002472.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2297",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2297#event-2472"
+    "url": "https://github.com/sagemath/sagetest/issues/2297#event-5419"
 }
 ```
 

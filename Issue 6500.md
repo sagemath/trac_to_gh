@@ -206,7 +206,7 @@ John's patch looks fine to me -- it applies without problems, the documentation 
 
 ---
 
-archive/issue_events_006738.json:
+archive/issue_events_015347.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -214,7 +214,7 @@ archive/issue_events_006738.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6500#event-6738"
+    "url": "https://github.com/sagemath/sagetest/issues/6500#event-15347"
 }
 ```
 

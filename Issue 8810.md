@@ -580,6 +580,23 @@ You might want to go through your combinat queue and check that none of the othe
 
 ---
 
+archive/issue_events_021492.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-07-01T09:33:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8810",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8810#event-21492"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080746.json:
 ```json
 {
@@ -733,7 +750,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008975.json:
+archive/issue_events_021493.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -741,7 +758,7 @@ archive/issue_events_008975.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8810#event-8975"
+    "url": "https://github.com/sagemath/sagetest/issues/8810#event-21493"
 }
 ```
 

@@ -181,7 +181,7 @@ Merged "trac-8424-bounding-boxes.patch" into 4.4.alpha0.
 
 ---
 
-archive/issue_events_008609.json:
+archive/issue_events_020184.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -189,7 +189,7 @@ archive/issue_events_008609.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8424#event-8609"
+    "url": "https://github.com/sagemath/sagetest/issues/8424#event-20184"
 }
 ```
 

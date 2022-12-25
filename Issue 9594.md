@@ -261,7 +261,7 @@ I simply forgot to add the "backlink" at #9593, which should fix the problem in 
 
 ---
 
-archive/issue_events_009738.json:
+archive/issue_events_023895.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -269,7 +269,7 @@ archive/issue_events_009738.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9594#event-9738"
+    "url": "https://github.com/sagemath/sagetest/issues/9594#event-23895"
 }
 ```
 

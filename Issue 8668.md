@@ -227,6 +227,23 @@ Implementation of Features: “3. No units package is a killer for me.” -- Ano
 
 ---
 
+archive/issue_events_021012.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-06-03T04:07:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8668",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8668#event-21012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078739.json:
 ```json
 {
@@ -294,6 +311,40 @@ Replying to [ticket:8668 schilly]:
 
 ---
 
+archive/issue_events_021013.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-02T16:46:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8668",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8668#event-21013"
+}
+```
+
+
+
+---
+
+archive/issue_events_021014.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-12-02T16:46:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8668",
+    "milestone": "sage-6.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8668#event-21014"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078742.json:
 ```json
 {
@@ -350,6 +401,40 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_021015.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-07-16T18:29:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8668",
+    "milestone": "sage-6.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8668#event-21015"
+}
+```
+
+
+
+---
+
+archive/issue_events_021016.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-07-16T18:29:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8668",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8668#event-21016"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078745.json:
 ```json
 {
@@ -386,7 +471,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_008842.json:
+archive/issue_events_021017.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -394,6 +479,6 @@ archive/issue_events_008842.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8668",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8668#event-8842"
+    "url": "https://github.com/sagemath/sagetest/issues/8668#event-21017"
 }
 ```

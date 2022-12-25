@@ -71,6 +71,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7175
 
 ---
 
+archive/issue_events_016970.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-08-09T21:05:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7175",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7175#event-16970"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059337.json:
 ```json
 {
@@ -89,7 +106,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007394.json:
+archive/issue_events_016971.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -97,7 +114,7 @@ archive/issue_events_007394.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7175",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7175#event-7394"
+    "url": "https://github.com/sagemath/sagetest/issues/7175#event-16971"
 }
 ```
 

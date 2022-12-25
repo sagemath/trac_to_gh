@@ -68,6 +68,23 @@ Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6562/12659.p
 
 ---
 
+archive/issue_events_015476.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mora",
+    "created_at": "2009-07-19T19:12:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6562",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6562#event-15476"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053422.json:
 ```json
 {
@@ -140,7 +157,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006799.json:
+archive/issue_events_015477.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -148,6 +165,40 @@ archive/issue_events_006799.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6562",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6562#event-6799"
+    "url": "https://github.com/sagemath/sagetest/issues/6562#event-15477"
+}
+```
+
+
+
+---
+
+archive/issue_events_015478.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-26T20:02:49Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6562",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6562#event-15478"
+}
+```
+
+
+
+---
+
+archive/issue_events_015479.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-26T20:02:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6562",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6562#event-15479"
 }
 ```

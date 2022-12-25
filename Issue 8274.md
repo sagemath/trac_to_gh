@@ -312,6 +312,23 @@ replace-all at once).
 
 ---
 
+archive/issue_events_019796.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2011-08-05T17:58:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8274",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8274#event-19796"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073133.json:
 ```json
 {
@@ -439,7 +456,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008473.json:
+archive/issue_events_019797.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -447,6 +464,6 @@ archive/issue_events_008473.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8274",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8274#event-8473"
+    "url": "https://github.com/sagemath/sagetest/issues/8274#event-19797"
 }
 ```

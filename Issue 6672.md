@@ -349,7 +349,24 @@ sage: timeit('E(P)')
 
 ---
 
-archive/issue_events_006908.json:
+archive/issue_events_015743.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-08-17T12:34:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6672",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6672#event-15743"
+}
+```
+
+
+
+---
+
+archive/issue_events_015744.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -357,7 +374,7 @@ archive/issue_events_006908.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6672",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6672#event-6908"
+    "url": "https://github.com/sagemath/sagetest/issues/6672#event-15744"
 }
 ```
 

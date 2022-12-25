@@ -55,7 +55,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_005667.json:
+archive/issue_events_012592.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -63,7 +63,7 @@ archive/issue_events_005667.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5410",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5410#event-5667"
+    "url": "https://github.com/sagemath/sagetest/issues/5410#event-12592"
 }
 ```
 
@@ -88,3 +88,20 @@ Invalid - we should keep things in the output directory.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_012593.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-09T19:42:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5410",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5410#event-12593"
+}
+```

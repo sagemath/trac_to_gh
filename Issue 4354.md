@@ -71,6 +71,23 @@ Crap, I need to relax on the submit button
 
 ---
 
+archive/issue_events_009840.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/anakha",
+    "created_at": "2008-10-24T00:42:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4354",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-9840"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031909.json:
 ```json
 {
@@ -256,6 +273,40 @@ Attachment [sage.2](tarball://root/attachments/some-uuid/ticket4354/sage.2) by a
 
 ---
 
+archive/issue_events_009841.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/abergeron",
+    "created_at": "2008-12-24T04:40:33Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4354",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-9841"
+}
+```
+
+
+
+---
+
+archive/issue_events_009842.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/abergeron",
+    "created_at": "2008-12-24T04:40:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4354",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-9842"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031915.json:
 ```json
 {
@@ -291,6 +342,40 @@ I'm back in buisness!
 trac_4354.2.patch is a rebase against 3.2.2
 
 sage.2 is the sage startup script with the doc changes proposed by mvngu.
+
+
+
+---
+
+archive/issue_events_009843.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-24T11:49:21Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4354",
+    "milestone": "sage-3.2.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-9843"
+}
+```
+
+
+
+---
+
+archive/issue_events_009844.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-24T11:49:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4354",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-9844"
+}
+```
 
 
 
@@ -465,7 +550,41 @@ $ sage "test file.sage"
 
 ---
 
-archive/issue_events_004600.json:
+archive/issue_events_009845.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-02-14T22:07:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4354",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-9845"
+}
+```
+
+
+
+---
+
+archive/issue_events_009846.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2009-02-14T22:07:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4354",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-9846"
+}
+```
+
+
+
+---
+
+archive/issue_events_009847.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -473,7 +592,7 @@ archive/issue_events_004600.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4354#event-4600"
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-9847"
 }
 ```
 

@@ -98,6 +98,23 @@ Of course, this is not the only solution, but it eliminates the cases that bothe
 
 ---
 
+archive/issue_events_018389.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7695",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7695#event-18389"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065903.json:
 ```json
 {
@@ -298,7 +315,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007912.json:
+archive/issue_events_018390.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -306,7 +323,7 @@ archive/issue_events_007912.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7695#event-7912"
+    "url": "https://github.com/sagemath/sagetest/issues/7695#event-18390"
 }
 ```
 

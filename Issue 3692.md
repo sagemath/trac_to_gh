@@ -76,7 +76,7 @@ The default behavior is to call repr on the return value of the last line (if no
 
 ---
 
-archive/issue_events_003914.json:
+archive/issue_events_008464.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -84,7 +84,7 @@ archive/issue_events_003914.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3692",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3692#event-3914"
+    "url": "https://github.com/sagemath/sagetest/issues/3692#event-8464"
 }
 ```
 

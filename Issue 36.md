@@ -65,7 +65,7 @@ w = %e^-x*(3*sin(x) + cos(x))
 
 ---
 
-archive/issue_events_000035.json:
+archive/issue_events_000081.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -73,7 +73,7 @@ archive/issue_events_000035.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/36",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/36#event-35"
+    "url": "https://github.com/sagemath/sagetest/issues/36#event-81"
 }
 ```
 

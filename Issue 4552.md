@@ -146,7 +146,7 @@ Note to release manager: apply only the _original_ patch (`sage-4552.patch`)
 
 ---
 
-archive/issue_events_004797.json:
+archive/issue_events_010368.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -154,7 +154,7 @@ archive/issue_events_004797.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4552",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4552#event-4797"
+    "url": "https://github.com/sagemath/sagetest/issues/4552#event-10368"
 }
 ```
 

@@ -82,7 +82,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000636.json:
+archive/issue_events_001553.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -90,7 +90,7 @@ archive/issue_events_000636.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/582",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/582#event-636"
+    "url": "https://github.com/sagemath/sagetest/issues/582#event-1553"
 }
 ```
 
@@ -111,3 +111,20 @@ archive/issue_comments_002999.json:
 ```
 
 See CubeGroup.parse() for all possible input formats, see #570
+
+
+
+---
+
+archive/issue_events_001554.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-06T20:08:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/582",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/582#event-1554"
+}
+```

@@ -128,7 +128,24 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009479.json:
+archive/issue_events_022973.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-21T03:22:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#event-22973"
+}
+```
+
+
+
+---
+
+archive/issue_events_022974.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -136,7 +153,7 @@ archive/issue_events_009479.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9323",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9323#event-9479"
+    "url": "https://github.com/sagemath/sagetest/issues/9323#event-22974"
 }
 ```
 
@@ -260,6 +277,40 @@ archive/issue_comments_087792.json:
 Replying to [comment:4 mpatel]:
 > Just to check:  Should we keep `doc/en/tutorial/Makefile`?
 I think it can safely be deleted. We need to ensure that its removal has no effect on building the HTML and PDF versions of the documentation.
+
+
+
+---
+
+archive/issue_events_022975.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-21T10:47:46Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#event-22975"
+}
+```
+
+
+
+---
+
+archive/issue_events_022976.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-07-21T10:47:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#event-22976"
+}
+```
 
 
 

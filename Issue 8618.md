@@ -138,7 +138,7 @@ Merged "trac_8618_is_identity-sl.patch" in 4.4.alpha0
 
 ---
 
-archive/issue_events_008789.json:
+archive/issue_events_020851.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -146,7 +146,7 @@ archive/issue_events_008789.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8618",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8618#event-8789"
+    "url": "https://github.com/sagemath/sagetest/issues/8618#event-20851"
 }
 ```
 

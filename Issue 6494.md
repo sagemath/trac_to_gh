@@ -235,6 +235,23 @@ This ticket is invalid now as all of the changes appearing in it are already in 
 
 ---
 
+archive/issue_events_015332.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2012-03-28T21:09:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#event-15332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052458.json:
 ```json
 {
@@ -253,7 +270,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_006732.json:
+archive/issue_events_015333.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -261,7 +278,7 @@ archive/issue_events_006732.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6494",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6494#event-6732"
+    "url": "https://github.com/sagemath/sagetest/issues/6494#event-15333"
 }
 ```
 

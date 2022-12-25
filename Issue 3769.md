@@ -29,7 +29,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3769
 
 ---
 
-archive/issue_events_003991.json:
+archive/issue_events_008643.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -37,7 +37,24 @@ archive/issue_events_003991.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3769",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3769#event-3991"
+    "url": "https://github.com/sagemath/sagetest/issues/3769#event-8643"
+}
+```
+
+
+
+---
+
+archive/issue_events_008644.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T10:45:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3769",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3769#event-8644"
 }
 ```
 

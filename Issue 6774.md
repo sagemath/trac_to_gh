@@ -148,7 +148,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007003.json:
+archive/issue_events_015965.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -156,7 +156,7 @@ archive/issue_events_007003.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#event-7003"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#event-15965"
 }
 ```
 
@@ -293,7 +293,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007004.json:
+archive/issue_events_015966.json:
 ```json
 {
     "actor": "https://github.com/nathanncohen",
@@ -301,7 +301,7 @@ archive/issue_events_007004.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#event-7004"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#event-15966"
 }
 ```
 
@@ -498,7 +498,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_007005.json:
+archive/issue_events_015967.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -506,6 +506,23 @@ archive/issue_events_007005.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#event-7005"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#event-15967"
+}
+```
+
+
+
+---
+
+archive/issue_events_015968.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-12-22T03:58:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6774",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6774#event-15968"
 }
 ```

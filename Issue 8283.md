@@ -159,6 +159,23 @@ apply on top of previous one
 
 ---
 
+archive/issue_events_019822.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-03T13:38:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8283",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8283#event-19822"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073215.json:
 ```json
 {
@@ -291,7 +308,7 @@ Done. All tests passed!
 
 ---
 
-archive/issue_events_008481.json:
+archive/issue_events_019823.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -299,7 +316,7 @@ archive/issue_events_008481.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8283#event-8481"
+    "url": "https://github.com/sagemath/sagetest/issues/8283#event-19823"
 }
 ```
 

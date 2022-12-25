@@ -199,6 +199,23 @@ Complex Field with 53 bits of precision
 
 ---
 
+archive/issue_events_006056.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-21T16:36:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2597",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2597#event-6056"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017739.json:
 ```json
 {
@@ -351,7 +368,7 @@ Merged both patches in Sage 2.11.alpha2
 
 ---
 
-archive/issue_events_002788.json:
+archive/issue_events_006057.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -359,6 +376,6 @@ archive/issue_events_002788.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2597#event-2788"
+    "url": "https://github.com/sagemath/sagetest/issues/2597#event-6057"
 }
 ```

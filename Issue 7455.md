@@ -46,6 +46,23 @@ Changing component from algebra to notebook.
 
 ---
 
+archive/issue_events_017682.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-11-13T22:20:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7455",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7455#event-17682"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062673.json:
 ```json
 {
@@ -210,7 +227,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007681.json:
+archive/issue_events_017683.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -218,6 +235,6 @@ archive/issue_events_007681.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7455#event-7681"
+    "url": "https://github.com/sagemath/sagetest/issues/7455#event-17683"
 }
 ```

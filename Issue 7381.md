@@ -143,7 +143,7 @@ Nathann
 
 ---
 
-archive/issue_events_007607.json:
+archive/issue_events_017451.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -151,7 +151,7 @@ archive/issue_events_007607.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7381",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7381#event-7607"
+    "url": "https://github.com/sagemath/sagetest/issues/7381#event-17451"
 }
 ```
 

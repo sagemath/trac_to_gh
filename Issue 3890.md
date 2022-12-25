@@ -81,7 +81,7 @@ Not much to say here. Positive review.
 
 ---
 
-archive/issue_events_004117.json:
+archive/issue_events_008922.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -89,7 +89,7 @@ archive/issue_events_004117.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3890",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3890#event-4117"
+    "url": "https://github.com/sagemath/sagetest/issues/3890#event-8922"
 }
 ```
 
@@ -114,6 +114,23 @@ Merged in Sage 3.3.alpha3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_008923.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-25T20:58:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3890",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3890#event-8923"
+}
+```
 
 
 

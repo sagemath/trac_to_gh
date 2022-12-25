@@ -141,6 +141,23 @@ According to mabshoff, `readlink -f` doesn't work on some BSD; that's why I left
 
 ---
 
+archive/issue_events_013766.json:
+```json
+{
+    "actor": "https://github.com/tornaria",
+    "created_at": "2009-04-22T12:46:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13766"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046090.json:
 ```json
 {
@@ -240,6 +257,40 @@ Is there some equivalent of `readlink -f` that works in MacOS X?
 
 ---
 
+archive/issue_events_013767.json:
+```json
+{
+    "actor": "https://github.com/tornaria",
+    "created_at": "2009-05-17T03:02:28Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13767"
+}
+```
+
+
+
+---
+
+archive/issue_events_013768.json:
+```json
+{
+    "actor": "https://github.com/tornaria",
+    "created_at": "2009-05-17T03:02:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13768"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046094.json:
 ```json
 {
@@ -312,7 +363,7 @@ Merged in 4.0.rc1.
 
 ---
 
-archive/issue_events_006106.json:
+archive/issue_events_013769.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -320,7 +371,7 @@ archive/issue_events_006106.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5852#event-6106"
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13769"
 }
 ```
 
@@ -683,7 +734,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_006107.json:
+archive/issue_events_013770.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -691,7 +742,41 @@ archive/issue_events_006107.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5852#event-6107"
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13770"
+}
+```
+
+
+
+---
+
+archive/issue_events_013771.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-04-16T15:50:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13771"
+}
+```
+
+
+
+---
+
+archive/issue_events_013772.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-04-16T15:50:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13772"
 }
 ```
 
@@ -915,6 +1000,23 @@ Changing component from distribution to scripts.
 
 ---
 
+archive/issue_events_013773.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-10-29T18:43:34Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13773"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046117.json:
 ```json
 {
@@ -1078,6 +1180,23 @@ archive/issue_comments_046123.json:
 ```
 
 Milestone sage-4.7.3 deleted
+
+
+
+---
+
+archive/issue_events_013774.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-11-15T09:57:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "milestone": "sage-4.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13774"
+}
+```
 
 
 
@@ -1304,7 +1423,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006108.json:
+archive/issue_events_013775.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1312,6 +1431,6 @@ archive/issue_events_006108.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5852#event-6108"
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-13775"
 }
 ```

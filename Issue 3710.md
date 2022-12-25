@@ -149,6 +149,23 @@ Andrzej.
 
 ---
 
+archive/issue_events_008496.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/aginiewicz",
+    "created_at": "2008-08-03T00:35:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3710",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3710#event-8496"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026281.json:
 ```json
 {
@@ -257,7 +274,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003930.json:
+archive/issue_events_008497.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -265,7 +282,7 @@ archive/issue_events_003930.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3710",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3710#event-3930"
+    "url": "https://github.com/sagemath/sagetest/issues/3710#event-8497"
 }
 ```
 

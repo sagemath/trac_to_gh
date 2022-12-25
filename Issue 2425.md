@@ -227,7 +227,7 @@ I agree. Merged in Sage 2.10.3.rc4
 
 ---
 
-archive/issue_events_002602.json:
+archive/issue_events_005728.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -235,7 +235,7 @@ archive/issue_events_002602.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2425",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2425#event-2602"
+    "url": "https://github.com/sagemath/sagetest/issues/2425#event-5728"
 }
 ```
 

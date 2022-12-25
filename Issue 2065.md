@@ -37,6 +37,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2065
 
 ---
 
+archive/issue_events_004947.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-06T16:57:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2065",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2065#event-4947"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013344.json:
 ```json
 {
@@ -55,7 +72,7 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_002226.json:
+archive/issue_events_004948.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -63,7 +80,7 @@ archive/issue_events_002226.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2065",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2065#event-2226"
+    "url": "https://github.com/sagemath/sagetest/issues/2065#event-4948"
 }
 ```
 
@@ -84,3 +101,37 @@ archive/issue_comments_013345.json:
 ```
 
 Because we've removed dsage (#7975), I think we can close this.
+
+
+
+---
+
+archive/issue_events_004949.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-01-19T22:18:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2065",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2065#event-4949"
+}
+```
+
+
+
+---
+
+archive/issue_events_004950.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-01-19T22:18:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2065",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2065#event-4950"
+}
+```

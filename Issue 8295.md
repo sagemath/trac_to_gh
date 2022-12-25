@@ -145,6 +145,23 @@ The module `sage/combinat/kazhdan_lusztig.py` has some bad ReST formatting, whic
 
 ---
 
+archive/issue_events_019855.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-02-20T12:07:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8295",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8295#event-19855"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073368.json:
 ```json
 {
@@ -163,7 +180,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008492.json:
+archive/issue_events_019856.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -171,7 +188,7 @@ archive/issue_events_008492.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#event-8492"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#event-19856"
 }
 ```
 

@@ -66,7 +66,7 @@ This vanished with the notebook rewrite during SD4.
 
 ---
 
-archive/issue_events_000356.json:
+archive/issue_events_000775.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -74,6 +74,23 @@ archive/issue_events_000356.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/332",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/332#event-356"
+    "url": "https://github.com/sagemath/sagetest/issues/332#event-775"
+}
+```
+
+
+
+---
+
+archive/issue_events_000776.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T02:28:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/332",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/332#event-776"
 }
 ```

@@ -233,7 +233,7 @@ This works for me on an intel mac running 10.5.6.  I plotted and saved various 2
 
 ---
 
-archive/issue_events_005472.json:
+archive/issue_events_012078.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -241,7 +241,7 @@ archive/issue_events_005472.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5217",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5217#event-5472"
+    "url": "https://github.com/sagemath/sagetest/issues/5217#event-12078"
 }
 ```
 

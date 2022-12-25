@@ -73,7 +73,7 @@ I think the said typo has been fixed in #1389 by the patch **copying.patch**. Al
 
 ---
 
-archive/issue_events_004610.json:
+archive/issue_events_009874.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -81,7 +81,7 @@ archive/issue_events_004610.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4365",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4365#event-4610"
+    "url": "https://github.com/sagemath/sagetest/issues/4365#event-9874"
 }
 ```
 

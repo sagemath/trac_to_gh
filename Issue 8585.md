@@ -234,7 +234,7 @@ Merged "trac_8585-permutation_group_on_empty_set-fh.patch" into 4.4.alpha1.
 
 ---
 
-archive/issue_events_008762.json:
+archive/issue_events_020735.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -242,7 +242,7 @@ archive/issue_events_008762.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8585#event-8762"
+    "url": "https://github.com/sagemath/sagetest/issues/8585#event-20735"
 }
 ```
 

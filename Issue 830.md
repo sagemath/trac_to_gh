@@ -31,6 +31,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/830
 
 ---
 
+archive/issue_events_002337.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-06T17:38:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/830",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/830#event-2337"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005122.json:
 ```json
 {
@@ -49,7 +66,41 @@ The spkg linked to from #993 fixes this problem as well.
 
 ---
 
-archive/issue_events_000943.json:
+archive/issue_events_002338.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-01T06:13:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/830",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/830#event-2338"
+}
+```
+
+
+
+---
+
+archive/issue_events_002339.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-11-01T06:13:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/830",
+    "milestone": "sage-2.8.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/830#event-2339"
+}
+```
+
+
+
+---
+
+archive/issue_events_002340.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -57,7 +108,7 @@ archive/issue_events_000943.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/830",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/830#event-943"
+    "url": "https://github.com/sagemath/sagetest/issues/830#event-2340"
 }
 ```
 

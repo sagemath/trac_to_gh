@@ -301,7 +301,7 @@ archive/issue_comments_019971.json:
 
 ---
 
-archive/issue_events_003104.json:
+archive/issue_events_006642.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -309,7 +309,24 @@ archive/issue_events_003104.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2902#event-3104"
+    "url": "https://github.com/sagemath/sagetest/issues/2902#event-6642"
+}
+```
+
+
+
+---
+
+archive/issue_events_006643.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T02:58:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2902",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2902#event-6643"
 }
 ```
 

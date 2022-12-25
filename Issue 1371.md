@@ -83,6 +83,23 @@ Changesets
 
 ---
 
+archive/issue_events_003545.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:11:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1371",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1371#event-3545"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008776.json:
 ```json
 {
@@ -163,7 +180,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001514.json:
+archive/issue_events_003546.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -171,7 +188,7 @@ archive/issue_events_001514.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1371",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1371#event-1514"
+    "url": "https://github.com/sagemath/sagetest/issues/1371#event-3546"
 }
 ```
 

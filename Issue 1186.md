@@ -97,6 +97,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1186
 
 ---
 
+archive/issue_events_003169.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-16T16:34:42Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#event-3169"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007298.json:
 ```json
 {
@@ -269,7 +286,7 @@ Apply both patches.  Works for me against 2.10.3.alpha0.
 
 ---
 
-archive/issue_events_001318.json:
+archive/issue_events_003170.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -277,7 +294,7 @@ archive/issue_events_001318.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1186",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1186#event-1318"
+    "url": "https://github.com/sagemath/sagetest/issues/1186#event-3170"
 }
 ```
 

@@ -52,6 +52,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_009283.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-05T06:42:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4066",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4066#event-9283"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029287.json:
 ```json
 {
@@ -125,7 +142,7 @@ It SEGFAULTS with `sage -tp 2 sage/rings` in bernouli_mod_p.pyx though. If that 
 
 ---
 
-archive/issue_events_004302.json:
+archive/issue_events_009284.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -133,7 +150,7 @@ archive/issue_events_004302.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4066",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4066#event-4302"
+    "url": "https://github.com/sagemath/sagetest/issues/4066#event-9284"
 }
 ```
 

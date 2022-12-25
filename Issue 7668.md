@@ -126,6 +126,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_018270.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-08-18T00:36:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7668",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7668#event-18270"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065610.json:
 ```json
 {
@@ -162,7 +179,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_007886.json:
+archive/issue_events_018271.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -170,7 +187,7 @@ archive/issue_events_007886.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7668",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7668#event-7886"
+    "url": "https://github.com/sagemath/sagetest/issues/7668#event-18271"
 }
 ```
 
@@ -196,7 +213,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007887.json:
+archive/issue_events_018272.json:
 ```json
 {
     "actor": "https://github.com/kcrisman",
@@ -204,7 +221,7 @@ archive/issue_events_007887.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7668",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7668#event-7887"
+    "url": "https://github.com/sagemath/sagetest/issues/7668#event-18272"
 }
 ```
 

@@ -97,7 +97,7 @@ applied to 2.8.11.rc1 - via with new lcalc-20070107.p0.spkg
 
 ---
 
-archive/issue_events_001182.json:
+archive/issue_events_002869.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -105,6 +105,6 @@ archive/issue_events_001182.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1059",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1059#event-1182"
+    "url": "https://github.com/sagemath/sagetest/issues/1059#event-2869"
 }
 ```

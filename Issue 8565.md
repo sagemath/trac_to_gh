@@ -69,6 +69,23 @@ add doctests
 
 ---
 
+archive/issue_events_020663.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-04-02T14:52:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8565",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8565#event-20663"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077417.json:
 ```json
 {
@@ -145,7 +162,7 @@ Installs fine, all tests passed, works ad advertised. Positive review and thanks
 
 ---
 
-archive/issue_events_008744.json:
+archive/issue_events_020664.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -153,7 +170,7 @@ archive/issue_events_008744.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8565#event-8744"
+    "url": "https://github.com/sagemath/sagetest/issues/8565#event-20664"
 }
 ```
 

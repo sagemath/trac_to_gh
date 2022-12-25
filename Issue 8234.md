@@ -229,6 +229,23 @@ archive/issue_comments_072620.json:
 
 ---
 
+archive/issue_events_019696.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:41:18Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#event-19696"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072621.json:
 ```json
 {
@@ -247,7 +264,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008435.json:
+archive/issue_events_019697.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -255,6 +272,40 @@ archive/issue_events_008435.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8234",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8234#event-8435"
+    "url": "https://github.com/sagemath/sagetest/issues/8234#event-19697"
+}
+```
+
+
+
+---
+
+archive/issue_events_019698.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-25T17:07:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#event-19698"
+}
+```
+
+
+
+---
+
+archive/issue_events_019699.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-06-25T17:07:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#event-19699"
 }
 ```

@@ -118,7 +118,7 @@ Attachment [trac_7691.patch](tarball://root/attachments/some-uuid/ticket7691/tra
 
 ---
 
-archive/issue_events_007908.json:
+archive/issue_events_018378.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -126,6 +126,23 @@ archive/issue_events_007908.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7691",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7691#event-7908"
+    "url": "https://github.com/sagemath/sagetest/issues/7691#event-18378"
+}
+```
+
+
+
+---
+
+archive/issue_events_018379.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-20T07:43:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7691",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7691#event-18379"
 }
 ```

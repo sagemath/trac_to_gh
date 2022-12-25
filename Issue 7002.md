@@ -180,7 +180,7 @@ Positive review, since I just tested that %auto still works (as well as #auto); 
 
 ---
 
-archive/issue_events_007226.json:
+archive/issue_events_016429.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -188,7 +188,7 @@ archive/issue_events_007226.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7002#event-7226"
+    "url": "https://github.com/sagemath/sagetest/issues/7002#event-16429"
 }
 ```
 
@@ -281,6 +281,23 @@ archive/issue_comments_057789.json:
 ```
 
 Attachment [7002_rebase_4.7.patch](tarball://root/attachments/some-uuid/ticket7002/7002_rebase_4.7.patch) by @jdemeyer created at 2011-05-31 08:50:16
+
+
+
+---
+
+archive/issue_events_016430.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-05-31T08:54:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7002",
+    "milestone": "sage-4.7.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7002#event-16430"
+}
+```
 
 
 

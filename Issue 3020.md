@@ -111,6 +111,23 @@ Changing assignee from tbd to @JohnCremona.
 
 ---
 
+archive/issue_events_006855.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-25T06:56:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3020",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3020#event-6855"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020707.json:
 ```json
 {
@@ -405,7 +422,7 @@ My guess is that he covers NTL, but we can always open another ticket and addres
 
 ---
 
-archive/issue_events_003225.json:
+archive/issue_events_006856.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -413,7 +430,7 @@ archive/issue_events_003225.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3020#event-3225"
+    "url": "https://github.com/sagemath/sagetest/issues/3020#event-6856"
 }
 ```
 

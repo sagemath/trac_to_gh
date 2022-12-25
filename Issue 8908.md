@@ -458,6 +458,23 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_021763.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2012-08-27T20:10:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8908",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8908#event-21763"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081922.json:
 ```json
 {
@@ -507,6 +524,40 @@ archive/issue_comments_081924.json:
 ```
 
 Attachment [trac_8908_young_subgroup_folded-2.patch](tarball://root/attachments/some-uuid/ticket8908/trac_8908_young_subgroup_folded-2.patch) by @fchapoton created at 2012-08-28 08:47:23
+
+
+
+---
+
+archive/issue_events_021764.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2012-08-28T08:48:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8908",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8908#event-21764"
+}
+```
+
+
+
+---
+
+archive/issue_events_021765.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2012-08-28T08:48:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8908",
+    "milestone": "sage-5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8908#event-21765"
+}
+```
 
 
 
@@ -566,7 +617,7 @@ Changing keywords from "" to "symmetric group".
 
 ---
 
-archive/issue_events_009064.json:
+archive/issue_events_021766.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -574,7 +625,7 @@ archive/issue_events_009064.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8908",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8908#event-9064"
+    "url": "https://github.com/sagemath/sagetest/issues/8908#event-21766"
 }
 ```
 

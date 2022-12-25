@@ -76,6 +76,23 @@ Michael
 
 ---
 
+archive/issue_events_006217.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-10T21:09:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2656",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2656#event-6217"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018247.json:
 ```json
 {
@@ -112,7 +129,7 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_events_002847.json:
+archive/issue_events_006218.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -120,7 +137,7 @@ archive/issue_events_002847.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2656",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2656#event-2847"
+    "url": "https://github.com/sagemath/sagetest/issues/2656#event-6218"
 }
 ```
 

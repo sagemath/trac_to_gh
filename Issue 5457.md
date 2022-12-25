@@ -1130,7 +1130,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_005710.json:
+archive/issue_events_012750.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1138,7 +1138,7 @@ archive/issue_events_005710.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5457#event-5710"
+    "url": "https://github.com/sagemath/sagetest/issues/5457#event-12750"
 }
 ```
 
@@ -1283,6 +1283,23 @@ the patch looks good and works properly.  I tested it on sage-5.3.rc0 using bot
 
 ---
 
+archive/issue_events_012751.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-09-01T13:01:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5457",
+    "milestone": "sage-5.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5457#event-12751"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042261.json:
 ```json
 {
@@ -1319,7 +1336,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_005711.json:
+archive/issue_events_012752.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1327,7 +1344,7 @@ archive/issue_events_005711.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5457#event-5711"
+    "url": "https://github.com/sagemath/sagetest/issues/5457#event-12752"
 }
 ```
 
@@ -2031,7 +2048,7 @@ Apply trac_5457-symmetric_functions-mz.patch, 5457_long_time.patch, trac_5457_ll
 
 ---
 
-archive/issue_events_005712.json:
+archive/issue_events_012753.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -2039,7 +2056,7 @@ archive/issue_events_005712.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5457#event-5712"
+    "url": "https://github.com/sagemath/sagetest/issues/5457#event-12753"
 }
 ```
 

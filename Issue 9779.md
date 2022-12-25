@@ -76,6 +76,23 @@ Changing assignee from @aghitza to drkirkby.
 
 ---
 
+archive/issue_events_024517.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2010-08-22T11:51:09Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9779",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9779#event-24517"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095822.json:
 ```json
 {
@@ -876,7 +893,7 @@ Dave
 
 ---
 
-archive/issue_events_009909.json:
+archive/issue_events_024518.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -884,7 +901,7 @@ archive/issue_events_009909.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9779#event-9909"
+    "url": "https://github.com/sagemath/sagetest/issues/9779#event-24518"
 }
 ```
 

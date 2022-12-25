@@ -62,6 +62,23 @@ The ticket 6562 is nearly the same. I wrote that, because I didn't know about th
 
 ---
 
+archive/issue_events_015253.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mora",
+    "created_at": "2009-07-25T01:23:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6464",
+    "milestone": "sage-4.1.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6464#event-15253"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052137.json:
 ```json
 {
@@ -333,7 +350,7 @@ Test for the above file passes when added to 4.1.1, so positive review - maybe m
 
 ---
 
-archive/issue_events_006704.json:
+archive/issue_events_015254.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -341,7 +358,7 @@ archive/issue_events_006704.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6464",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6464#event-6704"
+    "url": "https://github.com/sagemath/sagetest/issues/6464#event-15254"
 }
 ```
 

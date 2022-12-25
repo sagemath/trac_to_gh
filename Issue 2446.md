@@ -49,7 +49,7 @@ This duplicates #2445 and can be deleted.  Sorry.
 
 ---
 
-archive/issue_events_002623.json:
+archive/issue_events_005766.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -57,7 +57,7 @@ archive/issue_events_002623.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2446",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2446#event-2623"
+    "url": "https://github.com/sagemath/sagetest/issues/2446#event-5766"
 }
 ```
 

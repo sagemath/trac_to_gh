@@ -78,6 +78,125 @@ Dave
 
 ---
 
+archive/issue_events_024458.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24458"
+}
+```
+
+
+
+---
+
+archive/issue_events_024459.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24459"
+}
+```
+
+
+
+---
+
+archive/issue_events_024460.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24460"
+}
+```
+
+
+
+---
+
+archive/issue_events_024461.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24461"
+}
+```
+
+
+
+---
+
+archive/issue_events_024462.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24462"
+}
+```
+
+
+
+---
+
+archive/issue_events_024463.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24463"
+}
+```
+
+
+
+---
+
+archive/issue_events_024464.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24464"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095479.json:
 ```json
 {
@@ -101,6 +220,40 @@ The `SPKG.txt` now says:
  * NTL apparently only if we configured zn_poly differently (same for FLINT)
 ```
 
+
+
+
+---
+
+archive/issue_events_024465.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2015-04-14T11:30:27Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24465"
+}
+```
+
+
+
+---
+
+archive/issue_events_024466.json:
+```json
+{
+    "actor": "https://github.com/mezzarobba",
+    "created_at": "2015-04-14T11:30:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9761",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24466"
+}
+```
 
 
 
@@ -160,7 +313,7 @@ Oh yes, fixed years ago...
 
 ---
 
-archive/issue_events_009892.json:
+archive/issue_events_024467.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -168,7 +321,7 @@ archive/issue_events_009892.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9761",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9761#event-9892"
+    "url": "https://github.com/sagemath/sagetest/issues/9761#event-24467"
 }
 ```
 

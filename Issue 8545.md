@@ -86,7 +86,7 @@ I think this is fixed in #8492 (which I tried to cc you on).
 
 ---
 
-archive/issue_events_008726.json:
+archive/issue_events_020589.json:
 ```json
 {
     "actor": "https://github.com/dwbump",
@@ -94,7 +94,7 @@ archive/issue_events_008726.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8545",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8545#event-8726"
+    "url": "https://github.com/sagemath/sagetest/issues/8545#event-20589"
 }
 ```
 
@@ -133,3 +133,20 @@ archive/issue_comments_077138.json:
 ```
 
 For some reason cc: bump does not cause me to be copied.
+
+
+
+---
+
+archive/issue_events_020590.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-15T23:01:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8545",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8545#event-20590"
+}
+```

@@ -315,6 +315,23 @@ description a little bit.
 
 ---
 
+archive/issue_events_025156.json:
+```json
+{
+    "actor": "https://github.com/kiwifb",
+    "created_at": "2011-01-27T10:04:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9968",
+    "milestone": "sage-4.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9968#event-25156"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099728.json:
 ```json
 {
@@ -940,7 +957,7 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_010095.json:
+archive/issue_events_025157.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -948,7 +965,7 @@ archive/issue_events_010095.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9968#event-10095"
+    "url": "https://github.com/sagemath/sagetest/issues/9968#event-25157"
 }
 ```
 
@@ -1046,7 +1063,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_010096.json:
+archive/issue_events_025158.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1054,7 +1071,7 @@ archive/issue_events_010096.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9968#event-10096"
+    "url": "https://github.com/sagemath/sagetest/issues/9968#event-25158"
 }
 ```
 
@@ -1137,7 +1154,7 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_events_010097.json:
+archive/issue_events_025159.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1145,7 +1162,7 @@ archive/issue_events_010097.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9968#event-10097"
+    "url": "https://github.com/sagemath/sagetest/issues/9968#event-25159"
 }
 ```
 

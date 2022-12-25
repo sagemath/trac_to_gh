@@ -79,7 +79,7 @@ spam, consider 1.6.
 
 ---
 
-archive/issue_events_001787.json:
+archive/issue_events_004037.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -87,7 +87,7 @@ archive/issue_events_001787.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1628",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1628#event-1787"
+    "url": "https://github.com/sagemath/sagetest/issues/1628#event-4037"
 }
 ```
 

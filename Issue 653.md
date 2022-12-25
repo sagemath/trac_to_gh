@@ -39,6 +39,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/653
 
 ---
 
+archive/issue_events_001750.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-14T04:41:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/653",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/653#event-1750"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003386.json:
 ```json
 {
@@ -52,6 +69,40 @@ archive/issue_comments_003386.json:
 ```
 
 Changing type from defect to enhancement.
+
+
+
+---
+
+archive/issue_events_001751.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T14:21:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/653",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/653#event-1751"
+}
+```
+
+
+
+---
+
+archive/issue_events_001752.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-21T14:21:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/653",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/653#event-1752"
+}
+```
 
 
 
@@ -79,6 +130,40 @@ Michael
 
 ---
 
+archive/issue_events_001753.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:08:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/653",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/653#event-1753"
+}
+```
+
+
+
+---
+
+archive/issue_events_001754.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-25T01:08:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/653",
+    "milestone": "sage-2.8.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/653#event-1754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003388.json:
 ```json
 {
@@ -99,7 +184,7 @@ Hopefully we don't have to re-implement every computer algebra algorithm that us
 
 ---
 
-archive/issue_events_000719.json:
+archive/issue_events_001755.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
@@ -107,7 +192,7 @@ archive/issue_events_000719.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/653",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/653#event-719"
+    "url": "https://github.com/sagemath/sagetest/issues/653#event-1755"
 }
 ```
 

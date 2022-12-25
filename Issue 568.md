@@ -177,7 +177,7 @@ This works.
 
 ---
 
-archive/issue_events_000616.json:
+archive/issue_events_001519.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -185,6 +185,23 @@ archive/issue_events_000616.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/568",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/568#event-616"
+    "url": "https://github.com/sagemath/sagetest/issues/568#event-1519"
+}
+```
+
+
+
+---
+
+archive/issue_events_001520.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-06T19:16:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/568",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/568#event-1520"
 }
 ```

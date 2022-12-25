@@ -254,7 +254,7 @@ Dave
 
 ---
 
-archive/issue_events_009954.json:
+archive/issue_events_024754.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -262,7 +262,7 @@ archive/issue_events_009954.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9832",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9832#event-9954"
+    "url": "https://github.com/sagemath/sagetest/issues/9832#event-24754"
 }
 ```
 
@@ -283,6 +283,23 @@ archive/issue_comments_096867.json:
 ```
 
 I'm closing this ticket as a "duplicate" of #9871.  Please reopen it, if the Cliquer relocation error remains or reappears.
+
+
+
+---
+
+archive/issue_events_024755.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-16T21:54:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9832",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9832#event-24755"
+}
+```
 
 
 

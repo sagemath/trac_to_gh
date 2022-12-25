@@ -74,7 +74,7 @@ I tested on my machine, and it installs fine, and seems to work (doctests in `sa
 
 ---
 
-archive/issue_events_004427.json:
+archive/issue_events_009503.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -82,7 +82,7 @@ archive/issue_events_004427.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4188",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4188#event-4427"
+    "url": "https://github.com/sagemath/sagetest/issues/4188#event-9503"
 }
 ```
 

@@ -60,6 +60,23 @@ I fixed this while working on #9394 a while ago. I should have posted a new vers
 
 ---
 
+archive/issue_events_024756.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2010-08-28T20:54:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9833",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9833#event-24756"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096870.json:
 ```json
 {
@@ -134,7 +151,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_009955.json:
+archive/issue_events_024757.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -142,7 +159,7 @@ archive/issue_events_009955.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9833",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9833#event-9955"
+    "url": "https://github.com/sagemath/sagetest/issues/9833#event-24757"
 }
 ```
 
@@ -163,3 +180,37 @@ archive/issue_comments_096874.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_024758.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-06T03:19:44Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9833",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9833#event-24758"
+}
+```
+
+
+
+---
+
+archive/issue_events_024759.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-10-06T03:19:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9833",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9833#event-24759"
+}
+```

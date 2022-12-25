@@ -80,7 +80,7 @@ This is a trivial patch, I know, but it was also to demonstrate the development 
 
 ---
 
-archive/issue_events_005761.json:
+archive/issue_events_012908.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -88,7 +88,7 @@ archive/issue_events_005761.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5509",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5509#event-5761"
+    "url": "https://github.com/sagemath/sagetest/issues/5509#event-12908"
 }
 ```
 

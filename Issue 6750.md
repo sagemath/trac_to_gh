@@ -1828,6 +1828,23 @@ I'm not good enough with group cohomology to come up with other examples to test
 
 ---
 
+archive/issue_events_015916.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2009-09-11T08:41:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6750",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6750#event-15916"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055486.json:
 ```json
 {
@@ -1888,7 +1905,7 @@ So, I am moving David Green from "Reviewer(s)" to "Author(s)".
 
 ---
 
-archive/issue_events_006982.json:
+archive/issue_events_015917.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1896,7 +1913,7 @@ archive/issue_events_006982.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#event-6982"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#event-15917"
 }
 ```
 

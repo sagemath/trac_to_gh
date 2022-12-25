@@ -352,7 +352,7 @@ Please remember to fill in the "Author(s)" and "Reviewer(s)" fields.
 
 ---
 
-archive/issue_events_009503.json:
+archive/issue_events_023077.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -360,7 +360,7 @@ archive/issue_events_009503.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9350#event-9503"
+    "url": "https://github.com/sagemath/sagetest/issues/9350#event-23077"
 }
 ```
 

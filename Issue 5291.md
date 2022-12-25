@@ -137,7 +137,7 @@ See Trac #5300 which will be about doing the same thing more efficiently.
 
 ---
 
-archive/issue_events_005545.json:
+archive/issue_events_012299.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -145,7 +145,7 @@ archive/issue_events_005545.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5291",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5291#event-5545"
+    "url": "https://github.com/sagemath/sagetest/issues/5291#event-12299"
 }
 ```
 

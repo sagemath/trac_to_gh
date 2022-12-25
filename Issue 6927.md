@@ -455,6 +455,23 @@ V2 of the combined patch is an attempt to work around an absolute import problem
 
 ---
 
+archive/issue_events_016298.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-04-17T18:05:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6927",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6927#event-16298"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057143.json:
 ```json
 {
@@ -511,7 +528,7 @@ Rebase on sage-4.4.alpha0. Apply this patch only.
 
 ---
 
-archive/issue_events_007151.json:
+archive/issue_events_016299.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -519,7 +536,7 @@ archive/issue_events_007151.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#event-7151"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#event-16299"
 }
 ```
 

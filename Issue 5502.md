@@ -227,6 +227,23 @@ I changed the milestone to 4.0 in hopes this can be merged.
 
 ---
 
+archive/issue_events_012870.json:
+```json
+{
+    "actor": "https://github.com/dwbump",
+    "created_at": "2009-05-06T22:30:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5502",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5502#event-12870"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042661.json:
 ```json
 {
@@ -321,7 +338,7 @@ Michael
 
 ---
 
-archive/issue_events_005755.json:
+archive/issue_events_012871.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -329,7 +346,7 @@ archive/issue_events_005755.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5502#event-5755"
+    "url": "https://github.com/sagemath/sagetest/issues/5502#event-12871"
 }
 ```
 

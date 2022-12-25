@@ -82,6 +82,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_021134.json:
+```json
+{
+    "actor": "https://github.com/hivert",
+    "created_at": "2010-05-13T17:56:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#event-21134"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079268.json:
 ```json
 {
@@ -188,7 +205,7 @@ Looks good to me.
 
 ---
 
-archive/issue_events_008874.json:
+archive/issue_events_021135.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -196,7 +213,7 @@ archive/issue_events_008874.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8704#event-8874"
+    "url": "https://github.com/sagemath/sagetest/issues/8704#event-21135"
 }
 ```
 

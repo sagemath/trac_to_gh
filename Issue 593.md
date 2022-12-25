@@ -112,6 +112,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/593
 
 ---
 
+archive/issue_events_001572.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-10-04T03:02:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/593",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/593#event-1572"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003044.json:
 ```json
 {
@@ -186,7 +203,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_000647.json:
+archive/issue_events_001573.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -194,7 +211,7 @@ archive/issue_events_000647.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/593",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/593#event-647"
+    "url": "https://github.com/sagemath/sagetest/issues/593#event-1573"
 }
 ```
 

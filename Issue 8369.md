@@ -105,7 +105,7 @@ trivial patch, positive review.
 
 ---
 
-archive/issue_events_008557.json:
+archive/issue_events_020049.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -113,7 +113,7 @@ archive/issue_events_008557.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8369",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8369#event-8557"
+    "url": "https://github.com/sagemath/sagetest/issues/8369#event-20049"
 }
 ```
 

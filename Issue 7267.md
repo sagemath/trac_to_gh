@@ -194,6 +194,23 @@ I should add that I have absolutely no problem with not including one or both se
 
 ---
 
+archive/issue_events_017190.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2009-11-12T01:46:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7267",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7267#event-17190"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060270.json:
 ```json
 {
@@ -383,7 +400,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_007488.json:
+archive/issue_events_017191.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -391,7 +408,7 @@ archive/issue_events_007488.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7267",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7267#event-7488"
+    "url": "https://github.com/sagemath/sagetest/issues/7267#event-17191"
 }
 ```
 

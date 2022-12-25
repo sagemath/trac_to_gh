@@ -176,6 +176,23 @@ I've added a patch which adds the repeat keyword.
 
 ---
 
+archive/issue_events_021692.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-05-05T18:54:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8889",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8889#event-21692"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081594.json:
 ```json
 {
@@ -253,7 +270,7 @@ I'm going to close this as invalid for now.  If we have a discussion and decide 
 
 ---
 
-archive/issue_events_009046.json:
+archive/issue_events_021693.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -261,7 +278,7 @@ archive/issue_events_009046.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8889",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8889#event-9046"
+    "url": "https://github.com/sagemath/sagetest/issues/8889#event-21693"
 }
 ```
 
@@ -282,6 +299,40 @@ archive/issue_comments_081598.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_021694.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-06-22T21:57:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8889",
+    "milestone": "sage-4.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8889#event-21694"
+}
+```
+
+
+
+---
+
+archive/issue_events_021695.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-06-22T21:57:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8889",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8889#event-21695"
+}
+```
 
 
 

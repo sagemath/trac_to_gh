@@ -74,6 +74,23 @@ Attachment [trac_4125.patch](tarball://root/attachments/some-uuid/ticket4125/tra
 
 ---
 
+archive/issue_events_009400.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-15T02:26:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4125",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-9400"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029847.json:
 ```json
 {
@@ -92,7 +109,7 @@ Looks good to me!
 
 ---
 
-archive/issue_events_004362.json:
+archive/issue_events_009401.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -100,7 +117,7 @@ archive/issue_events_004362.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4125#event-4362"
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-9401"
 }
 ```
 
@@ -206,6 +223,40 @@ So please revert the patch of this ticket and then close the ticket as "wont", o
 
 ---
 
+archive/issue_events_009402.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2008-10-06T19:23:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4125",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-9402"
+}
+```
+
+
+
+---
+
+archive/issue_events_009403.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
+    "created_at": "2008-10-06T19:23:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4125",
+    "milestone": "sage-3.1.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-9403"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029853.json:
 ```json
 {
@@ -224,7 +275,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004363.json:
+archive/issue_events_009404.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
@@ -232,7 +283,7 @@ archive/issue_events_004363.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4125#event-4363"
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-9404"
 }
 ```
 
@@ -294,7 +345,7 @@ Michael
 
 ---
 
-archive/issue_events_004364.json:
+archive/issue_events_009405.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -302,6 +353,6 @@ archive/issue_events_004364.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4125#event-4364"
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-9405"
 }
 ```

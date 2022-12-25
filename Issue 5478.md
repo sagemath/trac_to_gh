@@ -460,7 +460,7 @@ Thanks for fixing up those line numbers in the doctests...I struggled a bit to g
 
 ---
 
-archive/issue_events_005732.json:
+archive/issue_events_012804.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -468,7 +468,7 @@ archive/issue_events_005732.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5478#event-5732"
+    "url": "https://github.com/sagemath/sagetest/issues/5478#event-12804"
 }
 ```
 
@@ -511,3 +511,20 @@ archive/issue_comments_042420.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_012805.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-13T02:55:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5478",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5478#event-12805"
+}
+```

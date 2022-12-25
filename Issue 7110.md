@@ -247,7 +247,7 @@ I merged this into the official sagenb repo and pushed it.  And it works very ni
 
 ---
 
-archive/issue_events_007332.json:
+archive/issue_events_016810.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -255,6 +255,6 @@ archive/issue_events_007332.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7110#event-7332"
+    "url": "https://github.com/sagemath/sagetest/issues/7110#event-16810"
 }
 ```

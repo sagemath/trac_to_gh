@@ -1164,7 +1164,7 @@ Merged both patches in Sage 3.2.alpha1
 
 ---
 
-archive/issue_events_004545.json:
+archive/issue_events_009713.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -1172,6 +1172,6 @@ archive/issue_events_004545.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4302#event-4545"
+    "url": "https://github.com/sagemath/sagetest/issues/4302#event-9713"
 }
 ```

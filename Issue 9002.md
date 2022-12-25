@@ -519,7 +519,7 @@ Excellent. Thanks! Merged in 4.5.2.alpha1.
 
 ---
 
-archive/issue_events_009156.json:
+archive/issue_events_022030.json:
 ```json
 {
     "actor": "https://github.com/dandrake",
@@ -527,6 +527,6 @@ archive/issue_events_009156.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9002#event-9156"
+    "url": "https://github.com/sagemath/sagetest/issues/9002#event-22030"
 }
 ```

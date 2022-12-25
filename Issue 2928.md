@@ -76,7 +76,7 @@ Michael
 
 ---
 
-archive/issue_events_003128.json:
+archive/issue_events_006697.json:
 ```json
 {
     "actor": "https://github.com/kedlaya",
@@ -84,7 +84,7 @@ archive/issue_events_003128.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2928#event-3128"
+    "url": "https://github.com/sagemath/sagetest/issues/2928#event-6697"
 }
 ```
 
@@ -190,7 +190,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_003129.json:
+archive/issue_events_006698.json:
 ```json
 {
     "actor": "https://github.com/kedlaya",
@@ -198,7 +198,7 @@ archive/issue_events_003129.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2928#event-3129"
+    "url": "https://github.com/sagemath/sagetest/issues/2928#event-6698"
 }
 ```
 
@@ -320,7 +320,7 @@ Applied against 3.0.rc0, this fixes the problem on my 32-bit machine (where I wa
 
 ---
 
-archive/issue_events_003130.json:
+archive/issue_events_006699.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -328,7 +328,7 @@ archive/issue_events_003130.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2928#event-3130"
+    "url": "https://github.com/sagemath/sagetest/issues/2928#event-6699"
 }
 ```
 
@@ -349,6 +349,23 @@ archive/issue_comments_020125.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006700.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-21T00:37:10Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2928",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2928#event-6700"
+}
+```
 
 
 

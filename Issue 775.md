@@ -158,7 +158,7 @@ This no longer happens. The traceback could be more useful, but the paths pointe
 
 ---
 
-archive/issue_events_000878.json:
+archive/issue_events_002136.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -166,6 +166,23 @@ archive/issue_events_000878.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/775",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/775#event-878"
+    "url": "https://github.com/sagemath/sagetest/issues/775#event-2136"
+}
+```
+
+
+
+---
+
+archive/issue_events_002137.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-23T10:56:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/775",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/775#event-2137"
 }
 ```

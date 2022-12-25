@@ -118,7 +118,24 @@ Looks good.
 
 ---
 
-archive/issue_events_005137.json:
+archive/issue_events_011287.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-12T02:17:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4893",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4893#event-11287"
+}
+```
+
+
+
+---
+
+archive/issue_events_011288.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -126,7 +143,7 @@ archive/issue_events_005137.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4893#event-5137"
+    "url": "https://github.com/sagemath/sagetest/issues/4893#event-11288"
 }
 ```
 

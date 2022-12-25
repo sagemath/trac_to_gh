@@ -679,6 +679,23 @@ Also I reviewed the parts that you implemented. That is, the transition to Combi
 
 ---
 
+archive/issue_events_015740.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2011-08-02T16:55:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6670",
+    "milestone": "sage-4.7.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6670#event-15740"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054695.json:
 ```json
 {
@@ -733,7 +750,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006906.json:
+archive/issue_events_015741.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -741,6 +758,6 @@ archive/issue_events_006906.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6670#event-6906"
+    "url": "https://github.com/sagemath/sagetest/issues/6670#event-15741"
 }
 ```

@@ -63,6 +63,23 @@ Changing keywords from "" to "Subsets element_class".
 
 ---
 
+archive/issue_events_020133.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/giraudo",
+    "created_at": "2010-02-28T15:14:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "milestone": "sage-4.3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#event-20133"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075100.json:
 ```json
 {
@@ -248,7 +265,7 @@ Thanks a lot Nicolas for your revision and advices :-)
 
 ---
 
-archive/issue_events_008581.json:
+archive/issue_events_020134.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -256,7 +273,7 @@ archive/issue_events_008581.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8396",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8396#event-8581"
+    "url": "https://github.com/sagemath/sagetest/issues/8396#event-20134"
 }
 ```
 

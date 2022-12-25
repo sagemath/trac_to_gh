@@ -101,7 +101,7 @@ See patch at #1311.
 
 ---
 
-archive/issue_events_001453.json:
+archive/issue_events_003436.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -109,7 +109,7 @@ archive/issue_events_001453.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1313",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1313#event-1453"
+    "url": "https://github.com/sagemath/sagetest/issues/1313#event-3436"
 }
 ```
 
@@ -148,3 +148,20 @@ archive/issue_comments_008251.json:
 ```
 
 Merged via patches at #1311 in Sage 2.10.3.alpha0
+
+
+
+---
+
+archive/issue_events_003437.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-25T20:47:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1313",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1313#event-3437"
+}
+```

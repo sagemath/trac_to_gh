@@ -66,7 +66,7 @@ This will make people editing and adding to the reference manual vastly easier.
 
 ---
 
-archive/issue_events_001984.json:
+archive/issue_events_004437.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -74,7 +74,7 @@ archive/issue_events_001984.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1825",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1825#event-1984"
+    "url": "https://github.com/sagemath/sagetest/issues/1825#event-4437"
 }
 ```
 
@@ -95,3 +95,20 @@ archive/issue_comments_011533.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_004438.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-01-18T23:13:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1825",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1825#event-4438"
+}
+```

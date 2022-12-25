@@ -185,6 +185,23 @@ Thanks very much -- it works wonderfully.
 
 ---
 
+archive/issue_events_022168.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2010-09-22T12:02:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9049",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9049#event-22168"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083646.json:
 ```json
 {
@@ -492,7 +509,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009200.json:
+archive/issue_events_022169.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -500,6 +517,40 @@ archive/issue_events_009200.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9049#event-9200"
+    "url": "https://github.com/sagemath/sagetest/issues/9049#event-22169"
+}
+```
+
+
+
+---
+
+archive/issue_events_022170.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-28T10:58:04Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9049",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9049#event-22170"
+}
+```
+
+
+
+---
+
+archive/issue_events_022171.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-09-28T10:58:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9049",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9049#event-22171"
 }
 ```

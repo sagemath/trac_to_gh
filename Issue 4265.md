@@ -46,7 +46,7 @@ duplicate of #4264
 
 ---
 
-archive/issue_events_004508.json:
+archive/issue_events_009634.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -54,7 +54,7 @@ archive/issue_events_004508.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4265",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4265#event-4508"
+    "url": "https://github.com/sagemath/sagetest/issues/4265#event-9634"
 }
 ```
 

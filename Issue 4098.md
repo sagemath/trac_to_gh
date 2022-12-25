@@ -87,6 +87,23 @@ Attachment [trac-4098.patch](tarball://root/attachments/some-uuid/ticket4098/tra
 
 ---
 
+archive/issue_events_009346.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-10T21:22:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4098",
+    "milestone": "sage-3.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4098#event-9346"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029514.json:
 ```json
 {
@@ -127,7 +144,7 @@ You got there before me but I agree.
 
 ---
 
-archive/issue_events_004335.json:
+archive/issue_events_009347.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -135,7 +152,7 @@ archive/issue_events_004335.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4098",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4098#event-4335"
+    "url": "https://github.com/sagemath/sagetest/issues/4098#event-9347"
 }
 ```
 

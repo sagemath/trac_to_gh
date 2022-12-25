@@ -196,6 +196,23 @@ In such cases, you should set the milestone to "sage-duplicate/invalid/wontfix".
 
 ---
 
+archive/issue_events_015523.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-06-25T09:39:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6582",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6582#event-15523"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053668.json:
 ```json
 {
@@ -234,7 +251,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006819.json:
+archive/issue_events_015524.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -242,6 +259,6 @@ archive/issue_events_006819.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6582",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6582#event-6819"
+    "url": "https://github.com/sagemath/sagetest/issues/6582#event-15524"
 }
 ```

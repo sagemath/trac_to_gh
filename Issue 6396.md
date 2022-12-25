@@ -87,6 +87,23 @@ This looks good to me, and I am cautiously optimistic that the method will selec
 
 ---
 
+archive/issue_events_015075.json:
+```json
+{
+    "actor": "https://github.com/ncalexan",
+    "created_at": "2009-06-24T18:11:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6396",
+    "milestone": "sage-4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6396#event-15075"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051289.json:
 ```json
 {
@@ -285,7 +302,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006643.json:
+archive/issue_events_015076.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -293,7 +310,7 @@ archive/issue_events_006643.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6396#event-6643"
+    "url": "https://github.com/sagemath/sagetest/issues/6396#event-15076"
 }
 ```
 

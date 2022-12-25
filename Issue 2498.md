@@ -78,6 +78,23 @@ That's the sort of ick that I don't like about PARI.
 
 ---
 
+archive/issue_events_005879.json:
+```json
+{
+    "actor": "https://github.com/garyfurnish",
+    "created_at": "2008-03-21T16:35:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2498",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2498#event-5879"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016896.json:
 ```json
 {
@@ -229,7 +246,7 @@ Merged in Sage 2.11.alpha2
 
 ---
 
-archive/issue_events_002679.json:
+archive/issue_events_005880.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -237,7 +254,7 @@ archive/issue_events_002679.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2498",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2498#event-2679"
+    "url": "https://github.com/sagemath/sagetest/issues/2498#event-5880"
 }
 ```
 

@@ -110,7 +110,7 @@ Tests look good. Doctests run perfectly. Positive review.
 
 ---
 
-archive/issue_events_007306.json:
+archive/issue_events_016755.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -118,7 +118,7 @@ archive/issue_events_007306.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7084",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7084#event-7306"
+    "url": "https://github.com/sagemath/sagetest/issues/7084#event-16755"
 }
 ```
 

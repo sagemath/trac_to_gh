@@ -112,6 +112,23 @@ I don't think we need such a thing...
 
 ---
 
+archive/issue_events_002748.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-13T12:27:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/999",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/999#event-2748"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006065.json:
 ```json
 {
@@ -148,7 +165,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_001122.json:
+archive/issue_events_002749.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -156,7 +173,7 @@ archive/issue_events_001122.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/999",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/999#event-1122"
+    "url": "https://github.com/sagemath/sagetest/issues/999#event-2749"
 }
 ```
 

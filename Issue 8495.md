@@ -125,6 +125,23 @@ I've updated the patch file so that it updates the Mathematica module documentat
 
 ---
 
+archive/issue_events_020399.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/flawrence",
+    "created_at": "2010-04-06T05:20:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8495",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8495#event-20399"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076493.json:
 ```json
 {
@@ -1087,7 +1104,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008676.json:
+archive/issue_events_020400.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1095,6 +1112,6 @@ archive/issue_events_008676.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#event-8676"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#event-20400"
 }
 ```

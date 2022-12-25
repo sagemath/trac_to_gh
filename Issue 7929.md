@@ -68,6 +68,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7929
 
 ---
 
+archive/issue_events_018990.json:
+```json
+{
+    "actor": "https://github.com/roed314",
+    "created_at": "2011-11-19T02:38:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7929",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7929#event-18990"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068913.json:
 ```json
 {
@@ -140,7 +157,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_008145.json:
+archive/issue_events_018991.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -148,6 +165,6 @@ archive/issue_events_008145.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7929",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7929#event-8145"
+    "url": "https://github.com/sagemath/sagetest/issues/7929#event-18991"
 }
 ```

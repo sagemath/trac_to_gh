@@ -98,6 +98,23 @@ Michael
 
 ---
 
+archive/issue_events_003006.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-10T23:13:40Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1125",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1125#event-3006"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006777.json:
 ```json
 {
@@ -116,7 +133,7 @@ The spkg in 1161 incorporates the fix for this and also upgrades cvxopt to a new
 
 ---
 
-archive/issue_events_001251.json:
+archive/issue_events_003007.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -124,7 +141,7 @@ archive/issue_events_001251.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1125",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1125#event-1251"
+    "url": "https://github.com/sagemath/sagetest/issues/1125#event-3007"
 }
 ```
 

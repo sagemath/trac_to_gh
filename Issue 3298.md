@@ -98,6 +98,23 @@ Through a chain of typedefs the parameter expected by these functions was define
 
 ---
 
+archive/issue_events_007409.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-01-24T19:07:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3298",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3298#event-7409"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022780.json:
 ```json
 {
@@ -120,7 +137,7 @@ Michael
 
 ---
 
-archive/issue_events_003517.json:
+archive/issue_events_007410.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -128,7 +145,7 @@ archive/issue_events_003517.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3298",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3298#event-3517"
+    "url": "https://github.com/sagemath/sagetest/issues/3298#event-7410"
 }
 ```
 

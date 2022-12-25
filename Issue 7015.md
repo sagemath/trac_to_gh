@@ -127,7 +127,7 @@ Looks good to me.  I included the changes that Minh made to William's spkg and l
 
 ---
 
-archive/issue_events_007237.json:
+archive/issue_events_016459.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -135,7 +135,7 @@ archive/issue_events_007237.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7015",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7015#event-7237"
+    "url": "https://github.com/sagemath/sagetest/issues/7015#event-16459"
 }
 ```
 

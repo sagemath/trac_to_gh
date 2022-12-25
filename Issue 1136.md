@@ -93,6 +93,23 @@ patch for weierstrass normal form transform code
 
 ---
 
+archive/issue_events_003041.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-10T11:23:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1136",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1136#event-3041"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006873.json:
 ```json
 {
@@ -171,6 +188,40 @@ The attached patch fixes that problem for me.
 
 ---
 
+archive/issue_events_003042.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-11-11T20:59:47Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1136",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1136#event-3042"
+}
+```
+
+
+
+---
+
+archive/issue_events_003043.json:
+```json
+{
+    "actor": "https://github.com/malb",
+    "created_at": "2007-11-11T20:59:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1136",
+    "milestone": "sage-2.8.13",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1136#event-3043"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006876.json:
 ```json
 {
@@ -231,7 +282,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001261.json:
+archive/issue_events_003044.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -239,6 +290,6 @@ archive/issue_events_001261.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1136",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1136#event-1261"
+    "url": "https://github.com/sagemath/sagetest/issues/1136#event-3044"
 }
 ```

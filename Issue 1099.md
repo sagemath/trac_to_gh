@@ -250,6 +250,23 @@ On top of delete-2.patch
 
 ---
 
+archive/issue_events_002952.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-01-28T19:10:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1099",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1099#event-2952"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006631.json:
 ```json
 {
@@ -416,7 +433,24 @@ Resolution: wontfix
 
 ---
 
-archive/issue_events_001225.json:
+archive/issue_events_002953.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2008-08-30T21:50:29Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1099",
+    "milestone": "sage-2.10.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1099#event-2953"
+}
+```
+
+
+
+---
+
+archive/issue_events_002954.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -424,6 +458,6 @@ archive/issue_events_001225.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#event-1225"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#event-2954"
 }
 ```

@@ -35,6 +35,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/5841
 
 ---
 
+archive/issue_events_013739.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-04-21T06:29:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5841",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5841#event-13739"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045835.json:
 ```json
 {
@@ -206,7 +223,41 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_006093.json:
+archive/issue_events_013740.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-12T09:52:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5841",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5841#event-13740"
+}
+```
+
+
+
+---
+
+archive/issue_events_013741.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-03-12T09:52:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5841",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5841#event-13741"
+}
+```
+
+
+
+---
+
+archive/issue_events_013742.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -214,7 +265,7 @@ archive/issue_events_006093.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5841#event-6093"
+    "url": "https://github.com/sagemath/sagetest/issues/5841#event-13742"
 }
 ```
 

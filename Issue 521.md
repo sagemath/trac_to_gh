@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/521
 
 ---
 
+archive/issue_events_001340.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-20T14:13:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/521",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/521#event-1340"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002628.json:
 ```json
 {
@@ -53,6 +70,40 @@ SCORE devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py: 5% (6 of 107
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001341.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-26T02:52:38Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/521",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/521#event-1341"
+}
+```
+
+
+
+---
+
+archive/issue_events_001342.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-26T02:52:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/521",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/521#event-1342"
+}
+```
 
 
 
@@ -314,7 +365,7 @@ Merged in Sage 2.10.2.alpha1. Even though the coverage is "only" up to 23% I am 
 
 ---
 
-archive/issue_events_000560.json:
+archive/issue_events_001343.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -322,7 +373,7 @@ archive/issue_events_000560.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/521",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/521#event-560"
+    "url": "https://github.com/sagemath/sagetest/issues/521#event-1343"
 }
 ```
 

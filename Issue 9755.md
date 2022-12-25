@@ -50,6 +50,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/9755
 
 ---
 
+archive/issue_events_024433.json:
+```json
+{
+    "actor": "https://github.com/jbandlow",
+    "created_at": "2010-08-19T19:16:15Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9755",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9755#event-24433"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095388.json:
 ```json
 {
@@ -337,7 +354,7 @@ No worries.  V2 looks good.  Thanks!
 
 ---
 
-archive/issue_events_009887.json:
+archive/issue_events_024434.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -345,7 +362,7 @@ archive/issue_events_009887.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9755#event-9887"
+    "url": "https://github.com/sagemath/sagetest/issues/9755#event-24434"
 }
 ```
 

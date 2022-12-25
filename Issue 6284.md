@@ -191,6 +191,23 @@ I believe this ticket can be closed as it has been superceded by #7870.
 
 ---
 
+archive/issue_events_014694.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
+    "created_at": "2011-05-24T20:17:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6284",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6284#event-14694"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050086.json:
 ```json
 {
@@ -227,7 +244,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_006528.json:
+archive/issue_events_014695.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -235,7 +252,7 @@ archive/issue_events_006528.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6284",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6284#event-6528"
+    "url": "https://github.com/sagemath/sagetest/issues/6284#event-14695"
 }
 ```
 

@@ -150,7 +150,7 @@ I've tested in `sage/rings`, and the changes look good to me.
 
 ---
 
-archive/issue_events_008051.json:
+archive/issue_events_018737.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -158,7 +158,7 @@ archive/issue_events_008051.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7836#event-8051"
+    "url": "https://github.com/sagemath/sagetest/issues/7836#event-18737"
 }
 ```
 

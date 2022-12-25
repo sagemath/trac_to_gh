@@ -312,6 +312,23 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_015932.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-09-28T01:36:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6758",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6758#event-15932"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055538.json:
 ```json
 {
@@ -330,7 +347,7 @@ We should upgrade to libgcrypt 1.4.4 and not worry about libgcrypt 1.4.3 any lon
 
 ---
 
-archive/issue_events_006988.json:
+archive/issue_events_015933.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -338,6 +355,6 @@ archive/issue_events_006988.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#event-6988"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#event-15933"
 }
 ```

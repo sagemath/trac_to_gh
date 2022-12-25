@@ -333,6 +333,23 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_024331.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
+    "created_at": "2011-03-04T22:30:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9723",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9723#event-24331"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094831.json:
 ```json
 {
@@ -351,7 +368,7 @@ Yes, this was my mistake and can be closed as invalid.
 
 ---
 
-archive/issue_events_009856.json:
+archive/issue_events_024332.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -359,7 +376,7 @@ archive/issue_events_009856.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9723#event-9856"
+    "url": "https://github.com/sagemath/sagetest/issues/9723#event-24332"
 }
 ```
 

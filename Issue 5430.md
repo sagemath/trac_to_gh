@@ -121,6 +121,23 @@ Michael
 
 ---
 
+archive/issue_events_012674.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-03-04T19:34:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5430",
+    "milestone": "sage-3.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5430#event-12674"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041933.json:
 ```json
 {
@@ -340,7 +357,7 @@ Merged 5430-v2.patch in 4.0.1.alpha0.
 
 ---
 
-archive/issue_events_005682.json:
+archive/issue_events_012675.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -348,6 +365,6 @@ archive/issue_events_005682.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5430#event-5682"
+    "url": "https://github.com/sagemath/sagetest/issues/5430#event-12675"
 }
 ```

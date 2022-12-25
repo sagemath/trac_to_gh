@@ -85,6 +85,23 @@ Changing assignee from @williamstein to @aghitza.
 
 ---
 
+archive/issue_events_012806.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-04-25T11:12:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5479",
+    "milestone": "sage-3.4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5479#event-12806"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042423.json:
 ```json
 {
@@ -181,7 +198,7 @@ Michael
 
 ---
 
-archive/issue_events_005733.json:
+archive/issue_events_012807.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -189,7 +206,7 @@ archive/issue_events_005733.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5479",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5479#event-5733"
+    "url": "https://github.com/sagemath/sagetest/issues/5479#event-12807"
 }
 ```
 

@@ -115,7 +115,7 @@ The attached patch should satisfy the requierement
 
 ---
 
-archive/issue_events_004829.json:
+archive/issue_events_010424.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/gmoroz",
@@ -123,7 +123,7 @@ archive/issue_events_004829.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4582#event-4829"
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-10424"
 }
 ```
 
@@ -193,7 +193,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_004830.json:
+archive/issue_events_010425.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -201,7 +201,7 @@ archive/issue_events_004830.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4582#event-4830"
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-10425"
 }
 ```
 
@@ -246,6 +246,23 @@ archive/issue_comments_034296.json:
 Yes sorry, I realized this too late.
 
 It is the first time I use mercurial and just piped the output of 'sage -hg diff' in the text file: I'll check the export mercurial function and send a normal patch in some days.
+
+
+
+---
+
+archive/issue_events_010426.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-27T00:26:28Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4582",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-10426"
+}
+```
 
 
 
@@ -354,7 +371,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004831.json:
+archive/issue_events_010427.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -362,6 +379,40 @@ archive/issue_events_004831.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4582#event-4831"
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-10427"
+}
+```
+
+
+
+---
+
+archive/issue_events_010428.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-30T23:13:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4582",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-10428"
+}
+```
+
+
+
+---
+
+archive/issue_events_010429.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-11-30T23:13:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4582",
+    "milestone": "sage-3.2.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-10429"
 }
 ```

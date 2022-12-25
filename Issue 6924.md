@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/6924
 
 ---
 
+archive/issue_events_016268.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-11-15T13:20:13Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6924",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6924#event-16268"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057064.json:
 ```json
 {

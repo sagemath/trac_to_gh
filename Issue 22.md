@@ -101,6 +101,23 @@ Changing assignee from somebody to mabshoff.
 
 ---
 
+archive/issue_events_000039.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-26T01:12:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/22",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/22#event-39"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000165.json:
 ```json
 {
@@ -240,6 +257,40 @@ archive/issue_comments_000172.json:
 ```
 
 Changing status from assigned to new.
+
+
+
+---
+
+archive/issue_events_000040.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-16T17:30:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/22",
+    "milestone": "sage-2.8.15",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/22#event-40"
+}
+```
+
+
+
+---
+
+archive/issue_events_000041.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-16T17:30:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/22",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/22#event-41"
+}
+```
 
 
 
@@ -392,7 +443,7 @@ This is a "perfect patch."
 
 ---
 
-archive/issue_events_000021.json:
+archive/issue_events_000042.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -400,7 +451,7 @@ archive/issue_events_000021.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/22#event-21"
+    "url": "https://github.com/sagemath/sagetest/issues/22#event-42"
 }
 ```
 

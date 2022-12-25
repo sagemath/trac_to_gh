@@ -56,6 +56,23 @@ fixes the problem.  But I'm confused since scipy and scipy_sandbox depend on for
 
 ---
 
+archive/issue_events_019224.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2010-01-21T16:08:17Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8025",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8025#event-19224"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069989.json:
 ```json
 {
@@ -97,7 +114,75 @@ Deferred to Sage 5.0 since I don't see a patch or new spkg's.
 
 ---
 
-archive/issue_events_008236.json:
+archive/issue_events_019225.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:57:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8025",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8025#event-19225"
+}
+```
+
+
+
+---
+
+archive/issue_events_019226.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-23T04:57:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8025",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8025#event-19226"
+}
+```
+
+
+
+---
+
+archive/issue_events_019227.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:23:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8025",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8025#event-19227"
+}
+```
+
+
+
+---
+
+archive/issue_events_019228.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-27T14:23:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8025",
+    "milestone": "sage-4.4.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8025#event-19228"
+}
+```
+
+
+
+---
+
+archive/issue_events_019229.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -105,7 +190,7 @@ archive/issue_events_008236.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8025",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8025#event-8236"
+    "url": "https://github.com/sagemath/sagetest/issues/8025#event-19229"
 }
 ```
 

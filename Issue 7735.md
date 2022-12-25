@@ -174,7 +174,7 @@ Looks good, applies to 4.3.rc0, tests pass and it has a relevant doctest.
 
 ---
 
-archive/issue_events_007947.json:
+archive/issue_events_018494.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -182,7 +182,7 @@ archive/issue_events_007947.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7735#event-7947"
+    "url": "https://github.com/sagemath/sagetest/issues/7735#event-18494"
 }
 ```
 

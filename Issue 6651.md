@@ -118,7 +118,7 @@ Is this still a problem, post-#7238?
 
 ---
 
-archive/issue_events_006887.json:
+archive/issue_events_015705.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -126,7 +126,24 @@ archive/issue_events_006887.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6651#event-6887"
+    "url": "https://github.com/sagemath/sagetest/issues/6651#event-15705"
+}
+```
+
+
+
+---
+
+archive/issue_events_015706.json:
+```json
+{
+    "actor": "https://github.com/TimDumol",
+    "created_at": "2010-01-19T20:19:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6651",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6651#event-15706"
 }
 ```
 

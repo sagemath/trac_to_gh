@@ -208,7 +208,7 @@ Paul: I merged [trac_8157.patch](http://trac.sagemath.org/sage_trac/attachment/t
 
 ---
 
-archive/issue_events_008362.json:
+archive/issue_events_019539.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -216,7 +216,7 @@ archive/issue_events_008362.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#event-8362"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#event-19539"
 }
 ```
 

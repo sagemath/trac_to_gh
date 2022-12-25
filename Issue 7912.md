@@ -147,7 +147,7 @@ I'm listing this as positive review -- I used this spkg as the base when I made 
 
 ---
 
-archive/issue_events_008127.json:
+archive/issue_events_018936.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -155,7 +155,7 @@ archive/issue_events_008127.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7912",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7912#event-8127"
+    "url": "https://github.com/sagemath/sagetest/issues/7912#event-18936"
 }
 ```
 
@@ -194,3 +194,20 @@ archive/issue_comments_068722.json:
 ```
 
 I'm closing this as "duplicate", since Craig has a revised version of the spkg at #7095, and we should use that one instead.
+
+
+
+---
+
+archive/issue_events_018937.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-14T22:38:43Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7912",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7912#event-18937"
+}
+```

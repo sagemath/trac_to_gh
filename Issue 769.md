@@ -117,7 +117,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000870.json:
+archive/issue_events_002115.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -125,7 +125,7 @@ archive/issue_events_000870.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/769#event-870"
+    "url": "https://github.com/sagemath/sagetest/issues/769#event-2115"
 }
 ```
 
@@ -169,7 +169,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000871.json:
+archive/issue_events_002116.json:
 ```json
 {
     "actor": "https://github.com/robertwb",
@@ -177,7 +177,7 @@ archive/issue_events_000871.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/769#event-871"
+    "url": "https://github.com/sagemath/sagetest/issues/769#event-2116"
 }
 ```
 
@@ -223,7 +223,7 @@ I have tested this on 1000's of matrices of varying sizes and primes.
 
 ---
 
-archive/issue_events_000872.json:
+archive/issue_events_002117.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -231,7 +231,7 @@ archive/issue_events_000872.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/769#event-872"
+    "url": "https://github.com/sagemath/sagetest/issues/769#event-2117"
 }
 ```
 

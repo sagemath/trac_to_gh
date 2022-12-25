@@ -88,7 +88,7 @@ Looks good. This should be merged in the optional packages repository.
 
 ---
 
-archive/issue_events_007270.json:
+archive/issue_events_016618.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -96,7 +96,7 @@ archive/issue_events_007270.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7049",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7049#event-7270"
+    "url": "https://github.com/sagemath/sagetest/issues/7049#event-16618"
 }
 ```
 

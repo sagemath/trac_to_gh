@@ -156,7 +156,24 @@ I suggest to resolve it as duplicate, even though I couldn't point my finger to 
 
 ---
 
-archive/issue_events_005654.json:
+archive/issue_events_012574.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2012-03-02T10:16:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5397",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5397#event-12574"
+}
+```
+
+
+
+---
+
+archive/issue_events_012575.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -164,7 +181,7 @@ archive/issue_events_005654.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5397#event-5654"
+    "url": "https://github.com/sagemath/sagetest/issues/5397#event-12575"
 }
 ```
 

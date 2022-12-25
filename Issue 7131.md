@@ -98,7 +98,7 @@ drkirkby@hawk:~/sage-4.4.4.alpha0$ file ./local/lib/libcliquer.so
 
 ---
 
-archive/issue_events_007351.json:
+archive/issue_events_016847.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -106,6 +106,6 @@ archive/issue_events_007351.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7131",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7131#event-7351"
+    "url": "https://github.com/sagemath/sagetest/issues/7131#event-16847"
 }
 ```

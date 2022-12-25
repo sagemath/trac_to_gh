@@ -102,6 +102,23 @@ vs
 
 ---
 
+archive/issue_events_001364.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-11T16:11:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/528",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/528#event-1364"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002678.json:
 ```json
 {
@@ -189,6 +206,23 @@ I think it basically works, but I wasn't able to run doctests properly because t
 
 ---
 
+archive/issue_events_001365.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-21T07:18:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/528",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/528#event-1365"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002682.json:
 ```json
 {
@@ -245,7 +279,7 @@ hopefully better now
 
 ---
 
-archive/issue_events_000567.json:
+archive/issue_events_001366.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -253,7 +287,7 @@ archive/issue_events_000567.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/528",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/528#event-567"
+    "url": "https://github.com/sagemath/sagetest/issues/528#event-1366"
 }
 ```
 

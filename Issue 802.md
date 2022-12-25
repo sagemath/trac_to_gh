@@ -100,6 +100,23 @@ One more Latexifying thing in a function's documentation (to be applied after th
 
 ---
 
+archive/issue_events_002223.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T14:57:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/802",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/802#event-2223"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004822.json:
 ```json
 {
@@ -118,7 +135,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000913.json:
+archive/issue_events_002224.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -126,6 +143,40 @@ archive/issue_events_000913.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/802",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/802#event-913"
+    "url": "https://github.com/sagemath/sagetest/issues/802#event-2224"
+}
+```
+
+
+
+---
+
+archive/issue_events_002225.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:11:39Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/802",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/802#event-2225"
+}
+```
+
+
+
+---
+
+archive/issue_events_002226.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2007-10-05T02:11:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/802",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/802#event-2226"
 }
 ```

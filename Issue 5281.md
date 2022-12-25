@@ -311,6 +311,23 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_012270.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2010-09-04T01:42:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5281",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5281#event-12270"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040473.json:
 ```json
 {
@@ -1419,6 +1436,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_012271.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-12T23:50:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5281",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5281#event-12271"
+}
+```
+
+
+
+---
+
+archive/issue_events_012272.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-01-12T23:50:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5281",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5281#event-12272"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040515.json:
 ```json
 {
@@ -1437,7 +1488,7 @@ FYI, I've just created a `.p1` based on this package to #10609, fixing a bug in 
 
 ---
 
-archive/issue_events_005536.json:
+archive/issue_events_012273.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1445,7 +1496,7 @@ archive/issue_events_005536.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#event-5536"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#event-12273"
 }
 ```
 

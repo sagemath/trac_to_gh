@@ -80,7 +80,7 @@ I have attached a patch to change RR->ZZ coercion failure from ValueError to Typ
 
 ---
 
-archive/issue_events_000996.json:
+archive/issue_events_002458.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -88,7 +88,7 @@ archive/issue_events_000996.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/882",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/882#event-996"
+    "url": "https://github.com/sagemath/sagetest/issues/882#event-2458"
 }
 ```
 

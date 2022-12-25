@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7000
 
 ---
 
-archive/issue_events_007224.json:
+archive/issue_events_016425.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -43,7 +43,7 @@ archive/issue_events_007224.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7000",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7000#event-7224"
+    "url": "https://github.com/sagemath/sagetest/issues/7000#event-16425"
 }
 ```
 
@@ -82,3 +82,20 @@ archive/issue_comments_057772.json:
 ```
 
 This is now down as part of the notebook refactoring.  It's in sagenb.misc.sphinxify.
+
+
+
+---
+
+archive/issue_events_016426.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2009-09-30T08:16:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7000",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7000#event-16426"
+}
+```

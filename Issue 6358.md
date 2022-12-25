@@ -99,6 +99,125 @@ rbeezer: Ideally, we should also make sure the solve_* functionality mimics how 
 
 ---
 
+archive/issue_events_014957.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14957"
+}
+```
+
+
+
+---
+
+archive/issue_events_014958.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14958"
+}
+```
+
+
+
+---
+
+archive/issue_events_014959.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14959"
+}
+```
+
+
+
+---
+
+archive/issue_events_014960.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14960"
+}
+```
+
+
+
+---
+
+archive/issue_events_014961.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14961"
+}
+```
+
+
+
+---
+
+archive/issue_events_014962.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14962"
+}
+```
+
+
+
+---
+
+archive/issue_events_014963.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14963"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050749.json:
 ```json
 {
@@ -112,6 +231,40 @@ archive/issue_comments_050749.json:
 ```
 
 `solve_left` and `solve_right` already use `scipy` currently...
+
+
+
+---
+
+archive/issue_events_014964.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-03-31T12:10:45Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14964"
+}
+```
+
+
+
+---
+
+archive/issue_events_014965.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2016-03-31T12:10:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6358",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14965"
+}
+```
 
 
 
@@ -171,7 +324,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_006606.json:
+archive/issue_events_014966.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -179,6 +332,6 @@ archive/issue_events_006606.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6358",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6358#event-6606"
+    "url": "https://github.com/sagemath/sagetest/issues/6358#event-14966"
 }
 ```

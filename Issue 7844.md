@@ -77,6 +77,23 @@ Have I found them all?
 
 ---
 
+archive/issue_events_018755.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-01-05T02:29:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#event-18755"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067830.json:
 ```json
 {
@@ -167,7 +184,7 @@ merged into sagenb-0.5.
 
 ---
 
-archive/issue_events_008059.json:
+archive/issue_events_018756.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -175,6 +192,6 @@ archive/issue_events_008059.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7844#event-8059"
+    "url": "https://github.com/sagemath/sagetest/issues/7844#event-18756"
 }
 ```

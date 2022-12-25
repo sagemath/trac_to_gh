@@ -213,7 +213,7 @@ Works great on sage.math as well. Looks ready to include (as an optional spkg).
 
 ---
 
-archive/issue_events_001817.json:
+archive/issue_events_004088.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -221,7 +221,7 @@ archive/issue_events_001817.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1657",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1657#event-1817"
+    "url": "https://github.com/sagemath/sagetest/issues/1657#event-4088"
 }
 ```
 

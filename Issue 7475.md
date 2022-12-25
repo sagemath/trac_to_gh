@@ -147,6 +147,23 @@ An explanation of the pickle
 
 ---
 
+archive/issue_events_017717.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#event-17717"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062887.json:
 ```json
 {
@@ -160,6 +177,40 @@ archive/issue_comments_062887.json:
 ```
 
 Attachment [pickle-explanation](tarball://root/attachments/some-uuid/ticket7475/pickle-explanation) by @jdemeyer created at 2013-08-13 15:35:53
+
+
+
+---
+
+archive/issue_events_017718.json:
+```json
+{
+    "actor": "https://github.com/itaibn",
+    "created_at": "2013-09-03T10:19:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#event-17718"
+}
+```
+
+
+
+---
+
+archive/issue_events_017719.json:
+```json
+{
+    "actor": "https://github.com/itaibn",
+    "created_at": "2013-09-03T10:19:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#event-17719"
+}
+```
 
 
 
@@ -219,7 +270,41 @@ Looks good.
 
 ---
 
-archive/issue_events_007703.json:
+archive/issue_events_017720.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-03T07:26:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#event-17720"
+}
+```
+
+
+
+---
+
+archive/issue_events_017721.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2014-02-03T07:26:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#event-17721"
+}
+```
+
+
+
+---
+
+archive/issue_events_017722.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -227,7 +312,7 @@ archive/issue_events_007703.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7475#event-7703"
+    "url": "https://github.com/sagemath/sagetest/issues/7475#event-17722"
 }
 ```
 

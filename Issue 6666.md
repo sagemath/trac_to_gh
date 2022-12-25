@@ -66,6 +66,23 @@ Changing component from number theory to modular forms.
 
 ---
 
+archive/issue_events_015727.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6666",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-15727"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054609.json:
 ```json
 {
@@ -376,6 +393,108 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
+archive/issue_events_015728.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6666",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-15728"
+}
+```
+
+
+
+---
+
+archive/issue_events_015729.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6666",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-15729"
+}
+```
+
+
+
+---
+
+archive/issue_events_015730.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6666",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-15730"
+}
+```
+
+
+
+---
+
+archive/issue_events_015731.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6666",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-15731"
+}
+```
+
+
+
+---
+
+archive/issue_events_015732.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6666",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-15732"
+}
+```
+
+
+
+---
+
+archive/issue_events_015733.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6666",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-15733"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054625.json:
 ```json
 {
@@ -493,7 +612,7 @@ Actually, in the case of `c = ...`, I would personally prefer the "no" option or
 
 ---
 
-archive/issue_events_006902.json:
+archive/issue_events_015734.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -501,7 +620,7 @@ archive/issue_events_006902.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#event-6902"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-15734"
 }
 ```
 

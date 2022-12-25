@@ -200,7 +200,7 @@ Can you see any way to make the overhead from checking in this case any better? 
 
 ---
 
-archive/issue_events_008602.json:
+archive/issue_events_020167.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -208,7 +208,7 @@ archive/issue_events_008602.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8417#event-8602"
+    "url": "https://github.com/sagemath/sagetest/issues/8417#event-20167"
 }
 ```
 

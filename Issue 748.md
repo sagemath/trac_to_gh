@@ -75,6 +75,23 @@ The 1.0.1.p8 version is in sage-2.8.5
 
 ---
 
+archive/issue_events_002033.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T17:14:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/748",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/748#event-2033"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004361.json:
 ```json
 {
@@ -176,7 +193,41 @@ I'm closing this as a duplicate of #9568.
 
 ---
 
-archive/issue_events_000839.json:
+archive/issue_events_002034.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-09-13T09:30:37Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/748",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/748#event-2034"
+}
+```
+
+
+
+---
+
+archive/issue_events_002035.json:
+```json
+{
+    "actor": "https://github.com/nexttime",
+    "created_at": "2011-09-13T09:30:37Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/748",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/748#event-2035"
+}
+```
+
+
+
+---
+
+archive/issue_events_002036.json:
 ```json
 {
     "actor": "https://github.com/nexttime",
@@ -184,7 +235,7 @@ archive/issue_events_000839.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/748#event-839"
+    "url": "https://github.com/sagemath/sagetest/issues/748#event-2036"
 }
 ```
 
@@ -321,7 +372,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_000840.json:
+archive/issue_events_002037.json:
 ```json
 {
     "actor": "https://github.com/kini",
@@ -329,7 +380,7 @@ archive/issue_events_000840.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/748#event-840"
+    "url": "https://github.com/sagemath/sagetest/issues/748#event-2037"
 }
 ```
 
@@ -823,6 +874,40 @@ I think I can spend a little bit of time sorting stuff on this in the next few d
 
 ---
 
+archive/issue_events_002038.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-12T12:32:05Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/748",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/748#event-2038"
+}
+```
+
+
+
+---
+
+archive/issue_events_002039.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-06-12T12:32:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/748",
+    "milestone": "sage-5.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/748#event-2039"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004392.json:
 ```json
 {
@@ -1268,7 +1353,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_000841.json:
+archive/issue_events_002040.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -1276,7 +1361,7 @@ archive/issue_events_000841.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/748#event-841"
+    "url": "https://github.com/sagemath/sagetest/issues/748#event-2040"
 }
 ```
 

@@ -94,7 +94,7 @@ See #6419 for a patch to get rid of the sage.misc.misc warnings (rather brutally
 
 ---
 
-archive/issue_events_006661.json:
+archive/issue_events_015134.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
@@ -102,7 +102,7 @@ archive/issue_events_006661.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6418",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6418#event-6661"
+    "url": "https://github.com/sagemath/sagetest/issues/6418#event-15134"
 }
 ```
 

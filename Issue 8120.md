@@ -638,6 +638,23 @@ The ticket number is missing from the commit string.  I've refreshed the patch I
 
 ---
 
+archive/issue_events_019440.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-02-10T19:47:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8120",
+    "milestone": "sage-4.3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8120#event-19440"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071276.json:
 ```json
 {
@@ -656,7 +673,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008328.json:
+archive/issue_events_019441.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -664,7 +681,7 @@ archive/issue_events_008328.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8120#event-8328"
+    "url": "https://github.com/sagemath/sagetest/issues/8120#event-19441"
 }
 ```
 

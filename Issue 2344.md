@@ -49,6 +49,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_005528.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-26T09:52:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2344",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2344#event-5528"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015656.json:
 ```json
 {
@@ -382,6 +399,40 @@ This just works for me on every mac I try... so positive review.
 
 ---
 
+archive/issue_events_005529.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-20T01:38:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2344",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2344#event-5529"
+}
+```
+
+
+
+---
+
+archive/issue_events_005530.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-20T01:38:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2344",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2344#event-5530"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015666.json:
 ```json
 {
@@ -418,7 +469,7 @@ Merged in Sage 3.0.rc0
 
 ---
 
-archive/issue_events_002521.json:
+archive/issue_events_005531.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -426,6 +477,6 @@ archive/issue_events_002521.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2344",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2344#event-2521"
+    "url": "https://github.com/sagemath/sagetest/issues/2344#event-5531"
 }
 ```

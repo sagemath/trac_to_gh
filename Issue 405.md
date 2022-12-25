@@ -81,6 +81,23 @@ Changing component from algebraic geometry to linear algebra.
 
 ---
 
+archive/issue_events_000972.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-19T11:06:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/405",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/405#event-972"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001980.json:
 ```json
 {
@@ -135,7 +152,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_000431.json:
+archive/issue_events_000973.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -143,7 +160,7 @@ archive/issue_events_000431.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/405",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/405#event-431"
+    "url": "https://github.com/sagemath/sagetest/issues/405#event-973"
 }
 ```
 

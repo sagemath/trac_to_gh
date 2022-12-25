@@ -1427,7 +1427,7 @@ Merged only [trac_7325-final-for-real.patch](http://trac.sagemath.org/sage_trac/
 
 ---
 
-archive/issue_events_007547.json:
+archive/issue_events_017345.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -1435,7 +1435,7 @@ archive/issue_events_007547.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7325#event-7547"
+    "url": "https://github.com/sagemath/sagetest/issues/7325#event-17345"
 }
 ```
 

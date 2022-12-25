@@ -211,7 +211,7 @@ Just a quick note: This is for the sage repository.
 
 ---
 
-archive/issue_events_008338.json:
+archive/issue_events_019466.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -219,7 +219,7 @@ archive/issue_events_008338.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8128",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8128#event-8338"
+    "url": "https://github.com/sagemath/sagetest/issues/8128#event-19466"
 }
 ```
 

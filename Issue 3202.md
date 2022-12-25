@@ -149,6 +149,23 @@ This bug should be closed as fixed.
 
 ---
 
+archive/issue_events_007206.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2009-05-25T10:28:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3202",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3202#event-7206"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022087.json:
 ```json
 {
@@ -167,7 +184,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003420.json:
+archive/issue_events_007207.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -175,6 +192,6 @@ archive/issue_events_003420.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3202",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3202#event-3420"
+    "url": "https://github.com/sagemath/sagetest/issues/3202#event-7207"
 }
 ```

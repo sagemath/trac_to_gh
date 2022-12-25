@@ -48,7 +48,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000244.json:
+archive/issue_events_000477.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -56,7 +56,7 @@ archive/issue_events_000244.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/229",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/229#event-244"
+    "url": "https://github.com/sagemath/sagetest/issues/229#event-477"
 }
 ```
 
@@ -81,3 +81,20 @@ This ticket has been resolved by the "pickle jar".
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000478.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-02T03:04:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/229",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/229#event-478"
+}
+```

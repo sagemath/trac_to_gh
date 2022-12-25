@@ -205,6 +205,23 @@ Changing component from number theory to number fields.
 
 ---
 
+archive/issue_events_002849.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-10-10T21:04:05Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1052",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1052#event-2849"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006385.json:
 ```json
 {
@@ -289,7 +306,7 @@ I agree with Jeroen, and Nick A's example also now works, so I have made the "po
 
 ---
 
-archive/issue_events_001175.json:
+archive/issue_events_002850.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -297,7 +314,7 @@ archive/issue_events_001175.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1052",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1052#event-1175"
+    "url": "https://github.com/sagemath/sagetest/issues/1052#event-2850"
 }
 ```
 

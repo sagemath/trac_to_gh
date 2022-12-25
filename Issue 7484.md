@@ -475,7 +475,24 @@ These three seem to be a matter of taste.  As long as we accurately document wha
 
 ---
 
-archive/issue_events_007714.json:
+archive/issue_events_017743.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-08-19T17:45:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7484",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7484#event-17743"
+}
+```
+
+
+
+---
+
+archive/issue_events_017744.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -483,7 +500,7 @@ archive/issue_events_007714.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#event-7714"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#event-17744"
 }
 ```
 

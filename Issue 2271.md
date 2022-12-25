@@ -93,6 +93,23 @@ You should just attach a single plain text patch instead of an hg bundle.
 
 ---
 
+archive/issue_events_005374.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-02-23T03:04:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2271",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2271#event-5374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015025.json:
 ```json
 {
@@ -258,7 +275,7 @@ Merged 2271_adds_DLX.patch and 2271_doctests.patch in Sage 2.10.3.alpha0 - w00t
 
 ---
 
-archive/issue_events_002442.json:
+archive/issue_events_005375.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -266,6 +283,6 @@ archive/issue_events_002442.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2271",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2271#event-2442"
+    "url": "https://github.com/sagemath/sagetest/issues/2271#event-5375"
 }
 ```

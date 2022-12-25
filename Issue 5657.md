@@ -48,7 +48,7 @@ Patch looks good; applies OK against Sage 3.4.1.alpha0; positive review.
 
 ---
 
-archive/issue_events_005900.json:
+archive/issue_events_013295.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -56,7 +56,7 @@ archive/issue_events_005900.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5657",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5657#event-5900"
+    "url": "https://github.com/sagemath/sagetest/issues/5657#event-13295"
 }
 ```
 

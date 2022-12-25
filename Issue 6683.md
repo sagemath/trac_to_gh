@@ -89,7 +89,7 @@ This has already been fixed in #7786.
 
 ---
 
-archive/issue_events_006918.json:
+archive/issue_events_015771.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -97,7 +97,7 @@ archive/issue_events_006918.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6683",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6683#event-6918"
+    "url": "https://github.com/sagemath/sagetest/issues/6683#event-15771"
 }
 ```
 
@@ -118,3 +118,20 @@ archive/issue_comments_054854.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_015772.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-01-19T16:32:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6683",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6683#event-15772"
+}
+```

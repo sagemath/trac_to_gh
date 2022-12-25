@@ -142,6 +142,23 @@ Please remove the old patches, apply the new patches, and rereview.  This patch 
 
 ---
 
+archive/issue_events_007670.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-07-06T09:05:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3399",
+    "milestone": "sage-3.0.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3399#event-7670"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023759.json:
 ```json
 {
@@ -182,7 +199,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003615.json:
+archive/issue_events_007671.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -190,7 +207,7 @@ archive/issue_events_003615.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3399#event-3615"
+    "url": "https://github.com/sagemath/sagetest/issues/3399#event-7671"
 }
 ```
 

@@ -87,6 +87,23 @@ Changing status from needs_review to needs_info.
 
 ---
 
+archive/issue_events_016896.json:
+```json
+{
+    "actor": "https://github.com/aghitza",
+    "created_at": "2009-10-19T04:11:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7147",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7147#event-16896"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059116.json:
 ```json
 {
@@ -105,7 +122,7 @@ I'm closing this as invalid, as the variable can take on 3 values - 0, 1 and 2, 
 
 ---
 
-archive/issue_events_007367.json:
+archive/issue_events_016897.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -113,7 +130,7 @@ archive/issue_events_007367.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7147",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7147#event-7367"
+    "url": "https://github.com/sagemath/sagetest/issues/7147#event-16897"
 }
 ```
 
@@ -134,3 +151,37 @@ archive/issue_comments_059117.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_016898.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-03T12:16:30Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7147",
+    "milestone": "sage-4.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7147#event-16898"
+}
+```
+
+
+
+---
+
+archive/issue_events_016899.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2009-12-03T12:16:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7147",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7147#event-16899"
+}
+```

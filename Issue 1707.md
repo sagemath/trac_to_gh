@@ -84,6 +84,23 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
+archive/issue_events_004165.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2008-01-07T07:52:07Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1707",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1707#event-4165"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010787.json:
 ```json
 {
@@ -261,6 +278,40 @@ Michael
 
 ---
 
+archive/issue_events_004166.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-21T08:38:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1707",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1707#event-4166"
+}
+```
+
+
+
+---
+
+archive/issue_events_004167.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-03-21T08:38:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1707",
+    "milestone": "sage-2.11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1707#event-4167"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010796.json:
 ```json
 {
@@ -395,7 +446,7 @@ Apply the last two patches: trac1707-combinat-matrices.patch and 1707-referee.pa
 
 ---
 
-archive/issue_events_001866.json:
+archive/issue_events_004168.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -403,7 +454,7 @@ archive/issue_events_001866.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1707#event-1866"
+    "url": "https://github.com/sagemath/sagetest/issues/1707#event-4168"
 }
 ```
 

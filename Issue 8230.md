@@ -127,7 +127,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_008431.json:
+archive/issue_events_019690.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
@@ -135,7 +135,7 @@ archive/issue_events_008431.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8230#event-8431"
+    "url": "https://github.com/sagemath/sagetest/issues/8230#event-19690"
 }
 ```
 
@@ -156,6 +156,23 @@ archive/issue_comments_072584.json:
 ```
 
 I'm closing this as a "duplicate" of #6345.
+
+
+
+---
+
+archive/issue_events_019691.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-08-15T21:32:49Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8230",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8230#event-19691"
+}
+```
 
 
 

@@ -170,7 +170,7 @@ Merged 2050.patch in Sage 2.10.3.rc0
 
 ---
 
-archive/issue_events_002211.json:
+archive/issue_events_004932.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -178,7 +178,7 @@ archive/issue_events_002211.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2050#event-2211"
+    "url": "https://github.com/sagemath/sagetest/issues/2050#event-4932"
 }
 ```
 

@@ -81,7 +81,7 @@ which isn't broken.
 
 ---
 
-archive/issue_events_000340.json:
+archive/issue_events_000746.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -89,6 +89,6 @@ archive/issue_events_000340.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/320",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/320#event-340"
+    "url": "https://github.com/sagemath/sagetest/issues/320#event-746"
 }
 ```

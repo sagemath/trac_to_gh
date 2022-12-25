@@ -343,7 +343,7 @@ Looking at the above, it seems g++ was used, not the Sun compiler, since g++ was
 
 ---
 
-archive/issue_events_007288.json:
+archive/issue_events_016678.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -351,7 +351,7 @@ archive/issue_events_007288.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7068",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7068#event-7288"
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16678"
 }
 ```
 
@@ -431,7 +431,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_007289.json:
+archive/issue_events_016679.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
@@ -439,7 +439,7 @@ archive/issue_events_007289.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7068",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7068#event-7289"
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16679"
 }
 ```
 
@@ -464,6 +464,125 @@ archive/issue_comments_058357.json:
 I tested that changed package with Sun Studio 12.1 on Open Solaris (not SPARC like this about). gfan 0.4plus will not build with the Sun compiler on Open Solaris, so I doubt it will build on SPARC either, but I've not checked that. 
 
 Dave
+
+
+
+---
+
+archive/issue_events_016680.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16680"
+}
+```
+
+
+
+---
+
+archive/issue_events_016681.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16681"
+}
+```
+
+
+
+---
+
+archive/issue_events_016682.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16682"
+}
+```
+
+
+
+---
+
+archive/issue_events_016683.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16683"
+}
+```
+
+
+
+---
+
+archive/issue_events_016684.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16684"
+}
+```
+
+
+
+---
+
+archive/issue_events_016685.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16685"
+}
+```
+
+
+
+---
+
+archive/issue_events_016686.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16686"
+}
+```
 
 
 
@@ -500,6 +619,40 @@ archive/issue_comments_058359.json:
 ```
 
 Outdated, should be closed
+
+
+
+---
+
+archive/issue_events_016687.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-07-08T16:51:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16687"
+}
+```
+
+
+
+---
+
+archive/issue_events_016688.json:
+```json
+{
+    "actor": "https://github.com/mkoeppe",
+    "created_at": "2020-07-08T16:51:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16688"
+}
+```
 
 
 
@@ -545,7 +698,7 @@ The goal of these tickets is laudable, but:
 
 ---
 
-archive/issue_events_007290.json:
+archive/issue_events_016689.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -553,7 +706,7 @@ archive/issue_events_007290.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7068",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7068#event-7290"
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-16689"
 }
 ```
 

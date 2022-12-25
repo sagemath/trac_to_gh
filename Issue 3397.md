@@ -185,6 +185,23 @@ Attachment [3397-2008-07-18.patch](tarball://root/attachments/some-uuid/ticket33
 
 ---
 
+archive/issue_events_007661.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-07-29T21:41:30Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3397",
+    "milestone": "sage-3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3397#event-7661"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023743.json:
 ```json
 {
@@ -629,7 +646,7 @@ Mabshoff, to apply this apply:
 
 ---
 
-archive/issue_events_003614.json:
+archive/issue_events_007662.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -637,7 +654,7 @@ archive/issue_events_003614.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#event-3614"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#event-7662"
 }
 ```
 

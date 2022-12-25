@@ -1245,7 +1245,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008746.json:
+archive/issue_events_020667.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -1253,7 +1253,7 @@ archive/issue_events_008746.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8567",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8567#event-8746"
+    "url": "https://github.com/sagemath/sagetest/issues/8567#event-20667"
 }
 ```
 
@@ -1292,6 +1292,23 @@ archive/issue_comments_077468.json:
 ```
 
 Merged into sage-4.3.5.
+
+
+
+---
+
+archive/issue_events_020668.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-03-30T12:11:27Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8567",
+    "milestone": "sage-4.3.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8567#event-20668"
+}
+```
 
 
 

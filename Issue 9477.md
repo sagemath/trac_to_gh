@@ -91,6 +91,91 @@ to make jmol open in my desktop, and I can then use it to open the SCRIPT file, 
 
 ---
 
+archive/issue_events_023490.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9477",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9477#event-23490"
+}
+```
+
+
+
+---
+
+archive/issue_events_023491.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9477",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9477#event-23491"
+}
+```
+
+
+
+---
+
+archive/issue_events_023492.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9477",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9477#event-23492"
+}
+```
+
+
+
+---
+
+archive/issue_events_023493.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9477",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9477#event-23493"
+}
+```
+
+
+
+---
+
+archive/issue_events_023494.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:20:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9477",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9477#event-23494"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090832.json:
 ```json
 {
@@ -166,6 +251,40 @@ Thanks!  Very helpful.
 
 ---
 
+archive/issue_events_023495.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-05-28T15:22:25Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9477",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9477#event-23495"
+}
+```
+
+
+
+---
+
+archive/issue_events_023496.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2014-05-28T15:22:25Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9477",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9477#event-23496"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090836.json:
 ```json
 {
@@ -202,7 +321,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009629.json:
+archive/issue_events_023497.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -210,6 +329,6 @@ archive/issue_events_009629.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9477",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9477#event-9629"
+    "url": "https://github.com/sagemath/sagetest/issues/9477#event-23497"
 }
 ```

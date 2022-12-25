@@ -46,6 +46,23 @@ docstring patch based on sage-3.0.alpha0
 
 ---
 
+archive/issue_events_006475.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-04-05T21:34:24Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2815",
+    "milestone": "sage-3.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2815#event-6475"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019285.json:
 ```json
 {
@@ -216,7 +233,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_003006.json:
+archive/issue_events_006476.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -224,7 +241,7 @@ archive/issue_events_003006.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2815#event-3006"
+    "url": "https://github.com/sagemath/sagetest/issues/2815#event-6476"
 }
 ```
 

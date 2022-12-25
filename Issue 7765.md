@@ -467,7 +467,7 @@ Changing priority from blocker to critical.
 
 ---
 
-archive/issue_events_007980.json:
+archive/issue_events_018580.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -475,7 +475,7 @@ archive/issue_events_007980.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7765#event-7980"
+    "url": "https://github.com/sagemath/sagetest/issues/7765#event-18580"
 }
 ```
 

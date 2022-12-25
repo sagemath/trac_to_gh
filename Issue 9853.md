@@ -178,7 +178,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_009981.json:
+archive/issue_events_024800.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/maldun",
@@ -186,7 +186,7 @@ archive/issue_events_009981.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#event-9981"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-24800"
 }
 ```
 
@@ -212,6 +212,23 @@ How is this ticket considered fixed? Do you want the attached NetworkX package t
 
 ---
 
+archive/issue_events_024801.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-05T05:12:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9853",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-24801"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097099.json:
 ```json
 {
@@ -230,7 +247,7 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_events_009982.json:
+archive/issue_events_024802.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -238,7 +255,7 @@ archive/issue_events_009982.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#event-9982"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-24802"
 }
 ```
 
@@ -286,7 +303,7 @@ Resolution changed from fixed to invalid
 
 ---
 
-archive/issue_events_009983.json:
+archive/issue_events_024803.json:
 ```json
 {
     "actor": "https://github.com/kiwifb",
@@ -294,6 +311,40 @@ archive/issue_events_009983.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#event-9983"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-24803"
+}
+```
+
+
+
+---
+
+archive/issue_events_024804.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-06T09:52:20Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9853",
+    "milestone": "sage-4.5.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-24804"
+}
+```
+
+
+
+---
+
+archive/issue_events_024805.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2010-09-06T09:52:20Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9853",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-24805"
 }
 ```

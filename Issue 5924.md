@@ -165,6 +165,23 @@ Lloyd's summary is a little mysterious, but there was already functionality for 
 
 ---
 
+archive/issue_events_013888.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-05-12T22:15:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5924",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5924#event-13888"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046752.json:
 ```json
 {
@@ -187,7 +204,7 @@ Michael
 
 ---
 
-archive/issue_events_006178.json:
+archive/issue_events_013889.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -195,7 +212,7 @@ archive/issue_events_006178.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5924",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5924#event-6178"
+    "url": "https://github.com/sagemath/sagetest/issues/5924#event-13889"
 }
 ```
 

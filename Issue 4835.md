@@ -104,6 +104,23 @@ followed by a long wait but no error message.
 
 ---
 
+archive/issue_events_011103.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-12-20T14:07:46Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4835",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4835#event-11103"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036570.json:
 ```json
 {
@@ -172,6 +189,40 @@ Changing assignee from tbd to @williamstein.
 
 ---
 
+archive/issue_events_011104.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-02T07:38:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4835",
+    "milestone": "sage-3.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4835#event-11104"
+}
+```
+
+
+
+---
+
+archive/issue_events_011105.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-08-02T07:38:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4835",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4835#event-11105"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036573.json:
 ```json
 {
@@ -226,7 +277,7 @@ Resolution: duplicate
 
 ---
 
-archive/issue_events_005080.json:
+archive/issue_events_011106.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -234,6 +285,6 @@ archive/issue_events_005080.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4835",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4835#event-5080"
+    "url": "https://github.com/sagemath/sagetest/issues/4835#event-11106"
 }
 ```

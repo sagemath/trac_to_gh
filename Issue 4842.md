@@ -152,7 +152,7 @@ This looks very good to me.  The maths is sound, the examples I tried worked, do
 
 ---
 
-archive/issue_events_005087.json:
+archive/issue_events_011120.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -160,7 +160,7 @@ archive/issue_events_005087.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4842#event-5087"
+    "url": "https://github.com/sagemath/sagetest/issues/4842#event-11120"
 }
 ```
 

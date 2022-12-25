@@ -354,6 +354,23 @@ There are some notes/warnings in the documentation and it would be nice if they 
 
 ---
 
+archive/issue_events_022190.json:
+```json
+{
+    "actor": "https://github.com/novoselt",
+    "created_at": "2010-11-01T02:35:01Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9055",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9055#event-22190"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083859.json:
 ```json
 {
@@ -522,6 +539,40 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_022191.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-02T13:08:59Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9055",
+    "milestone": "sage-4.6.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9055#event-22191"
+}
+```
+
+
+
+---
+
+archive/issue_events_022192.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2010-12-02T13:08:59Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9055",
+    "milestone": "sage-4.6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9055#event-22192"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083865.json:
 ```json
 {
@@ -596,7 +647,7 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_events_009208.json:
+archive/issue_events_022193.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -604,7 +655,7 @@ archive/issue_events_009208.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9055#event-9208"
+    "url": "https://github.com/sagemath/sagetest/issues/9055#event-22193"
 }
 ```
 

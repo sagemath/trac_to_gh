@@ -81,6 +81,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001861.json:
+```json
+{
+    "actor": "https://github.com/craigcitro",
+    "created_at": "2007-10-12T22:04:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/699",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/699#event-1861"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003652.json:
 ```json
 {
@@ -94,6 +111,40 @@ archive/issue_comments_003652.json:
 ```
 
 I'm changing this to 2.8.7, because (1) it's done, and (2) I'm going to use it for something else soon (see trac ticket 812).
+
+
+
+---
+
+archive/issue_events_001862.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:53:00Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/699",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/699#event-1862"
+}
+```
+
+
+
+---
+
+archive/issue_events_001863.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-13T07:53:00Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/699",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/699#event-1863"
+}
+```
 
 
 
@@ -117,7 +168,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000765.json:
+archive/issue_events_001864.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -125,6 +176,6 @@ archive/issue_events_000765.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/699",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/699#event-765"
+    "url": "https://github.com/sagemath/sagetest/issues/699#event-1864"
 }
 ```

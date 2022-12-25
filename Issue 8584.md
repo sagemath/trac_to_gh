@@ -252,7 +252,7 @@ Merged "trac_8584_new.patch" into 4.4.alpha0.
 
 ---
 
-archive/issue_events_008761.json:
+archive/issue_events_020734.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -260,7 +260,7 @@ archive/issue_events_008761.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#event-8761"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#event-20734"
 }
 ```
 

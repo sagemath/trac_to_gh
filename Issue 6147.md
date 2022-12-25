@@ -88,7 +88,7 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_events_006396.json:
+archive/issue_events_014465.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -96,7 +96,7 @@ archive/issue_events_006396.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6147",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6147#event-6396"
+    "url": "https://github.com/sagemath/sagetest/issues/6147#event-14465"
 }
 ```
 
@@ -137,3 +137,20 @@ archive/issue_comments_048976.json:
 Looks good to me.
 
 Merged in 4.0.rc2.
+
+
+
+---
+
+archive/issue_events_014466.json:
+```json
+{
+    "actor": "https://github.com/jasongrout",
+    "created_at": "2009-05-29T19:14:41Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6147",
+    "milestone": "sage-4.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6147#event-14466"
+}
+```

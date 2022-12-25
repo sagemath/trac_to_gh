@@ -46,6 +46,23 @@ Given that there is no longer a fortran spkg, that there is now a `sage_fortran`
 
 ---
 
+archive/issue_events_008635.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2012-06-01T18:12:04Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3766",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3766#event-8635"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026734.json:
 ```json
 {
@@ -118,7 +135,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003988.json:
+archive/issue_events_008636.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -126,6 +143,6 @@ archive/issue_events_003988.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3766",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3766#event-3988"
+    "url": "https://github.com/sagemath/sagetest/issues/3766#event-8636"
 }
 ```

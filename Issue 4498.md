@@ -94,6 +94,23 @@ Michael
 
 ---
 
+archive/issue_events_010186.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-11-12T17:13:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4498",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4498#event-10186"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033201.json:
 ```json
 {
@@ -736,6 +753,40 @@ Using `parent` as the name of the keyword argument masks the imported `parent()`
 
 ---
 
+archive/issue_events_010187.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-02-07T16:13:12Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4498",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4498#event-10187"
+}
+```
+
+
+
+---
+
+archive/issue_events_010188.json:
+```json
+{
+    "actor": "https://github.com/burcin",
+    "created_at": "2012-02-07T16:13:12Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/4498",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4498#event-10188"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033230.json:
 ```json
 {
@@ -863,7 +914,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_004744.json:
+archive/issue_events_010189.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -871,7 +922,7 @@ archive/issue_events_004744.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/4498#event-4744"
+    "url": "https://github.com/sagemath/sagetest/issues/4498#event-10189"
 }
 ```
 

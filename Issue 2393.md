@@ -105,7 +105,24 @@ I like this suggestion, since "1) tell everybody ..." is always doomed to failur
 
 ---
 
-archive/issue_events_002569.json:
+archive/issue_events_005645.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-10-30T08:45:39Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2393",
+    "milestone": "sage-3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2393#event-5645"
+}
+```
+
+
+
+---
+
+archive/issue_events_005646.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -113,7 +130,7 @@ archive/issue_events_002569.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2393",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2393#event-2569"
+    "url": "https://github.com/sagemath/sagetest/issues/2393#event-5646"
 }
 ```
 

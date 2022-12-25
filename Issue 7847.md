@@ -88,6 +88,23 @@ The patch works for me and should not affect browsers that do include the refere
 
 ---
 
+archive/issue_events_018760.json:
+```json
+{
+    "actor": "https://github.com/qed777",
+    "created_at": "2010-01-05T04:02:14Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7847",
+    "milestone": "sage-4.3.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7847#event-18760"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067856.json:
 ```json
 {
@@ -168,7 +185,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008062.json:
+archive/issue_events_018761.json:
 ```json
 {
     "actor": "https://github.com/TimDumol",
@@ -176,7 +193,7 @@ archive/issue_events_008062.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7847#event-8062"
+    "url": "https://github.com/sagemath/sagetest/issues/7847#event-18761"
 }
 ```
 

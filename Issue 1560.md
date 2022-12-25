@@ -54,7 +54,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_001714.json:
+archive/issue_events_003909.json:
 ```json
 {
     "actor": "https://github.com/ncalexan",
@@ -62,6 +62,6 @@ archive/issue_events_001714.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1560",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1560#event-1714"
+    "url": "https://github.com/sagemath/sagetest/issues/1560#event-3909"
 }
 ```

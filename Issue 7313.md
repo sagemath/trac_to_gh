@@ -136,6 +136,23 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_017328.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-01-20T04:31:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7313",
+    "milestone": "sage-4.3.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7313#event-17328"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060998.json:
 ```json
 {
@@ -333,7 +350,7 @@ combinat/words/word_generators.py
 
 ---
 
-archive/issue_events_007536.json:
+archive/issue_events_017329.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -341,7 +358,7 @@ archive/issue_events_007536.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7313#event-7536"
+    "url": "https://github.com/sagemath/sagetest/issues/7313#event-17329"
 }
 ```
 

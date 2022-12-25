@@ -51,6 +51,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/2956
 
 ---
 
+archive/issue_events_006754.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2008-04-20T22:03:45Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2956",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2956#event-6754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020338.json:
 ```json
 {
@@ -395,7 +412,41 @@ Paul
 
 ---
 
-archive/issue_events_003162.json:
+archive/issue_events_006755.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-01-11T11:06:26Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2956",
+    "milestone": "sage-3.0.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2956#event-6755"
+}
+```
+
+
+
+---
+
+archive/issue_events_006756.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-01-11T11:06:26Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2956",
+    "milestone": "sage-5.0",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2956#event-6756"
+}
+```
+
+
+
+---
+
+archive/issue_events_006757.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -403,7 +454,7 @@ archive/issue_events_003162.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2956#event-3162"
+    "url": "https://github.com/sagemath/sagetest/issues/2956#event-6757"
 }
 ```
 

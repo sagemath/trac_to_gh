@@ -40,6 +40,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/635
 
 ---
 
+archive/issue_events_001690.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:41:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/635#event-1690"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003260.json:
 ```json
 {
@@ -116,6 +133,74 @@ I'm marking this as [with patch], because I think this patch is okay, and it's j
 
 ---
 
+archive/issue_events_001691.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
+    "created_at": "2007-09-26T00:24:22Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/635#event-1691"
+}
+```
+
+
+
+---
+
+archive/issue_events_001692.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
+    "created_at": "2007-09-26T00:24:22Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/635#event-1692"
+}
+```
+
+
+
+---
+
+archive/issue_events_001693.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T15:02:11Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/635#event-1693"
+}
+```
+
+
+
+---
+
+archive/issue_events_001694.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-04T15:02:11Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "milestone": "sage-2.8.7",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/635#event-1694"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003264.json:
 ```json
 {
@@ -152,7 +237,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000697.json:
+archive/issue_events_001695.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -160,6 +245,6 @@ archive/issue_events_000697.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/635",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/635#event-697"
+    "url": "https://github.com/sagemath/sagetest/issues/635#event-1695"
 }
 ```

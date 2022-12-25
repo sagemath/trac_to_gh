@@ -719,7 +719,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_008605.json:
+archive/issue_events_020170.json:
 ```json
 {
     "actor": "https://github.com/jhpalmieri",
@@ -727,7 +727,7 @@ archive/issue_events_008605.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8420",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8420#event-8605"
+    "url": "https://github.com/sagemath/sagetest/issues/8420#event-20170"
 }
 ```
 
@@ -769,6 +769,23 @@ Merged into 4.4.alpha0:
 - trac_8420_features_perfect_matchings_vf.2.patch
 - trac_8420_perfect_matchings_review-fh.patch
 - trac_8420_features_perfect_matchings_review_review_vf.patch
+
+
+
+---
+
+archive/issue_events_020171.json:
+```json
+{
+    "actor": "https://github.com/jhpalmieri",
+    "created_at": "2010-04-15T23:49:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "milestone": "sage-4.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#event-20171"
+}
+```
 
 
 

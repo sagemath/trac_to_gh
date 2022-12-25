@@ -101,7 +101,7 @@ The second patch is fine, and makes more sense (the whole thing is centered afte
 
 ---
 
-archive/issue_events_006921.json:
+archive/issue_events_015775.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -109,7 +109,7 @@ archive/issue_events_006921.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6686",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6686#event-6921"
+    "url": "https://github.com/sagemath/sagetest/issues/6686#event-15775"
 }
 ```
 
@@ -130,6 +130,23 @@ archive/issue_comments_054882.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_015776.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
+    "created_at": "2009-08-26T21:13:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6686",
+    "milestone": "sage-4.1.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6686#event-15776"
+}
+```
 
 
 

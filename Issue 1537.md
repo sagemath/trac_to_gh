@@ -154,7 +154,7 @@ Closed as fixed upstream as per Robert's recommendation.
 
 ---
 
-archive/issue_events_001691.json:
+archive/issue_events_003880.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -162,6 +162,6 @@ archive/issue_events_001691.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1537",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1537#event-1691"
+    "url": "https://github.com/sagemath/sagetest/issues/1537#event-3880"
 }
 ```

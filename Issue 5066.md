@@ -87,7 +87,24 @@ Patch should be at #1367, sorry.  With #5066 and #1367, all doctests pass on sag
 
 ---
 
-archive/issue_events_005312.json:
+archive/issue_events_011683.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2009-01-29T01:00:02Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/5066",
+    "milestone": "sage-3.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5066#event-11683"
+}
+```
+
+
+
+---
+
+archive/issue_events_011684.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -95,7 +112,7 @@ archive/issue_events_005312.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/5066#event-5312"
+    "url": "https://github.com/sagemath/sagetest/issues/5066#event-11684"
 }
 ```
 

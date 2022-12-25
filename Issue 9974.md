@@ -605,7 +605,7 @@ Changing keywords from "" to "sd32".
 
 ---
 
-archive/issue_events_010102.json:
+archive/issue_events_025194.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -613,7 +613,24 @@ archive/issue_events_010102.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9974#event-10102"
+    "url": "https://github.com/sagemath/sagetest/issues/9974#event-25194"
+}
+```
+
+
+
+---
+
+archive/issue_events_025195.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-05T09:11:57Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9974",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9974#event-25195"
 }
 ```
 

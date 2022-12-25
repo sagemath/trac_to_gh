@@ -96,7 +96,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_003741.json:
+archive/issue_events_008040.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/ghtdak",
@@ -104,7 +104,7 @@ archive/issue_events_003741.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3524",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3524#event-3741"
+    "url": "https://github.com/sagemath/sagetest/issues/3524#event-8040"
 }
 ```
 
@@ -148,7 +148,7 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_events_003742.json:
+archive/issue_events_008041.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -156,7 +156,7 @@ archive/issue_events_003742.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3524",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3524#event-3742"
+    "url": "https://github.com/sagemath/sagetest/issues/3524#event-8041"
 }
 ```
 
@@ -395,6 +395,23 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_008042.json:
+```json
+{
+    "actor": "https://github.com/kini",
+    "created_at": "2012-05-16T14:14:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3524",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3524#event-8042"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024800.json:
 ```json
 {
@@ -413,7 +430,7 @@ Resolution: worksforme
 
 ---
 
-archive/issue_events_003743.json:
+archive/issue_events_008043.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -421,6 +438,6 @@ archive/issue_events_003743.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3524",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3524#event-3743"
+    "url": "https://github.com/sagemath/sagetest/issues/3524#event-8043"
 }
 ```

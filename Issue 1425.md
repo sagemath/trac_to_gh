@@ -208,6 +208,23 @@ True
 
 ---
 
+archive/issue_events_003665.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-11T03:51:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1425",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1425#event-3665"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009162.json:
 ```json
 {
@@ -221,6 +238,40 @@ archive/issue_comments_009162.json:
 ```
 
 Attachment [1425.patch](tarball://root/attachments/some-uuid/ticket1425/1425.patch) by @mwhansen created at 2007-12-14 06:45:36
+
+
+
+---
+
+archive/issue_events_003666.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-14T06:45:36Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1425",
+    "milestone": "sage-2.9.1",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1425#event-3666"
+}
+```
+
+
+
+---
+
+archive/issue_events_003667.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-14T06:45:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1425",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1425#event-3667"
+}
+```
 
 
 
@@ -338,7 +389,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001572.json:
+archive/issue_events_003668.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -346,7 +397,7 @@ archive/issue_events_001572.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1425#event-1572"
+    "url": "https://github.com/sagemath/sagetest/issues/1425#event-3668"
 }
 ```
 

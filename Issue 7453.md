@@ -36,6 +36,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7453
 
 ---
 
+archive/issue_events_017673.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
+    "created_at": "2009-11-13T18:18:51Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7453",
+    "milestone": "sage-4.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7453#event-17673"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062656.json:
 ```json
 {
@@ -397,7 +414,7 @@ I've added the spkg here:
 
 ---
 
-archive/issue_events_007680.json:
+archive/issue_events_017674.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -405,7 +422,7 @@ archive/issue_events_007680.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#event-7680"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#event-17674"
 }
 ```
 

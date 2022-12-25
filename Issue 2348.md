@@ -767,6 +767,23 @@ matrix1.pyx
 
 ---
 
+archive/issue_events_005536.json:
+```json
+{
+    "actor": "https://github.com/simon-king-jena",
+    "created_at": "2008-03-02T22:28:56Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/2348",
+    "milestone": "sage-2.10.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2348#event-5536"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015740.json:
 ```json
 {
@@ -826,7 +843,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_002525.json:
+archive/issue_events_005537.json:
 ```json
 {
     "actor": "https://github.com/simon-king-jena",
@@ -834,6 +851,6 @@ archive/issue_events_002525.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#event-2525"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#event-5537"
 }
 ```

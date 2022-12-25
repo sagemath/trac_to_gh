@@ -90,7 +90,24 @@ I think the problem is that in the save routine (actually, in the .matplotlib() 
 
 ---
 
-archive/issue_events_008230.json:
+archive/issue_events_019214.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2010-12-21T20:36:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8019",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8019#event-19214"
+}
+```
+
+
+
+---
+
+archive/issue_events_019215.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -98,7 +115,7 @@ archive/issue_events_008230.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8019",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8019#event-8230"
+    "url": "https://github.com/sagemath/sagetest/issues/8019#event-19215"
 }
 ```
 

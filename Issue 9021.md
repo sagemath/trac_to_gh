@@ -239,7 +239,7 @@ Dave
 
 ---
 
-archive/issue_events_009173.json:
+archive/issue_events_022073.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -247,7 +247,24 @@ archive/issue_events_009173.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9021",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9021#event-9173"
+    "url": "https://github.com/sagemath/sagetest/issues/9021#event-22073"
+}
+```
+
+
+
+---
+
+archive/issue_events_022074.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2011-04-05T15:49:34Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9021",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9021#event-22074"
 }
 ```
 

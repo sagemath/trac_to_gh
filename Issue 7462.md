@@ -540,7 +540,7 @@ archive/issue_comments_062743.json:
 
 ---
 
-archive/issue_events_007688.json:
+archive/issue_events_017692.json:
 ```json
 {
     "actor": "https://github.com/mwhansen",
@@ -548,7 +548,7 @@ archive/issue_events_007688.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7462",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7462#event-7688"
+    "url": "https://github.com/sagemath/sagetest/issues/7462#event-17692"
 }
 ```
 

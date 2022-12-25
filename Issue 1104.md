@@ -38,6 +38,57 @@ Issue created by migration from https://trac.sagemath.org/ticket/1104
 
 ---
 
+archive/issue_events_002961.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-11-05T07:08:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1104",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1104#event-2961"
+}
+```
+
+
+
+---
+
+archive/issue_events_002962.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-26T03:05:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1104",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1104#event-2962"
+}
+```
+
+
+
+---
+
+archive/issue_events_002963.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-26T03:05:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1104",
+    "milestone": "sage-2.9.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1104#event-2963"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006658.json:
 ```json
 {
@@ -304,7 +355,7 @@ Merged in Sage 3.1.3.alpha2
 
 ---
 
-archive/issue_events_001230.json:
+archive/issue_events_002964.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -312,6 +363,6 @@ archive/issue_events_001230.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1104#event-1230"
+    "url": "https://github.com/sagemath/sagetest/issues/1104#event-2964"
 }
 ```

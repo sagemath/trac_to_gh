@@ -73,7 +73,7 @@ Looks good to me. I tried to create a new doctest for this but it was a) too big
 
 ---
 
-archive/issue_events_006848.json:
+archive/issue_events_015606.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
@@ -81,7 +81,7 @@ archive/issue_events_006848.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6608",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6608#event-6848"
+    "url": "https://github.com/sagemath/sagetest/issues/6608#event-15606"
 }
 ```
 

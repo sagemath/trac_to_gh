@@ -189,7 +189,24 @@ Changing assignee from @williamstein to @ncalexan.
 
 ---
 
-archive/issue_events_000460.json:
+archive/issue_events_001064.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-19T00:47:08Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/433",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/433#event-1064"
+}
+```
+
+
+
+---
+
+archive/issue_events_001065.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -197,7 +214,7 @@ archive/issue_events_000460.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/433#event-460"
+    "url": "https://github.com/sagemath/sagetest/issues/433#event-1065"
 }
 ```
 

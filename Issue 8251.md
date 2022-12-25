@@ -328,6 +328,125 @@ It would also be possible to fix unpickling the old sobj (and any other potentia
 
 ---
 
+archive/issue_events_019725.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:34:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19725"
+}
+```
+
+
+
+---
+
+archive/issue_events_019726.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19726"
+}
+```
+
+
+
+---
+
+archive/issue_events_019727.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-01-30T21:20:52Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19727"
+}
+```
+
+
+
+---
+
+archive/issue_events_019728.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-6.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19728"
+}
+```
+
+
+
+---
+
+archive/issue_events_019729.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-05-06T15:19:32Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19729"
+}
+```
+
+
+
+---
+
+archive/issue_events_019730.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-6.3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19730"
+}
+```
+
+
+
+---
+
+archive/issue_events_019731.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/vbraun_spam",
+    "created_at": "2014-08-10T16:51:03Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19731"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072875.json:
 ```json
 {
@@ -484,6 +603,40 @@ Rational Field
 
 ---
 
+archive/issue_events_019732.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2020-10-08T17:13:35Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-6.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19732"
+}
+```
+
+
+
+---
+
+archive/issue_events_019733.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2020-10-08T17:13:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/8251",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19733"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072881.json:
 ```json
 {
@@ -556,7 +709,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_008452.json:
+archive/issue_events_019734.json:
 ```json
 {
     "actor": "https://github.com/fchapoton",
@@ -564,6 +717,6 @@ archive/issue_events_008452.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/8251#event-8452"
+    "url": "https://github.com/sagemath/sagetest/issues/8251#event-19734"
 }
 ```

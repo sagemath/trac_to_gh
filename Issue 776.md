@@ -62,7 +62,7 @@ fixes the bug
 
 ---
 
-archive/issue_events_000879.json:
+archive/issue_events_002138.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -70,7 +70,24 @@ archive/issue_events_000879.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/776",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/776#event-879"
+    "url": "https://github.com/sagemath/sagetest/issues/776#event-2138"
+}
+```
+
+
+
+---
+
+archive/issue_events_002139.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-01T21:44:35Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/776",
+    "milestone": "sage-2.8.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/776#event-2139"
 }
 ```
 

@@ -459,7 +459,7 @@ Same on Ubuntu 9.04 x86 (with `MAKE="make -j8"`).
 
 ---
 
-archive/issue_events_009971.json:
+archive/issue_events_024780.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -467,7 +467,7 @@ archive/issue_events_009971.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9844#event-9971"
+    "url": "https://github.com/sagemath/sagetest/issues/9844#event-24780"
 }
 ```
 

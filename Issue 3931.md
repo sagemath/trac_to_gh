@@ -51,6 +51,23 @@ Michael
 
 ---
 
+archive/issue_events_009019.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-08-22T20:02:48Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3931",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3931#event-9019"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028089.json:
 ```json
 {
@@ -69,7 +86,7 @@ Resolution: invalid
 
 ---
 
-archive/issue_events_004158.json:
+archive/issue_events_009020.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -77,7 +94,7 @@ archive/issue_events_004158.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3931",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/3931#event-4158"
+    "url": "https://github.com/sagemath/sagetest/issues/3931#event-9020"
 }
 ```
 
@@ -98,3 +115,20 @@ archive/issue_comments_028090.json:
 ```
 
 And, the answer is NO.
+
+
+
+---
+
+archive/issue_events_009021.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2008-09-15T03:32:08Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/3931",
+    "milestone": "sage-wishlist",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3931#event-9021"
+}
+```

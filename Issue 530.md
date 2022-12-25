@@ -69,6 +69,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_001368.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-01T22:48:33Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/530",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/530#event-1368"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002691.json:
 ```json
 {
@@ -218,6 +235,40 @@ doesn't leak either.
 
 ---
 
+archive/issue_events_001369.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:44:16Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/530",
+    "milestone": "sage-2.8.4",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/530#event-1369"
+}
+```
+
+
+
+---
+
+archive/issue_events_001370.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-09-07T04:44:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/530",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/530#event-1370"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002695.json:
 ```json
 {
@@ -354,7 +405,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000569.json:
+archive/issue_events_001371.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -362,7 +413,7 @@ archive/issue_events_000569.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/530",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/530#event-569"
+    "url": "https://github.com/sagemath/sagetest/issues/530#event-1371"
 }
 ```
 

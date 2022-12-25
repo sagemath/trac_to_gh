@@ -41,6 +41,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/837
 
 ---
 
+archive/issue_events_002358.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-10-07T20:30:19Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/837",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/837#event-2358"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005156.json:
 ```json
 {
@@ -95,6 +112,74 @@ The attached patch actually adds an abs() method to every RingElement (that just
 
 ---
 
+archive/issue_events_002359.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-20T20:06:06Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/837",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/837#event-2359"
+}
+```
+
+
+
+---
+
+archive/issue_events_002360.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
+    "created_at": "2007-10-20T20:06:06Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/837",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/837#event-2360"
+}
+```
+
+
+
+---
+
+archive/issue_events_002361.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:33:54Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/837",
+    "milestone": "sage-2.8.8",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/837#event-2361"
+}
+```
+
+
+
+---
+
+archive/issue_events_002362.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-10-21T03:33:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/837",
+    "milestone": "sage-2.8.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/837#event-2362"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005159.json:
 ```json
 {
@@ -113,7 +198,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000950.json:
+archive/issue_events_002363.json:
 ```json
 {
     "actor": "https://github.com/malb",
@@ -121,7 +206,7 @@ archive/issue_events_000950.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/837",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/837#event-950"
+    "url": "https://github.com/sagemath/sagetest/issues/837#event-2363"
 }
 ```
 

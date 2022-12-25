@@ -301,7 +301,24 @@ Okay, that's good enough for me.  Thanks for checking that.
 
 ---
 
-archive/issue_events_009431.json:
+archive/issue_events_022839.json:
+```json
+{
+    "actor": "https://github.com/rlmill",
+    "created_at": "2010-06-29T16:45:29Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9269",
+    "milestone": "sage-4.5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9269#event-22839"
+}
+```
+
+
+
+---
+
+archive/issue_events_022840.json:
 ```json
 {
     "actor": "https://github.com/rlmill",
@@ -309,7 +326,7 @@ archive/issue_events_009431.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9269#event-9431"
+    "url": "https://github.com/sagemath/sagetest/issues/9269#event-22840"
 }
 ```
 

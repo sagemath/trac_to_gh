@@ -140,6 +140,23 @@ I assume that this is completely outdated with the new notebook (as well as the 
 
 ---
 
+archive/issue_events_015637.json:
+```json
+{
+    "actor": "https://github.com/kcrisman",
+    "created_at": "2013-06-14T17:12:36Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6624",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6624#event-15637"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054170.json:
 ```json
 {
@@ -230,7 +247,7 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_events_006864.json:
+archive/issue_events_015638.json:
 ```json
 {
     "actor": "https://github.com/vbraun",
@@ -238,7 +255,7 @@ archive/issue_events_006864.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6624#event-6864"
+    "url": "https://github.com/sagemath/sagetest/issues/6624#event-15638"
 }
 ```
 

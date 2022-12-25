@@ -149,6 +149,57 @@ Changing component from algebra to solaris.
 
 ---
 
+archive/issue_events_016008.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-08-13T15:35:53Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6797",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6797#event-16008"
+}
+```
+
+
+
+---
+
+archive/issue_events_016009.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-02T20:51:58Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6797",
+    "milestone": "sage-5.12",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6797#event-16009"
+}
+```
+
+
+
+---
+
+archive/issue_events_016010.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2013-12-02T20:51:58Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/6797",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6797#event-16010"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055882.json:
 ```json
 {
@@ -185,7 +236,7 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_events_007032.json:
+archive/issue_events_016011.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -193,7 +244,7 @@ archive/issue_events_007032.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6797",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/6797#event-7032"
+    "url": "https://github.com/sagemath/sagetest/issues/6797#event-16011"
 }
 ```
 

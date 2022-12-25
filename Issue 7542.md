@@ -44,6 +44,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/7542
 
 ---
 
+archive/issue_events_017890.json:
+```json
+{
+    "actor": "https://github.com/jdemeyer",
+    "created_at": "2012-10-05T09:13:38Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/7542",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7542#event-17890"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063881.json:
 ```json
 {
@@ -80,7 +97,7 @@ GNUTLS is no longer part of Sage.
 
 ---
 
-archive/issue_events_007772.json:
+archive/issue_events_017891.json:
 ```json
 {
     "actor": "https://github.com/jdemeyer",
@@ -88,6 +105,6 @@ archive/issue_events_007772.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7542",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/7542#event-7772"
+    "url": "https://github.com/sagemath/sagetest/issues/7542#event-17891"
 }
 ```

@@ -142,7 +142,24 @@ easily be extractable via a file.
 
 ---
 
-archive/issue_events_000166.json:
+archive/issue_events_000293.json:
+```json
+{
+    "actor": "https://github.com/williamstein",
+    "created_at": "2007-08-18T23:30:16Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/160",
+    "milestone": "sage-2.8.2",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/160#event-293"
+}
+```
+
+
+
+---
+
+archive/issue_events_000294.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -150,7 +167,7 @@ archive/issue_events_000166.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/160",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/160#event-166"
+    "url": "https://github.com/sagemath/sagetest/issues/160#event-294"
 }
 ```
 

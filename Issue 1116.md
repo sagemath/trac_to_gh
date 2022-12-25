@@ -58,6 +58,23 @@ Michael
 
 ---
 
+archive/issue_events_002984.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-12-04T14:35:21Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1116",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1116#event-2984"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006729.json:
 ```json
 {
@@ -156,7 +173,7 @@ Merged in Sage 2.10.2.alpha1
 
 ---
 
-archive/issue_events_001242.json:
+archive/issue_events_002985.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -164,6 +181,6 @@ archive/issue_events_001242.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1116",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1116#event-1242"
+    "url": "https://github.com/sagemath/sagetest/issues/1116#event-2985"
 }
 ```

@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/95
 
 ---
 
-archive/issue_events_000095.json:
+archive/issue_events_000191.json:
 ```json
 {
     "actor": "https://github.com/wdjoyner",
@@ -57,7 +57,7 @@ archive/issue_events_000095.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/95#event-95"
+    "url": "https://github.com/sagemath/sagetest/issues/95#event-191"
 }
 ```
 
@@ -173,7 +173,7 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_events_000096.json:
+archive/issue_events_000192.json:
 ```json
 {
     "actor": "https://github.com/wdjoyner",
@@ -181,7 +181,7 @@ archive/issue_events_000096.json:
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/95#event-96"
+    "url": "https://github.com/sagemath/sagetest/issues/95#event-192"
 }
 ```
 
@@ -207,7 +207,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_000097.json:
+archive/issue_events_000193.json:
 ```json
 {
     "actor": "https://github.com/williamstein",
@@ -215,7 +215,7 @@ archive/issue_events_000097.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/95#event-97"
+    "url": "https://github.com/sagemath/sagetest/issues/95#event-193"
 }
 ```
 

@@ -66,6 +66,23 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_000794.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
+    "created_at": "2007-09-11T00:51:54Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/338#event-794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001655.json:
 ```json
 {
@@ -142,7 +159,41 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_events_000362.json:
+archive/issue_events_000795.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-04-17T07:44:31Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "milestone": "sage-feature",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/338#event-795"
+}
+```
+
+
+
+---
+
+archive/issue_events_000796.json:
+```json
+{
+    "actor": "https://github.com/fchapoton",
+    "created_at": "2018-04-17T07:44:31Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "milestone": "sage-duplicate/invalid/wontfix",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/338#event-796"
+}
+```
+
+
+
+---
+
+archive/issue_events_000797.json:
 ```json
 {
     "actor": "https://github.com/videlec",
@@ -150,7 +201,7 @@ archive/issue_events_000362.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/338",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/338#event-362"
+    "url": "https://github.com/sagemath/sagetest/issues/338#event-797"
 }
 ```
 

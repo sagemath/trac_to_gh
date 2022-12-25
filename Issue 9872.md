@@ -3075,6 +3075,23 @@ Just to check: Should I follow the steps in [comment:96 comment 96], except use 
 
 ---
 
+archive/issue_events_024869.json:
+```json
+{
+    "actor": "https://github.com/loefflerd",
+    "created_at": "2010-09-28T12:17:47Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/9872",
+    "milestone": "sage-4.6",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9872#event-24869"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097516.json:
 ```json
 {
@@ -3488,7 +3505,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_010002.json:
+archive/issue_events_024870.json:
 ```json
 {
     "actor": "https://github.com/qed777",
@@ -3496,6 +3513,6 @@ archive/issue_events_010002.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/9872#event-10002"
+    "url": "https://github.com/sagemath/sagetest/issues/9872#event-24870"
 }
 ```

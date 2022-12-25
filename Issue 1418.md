@@ -28,6 +28,23 @@ Issue created by migration from https://trac.sagemath.org/ticket/1418
 
 ---
 
+archive/issue_events_003646.json:
+```json
+{
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jbmohler",
+    "created_at": "2007-12-07T12:37:44Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1418",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1418#event-3646"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009125.json:
 ```json
 {
@@ -41,6 +58,40 @@ archive/issue_comments_009125.json:
 ```
 
 Oops, this should go on hold.  I screwed it up in various ways with the doc-tests.
+
+
+
+---
+
+archive/issue_events_003647.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-07T22:07:55Z",
+    "event": "demilestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1418",
+    "milestone": "sage-2.10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1418#event-3647"
+}
+```
+
+
+
+---
+
+archive/issue_events_003648.json:
+```json
+{
+    "actor": "https://github.com/mwhansen",
+    "created_at": "2007-12-07T22:07:55Z",
+    "event": "milestoned",
+    "issue": "https://github.com/sagemath/sagetest/issues/1418",
+    "milestone": "sage-2.9",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1418#event-3648"
+}
+```
 
 
 
@@ -138,7 +189,7 @@ Resolution: fixed
 
 ---
 
-archive/issue_events_001566.json:
+archive/issue_events_003649.json:
 ```json
 {
     "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
@@ -146,6 +197,6 @@ archive/issue_events_001566.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1418",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/1418#event-1566"
+    "url": "https://github.com/sagemath/sagetest/issues/1418#event-3649"
 }
 ```

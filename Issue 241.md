@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/241
 
 ---
 
-archive/issue_events_000255.json:
+archive/issue_events_000501.json:
 ```json
 {
     "actor": "https://github.com/roed314",
@@ -56,7 +56,7 @@ archive/issue_events_000255.json:
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/241",
     "type": "issue_event",
-    "url": "https://github.com/sagemath/sagetest/issues/241#event-255"
+    "url": "https://github.com/sagemath/sagetest/issues/241#event-501"
 }
 ```
 
