@@ -6,7 +6,6 @@ archive/issues_009957.json:
     "body": "Assignee: tbd\n\nCC:  @jhpalmieri @nexttime @jasongrout @kcrisman @kini\n\nFrom the release notes:\n\nPython 2.7 was released on July 3rd, 2010.\n\nPython 2.7 is scheduled to be the last major version in the 2.x series before it moves into an extended maintenance period. This release contains many of the features that were first released in Python 3.1. Improvements in this release include:\n\n* An ordered dictionary type\n* New unittest features including test skipping, new assert methods, and test discovery\n* A much faster io module\n* Automatic numbering of fields in the str.format() method\n* Float repr improvements backported from 3.x\n* Tile support for Tkinter\n* A backport of the memoryview object from 3.x\n* Set literals\n* Set and dictionary comprehensions\n* Dictionary views\n* New syntax for nested with statements\n* The sysconfig module\n\nIssue created by migration from https://trac.sagemath.org/ticket/9958\n\n",
     "created_at": "2010-09-20T20:01:06Z",
     "labels": [
-        "component: please change",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
